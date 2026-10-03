@@ -1,0 +1,109 @@
+{
+  "scope": "One verified shared input, not a policy rollout or a natural-success result.",
+  "script_sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945",
+  "suite": "libero_goal",
+  "task_order_index": 0,
+  "tasks": [
+    {
+      "index": 4,
+      "name": "put_the_bowl_on_top_of_the_cabinet",
+      "native_language": "put the bowl on top of the cabinet",
+      "bddl_path": "/home/current/work/openpi-demo/work/cosmos-venv/lib/python3.10/site-packages/libero/libero/bddl_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.bddl",
+      "bddl_sha256": "2ffba859a154f50c3c99ffb3420743fa5aa65c70bf7d4cd26f5bc81d07be5713",
+      "bddl_language": "Put the bowl on the top of the drawer",
+      "target_object": "akita_black_bowl_1",
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "akita_black_bowl_1",
+            "wooden_cabinet_1_top_side"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "native_language": "put the wine bottle on top of the cabinet",
+      "bddl_path": "/home/current/work/openpi-demo/work/cosmos-venv/lib/python3.10/site-packages/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+      "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+      "bddl_language": "Put the wine bottle on the top of the drawer",
+      "target_object": "wine_bottle_1",
+      "goal": [
+        [
+          "And",
+          [
+            "On",
+            "wine_bottle_1",
+            "wooden_cabinet_1_top_side"
+          ]
+        ]
+      ]
+    }
+  ],
+  "shared_init_task_index": 4,
+  "shared_init_index": 0,
+  "shared_init_file": "/home/current/work/openpi-demo/work/cosmos-venv/lib/python3.10/site-packages/libero/libero/init_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.pruned_init",
+  "shared_init_file_sha256": "c0b7baf82f36f5304488bac91d788800a1c93d0a9fd19a73f448992d5366e145",
+  "shared_init_array": {
+    "shape": [
+      79
+    ],
+    "dtype": "float64",
+    "sha256": "ed35dbd746e6efe630908bc93ea0659cc4c4cd10cd9c1c1ccc336fb2012cb5dd"
+  },
+  "physical_bddl_fields_equal": [
+    "problem",
+    ":domain",
+    ":regions",
+    ":fixtures",
+    ":objects",
+    ":init"
+  ],
+  "environment_bddl_task_index": 4,
+  "environment_instances": 1,
+  "environment_seed": 0,
+  "warmup_steps": 10,
+  "warmup_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "resolution_per_camera": [
+    256,
+    256
+  ],
+  "camera_order": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "image_rule": "Rotate each RGB by 180 degrees; concatenate agentview then wrist.",
+  "restore_rule": "reset; restore fixture body_pos/body_quat and camera static values; set_init_state; no additional steps.",
+  "reference_observation_rule": "After warmup, regenerate observations from the captured state using set_init_state.",
+  "future_policy_contract": {
+    "domain_name": "libero",
+    "domain_id": 5,
+    "raw_action_dim": 10,
+    "chunk_size": 16,
+    "denoising_steps": 30
+  },
+  "action_conversion": "None. Raw EEF, quaternion, joint and gripper observations are preserved.",
+  "limit": "79D state excludes Python controller memory. Equal inputs do not prove identical subsequent closed-loop behavior.",
+  "fixture_bodies": {
+    "wooden_cabinet_1": "wooden_cabinet_1_main",
+    "flat_stove_1": "flat_stove_1_main",
+    "wine_rack_1": "wine_rack_1_main"
+  },
+  "object_bodies": {
+    "akita_black_bowl_1": "akita_black_bowl_1_main",
+    "cream_cheese_1": "cream_cheese_1_main",
+    "wine_bottle_1": "wine_bottle_1_main",
+    "plate_1": "plate_1_main"
+  }
+}

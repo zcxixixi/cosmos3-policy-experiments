@@ -4,12 +4,34 @@
 <title>Cosmos3 实验记录：换了位置，为什么抓错东西？</title><style>body{font:18px/1.8 system-ui,"Noto Sans CJK SC",sans-serif;color:#243041;background:#eef2f6;margin:0}main{max-width:900px;margin:30px auto;padding:32px;background:white;border-radius:16px}h1{font-size:30px;line-height:1.4}h2{font-size:23px;margin-top:38px}h3{font-size:19px}p{margin:12px 0}.lead{background:#eaf2ff;border-left:5px solid #3973d3;padding:16px}.note{color:#596579;font-size:15px}table{border-collapse:collapse;width:100%;font-size:16px}td,th{border:1px solid #dce3eb;padding:12px;text-align:left}th{background:#f3f6fa}img,video{width:100%;height:auto}details{border:1px solid #dce3eb;border-radius:8px;margin:12px 0;padding:12px}summary{cursor:pointer;font-weight:600}summary:focus-visible,a:focus-visible{outline:3px solid #3973d3;outline-offset:3px}.bar{background:#edf1f6;height:32px;border-radius:5px;margin:6px 0 16px}.fill{height:100%;background:#4175d7;border-radius:5px}.orange{background:#dc8530}a{color:#245ab6}nav{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}.flow{padding:14px;background:#f3f6fa;border-radius:8px}li{margin:8px 0}figure{margin:20px 0}figcaption{font-size:15px;color:#596579}section{scroll-margin-top:16px}@media(max-width:600px){main{margin:0;padding:20px}table{font-size:14px}td,th{padding:7px}}</style></head>
 <body><main>
 <h1>让它拿牛奶：原来的位置能抓，<br>换个位置却抓了奶酪盒。</h1>
-<p class="note">实验记录更新：2026-10-03 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、视频和原始数据</a></p>
+<p class="note">实验记录更新：2026-10-04 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、视频和原始数据</a></p>
 <p>我们想查清楚：它有没有用上指令？有没有认准牛奶？还是照着熟悉的位置抓东西？下面先看机械臂实际做了什么，再看网络里的数值。</p>
-<p class="lead"><b>目前的发现：牛奶移远后，它抓奶酪盒；把黄油放到奶酪盒原来的位置，它就改抓黄油。换三个随机种子，结果都一样。</b><br>这支持“摆放位置在影响它抓谁”，还不能证明它背了训练答案。</p>
+<p class="lead"><b>牛奶移远后，它抓奶酪盒；把黄油放到奶酪盒原来的位置，它就改抓黄油。换三个随机种子，结果都一样。</b><br>这支持“摆放位置在影响它抓谁”，还不能证明它背了训练答案。最新的碗／酒瓶对照里，它又能按指令抓对目标，所以问题还要结合具体场景去查。</p>
 <p class="note">测试的是社区微调权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">fwd4xl/cosmos3-nano-policy-liberoall-5k</a>，配合我们当前的推理程序。我们还在检查输入和调用方式，暂时不能把问题都归到模型本身。</p>
 <nav aria-label="阅读导航"><a href="#latest">最新对照和视频</a><a href="#language">文字有没有进去？</a><a href="#exchange">我们怎么查内部？</a><a href="#conclusion">现在知道什么？</a></nav>
-<section id="latest"><h2>最新对照：换成π0.5，换指令会改变它抓谁吗？</h2>
+<section id="latest"><h2>新对照：同一个画面，说碗抓碗，说酒瓶抓酒瓶</h2>
+<p>之前说“拿黄油”却仍抓牛奶。我们需要先找到一个正常就能换对目标的例子，再去网络内部查：什么信息让它改抓了物体？</p>
+<p><b>我们只改了一句话：</b>在完全相同的起始场景里，一次说“把碗放到柜子上”，另一次说“把酒瓶放到柜子上”。用的还是同一个模型，没有重新训练，也没给它示范。两句都是这套环境原有的任务指令。</p>
+<figure><img src="media/goal-pair-input.png" alt="两句指令共同的初始画面：左固定相机，右手腕相机，桌上有碗和酒瓶"><figcaption>模型真正收到的两路初始画面。左是固定相机，右是手腕相机。动起来以后，两条运行各自拍新照片继续计算。</figcaption></figure>
+<table><thead><tr><th>让它做什么？</th><th>实际抓起谁？</th><th>最后放好了吗？</th></tr></thead><tbody>
+<tr><td>把碗放到柜子上</td><td>碗，最高抬起28.6 cm</td><td>没有通过放置检查</td></tr>
+<tr><td>把酒瓶放到柜子上</td><td>酒瓶，最高抬起30.0 cm</td><td>最后仍夹着酒瓶，没通过放置检查</td></tr>
+</tbody></table>
+<p class="lead"><b>这次，说碗就抓碗，说酒瓶就抓酒瓶。</b><br>但两条结束时都没完成放置。抓对谁、拿起来、放好，是三个不同结果。这是两条具体执行，还不是大量测试得到的成功率。</p>
+<details><summary>看视频①：说碗，抓起碗</summary><video controls preload="none" playsinline src="media/goal-bowl.mp4"></video><p>这是MuJoCo执行模型动作的录像。双侧夹爪接触并持续抬起碗；没有其他物体达到抓起条件，柜顶放置检查未通过。</p></details>
+<details><summary>看视频②：同一初态，说酒瓶，抓起酒瓶</summary><video controls preload="none" playsinline src="media/goal-wine.mp4"></video><p>酒瓶被抓起，最后仍被夹着。放置检查中途触发过，最后没触发；不能说已经放稳。视频不是生成出来的预测画面。</p></details>
+<p><b>这说明什么？</b>之前说“拿黄油”却抓牛奶的失败还在，但不能再笼统地说这个模型“什么话都没用”。至少在这组画面里，换一句话确实改变了它抓谁。</p>
+<p><b>还没解释什么？</b>为什么牛奶场景里没能按词换目标，仍然不知道；也没有证明它背了某条训练动作。两组场景有区别：牛奶／黄油测试保留了牛奶任务的布局，只换目标；碗／酒瓶两任务本来就共用相同的物理配置。</p>
+<p><b>下一步：</b>对比抓碗和抓酒瓶时网络中间真正算出的数字。保持照片不变，只换其中指定的一部分，再看机械臂实际抓谁。这样才能检查这部分信息是否真的在控制目标选择。</p>
+<details><summary>输入、内部数组和执行怎么核对？</summary>
+<p>两任务的物体和物理初态配置相同；这次统一恢复到碗任务4的初态0，没有分别使用两任务的默认初态。任务配置不等于这份权重实际见过的训练数据。</p>
+<p>初始画面、物体与柜子位置、相机和观测共63项相同，三份PNG逐字节相同。恢复后的10项控制器状态也逐字节相同。两句各自重复计算首轮，全部保存的内部数组和动作精确复现；8轮视觉和动作起始噪声跨指令相同。</p>
+<p>两条各执行128步、保存129帧和状态。抓起要求双侧夹爪同时接触、抬高超过2 cm并持续至少5份记录。各自使用原生柜顶检查；它不要求松手，所以中途通过不等于已经放稳。</p>
+<p>这只有一个共同初态、一组配对噪声，不是模型成功率。本轮没有内部干预；两句文本长度也不同，不能据此定位具体网络层或单独的语义机制。后续替换要先核对：换回自己的数据不应改变结果；完整换入另一条运行的数据，应复现那条运行。当前程序仍未完成整个官方流程的等价核验。运行结束时，模型和仿真进程已退出、GPU已释放。</p>
+<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/15-native-goal-targets/README.md">两条录像、真实内部张量、逐步轨迹、代码和检查记录</a></p>
+</details>
+</section>
+<section id="pi05-comparison"><details><summary>前一对照：换成π0.5，换词会改变路线和抓取吗？</summary><h2>最新对照：换成π0.5，换指令会改变它抓谁吗？</h2>
 <p>之前Cosmos把目标名称换成“黄油”，仍抓原来的物体。我们换另一个模型试同样的摆放，想看看是不是也这样。这次用已有的官方π0.5 LIBERO权重，没重新训练。</p>
 <p>每种摆放都从同一初态开始，两句指令只换“牛奶／黄油”。机械臂动起来以后，各自拍新照片、继续计算。下面是四条MuJoCo实际执行，不是模型生成的视频。</p>
 <p class="note">这里保留牛奶任务的场景，只换词，测试它能否换目标；不是在跑官方黄油任务。</p>
@@ -36,8 +58,8 @@
 <p>“抓起”要求双侧夹爪接触、抬高超过2 cm，连续至少5份记录。牛奶入篮检查只适用于牛奶任务。图表到初始位置的距离不等于到移动后物体的距离，也不是想抓谁的概率。</p>
 <p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/14-pi05-target-control/README.md">四条录像、真实动作、轨迹和完整检查记录</a></p>
 </details>
-<p class="note">下一步先找一个正常就能做到“同一摆放，说牛奶抓牛奶，说另一个物体抓另一个物体”的对照，再用内部数组追踪目标选择。新的碗／酒瓶场景已经核对输入，目前还没有策略结果。</p>
-</section>
+<p class="note">下一步先找一个正常就能做到“同一摆放，说牛奶抓牛奶，说另一个物体抓另一个物体”的对照，再用内部数组追踪目标选择。新增碗／酒瓶对照已经分别抓起对应物体，放置未完成；<a href="#latest">看最新结果</a>。</p>
+</details></section>
 <section id="language-routes"><details><summary>前一实验：去Cosmos网络里面，分开检查语言的两种影响方式</summary><h2>换了指令，内部数字变了，抓的东西却没变</h2>
 <p>我们想分清：是“拿黄油”没进入动作计算，还是进去以后，没有让它改抓黄油？这次去网络里面，分开改两种读取方式。</p>
 <p class="flow">路线一：文字 → 动作计算<br>路线二：文字 → 模型对未来画面的计算 → 动作计算</p>
@@ -132,11 +154,11 @@
 <p class="note"><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/04-state-exchange/README.md">替换实验的原始记录</a></p></details>
 </section>
 <section id="conclusion"><h2>5. 现在知道什么，还差哪一步？</h2>
-<p>现在更具体的结论是：<b>在这些测试场景中，语言进入了计算，却没有可靠地让它按名称选物体；牛奶移远后，它反复抓了原奶酪位置上的东西。</b>交换物体和以前的内部数组替换，都能改变实际抓取结果。</p>
+<p>现在更具体的结论是：<b>牛奶／黄油测试中，语言进入了计算，却没能让它按名称换对目标；牛奶移远后，它反复抓了原奶酪位置上的东西。但在同画面的碗／酒瓶对照中，说碗能抓碗，说酒瓶能抓酒瓶。</b>模型并非一概不用语言；失败还要结合场景和任务关系去查。</p>
 <p><b>“它记住了答案”仍是猜想。</b>我们还没有核对到这份权重实际用过的全部示范，也没证明它复现了其中某一条。现在也没有找到一个确定出错的网络层。</p>
 <p>输入方式也在查。我们的程序比官方动作示例多放了一段开场文字；去掉后，原布局仍抓牛奶、移远后仍抓奶酪盒，换成“拿黄油”也没有换目标。因此，这段多余文字不能单独解释失败。</p>
 <p>另外，同一份已编码输入交给官方网络，四组各算完30次，动作数值与当前程序接近。随后在当前程序中，按官方方式改了照片处理和默认推理时间表，再跑四条实际执行，抓取对象仍没变。<b>这两处修正没有纠正这四条执行中的目标选择；完整官方流程还没有全部核验，不能说所有代码问题都排除了。</b></p>
-<p>内部实验确认了语言直接影响动作、通过预测画面影响动作的数值路径，但六条执行仍抓原来的对象。新增π0.5对照表明，语言也可能改变实际路线，却仍没抓起正确物体。下一步先找到同一初态、两句指令自然就能正确抓起不同物体的对照，再检查哪部分内部数据能把正确目标带过去。</p>
+<p>内部实验确认了语言直接影响动作、通过预测画面影响动作的数值路径，但六条执行仍抓原来的对象。新增π0.5对照表明，语言也可能改变实际路线，却仍没抓起正确物体。新增碗／酒瓶对照已在同一初态下分别抓起正确物体，但放置没有完成。接下来用它核对内部替换方法，再检查哪部分数据影响实际目标选择。</p>
 <p class="note">目前仍是少量固定场景、特定权重和当前推理程序的结果。移动物体也会改变遮挡和抓取条件，尚未拆开这些影响。内部数组变化不能换算成“它有 80% 想抓奶酪”；判断抓谁，依据的是实际接触和持续抬起。</p>
 </section>
 <section id="more"><h2>需要追数据时，再展开看</h2>

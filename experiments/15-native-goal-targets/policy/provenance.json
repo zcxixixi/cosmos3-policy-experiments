@@ -1,0 +1,27 @@
+{
+  "script_sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+  "runtime_factory_sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+  "collector_sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945",
+  "shared_input_metadata_sha256": "3796dd7562de690088c2796b8609dbccbe1fd078823889e900e9d9babc37d482",
+  "shared_input_png_sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb",
+  "pixel_helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+  "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "tasks": {
+    "bowl": [
+      4,
+      "put_the_bowl_on_top_of_the_cabinet",
+      "put the bowl on top of the cabinet",
+      "akita_black_bowl_1"
+    ],
+    "wine": [
+      2,
+      "put_the_wine_bottle_on_top_of_the_cabinet",
+      "put the wine bottle on top of the cabinet",
+      "wine_bottle_1"
+    ]
+  },
+  "library_edits": false,
+  "scope": "Two native instructions from one collected Goal4/init0 snapshot. Normal inference; no latent intervention, training, or benchmark-rate claim.",
+  "noise_seed_rule": "198 + query_index, independently reset per task/query.",
+  "proprioception": "No proprioception fields are added to CosmosActionCondition. Raw observations stay in the input/rollout audit files."
+}

@@ -1,0 +1,455 @@
+{
+  "state": {
+    "sim_state": {
+      "shape": [
+        79
+      ],
+      "dtype": "float64",
+      "sha256": "0b728caeab28127702f5f068c6bb016a0ab5d11414e3e3e5f5413e07eca10c68"
+    }
+  },
+  "fixtures": {
+    "wooden_cabinet_1__body_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "c430fd61d084c87b382a12c93fa632aac34d00f60c4b3542b612fcbf136872af"
+    },
+    "wooden_cabinet_1__body_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "f24b838a18c3fd64871184c8af2efe576e5c9074f20307607f16d8e38e287ebb"
+    },
+    "flat_stove_1__body_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "582b65225c5fabfeff99c0176f2934c182d1e86075a1be3cffea3a674cd565c3"
+    },
+    "flat_stove_1__body_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    "wine_rack_1__body_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "f17ecc4933a3f88b36b0a2fae6cbf7e3a3f8dd50803a3e0c2f3147c3c1477f4f"
+    },
+    "wine_rack_1__body_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "f24b838a18c3fd64871184c8af2efe576e5c9074f20307607f16d8e38e287ebb"
+    }
+  },
+  "cameras": {
+    "cam_pos": {
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "7d9e1f5c7e5d9968f46a1bce23f5f18e247ce8de9e24dc84356ad4bba0469f67"
+    },
+    "cam_quat": {
+      "shape": [
+        2,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "2f36e6e1fb4e4462803bc0bee901d6821dc1d615f1a5c6131f3e3c0473f5d917"
+    },
+    "cam_fovy": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "90f57aafd249109456f74ec2fd881ae34ed26bde0176c0cb9ee0a1b060499605"
+    },
+    "cam_bodyid": {
+      "shape": [
+        2
+      ],
+      "dtype": "int32",
+      "sha256": "f1d6ff082118a9340d8abc5a0fe9e260334b1ac106bd9307ced6e4b7b6e7a4d3"
+    },
+    "cam_mode": {
+      "shape": [
+        2
+      ],
+      "dtype": "int32",
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    "world_xpos": {
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "856d23b829d4f70d348b57bebba25681f3c368ed142db4b5b64a9d0a4d99e355"
+    },
+    "world_xmat": {
+      "shape": [
+        2,
+        9
+      ],
+      "dtype": "float64",
+      "sha256": "c317b2d7b17bdabc67c21d2cd704c3173e277f98d4597f67831b9180e07331f4"
+    }
+  },
+  "observations": {
+    "robot0_joint_pos": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "ba21690c48a7513cdcec82c0d40102b07795d942ae962848388ca07ac2f9aad9"
+    },
+    "robot0_joint_pos_cos": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "a8083d55a562ba7aeda67930bd8b0472c54ebf55179fc0062155d3f00121ca95"
+    },
+    "robot0_joint_pos_sin": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "b3618aad1cafafda5dfe6b2d6ab4205c2d8d9b4060b1993f6a362c2dd6d3d083"
+    },
+    "robot0_joint_vel": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "2117dc54b5fe4679925a77ce7f212796c3e3edbe571b4988cfa6774fd1eb1ff4"
+    },
+    "robot0_eef_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "f99423eba1e5d1d0ff531f3e892c197f2dc443f7f75bbe927f36b7f0b1b186fc"
+    },
+    "robot0_eef_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "7703e54bd724c6716eda4a4bc7f37ecda66370dcb3f4eab593d1a9017ec082d7"
+    },
+    "robot0_gripper_qpos": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "1b73051afbc72fda9af5cfa350a6ce3405f863f9f740aecbbfddc5918565d5fb"
+    },
+    "robot0_gripper_qvel": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64",
+      "sha256": "ca442669fefd2224c6d7279c17129da10694e76db56e32ea14e85e4cbb5b14af"
+    },
+    "agentview_image": {
+      "shape": [
+        256,
+        256,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "d8a34db68e86b8774ebbf0fae61763d1d008ddc30af1a34a6f6eef16290e70f7"
+    },
+    "robot0_eye_in_hand_image": {
+      "shape": [
+        256,
+        256,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "23af5380f86689780fa60a27cb7ae818dda9a961322fb66cdb34db90cddf09c8"
+    },
+    "akita_black_bowl_1_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "e144a3df74ac012a5dcbeac8c6d194f27677e644b51c6807d59c33780a93d710"
+    },
+    "akita_black_bowl_1_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "2e58046ed992952a9ff91a1840c1cc83a610cc7a1240533a0d0f0b7d4646e49c"
+    },
+    "akita_black_bowl_1_to_robot0_eef_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "5b469e756ee5ca6bb106c4ec06cc2814bf2653ab64c88869e982fd6445dae74c"
+    },
+    "akita_black_bowl_1_to_robot0_eef_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32",
+      "sha256": "4dc4d73f069e084873f1d1bb04f55a93833706d2d1ea3446c2c3a264a3de0f76"
+    },
+    "cream_cheese_1_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "78875c53b7f6af45d9f69f01f96b32cca2d18e35e10e5f514b290325085753d4"
+    },
+    "cream_cheese_1_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "087546eb824f0f0fa0e97a3e361d39dbf6336c2a0da149f2db2bcd3d5d95c4d2"
+    },
+    "cream_cheese_1_to_robot0_eef_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "d7a6d8b5020144176612195057559f457f49c078960875a61ee2947b45de0653"
+    },
+    "cream_cheese_1_to_robot0_eef_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32",
+      "sha256": "94b99bec678659eed71a7455d95cf87d6e01443f39603f984648f5f06fa9e59e"
+    },
+    "wine_bottle_1_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "e5a65df56dd43c3bfc6e228799a90b95cf96527a58363a54eff113deb033ee1f"
+    },
+    "wine_bottle_1_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "4106ed8d04bfdaa3365eb0f2848910d2ff31cf39934ec1bd0c574bfe1c8c1c97"
+    },
+    "wine_bottle_1_to_robot0_eef_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "88bbf82f3bf2d5940169b52a2f4190eb95a5a8cabe3f84f8e62357fd30ef1a02"
+    },
+    "wine_bottle_1_to_robot0_eef_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32",
+      "sha256": "a2473c0d034b30f2a44cd138bd339b6bdaf8134942a5a902604f90e12bf895ea"
+    },
+    "plate_1_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "17ea30cd28778f8b5a74dbfc6f0ee312ad3d4b0e39892e09ca0af4fa94bdedf3"
+    },
+    "plate_1_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "48a15784d1d43100485c0be2189d0e87e9871d37ccad04b2a191a8a57037a590"
+    },
+    "plate_1_to_robot0_eef_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "9007acf5676ad5a6a218995ef8d169defae9e5e53f7a301091cd2829bb3b3f91"
+    },
+    "plate_1_to_robot0_eef_quat": {
+      "shape": [
+        4
+      ],
+      "dtype": "float32",
+      "sha256": "57e92d9f12bb8b093bd266bd609ae2c5ec9a086f747a814d24aa1c68ac9b0470"
+    },
+    "robot0_proprio-state": {
+      "shape": [
+        39
+      ],
+      "dtype": "float64",
+      "sha256": "89bd1c49d299f4d8ecc6b0b4559b5e2dddea89afb33abce0bc53f9c2f57bde5a"
+    },
+    "object-state": {
+      "shape": [
+        56
+      ],
+      "dtype": "float64",
+      "sha256": "bf824f2b62bebb9dc0aa9353d861becd1b3461fc92d91f6a596ad63a7e018370"
+    }
+  },
+  "objects": {
+    "akita_black_bowl_1__world_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "e144a3df74ac012a5dcbeac8c6d194f27677e644b51c6807d59c33780a93d710"
+    },
+    "akita_black_bowl_1__world_quat_wxyz": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "f3322301701089e2320c6c1f38ad2b6e232a7278a93515027b94f236fe997ac8"
+    },
+    "akita_black_bowl_1__akita_black_bowl_1_joint0__qpos": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "73e01239e05071b180a1e819c9463578cf2924824ebe16f59486a347be87853c"
+    },
+    "akita_black_bowl_1__akita_black_bowl_1_joint0__qvel": {
+      "shape": [
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "04d9612d5b63e728564655f3037b2cc5814ec0df1a85c0b61fc20e4973bd088b"
+    },
+    "cream_cheese_1__world_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "78875c53b7f6af45d9f69f01f96b32cca2d18e35e10e5f514b290325085753d4"
+    },
+    "cream_cheese_1__world_quat_wxyz": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "1e5d295b97a070cfabf60a1d26942a94251a19ffcabaf4a4a3c5c33fda431274"
+    },
+    "cream_cheese_1__cream_cheese_1_joint0__qpos": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "15737d09032e09cdbe213b2e16b637942981b3b53f2c44dac0d18684e6f9dd0c"
+    },
+    "cream_cheese_1__cream_cheese_1_joint0__qvel": {
+      "shape": [
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "c57d730ac2edbdda63ee14e1a5af569952e58adb0cc48cc653a8b5bae935300d"
+    },
+    "wine_bottle_1__world_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "e5a65df56dd43c3bfc6e228799a90b95cf96527a58363a54eff113deb033ee1f"
+    },
+    "wine_bottle_1__world_quat_wxyz": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "08bc3432c7300e4172d0981588b61fe3487571d4c8fa77a25f4b1b9e7a0f9b34"
+    },
+    "wine_bottle_1__wine_bottle_1_joint0__qpos": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "85551b9060939efe3acf950c69961a685a182ebc4f5d01173be43084d2488c58"
+    },
+    "wine_bottle_1__wine_bottle_1_joint0__qvel": {
+      "shape": [
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "63661b9ebb5942fffba15e5e8f44a989cb36487dc22b2aeab35fe3f3e9a8fad1"
+    },
+    "plate_1__world_pos": {
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "17ea30cd28778f8b5a74dbfc6f0ee312ad3d4b0e39892e09ca0af4fa94bdedf3"
+    },
+    "plate_1__world_quat_wxyz": {
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "4348c28f1e6befd280559aed029987de86d1519aec02ca8180cf0c0c83b2e903"
+    },
+    "plate_1__plate_1_joint0__qpos": {
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "sha256": "cc97797db26b944660548c0e8078dbc175386559c49f085756542d3561254b68"
+    },
+    "plate_1__plate_1_joint0__qvel": {
+      "shape": [
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "37df6f9cd64bd8dcf6f2aa9151f3a9be57c5e2cc6e59666071bade788b5a04be"
+    }
+  },
+  "images": {
+    "agentview": {
+      "shape": [
+        256,
+        256,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "32729568beebf06ca99bec1f3821f1c65335e05436c69307f4eec6c78dc9435e"
+    },
+    "robot0_eye_in_hand": {
+      "shape": [
+        256,
+        256,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "678c35ad1dcb7ac610368b7a16a37a55811d60fc50cef3292998724370c2747f"
+    },
+    "input": {
+      "shape": [
+        256,
+        512,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "703ad6a057ae9f825ae2d03a6cd62aee553645150191a1ea9b4a0eae113870ad"
+    }
+  }
+}

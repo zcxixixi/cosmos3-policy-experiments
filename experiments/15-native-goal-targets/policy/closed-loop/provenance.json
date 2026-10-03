@@ -1,0 +1,61 @@
+{
+  "script_sha256": "bc18a41d97dcdf7c321ef093faf4eea076678298f269efa5cf8fc9c623157dc7",
+  "server_provenance": {
+    "script_sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "runtime_factory_sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "collector_sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945",
+    "shared_input_metadata_sha256": "3796dd7562de690088c2796b8609dbccbe1fd078823889e900e9d9babc37d482",
+    "shared_input_png_sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb",
+    "pixel_helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+    "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+    "tasks": {
+      "bowl": [
+        4,
+        "put_the_bowl_on_top_of_the_cabinet",
+        "put the bowl on top of the cabinet",
+        "akita_black_bowl_1"
+      ],
+      "wine": [
+        2,
+        "put_the_wine_bottle_on_top_of_the_cabinet",
+        "put the wine bottle on top of the cabinet",
+        "wine_bottle_1"
+      ]
+    },
+    "library_edits": false,
+    "scope": "Two native instructions from one collected Goal4/init0 snapshot. Normal inference; no latent intervention, training, or benchmark-rate claim.",
+    "noise_seed_rule": "198 + query_index, independently reset per task/query.",
+    "proprioception": "No proprioception fields are added to CosmosActionCondition. Raw observations stay in the input/rollout audit files."
+  },
+  "collector_sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945",
+  "stats_sha256": "bf20cb010fad4ee5754ad83dafab0fce509fc99594d75a3a151d07cf81c905ac",
+  "native_goal_states": {
+    "bowl": [
+      [
+        "on",
+        "akita_black_bowl_1",
+        "wooden_cabinet_1_top_side"
+      ]
+    ],
+    "wine": [
+      [
+        "on",
+        "wine_bottle_1",
+        "wooden_cabinet_1_top_side"
+      ]
+    ]
+  },
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "noise_seed_base": 198,
+  "query_seed_rule": "198 + query_index",
+  "environment_bddl_task_index": 4,
+  "warmup_steps_in_this_rollout": 0,
+  "controller_rule": "After restoring: update(force=True); reset_goal(). Compare initial goal_pos/goal_ori, initial_joint, kp/kd and gripper.current_action by dtype/shape/bytes across trials; require both interpolators None. initial_joint stays unchanged for the official nullspace controller. No additional env.step.",
+  "action_conversion": "Existing quantile affine inverse; official _framewise_action_to_delta(6d); _remap_gripper(zero_one); clip seven controller commands to [-1,1] before env.step.",
+  "xyz_command_units": "Dimensionless OSC controller inputs, not meters.",
+  "native_checker_rule": "Evaluate each parsed native goal_state with the same environment _eval_predicate. Cabinet On does not require gripper release. Ignore bowl env done for fixed 128 actions.",
+  "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+  "scope": "Two native Goal instructions, normal Cosmos inference, one restored Goal4/init0 snapshot. Target grasp and each task's native cabinet predicate are separate outcomes. A single shared initial state/seed is not a benchmark success rate or a latent mechanism test."
+}

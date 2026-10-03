@@ -1,0 +1,603 @@
+{
+  "cases": [
+    {
+      "task": "bowl",
+      "task_index": 4,
+      "task_name": "put_the_bowl_on_top_of_the_cabinet",
+      "prompt": "put the bowl on top of the cabinet",
+      "target_object": "akita_black_bowl_1",
+      "selected_objects": [
+        "akita_black_bowl_1"
+      ],
+      "target_selected": true,
+      "wrong_selected_objects": [],
+      "first_qualifying_object": "akita_black_bowl_1",
+      "first_qualifying_frame": 52,
+      "final_native_target_goal": false,
+      "native_target_goal_ever": false,
+      "per_object": {
+        "akita_black_bowl_1": {
+          "first_contact_frame": 49,
+          "contact_frames": 43,
+          "first_2cm_for_5frames": 52,
+          "max_lift_cm": 28.586591928696812,
+          "final_lift_cm": 21.72410509532563,
+          "max_xy_displacement_cm": 19.837864789519237
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 6.2873975359423184e-06,
+          "final_lift_cm": 6.2873975359423184e-06,
+          "max_xy_displacement_cm": 0.0
+        },
+        "wine_bottle_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.4954477684246967e-05,
+          "final_lift_cm": 2.4954477684246967e-05,
+          "max_xy_displacement_cm": 1.183416330708204e-09
+        },
+        "plate_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.4096300721421215e-05,
+          "final_lift_cm": 2.4096300721421215e-05,
+          "max_xy_displacement_cm": 4.0185646253615524e-09
+        }
+      },
+      "final": {
+        "step": 128,
+        "objects": {
+          "akita_black_bowl_1": [
+            0.01556076293207864,
+            -0.14356161048584642,
+            1.1156449366373578
+          ],
+          "cream_cheese_1": [
+            -0.06104446470098044,
+            0.12572257581057453,
+            0.9089069548372153
+          ],
+          "wine_bottle_1": [
+            -0.20442683599350575,
+            -0.046858019899332935,
+            0.8988609548408878
+          ],
+          "plate_1": [
+            0.06160580920893498,
+            -0.01759819097375071,
+            0.9024998346667837
+          ]
+        },
+        "finger_contacts": {
+          "akita_black_bowl_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "wine_bottle_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "plate_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "grasped": [],
+        "native_goal_checkers": {
+          "bowl": false,
+          "wine": false
+        },
+        "robot_observations": {
+          "robot0_joint_pos": [
+            -0.14050784713862896,
+            0.7480933436208609,
+            -0.17346912168836193,
+            -1.2232270161737062,
+            -0.004457106321849832,
+            1.9224756039109043,
+            0.7591676768593255
+          ],
+          "robot0_joint_pos_cos": [
+            0.9901450019515304,
+            0.7329871890084706,
+            0.9849919232759219,
+            0.34061347346536325,
+            0.9999900671180616,
+            -0.3444747903332048,
+            0.725409164866233
+          ],
+          "robot0_joint_pos_sin": [
+            -0.14004597498822918,
+            0.6802424426257602,
+            -0.17260043766225072,
+            -0.9402034150617941,
+            -0.004457091564536433,
+            0.9387955681749327,
+            0.6883179087660544
+          ],
+          "robot0_joint_vel": [
+            -0.01888599962180189,
+            0.1735282676531747,
+            0.013354824418126444,
+            0.29524484138144297,
+            -0.022553727987438797,
+            -0.25440794548661205,
+            -0.01958437250932901
+          ],
+          "robot0_eef_pos": [
+            0.05014500214413458,
+            -0.20814716485296725,
+            1.1455725363163087
+          ],
+          "robot0_eef_quat": [
+            0.9906162518848212,
+            -0.12065383024409376,
+            -0.02924738427489822,
+            0.057154923341505265
+          ],
+          "robot0_gripper_qpos": [
+            0.039205428866571315,
+            -0.03873648250265718
+          ],
+          "robot0_gripper_qvel": [
+            0.0005794853764468335,
+            -0.004660686290777843
+          ],
+          "robot0_proprio-state": [
+            -0.14050784713862896,
+            0.7480933436208609,
+            -0.17346912168836193,
+            -1.2232270161737062,
+            -0.004457106321849832,
+            1.9224756039109043,
+            0.7591676768593255,
+            0.9901450019515304,
+            0.7329871890084706,
+            0.9849919232759219,
+            0.34061347346536325,
+            0.9999900671180616,
+            -0.3444747903332048,
+            0.725409164866233,
+            -0.14004597498822918,
+            0.6802424426257602,
+            -0.17260043766225072,
+            -0.9402034150617941,
+            -0.004457091564536433,
+            0.9387955681749327,
+            0.6883179087660544,
+            -0.01888599962180189,
+            0.1735282676531747,
+            0.013354824418126444,
+            0.29524484138144297,
+            -0.022553727987438797,
+            -0.25440794548661205,
+            -0.01958437250932901,
+            0.05014500214413458,
+            -0.20814716485296725,
+            1.1455725363163087,
+            0.9906162518848212,
+            -0.12065383024409376,
+            -0.02924738427489822,
+            0.057154923341505265,
+            0.039205428866571315,
+            -0.03873648250265718,
+            0.0005794853764468335,
+            -0.004660686290777843
+          ]
+        },
+        "controller": {
+          "goal_pos": [
+            0.04868999915144545,
+            -0.21300785011987727,
+            1.1314379768022478
+          ],
+          "goal_ori": [
+            [
+              0.2232539320557398,
+              0.9673665517633396,
+              -0.11983169902895592
+            ],
+            [
+              0.9657560254772191,
+              -0.23618476858005505,
+              -0.10738740308947387
+            ],
+            [
+              -0.13218540424838274,
+              -0.09175352682669517,
+              -0.9869692543968354
+            ]
+          ],
+          "ee_pos": [
+            0.05016927164651187,
+            -0.2081497503593032,
+            1.1455503568847736
+          ],
+          "ee_ori_mat": [
+            [
+              0.23562261427245126,
+              0.9691730718152017,
+              -0.07201069720324643
+            ],
+            [
+              0.964363505077413,
+              -0.2423422926068772,
+              -0.10617553055598786
+            ],
+            [
+              -0.12035370255301017,
+              -0.044427132276624676,
+              -0.9917364650951648
+            ]
+          ],
+          "initial_joint": [
+            0.0,
+            -0.161037389,
+            0.0,
+            -2.44459747,
+            0.0,
+            2.2267522,
+            0.7853981633974483
+          ],
+          "kp": [
+            150.0,
+            150.0,
+            150.0,
+            150.0,
+            150.0,
+            150.0
+          ],
+          "kd": [
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178
+          ],
+          "interpolator_pos_none": true,
+          "interpolator_ori_none": true,
+          "gripper_current_action": [
+            1.0,
+            -1.0
+          ]
+        },
+        "environment_bowl_done": false
+      },
+      "steps": 128,
+      "state_records": 129,
+      "initial_63_checks_exact": true,
+      "initial_3_png_bytes_exact": true,
+      "initial_controller_reset_goal_exact": true,
+      "initial_controller_role": "first_trial_reference",
+      "initial_controller_paired_checked_exact": null,
+      "q0_baseline_all_saved_tensors_exact": true,
+      "seed_rule": "198 + query_index",
+      "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+      "scope": "Two native Goal instructions, normal Cosmos inference, one restored Goal4/init0 snapshot. Target grasp and each task's native cabinet predicate are separate outcomes. A single shared initial state/seed is not a benchmark success rate or a latent mechanism test."
+    },
+    {
+      "task": "wine",
+      "task_index": 2,
+      "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "prompt": "put the wine bottle on top of the cabinet",
+      "target_object": "wine_bottle_1",
+      "selected_objects": [
+        "wine_bottle_1"
+      ],
+      "target_selected": true,
+      "wrong_selected_objects": [],
+      "first_qualifying_object": "wine_bottle_1",
+      "first_qualifying_frame": 42,
+      "final_native_target_goal": false,
+      "native_target_goal_ever": true,
+      "per_object": {
+        "akita_black_bowl_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.6450475165695764e-05,
+          "final_lift_cm": 2.6450475165695764e-05,
+          "max_xy_displacement_cm": 2.2431523505010295e-09
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 6.2873975359423184e-06,
+          "final_lift_cm": 6.2873975359423184e-06,
+          "max_xy_displacement_cm": 0.0
+        },
+        "wine_bottle_1": {
+          "first_contact_frame": 37,
+          "contact_frames": 60,
+          "first_2cm_for_5frames": 42,
+          "max_lift_cm": 30.008964333920495,
+          "final_lift_cm": 23.537608126493335,
+          "max_xy_displacement_cm": 25.98432713956559
+        },
+        "plate_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.4096300721421215e-05,
+          "final_lift_cm": 2.4096300721421215e-05,
+          "max_xy_displacement_cm": 4.022302942933907e-09
+        }
+      },
+      "final": {
+        "step": 128,
+        "objects": {
+          "akita_black_bowl_1": [
+            -0.1004562081530736,
+            0.010005680989545795,
+            0.8984041501888531
+          ],
+          "cream_cheese_1": [
+            -0.06104446470098044,
+            0.12572257581057453,
+            0.9089069548372153
+          ],
+          "wine_bottle_1": [
+            0.0018631809293165645,
+            -0.18014793113907526,
+            1.1342367865610443
+          ],
+          "plate_1": [
+            0.06160580920892461,
+            -0.017598190973709103,
+            0.9024998346667837
+          ]
+        },
+        "finger_contacts": {
+          "akita_black_bowl_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "wine_bottle_1": {
+            "left": true,
+            "right": true,
+            "both": true
+          },
+          "plate_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "grasped": [
+          "wine_bottle_1"
+        ],
+        "native_goal_checkers": {
+          "bowl": false,
+          "wine": false
+        },
+        "robot_observations": {
+          "robot0_joint_pos": [
+            -0.12427645975329323,
+            0.7738445552508556,
+            -0.1326265520549667,
+            -0.9891412570676541,
+            -0.153441790836257,
+            1.3520649597258019,
+            0.3194771610144443
+          ],
+          "robot0_joint_pos_cos": [
+            0.9922876146958786,
+            0.7152290402464228,
+            0.9912179830030101,
+            0.5494075895809749,
+            0.9882508877087491,
+            0.21699139215898144,
+            0.9493997559946089
+          ],
+          "robot0_joint_pos_sin": [
+            -0.12395680586867242,
+            0.6988901344189807,
+            -0.13223808139656404,
+            -0.8355544868593687,
+            -0.1528403838743851,
+            0.9761735172237092,
+            0.3140702203606337
+          ],
+          "robot0_joint_vel": [
+            0.03477772681375188,
+            -0.0984920582055306,
+            -0.012932312514312809,
+            -0.02925648861271736,
+            -0.048701896466033914,
+            0.002363641627957826,
+            0.039760661887319165
+          ],
+          "robot0_eef_pos": [
+            -0.01154582858265435,
+            -0.18237816427892983,
+            1.2078854402012287
+          ],
+          "robot0_eef_quat": [
+            0.9658211080680121,
+            0.10934204564306191,
+            -0.23027585151787935,
+            0.04697804245157203
+          ],
+          "robot0_gripper_qpos": [
+            0.01540775233609775,
+            -0.01586968371148071
+          ],
+          "robot0_gripper_qvel": [
+            -0.0006627450855259036,
+            0.0016379686921963554
+          ],
+          "robot0_proprio-state": [
+            -0.12427645975329323,
+            0.7738445552508556,
+            -0.1326265520549667,
+            -0.9891412570676541,
+            -0.153441790836257,
+            1.3520649597258019,
+            0.3194771610144443,
+            0.9922876146958786,
+            0.7152290402464228,
+            0.9912179830030101,
+            0.5494075895809749,
+            0.9882508877087491,
+            0.21699139215898144,
+            0.9493997559946089,
+            -0.12395680586867242,
+            0.6988901344189807,
+            -0.13223808139656404,
+            -0.8355544868593687,
+            -0.1528403838743851,
+            0.9761735172237092,
+            0.3140702203606337,
+            0.03477772681375188,
+            -0.0984920582055306,
+            -0.012932312514312809,
+            -0.02925648861271736,
+            -0.048701896466033914,
+            0.002363641627957826,
+            0.039760661887319165,
+            -0.01154582858265435,
+            -0.18237816427892983,
+            1.2078854402012287,
+            0.9658211080680121,
+            0.10934204564306191,
+            -0.23027585151787935,
+            0.04697804245157203,
+            0.01540775233609775,
+            -0.01586968371148071,
+            -0.0006627450855259036,
+            0.0016379686921963554
+          ]
+        },
+        "controller": {
+          "goal_pos": [
+            -0.0077686657152524,
+            -0.18312439331908245,
+            1.219539634685895
+          ],
+          "goal_ori": [
+            [
+              -0.22913955335146713,
+              0.8678312614969774,
+              -0.440867289168799
+            ],
+            [
+              0.9723994681922893,
+              0.18361693502708767,
+              -0.14395865877453837
+            ],
+            [
+              -0.043981123693835965,
+              -0.46168574030144643,
+              -0.8859525596556638
+            ]
+          ],
+          "ee_pos": [
+            -0.011544664239142854,
+            -0.18236644273584207,
+            1.2080006409449537
+          ],
+          "ee_ori_mat": [
+            [
+              -0.23283460993449162,
+              0.8700947871795184,
+              -0.43442272700640205
+            ],
+            [
+              0.9716697194602675,
+              0.18949685987989268,
+              -0.1412405620905782
+            ],
+            [
+              -0.04057093418514415,
+              -0.45500110045876385,
+              -0.8895661852165109
+            ]
+          ],
+          "initial_joint": [
+            0.0,
+            -0.161037389,
+            0.0,
+            -2.44459747,
+            0.0,
+            2.2267522,
+            0.7853981633974483
+          ],
+          "kp": [
+            150.0,
+            150.0,
+            150.0,
+            150.0,
+            150.0,
+            150.0
+          ],
+          "kd": [
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178,
+            24.49489742783178
+          ],
+          "interpolator_pos_none": true,
+          "interpolator_ori_none": true,
+          "gripper_current_action": [
+            -1.0,
+            1.0
+          ]
+        },
+        "environment_bowl_done": false
+      },
+      "steps": 128,
+      "state_records": 129,
+      "initial_63_checks_exact": true,
+      "initial_3_png_bytes_exact": true,
+      "initial_controller_reset_goal_exact": true,
+      "initial_controller_role": "second_trial_paired_check",
+      "initial_controller_paired_checked_exact": true,
+      "q0_baseline_all_saved_tensors_exact": true,
+      "seed_rule": "198 + query_index",
+      "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+      "scope": "Two native Goal instructions, normal Cosmos inference, one restored Goal4/init0 snapshot. Target grasp and each task's native cabinet predicate are separate outcomes. A single shared initial state/seed is not a benchmark success rate or a latent mechanism test."
+    }
+  ],
+  "scope": "Two native Goal instructions, normal Cosmos inference, one restored Goal4/init0 snapshot. Target grasp and each task's native cabinet predicate are separate outcomes. A single shared initial state/seed is not a benchmark success rate or a latent mechanism test.",
+  "initial_controller_pair_checked_exact": true,
+  "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+  "native_goal_states": {
+    "bowl": [
+      [
+        "on",
+        "akita_black_bowl_1",
+        "wooden_cabinet_1_top_side"
+      ]
+    ],
+    "wine": [
+      [
+        "on",
+        "wine_bottle_1",
+        "wooden_cabinet_1_top_side"
+      ]
+    ]
+  }
+}

@@ -1,20 +1,20 @@
 {
-  "recorded_on": "2026-10-03",
+  "recorded_on": "2026-10-04",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 63,
-      "sha256": "82f50e0ed8c7a5406c9aa676c7a2f1bbbd4f87421b3c7062ab6819c681ed7ded"
+      "bytes": 119,
+      "sha256": "861078d2f0c22722d9ca721d89384ce8f9699fefe046d014c15232247d1df3fd"
     },
     {
       "path": "README.md",
-      "bytes": 12244,
-      "sha256": "48a094fe36be4ae525ba814a8f45838dcdf9c59b251ddb6013ec55b20e19b869"
+      "bytes": 13271,
+      "sha256": "da804ce0cc3139bdd1a8d83bef321405bd61de863dd1e0546331189b16894d40"
     },
     {
       "path": "docs/index.html",
-      "bytes": 2082405,
-      "sha256": "0dff8b6f7d73fffd613d8503b5f6a94333f718afe8b6d6ae0af9a9d6cc08ec96"
+      "bytes": 2087160,
+      "sha256": "029298523e1593494c6f361acfcd32bee4f2995a7e1a96bb301d3be52f38d266"
     },
     {
       "path": "docs/media/far-original-cream.mp4",
@@ -25,6 +25,21 @@
       "path": "docs/media/far-swapped-butter.mp4",
       "bytes": 239347,
       "sha256": "39b5c6489ba5cd5e8b01c166d03ea7e6872e2925389e7b53f8042e68b15a7be9"
+    },
+    {
+      "path": "docs/media/goal-bowl.mp4",
+      "bytes": 219506,
+      "sha256": "06d442f0e2a3d73b04cb764f1d2c41e4ce736e5809ad7b1e040f92116a4034fd"
+    },
+    {
+      "path": "docs/media/goal-pair-input.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "docs/media/goal-wine.mp4",
+      "bytes": 210696,
+      "sha256": "8f3f280b2ce4c00691b9ad4d220e41d6c8f95d0a623c0b40a6583dce422f7eb5"
     },
     {
       "path": "docs/media/identity-position-scenes.png",
@@ -19612,6 +19627,2081 @@
       "sha256": "48b92140da146454d9271ff12e98783de6abb4967aa89592bf36f9363d5d80be"
     },
     {
+      "path": "experiments/15-native-goal-targets/README.md",
+      "bytes": 6697,
+      "sha256": "68d4b871c904fb46cf424c667bc7b93bb242b597c3dbd95146a48ed17cf6c73c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/checks.json",
+      "bytes": 27112,
+      "sha256": "88e0b9946661b388c37a0cafb4d436cf7a8a96c94aaaaaaf590886c29bcd16ad"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/complete.json",
+      "bytes": 263,
+      "sha256": "730d77c0c15de13ef068641d8092e70aa9b547e362f4215f8a71587ae3a68cfd"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/metadata.json",
+      "bytes": 3684,
+      "sha256": "3796dd7562de690088c2796b8609dbccbe1fd078823889e900e9d9babc37d482"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/native_task4_init0.npy",
+      "bytes": 760,
+      "sha256": "7b99d4eefbf27328fadc9e94453ab351c9f69eb3c6e2795b78b821adedf94ee5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/agentview.png",
+      "bytes": 60486,
+      "sha256": "fe42f1bad4df2c51236934a15c8d36a8bf18aca73e94d94aec408909f692f82f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/arrays.json",
+      "bytes": 11554,
+      "sha256": "bd95816e2c7e18fc19422df99d9372d45caf7b920e8d155c92862e80ca5172da"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/cameras.npz",
+      "bytes": 1612,
+      "sha256": "48648519fe6e1a5dffe8e61df7ff10fa3ea7d506df574aa7ad51145358bb03a9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/fixtures.npz",
+      "bytes": 1448,
+      "sha256": "2375b61c135a342b5ee984e9330d0e2aa784e3f04ff9d42d5376d4d13ae46759"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/input.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/objects.npz",
+      "bytes": 4527,
+      "sha256": "35a475678fbe1027cebe220c2907be9e58ad5a6e9a2d5d9f44f6480dda6a77d0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/observations.npz",
+      "bytes": 154084,
+      "sha256": "b380855d512e11f0c4168db99f4396777d7b12e4ef80b97d1ec3b149c1a27f82"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/robot0_eye_in_hand.png",
+      "bytes": 52915,
+      "sha256": "8ae9a77e20fec296be66448061bf567ac744ea59ee01485cb9fb03e33234de9c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/reference/state.npy",
+      "bytes": 760,
+      "sha256": "deafcdd37d6f7cdcd80ef6dae3c935215de85d66e644e20e18c67788dc56d214"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/agentview.png",
+      "bytes": 60486,
+      "sha256": "fe42f1bad4df2c51236934a15c8d36a8bf18aca73e94d94aec408909f692f82f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/arrays.json",
+      "bytes": 11554,
+      "sha256": "bd95816e2c7e18fc19422df99d9372d45caf7b920e8d155c92862e80ca5172da"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/cameras.npz",
+      "bytes": 1612,
+      "sha256": "48648519fe6e1a5dffe8e61df7ff10fa3ea7d506df574aa7ad51145358bb03a9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/fixtures.npz",
+      "bytes": 1448,
+      "sha256": "2375b61c135a342b5ee984e9330d0e2aa784e3f04ff9d42d5376d4d13ae46759"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/input.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/objects.npz",
+      "bytes": 4527,
+      "sha256": "35a475678fbe1027cebe220c2907be9e58ad5a6e9a2d5d9f44f6480dda6a77d0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/observations.npz",
+      "bytes": 154084,
+      "sha256": "b380855d512e11f0c4168db99f4396777d7b12e4ef80b97d1ec3b149c1a27f82"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/robot0_eye_in_hand.png",
+      "bytes": 52915,
+      "sha256": "8ae9a77e20fec296be66448061bf567ac744ea59ee01485cb9fb03e33234de9c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/inputs/restored/state.npy",
+      "bytes": 760,
+      "sha256": "deafcdd37d6f7cdcd80ef6dae3c935215de85d66e644e20e18c67788dc56d214"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/bowl/q0/metadata.json",
+      "bytes": 1222,
+      "sha256": "93ff9106951c8608ca41ff881bd688f831e84ed2e0c11ab627ed3bbdd44ae165"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/bowl/q0/normalized_actions.json",
+      "bytes": 4133,
+      "sha256": "d78592701eebd598b52b0f54ebc810d4a85465e0a2f4c38f8babd02135a7f93a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/bowl/q0/states.pt",
+      "bytes": 4824041,
+      "sha256": "6f8642cc8d086d01a6b7c1ae896af3ff3cba70c7f07012b6cc6d1a966d4789bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/bowl/q0_repeat/metadata.json",
+      "bytes": 1222,
+      "sha256": "34dda3bd9b94fd6eaeb694c2c68d2efb691d7e5dc09f9c40add709ed7c8af0ec"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/bowl/q0_repeat/normalized_actions.json",
+      "bytes": 4133,
+      "sha256": "d78592701eebd598b52b0f54ebc810d4a85465e0a2f4c38f8babd02135a7f93a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/bowl/q0_repeat/states.pt",
+      "bytes": 4824041,
+      "sha256": "6f8642cc8d086d01a6b7c1ae896af3ff3cba70c7f07012b6cc6d1a966d4789bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/wine/q0/metadata.json",
+      "bytes": 1228,
+      "sha256": "5db62363f814224a1bcc8395e87b2444cde2487a24f774dfee257a966f9199c6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/wine/q0/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "027c2aee4fc5b86149a614829794487d643dbf5537bb3353a4c3282c8e432886"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/wine/q0/states.pt",
+      "bytes": 4824041,
+      "sha256": "ccbbcf98487f230466326cf642e1abf0144bcaceb6130daf449e397455ec4370"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/wine/q0_repeat/metadata.json",
+      "bytes": 1227,
+      "sha256": "f57cebe61c9895b73d4c86ecc114334da385b8af263ffb8350ad3b3a07c57c08"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/wine/q0_repeat/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "027c2aee4fc5b86149a614829794487d643dbf5537bb3353a4c3282c8e432886"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline/wine/q0_repeat/states.pt",
+      "bytes": 4824041,
+      "sha256": "ccbbcf98487f230466326cf642e1abf0144bcaceb6130daf449e397455ec4370"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline_complete.json",
+      "bytes": 240,
+      "sha256": "314fb51d16c347c725b58b859fcb5e89fb2c772a1cf062d84aa05b6011ad8bee"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/baseline_controls.json",
+      "bytes": 173,
+      "sha256": "485a2e537f091c922bd94a9aa29a9378aba942f0c3e261134fa3336c3da5f6b3"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/actions.json",
+      "bytes": 23445,
+      "sha256": "92803b6150168b7d7cfffdc20b04d890d077f14bc78b52eb88c4cc4c7dafc5ae"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/actual.mp4",
+      "bytes": 219506,
+      "sha256": "06d442f0e2a3d73b04cb764f1d2c41e4ce736e5809ad7b1e040f92116a4034fd"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_00/metadata.json",
+      "bytes": 1233,
+      "sha256": "d3972cd5f6f96528598db7692a2dbeea2373a94b3f08adfbf14e00c7560b41e5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_00/normalized_actions.json",
+      "bytes": 4133,
+      "sha256": "d78592701eebd598b52b0f54ebc810d4a85465e0a2f4c38f8babd02135a7f93a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_00/states.pt",
+      "bytes": 4824041,
+      "sha256": "6f8642cc8d086d01a6b7c1ae896af3ff3cba70c7f07012b6cc6d1a966d4789bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_01/metadata.json",
+      "bytes": 1232,
+      "sha256": "48aedf57fba37399a40215bedbfd7bcb7b2005727e11839fea5892912768ff39"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_01/normalized_actions.json",
+      "bytes": 4109,
+      "sha256": "d9206b3ecbbf9d6b6de927fe1aeb06ef505597b71f10806de74c19c505d586be"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_01/states.pt",
+      "bytes": 4824041,
+      "sha256": "d05d0ad25f3298d7e32d9529465e7048168595d5c5f23214d41d57d34d2ffcd7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_02/metadata.json",
+      "bytes": 1232,
+      "sha256": "28ffc36df333d21bd3d457b18c9b5a55f32a35b7db1290a0f255a2b3085b86b7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_02/normalized_actions.json",
+      "bytes": 4140,
+      "sha256": "29211c761a80a45b3030723f61f9f84fb3d863ea38c8c2ab2f5f6a0ceb4134f3"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_02/states.pt",
+      "bytes": 4824041,
+      "sha256": "e4297b912f53c0849d761638833ebd86b2b743a9875182be938d18e22b50f160"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_03/metadata.json",
+      "bytes": 1233,
+      "sha256": "d3ffec278dd7d487ddaec312cb442986f9849aee58b5cd5140d540574ca63597"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_03/normalized_actions.json",
+      "bytes": 4099,
+      "sha256": "576c0b3cd4ba56cc581f22d77215ebcad3e17cfc60a606fae4717e4a15e6aba1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_03/states.pt",
+      "bytes": 4824041,
+      "sha256": "dde768c6d0e510897f29a3170222442e526e256f8e7db3157fc69267c159d58b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_04/metadata.json",
+      "bytes": 1233,
+      "sha256": "9b636b9d5726efc807c6d5ee460c5b45ee582b7d41fe70ea4a615368eb1861be"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_04/normalized_actions.json",
+      "bytes": 4067,
+      "sha256": "d323f3cc5fffb87d6d197410384d94194d55cb6884efd70228998bd2f11ee071"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_04/states.pt",
+      "bytes": 4824041,
+      "sha256": "817e3d43d079c6a51a311b31821f7d8274b868348152eed89ed23302e66e981c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_05/metadata.json",
+      "bytes": 1232,
+      "sha256": "2c042657268dfe1c5053d52f4713ba5a4ae26dc3dde295652cacc09f31b60b9a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_05/normalized_actions.json",
+      "bytes": 4105,
+      "sha256": "6bb663df4abfca3248832d279a1d0c536e04eb1d433e25752fd23244923f01de"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_05/states.pt",
+      "bytes": 4824041,
+      "sha256": "0e568aab77d19a57b139b385c5449d60a19e2c354e1945c4c31e7b6c9ce5c35e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_06/metadata.json",
+      "bytes": 1232,
+      "sha256": "8c4970d8b69746608f02aec8b42ccce11ca2a05e5185738798ad20d41b3d2db2"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_06/normalized_actions.json",
+      "bytes": 4114,
+      "sha256": "868193f4f928c52525bee8a22efb78777925adeff0abe53c3a846c8125a941e6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_06/states.pt",
+      "bytes": 4824041,
+      "sha256": "04f0d188d9bce9833dda56d934f48e0ab24f67f6ef3e88f6078d41e6b5f505f5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_07/metadata.json",
+      "bytes": 1233,
+      "sha256": "ae33e9782f23a0d27983bdf1a32bb6ad26be40dd6bb2fc175e062343a9cbe97c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_07/normalized_actions.json",
+      "bytes": 4112,
+      "sha256": "2c61bc35cd751f39d62449610e1d449ac07ae0df5330b14c925892b39c82e9ba"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/chunk_07/states.pt",
+      "bytes": 4824041,
+      "sha256": "dec493dbed07bb72e14b7d216ac4166b2a97ea3d85c19a93202ad4876043f48b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/denormalized_actions.json",
+      "bytes": 33549,
+      "sha256": "a6d9e95ba4947791b8dcd1f930b26907e45f9745205492032319a2f7c3138103"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/executed_actions.json",
+      "bytes": 23445,
+      "sha256": "92803b6150168b7d7cfffdc20b04d890d077f14bc78b52eb88c4cc4c7dafc5ae"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0000.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0001.png",
+      "bytes": 115738,
+      "sha256": "66909c03221bfc3ecbf2c2eafb51f47749dbced6fb74c4f7bef9c6cbbeffe82e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0002.png",
+      "bytes": 115692,
+      "sha256": "32b812872b0d1b78dacb387292bd9fdcb64c7728177b6c7f1c2a4bc12c17dd69"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0003.png",
+      "bytes": 115739,
+      "sha256": "c4be3127aaae1fb086670d09f9e67f2c817f780a5cb4d9fc8bb25e0c40d3fc77"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0004.png",
+      "bytes": 115612,
+      "sha256": "8883e9c6f1ce8292a98845b7aae8c96ffad3e219faf4e520e1a787038658d5d1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0005.png",
+      "bytes": 115990,
+      "sha256": "df407befab133c7847da2e79660f06330184084767343089dc1f9d9b8ac47b33"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0006.png",
+      "bytes": 115952,
+      "sha256": "edc154cae629640c5fa09b3f689ec7f9bba7ceabdd5e69542b372da5c27a12f8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0007.png",
+      "bytes": 116064,
+      "sha256": "5559e74372ab66b7b4884b5a3160c7f03335400c99f7947d761b94889427ab30"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0008.png",
+      "bytes": 115594,
+      "sha256": "8c0fb3e36e5c5620db93e21d7e6706ddb5ccec2e72142bb77746a8004dd68e5e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0009.png",
+      "bytes": 115698,
+      "sha256": "de8bc012f1ddf21a3630ff18d5b7cf9bc246ebf899beaaeb07a647429f2a600e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0010.png",
+      "bytes": 114846,
+      "sha256": "a3d6008f0b3c8166d556dae8154e3f69c67804d89b7ee8960b11048b4dbd6969"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0011.png",
+      "bytes": 114246,
+      "sha256": "b2829d8f6f3dc627a8d0dcef39e1ca1720a55b642d1b879e9335d9b806951609"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0012.png",
+      "bytes": 114238,
+      "sha256": "73743a904558de97e027d41af230ac7cea91efce0135d1eb6498a62ee9dd51a4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0013.png",
+      "bytes": 113967,
+      "sha256": "c83869991557ed9edc81d70a8297d1611651457aed2f3a74cd293c697535dabf"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0014.png",
+      "bytes": 113503,
+      "sha256": "7567fed7b49a1a63600e7f80f35569f6e5b559e246bc3f7caa56e57b6f58f069"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0015.png",
+      "bytes": 113899,
+      "sha256": "eab238ea621d6c1395f4a350502cabe7633bdfdd59bfda83157721887cc96fd9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0016.png",
+      "bytes": 113727,
+      "sha256": "1c38236872e2c23fb791e2365c32d5445332dd0dde1f1eae743f8a1408ccf91e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0017.png",
+      "bytes": 113973,
+      "sha256": "40b7ca0a67cbf9255fc62c8a098377294a8cc4b3f2761873de96b615c2d0b6fe"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0018.png",
+      "bytes": 113917,
+      "sha256": "b491a2abcf71b9c894eb6db9c33652ad613c747b1551c2d889068ee6da1b7d6f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0019.png",
+      "bytes": 114120,
+      "sha256": "3d33443ec0e198dcbda1dab3061022a9ae81edaabae319dff05b5daa7ada61fa"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0020.png",
+      "bytes": 114894,
+      "sha256": "6d4290791520c7e33d1ea1202ab82c6322b7ad8a9d043b003362411064ca41df"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0021.png",
+      "bytes": 115561,
+      "sha256": "1063b685fd5c1d5e6d6272b6d3d2f39e94e4f8fe2e55cecd9630d061c7b80d64"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0022.png",
+      "bytes": 115941,
+      "sha256": "f234e8b8b97238a8fb84e90dc333376a80183615604205d5a23f4264445082d7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0023.png",
+      "bytes": 116358,
+      "sha256": "326227ce8e486acbac3783585287646ef1dda309d220f5f0103f798bc612e08c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0024.png",
+      "bytes": 116698,
+      "sha256": "484e0b81c79373b3488f6ae77b8d8157094ac8521877d1b55a1a920ee0ff589e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0025.png",
+      "bytes": 116860,
+      "sha256": "38cf377a50a0026178381d965009542cb01ec80f66482aa0e784e2c52d4d811e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0026.png",
+      "bytes": 116796,
+      "sha256": "e8c488800515ab7d229519a2d6daf4dea345a8bdda9ce4d738dfedbb9f993f7a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0027.png",
+      "bytes": 117942,
+      "sha256": "4185242eb5f47ed978523a50ed285e7c5dc9bdb262c7aedd1827890f89274bc0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0028.png",
+      "bytes": 118774,
+      "sha256": "55fd7c0757c32f2b29796006f4d3ab1aff730b83c2ef414912fbbff4c9e8685f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0029.png",
+      "bytes": 120025,
+      "sha256": "e3bae8d64f6a1a19a023d1a775b3fc7a29749a9df2c16b8d84730ab214ed1fc3"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0030.png",
+      "bytes": 120649,
+      "sha256": "835e9eea9ddb3c97434ab406f56c096dc809952c0a538055f2b209715e4e75e0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0031.png",
+      "bytes": 121566,
+      "sha256": "0250a85ca164fdc38758ab45af903775a12f3d08ce604352b07cfde2ce296f56"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0032.png",
+      "bytes": 122084,
+      "sha256": "2a6a105d8d682421f150218b2ca5c3d61df6f1077c6d7c5d76b58fe6b8ebd9c7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0033.png",
+      "bytes": 121035,
+      "sha256": "0a8d689f015fba564efa4294c10da3bc369663b5ba8c748eeb9c471a5bec4590"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0034.png",
+      "bytes": 119805,
+      "sha256": "c2a79055c4d5b5038a62bd6348dc08de07d7518b4a075b6ed907d6eb0b817a4e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0035.png",
+      "bytes": 119977,
+      "sha256": "0416e991d906beb8d09493b953e8e6ccf03694df0c6ecc0b0297f8bfaabb0853"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0036.png",
+      "bytes": 119166,
+      "sha256": "196ee933f21f57bebcbe593dbce677269b1c66aa6ca0eaf64d02dc246ae2f7bc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0037.png",
+      "bytes": 119244,
+      "sha256": "936fcd18a944c9b7658cbecc741e6885c0aa43464b0f1df9327bfaf356485bf7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0038.png",
+      "bytes": 121149,
+      "sha256": "5ac1edd80f68bab044acc92ff3539a5c9bf402d1640db2a4747178965296c58e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0039.png",
+      "bytes": 121131,
+      "sha256": "3d40a923e8e706ef62cda68084838b47b65e0904a50acf4b2b98dbc27c248cb5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0040.png",
+      "bytes": 121573,
+      "sha256": "57d065fd0ec348e14e6bed09a8bcf5d4d60c3cfa3f07460dc8321b9573491eec"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0041.png",
+      "bytes": 121431,
+      "sha256": "d3541c16c37b85549f5d4185164f46228f2d489768f05c8847a18bb0fea2268a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0042.png",
+      "bytes": 120639,
+      "sha256": "7afc82e9a29f229643076688a73a6fdbf483483c016e668012fec287c825935e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0043.png",
+      "bytes": 120587,
+      "sha256": "ac9fe713ce7561e1f2fd0cab66aa75cbbe47a480ae790339e447262ad482634d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0044.png",
+      "bytes": 120378,
+      "sha256": "507c864d49e37b7d06b995dfaf4ca8b56e0e2bf33ec22a89f40015f13798b4cb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0045.png",
+      "bytes": 123193,
+      "sha256": "672e4abc831a75b99a17dc8c2b8be342e9a7baa62b1ce3cd2284790a897b6056"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0046.png",
+      "bytes": 127611,
+      "sha256": "67c851dd814618b877a8d1044f2a28cec3c670749cb5345ecfd6875136208729"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0047.png",
+      "bytes": 131647,
+      "sha256": "efb8ff4cbe9b6f99223b85a36feed8b5f2c2e47f64d2bc78cbfe15da3c0b96c4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0048.png",
+      "bytes": 133977,
+      "sha256": "494357f80ec9f0b7aada402ad84ea1742bd2f6ef08f79f5fe4f34591261a8dcc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0049.png",
+      "bytes": 134570,
+      "sha256": "c4171548e5d63b3686c11a009786a40eb06f91b6e201884d737f37ab9adeea18"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0050.png",
+      "bytes": 134733,
+      "sha256": "9959cf11ece8b500c03da680122e26ebe83fb46c5e54782d2f322aa41f6a33e1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0051.png",
+      "bytes": 134687,
+      "sha256": "063a1fbc0270eec1b06b75d4864b372ebf67737dd4c38788db6fb05ba3a4b076"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0052.png",
+      "bytes": 134884,
+      "sha256": "b60167419ed4b0f7302695a82c0bc44b2fd5304c7557478c20bf839b4ef4c040"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0053.png",
+      "bytes": 134876,
+      "sha256": "35f7e0d262f603c058561a72dce09d00908338a41efedb774a8d2c57115c2b9e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0054.png",
+      "bytes": 135088,
+      "sha256": "923e2447898cb7b6994548aceab6831c0407681553694bde5a73fbeac8371adb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0055.png",
+      "bytes": 134704,
+      "sha256": "67172b80b52f30fe29adaae5d19432396f4af4ed4fee564a69c011388edbf7ac"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0056.png",
+      "bytes": 134464,
+      "sha256": "58065de7fb3147efeac5ae03665f82a210127f7dd15452485e8a63bfd279022f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0057.png",
+      "bytes": 134163,
+      "sha256": "98318be3fffc9e09d8763c9411c199cd986e7fee20bb298794919d13f04f25f9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0058.png",
+      "bytes": 134058,
+      "sha256": "800769f0ccee7d30489ebd3585b9c248f6c120144596b8a087d808c4b440f35a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0059.png",
+      "bytes": 133170,
+      "sha256": "76842702dea32dc3fa81913805cafb4e7cb2a12783cc1cf8446e31c091f40790"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0060.png",
+      "bytes": 132240,
+      "sha256": "dad80c3c07a343c3d81465cfec683035240af10c9f6ab9abac285f8bffab4dbf"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0061.png",
+      "bytes": 131515,
+      "sha256": "1b1f43cb54ecdb4aa4c65cb366240af3f30edcb63bc65ab353f536c29c2d73fe"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0062.png",
+      "bytes": 130352,
+      "sha256": "5ec87a1b042a106e77d7e61abe344ecb7e06a16646e6d0a59850cec78285790e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0063.png",
+      "bytes": 129007,
+      "sha256": "8015792684425322e02e34c8fe566dcdca4d3c82b1b039186aca175ddae9dfe0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0064.png",
+      "bytes": 127911,
+      "sha256": "8cddd9c730255638aef8d8ecc06642981ff78cc561a4cb495df51c41001ffde6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0065.png",
+      "bytes": 127488,
+      "sha256": "3008538f04276686264d146d1ffc63800549edf62e8c2ac22c8cf316967bf0cc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0066.png",
+      "bytes": 127197,
+      "sha256": "46015de623256fa197e3071d4ce54c8b324537353e028d54aca8d151da9f2446"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0067.png",
+      "bytes": 125615,
+      "sha256": "f51a3e7eb89869aea01933e82b448c9e750dade7d9e27dcd9741208224e6615a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0068.png",
+      "bytes": 123565,
+      "sha256": "d83629a6f7b1d90a64b08d2f4c34dc623e55181f42b011d111777c5fd8ba0d50"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0069.png",
+      "bytes": 122779,
+      "sha256": "42318e28b489da1680d7a883a1683dadda84542ff9bbd8b34fe59a7adf7839a8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0070.png",
+      "bytes": 121646,
+      "sha256": "40844d77a0030f5d2c10eb29e5d6c3cf4a7f695df0ae7b10d04655a3d7b77e6e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0071.png",
+      "bytes": 120727,
+      "sha256": "72d4c967d8d55635386dfa8514862f19077ee6a75c88e0e1486f5a7b4c15feff"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0072.png",
+      "bytes": 119914,
+      "sha256": "595eaab7b2f1dfbd50b2ae57c8006056ccb40efbd002b9f6ebeaad14c489fc14"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0073.png",
+      "bytes": 119532,
+      "sha256": "b48b0ec67372d496cbb8b5dbce2f4665095a6fd209e298e4b33e0df91f440977"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0074.png",
+      "bytes": 118679,
+      "sha256": "d67d822d7d62c96ca45df0e2411bf22f5d3e2161f807d4d6beaf6400ed32381c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0075.png",
+      "bytes": 118023,
+      "sha256": "bad913f77b051938eb069e2d63c728db91830cc3c4bfef8ecc3190241474b579"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0076.png",
+      "bytes": 116971,
+      "sha256": "9a7ffd8fe0deee233cfde5c104aacbdfa5df1ab3a59cababc4d5ebea6b96f5c5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0077.png",
+      "bytes": 116886,
+      "sha256": "601b3768bc690db40abf2ebf8f9439a64ec530d66985ef14338e7ffead047210"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0078.png",
+      "bytes": 116547,
+      "sha256": "a521663dce0852a9a1f05db1c368fd5cdfb7e1c86027930dbb477a9a882fdd92"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0079.png",
+      "bytes": 116096,
+      "sha256": "c6f957e851732cb7326c30ac5cc70d62af6b32b73f57e4b51e9ae1bd030e5944"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0080.png",
+      "bytes": 115131,
+      "sha256": "1be20fcd76dc5a18d27e3bd648976188b32598a3c600ae58d0b9ba946c4bf542"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0081.png",
+      "bytes": 114266,
+      "sha256": "1b1162c8c83b6dcc4e34d694228777521e2f7b1f6139fc65aaf0221764947132"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0082.png",
+      "bytes": 113396,
+      "sha256": "8ce0fccbd4863c82dee65fb6643315ecf4427f7a9375455298eeae10e5754554"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0083.png",
+      "bytes": 112558,
+      "sha256": "717f15c7b3da40b094fe1d9815746e32663fe379a19145065f0e0abb59800d8e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0084.png",
+      "bytes": 111723,
+      "sha256": "5fc5763b7dd49757a95c43ce79530a007d51183a2aa3649a41da65cfd58e300f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0085.png",
+      "bytes": 110906,
+      "sha256": "fe0b3f09160b844d70233c4bd2d6785aba55f07168ab026d0d5309007f9b66e7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0086.png",
+      "bytes": 110143,
+      "sha256": "66faa0cb2a375287d0912df932c845b63453da4beb5cab114fa8441b067d9cbb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0087.png",
+      "bytes": 109204,
+      "sha256": "b83bd829dc8e5f6bc50e72ab665ab3237617bb36fdbf17f77e438fbd1d256747"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0088.png",
+      "bytes": 108761,
+      "sha256": "664cdd329a9431b0c24b468cd1dada9357077f31547033b3fe6065e4b30e40e4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0089.png",
+      "bytes": 108005,
+      "sha256": "6f0d977559da10eae9cbee6d7dac7a957fc33b5484608b04ae07a7e824e56b85"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0090.png",
+      "bytes": 107197,
+      "sha256": "fdb8618204f11dc048e17aa038b8c338ac96610e8b6fa44fd957dfcc19891db5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0091.png",
+      "bytes": 106840,
+      "sha256": "e4c12b5c6a6de55e633d1677e4d035dc2a134c639869f2d5150dbdc273291f44"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0092.png",
+      "bytes": 106730,
+      "sha256": "4d3fb993d58f81aeb543843f437e4eea36f7abab20720cc3e9a0c75ba99f93fe"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0093.png",
+      "bytes": 106868,
+      "sha256": "d8553a953129e6e5a3f3f85e75f5ff8b0c675d5fcc75d15ead8ff648223275d0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0094.png",
+      "bytes": 106812,
+      "sha256": "ed7dfedee19291be2e8f5fe71660c6ee298ba6d07d992be725a75c8a4c75daa8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0095.png",
+      "bytes": 106360,
+      "sha256": "60c0ba53af131e359cd765f9df9e557cbb49c33e9ca03d6e2c702096b80b9734"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0096.png",
+      "bytes": 105603,
+      "sha256": "84dcfd73b7377f736c07ed083484640618d20e3e6c37c80b3af0277454a4150b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0097.png",
+      "bytes": 103984,
+      "sha256": "800ebf5036f012f2c5e445a8cd28606fcd20c5492e360c70fec1818bc1db14d0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0098.png",
+      "bytes": 101717,
+      "sha256": "3d4b1db3088b8a0b1b3f8942323d6f218211b960d58c51fc1bf88a7b3bce7e83"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0099.png",
+      "bytes": 101527,
+      "sha256": "800835f5080719f21c2970cc4ad06b16458f686cb9d92e4a44e381d61c9aa06f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0100.png",
+      "bytes": 102524,
+      "sha256": "e2b3d5cbf4f7511dcd5b4baf9ea67de4fdc707eebc3f946b2d75340436219cd6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0101.png",
+      "bytes": 104802,
+      "sha256": "704c057280c091dd9fdb68c979c40d445a21f3bc0a277e39d1a3294f90952aef"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0102.png",
+      "bytes": 106349,
+      "sha256": "da3eb658cb900b054618626e8e446a2e9b6e6e84e371fc791a67c47a81b84f44"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0103.png",
+      "bytes": 107713,
+      "sha256": "5f3abbd0cdd917ee6cc885592a8072e9e797afde98c7ce3acec5aa2ae2736552"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0104.png",
+      "bytes": 108831,
+      "sha256": "3b8d7d5582aa761e007626960439dcce0197d2833a03d6fc683a62fe82ed020a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0105.png",
+      "bytes": 109635,
+      "sha256": "a7c610f76b7e59cd78f1b72258922fe8e16ebc6dcb2a78c217399c914f1b62e4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0106.png",
+      "bytes": 109052,
+      "sha256": "75c5fae424b54e80ce14d073777b923d70759b3f15f156033ed31e04bf6822e5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0107.png",
+      "bytes": 108247,
+      "sha256": "8fef5b2906d278709ce3310a945ff9d4330285eaee18be478846428543b3ed8a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0108.png",
+      "bytes": 107175,
+      "sha256": "7f4737b628436028b5dc1102338f2801d8093f04dbb23a9810c61f247ca576b0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0109.png",
+      "bytes": 105955,
+      "sha256": "4973623bbd396623e53332e616af086debcc72c2bd941d2f5cb1eda7d02ead03"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0110.png",
+      "bytes": 105147,
+      "sha256": "353782efed211f0d3dd968a57f249627d0d45dffed9ecb1f0b53fb16bc305aae"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0111.png",
+      "bytes": 104498,
+      "sha256": "c7f4770de4ee755c430039cdf9cee6aab412419fc06ec22168545272d23f5067"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0112.png",
+      "bytes": 103450,
+      "sha256": "621dd0d095489486c77f47a4787859b3f3801f9a4a24c9fa39b1922b93af7dc6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0113.png",
+      "bytes": 102263,
+      "sha256": "510cb84893b147f75e950cec23fcb74936d918b18c889e02975a204a9408f096"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0114.png",
+      "bytes": 100443,
+      "sha256": "1f7db10249920fab2c2632264128128abaf6b74791d2dba20758f681cd87f6dd"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0115.png",
+      "bytes": 98197,
+      "sha256": "4786171f687fd9c00a26ac17decc2e93d8b6596496941fb178ccb7c96b2f3800"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0116.png",
+      "bytes": 97299,
+      "sha256": "1943bc6492ce90c67bc59bb94d3a00eb9a5a3be10bc6a3a4d08f8607a7f68bff"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0117.png",
+      "bytes": 95891,
+      "sha256": "cdbc502c163fc9610d90fb20f6762a0f935b587351f1ccb5e560df2efcdad9f0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0118.png",
+      "bytes": 94977,
+      "sha256": "95b5ca03e82bcd4617093207c777e189d40f5636490e8c4905efae887546c750"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0119.png",
+      "bytes": 93606,
+      "sha256": "0368eac067b2285052ad4f12e46393efbe8785c94b3ba4fefa57d662187381ff"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0120.png",
+      "bytes": 93050,
+      "sha256": "65bbdc28c6a487791c3d5699cad351b1dc589d69f4f0116be707bc427dde8c4d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0121.png",
+      "bytes": 91943,
+      "sha256": "ebd9d9e9ca726a264d4ab0e2bdd94bb051250be137efc941a9475239eab84328"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0122.png",
+      "bytes": 90967,
+      "sha256": "83eef0da34ed66a10c5005a33322c3cf7f13bbb1f38a38892fb115cc6a731347"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0123.png",
+      "bytes": 90350,
+      "sha256": "5cf5a7b4388393fc310e7d247d58c2afc97ab67f1bd088691f1bd7ac1dcdabfa"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0124.png",
+      "bytes": 90172,
+      "sha256": "a1863120bc5fdc329242e5addaa7fb2ed5c02a5ed322b96f0a0e94b32d7fece4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0125.png",
+      "bytes": 89312,
+      "sha256": "512ed1555c74deaa9007c6244573ac8d2d7fbb1a9fc7d4e54e465b965b587f44"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0126.png",
+      "bytes": 89262,
+      "sha256": "0739b8582ddcd6a8c495cfbd6bc062346da057139743de8b1b41a8813e71653f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0127.png",
+      "bytes": 88849,
+      "sha256": "e4ab204030f3a934761ec29f7029ee5f6e5ee089374bd35b5e0887fdc092f1bf"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/frames/frame_0128.png",
+      "bytes": 88970,
+      "sha256": "c57553e219580d5114699e0cfc508cbc88e9d07963d1a8c94fc0d8025e17c0fc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/agentview.png",
+      "bytes": 60486,
+      "sha256": "fe42f1bad4df2c51236934a15c8d36a8bf18aca73e94d94aec408909f692f82f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/arrays.json",
+      "bytes": 11554,
+      "sha256": "bd95816e2c7e18fc19422df99d9372d45caf7b920e8d155c92862e80ca5172da"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/cameras.npz",
+      "bytes": 1612,
+      "sha256": "48648519fe6e1a5dffe8e61df7ff10fa3ea7d506df574aa7ad51145358bb03a9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/fixtures.npz",
+      "bytes": 1448,
+      "sha256": "2375b61c135a342b5ee984e9330d0e2aa784e3f04ff9d42d5376d4d13ae46759"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/input.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/objects.npz",
+      "bytes": 4527,
+      "sha256": "35a475678fbe1027cebe220c2907be9e58ad5a6e9a2d5d9f44f6480dda6a77d0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/observations.npz",
+      "bytes": 154084,
+      "sha256": "b380855d512e11f0c4168db99f4396777d7b12e4ef80b97d1ec3b149c1a27f82"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/robot0_eye_in_hand.png",
+      "bytes": 52915,
+      "sha256": "8ae9a77e20fec296be66448061bf567ac744ea59ee01485cb9fb03e33234de9c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_capture/state.npy",
+      "bytes": 760,
+      "sha256": "deafcdd37d6f7cdcd80ef6dae3c935215de85d66e644e20e18c67788dc56d214"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_checks.json",
+      "bytes": 27112,
+      "sha256": "88e0b9946661b388c37a0cafb4d436cf7a8a96c94aaaaaaf590886c29bcd16ad"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_controller.npz",
+      "bytes": 2232,
+      "sha256": "8f2a6568d1f27d1bb285f89385ed19f5d8270df391edcb84137eedcaef957e8e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_controller_checks.json",
+      "bytes": 239,
+      "sha256": "b1efebd793a8996726f8026552e8bf0fd7c8216322a74c1e120527988d523253"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/initial_png_checks.json",
+      "bytes": 83,
+      "sha256": "e54717423d2b1337096573a04f7da14cab64e7055bfad49756cd849189175ee2"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_00.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_01.png",
+      "bytes": 113727,
+      "sha256": "1c38236872e2c23fb791e2365c32d5445332dd0dde1f1eae743f8a1408ccf91e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_02.png",
+      "bytes": 122084,
+      "sha256": "2a6a105d8d682421f150218b2ca5c3d61df6f1077c6d7c5d76b58fe6b8ebd9c7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_03.png",
+      "bytes": 133977,
+      "sha256": "494357f80ec9f0b7aada402ad84ea1742bd2f6ef08f79f5fe4f34591261a8dcc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_04.png",
+      "bytes": 127911,
+      "sha256": "8cddd9c730255638aef8d8ecc06642981ff78cc561a4cb495df51c41001ffde6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_05.png",
+      "bytes": 115131,
+      "sha256": "1be20fcd76dc5a18d27e3bd648976188b32598a3c600ae58d0b9ba946c4bf542"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_06.png",
+      "bytes": 105603,
+      "sha256": "84dcfd73b7377f736c07ed083484640618d20e3e6c37c80b3af0277454a4150b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/input_07.png",
+      "bytes": 103450,
+      "sha256": "621dd0d095489486c77f47a4787859b3f3801f9a4a24c9fa39b1922b93af7dc6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/normalized_actions.json",
+      "bytes": 32858,
+      "sha256": "87fd5ced46e0db3a02def59ce4111e20f3e2a03bf8c7a6b38ccae475a33bebc3"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/query_contract.json",
+      "bytes": 14271,
+      "sha256": "d1b3772729715c0edacf730cac9d38f6969c100c5d518a6ffbd2aff70f38cb1d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/sim_states.npy",
+      "bytes": 81656,
+      "sha256": "0d4946c958f0bf421937f9b1135d1e3b2588c90f1ea7f7d9ba726ccd15d9a9d8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/trajectory.json",
+      "bytes": 693087,
+      "sha256": "fd71d8a67c0d432558be1f92ffd302cf16d3b20ea875bbf73da9d63ea756d8f7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/complete.json",
+      "bytes": 324,
+      "sha256": "ff1f223f4b569aa0e862a5351fa0de6be0a67b778e21c61b42d7ca6fa1f93c88"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/provenance.json",
+      "bytes": 3385,
+      "sha256": "84769ceabb0bd6fe38863e5ef63a681c70fdad1a67f40b9059070ee0653ec0e6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/reference_manifest_checks.json",
+      "bytes": 5864,
+      "sha256": "75cbcc74dbde71ddc816f4dbdc6535abd59edab9a598f664c5659910db49beab"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/result.json",
+      "bytes": 18400,
+      "sha256": "7ab4bc0b2d267f30ce9cc51ccac2999404b7ae2a37dca4a06d828392787eea51"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/status.json",
+      "bytes": 117,
+      "sha256": "3a59893a2f91eaa98f54519668a6085036b24e4650dd63450ef1fb3ee0ea8988"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/actions.json",
+      "bytes": 23131,
+      "sha256": "660b36003f631dfab6d01605fee10403ea16524a8dad8027d494a689074b8315"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/actual.mp4",
+      "bytes": 210696,
+      "sha256": "8f3f280b2ce4c00691b9ad4d220e41d6c8f95d0a623c0b40a6583dce422f7eb5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_00/metadata.json",
+      "bytes": 1239,
+      "sha256": "2ebb13064be60bbad854d90cbcba6ab465a48ed79d0cdf21dff1b83a3be4285b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_00/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "027c2aee4fc5b86149a614829794487d643dbf5537bb3353a4c3282c8e432886"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_00/states.pt",
+      "bytes": 4824041,
+      "sha256": "ccbbcf98487f230466326cf642e1abf0144bcaceb6130daf449e397455ec4370"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_01/metadata.json",
+      "bytes": 1240,
+      "sha256": "68e5a276ad7396cea2db0297f5dc8c4b7892ef35a9c83436dab72a06eb2d472d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_01/normalized_actions.json",
+      "bytes": 4089,
+      "sha256": "8c7df6827d629af376af65622cf2f326b979c38a0bb66019b77078934bafbb56"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_01/states.pt",
+      "bytes": 4824041,
+      "sha256": "067519d52b24348434a39b3ccf00309d77ebfd351f4760da439e8a6d348508bd"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_02/metadata.json",
+      "bytes": 1240,
+      "sha256": "59e3aa5ece19bd55e74cb85349bfb64662c620cdb56ad797f72a5bb7c7ee8e02"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_02/normalized_actions.json",
+      "bytes": 4092,
+      "sha256": "4f16f45daec51f8f39387bc3d33915844fbadfad9d44bdd5e6cbb051996b562d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_02/states.pt",
+      "bytes": 4824041,
+      "sha256": "877b18a99e4ce23b066884747c4ab1d78e406d981d2c43ca4cb80b3c6a678967"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_03/metadata.json",
+      "bytes": 1239,
+      "sha256": "1cc3fc4eeb47ecdf718f79464f12d28b138825f7e1b692b0dc22d9f3a3452aaa"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_03/normalized_actions.json",
+      "bytes": 4071,
+      "sha256": "7f767b2dd0d9459e6dd33046d72b629dfd6d7554423394172b3ad7aa6273c36b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_03/states.pt",
+      "bytes": 4824041,
+      "sha256": "2b7719c792de5cdb4a0b5808fdb55c27184319542faeb7959c41ebd01c9269c8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_04/metadata.json",
+      "bytes": 1239,
+      "sha256": "e15a05ed5edcc4bd9772035e682320d2413d293b086c0dd8f67c3640c57dccd8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_04/normalized_actions.json",
+      "bytes": 4068,
+      "sha256": "e060a37e18d0678ca5485d92669c241d208da9ee763b77fa7672052ddceb4bf5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_04/states.pt",
+      "bytes": 4824041,
+      "sha256": "30be0318bca62cf0a815222d3be62983564fb71e0372d56134370b46e6b7a068"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_05/metadata.json",
+      "bytes": 1240,
+      "sha256": "445ac506020f0c573565a71226941f9a09d7b1c8e73a4fe9331ae1100dc9e0e8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_05/normalized_actions.json",
+      "bytes": 4103,
+      "sha256": "c9e1ef8f26835b6ccc58dc7a391e8d20b901ba6d4d8e49f45c3f6ef961cae136"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_05/states.pt",
+      "bytes": 4824041,
+      "sha256": "5d456c5d3ba06a42420b999686aa8f2fb81f220b4e024cfe6869433d303354c1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_06/metadata.json",
+      "bytes": 1239,
+      "sha256": "5f248e4bccd1b8acb7cbff2824e289e12611078ed938fb0949ad18f4ffb6bf0f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_06/normalized_actions.json",
+      "bytes": 4106,
+      "sha256": "8623649a6d48ba2f8618373074a85c498d13c3c49d9bde87e950e466124ac1b9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_06/states.pt",
+      "bytes": 4824041,
+      "sha256": "b598dd1e39156099799b8d6f73cab066e33c0fa69c248f839cad1a319dd74bd8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_07/metadata.json",
+      "bytes": 1240,
+      "sha256": "9c51a15c8f158e3b640313edc9d43ef86db11b0a2f69f97e17529152294c3f4b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_07/normalized_actions.json",
+      "bytes": 4149,
+      "sha256": "e058266379f44107c940c2d40ed3c318ed7cc960262d8635fad3593d34bf3c96"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/chunk_07/states.pt",
+      "bytes": 4824041,
+      "sha256": "6fd1035e5a0c3310624d4eb0141cc1d23444e2c1b8c58ef85d0cdac36101942a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/denormalized_actions.json",
+      "bytes": 33444,
+      "sha256": "95065723ea3623fdb5340b56defe80a72bda3a4abd060d61e540dcc1c04a5145"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/executed_actions.json",
+      "bytes": 23131,
+      "sha256": "660b36003f631dfab6d01605fee10403ea16524a8dad8027d494a689074b8315"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0000.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0001.png",
+      "bytes": 115557,
+      "sha256": "16c753989404df6765868742ad250383b479b4d6c48dd7145f91c1cc84b4ab62"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0002.png",
+      "bytes": 115935,
+      "sha256": "5ab9e0b992b32d38b2651d60909cdc267ec4a688134580dddc24b105e48bc8ac"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0003.png",
+      "bytes": 115486,
+      "sha256": "f2f3b365615bdb7182bb21c238cf801313e7f4410a6f688a7cc95ecbcd30593c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0004.png",
+      "bytes": 115801,
+      "sha256": "5592bd50819e458a2b25d25c66fe9bbbfb75b507107be906bf33ec2bbfbd4602"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0005.png",
+      "bytes": 116042,
+      "sha256": "db9c53d5179091003b351d035af97e8e28aa885a8a7118f0270acc3faa787d4b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0006.png",
+      "bytes": 116253,
+      "sha256": "1816b728253f703e3ad16123dd90f69d6efba002f39c0e0981e0253e8e9717cc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0007.png",
+      "bytes": 116582,
+      "sha256": "558bb22460469dbcb6921d9c81f4ba6a1886aa57c89b649a4c387f3ec9d6c8f6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0008.png",
+      "bytes": 116981,
+      "sha256": "150e44f566ac863d116c958281ac3691062a9be15728fb9c062449a5a9daf3eb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0009.png",
+      "bytes": 117376,
+      "sha256": "afb98c551056948528c0d8c66a1063706b6736748dec37f0d256103ca9615d9e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0010.png",
+      "bytes": 117564,
+      "sha256": "b9ccfa7187e3984a1333a37f1642e86c2b9ff15e6ba41d6d409f529deb6721b4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0011.png",
+      "bytes": 117922,
+      "sha256": "1aa5df0f868cd7ff0ebcba5dae64fa500761c1ede4f0e1530964e74ead9a07c3"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0012.png",
+      "bytes": 118250,
+      "sha256": "072bfee6a39565d5a22808cf596a5be3b923067af201ba8edb6443018d85de0a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0013.png",
+      "bytes": 119049,
+      "sha256": "1d1283725c791a77dbb26570fae2bdd29f529214daa33ae4206220129285e3a8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0014.png",
+      "bytes": 119623,
+      "sha256": "ec4ab2c3824558d14fca52d8c3eb7ee45d3b89bf158a40c711a641a427614aec"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0015.png",
+      "bytes": 120410,
+      "sha256": "610da7a1983a1f0cb9f118be689a7c322cb1ac393d997845af8f2d358ebb7267"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0016.png",
+      "bytes": 120935,
+      "sha256": "bc969d645293193bf095f9f30e99bd1d21fbc8d885e4ae4e62b11bc5894c59fe"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0017.png",
+      "bytes": 121368,
+      "sha256": "0903320a5348fab438bc50faae02ef731adf9d2b362ac974dc465f88dbec4073"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0018.png",
+      "bytes": 122487,
+      "sha256": "66e6c352383fc276683e4452db3648e9ab7ed51a4d005e870931b7fe6142e151"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0019.png",
+      "bytes": 123281,
+      "sha256": "22531ca936a3ccb678d755c8f33e17797d9cbce46285c8b8329bd9f8775cba6e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0020.png",
+      "bytes": 124046,
+      "sha256": "3a2e19963bee617ca244667b26f3cd581d802409b7974db295de11267748cd60"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0021.png",
+      "bytes": 124502,
+      "sha256": "2d768f7e0097636d01129fad464f7ecc43eb914bdacaababc392197186400ae5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0022.png",
+      "bytes": 124356,
+      "sha256": "fd0c6a0f720ee141819b669173940db0a3df683e1e3896174102f5ee372bce10"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0023.png",
+      "bytes": 124978,
+      "sha256": "7cfc5d6c6046c9b0756960d1296c9258d00551d34f9e457671dda190050a4ca6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0024.png",
+      "bytes": 125217,
+      "sha256": "b77084d56a9a7a401e8c54d6919efe62f92c82698c7f29ad37fd6e0ff3a95bfe"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0025.png",
+      "bytes": 126396,
+      "sha256": "fd08ddbdafd08960f3ea067e1539f7bc425202f9afb31b4e44b467029ad2b53e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0026.png",
+      "bytes": 128234,
+      "sha256": "060072d418cc1550904cb2e1abe92c34c665ba6d924ef3784a5142d44ae4de7f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0027.png",
+      "bytes": 130024,
+      "sha256": "46cc053934cd5076573a237506b0d80c6bf04c87ae0a53e0619d104b3ccc4b1d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0028.png",
+      "bytes": 130365,
+      "sha256": "d3a1da674b0984af3ec18698ab707d946868a43d1623fdd23c62f4045ace445b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0029.png",
+      "bytes": 129360,
+      "sha256": "b137a9a29510aef743672920c88ed6748492904ed67d0645bcd78ce1151a8f5b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0030.png",
+      "bytes": 128048,
+      "sha256": "85ec984ab3858db1f89b907492a585607bfb6c371cf7a6f2f6cd2bbb38156852"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0031.png",
+      "bytes": 128167,
+      "sha256": "e6aeed668f464184b31a251075b3cad329da826c9d4cd00dc1c8f8399a8aa3d4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0032.png",
+      "bytes": 128386,
+      "sha256": "986b9ffeb5948a565eb9b8b4867bcd1e00d42a41a41fa66672190272f317ba36"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0033.png",
+      "bytes": 128332,
+      "sha256": "12cdc84e9cf2f2b053e7edc1520f385419a0ea54c957d15d99fedb482250ab04"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0034.png",
+      "bytes": 128212,
+      "sha256": "85f475eb5634006acd25f433f3120f9e7fdf3e48292fab400566464ca43de76b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0035.png",
+      "bytes": 127793,
+      "sha256": "d6eab6b712d6ee083b7c8fe10e9d4917a953136317d932c596f70f4f231fae8b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0036.png",
+      "bytes": 127700,
+      "sha256": "586cda3395878fa3e797fd968e5608e11c973ff222e27c053c3b6cdd51675142"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0037.png",
+      "bytes": 127437,
+      "sha256": "48f6217ac97c2af3d3e1f5880fa66de9a33a048d7c0f8d5bc7a473777ab9c0ad"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0038.png",
+      "bytes": 127841,
+      "sha256": "ac18444dd07e6ccd62c90bb508c9bcb9d0e588678e8b8a3d210a941dc6623876"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0039.png",
+      "bytes": 127894,
+      "sha256": "89984aa9f12475cbc81f647600f895a93890e9bf7d1e1a14fb02e64be14b4df1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0040.png",
+      "bytes": 128180,
+      "sha256": "29f951726b3d49be24e5c1bbfe6570215d3b8abc2b2d6d0ab6b1ef3300f2b2e5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0041.png",
+      "bytes": 128154,
+      "sha256": "16fd294558c61ebb2cd934a1904b3734c3968d8a1a190ef80a2f482390fc18b5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0042.png",
+      "bytes": 128373,
+      "sha256": "473f1b598bb691eb4b666fe72f7dc642932bb5ebce4e2f3a92818ea85dd97849"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0043.png",
+      "bytes": 128101,
+      "sha256": "f42d769bde5f809a510dc627a16469918f6941150e068a59f775dcddd2fcb241"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0044.png",
+      "bytes": 128237,
+      "sha256": "c3ebb329847714618dd315bccd1f5fde5da53b2b46f09fda90b98fad1b1e2370"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0045.png",
+      "bytes": 127822,
+      "sha256": "94653ed33d488101f05419c0debc521ad3c6692ffd2fba01e4a28c628b4be62a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0046.png",
+      "bytes": 126068,
+      "sha256": "79e755c7c7783c8b307749610f977cf3a3d149fbe6ada98f064f81be4f782832"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0047.png",
+      "bytes": 124362,
+      "sha256": "06baa3c7c6a5e728a54e5568613b64a8de061f905bc161157caa05ebeaff8ce7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0048.png",
+      "bytes": 122256,
+      "sha256": "c2da37f85430657dd6d253778ab11b92f8b1a8b47c44245366936f83e433fe5e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0049.png",
+      "bytes": 121015,
+      "sha256": "9eec7e13806c718d183af9f97c47c59c498a17256c0e7036101915ff7112a3ef"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0050.png",
+      "bytes": 120480,
+      "sha256": "0b83d5d2a354b895bf8b4be0ca9db277328a7b77b3449af62525eab4fef3850a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0051.png",
+      "bytes": 120262,
+      "sha256": "f72bbe2da3f0b3af9c932f447e8df9f6ef72b2a4c9b9fd8aebb38622eb1e59fd"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0052.png",
+      "bytes": 119714,
+      "sha256": "2b4378e6ba401eadc5e3c3d5f9b6935c8c0ffda597a05d57193765c7055d651f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0053.png",
+      "bytes": 119230,
+      "sha256": "070f62f9f9c02bdcf46f101a8267e20159529406846e8fdcbf920bb9b30d3f32"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0054.png",
+      "bytes": 117912,
+      "sha256": "1384b53303acb6bf2ec863b701495982f961b5940b8792ec20282edc02dbd397"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0055.png",
+      "bytes": 117413,
+      "sha256": "babfd59f39d5b64beab3ddc49f871531c760d51ba41a2f4f414aec934261a959"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0056.png",
+      "bytes": 116775,
+      "sha256": "0dd303b2eae1e977b7afa3c54e604fd67a2e970056da3c8f4d87e5d604e098f1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0057.png",
+      "bytes": 115247,
+      "sha256": "b2a9dd5c4ea373aca5e5c5977b100393e4e5095d856dcc7c3271d433a2d9f97b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0058.png",
+      "bytes": 113921,
+      "sha256": "a9d52ffa947ab976a3a16c4116327a7a500b25b920700611b9eb9543897a242d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0059.png",
+      "bytes": 112352,
+      "sha256": "9bdacc1934a2993c88f53a2c46eb6d1ebf1058067e5c5ef63381ae4ae76cd404"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0060.png",
+      "bytes": 111562,
+      "sha256": "cb4b6b588e24c0101294aa686e50b4195035236553ec74e9f77079aa0541b8aa"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0061.png",
+      "bytes": 110570,
+      "sha256": "ade4ea96efa9e88d27d80fd0fe1616acfb737c163ae71adaeedac88cc717f7f8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0062.png",
+      "bytes": 110402,
+      "sha256": "4e0c145d057dc16f4a48250c5a700cfe9e26c033d87f4de36bd7b1bd9bd0f154"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0063.png",
+      "bytes": 110400,
+      "sha256": "ce2d0c76a7a5e8d0223fa27cd27e8746065d386813b07e40ffab0f4faeebbec5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0064.png",
+      "bytes": 110492,
+      "sha256": "f779a9825748e9eeaaa0d639bfac0e6f2e4b1dc3bb2b5a02cd1eb1c0ea2d7c17"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0065.png",
+      "bytes": 110092,
+      "sha256": "f6679636d1552d759b97fbac0b9a1f055ab99cf1592c44a719b84f742a596e04"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0066.png",
+      "bytes": 110272,
+      "sha256": "84aaa2d3e9fa2e86821291b581cd3c3b986602ddc5d8733c73f378af292d24b1"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0067.png",
+      "bytes": 109864,
+      "sha256": "9158b38f365a78f464151617743237bebeddc4e474a1e1d5f12513cd96c42600"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0068.png",
+      "bytes": 109410,
+      "sha256": "778253eef0f5b2feb8a51a6908a4e4ce179632c0599713714a82ba54b26541ab"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0069.png",
+      "bytes": 108748,
+      "sha256": "8cefcbf7d8cd556e35fa0d5c35d6d6359ebd0a6403227fb7e4aae48c71142ace"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0070.png",
+      "bytes": 108247,
+      "sha256": "f5e576d21ecde752596ba023789b55a80e9a1417bf5d3ec1cba15aba3172594d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0071.png",
+      "bytes": 107789,
+      "sha256": "978678a0feff6632024e6844ee9921588c7564704203b9c1926124946c8e1b74"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0072.png",
+      "bytes": 106696,
+      "sha256": "d4b68fde84c01485497d7cfc74e1c1d67672a189765bc3f8b5f4cc81d2e19bd7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0073.png",
+      "bytes": 106249,
+      "sha256": "3f876b3b4ccc655187dc71359bbfe0a2d59aca3c27762792b1b75ff8208855e6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0074.png",
+      "bytes": 105258,
+      "sha256": "5042d8b79888273efb5dbc638d68bc7adba42941f32c32b62817a3252ce6b901"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0075.png",
+      "bytes": 104496,
+      "sha256": "dc837136a8fa9fcb350aa13734973e7fb25d21b73b4a12c3aa24b52ccacc1b90"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0076.png",
+      "bytes": 103531,
+      "sha256": "2f48c560a66debe80558d1fa8a805d07b12f54da27ec9e34b97a8b3c1cfdacea"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0077.png",
+      "bytes": 102610,
+      "sha256": "d593af333ce907278fea80ca220685436003c645a7c0a068510e9b853c82f598"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0078.png",
+      "bytes": 101603,
+      "sha256": "f8cb2d8501d5154a355a68709e71654bec73fa08f8c985017060df4a5fba9531"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0079.png",
+      "bytes": 100162,
+      "sha256": "119b0212f857edd7e38f57bf3d5dc445ab72a47ecc8df9beb581c450517d0d26"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0080.png",
+      "bytes": 99160,
+      "sha256": "17222ce86d7aa06c599e7bde6a9d20e866abafb69d28582a7070c969d60b20de"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0081.png",
+      "bytes": 98290,
+      "sha256": "4955d43b95260329f80f6ed4b1f42a898569a26b66b90efbc3dbf1a57612e21a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0082.png",
+      "bytes": 97609,
+      "sha256": "d8ac565ce7a6d6a1985a4091663032af2271f6c11cf39a9c7c18b6d0d3962e8b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0083.png",
+      "bytes": 96801,
+      "sha256": "94c13383bced0ba6abda8421e6451218d092cd9b0e86679c476fcad87a845ce8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0084.png",
+      "bytes": 95911,
+      "sha256": "0ec24c73ad6a925c64d733f70e4486f6e897a8f149d11cb398f6e93722671a5e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0085.png",
+      "bytes": 95668,
+      "sha256": "c12950a12a6638360a2797232c1b18378e758621e243a18c40a8d95780caed18"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0086.png",
+      "bytes": 95486,
+      "sha256": "aac41ea66a9fe8fabd38bfd9c77e0eb75fa8d045148297793d57567042fd8d22"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0087.png",
+      "bytes": 95321,
+      "sha256": "c9063bee2292c55043ca977d3a85f45c9e7477b437dd38a5b7eb559abf43775a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0088.png",
+      "bytes": 95600,
+      "sha256": "c2534ce4ee4a5e280558e1a6996ab54da2b20a5c1de78247fe7efbc6de378218"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0089.png",
+      "bytes": 95847,
+      "sha256": "418f7435d09f770ab92ca00f396425ddffc85f74a339395db92ae9c694e6226d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0090.png",
+      "bytes": 95612,
+      "sha256": "0b6ce3ded3167cb2d957e7a98d9b2c2d79d56dafafa1e1bc107183f1e6740d91"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0091.png",
+      "bytes": 95727,
+      "sha256": "1f2c02605aa450ad1a018e2f8495754b088f378e5a1f0830aa493d72622a54b8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0092.png",
+      "bytes": 96191,
+      "sha256": "b7dfe13858867ed326ee823835f6d5c221bf1619613a6a937360e8d80c758929"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0093.png",
+      "bytes": 96630,
+      "sha256": "0ec91227e2da8f424ae1bad1a878abac6390f77d1d8a4bf63bf66deae3ed8805"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0094.png",
+      "bytes": 97240,
+      "sha256": "0b4702ec589f9306177c8a450f6360cc773bd7aa8e4887d4badc7cb821f1f9d5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0095.png",
+      "bytes": 98006,
+      "sha256": "2697085a649341c9c78f6570450cf3754030c2aea0e779a756feb8eb2e917c0e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0096.png",
+      "bytes": 99162,
+      "sha256": "5cfe6b057c648180682e1e7d80de014d3b8f289dfca02d9881c441fb02880b19"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0097.png",
+      "bytes": 99283,
+      "sha256": "741c68ea8a76987dcba3802bc6ea9d4ee53679e25bfc77ef1ea9637b16c8b88f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0098.png",
+      "bytes": 98960,
+      "sha256": "6195a935196df3dea08303013d26aac4868c7817c4135a4e04b63a54accf51f7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0099.png",
+      "bytes": 98100,
+      "sha256": "db25e8943088cdfe3dba1e1edbf565c033619301126bf003b375200727eb2540"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0100.png",
+      "bytes": 97206,
+      "sha256": "6cf0a2506e784d1dc9450a221da0cbf246b3f63d42d0b6fdd36622657b74a510"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0101.png",
+      "bytes": 96795,
+      "sha256": "a7b3d0318772c4237cfafcfbf707065a5563a93af0b6bd425201f75dd7c9b491"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0102.png",
+      "bytes": 95947,
+      "sha256": "fa3d77087b94f875e64defe8fde88d2a8c7b1eedc02ac7ff31e56a23cc9faa0d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0103.png",
+      "bytes": 95732,
+      "sha256": "51c6df0428ff2dac84284d473d2ef7afa6ebf48031bd293805232b99563e5f8e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0104.png",
+      "bytes": 96295,
+      "sha256": "d3c7853098e1b72cd6416e851a19babe8192d369d1f94fa1e0a95cd993e39f07"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0105.png",
+      "bytes": 96753,
+      "sha256": "d49c58d05e25a7f4c599c9e98cd7d92fab6a534ddb83da344587f165fa4b5f41"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0106.png",
+      "bytes": 96880,
+      "sha256": "812dfe46c1d6f616c51341b7da46251aef2cb84c312c44a98c17267ed460fcab"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0107.png",
+      "bytes": 97510,
+      "sha256": "4f96d73f858f71ea76c81b7ad90478024e84e198940b98c148f9021030e5f871"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0108.png",
+      "bytes": 97935,
+      "sha256": "31d917db6b6e39d44d6c6c14f698c2f2c533bafc88897b87307fd921ba3097c3"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0109.png",
+      "bytes": 98540,
+      "sha256": "9da1f015238fe770cf9009a33445d6ac377f80aba94a33927456bbffeafdcb31"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0110.png",
+      "bytes": 99052,
+      "sha256": "fc24699c01174743bfd8d139c286dabdd4fcc1339683ceeb9f59a8b02549353c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0111.png",
+      "bytes": 100086,
+      "sha256": "378880e75f94c2fd459b411c5bad47f7dbc103ca561800f2dcbdba4ebd944428"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0112.png",
+      "bytes": 101021,
+      "sha256": "9289cb24f43510545e73f7559df563287ee5db294288e9d2590843929ead58ee"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0113.png",
+      "bytes": 101178,
+      "sha256": "3cadef5a62c3261f403f91ec4fb1aac2bceef29ffda10616ae57073046b98eb5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0114.png",
+      "bytes": 100836,
+      "sha256": "0788d1fea0522d07b85c07a43c8914ce2de9f173ad2dcb863f63324ef061337b"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0115.png",
+      "bytes": 99946,
+      "sha256": "2281d4c4842ab3c81fa98a556a5b12d8dd8ffecbf5b467b183aa2839287c5a3e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0116.png",
+      "bytes": 98725,
+      "sha256": "47dde00c90ac3464ce07275a0e931a0899da2308f8850246c6933175d909a2af"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0117.png",
+      "bytes": 97497,
+      "sha256": "7913a3f4442cad7ecf610249ca1e251136bb184e33222b4bfc5b61e7354d56a2"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0118.png",
+      "bytes": 97638,
+      "sha256": "5a93fe4d4b1d67abfc15aeb82249a3c0209b467535a7f1d190929d35be124148"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0119.png",
+      "bytes": 97884,
+      "sha256": "ae19cf9be25f67776c023d3ab227ab539cfc25b2a98619f8fb5dd5afdf635a83"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0120.png",
+      "bytes": 98339,
+      "sha256": "503b158b3a2065350c40e00e323242d49d388bf36a17b65cefa525df688a4252"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0121.png",
+      "bytes": 98674,
+      "sha256": "484cdb7c2f8686172d74ae49a68316738a05e27a516fe1548523c2f31989ed5a"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0122.png",
+      "bytes": 99050,
+      "sha256": "72c87f80723dabda7a52c216c7b023731911b94125c9122f57f9ef54d0d5ecd2"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0123.png",
+      "bytes": 99632,
+      "sha256": "6e46001a7aaf51670e52d3bb2fa16e717e8ab6b08459ca5e853a0e01d36fdca9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0124.png",
+      "bytes": 100275,
+      "sha256": "55aaa7a3bb572d19f9150bdfcec2d83b5752237f6ee8fa560a00e83e49fe8e93"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0125.png",
+      "bytes": 100546,
+      "sha256": "972de5f2139aa5d7c1ebae8ce4cba734751711e430425c790e79fc301a49f0e4"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0126.png",
+      "bytes": 100628,
+      "sha256": "ca16ff834e6436370697a6e325209331cddfe7a1c8d4addef7e9bba977811fce"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0127.png",
+      "bytes": 101082,
+      "sha256": "3f56e3ac22a258d2e015526cf8d6a815680d20a6942b58d05ee3f16ad755ffc7"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/frames/frame_0128.png",
+      "bytes": 101158,
+      "sha256": "0cb666019f063009e0351296c20fa39cc8225eaa0d9b24fd970ba8ac6d0ee93e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/agentview.png",
+      "bytes": 60486,
+      "sha256": "fe42f1bad4df2c51236934a15c8d36a8bf18aca73e94d94aec408909f692f82f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/arrays.json",
+      "bytes": 11554,
+      "sha256": "bd95816e2c7e18fc19422df99d9372d45caf7b920e8d155c92862e80ca5172da"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/cameras.npz",
+      "bytes": 1612,
+      "sha256": "48648519fe6e1a5dffe8e61df7ff10fa3ea7d506df574aa7ad51145358bb03a9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/fixtures.npz",
+      "bytes": 1448,
+      "sha256": "2375b61c135a342b5ee984e9330d0e2aa784e3f04ff9d42d5376d4d13ae46759"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/input.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/objects.npz",
+      "bytes": 4527,
+      "sha256": "35a475678fbe1027cebe220c2907be9e58ad5a6e9a2d5d9f44f6480dda6a77d0"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/observations.npz",
+      "bytes": 154084,
+      "sha256": "b380855d512e11f0c4168db99f4396777d7b12e4ef80b97d1ec3b149c1a27f82"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/robot0_eye_in_hand.png",
+      "bytes": 52915,
+      "sha256": "8ae9a77e20fec296be66448061bf567ac744ea59ee01485cb9fb03e33234de9c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_capture/state.npy",
+      "bytes": 760,
+      "sha256": "deafcdd37d6f7cdcd80ef6dae3c935215de85d66e644e20e18c67788dc56d214"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_checks.json",
+      "bytes": 27112,
+      "sha256": "88e0b9946661b388c37a0cafb4d436cf7a8a96c94aaaaaaf590886c29bcd16ad"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_controller.npz",
+      "bytes": 2232,
+      "sha256": "8f2a6568d1f27d1bb285f89385ed19f5d8270df391edcb84137eedcaef957e8e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_controller_checks.json",
+      "bytes": 625,
+      "sha256": "43a62dce0dab2664f322688dc113d3ede5d64e5eafa0c34deabf69f005b9f9d6"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/initial_png_checks.json",
+      "bytes": 83,
+      "sha256": "e54717423d2b1337096573a04f7da14cab64e7055bfad49756cd849189175ee2"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_00.png",
+      "bytes": 115380,
+      "sha256": "793ca28c3ef29bbc9b544dca8c2ce737b86709b8430368a41269f31d78c643bb"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_01.png",
+      "bytes": 120935,
+      "sha256": "bc969d645293193bf095f9f30e99bd1d21fbc8d885e4ae4e62b11bc5894c59fe"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_02.png",
+      "bytes": 128386,
+      "sha256": "986b9ffeb5948a565eb9b8b4867bcd1e00d42a41a41fa66672190272f317ba36"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_03.png",
+      "bytes": 122256,
+      "sha256": "c2da37f85430657dd6d253778ab11b92f8b1a8b47c44245366936f83e433fe5e"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_04.png",
+      "bytes": 110492,
+      "sha256": "f779a9825748e9eeaaa0d639bfac0e6f2e4b1dc3bb2b5a02cd1eb1c0ea2d7c17"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_05.png",
+      "bytes": 99160,
+      "sha256": "17222ce86d7aa06c599e7bde6a9d20e866abafb69d28582a7070c969d60b20de"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_06.png",
+      "bytes": 99162,
+      "sha256": "5cfe6b057c648180682e1e7d80de014d3b8f289dfca02d9881c441fb02880b19"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/input_07.png",
+      "bytes": 101021,
+      "sha256": "9289cb24f43510545e73f7559df563287ee5db294288e9d2590843929ead58ee"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/normalized_actions.json",
+      "bytes": 32784,
+      "sha256": "42dc7920537b33e24a8944f9fa60a9a553beaf06117b446234a3d158a66cc5e8"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/query_contract.json",
+      "bytes": 14375,
+      "sha256": "64cac51868f26030df89179be48cd15ecd3139ff0d0c6d6f96b98bcdb0b1884f"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/sim_states.npy",
+      "bytes": 81656,
+      "sha256": "2b2c4bb2b9d2823d0b2a0d7558f4cac98c3bef8b1edc3fdea309e8da6cf7ce28"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/trajectory.json",
+      "bytes": 691974,
+      "sha256": "18e29c365e4fb14bd102088a8a730a6c0437f9a4397f6d5d9122840fa80b7e4c"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/provenance.json",
+      "bytes": 1375,
+      "sha256": "41b1b6e5d854620e5ea861aebd3d659a1e2e7a858173770a7238270900f5b038"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/ready.json",
+      "bytes": 272,
+      "sha256": "07e2993b9ac0bfe4c089390832837ceebb6dc31ee264d52715973ab0b0b28f81"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/served_queries.json",
+      "bytes": 979,
+      "sha256": "3d862b9fa34c71d0a6c2f235b987d7c742d3cb90903fce74c9355ea349dc1a0d"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/server_complete.json",
+      "bytes": 152,
+      "sha256": "4030119250d2e4775feed08ececbd32c300a96b1bd9771e4009afd0a1c58cf55"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/status.json",
+      "bytes": 68,
+      "sha256": "4d7de3c80eae9037246ac45e22e1568edab86573898ffa9c12ae5a4c79914b62"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/processes/goal-pair-policy.rollout.log",
+      "bytes": 1105,
+      "sha256": "cc486fc34a018f9e768cbcf9a0cf499d098dfe09d81f05837da55161404d08f5"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/processes/goal-pair-policy.rollout.process.json",
+      "bytes": 1272,
+      "sha256": "c34f13e4a62f1c8097b215bb8865ae966793b9287087b3cfe27020579f82b9ff"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/processes/goal-pair-policy.server.log",
+      "bytes": 40514,
+      "sha256": "f9a718973b42991157a63548eab7c1dceac8f0d7e111f791eb8d70c7de27cbfc"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/processes/goal-pair-policy.server.process.json",
+      "bytes": 1182,
+      "sha256": "3128476208d492ecdc7cae828a6278e8460c972f0ab8e186de38314f93612663"
+    },
+    {
       "path": "notes/identity-position-design.md",
       "bytes": 15991,
       "sha256": "e4f712e819d37be2f9984b618ec6f641d21bdc9a1c3e62d4cbceb784911b204e"
@@ -19637,6 +21727,16 @@
       "sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c"
     },
     {
+      "path": "provenance/libero-goal-bowl-task.bddl",
+      "bytes": 2975,
+      "sha256": "2ffba859a154f50c3c99ffb3420743fa5aa65c70bf7d4cd26f5bc81d07be5713"
+    },
+    {
+      "path": "provenance/libero-goal-wine-task.bddl",
+      "bytes": 2972,
+      "sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe"
+    },
+    {
       "path": "provenance/libero-milk-task.bddl",
       "bytes": 2102,
       "sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996"
@@ -19653,13 +21753,18 @@
     },
     {
       "path": "scripts/README.md",
-      "bytes": 3084,
-      "sha256": "0fbdfed10abf3483b4ed2e60b7c85012082948c5981df857be7abff7ee788130"
+      "bytes": 3759,
+      "sha256": "67c8daec712f3a1291902a7fccbd3efdf957fdc0ee7b041e97211b309ebc8c52"
     },
     {
       "path": "scripts/archive/check_cosmos_official_pixels_cpu.py",
       "bytes": 6128,
       "sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a"
+    },
+    {
+      "path": "scripts/archive/collect_cosmos_goal_pair.py",
+      "bytes": 12465,
+      "sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945"
     },
     {
       "path": "scripts/archive/collect_cosmos_milk_far.py",
@@ -19782,6 +21887,11 @@
       "sha256": "16c50da91a9a0344289edf735d3ad0126a9a30fb92070e2cea227dfee47e37df"
     },
     {
+      "path": "scripts/archive/rollout_cosmos_goal_pair.py",
+      "bytes": 21244,
+      "sha256": "bc18a41d97dcdf7c321ef093faf4eea076678298f269efa5cf8fc9c623157dc7"
+    },
+    {
       "path": "scripts/archive/rollout_cosmos_identity_position.py",
       "bytes": 7753,
       "sha256": "fe4bac1ceae45dd65c32bd17aac8077aa2df398d2afd3fa0d5b603b0f2b80d5a"
@@ -19835,6 +21945,11 @@
       "path": "scripts/archive/rollout_pi05_target_control.py",
       "bytes": 20782,
       "sha256": "e8468a796a459b871b3a9b7f3fd47a28dd73e8de9c4000a9bda8b14a70f8a5a4"
+    },
+    {
+      "path": "scripts/archive/serve_cosmos_goal_pair.py",
+      "bytes": 16847,
+      "sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506"
     },
     {
       "path": "scripts/archive/serve_pi05_target_control.py",
