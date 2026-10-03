@@ -7,3 +7,5 @@ archive保存A6000上使用的实验助手，不是一个已经打包好的独�
 没有运行中的训练、自动下载或自动发布功能。此仓库当前职责是保留实验、结果和所用代码。不要把离线预测、逐层替换的局部效应当作机械臂任务成功。
 
 2026-10-03新增实际运行快照：system-prompt probe/rollout、identity-position rollout/repeats、图表脚本及官方transformer首轮及四组30次采样对照。`summarize_cosmos_identity_position.py <本仓库路径>`只读原始轨迹并写实验10的汇总，已在本地重算。官方网络脚本保留原主机环境和cuDNN要求，复用已编码输入检验网络核心，显式 `--run --sample30 --scheduler-python <已有环境Python>` 才运行连续30次采样；没有宣称完整官方服务或闭环等价。
+
+实验12新增四个实际运行快照：`check_cosmos_official_pixels_cpu.py`核对官方整数像素处理，`probe_cosmos_pixel_schedule.py`做16组真实预测，`rollout_cosmos_pixel_schedule.py`执行四条128步MuJoCo闭环，`present_cosmos_pixel_schedule.py`从真实动作和轨迹重新计算汇总与图。预测脚本在当前程序内采用官方像素函数和默认时间表，不替换隐藏状态；不代表完整官方服务等价。1帧／17帧首latent核验仍使用当前VAE。结果及范围见[实验12](../experiments/12-pixel-schedule/README.md)。

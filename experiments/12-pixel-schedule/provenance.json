@@ -1,0 +1,13 @@
+{
+  "script_sha256": "f241165a3765072cda88ee03994fa7d3643d83496eedd8c8f5c0279b1df85bf6",
+  "pixel_helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+  "torchvision_tensor_source_sha256": "f4e08a3fd772d4952405eab28f94440a30b2d27e2715a830ffc87a4b67e3135f",
+  "framework_transform_source_sha256": "184367dc5516e2cfb590144a02f115b86fbd2363141ee4a30c38dc9c825a0bb1",
+  "scheduler_source_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "torch": "2.14.0+cu130",
+  "vae_dtype": "torch.bfloat16",
+  "normalization": "Unchanged official normalize_uint8_item on resized/padded uint8 pixels.",
+  "helper_extraction": "Unchanged reflection_pad_to_target AST with real torchvision tensor resize/pad adapter; CPU comparison with original torchvision passed.",
+  "library_edits": false,
+  "weight_downloads": false
+}

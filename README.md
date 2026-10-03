@@ -26,6 +26,8 @@
 
 我们也发现程序比官方动作示例多了一段开场文字，去掉后仍出现相同的目标选择错误。这段多余文字不能单独解释失败；完整官方推理路径的交叉核验还没有结束。[输入格式对照](experiments/09-system-prompt/README.md)。
 
+补做输入核验：按公开官方代码改了照片处理方式和默认推理时间表，再跑原位／移远、拿牛奶／拿黄油四条执行，**抓起的对象仍与旧设置一致**。原位两句都抓牛奶，移远两句都抓奶酪盒。这两处修正没有纠正这四条的目标选择，完整官方流程仍未全部核验。[看新录像、四行对照和真实数组](experiments/12-pixel-schedule/README.md)。
+
 点击下面的画面看 **牛奶移动 15 cm 后的实际执行视频**：
 
 [![移动后的初始画面](experiments/06-milk-moved-15cm/native/input_00.png)](experiments/06-milk-moved-15cm/native/actual.mp4)
@@ -110,8 +112,9 @@ flowchart TD
 | [09 输入格式对照](experiments/09-system-prompt/README.md) | 去掉多余开场文字，抓错目标会消失吗？ |
 | [10 抓奶酪还是抓那个位置](experiments/10-identity-position/README.md) | 交换奶酪和黄油后，它会跟着谁走？三个种子重复。 |
 | [11 官方网络计算核验](experiments/11-official-transformer/README.md) | 同一份已编码输入交给官方网络，四组各算30次，动作数值是否接近？未跑新闭环。 |
+| [12 按官方方式处理输入](experiments/12-pixel-schedule/README.md) | 改正照片处理和默认时间表，四条实际执行抓谁变了吗？ |
 
-[下载并打开离线报告](report.html)，可以逐个播放之前的实验视频。新增的 07–11 以本仓库和中文网页为准，离线 HTML 尚未加入这些更新。
+[下载并打开离线报告](report.html)，可以逐个播放之前的实验视频。新增的 07–12 以本仓库和中文网页为准，离线 HTML 尚未加入这些更新。
 
 [相关论文与方法限制](notes/literature.md)解释为什么“能从数组读出信息”“替换数组后动作改变”和“找到了出错原因”是不同层次的证据。已有的 [Cosmos 官方讨论](https://github.com/NVIDIA/cosmos/discussions/369)保留了早期夹爪实验；本仓库记录后续实验。
 

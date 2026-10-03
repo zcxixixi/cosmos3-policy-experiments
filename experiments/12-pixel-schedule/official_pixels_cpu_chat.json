@@ -1,0 +1,134 @@
+{
+  "torch_version": "2.11.0+cu130",
+  "cpu_only": true,
+  "source_sha256": {
+    "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/data/generator/action/utils/transforms.py": "184367dc5516e2cfb590144a02f115b86fbd2363141ee4a30c38dc9c825a0bb1",
+    "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/model/generator/vision_encoder.py": "4d86f66250003666f2485a66cd0054c8e113747a831d2ab74c0726e56dcfefdc",
+    "/home/current/work/cosmos3/.venv-chat/lib/python3.12/site-packages/torchvision/transforms/_functional_tensor.py": "f4e08a3fd772d4952405eab28f94440a30b2d27e2715a830ffc87a4b67e3135f"
+  },
+  "helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+  "checks": [
+    {
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/input.png",
+      "image_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+      "num_frames": 1,
+      "shape": [
+        1,
+        3,
+        1,
+        192,
+        320
+      ],
+      "dtype": "torch.float32",
+      "image_size": [
+        192.0,
+        320.0,
+        160.0,
+        320.0
+      ],
+      "returned_hw": [
+        192,
+        320
+      ],
+      "min": -1.0,
+      "max": 0.9529411792755127,
+      "normalized_pixels_sha256": "757379dae52e4c248f3a941935e46f39f67944635a2d17d8b2fcd9a12f3a35cf",
+      "first_frame_sha256": "757379dae52e4c248f3a941935e46f39f67944635a2d17d8b2fcd9a12f3a35cf",
+      "reference_equal": true,
+      "reference_max_abs": 0.0,
+      "reference_metadata_equal": true
+    },
+    {
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/input.png",
+      "image_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+      "num_frames": 17,
+      "shape": [
+        1,
+        3,
+        17,
+        192,
+        320
+      ],
+      "dtype": "torch.float32",
+      "image_size": [
+        192.0,
+        320.0,
+        160.0,
+        320.0
+      ],
+      "returned_hw": [
+        192,
+        320
+      ],
+      "min": -1.0,
+      "max": 0.9529411792755127,
+      "normalized_pixels_sha256": "a0c5c2113fd26426bda978cedbf7109f194d96fe7515e46db6a7dfd03d12b338",
+      "first_frame_sha256": "757379dae52e4c248f3a941935e46f39f67944635a2d17d8b2fcd9a12f3a35cf",
+      "reference_equal": true,
+      "reference_max_abs": 0.0,
+      "reference_metadata_equal": true,
+      "repeat_17_equals_repeated_1": true
+    },
+    {
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/input.png",
+      "image_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "num_frames": 1,
+      "shape": [
+        1,
+        3,
+        1,
+        192,
+        320
+      ],
+      "dtype": "torch.float32",
+      "image_size": [
+        192.0,
+        320.0,
+        160.0,
+        320.0
+      ],
+      "returned_hw": [
+        192,
+        320
+      ],
+      "min": -1.0,
+      "max": 0.9529411792755127,
+      "normalized_pixels_sha256": "853761301f82e14f8efa9bec2307a1c634ba30de104a070cedd95d5d3a2e2d2a",
+      "first_frame_sha256": "853761301f82e14f8efa9bec2307a1c634ba30de104a070cedd95d5d3a2e2d2a",
+      "reference_equal": true,
+      "reference_max_abs": 0.0,
+      "reference_metadata_equal": true
+    },
+    {
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/input.png",
+      "image_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "num_frames": 17,
+      "shape": [
+        1,
+        3,
+        17,
+        192,
+        320
+      ],
+      "dtype": "torch.float32",
+      "image_size": [
+        192.0,
+        320.0,
+        160.0,
+        320.0
+      ],
+      "returned_hw": [
+        192,
+        320
+      ],
+      "min": -1.0,
+      "max": 0.9529411792755127,
+      "normalized_pixels_sha256": "032451b2a9b24207606cd1a2efcee92ba52a90e0e7e973ea5ec6db7f843161eb",
+      "first_frame_sha256": "853761301f82e14f8efa9bec2307a1c634ba30de104a070cedd95d5d3a2e2d2a",
+      "reference_equal": true,
+      "reference_max_abs": 0.0,
+      "reference_metadata_equal": true,
+      "repeat_17_equals_repeated_1": true
+    }
+  ]
+}

@@ -26,3 +26,5 @@ libero-milk-task.bddl来自安装的LIBERO资源，遵循上游[LIBERO仓库](ht
 实验11随后补完两场景×两指令、种子198的四组官方核心30次采样。沿用已编码输入、FP32初始噪声和历史显式时间表，官方网络从自己的上一状态连续预测，未插入保存的隐藏状态。最终归一化XYZ RMSE为0.001058–0.001864；最后一次readout相对RMS差4.63%–5.02%。FlowUniPC在原有CPU兼容环境运行，旧记录在CUDA运行；固定同一组更新值的CUDA重放与CPU最终动作RMSE为3.68e-11–6.66e-9，但没有测试这些舍入差异反馈给网络后的影响。完整官方像素/VAE预处理、默认时间表和闭环尚未核验。[四组真实数组、单位和限制](../experiments/11-official-transformer/README.md)。
 
 图像编码的尺寸还需区分：两视角拼图缩放为320×160内容，底部reflection pad到320×192后进入VAE，随后裁切latent中的padding区域。最终latent高度对应160像素内容，不能倒推VAE只看过160像素高的图。两套实现都有这个编码后裁切流程；此前查到的uint8／float像素处理差异仍需单独测试。
+
+实验12按公开官方顺序缩放uint8像素、clamp/round后normalize，VAE仍为现有BF16实现；同时采用同源FlowUniPC默认`set_timesteps(30, shift=1.)`。16组分项预测包含旧／新像素×旧／新时间表×两场景×两指令，种子198；四条新增闭环每轮均采用新像素、新时间表、关闭system、seed198+query。两个既有模型库工作区无改动，没有安装依赖或下载权重。旧设置四组逐数组精确复现实验09；新闭环初态／首轮照片／预测动作精确对应，四条抓取对象与旧对照一致。单帧／17帧首latent在当前VAE里精确相同，但未核验完整官方VAE或server。[原始数组、逐步执行和限制](../experiments/12-pixel-schedule/README.md)。

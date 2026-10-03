@@ -1,0 +1,694 @@
+{
+  "cases": [
+    {
+      "case": "center_milk_official_official_seed198",
+      "scene": "center",
+      "noun": "milk",
+      "noise_seed_base": 198,
+      "prompt": "pick up the milk and place it in the basket",
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "steps": 128,
+      "state_records": 129,
+      "frame_png_count": 129,
+      "initial_pixels_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "timesteps_match_offline_all_queries_exact": true,
+      "initial_state_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/state.npy",
+      "initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "source_initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "source_input_png_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 56,
+          "contact_frames": 73,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.59644479577045,
+          "final_lift_cm": 8.266929786054572,
+          "max_xy_displacement_cm": 55.18161983158074
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.017962440947052898,
+          0.2982970319425486,
+          0.18479186628686256
+        ],
+        "objects": {
+          "milk_1": [
+            -0.002109941689242792,
+            0.29433923944656754,
+            0.15240477424458293
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872976,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "finger_contacts": {
+          "milk_1": {
+            "left": true,
+            "right": true,
+            "both": true
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.03062326945375,
+          -0.023655043166065405
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Four new 128-step executions at two fixed simulator snapshots, with milk/butter instructions. Official uint8 pixel path and default integer timesteps on the existing Diffusers VAE/model. Not full official-runner equivalence or a benchmark success-rate estimate. milk_in_basket is the original milk-task checker and does not measure butter-task success."
+    },
+    {
+      "case": "center_butter_official_official_seed198",
+      "scene": "center",
+      "noun": "butter",
+      "noise_seed_base": 198,
+      "prompt": "pick up the butter and place it in the basket",
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "steps": 128,
+      "state_records": 129,
+      "frame_png_count": 129,
+      "initial_pixels_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "timesteps_match_offline_all_queries_exact": true,
+      "initial_state_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/state.npy",
+      "initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "source_initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "source_input_png_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 56,
+          "contact_frames": 73,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.450503033989904,
+          "final_lift_cm": 7.650965917874553,
+          "max_xy_displacement_cm": 54.78716618106449
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.017582090057698688,
+          0.2929843902280818,
+          0.17871494719796727
+        ],
+        "objects": {
+          "milk_1": [
+            -0.0019298783675509108,
+            0.28924609724826483,
+            0.14624513556278274
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872978,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "finger_contacts": {
+          "milk_1": {
+            "left": true,
+            "right": true,
+            "both": true
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.030368583289680978,
+          -0.023833394671298032
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Four new 128-step executions at two fixed simulator snapshots, with milk/butter instructions. Official uint8 pixel path and default integer timesteps on the existing Diffusers VAE/model. Not full official-runner equivalence or a benchmark success-rate estimate. milk_in_basket is the original milk-task checker and does not measure butter-task success."
+    },
+    {
+      "case": "far_milk_official_official_seed198",
+      "scene": "far",
+      "noun": "milk",
+      "noise_seed_base": 198,
+      "prompt": "pick up the milk and place it in the basket",
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "steps": 128,
+      "state_records": 129,
+      "frame_png_count": 129,
+      "initial_pixels_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "timesteps_match_offline_all_queries_exact": true,
+      "initial_state_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/state.npy",
+      "initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "source_initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "source_input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.87797262534729e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 64,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 23.891453285577974,
+          "final_lift_cm": 14.410589845655563,
+          "max_xy_displacement_cm": 37.65894778918704
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.01925352615132543,
+          0.27114574073344877,
+          0.17150817660590023
+        ],
+        "objects": {
+          "milk_1": [
+            0.03283918389857263,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            -0.004759149309262332,
+            0.26883765188487085,
+            0.15302737587516355
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872978,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "finger_contacts": {
+          "milk_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.023240853983017704,
+          -0.023704486527680393
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Four new 128-step executions at two fixed simulator snapshots, with milk/butter instructions. Official uint8 pixel path and default integer timesteps on the existing Diffusers VAE/model. Not full official-runner equivalence or a benchmark success-rate estimate. milk_in_basket is the original milk-task checker and does not measure butter-task success."
+    },
+    {
+      "case": "far_butter_official_official_seed198",
+      "scene": "far",
+      "noun": "butter",
+      "noise_seed_base": 198,
+      "prompt": "pick up the butter and place it in the basket",
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "steps": 128,
+      "state_records": 129,
+      "frame_png_count": 129,
+      "initial_pixels_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "timesteps_match_offline_all_queries_exact": true,
+      "initial_state_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/state.npy",
+      "initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "source_initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "source_input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records.",
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.87797262534729e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 63,
+          "first_2cm_for_5frames": 69,
+          "max_lift_cm": 24.397395859303348,
+          "final_lift_cm": 13.18408100978829,
+          "max_xy_displacement_cm": 36.85508452125574
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          0.011817740864401908,
+          0.2630313716456368,
+          0.20308815057302645
+        ],
+        "objects": {
+          "milk_1": [
+            0.03283918389857263,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.029081912478736965,
+            0.25993529749254896,
+            0.1407622875164908
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872976,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "finger_contacts": {
+          "milk_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.026345204042127483,
+          -0.02664308728056458
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Four new 128-step executions at two fixed simulator snapshots, with milk/butter instructions. Official uint8 pixel path and default integer timesteps on the existing Diffusers VAE/model. Not full official-runner equivalence or a benchmark success-rate estimate. milk_in_basket is the original milk-task checker and does not measure butter-task success."
+    }
+  ],
+  "scope": "Four new 128-step executions at two fixed simulator snapshots, with milk/butter instructions. Official uint8 pixel path and default integer timesteps on the existing Diffusers VAE/model. Not full official-runner equivalence or a benchmark success-rate estimate. milk_in_basket is the original milk-task checker and does not measure butter-task success.",
+  "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift for at least five consecutive simulator records."
+}

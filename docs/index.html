@@ -6,10 +6,10 @@
 <h1>让它拿牛奶：原来的位置能抓，<br>换个位置却抓了奶酪盒。</h1>
 <p class="note">实验记录更新：2026-10-03 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、视频和原始数据</a></p>
 <p>我们想查清楚：它有没有用上指令？有没有认准牛奶？还是照着熟悉的位置抓东西？下面先看机械臂实际做了什么，再看网络里的数值。</p>
-<p class="lead"><b>最新对照：牛奶移远后，它抓奶酪盒；把黄油放到奶酪盒原来的位置，它就改抓黄油。换三个随机种子，结果都一样。</b><br>这支持“摆放位置在影响它抓谁”，还不能证明它背了训练答案。</p>
+<p class="lead"><b>目前的发现：牛奶移远后，它抓奶酪盒；把黄油放到奶酪盒原来的位置，它就改抓黄油。换三个随机种子，结果都一样。</b><br>这支持“摆放位置在影响它抓谁”，还不能证明它背了训练答案。</p>
 <p class="note">测试的是社区微调权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">fwd4xl/cosmos3-nano-policy-liberoall-5k</a>，配合我们当前的推理程序。我们还在检查输入和调用方式，暂时不能把问题都归到模型本身。</p>
 <nav aria-label="阅读导航"><a href="#latest">最新对照和视频</a><a href="#language">文字有没有进去？</a><a href="#exchange">我们怎么查内部？</a><a href="#conclusion">现在知道什么？</a></nav>
-<section id="latest"><h2>新对照：它想抓奶酪盒，还是想抓那个位置上的东西？</h2>
+<section id="latest"><p class="lead"><b>补做核验：按官方方式改了照片处理和推理时间表，抓错目标没有消失。</b><br>四条实际执行中，牛奶原位时，两句指令都抓牛奶；牛奶移远15 cm后，两句都抓奶酪盒。抓谁没变，不代表整条运动完全一样。<a href="#input-check">看这次怎么改、实际录像和结果</a></p><h2>新对照：它想抓奶酪盒，还是想抓那个位置上的东西？</h2>
 <p>之前的失败有两种解释：它可能偏爱奶酪盒，也可能在牛奶移远后，转而去一个熟悉的位置抓东西。只看原来的视频，分不清这两种解释。</p>
 <p>这次<b>牛奶保持不动，只交换奶酪盒和黄油的桌面位置</b>。指令始终是“拿牛奶，放进篮子”。相机、机器人初态和推理设置都保持对应一致；没有替换网络里的数组。</p>
 <table><thead><tr><th>牛奶在哪里？</th><th>奶酪盒原来的位置放着谁？</th><th>机械臂抓起了谁？</th></tr></thead><tbody>
@@ -89,15 +89,37 @@
 <p>现在更具体的结论是：<b>在这些测试场景中，语言进入了计算，却没有可靠地让它按名称选物体；牛奶移远后，它反复抓了原奶酪位置上的东西。</b>交换物体和以前的内部数组替换，都能改变实际抓取结果。</p>
 <p><b>“它记住了答案”仍是猜想。</b>我们还没有核对到这份权重实际用过的全部示范，也没证明它复现了其中某一条。现在也没有找到一个确定出错的网络层。</p>
 <p>输入方式也在查。我们的程序比官方动作示例多放了一段开场文字；去掉后，原布局仍抓牛奶、移远后仍抓奶酪盒，换成“拿黄油”也没有换目标。因此，这段多余文字不能单独解释失败。</p>
-<p>另外，同一份已编码输入交给官方网络，四组各算完30次，得到的动作数值与当前程序接近。这个检查还没有包含完整照片处理和新的机械臂执行，不能说所有代码差异都已排除。</p>
+<p>另外，同一份已编码输入交给官方网络，四组各算完30次，动作数值与当前程序接近。随后在当前程序中，按官方方式改了照片处理和默认推理时间表，再跑四条实际执行，抓取对象仍没变。<b>这两处修正没有纠正这四条执行中的目标选择；完整官方流程还没有全部核验，不能说所有代码问题都排除了。</b></p>
 <p>下一步要把这个已经能重复的行为，和网络内部的具体传递路径对应起来：什么信息让它转向旧位置？只改那部分信息，能否让它回到牛奶，而不只是换一条运动路线？</p>
 <p class="note">目前仍是少量固定场景、特定权重和当前推理程序的结果。移动物体也会改变遮挡和抓取条件，尚未拆开这些影响。内部数组变化不能换算成“它有 80% 想抓奶酪”；判断抓谁，依据的是实际接触和持续抬起。</p>
 </section>
 <section id="more"><h2>需要追数据时，再展开看</h2>
+<details id="input-check"><summary>按官方方式处理输入，还会抓错吗？看新录像</summary>
+<p>我们怀疑过：是不是自己的程序处理照片和推理时间表的方式不对，才让它抓错？这次把这两项改成公开官方代码的做法，再让机械臂实际执行。</p>
+<p>照片处理：官方先缩放整数像素、取整，再转成浮点数；旧程序顺序不同。时间表：生成一段动作要算30次，旧程序在其中两次给网络的时间条件相差1，本次改用官方默认做法。没有换权重，没有重新训练，也没有换入示范的内部数组。</p>
+<table><thead><tr><th>牛奶在哪里／说什么</th><th>旧设置抓谁</th><th>两项改正后抓谁</th></tr></thead><tbody>
+<tr><td>原位／拿牛奶</td><td>牛奶</td><td>牛奶</td></tr>
+<tr><td>原位／拿黄油</td><td>牛奶</td><td>牛奶</td></tr>
+<tr><td>移远15 cm／拿牛奶</td><td>奶酪盒</td><td>奶酪盒</td></tr>
+<tr><td>移远15 cm／拿黄油</td><td>奶酪盒</td><td>奶酪盒</td></tr>
+</tbody></table>
+<p><b>这两处修正没有纠正这四条执行中的目标选择。</b>动作数字和运动细节有变化，但抓谁没变。完整官方流程还没有全部核验，也不能据此认定模型背了训练答案。</p>
+<video controls preload="none" playsinline src="media/pixel-schedule-far-milk.mp4"></video>
+<p>上面是两项都改后、“牛奶移远、拿牛奶”的MuJoCo实际执行。它抓起奶酪盒，最高抬起约23.9 cm；牛奶没被抓。</p>
+<details><summary>内部数字与核验方法</summary>
+<p>两种场景、两句指令、四种设置（旧设置、只改照片、只改时间表、两项都改），共16组完整预测。四条实际执行都用两项改正后的设置；每条128步，每个条件只有一个对应噪声种子，不是成功率统计。</p>
+<p>照片处理修正后，首帧视觉数组相对变化约3.2%；两项都改后，最后一次动作中间数组相对变化约5.0%–5.4%。这些数字说明计算变了，不表示理解程度，也没有在这四条执行中变成抓取对象的变化。</p>
+<figure><img src="media/pixel-schedule-action-changes.png" alt="只改照片、只改时间表或两项都改时，最终归一化XYZ动作数组与旧设置的差异"><figcaption>纵轴是动作数字的差异，不是米、毫米或抓取概率。每组只有一个配对噪声种子。</figcaption></figure>
+<p>四组旧设置完整复现以前的数组；四条新增执行的初态、首轮照片与对应预测精确核对。抓谁用双侧接触和持续抬高判断。四条在128步结束时都没有触发牛奶入篮检查，抓起不等于放置完成；牛奶任务的检查也不能衡量黄油任务成功。</p>
+<p>另查了只编码1帧与重复17帧再取首帧：在当前VAE里逐项相同。完整官方编码器仍未核验。此前交换奶酪盒／黄油的三种子实验没有全部按这次设置重跑。</p>
+</details>
+<p class="note"><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/12-pixel-schedule/README.md">四条录像、真实数组、控制检查与脚本</a></p>
+</details>
+
 <details><summary>是不是我们的程序算错了？换官方网络代码检查</summary>
 <p>把同一份已经变成数字的照片和指令，分别交给当前程序和官方网络代码。原位置、牛奶移远两种画面，各试“拿牛奶”和“拿黄油”，共四组；每组都完整计算30次。</p>
 <p><b>两边最后得到的动作数值接近，中间数组却不完全一样。</b>最后一次的中间数组相对差异约4.6%–5.0%。这些数字不能当作理解程度，也没有证明机械臂会抓同一个物体。</p>
-<p>这项检查只核对网络核心，没有从原始照片重跑完整官方流程，也没有生成新的实际执行录像。照片处理和默认采样设置的差异还在排查。</p>
+<p>这项检查只核对网络核心，没有从原始照片重跑完整官方流程，也没有生成新的实际执行录像。后续实验12单独修正照片处理和默认时间表，并补跑四条实际执行，抓取对象没有改变；两项实验都还不能代表完整官方服务。</p>
 <p class="note"><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/11-official-transformer/README.md">四组真实数组、具体差异与限制</a></p></details>
 <details><summary>输入格式核验：去掉多余的开场文字，失败是否消失？</summary>
 <p>官方动作推理示例关闭系统提示。我们原来的程序沿用了默认设置，多了“你是一个帮助生成视频的助手”这段开场文字，共 19 个文本 token。任务指令和照片仍然确实被送入模型。</p>
@@ -124,4 +146,4 @@
 <p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/provenance/runtime.md">权重、相机和推理设置</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/notes/literature.md">相关论文与方法限制</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments">每个实验的完整记录</a></p>
 <p class="note">页面正文按“我们改了什么、实际发生什么、能说明什么、还不能说明什么”记录实验。展开说明保留计算方法和原始数值，方便核验。</p>
 </section>
-</main><script>document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()})));</script></body></html>
+</main><script>document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()})));function revealTarget(){const e=document.getElementById(location.hash.slice(1));if(e&&e.tagName==='DETAILS')e.open=true}window.addEventListener('hashchange',revealTarget);revealTarget();</script></body></html>
