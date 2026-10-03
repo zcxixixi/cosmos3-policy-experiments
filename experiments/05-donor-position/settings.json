@@ -1,0 +1,11 @@
+{
+  "prompt": "pick up the milk and place it in the basket",
+  "seed": 198,
+  "layer": 30,
+  "donor_milk_shift_x_m": 0.06,
+  "recipient": "Same milk/butter swapped scene",
+  "patch_schedule": "All 30 denoising forwards of first query only; later queries native",
+  "baseline_native_and_center_donor_replayed_exactly": true,
+  "matched_nonvisual_inputs": true,
+  "scope": "Only donor milk position changes; donor pixel image and action hidden states change. This tests spatial dependence of transfer, not isolated object identity."
+}

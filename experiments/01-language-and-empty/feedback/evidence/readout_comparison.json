@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "seed": 195,
+      "contrast": "language",
+      "left": "A_195_close_native",
+      "right": "A_195_open_native",
+      "readout_relative_rms": 0.010153794185208573,
+      "gripper_velocity_delta_rms": 0.0031478996388614178,
+      "fp32_head_projected_gripper_delta_rms": 0.0021690791472792625,
+      "absolute_direction_cosine_mean": 0.019661929458379745,
+      "final_gripper_mae": 0.0014567114412784576
+    },
+    {
+      "seed": 195,
+      "contrast": "visual_scene",
+      "left": "A_195_close_native",
+      "right": "B_195_close_native",
+      "readout_relative_rms": 0.4580853945942093,
+      "gripper_velocity_delta_rms": 1.9385294914245605,
+      "fp32_head_projected_gripper_delta_rms": 1.9374244213104248,
+      "absolute_direction_cosine_mean": 0.43619269132614136,
+      "final_gripper_mae": 1.9833723306655884
+    },
+    {
+      "seed": 196,
+      "contrast": "language",
+      "left": "A_196_close_native",
+      "right": "A_196_open_native",
+      "readout_relative_rms": 0.009970032927353786,
+      "gripper_velocity_delta_rms": 0.0037266449071466923,
+      "fp32_head_projected_gripper_delta_rms": 0.003296061186119914,
+      "absolute_direction_cosine_mean": 0.025651702657341957,
+      "final_gripper_mae": 0.0017861239612102509
+    },
+    {
+      "seed": 196,
+      "contrast": "visual_scene",
+      "left": "A_196_close_native",
+      "right": "B_196_close_native",
+      "readout_relative_rms": 0.45301855803812446,
+      "gripper_velocity_delta_rms": 1.9458507299423218,
+      "fp32_head_projected_gripper_delta_rms": 1.9468194246292114,
+      "absolute_direction_cosine_mean": 0.43637555837631226,
+      "final_gripper_mae": 1.9849674701690674
+    },
+    {
+      "seed": 198,
+      "contrast": "language",
+      "left": "A_198_close_native",
+      "right": "A_198_open_native",
+      "readout_relative_rms": 0.010037084547731232,
+      "gripper_velocity_delta_rms": 0.0022673553321510553,
+      "fp32_head_projected_gripper_delta_rms": 0.002641316968947649,
+      "absolute_direction_cosine_mean": 0.021931404247879982,
+      "final_gripper_mae": 0.001108471304178238
+    },
+    {
+      "seed": 198,
+      "contrast": "visual_scene",
+      "left": "A_198_close_native",
+      "right": "B_198_close_native",
+      "readout_relative_rms": 0.44549602034790287,
+      "gripper_velocity_delta_rms": 1.9487870931625366,
+      "fp32_head_projected_gripper_delta_rms": 1.9503504037857056,
+      "absolute_direction_cosine_mean": 0.4379197955131531,
+      "final_gripper_mae": 1.983992099761963
+    }
+  ],
+  "scope": "Actual normalized readout at first denoising round; same noise and positions. Visual pair differs in multiple physical states, not a single isolated geometry factor. Language pair changes one close/open token. FP32 dot product uses the real gripper velocity-head weights; native BF16 full-head replay previously verified exactly. Alignment alone does not prove grounding; raw velocity and final action contrasts are also provided."
+}

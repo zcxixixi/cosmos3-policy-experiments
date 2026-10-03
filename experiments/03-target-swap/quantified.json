@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "case": "swapped_milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "objects": {
+        "milk_1": {
+          "min_eef_xy_distance_mm": 91.76995514423392,
+          "grasp_contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.174606907524918e-07,
+          "max_xy_displacement_mm": 8.875177322146237e-11
+        },
+        "butter_1": {
+          "min_eef_xy_distance_mm": 151.7587394485994,
+          "grasp_contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 7.57900686654267e-12,
+          "max_xy_displacement_mm": 0.0
+        },
+        "cream_cheese_1": {
+          "min_eef_xy_distance_mm": 1.5899743870664873,
+          "grasp_contact_frames": 62,
+          "first_contact_step": 67,
+          "max_lift_mm": 240.3867097374433,
+          "max_xy_displacement_mm": 366.6769947472525
+        }
+      }
+    },
+    {
+      "case": "swapped_butter",
+      "prompt": "pick up the butter and place it in the basket",
+      "objects": {
+        "milk_1": {
+          "min_eef_xy_distance_mm": 92.37511469787246,
+          "grasp_contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.174606907524918e-07,
+          "max_xy_displacement_mm": 8.875177322146237e-11
+        },
+        "butter_1": {
+          "min_eef_xy_distance_mm": 149.62643782198208,
+          "grasp_contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 7.57900686654267e-12,
+          "max_xy_displacement_mm": 0.0
+        },
+        "cream_cheese_1": {
+          "min_eef_xy_distance_mm": 1.70053735598763,
+          "grasp_contact_frames": 62,
+          "first_contact_step": 67,
+          "max_lift_mm": 241.94358063608755,
+          "max_xy_displacement_mm": 369.7749189829392
+        }
+      }
+    }
+  ],
+  "scope": "Two 128-step rollouts at one matched seed sequence; contact, lift and displacement reported separately; not a benchmark success rate."
+}

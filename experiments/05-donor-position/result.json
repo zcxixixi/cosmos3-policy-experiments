@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "donor": "original donor",
+      "objects": {
+        "milk_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.174606907524918e-07
+        },
+        "basket_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 4.250766405533568e-11
+        },
+        "cream_cheese_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 2.0469737016526324e-13
+        },
+        "tomato_sauce_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.020562075079397e-14
+        },
+        "butter_1": {
+          "contact_frames": 66,
+          "first_contact_step": 63,
+          "max_lift_mm": 289.073622276655
+        },
+        "orange_juice_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.174607046302796e-07
+        },
+        "chocolate_pudding_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 5.766220834146907e-12
+        }
+      },
+      "step16_eef_xyz": [
+        -0.10999394628846246,
+        -0.08329737164085328,
+        0.25492631795483
+      ]
+    },
+    {
+      "donor": "milk shifted +6cm donor",
+      "objects": {
+        "milk_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.174606907524918e-07
+        },
+        "basket_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 4.250766405533568e-11
+        },
+        "cream_cheese_1": {
+          "contact_frames": 54,
+          "first_contact_step": 75,
+          "max_lift_mm": 243.53868133336147
+        },
+        "tomato_sauce_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.020562075079397e-14
+        },
+        "butter_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 7.57900686654267e-12
+        },
+        "orange_juice_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 9.174607046302796e-07
+        },
+        "chocolate_pudding_1": {
+          "contact_frames": 0,
+          "first_contact_step": null,
+          "max_lift_mm": 5.766220834146907e-12
+        }
+      },
+      "step16_eef_xyz": [
+        -0.10088514611863993,
+        -0.08756367931469988,
+        0.2571198426059411
+      ]
+    }
+  ],
+  "step16_eef_change_mm": [
+    9.108800169822532,
+    -4.2663076738466,
+    2.1935246511111117
+  ],
+  "first16_path_coordinate_rms_mm": 3.2212451641881654,
+  "matched_recipient_initial_state": true,
+  "controls": {
+    "prompt": "pick up the milk and place it in the basket",
+    "seed": 198,
+    "layer": 30,
+    "donor_milk_shift_x_m": 0.06,
+    "recipient": "Same milk/butter swapped scene",
+    "patch_schedule": "All 30 denoising forwards of first query only; later queries native",
+    "baseline_native_and_center_donor_replayed_exactly": true,
+    "matched_nonvisual_inputs": true,
+    "scope": "Only donor milk position changes; donor pixel image and action hidden states change. This tests spatial dependence of transfer, not isolated object identity."
+  },
+  "latent": {
+    "donor_layer30_relative_rms": 0.16681115329265594,
+    "patched_normalized_xyz_rmse": 0.03804781287908554
+  },
+  "conclusion": "Both donor runs use the milk instruction; only donor milk position differs. Neither patch grasps recipient milk. This shows transferred late action state depends on donor spatial layout, but does not establish a pure coordinate representation or absence of identity information. One seed, first query only."
+}

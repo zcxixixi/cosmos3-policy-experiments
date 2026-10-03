@@ -1,0 +1,26 @@
+{
+  "objects": {
+    "milk_1": {
+      "first_grasp_step": null,
+      "grasp_frames": 0,
+      "max_lift_cm": 9.174606907524918e-08,
+      "max_xy_displacement_cm": 8.87797262534729e-12
+    },
+    "cream_cheese_1": {
+      "first_grasp_step": 63,
+      "grasp_frames": 66,
+      "max_lift_cm": 23.65162344588965,
+      "max_xy_displacement_cm": 38.55842165583888
+    },
+    "butter_1": {
+      "first_grasp_step": null,
+      "grasp_frames": 0,
+      "max_lift_cm": 7.57900686654267e-13,
+      "max_xy_displacement_cm": 0.0
+    }
+  },
+  "prompt": "pick up the milk and place it in the basket",
+  "milk_shift_x_cm": 15,
+  "steps": 128,
+  "scope": "Original layout restored; only milk X changed. Native inference, no hidden-state patch, seed 198+query, 8 queries of 16 actions. One rollout, not a success rate."
+}

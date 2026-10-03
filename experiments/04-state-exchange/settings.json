@@ -1,0 +1,49 @@
+{
+  "prompt": "pick up the milk and place it in the basket",
+  "seed": 198,
+  "patch_action_token_count": 16,
+  "hidden_dim": 4096,
+  "selected_boundaries": [
+    12,
+    30
+  ],
+  "patch_schedule": "At selected layer after each of 30 denoising forwards in first query only; all later closed-loop queries are native.",
+  "donor": "Original-layout correct-milk rollout, initial observation only",
+  "recipient": "Milk/butter swapped-layout wrong-cheese rollout, initial observation",
+  "same_text_and_initial_action_future_vision_noise": true,
+  "baseline_predictions_reproduced_exactly": true,
+  "self_patch_max_action_error": 0.0,
+  "rows": [
+    {
+      "case": "A",
+      "normalized_xyz_action_rmse_vs_B": 0.17891941964626312,
+      "xyz_change_projection_towards_A": 1.0,
+      "normalized_gripper_mean": 0.9904191493988037
+    },
+    {
+      "case": "B",
+      "normalized_xyz_action_rmse_vs_B": 0.0,
+      "xyz_change_projection_towards_A": 0.0,
+      "normalized_gripper_mean": 0.9894749522209167
+    },
+    {
+      "case": "B_self_12",
+      "normalized_xyz_action_rmse_vs_B": 0.0,
+      "xyz_change_projection_towards_A": 0.0,
+      "normalized_gripper_mean": 0.9894749522209167
+    },
+    {
+      "case": "B_from_A_12",
+      "normalized_xyz_action_rmse_vs_B": 0.387035608291626,
+      "xyz_change_projection_towards_A": -2.1535863876342773,
+      "normalized_gripper_mean": 0.9801115989685059
+    },
+    {
+      "case": "B_from_A_30",
+      "normalized_xyz_action_rmse_vs_B": 0.07897289097309113,
+      "xyz_change_projection_towards_A": 0.4234004616737366,
+      "normalized_gripper_mean": 0.9912444353103638
+    }
+  ],
+  "scope": "Cross-scene action-state exchange; donor states contain spatial and motor information, not an isolated milk concept. Layer 30 is an additional later-layer comparison, not a claimed repair."
+}
