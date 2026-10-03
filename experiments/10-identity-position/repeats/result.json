@@ -1,0 +1,753 @@
+{
+  "cases": [
+    {
+      "case": "center_original_milk_off_seed195",
+      "scene": "center_original",
+      "seed": 195,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": 51,
+          "grasp_frames": 78,
+          "max_lift_cm": 21.222513854851787
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/runtime-system-prompt/closed-loop/center_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          -0.02465912310059446,
+          0.2931941941017996,
+          0.15357807509159468
+        ],
+        "objects": {
+          "milk_1": [
+            -0.01572490581817795,
+            0.2896276340884381,
+            0.12127528648988159
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872977,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "milk_in_basket": true
+      }
+    },
+    {
+      "case": "far_original_milk_off_seed195",
+      "scene": "far_original",
+      "seed": 195,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 0.2019538800829987
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": 63,
+          "grasp_frames": 65,
+          "max_lift_cm": 24.945855435339272
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/runtime-system-prompt/closed-loop/far_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          0.019070506594215293,
+          0.27288056037377456,
+          0.18930949966603522
+        ],
+        "objects": {
+          "milk_1": [
+            0.031020025901177035,
+            -0.24364963650752214,
+            0.06973547730149793
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.013487517817952242,
+            0.2749067551466341,
+            0.18825410323659633
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872978,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "milk_in_basket": false
+      }
+    },
+    {
+      "case": "center_swapped_milk_off_seed195",
+      "scene": "center_swapped",
+      "seed": 195,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": 53,
+          "grasp_frames": 76,
+          "max_lift_cm": 22.067739193523277
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/identity-position/center_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          -0.007207990374737553,
+          0.26019053865411174,
+          0.191578805615221
+        ],
+        "objects": {
+          "milk_1": [
+            0.003189131979691231,
+            0.2610246491488022,
+            0.16084957829127156
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872976,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "milk_in_basket": false
+      }
+    },
+    {
+      "case": "far_swapped_milk_off_seed195",
+      "scene": "far_swapped",
+      "seed": 195,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 0.3101251541136149
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": 63,
+          "grasp_frames": 66,
+          "max_lift_cm": 26.567171235159957
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/identity-position/far_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          0.001255269129332453,
+          0.2693987285746878,
+          0.16096018240771895
+        ],
+        "objects": {
+          "milk_1": [
+            0.029981318952582655,
+            -0.24526969602690174,
+            0.06973547730149793
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.060060797038729775,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.003695585385693214,
+            0.2690682711777186,
+            0.16001675196640727
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "butter_1"
+        ],
+        "milk_in_basket": false
+      }
+    },
+    {
+      "case": "center_original_milk_off_seed196",
+      "scene": "center_original",
+      "seed": 196,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": 53,
+          "grasp_frames": 76,
+          "max_lift_cm": 21.833780992748487
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/runtime-system-prompt/closed-loop/center_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          0.0013047602304078823,
+          0.279821006804255,
+          0.16028433256072994
+        ],
+        "objects": {
+          "milk_1": [
+            0.0004636983440648917,
+            0.2811195928994198,
+            0.1272493076657214
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872976,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "milk_in_basket": true
+      }
+    },
+    {
+      "case": "far_original_milk_off_seed196",
+      "scene": "far_original",
+      "seed": 196,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 0.009226742627460593
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": 62,
+          "grasp_frames": 65,
+          "max_lift_cm": 24.50253610505351
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/runtime-system-prompt/closed-loop/far_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          -0.0017177091422621409,
+          0.2730095236537977,
+          0.17215746601256846
+        ],
+        "objects": {
+          "milk_1": [
+            0.032575431050600095,
+            -0.24404496728060796,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.009313936093907982,
+            0.27140327884651444,
+            0.15378627313977816
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872977,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "milk_in_basket": false
+      }
+    },
+    {
+      "case": "center_swapped_milk_off_seed196",
+      "scene": "center_swapped",
+      "seed": 196,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": 55,
+          "grasp_frames": 74,
+          "max_lift_cm": 19.514996475008996
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/identity-position/center_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          0.008485025405256884,
+          0.2672048082501789,
+          0.17716920172018613
+        ],
+        "objects": {
+          "milk_1": [
+            0.004980526682796442,
+            0.2701555827586073,
+            0.14284881245751055
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.060060797038729775,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "milk_in_basket": false
+      }
+    },
+    {
+      "case": "far_swapped_milk_off_seed196",
+      "scene": "far_swapped",
+      "seed": 196,
+      "steps": 128,
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 0.06457580578881766
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_grasp_step": 64,
+          "grasp_frames": 65,
+          "max_lift_cm": 27.656418106519975
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "source_initial_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/identity-position/far_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_pixels_exact": true,
+      "system_off_all_queries": true,
+      "final": {
+        "eef_xyz": [
+          0.02637311241889104,
+          0.27221266422970397,
+          0.18411536451851862
+        ],
+        "objects": {
+          "milk_1": [
+            0.03260811633587518,
+            -0.245234806023793,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.060060797038729775,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.029104333894019247,
+            0.2715799561717337,
+            0.18295066538256494
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "butter_1"
+        ],
+        "milk_in_basket": false
+      }
+    }
+  ],
+  "scope": "Two additional noise seeds at the SAME four simulator snapshots. Not independent tasks or initial placements."
+}

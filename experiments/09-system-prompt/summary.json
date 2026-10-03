@@ -1,0 +1,83 @@
+{
+  "language_effect": [
+    {
+      "scene": "center",
+      "system_mode": "on",
+      "seed_values": [
+        0.007554488380100374,
+        0.005225658164544118,
+        0.007978872166837707
+      ],
+      "mean_xyz_normalized_rmse": 0.006919672903827399
+    },
+    {
+      "scene": "center",
+      "system_mode": "off",
+      "seed_values": [
+        0.001673025099120758,
+        0.0022218158763809876,
+        0.004344395966775201
+      ],
+      "mean_xyz_normalized_rmse": 0.0027464123140923152
+    },
+    {
+      "scene": "far",
+      "system_mode": "on",
+      "seed_values": [
+        0.006796010593088587,
+        0.006602251579230181,
+        0.023105287326187197
+      ],
+      "mean_xyz_normalized_rmse": 0.012167849832835323
+    },
+    {
+      "scene": "far",
+      "system_mode": "off",
+      "seed_values": [
+        0.0010646810950760183,
+        0.0024458695880166127,
+        0.0241079190429755
+      ],
+      "mean_xyz_normalized_rmse": 0.009206156575356044
+    }
+  ],
+  "position_controls": [
+    {
+      "scene": "center",
+      "mode": "off_gen_positions_on",
+      "distance_to_on": 0.019364503553542772,
+      "distance_to_off": 0.004690088770940201
+    },
+    {
+      "scene": "center",
+      "mode": "on_gen_positions_off",
+      "distance_to_on": 0.003707516066477086,
+      "distance_to_off": 0.020732460382335026
+    },
+    {
+      "scene": "center",
+      "mode": "off_all_positions_on",
+      "distance_to_on": 0.02044871956536988,
+      "distance_to_off": 0.003843810875776622
+    },
+    {
+      "scene": "far",
+      "mode": "off_gen_positions_on",
+      "distance_to_on": 0.029689274231281267,
+      "distance_to_off": 0.004961910981124881
+    },
+    {
+      "scene": "far",
+      "mode": "on_gen_positions_off",
+      "distance_to_on": 0.013928679367491951,
+      "distance_to_off": 0.04336570342794195
+    },
+    {
+      "scene": "far",
+      "mode": "off_all_positions_on",
+      "distance_to_on": 0.039021253028021244,
+      "distance_to_off": 0.010386856130819137
+    }
+  ],
+  "scope": "Normalized XYZ numerical RMSE, three matched noise seeds or seed198 for artificial position controls. Not a target-selection probability."
+}

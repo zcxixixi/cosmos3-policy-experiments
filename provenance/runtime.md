@@ -17,4 +17,8 @@
 
 尚未完成官方framework server与自定义Diffusers runner的完整逐数值交叉验证，不能排除所有输入格式/实现差异。源码目录在核验时没有变更模型库；实验hook仅作用于当次运行。
 
+2026-10-03补充：实验09找到并关闭当前调用额外的19个system tokens。两布局、两目标词、三对应噪声种子及位置编号控制，共36组离线预测；新增5条128步执行，原设置复用3条。关闭后仍出现相同错误目标，不能把失败仅归因于多余system。实验10沿用关闭system的设置，四份固定初态分别以195、196、198为起始噪声种子，8轮查询使用base_seed+query；除该开关之外，仍保留历史像素处理和时间表。12条中两条复用09、两条为首次交换、八条为新增重复，不能按12独立场景解释。
+
+实验11已对同一真实无system输入完成一个官方原生transformer forward。814参数键全部匹配，动作输入边界逐项相同；最终readout相对RMS差0.858%，同一个官方head重放的前10维去噪velocity差0.325%。原生计算使用独立Python3.12/PyTorch2.11、现有cuDNN9.24，主体BF16/时间MLP FP32；没有安装新依赖或下载权重。原生padding通过明确索引排除后采集。它不是完整官方server、30步采样或新闭环的等价核验。[原始数组与限制](../experiments/11-official-transformer/README.md)。
+
 libero-milk-task.bddl来自安装的LIBERO资源，遵循上游[LIBERO仓库](https://github.com/Lifelong-Robot-Learning/LIBERO)的许可证。它记录任务默认摆放范围，不能据此证明这份社区权重实际训练数据的范围。

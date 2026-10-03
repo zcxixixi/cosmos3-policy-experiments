@@ -6,9 +6,24 @@
 <h1>让它拿牛奶：原来的位置能抓，<br>换个位置却抓了奶酪盒。</h1>
 <p class="note">实验记录更新：2026-10-03 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、视频和原始数据</a></p>
 <p>我们想查清楚：它有没有用上指令？有没有认准牛奶？还是照着熟悉的位置抓东西？下面先看机械臂实际做了什么，再看网络里的数值。</p>
-<p class="lead"><b>目前观察到：在这几组测试中，换物体位置会改变它抓谁；把指令里的“牛奶”换成“黄油”，却没有让它换抓取对象。</b></p>
+<p class="lead"><b>最新对照：牛奶移远后，它抓奶酪盒；把黄油放到奶酪盒原来的位置，它就改抓黄油。换三个随机种子，结果都一样。</b><br>这支持“摆放位置在影响它抓谁”，还不能证明它背了训练答案。</p>
 <p class="note">测试的是社区微调权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">fwd4xl/cosmos3-nano-policy-liberoall-5k</a>，配合我们当前的推理程序。我们还在检查输入和调用方式，暂时不能把问题都归到模型本身。</p>
-<nav aria-label="阅读导航"><a href="#behavior">先看视频</a><a href="#language">文字有没有进去？</a><a href="#exchange">我们怎么查内部？</a><a href="#conclusion">现在知道什么？</a></nav>
+<nav aria-label="阅读导航"><a href="#latest">最新对照和视频</a><a href="#language">文字有没有进去？</a><a href="#exchange">我们怎么查内部？</a><a href="#conclusion">现在知道什么？</a></nav>
+<section id="latest"><h2>新对照：它想抓奶酪盒，还是想抓那个位置上的东西？</h2>
+<p>之前的失败有两种解释：它可能偏爱奶酪盒，也可能在牛奶移远后，转而去一个熟悉的位置抓东西。只看原来的视频，分不清这两种解释。</p>
+<p>这次<b>牛奶保持不动，只交换奶酪盒和黄油的桌面位置</b>。指令始终是“拿牛奶，放进篮子”。相机、机器人初态和推理设置都保持对应一致；没有替换网络里的数组。</p>
+<table><thead><tr><th>牛奶在哪里？</th><th>奶酪盒原来的位置放着谁？</th><th>机械臂抓起了谁？</th></tr></thead><tbody>
+<tr><td>原位置</td><td>奶酪盒</td><td>牛奶，三次一致</td></tr>
+<tr><td>原位置</td><td>换成黄油</td><td>牛奶，三次一致</td></tr>
+<tr><td>移远 15 cm</td><td>奶酪盒</td><td>奶酪盒，三次一致</td></tr>
+<tr><td>移远 15 cm</td><td>换成黄油</td><td>黄油，三次一致</td></tr>
+</tbody></table>
+<p><b>它没有追着搬走的奶酪盒去新位置，而是抓了奶酪盒旧位置上的黄油。</b>所以，“它就是一直认准奶酪盒”解释不了这个结果。但牛奶还在原位置时，它仍抓牛奶，也不能说它在所有场景里都只去一个固定点。</p>
+<figure><img src="media/identity-position-scenes.png" alt="四种起始摆放的固定相机画面：牛奶原位时两种布局都抓牛奶；牛奶移远后，抓起原奶酪位置上的奶酪或黄油"><figcaption>这是四种起始画面。每种都用三个推理随机种子重复；不是十二种不同的摆放。模型实际还会看手腕相机画面。</figcaption></figure>
+<details><summary>看实际执行：牛奶移远，抓起奶酪盒</summary><video controls preload="none" playsinline src="media/far-original-cream.mp4"></video><p>这条录像中，奶酪盒最高抬起约 24 cm，牛奶没有被抓。</p></details>
+<details><summary>看实际执行：交换奶酪盒和黄油，改抓旧位置上的黄油</summary><video controls preload="none" playsinline src="media/far-swapped-butter.mp4"></video><p>牛奶的位置和指令都没变；黄油最高抬起约 28 cm。两条都是 MuJoCo 真实执行录像。</p></details>
+<p class="note">每条执行 128 步，用双侧夹爪接触和持续抬起检查抓了谁。未交换的原始布局三次抓牛奶，其中两次触发了“放进篮子”的检查；另外九条在记录结束时都没有触发。抓起物体不能当作整个任务完成。<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/10-identity-position/README.md">方法、全部录像和逐步数据</a></p>
+</section>
 <section id="input"><h2>1. 我们给模型什么，让它做什么？</h2>
 <p>输入是两张当前照片：一张来自固定相机，一张来自机械臂手腕相机，各为 256×256。再给一句“拿牛奶，放进篮子”。模型算出动作，交给 MuJoCo 仿真里的机械臂执行。</p>
 <p class="flow">两张照片＋一句指令 → 模型计算 → 输出一段 16 步动作 → 机械臂执行 → 拍新照片，继续计算</p>
@@ -71,12 +86,20 @@
 <p class="note"><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/04-state-exchange/README.md">替换实验的原始记录</a></p></details>
 </section>
 <section id="conclusion"><h2>5. 现在知道什么，还差哪一步？</h2>
-<p>在这几组测试里，模型会随场景变化调整动作；语言也参与计算，但没有有效控制它换抓取目标。我们替换后面的中间数据，能改变实际抓取结果，说明这些内部数据确实影响了行为。</p>
+<p>现在更具体的结论是：<b>在这些测试场景中，语言进入了计算，却没有可靠地让它按名称选物体；牛奶移远后，它反复抓了原奶酪位置上的东西。</b>交换物体和以前的内部数组替换，都能改变实际抓取结果。</p>
 <p><b>“它记住了答案”仍是猜想。</b>我们还没有核对到这份权重实际用过的全部示范，也没证明它复现了其中某一条。现在也没有找到一个确定出错的网络层。</p>
-<p>下一步先核对官方代码，检查照片和文字有没有按官方方式输入，以及输出动作有没有正确交给机械臂执行。确认输入方式后，再做一个直接对照：在牛奶已移动 15 cm 的场景里，牛奶保持不动，只交换奶酪盒和黄油的位置。看它会跟着奶酪盒到新位置，还是抓旧位置上的黄油。这能帮助区分物体偏好和位置偏好。</p>
-<p class="note">这个对照尚未运行。当前结果来自少量场景和有限随机种子，不能推广到所有 Cosmos 权重。内部数组变化也不能换算成“它有 80% 想抓奶酪”；目前判断抓谁，依据的是实际执行、接触和抬起数据。</p>
+<p>输入方式也在查。我们的程序比官方动作示例多放了一段开场文字；去掉后，原布局仍抓牛奶、移远后仍抓奶酪盒，换成“拿黄油”也没有换目标。因此，这段多余文字不能单独解释失败。照片预处理、采样步骤和官方网络实现的完整对照还没全部完成。</p>
+<p>下一步要把这个已经能重复的行为，和网络内部的具体传递路径对应起来：什么信息让它转向旧位置？只改那部分信息，能否让它回到牛奶，而不只是换一条运动路线？</p>
+<p class="note">目前仍是少量固定场景、特定权重和当前推理程序的结果。移动物体也会改变遮挡和抓取条件，尚未拆开这些影响。内部数组变化不能换算成“它有 80% 想抓奶酪”；判断抓谁，依据的是实际接触和持续抬起。</p>
 </section>
 <section id="more"><h2>需要追数据时，再展开看</h2>
+<details><summary>输入格式核验：去掉多余的开场文字，失败是否消失？</summary>
+<p>官方动作推理示例关闭系统提示。我们原来的程序沿用了默认设置，多了“你是一个帮助生成视频的助手”这段开场文字，共 19 个文本 token。任务指令和照片仍然确实被送入模型。</p>
+<p>我们用两种布局、两句目标指令和三个对应随机种子，分别保留或去掉开场文字；另外加入位置编号对照，共 36 组完整动作预测。初始噪声和采样时间表对应一致；原设置的 12 组输出精确复现了以前的数组。</p>
+<p>去掉开场文字后，动作数值和内部数组有变化，<b>四条新增实际执行没有纠正目标选择</b>：原布局说拿牛奶或拿黄油，都抓牛奶；牛奶移远后，两句指令都抓奶酪盒。另补跑一条原设置下“拿黄油”的远布局，也抓奶酪盒；共新增五条执行。</p>
+<figure><img src="media/system-prompt-language-effect.png" alt="保留和去掉开场文字时，更换目标名称引起的动作数值差异；各有三个噪声种子"><figcaption>纵轴只是归一化动作数组的差异，不是厘米或抓取概率。点是三个种子，柱是平均值；去掉开场文字没有普遍加强语言影响。</figcaption></figure>
+<figure><img src="media/system-prompt-readout.png" alt="真实动作中间向量的局部变化，比较换语言、换开场文字和换布局"><figcaption>图来自真实 4096 维中间向量；每格合并连续 32 个坐标，颜色表示变化幅度。这些坐标没有被标成“牛奶”“黄油”或“意图”，不能仅凭亮暗定位根因。</figcaption></figure>
+<p class="note"><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/09-system-prompt/README.md">输入格式、控制检查、原始向量和执行结果</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/notes/runtime-contract-audit.md">官方代码对照记录</a></p></details>
 <details><summary>夹爪对照：要求张开、闭合、不写任务描述，结果一样吗？</summary>
 <p>在悬空场景里，三种输入最终都输出张开；在靠近牛奶的场景里，都输出闭合。因此，这几次测试中，语言没有让它按要求改变夹爪动作。</p>
 <p>“张开”改“闭合”时，转换成动作前的中间数组平均变化约 1.01%；从悬空换到靠近牛奶的场景，变化约 45.22%，各用三个随机种子。换场景同时改变了多个物理状态，不能只归因于距离。</p>

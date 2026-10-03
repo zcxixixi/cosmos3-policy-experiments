@@ -1,0 +1,262 @@
+{
+  "scope": "one native transformer forward on saved identical no-system model inputs",
+  "full_official_server_equivalence": false,
+  "case": "center_milk_198_off",
+  "mode": "off",
+  "torch": "2.11.0+cu130",
+  "cudnn_version": 92400,
+  "parameter_keys": 814,
+  "missing_keys": 0,
+  "sequence_length": 387,
+  "und_tokens": 121,
+  "time_mlp_precision": "float32",
+  "other_parameter_precision": "bfloat16",
+  "states": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/runtime-system-prompt/cases/center_milk_198_off/states.pt",
+  "checkpoint": "/home/current/work/cosmos3/checkpoints/Cosmos3-Nano-Policy-LIBEROall-5k",
+  "checkpoint_config_sha256": "4728d7b841e6e8a7ab74f73c8449fe03ee519d1996017bb208c697ab03f82119",
+  "status": "forward_completed",
+  "comparisons": {
+    "forward_seconds": 0.6395351139944978,
+    "readout": {
+      "rms": 0.0016654571518301964,
+      "max_abs": 0.046875,
+      "relative_rms_percent": 0.8580375842582293
+    },
+    "action_velocity_first10": {
+      "rms": 0.003841931698843837,
+      "max_abs": 0.015625,
+      "relative_rms_percent": 0.32520388003403955
+    },
+    "boundaries": [
+      {
+        "rms": 0.0,
+        "max_abs": 0.0,
+        "relative_rms_percent": 0.0
+      },
+      {
+        "rms": 0.00018820054538082331,
+        "max_abs": 0.0078125,
+        "relative_rms_percent": 0.05628634816048835
+      },
+      {
+        "rms": 0.00040497948066331446,
+        "max_abs": 0.015625,
+        "relative_rms_percent": 0.11651578741987044
+      },
+      {
+        "rms": 0.0007032125722616911,
+        "max_abs": 0.03125,
+        "relative_rms_percent": 0.19016100682853096
+      },
+      {
+        "rms": 0.001243639038875699,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.2699456452655235
+      },
+      {
+        "rms": 0.0016147755086421967,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.32842897142631655
+      },
+      {
+        "rms": 0.0018151558469980955,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.3533076579701963
+      },
+      {
+        "rms": 0.0019560311920940876,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.3755978061696375
+      },
+      {
+        "rms": 0.0020613609813153744,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.39255597137116216
+      },
+      {
+        "rms": 0.00214942148886621,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.41132248490161355
+      },
+      {
+        "rms": 0.0021596699953079224,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.4222152461382656
+      },
+      {
+        "rms": 0.0021278029307723045,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.43011717504902713
+      },
+      {
+        "rms": 0.0022281117271631956,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.4634440923898813
+      },
+      {
+        "rms": 0.002276505809277296,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.48448090626580265
+      },
+      {
+        "rms": 0.002298367442563176,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.49758431636140327
+      },
+      {
+        "rms": 0.0023341053165495396,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.5028518836084235
+      },
+      {
+        "rms": 0.0023954748176038265,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.5114927346326682
+      },
+      {
+        "rms": 0.002447057282552123,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.5103132875018778
+      },
+      {
+        "rms": 0.002542115980759263,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.5252194522812424
+      },
+      {
+        "rms": 0.002616975223645568,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.5415194950242324
+      },
+      {
+        "rms": 0.002854441525414586,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5924345366648923
+      },
+      {
+        "rms": 0.002941265469416976,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.6304006011138563
+      },
+      {
+        "rms": 0.0030588165391236544,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.6633382290012821
+      },
+      {
+        "rms": 0.0030927015468478203,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.671035556648221
+      },
+      {
+        "rms": 0.003397539258003235,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.7353996060924844
+      },
+      {
+        "rms": 0.003973003942519426,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.8510845388331261
+      },
+      {
+        "rms": 0.004318308550864458,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.9137306398411541
+      },
+      {
+        "rms": 0.004644209053367376,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.979853271915265
+      },
+      {
+        "rms": 0.004823480732738972,
+        "max_abs": 0.25,
+        "relative_rms_percent": 1.0247858670749876
+      },
+      {
+        "rms": 0.005097982473671436,
+        "max_abs": 0.25,
+        "relative_rms_percent": 1.066585939526427
+      },
+      {
+        "rms": 0.005389606114476919,
+        "max_abs": 0.25,
+        "relative_rms_percent": 1.1037540104845087
+      },
+      {
+        "rms": 0.005320777650922537,
+        "max_abs": 0.25,
+        "relative_rms_percent": 1.0226338510607147
+      },
+      {
+        "rms": 0.005662626586854458,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.9978876918888356
+      },
+      {
+        "rms": 0.0067418464459478855,
+        "max_abs": 0.25,
+        "relative_rms_percent": 1.05492930008795
+      },
+      {
+        "rms": 0.006869788747280836,
+        "max_abs": 0.25,
+        "relative_rms_percent": 1.013163856845598
+      },
+      {
+        "rms": 0.007394531741738319,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.9448710197217047
+      },
+      {
+        "rms": 0.0076724630780518055,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.8394015399926221
+      }
+    ],
+    "native_layout": {
+      "gen_shape_with_padding": [
+        267,
+        4096
+      ],
+      "real_gen_tokens": 266,
+      "action_global_indexes": [
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386
+      ],
+      "action_gen_rows": [
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265
+      ]
+    },
+    "reference_velocity": "Replay official loaded head on saved Diffusers readout; not a simulator action"
+  }
+}

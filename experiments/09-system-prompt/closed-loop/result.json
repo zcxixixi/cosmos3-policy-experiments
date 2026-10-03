@@ -1,0 +1,611 @@
+{
+  "cases": [
+    {
+      "case": "center_milk_off",
+      "scene": "center",
+      "noun": "milk",
+      "system_on": false,
+      "prompt": "pick up the milk and place it in the basket",
+      "steps": 128,
+      "pixel_initial_condition_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "initial_state_sha256": "6a3db9c9026cd279611d8350c87181e907c44b506d591e2e3f9b89b4f3f4b0fc",
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": 56,
+          "grasp_frames": 73,
+          "first_sustained_2cm_lift_step": 61,
+          "max_lift_cm": 21.585064634296895,
+          "final_lift_cm": 8.222541931387395,
+          "max_xy_displacement_cm": 55.116670230449806
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "eef_xyz": [
+          -0.017826180710709322,
+          0.29743197964131374,
+          0.1845387801466073
+        ],
+        "objects": {
+          "milk_1": [
+            -0.0020940192032822377,
+            0.2934648236686415,
+            0.15196089569791116
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.060060797038729775,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "gripper_qpos": [
+          0.03064887303894474,
+          -0.023681313154610407
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Target contact/lift diagnostic. milk_in_basket is the original milk task checker, not a butter-task success checker."
+    },
+    {
+      "case": "center_butter_off",
+      "scene": "center",
+      "noun": "butter",
+      "system_on": false,
+      "prompt": "pick up the butter and place it in the basket",
+      "steps": 128,
+      "pixel_initial_condition_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "initial_state_sha256": "6a3db9c9026cd279611d8350c87181e907c44b506d591e2e3f9b89b4f3f4b0fc",
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": 56,
+          "grasp_frames": 73,
+          "first_sustained_2cm_lift_step": 61,
+          "max_lift_cm": 21.377714405890018,
+          "final_lift_cm": 7.28192223631193,
+          "max_xy_displacement_cm": 54.53331592466941
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "eef_xyz": [
+          -0.017121188813274096,
+          0.2900052668060802,
+          0.17517740165467668
+        ],
+        "objects": {
+          "milk_1": [
+            -0.0015919926752939076,
+            0.28665729501233334,
+            0.1425546987471565
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872977,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "gripper_qpos": [
+          0.03016685168509911,
+          -0.02402896265528038
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Target contact/lift diagnostic. milk_in_basket is the original milk task checker, not a butter-task success checker."
+    },
+    {
+      "case": "far_milk_off",
+      "scene": "far",
+      "noun": "milk",
+      "system_on": false,
+      "prompt": "pick up the milk and place it in the basket",
+      "steps": 128,
+      "pixel_initial_condition_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "initial_state_sha256": "67912974162ce9b6bff2a6f2fd8374b2e77c37675a9551a48303e29a6aa5d8de",
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.87797262534729e-12
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": 63,
+          "grasp_frames": 65,
+          "first_sustained_2cm_lift_step": 68,
+          "max_lift_cm": 23.958149776077388,
+          "final_lift_cm": 16.206707633043585,
+          "max_xy_displacement_cm": 37.67719088288014
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "eef_xyz": [
+          -0.017671488028397467,
+          0.27160250145928727,
+          0.17178435726515795
+        ],
+        "objects": {
+          "milk_1": [
+            0.03283918389857263,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            -0.002722723041206844,
+            0.2691461921688758,
+            0.17098855374904376
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872977,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "gripper_qpos": [
+          0.02155013272427079,
+          -0.0223036313171906
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Target contact/lift diagnostic. milk_in_basket is the original milk task checker, not a butter-task success checker."
+    },
+    {
+      "case": "far_butter_off",
+      "scene": "far",
+      "noun": "butter",
+      "system_on": false,
+      "prompt": "pick up the butter and place it in the basket",
+      "steps": 128,
+      "pixel_initial_condition_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "initial_state_sha256": "67912974162ce9b6bff2a6f2fd8374b2e77c37675a9551a48303e29a6aa5d8de",
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.87797262534729e-12
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": 63,
+          "grasp_frames": 63,
+          "first_sustained_2cm_lift_step": 68,
+          "max_lift_cm": 24.09870870711775,
+          "final_lift_cm": 13.282648173085773,
+          "max_xy_displacement_cm": 36.767138112571764
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "eef_xyz": [
+          0.01195011496645597,
+          0.2619748430966689,
+          0.20469444151108301
+        ],
+        "objects": {
+          "milk_1": [
+            0.03283918389857263,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.03004306725274952,
+            0.2583049863337322,
+            0.14174795914946564
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872976,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "gripper_qpos": [
+          0.026338280290605438,
+          -0.02665224865461401
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Target contact/lift diagnostic. milk_in_basket is the original milk task checker, not a butter-task success checker."
+    },
+    {
+      "case": "far_butter_on",
+      "scene": "far",
+      "noun": "butter",
+      "system_on": true,
+      "prompt": "pick up the butter and place it in the basket",
+      "steps": 128,
+      "pixel_initial_condition_exact": true,
+      "first_chunk_matches_offline_probe_exact": true,
+      "initial_state_sha256": "67912974162ce9b6bff2a6f2fd8374b2e77c37675a9551a48303e29a6aa5d8de",
+      "per_object": {
+        "milk_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.87797262534729e-12
+        },
+        "basket_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": -4.8511180340219534e-05,
+          "max_xy_displacement_cm": 0.0021068121910648163
+        },
+        "cream_cheese_1": {
+          "first_grasp_step": 63,
+          "grasp_frames": 66,
+          "first_sustained_2cm_lift_step": 68,
+          "max_lift_cm": 23.70414948216289,
+          "final_lift_cm": 14.63170697407112,
+          "max_xy_displacement_cm": 38.520038593939475
+        },
+        "tomato_sauce_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_grasp_step": null,
+          "grasp_frames": 0,
+          "first_sustained_2cm_lift_step": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "eef_xyz": [
+          -0.031892680529454646,
+          0.27813888594818953,
+          0.15489488978610783
+        ],
+        "objects": {
+          "milk_1": [
+            0.03283918389857263,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011167234097333533,
+            0.26899347329230966,
+            -0.004582830438382064
+          ],
+          "cream_cheese_1": [
+            -0.017989879192049515,
+            0.2754976108090308,
+            0.15523854715931912
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872977,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "cream_cheese_1"
+        ],
+        "gripper_qpos": [
+          0.021629806908794486,
+          -0.021147434441030673
+        ],
+        "milk_in_basket": false
+      },
+      "scope": "Target contact/lift diagnostic. milk_in_basket is the original milk task checker, not a butter-task success checker."
+    }
+  ],
+  "scope": "Five new 128-step closed loops, matched initial states and seed 198+query. Explicit system setting on every query; existing on controls are reused, not counted as new trials."
+}

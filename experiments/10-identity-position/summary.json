@@ -1,0 +1,766 @@
+{
+  "scope": "Four fixed simulation snapshots, each repeated with three policy-noise seeds. Not twelve independent scenes or a benchmark success-rate estimate.",
+  "instruction": "pick up the milk and place it in the basket",
+  "system_prompt": false,
+  "selection_criterion": "Both-finger contact plus >2cm lift for >=5 simulation records; recorded full trajectories, not generated videos.",
+  "groups": [
+    {
+      "scene": "center_original",
+      "seeds": [
+        195,
+        196,
+        198
+      ],
+      "selected_objects": [
+        "milk_1",
+        "milk_1",
+        "milk_1"
+      ],
+      "max_lift_range_cm": [
+        21.222513854851787,
+        21.833780992748487
+      ],
+      "final_milk_in_basket_count": 2
+    },
+    {
+      "scene": "center_swapped",
+      "seeds": [
+        195,
+        196,
+        198
+      ],
+      "selected_objects": [
+        "milk_1",
+        "milk_1",
+        "milk_1"
+      ],
+      "max_lift_range_cm": [
+        19.514996475008996,
+        22.067739193523277
+      ],
+      "final_milk_in_basket_count": 0
+    },
+    {
+      "scene": "far_original",
+      "seeds": [
+        195,
+        196,
+        198
+      ],
+      "selected_objects": [
+        "cream_cheese_1",
+        "cream_cheese_1",
+        "cream_cheese_1"
+      ],
+      "max_lift_range_cm": [
+        23.958149776077388,
+        24.945855435339272
+      ],
+      "final_milk_in_basket_count": 0
+    },
+    {
+      "scene": "far_swapped",
+      "seeds": [
+        195,
+        196,
+        198
+      ],
+      "selected_objects": [
+        "butter_1",
+        "butter_1",
+        "butter_1"
+      ],
+      "max_lift_range_cm": [
+        26.567171235159957,
+        27.656418106519975
+      ],
+      "final_milk_in_basket_count": 0
+    }
+  ],
+  "cases": [
+    {
+      "scene": "center_original",
+      "noise_seed_base": 198,
+      "selected_object": "milk_1",
+      "source": "experiments/09-system-prompt/closed-loop/center_milk_off",
+      "provenance": "reused_experiment09",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/09-system-prompt/closed-loop/center_milk_off/initial_state.npy",
+      "initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "trajectory_sha256": "a39181dc28d122f9e638975ba16a0e8202d31393d2f56e4663999e1c4627a838",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 56,
+          "contact_frames": 73,
+          "max_lift_cm": 21.585064634296895,
+          "first_2cm_for_5frames": 61
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "far_original",
+      "noise_seed_base": 198,
+      "selected_object": "cream_cheese_1",
+      "source": "experiments/09-system-prompt/closed-loop/far_milk_off",
+      "provenance": "reused_experiment09",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/09-system-prompt/closed-loop/far_milk_off/initial_state.npy",
+      "initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "trajectory_sha256": "7c221bdbd19e13bea287e558729dddca0d1d78fed1ae8a73f5402f4d69a639ee",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174606907524918e-08,
+          "first_2cm_for_5frames": null
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 65,
+          "max_lift_cm": 23.958149776077388,
+          "first_2cm_for_5frames": 68
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "center_swapped",
+      "noise_seed_base": 198,
+      "selected_object": "milk_1",
+      "source": "experiments/10-identity-position/center_cream_butter_swap_milk_off",
+      "provenance": "initial_experiment10",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/10-identity-position/center_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_state_sha256": "d899eaa0505dbcac4e09310bf7c47e2e3f7155e0d15ad66df74467b1849806cb",
+      "trajectory_sha256": "2862f348c6db093300f669b7a0ace8593bfbd811333c8b23bb0149400e30752b",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 57,
+          "contact_frames": 72,
+          "max_lift_cm": 21.63334035130542,
+          "first_2cm_for_5frames": 62
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "far_swapped",
+      "noise_seed_base": 198,
+      "selected_object": "butter_1",
+      "source": "experiments/10-identity-position/far_cream_butter_swap_milk_off",
+      "provenance": "initial_experiment10",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/10-identity-position/far_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_state_sha256": "0cf8cc7ab5ae6ca253d31ad51ac44b0d6a1f2c627c17af4f389a4f0887f09bb3",
+      "trajectory_sha256": "bb79d0e06088f50eac3432d35261cd384671c6f34e7be05c6395d9b72cc1a9ca",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174606907524918e-08,
+          "first_2cm_for_5frames": null
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": 62,
+          "contact_frames": 67,
+          "max_lift_cm": 27.577582649196124,
+          "first_2cm_for_5frames": 68
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "center_original",
+      "noise_seed_base": 195,
+      "selected_object": "milk_1",
+      "source": "experiments/10-identity-position/repeats/center_original_milk_off_seed195",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/09-system-prompt/closed-loop/center_milk_off/initial_state.npy",
+      "initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "trajectory_sha256": "70a8bdb964146ca97d3fe6aa0707dae1110d6aafc15e5e4e0c71f6da260edd4c",
+      "final_milk_in_basket": true,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 51,
+          "contact_frames": 78,
+          "max_lift_cm": 21.222513854851787,
+          "first_2cm_for_5frames": 56
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "far_original",
+      "noise_seed_base": 195,
+      "selected_object": "cream_cheese_1",
+      "source": "experiments/10-identity-position/repeats/far_original_milk_off_seed195",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/09-system-prompt/closed-loop/far_milk_off/initial_state.npy",
+      "initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "trajectory_sha256": "fdec0a9cf717255e72643629e10c90add61b4110707e141969f816c37b0379d0",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 0.2019538800829987,
+          "first_2cm_for_5frames": null
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 65,
+          "max_lift_cm": 24.945855435339272,
+          "first_2cm_for_5frames": 67
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "center_swapped",
+      "noise_seed_base": 195,
+      "selected_object": "milk_1",
+      "source": "experiments/10-identity-position/repeats/center_swapped_milk_off_seed195",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/10-identity-position/center_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_state_sha256": "d899eaa0505dbcac4e09310bf7c47e2e3f7155e0d15ad66df74467b1849806cb",
+      "trajectory_sha256": "88a0cd96555060a8778d762a244642f54912aeb0fe0abce694dbd2f4251b1c2f",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 53,
+          "contact_frames": 76,
+          "max_lift_cm": 22.067739193523277,
+          "first_2cm_for_5frames": 57
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "far_swapped",
+      "noise_seed_base": 195,
+      "selected_object": "butter_1",
+      "source": "experiments/10-identity-position/repeats/far_swapped_milk_off_seed195",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/10-identity-position/far_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_state_sha256": "0cf8cc7ab5ae6ca253d31ad51ac44b0d6a1f2c627c17af4f389a4f0887f09bb3",
+      "trajectory_sha256": "87073daffc316bb031245b207282640fb28d77277a2169f1c5b09bf27448985e",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 0.3101251541136149,
+          "first_2cm_for_5frames": null
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 66,
+          "max_lift_cm": 26.567171235159957,
+          "first_2cm_for_5frames": 70
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "center_original",
+      "noise_seed_base": 196,
+      "selected_object": "milk_1",
+      "source": "experiments/10-identity-position/repeats/center_original_milk_off_seed196",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/09-system-prompt/closed-loop/center_milk_off/initial_state.npy",
+      "initial_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "trajectory_sha256": "a8d5f96078efa5eef18ec8a6ce308f1010ccc2aad6e5853271b55b5e4d4dcf4c",
+      "final_milk_in_basket": true,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 53,
+          "contact_frames": 76,
+          "max_lift_cm": 21.833780992748487,
+          "first_2cm_for_5frames": 57
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "far_original",
+      "noise_seed_base": 196,
+      "selected_object": "cream_cheese_1",
+      "source": "experiments/10-identity-position/repeats/far_original_milk_off_seed196",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/09-system-prompt/closed-loop/far_milk_off/initial_state.npy",
+      "initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "trajectory_sha256": "263c864cf8e388f98896fbbcac2dc924ddb1789a35b8de94946bec95d006f0c9",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 0.009226742627460593,
+          "first_2cm_for_5frames": null
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 62,
+          "contact_frames": 65,
+          "max_lift_cm": 24.50253610505351,
+          "first_2cm_for_5frames": 68
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "center_swapped",
+      "noise_seed_base": 196,
+      "selected_object": "milk_1",
+      "source": "experiments/10-identity-position/repeats/center_swapped_milk_off_seed196",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/10-identity-position/center_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_state_sha256": "d899eaa0505dbcac4e09310bf7c47e2e3f7155e0d15ad66df74467b1849806cb",
+      "trajectory_sha256": "a9ba50cc3dddbc3606ea5aef4ecada03295f49b33548b66af7d10f3cd4c9aac6",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 55,
+          "contact_frames": 74,
+          "max_lift_cm": 19.514996475008996,
+          "first_2cm_for_5frames": 59
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 7.57900686654267e-13,
+          "first_2cm_for_5frames": null
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    },
+    {
+      "scene": "far_swapped",
+      "noise_seed_base": 196,
+      "selected_object": "butter_1",
+      "source": "experiments/10-identity-position/repeats/far_swapped_milk_off_seed196",
+      "provenance": "new_noise_repeat",
+      "steps": 128,
+      "state_records": 129,
+      "initial_state_source": "experiments/10-identity-position/far_cream_butter_swap_milk_off/initial_state.npy",
+      "initial_state_sha256": "0cf8cc7ab5ae6ca253d31ad51ac44b0d6a1f2c627c17af4f389a4f0887f09bb3",
+      "trajectory_sha256": "e5bcac64e55f4b9a93e817ac007f288db5441c7208aabeaa79b28739d57bad34",
+      "final_milk_in_basket": false,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 0.06457580578881766,
+          "first_2cm_for_5frames": null
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 4.250766405533568e-12,
+          "first_2cm_for_5frames": null
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "first_2cm_for_5frames": null
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.020562075079397e-15,
+          "first_2cm_for_5frames": null
+        },
+        "butter_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "max_lift_cm": 27.656418106519975,
+          "first_2cm_for_5frames": 69
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 9.174607046302796e-08,
+          "first_2cm_for_5frames": null
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "max_lift_cm": 5.766220834146907e-13,
+          "first_2cm_for_5frames": null
+        }
+      }
+    }
+  ]
+}
