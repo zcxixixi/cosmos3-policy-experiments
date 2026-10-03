@@ -1,0 +1,29 @@
+{
+  "state": "complete",
+  "cases": 12,
+  "seeds": [
+    195,
+    196,
+    198
+  ],
+  "action_horizon": 10,
+  "padded_action_dim": 32,
+  "native_action_dim": 7,
+  "input_collection_sha256": "f462c11450f069aca600b895f223a5a7bbd07abcb05c2eda4fdc45071e179e92",
+  "script_sha256": "16c50da91a9a0344289edf735d3ad0126a9a30fb92070e2cea227dfee47e37df",
+  "checkpoint": "/home/current/work/openpi-demo/checkpoints/pi05_libero",
+  "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+  "tokenizer_sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+  "sources": {
+    "src/openpi/policies/policy_config.py": "aaf42ab04a33b6c91d2447926211646c33ebd8ebfa427f026d7b6c4f7c45ec52",
+    "src/openpi/policies/policy.py": "a2ac5236e23b11d0f5a840d4a8fef148d89dba921d5452ec5dfcd5a6ffa46f20",
+    "src/openpi/policies/libero_policy.py": "d8679d99facc3fef48da07406081b20709ed872fcefdf7de67ede99422d623fa",
+    "src/openpi/models/pi0.py": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+    "src/openpi/models/pi0_config.py": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+    "src/openpi/models/tokenizer.py": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+    "src/openpi/transforms.py": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4"
+  },
+  "library_edits": false,
+  "weight_downloads": false,
+  "scope": "Two existing snapshots, milk/butter instructions, paired action noise. Native pi05_libero observations and native 7D controller actions. First-chunk predictions only; no execution, target selection, success rate, or cross-model latent equivalence is established by this probe."
+}

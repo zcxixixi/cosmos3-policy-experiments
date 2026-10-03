@@ -1,0 +1,38 @@
+{
+  "scene": "far",
+  "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+  "task_language": "pick up the milk and place it in the basket",
+  "snapshot_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/state.npy",
+  "snapshot_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+  "image_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/input.png",
+  "image_source_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+  "images_are_reused_actual_frames": true,
+  "new_camera_render": false,
+  "restored_snapshot_exact": true,
+  "reference_proprio_max_abs": 0.0,
+  "state_order": "eef_xyz, official quaternion-to-axis-angle(xyzw), two gripper qpos",
+  "observation_state": [
+    -0.15291844146572464,
+    -0.008822143713247169,
+    0.2565170014682034,
+    3.140995373585773,
+    0.0005556109760489995,
+    -0.09141266340950056,
+    0.038730625502156946,
+    -0.0387277036861937
+  ],
+  "observation_state_dtype": "float64",
+  "image_shapes": [
+    [
+      224,
+      224,
+      3
+    ],
+    [
+      224,
+      224,
+      3
+    ]
+  ],
+  "inputs_sha256": "c7a2764f60a0b8f81b3b1ffa6b3812d1f6c00ac51546338ed120f5d0df3c805b"
+}

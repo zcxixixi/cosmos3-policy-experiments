@@ -1,0 +1,38 @@
+{
+  "name": "cold198",
+  "seed": 198,
+  "actual_arrays_sha256": "2d08cffc8e0ee7deed3cd1ee35e35541c285c0997bb2db7b7d64ce4d053f0356",
+  "raw_inputs_exact_offline": true,
+  "transformed_inputs_exact_offline": true,
+  "noise_exact_offline": true,
+  "decoded_tokens": "pick up the milk and place it in the basket\n",
+  "action_dtype": "float64",
+  "model_output_action_dtype": "float32",
+  "vs_existing_offline": {
+    "exact": true,
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "per_dim_max_abs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "per_dim_rmse": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "xyz_rmse": 0.0,
+    "gripper_sign_equal": true,
+    "gripper_sign_changed_steps": [],
+    "units": "Native LIBERO controller commands; XYZ values are not meters."
+  }
+}

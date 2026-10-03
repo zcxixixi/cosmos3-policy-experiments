@@ -1,0 +1,252 @@
+{
+  "scope": "Same-input first-chunk numerical replay, not a grasping test. Differences do not by themselves establish a model bug or their cause.",
+  "cases": {
+    "cold198": {
+      "name": "cold198",
+      "seed": 198,
+      "actual_arrays_sha256": "2d08cffc8e0ee7deed3cd1ee35e35541c285c0997bb2db7b7d64ce4d053f0356",
+      "raw_inputs_exact_offline": true,
+      "transformed_inputs_exact_offline": true,
+      "noise_exact_offline": true,
+      "decoded_tokens": "pick up the milk and place it in the basket\n",
+      "action_dtype": "float64",
+      "model_output_action_dtype": "float32",
+      "vs_existing_offline": {
+        "exact": true,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "per_dim_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_dim_rmse": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "xyz_rmse": 0.0,
+        "gripper_sign_equal": true,
+        "gripper_sign_changed_steps": [],
+        "units": "Native LIBERO controller commands; XYZ values are not meters."
+      }
+    },
+    "repeat198": {
+      "name": "repeat198",
+      "seed": 198,
+      "actual_arrays_sha256": "74c78d244c1b6d7d47f117686aa44ef3555ca6d9cb50d6cabc1470a661b7d5d1",
+      "raw_inputs_exact_offline": true,
+      "transformed_inputs_exact_offline": true,
+      "noise_exact_offline": true,
+      "decoded_tokens": "pick up the milk and place it in the basket\n",
+      "action_dtype": "float64",
+      "model_output_action_dtype": "float32",
+      "vs_existing_offline": {
+        "exact": true,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "per_dim_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_dim_rmse": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "xyz_rmse": 0.0,
+        "gripper_sign_equal": true,
+        "gripper_sign_changed_steps": [],
+        "units": "Native LIBERO controller commands; XYZ values are not meters."
+      }
+    },
+    "warm195": {
+      "name": "warm195",
+      "seed": 195,
+      "actual_arrays_sha256": "b6f03001a3799da244a6f30a09d0cbde7643a3de6bb10135b0237e04ac7dd58f",
+      "raw_inputs_exact_offline": true,
+      "transformed_inputs_exact_offline": true,
+      "noise_exact_offline": true,
+      "decoded_tokens": "pick up the milk and place it in the basket\n",
+      "action_dtype": "float64",
+      "model_output_action_dtype": "float32",
+      "vs_existing_offline": {
+        "exact": true,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "per_dim_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_dim_rmse": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "xyz_rmse": 0.0,
+        "gripper_sign_equal": true,
+        "gripper_sign_changed_steps": [],
+        "units": "Native LIBERO controller commands; XYZ values are not meters."
+      }
+    },
+    "after_warm198": {
+      "name": "after_warm198",
+      "seed": 198,
+      "actual_arrays_sha256": "8431f1427b5a4c7700a01890ead5fe1e5b1f720a72f07fbe0b1b5ebb284092e1",
+      "raw_inputs_exact_offline": true,
+      "transformed_inputs_exact_offline": true,
+      "noise_exact_offline": true,
+      "decoded_tokens": "pick up the milk and place it in the basket\n",
+      "action_dtype": "float64",
+      "model_output_action_dtype": "float32",
+      "vs_existing_offline": {
+        "exact": true,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "per_dim_max_abs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_dim_rmse": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "xyz_rmse": 0.0,
+        "gripper_sign_equal": true,
+        "gripper_sign_changed_steps": [],
+        "units": "Native LIBERO controller commands; XYZ values are not meters."
+      }
+    }
+  },
+  "comparisons": {
+    "cold198_vs_repeat198": {
+      "exact": true,
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "per_dim_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_dim_rmse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "xyz_rmse": 0.0,
+      "gripper_sign_equal": true,
+      "gripper_sign_changed_steps": [],
+      "units": "Native LIBERO controller commands; XYZ values are not meters.",
+      "normalized_model_output_exact": true,
+      "normalized_model_output_max_abs": 0.0,
+      "normalized_model_output_rmse": 0.0
+    },
+    "cold198_vs_after_warm198": {
+      "exact": true,
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "per_dim_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_dim_rmse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "xyz_rmse": 0.0,
+      "gripper_sign_equal": true,
+      "gripper_sign_changed_steps": [],
+      "units": "Native LIBERO controller commands; XYZ values are not meters.",
+      "normalized_model_output_exact": true,
+      "normalized_model_output_max_abs": 0.0,
+      "normalized_model_output_rmse": 0.0
+    },
+    "repeat198_vs_after_warm198": {
+      "exact": true,
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "per_dim_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_dim_rmse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "xyz_rmse": 0.0,
+      "gripper_sign_equal": true,
+      "gripper_sign_changed_steps": [],
+      "units": "Native LIBERO controller commands; XYZ values are not meters.",
+      "normalized_model_output_exact": true,
+      "normalized_model_output_max_abs": 0.0,
+      "normalized_model_output_rmse": 0.0
+    }
+  },
+  "environment_sha256": "044d8c6400a6c19128bf212185419bf51eb34ad5be2a9d73f5728cfb8b2a44a4",
+  "elapsed_s": 8.00316664300044,
+  "note": "No tolerance was used to accept nonexact outputs. Cause remains unestablished."
+}

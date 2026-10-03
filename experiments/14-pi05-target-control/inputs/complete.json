@@ -1,0 +1,89 @@
+{
+  "state": "complete",
+  "scenes": {
+    "center": {
+      "scene": "center",
+      "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "task_language": "pick up the milk and place it in the basket",
+      "snapshot_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/state.npy",
+      "snapshot_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "image_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/input.png",
+      "image_source_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+      "images_are_reused_actual_frames": true,
+      "new_camera_render": false,
+      "restored_snapshot_exact": true,
+      "reference_proprio_max_abs": 0.0,
+      "state_order": "eef_xyz, official quaternion-to-axis-angle(xyzw), two gripper qpos",
+      "observation_state": [
+        -0.15291844146572464,
+        -0.008822143713247169,
+        0.2565170014682034,
+        3.140995373585773,
+        0.0005556109760489995,
+        -0.09141266340950056,
+        0.038730625502156946,
+        -0.0387277036861937
+      ],
+      "observation_state_dtype": "float64",
+      "image_shapes": [
+        [
+          224,
+          224,
+          3
+        ],
+        [
+          224,
+          224,
+          3
+        ]
+      ],
+      "inputs_sha256": "9e589fc1c332e9b84ea0213a1fe0d4e89a4efaa4f2a4c2ee013b11e8fa2a5c89"
+    },
+    "far": {
+      "scene": "far",
+      "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "task_language": "pick up the milk and place it in the basket",
+      "snapshot_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/state.npy",
+      "snapshot_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "image_source": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-far/inputs/xp15/input.png",
+      "image_source_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "images_are_reused_actual_frames": true,
+      "new_camera_render": false,
+      "restored_snapshot_exact": true,
+      "reference_proprio_max_abs": 0.0,
+      "state_order": "eef_xyz, official quaternion-to-axis-angle(xyzw), two gripper qpos",
+      "observation_state": [
+        -0.15291844146572464,
+        -0.008822143713247169,
+        0.2565170014682034,
+        3.140995373585773,
+        0.0005556109760489995,
+        -0.09141266340950056,
+        0.038730625502156946,
+        -0.0387277036861937
+      ],
+      "observation_state_dtype": "float64",
+      "image_shapes": [
+        [
+          224,
+          224,
+          3
+        ],
+        [
+          224,
+          224,
+          3
+        ]
+      ],
+      "inputs_sha256": "c7a2764f60a0b8f81b3b1ffa6b3812d1f6c00ac51546338ed120f5d0df3c805b"
+    }
+  },
+  "collection": "CPU MuJoCo state restoration without renderer; existing verified actual RGB frames.",
+  "collector_sha256": "16c50da91a9a0344289edf735d3ad0126a9a30fb92070e2cea227dfee47e37df",
+  "image_tools_sha256": "d48b4bd7f44e79fe6db8a8e07c9161144fa250be686e1245014a8b47e6171977",
+  "quaternion_function_source_sha256": "d53748c95804ada559e3ca867305b8f755d8651c4c7f4e2723ef80aea55a3943",
+  "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+  "libero_config": "/home/current/.libero/config.yaml",
+  "library_edits": false,
+  "weight_downloads": false
+}
