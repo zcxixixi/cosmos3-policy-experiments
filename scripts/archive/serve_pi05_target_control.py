@@ -83,7 +83,8 @@ def main():
                 queries_per_case=QUERIES, steps_per_case=STEPS, action_dim=7,
                 script_sha256=probe.digest(__file__), probe_sha256=probe.digest(probe.__file__),
                 offline_complete_sha256=probe.digest(args.predictions_dir/'complete.json'),
-                requests_completed=state['requests'], library_edits=False, weight_downloads=False))
+                requests_completed=state['requests'], actual_jax_config=state['actual_jax_config'],
+                library_edits=False, weight_downloads=False))
 
         def do_POST(self):
             chunk = None
@@ -118,6 +119,12 @@ def main():
                 actions = np.asarray(prediction['actions']).copy()
                 transformed = {key: value.copy() for key, value in captured.items()}
                 assert actions.shape == (HORIZON, 7) and np.isfinite(actions).all()
+                np.savez_compressed(chunk/'model_arrays.npz', actions_native_7=actions,
+                    action_noise=noise, observation_state=source['state'], snapshot=source['snapshot'],
+                    eef_quat_xyzw=source['eef_quat_xyzw'], base_rgb_224=source['base_rgb_224'],
+                    wrist_rgb_224=source['wrist_rgb_224'],
+                    **{'transformed__'+key: value for key, value in transformed.items()})
+                probe.write_json(chunk/'actions.json', actions.tolist())
                 first_exact = None
                 if query == 0:
                     reference = references[scene, noun]
@@ -130,12 +137,6 @@ def main():
                         assert np.array_equal(reference['transformed__'+key], value), (case, key)
                     first_exact = bool(np.array_equal(actions, reference['actions_native_7']))
                     assert first_exact, f'q0 full 10-action chunk differs from offline seed198: {case}'
-                np.savez_compressed(chunk/'model_arrays.npz', actions_native_7=actions,
-                    action_noise=noise, observation_state=source['state'], snapshot=source['snapshot'],
-                    eef_quat_xyzw=source['eef_quat_xyzw'], base_rgb_224=source['base_rgb_224'],
-                    wrist_rgb_224=source['wrist_rgb_224'],
-                    **{'transformed__'+key: value for key, value in transformed.items()})
-                probe.write_json(chunk/'actions.json', actions.tolist())
                 tokens, mask = transformed['tokenized_prompt'], transformed['tokenized_prompt_mask'].astype(bool)
                 metadata = dict(case=case, scene=scene, noun=noun, query=query, seed=seed,
                     prompt=prompt, input_sha256=probe.digest(input_path), model_arrays_sha256=probe.digest(chunk/'model_arrays.npz'),
@@ -172,6 +173,10 @@ def main():
         assert cfg.model.discrete_state_input is False
         print('[PI05-SERVER] loading existing local pi05_libero', flush=True)
         policy = policy_config.create_trained_policy(cfg, str(args.checkpoint), sample_kwargs={'num_steps': 10})
+        state['actual_jax_config'] = {key: jax.config.values.get(key) for key in [
+            'jax_enable_x64', 'jax_default_matmul_precision', 'jax_compilation_cache_dir',
+            'jax_enable_compilation_cache', 'jax_platforms', 'jax_numpy_rank_promotion',
+            'jax_default_prng_impl']}
         original_transform = policy._input_transform
 
         def observe(value):

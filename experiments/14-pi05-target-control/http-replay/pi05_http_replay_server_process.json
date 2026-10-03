@@ -1,0 +1,32 @@
+{
+  "pid": 302067,
+  "command": [
+    "/home/current/work/openpi-demo/openpi/.venv/bin/python",
+    "-u",
+    "/home/current/work/cosmos3/work/serve_pi05_target_control.py",
+    "--port",
+    "8923",
+    "--output-root",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/pi05-target-control/http-replay",
+    "--inputs-dir",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/pi05-target-control/inputs",
+    "--predictions-dir",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/pi05-target-control/predictions"
+  ],
+  "cwd": "/home/current/work/openpi-demo/openpi",
+  "script_sha256": "5889e9d663725261b8ebcb19e90c83c4a763b51048e53e52a85edc90f8b9ce7d",
+  "probe_sha256": "16c50da91a9a0344289edf735d3ad0126a9a30fb92070e2cea227dfee47e37df",
+  "inputs_complete_sha256": "f462c11450f069aca600b895f223a5a7bbd07abcb05c2eda4fdc45071e179e92",
+  "offline_complete_sha256": "0e09247a9f392523f8cbe27b928c832b27ace40ee52be45c2abe3a2dab6fb864",
+  "started_utc": "2026-10-03T14:32:22.198901+00:00",
+  "log": "/home/current/work/cosmos3/work/pi05_http_replay_server.log",
+  "output_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/pi05-target-control/http-replay",
+  "env_overrides": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "scope": "Exactly one q0 HTTP request, no simulator, no action execution, no warmup or repeat"
+}
