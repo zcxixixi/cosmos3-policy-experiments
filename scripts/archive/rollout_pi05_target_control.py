@@ -16,6 +16,7 @@ import numpy as np
 from PIL import Image
 
 import probe_pi05_target_control as probe
+import serve_pi05_target_control as server_helper
 
 
 BASE = probe.DATA/'pi05-target-control'
@@ -37,7 +38,7 @@ def function_from_source(path, name, namespace):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output-dir', type=Path, default=BASE/'closed-loop')
+    parser.add_argument('--output-dir', type=Path, default=BASE/'closed-loop-service-paired')
     parser.add_argument('--inputs-dir', type=Path, default=BASE/'inputs')
     parser.add_argument('--predictions-dir', type=Path, default=BASE/'predictions')
     parser.add_argument('--openpi-root', type=Path, default=probe.OPENPI)
@@ -195,19 +196,51 @@ def main():
                     assert metadata['input_sha256'] == request['inputs_sha256']
                     assert metadata['noise_sha256'] == probe.array_digest(noise)
                     with np.load(chunk/'model_arrays.npz', allow_pickle=False) as file:
-                        assert np.array_equal(native, file['actions_native_7'])
-                        assert np.array_equal(current_state, file['observation_state'])
-                        assert np.array_equal(noise, file['action_noise'])
-                        assert np.array_equal(base, file['base_rgb_224']) and np.array_equal(wrist, file['wrist_rgb_224'])
-                    assert np.array_equal(native, np.asarray(json.loads((chunk/'actions.json').read_text())))
+                        actual_arrays = {key: file[key].copy() for key in file.files}
+                    assert server_helper.exact_array(native, actual_arrays['actions_native_7'])
+                    assert server_helper.exact_array(current_state, actual_arrays['observation_state'])
+                    assert server_helper.exact_array(noise, actual_arrays['action_noise'])
+                    assert server_helper.exact_array(base, actual_arrays['base_rgb_224'])
+                    assert server_helper.exact_array(wrist, actual_arrays['wrist_rgb_224'])
+                    assert server_helper.exact_array(native, np.asarray(json.loads((chunk/'actions.json').read_text())))
                     if query == 0:
-                        assert metadata['first_full_chunk_matches_offline_exact'] is True
-                        assert np.array_equal(native, references[scene, noun]['actions_native_7'])
+                        assert metadata['first_within_service_replay_exact'] is True
+                        assert metadata['policy_infer_calls_for_query'] == 2 and metadata['extra_q0_infer'] is True
+                        pairing = json.loads((chunk/'q0_pairing.json').read_text())
+                        assert metadata['q0_pairing_sha256'] == probe.digest(chunk/'q0_pairing.json')
+                        assert pairing['first_within_service_replay_exact'] is True
+                        assert pairing['canonical_transformed_exact_old_baseline'] is True
+                        assert pairing['canonical_transformed_exact_actual'] is True
+                        assert pairing['actual_arrays_sha256'] == probe.digest(chunk/'model_arrays.npz')
+                        assert pairing['canonical_arrays_sha256'] == probe.digest(chunk/'canonical_arrays.npz')
+                        reference = references[scene, noun]
+                        with np.load(chunk/'canonical_arrays.npz', allow_pickle=False) as file:
+                            canonical_arrays = {key: file[key].copy() for key in file.files}
+                        assert server_helper.exact_array(native, canonical_arrays['actions_native_7'])
+                        assert server_helper.exact_array(native, np.asarray(json.loads((chunk/'canonical_actions.json').read_text())))
+                        for key in ['observation_state', 'action_noise', 'snapshot', 'eef_quat_xyzw',
+                                    'base_rgb_224', 'wrist_rgb_224']:
+                            assert server_helper.exact_array(reference[key], actual_arrays[key]), (name, key, 'actual')
+                            assert server_helper.exact_array(reference[key], canonical_arrays[key]), (name, key, 'canonical')
+                        transform_keys = {key for key in reference if key.startswith('transformed__')}
+                        assert transform_keys == {key for key in actual_arrays if key.startswith('transformed__')}
+                        assert transform_keys == {key for key in canonical_arrays if key.startswith('transformed__')}
+                        for key in transform_keys:
+                            assert server_helper.exact_array(reference[key], actual_arrays[key]), (name, key, 'actual')
+                            assert server_helper.exact_array(reference[key], canonical_arrays[key]), (name, key, 'canonical')
+                        historical = server_helper.compare_actions(reference['actions_native_7'], native)
+                        assert historical == metadata['historical_cross_process_comparison']
+                        assert historical == pairing['historical_cross_process_comparison']
+                        assert metadata['first_full_chunk_matches_offline_exact'] is historical['exact']
                     executed_count = min(REPLAN, STEPS-len(actions))
                     contracts.append(dict(query=query, seed=198+query, simulator_step_before=len(actions),
                         predicted_actions=HORIZON, executed_actions=executed_count, request=request,
                         input_png_sha256=probe.digest(chunk/'input.png'), response_matches_saved_chunk_exact=True,
-                        first_full_chunk_matches_offline_exact=metadata['first_full_chunk_matches_offline_exact'], server_metadata=metadata))
+                        first_within_service_replay_exact=metadata['first_within_service_replay_exact'],
+                        first_full_chunk_matches_offline_exact=metadata['first_full_chunk_matches_offline_exact'],
+                        historical_cross_process_comparison=metadata['historical_cross_process_comparison'],
+                        policy_infer_calls_for_query=metadata['policy_infer_calls_for_query'],
+                        extra_q0_infer=metadata['extra_q0_infer'], server_metadata=metadata))
                     probe.write_json(run/'query_contract.json', contracts)
                     for index in range(executed_count):
                         command = native[index].copy()
@@ -236,7 +269,13 @@ def main():
             result = dict(case=name, scene=scene, noun=noun, prompt=f'pick up the {noun} and place it in the basket',
                 noise_seed_base=198, steps=STEPS, prediction_horizon=HORIZON, execution_replan=REPLAN,
                 state_records=129, frame_png_count=129, queries=QUERIES, initial_pixels_state_exact=True,
-                first_full_chunk_matches_offline_exact=True, native_action_conversion='identity',
+                first_within_service_replay_exact=contracts[0]['first_within_service_replay_exact'],
+                first_full_chunk_matches_offline_exact=contracts[0]['first_full_chunk_matches_offline_exact'],
+                historical_cross_process_comparison=contracts[0]['historical_cross_process_comparison'],
+                extra_q0_infer=True, policy_infer_calls=QUERIES+1, native_action_conversion='identity',
+                any_original_task_done=any(item['original_task_done'] for item in identities),
+                any_milk_in_basket=any(item['milk_in_basket'] for item in records),
+                final_milk_in_basket=records[-1]['milk_in_basket'],
                 selected_objects=selected, selection_criterion=SELECTION, per_object=per_object,
                 initial_state_sha256=probe.digest(run/'initial_state.npy'), final=records[-1], scope=SCOPE)
             results.append(result)

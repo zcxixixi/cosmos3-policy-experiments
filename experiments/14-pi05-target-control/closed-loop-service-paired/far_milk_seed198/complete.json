@@ -1,0 +1,205 @@
+{
+  "case": "far_milk_seed198",
+  "scene": "far",
+  "noun": "milk",
+  "prompt": "pick up the milk and place it in the basket",
+  "noise_seed_base": 198,
+  "steps": 128,
+  "prediction_horizon": 10,
+  "execution_replan": 5,
+  "state_records": 129,
+  "frame_png_count": 129,
+  "queries": 26,
+  "initial_pixels_state_exact": true,
+  "first_within_service_replay_exact": true,
+  "first_full_chunk_matches_offline_exact": false,
+  "historical_cross_process_comparison": {
+    "exact": false,
+    "max_abs": 0.0017086434326171185,
+    "rmse": 0.0004917302945056986,
+    "per_dim_max_abs": [
+      0.0012337653808593974,
+      0.0012126166992187382,
+      0.000915344726562517,
+      0.00037504396021534325,
+      0.00017112604984770297,
+      0.0004941884023728638,
+      0.0017086434326171185
+    ],
+    "per_dim_rmse": [
+      0.00047439339007008033,
+      0.0006956348916528848,
+      0.00037716367560697837,
+      0.0001470475499961881,
+      9.901170833258812e-05,
+      0.0002209287196027479,
+      0.000872436558739963
+    ],
+    "xyz_rmse": 0.0005326691997930393,
+    "gripper_sign_equal": true,
+    "gripper_sign_changed_steps": [],
+    "units": "Native LIBERO controller commands; XYZ values are not meters."
+  },
+  "extra_q0_infer": true,
+  "policy_infer_calls": 27,
+  "native_action_conversion": "identity",
+  "any_original_task_done": false,
+  "any_milk_in_basket": false,
+  "final_milk_in_basket": false,
+  "selected_objects": [],
+  "selection_criterion": "Both-finger contact AND >2cm lift for five consecutive simulator records.",
+  "per_object": {
+    "milk_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 0.2589187220702241,
+      "final_lift_cm": 9.174607185080674e-08,
+      "max_xy_displacement_cm": 1.4177654727981075
+    },
+    "basket_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 4.250766405533568e-12,
+      "final_lift_cm": 4.250766405533568e-12,
+      "max_xy_displacement_cm": 0.0
+    },
+    "cream_cheese_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 2.0469737016526324e-14,
+      "final_lift_cm": 2.0469737016526324e-14,
+      "max_xy_displacement_cm": 0.0
+    },
+    "tomato_sauce_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 9.020562075079397e-15,
+      "final_lift_cm": 9.020562075079397e-15,
+      "max_xy_displacement_cm": 2.1822821327788233e-12
+    },
+    "butter_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 7.57900686654267e-13,
+      "final_lift_cm": 7.57900686654267e-13,
+      "max_xy_displacement_cm": 0.0
+    },
+    "orange_juice_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 9.174607046302796e-08,
+      "final_lift_cm": 9.174607046302796e-08,
+      "max_xy_displacement_cm": 1.1012710470300747e-11
+    },
+    "chocolate_pudding_1": {
+      "first_contact_frame": null,
+      "contact_frames": 0,
+      "first_2cm_for_5frames": null,
+      "max_lift_cm": 5.766220834146907e-13,
+      "final_lift_cm": 5.766220834146907e-13,
+      "max_xy_displacement_cm": 0.0
+    }
+  },
+  "initial_state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+  "final": {
+    "step": 128,
+    "eef_xyz": [
+      -0.009376581924407837,
+      -0.2481482283214315,
+      0.11018850517270985
+    ],
+    "eef_quat_xyzw": [
+      0.9888650125975889,
+      -0.02555016982928393,
+      -0.12189414985242232,
+      0.08145545969312899
+    ],
+    "objects": {
+      "milk_1": [
+        0.03203667201412975,
+        -0.24565285857602737,
+        0.06973547730149793
+      ],
+      "basket_1": [
+        0.011157481807677262,
+        0.268975054301453,
+        -0.004582345326536154
+      ],
+      "cream_cheese_1": [
+        0.04708677327239995,
+        -0.10416588049857435,
+        0.00892147741860811
+      ],
+      "tomato_sauce_1": [
+        -0.14976095092862957,
+        0.060060797038729775,
+        0.038392596419837215
+      ],
+      "butter_1": [
+        0.09595091329540664,
+        -0.1962212987626725,
+        0.008695477418608112
+      ],
+      "orange_juice_1": [
+        0.15000006520572823,
+        0.029998372153907812,
+        0.06973547730149787
+      ],
+      "chocolate_pudding_1": [
+        -0.20000011255647895,
+        -0.08000000000000002,
+        0.013065477418608112
+      ]
+    },
+    "grasped": [],
+    "finger_contacts": {
+      "milk_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      },
+      "basket_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      },
+      "cream_cheese_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      },
+      "tomato_sauce_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      },
+      "butter_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      },
+      "orange_juice_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      },
+      "chocolate_pudding_1": {
+        "left": false,
+        "right": false,
+        "both": false
+      }
+    },
+    "gripper_qpos": [
+      0.03902176692564884,
+      -0.03936743142726688
+    ],
+    "milk_in_basket": false
+  },
+  "scope": "Four fixed-initial-state 128-step executions. Native pi05_libero inputs/actions, prediction horizon10 and official example replan5. Not a benchmark success rate. milk_in_basket is the milk-task checker, not butter-task success."
+}

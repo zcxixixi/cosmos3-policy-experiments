@@ -1,0 +1,114 @@
+{
+  "actual_raw_and_transformed_exact_old_baseline": true,
+  "canonical_prompt": "pick up the butter and place it in the basket",
+  "actual_prompt": "pick up the butter and place it in the basket",
+  "canonical_transformed_exact_old_baseline": true,
+  "canonical_transformed_exact_actual": true,
+  "first_within_service_replay_exact": true,
+  "comparison_rule": "Equal shape, dtype and C-order bytes; no tolerance.",
+  "historical_cross_process_comparison": {
+    "exact": false,
+    "max_abs": 0.0024409191894531057,
+    "rmse": 0.000539288213326191,
+    "per_dim_max_abs": [
+      0.0012337653808593974,
+      0.0016168222656249842,
+      0.000915344726562517,
+      0.00012501465340514217,
+      0.00017112604984770297,
+      0.0002470942011864319,
+      0.0024409191894531057
+    ],
+    "per_dim_rmse": [
+      0.000522545419469978,
+      0.0007432779004022853,
+      0.0005301475427600183,
+      6.907465513170119e-05,
+      9.097360621601005e-05,
+      0.0001164158981332614,
+      0.0009500789983734161
+    ],
+    "xyz_rmse": 0.0006073363070902232,
+    "gripper_sign_equal": true,
+    "gripper_sign_changed_steps": [],
+    "units": "Native LIBERO controller commands; XYZ values are not meters."
+  },
+  "canonical_vs_old_offline": {
+    "exact": false,
+    "max_abs": 0.0024409191894531057,
+    "rmse": 0.000539288213326191,
+    "per_dim_max_abs": [
+      0.0012337653808593974,
+      0.0016168222656249842,
+      0.000915344726562517,
+      0.00012501465340514217,
+      0.00017112604984770297,
+      0.0002470942011864319,
+      0.0024409191894531057
+    ],
+    "per_dim_rmse": [
+      0.000522545419469978,
+      0.0007432779004022853,
+      0.0005301475427600183,
+      6.907465513170119e-05,
+      9.097360621601005e-05,
+      0.0001164158981332614,
+      0.0009500789983734161
+    ],
+    "xyz_rmse": 0.0006073363070902232,
+    "gripper_sign_equal": true,
+    "gripper_sign_changed_steps": [],
+    "units": "Native LIBERO controller commands; XYZ values are not meters."
+  },
+  "actual_vs_canonical": {
+    "exact": true,
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "per_dim_max_abs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "per_dim_rmse": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "xyz_rmse": 0.0,
+    "gripper_sign_equal": true,
+    "gripper_sign_changed_steps": [],
+    "units": "Native LIBERO controller commands; XYZ values are not meters."
+  },
+  "actual_arrays_sha256": "414efe887284b61ae28a24f4b1026a42aecdef0a85c8c0b0b15cff6fcf1ea8a2",
+  "canonical_arrays_sha256": "9d663e5b52979535a50cf70f694879694e5ae3b3d9481b6fa6e823318a0bf298",
+  "old_arrays_sha256": "52c89fc794b723ba283c5beaa26f58c9f42f8b76dae0bafa951704e3f9c95cec",
+  "old_metadata_sha256": "afb133925b7af7b605c10813ed81bffd4482d301dee3b8e1bb0c1b052cc5dd20",
+  "policy_infer_calls_for_query": 2,
+  "extra_q0_infer": true,
+  "rng_before_actual": [
+    1002670860,
+    3854689903
+  ],
+  "rng_after_actual": [
+    3503178526,
+    1767167376
+  ],
+  "rng_before_canonical": [
+    3503178526,
+    1767167376
+  ],
+  "rng_after_canonical": [
+    393818960,
+    3912932005
+  ],
+  "rng_note": "Canonical infer splits the policy RNG once more. Both calls receive explicit saved noise. This extra call changes later RNG state; no claim of behavior neutrality or harmless historical drift.",
+  "returned_and_executed_output": "First actual prediction, never canonical."
+}

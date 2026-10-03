@@ -1,0 +1,87 @@
+{
+  "state": "ready",
+  "model_config": "pi05_libero",
+  "checkpoint": "/home/current/work/openpi-demo/checkpoints/pi05_libero",
+  "prediction_horizon": 10,
+  "execution_replan": 5,
+  "num_denoising_steps": 10,
+  "queries_per_case": 26,
+  "steps_per_case": 128,
+  "action_dim": 7,
+  "script_sha256": "87a61e889918828d229252f7a2fad21bb9513fb9ffecdb6209e7977b40d61c64",
+  "probe_sha256": "16c50da91a9a0344289edf735d3ad0126a9a30fb92070e2cea227dfee47e37df",
+  "offline_complete_sha256": "0e09247a9f392523f8cbe27b928c832b27ace40ee52be45c2abe3a2dab6fb864",
+  "requests_completed": 104,
+  "actual_jax_config": {
+    "jax_enable_x64": false,
+    "jax_default_matmul_precision": null,
+    "jax_compilation_cache_dir": null,
+    "jax_enable_compilation_cache": true,
+    "jax_platforms": null,
+    "jax_numpy_rank_promotion": "allow",
+    "jax_default_prng_impl": "threefry2x32"
+  },
+  "inferences_completed": 108,
+  "runtime_provenance": {
+    "environment": {
+      "python": "3.11.16 (main, Aug 14 2026, 15:35:36) [Clang 22.1.3 ]",
+      "executable": "/home/current/work/openpi-demo/openpi/.venv/bin/python",
+      "packages": {
+        "jax": "0.5.3",
+        "jaxlib": "0.5.3",
+        "flax": "0.10.2",
+        "orbax-checkpoint": "0.11.13",
+        "numpy": "1.26.4",
+        "sentencepiece": "0.2.0",
+        "openpi-client": "0.1.0"
+      },
+      "actual_jax_config": {
+        "jax_enable_x64": false,
+        "jax_default_matmul_precision": null,
+        "jax_compilation_cache_dir": null,
+        "jax_enable_compilation_cache": true,
+        "jax_platforms": null,
+        "jax_numpy_rank_promotion": "allow",
+        "jax_default_prng_impl": "threefry2x32"
+      },
+      "selected_environment": {
+        "CUDA_VISIBLE_DEVICES": null,
+        "XLA_FLAGS": null,
+        "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+        "JAX_COMPILATION_CACHE_DIR": null,
+        "JAX_ENABLE_X64": null,
+        "JAX_DEFAULT_MATMUL_PRECISION": null,
+        "JAX_LOG_COMPILES": null,
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "OPENPI_DATA_HOME": "/home/current/.cache/openpi"
+      },
+      "official_sources": {
+        "src/openpi/policies/policy_config.py": "aaf42ab04a33b6c91d2447926211646c33ebd8ebfa427f026d7b6c4f7c45ec52",
+        "src/openpi/policies/policy.py": "a2ac5236e23b11d0f5a840d4a8fef148d89dba921d5452ec5dfcd5a6ffa46f20",
+        "src/openpi/policies/libero_policy.py": "d8679d99facc3fef48da07406081b20709ed872fcefdf7de67ede99422d623fa",
+        "src/openpi/models/pi0.py": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+        "src/openpi/models/pi0_config.py": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+        "src/openpi/models/tokenizer.py": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+        "src/openpi/transforms.py": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4"
+      },
+      "additional_sources": {
+        "src/openpi/models/model.py": "0d74bc1d8f4623ac3d8e543710b8bf75f9b95e588a3ebf6127c659e001385cff",
+        "src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+        "src/openpi/models/siglip.py": "14b4df0be280d5769fb0dc31a40cde27525dbb1980cc998c28475d62fa3cad32",
+        "src/openpi/models/lora.py": "ced28716950c34d84a1a6d0b03b1d9550000732721df884818080b6e78cb3289",
+        "src/openpi/shared/nnx_utils.py": "4da7111ba3011c4d1c381c9ed17257771df6a50ed89182647c3fb6f79208005e",
+        "src/openpi/training/config.py": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d",
+        "src/openpi/training/sharding.py": "c67c4112a126ab097571c8a882fd1ee3f106b15b6e608e7205ac7f29b44ca985"
+      },
+      "checkpoint_metadata_sha256": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "checkpoint_manifest_sha256": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104",
+      "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "tokenizer_sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6"
+    },
+    "environment_sha256": "806e5b756ebaad9860abffecaf0090bf6626efd09207dc97595676e1bc7da71a"
+  },
+  "q0_acceptance": "Bitwise actual vs canonical replay within this loaded service; old offline difference is measured.",
+  "library_edits": false,
+  "weight_downloads": false
+}
