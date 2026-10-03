@@ -1,0 +1,4 @@
+{
+  "error": "dict() got multiple values for keyword argument 'elapsed_s'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/current/work/cosmos3/work/probe_cosmos_language_routes.py\", line 405, in main\n    offline(rt, args.scenes)\n  File \"/home/current/work/cosmos3/work/probe_cosmos_language_routes.py\", line 264, in offline\n    rec, cache, meta = rt.predict(scene, noun, label, destination=OUT/'cases'/label, capture_gen=True)\n  File \"/home/current/work/cosmos3/work/probe_cosmos_language_routes.py\", line 237, in predict\n    status('prediction_completed', **meta)\n  File \"/home/current/work/cosmos3/work/probe_cosmos_language_routes.py\", line 84, in status\n    r = dict(stage=stage, elapsed_s=time.perf_counter()-started, **kwargs)\nTypeError: dict() got multiple values for keyword argument 'elapsed_s'\n"
+}

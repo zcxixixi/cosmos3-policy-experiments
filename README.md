@@ -28,6 +28,8 @@
 
 补做输入核验：按公开官方代码改了照片处理方式和默认推理时间表，再跑原位／移远、拿牛奶／拿黄油四条执行，**抓起的对象仍与旧设置一致**。原位两句都抓牛奶，移远两句都抓奶酪盒。这两处修正没有纠正这四条的目标选择，完整官方流程仍未全部核验。[看新录像、四行对照和真实数组](experiments/12-pixel-schedule/README.md)。
 
+最新又去内部查了两种影响方式：**文字直接影响动作，以及文字先影响预测画面、再影响动作。**两种方式都让动作数字改变；把画面读取的变化固定住，动作全过程逐项回到原结果。但六条实际执行仍是原位抓牛奶、移远抓奶酪盒，没有改抓黄油。因此，“语言完全没传进动作计算”解释不了当前数据；为什么没按名称选物体，还没有定位。[看人话说明、六条录像和真实数组](experiments/13-language-routes/README.md)。
+
 点击下面的画面看 **牛奶移动 15 cm 后的实际执行视频**：
 
 [![移动后的初始画面](experiments/06-milk-moved-15cm/native/input_00.png)](experiments/06-milk-moved-15cm/native/actual.mp4)
@@ -113,8 +115,9 @@ flowchart TD
 | [10 抓奶酪还是抓那个位置](experiments/10-identity-position/README.md) | 交换奶酪和黄油后，它会跟着谁走？三个种子重复。 |
 | [11 官方网络计算核验](experiments/11-official-transformer/README.md) | 同一份已编码输入交给官方网络，四组各算30次，动作数值是否接近？未跑新闭环。 |
 | [12 按官方方式处理输入](experiments/12-pixel-schedule/README.md) | 改正照片处理和默认时间表，四条实际执行抓谁变了吗？ |
+| [13 语言影响动作的两种路线](experiments/13-language-routes/README.md) | 直接读文字、经过预测画面，哪种会改变动作？六条执行抓谁？ |
 
-[下载并打开离线报告](report.html)，可以逐个播放之前的实验视频。新增的 07–12 以本仓库和中文网页为准，离线 HTML 尚未加入这些更新。
+[下载并打开离线报告](report.html)，可以逐个播放之前的实验视频。新增的 07–13 以本仓库和中文网页为准，离线 HTML 尚未加入这些更新。
 
 [相关论文与方法限制](notes/literature.md)解释为什么“能从数组读出信息”“替换数组后动作改变”和“找到了出错原因”是不同层次的证据。已有的 [Cosmos 官方讨论](https://github.com/NVIDIA/cosmos/discussions/369)保留了早期夹爪实验；本仓库记录后续实验。
 

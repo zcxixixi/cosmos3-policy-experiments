@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "CPU tiny actual Cosmos3 decoder, 3 layers x 3 feedback steps; no checkpoint/MuJoCo",
+  "torch": "2.14.0+cu130",
+  "cuda_initialized": false,
+  "processor_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/transformers/transformer_cosmos3.py",
+  "processor_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "checks": [
+    "CPU full K/V cache; observed UND equality across steps",
+    "empty, gain=1: GEN exact R",
+    "direct, gain=0: GEN exact R",
+    "full, gain=1: GEN exact R",
+    "clamp_self, gain=1: GEN exact R",
+    "Full: every layer/step GEN exact D; UND exact R",
+    "Indirect-blocked: action exact R; future actually changed",
+    "Indirect: first-layer action exact R; later action changed",
+    "Direct/Joint nonzero; truncated patch reports incomplete",
+    "Recipient/donor position mismatch rejected before hooks",
+    "Projection failure removes temporary and session hooks",
+    "Failure after all layers still marks forward incomplete",
+    "Static capture caption change rejected; all owned hooks cleaned up"
+  ],
+  "executed_at_utc": "2026-10-03T13:16:54.648562+00:00",
+  "helper_sha256": "b40be8199dbc7c017ed6b4c9ec4fb4276fe6dfa0a7f24a0e5a413f2fc015d5a5",
+  "test_sha256": "fb89b3eb4e2d62a0f28e28e851f5ad132d7dc77c03997f7da859b26ceac1bfc2",
+  "execution": "Read source over SSH stdin; no remote files written, no GPU initialized."
+}

@@ -9,3 +9,5 @@ archive保存A6000上使用的实验助手，不是一个已经打包好的独�
 2026-10-03新增实际运行快照：system-prompt probe/rollout、identity-position rollout/repeats、图表脚本及官方transformer首轮及四组30次采样对照。`summarize_cosmos_identity_position.py <本仓库路径>`只读原始轨迹并写实验10的汇总，已在本地重算。官方网络脚本保留原主机环境和cuDNN要求，复用已编码输入检验网络核心，显式 `--run --sample30 --scheduler-python <已有环境Python>` 才运行连续30次采样；没有宣称完整官方服务或闭环等价。
 
 实验12新增四个实际运行快照：`check_cosmos_official_pixels_cpu.py`核对官方整数像素处理，`probe_cosmos_pixel_schedule.py`做16组真实预测，`rollout_cosmos_pixel_schedule.py`执行四条128步MuJoCo闭环，`present_cosmos_pixel_schedule.py`从真实动作和轨迹重新计算汇总与图。预测脚本在当前程序内采用官方像素函数和默认时间表，不替换隐藏状态；不代表完整官方服务等价。1帧／17帧首latent核验仍使用当前VAE。结果及范围见[实验12](../experiments/12-pixel-schedule/README.md)。
+
+实验13新增路径助手、CPU多次反馈测试、40组实际预测、六条闭环与重算画图脚本。`cosmos_attention_routes.py`在原attention processor中限制哪些查询读另一句文本、哪些画面K/V固定为来源；不修改模型库。全路径精确重放与阻断动作精确恢复通过，但这六条执行没有改变抓取对象。全GEN边界只在运行时比较，未全部落盘；FP32未来视觉初始噪声也未单独保存。细节见[实验13](../experiments/13-language-routes/README.md)。

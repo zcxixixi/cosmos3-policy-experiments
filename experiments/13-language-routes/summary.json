@@ -1,0 +1,832 @@
+{
+  "scope": "Two fixed snapshots, one paired seed198. 40 offline predictions and six 128-step route-intervention closed loops. No target semantics or benchmark rate inferred.",
+  "units": "XYZ RMSE is a difference between normalized control arrays, not distance or probability.",
+  "controls": [
+    {
+      "test": "corrected_experiment12_full_replay",
+      "label": "center_milk_capture",
+      "exact": true
+    },
+    {
+      "test": "corrected_experiment12_full_replay",
+      "label": "center_butter_capture",
+      "exact": true
+    },
+    {
+      "test": "empty",
+      "label": "center_milk_to_butter_empty",
+      "exact": true
+    },
+    {
+      "test": "zero_gain",
+      "label": "center_milk_to_butter_zero_gain",
+      "exact": true
+    },
+    {
+      "test": "self_full",
+      "label": "center_milk_to_butter_self_full",
+      "exact": true
+    },
+    {
+      "test": "clamp_self",
+      "label": "center_milk_to_butter_clamp_self",
+      "exact": true
+    },
+    {
+      "test": "full_exact_donor",
+      "label": "center_milk_to_butter_full",
+      "exact": true
+    },
+    {
+      "test": "first_layer_indirect_no_action_leak",
+      "label": "center_milk_to_butter_indirect",
+      "exact": true
+    },
+    {
+      "test": "blocked_action_exact_recipient",
+      "label": "center_milk_to_butter_indirect_blocked",
+      "exact": true,
+      "future_video_changed": true
+    },
+    {
+      "test": "empty",
+      "label": "center_butter_to_milk_empty",
+      "exact": true
+    },
+    {
+      "test": "zero_gain",
+      "label": "center_butter_to_milk_zero_gain",
+      "exact": true
+    },
+    {
+      "test": "self_full",
+      "label": "center_butter_to_milk_self_full",
+      "exact": true
+    },
+    {
+      "test": "clamp_self",
+      "label": "center_butter_to_milk_clamp_self",
+      "exact": true
+    },
+    {
+      "test": "full_exact_donor",
+      "label": "center_butter_to_milk_full",
+      "exact": true
+    },
+    {
+      "test": "first_layer_indirect_no_action_leak",
+      "label": "center_butter_to_milk_indirect",
+      "exact": true
+    },
+    {
+      "test": "blocked_action_exact_recipient",
+      "label": "center_butter_to_milk_indirect_blocked",
+      "exact": true,
+      "future_video_changed": true
+    },
+    {
+      "test": "corrected_experiment12_full_replay",
+      "label": "far_milk_capture",
+      "exact": true
+    },
+    {
+      "test": "corrected_experiment12_full_replay",
+      "label": "far_butter_capture",
+      "exact": true
+    },
+    {
+      "test": "empty",
+      "label": "far_milk_to_butter_empty",
+      "exact": true
+    },
+    {
+      "test": "zero_gain",
+      "label": "far_milk_to_butter_zero_gain",
+      "exact": true
+    },
+    {
+      "test": "self_full",
+      "label": "far_milk_to_butter_self_full",
+      "exact": true
+    },
+    {
+      "test": "clamp_self",
+      "label": "far_milk_to_butter_clamp_self",
+      "exact": true
+    },
+    {
+      "test": "full_exact_donor",
+      "label": "far_milk_to_butter_full",
+      "exact": true
+    },
+    {
+      "test": "first_layer_indirect_no_action_leak",
+      "label": "far_milk_to_butter_indirect",
+      "exact": true
+    },
+    {
+      "test": "blocked_action_exact_recipient",
+      "label": "far_milk_to_butter_indirect_blocked",
+      "exact": true,
+      "future_video_changed": true
+    },
+    {
+      "test": "empty",
+      "label": "far_butter_to_milk_empty",
+      "exact": true
+    },
+    {
+      "test": "zero_gain",
+      "label": "far_butter_to_milk_zero_gain",
+      "exact": true
+    },
+    {
+      "test": "self_full",
+      "label": "far_butter_to_milk_self_full",
+      "exact": true
+    },
+    {
+      "test": "clamp_self",
+      "label": "far_butter_to_milk_clamp_self",
+      "exact": true
+    },
+    {
+      "test": "full_exact_donor",
+      "label": "far_butter_to_milk_full",
+      "exact": true
+    },
+    {
+      "test": "first_layer_indirect_no_action_leak",
+      "label": "far_butter_to_milk_indirect",
+      "exact": true
+    },
+    {
+      "test": "blocked_action_exact_recipient",
+      "label": "far_butter_to_milk_indirect_blocked",
+      "exact": true,
+      "future_video_changed": true
+    }
+  ],
+  "effects": [
+    {
+      "label": "center_milk_to_butter_empty",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "empty",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_milk_to_butter_zero_gain",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "zero_gain",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_milk_to_butter_self_full",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "self_full",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_milk_to_butter_clamp_self",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "clamp_self",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_milk_to_butter_full",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "full",
+      "normalized_xyz_rmse": 0.0029862614476845683,
+      "final_readout_relative_rms_percent": 5.540297031402588,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_milk_to_butter_direct",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "direct",
+      "normalized_xyz_rmse": 0.0013115960532214593,
+      "final_readout_relative_rms_percent": 5.395313739776611,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_milk_to_butter_indirect",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "indirect",
+      "normalized_xyz_rmse": 0.0010199946698222447,
+      "final_readout_relative_rms_percent": 5.14454460144043,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_milk_to_butter_indirect_blocked",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "indirect_blocked",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_milk_to_butter_joint",
+      "scene": "center",
+      "source": "milk",
+      "target": "butter",
+      "mode": "joint",
+      "normalized_xyz_rmse": 0.0013561345445616737,
+      "final_readout_relative_rms_percent": 5.314168453216553,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_butter_to_milk_empty",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "empty",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_butter_to_milk_zero_gain",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "zero_gain",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_butter_to_milk_self_full",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "self_full",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_butter_to_milk_clamp_self",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "clamp_self",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "center_butter_to_milk_full",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "full",
+      "normalized_xyz_rmse": 0.0029862614476845683,
+      "final_readout_relative_rms_percent": 5.531889915466309,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_butter_to_milk_direct",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "direct",
+      "normalized_xyz_rmse": 0.0010116451751883038,
+      "final_readout_relative_rms_percent": 5.041887283325195,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_butter_to_milk_indirect",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "indirect",
+      "normalized_xyz_rmse": 0.0011214940583500503,
+      "final_readout_relative_rms_percent": 4.861789226531982,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_butter_to_milk_indirect_blocked",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "indirect_blocked",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "center_butter_to_milk_joint",
+      "scene": "center",
+      "source": "butter",
+      "target": "milk",
+      "mode": "joint",
+      "normalized_xyz_rmse": 0.001712147792023339,
+      "final_readout_relative_rms_percent": 5.551750183105469,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_milk_to_butter_empty",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "empty",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_milk_to_butter_zero_gain",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "zero_gain",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_milk_to_butter_self_full",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "self_full",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_milk_to_butter_clamp_self",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "clamp_self",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_milk_to_butter_full",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "full",
+      "normalized_xyz_rmse": 0.023829997328458894,
+      "final_readout_relative_rms_percent": 7.790298938751221,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_milk_to_butter_direct",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "direct",
+      "normalized_xyz_rmse": 0.0010733391007903177,
+      "final_readout_relative_rms_percent": 5.061224460601807,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_milk_to_butter_indirect",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "indirect",
+      "normalized_xyz_rmse": 0.015744346255029792,
+      "final_readout_relative_rms_percent": 6.475784778594971,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_milk_to_butter_indirect_blocked",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "indirect_blocked",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_milk_to_butter_joint",
+      "scene": "far",
+      "source": "milk",
+      "target": "butter",
+      "mode": "joint",
+      "normalized_xyz_rmse": 0.014945558910481254,
+      "final_readout_relative_rms_percent": 6.3578290939331055,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_butter_to_milk_empty",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "empty",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_butter_to_milk_zero_gain",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "zero_gain",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_butter_to_milk_self_full",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "self_full",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_butter_to_milk_clamp_self",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "clamp_self",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": true
+    },
+    {
+      "label": "far_butter_to_milk_full",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "full",
+      "normalized_xyz_rmse": 0.023829997328458894,
+      "final_readout_relative_rms_percent": 7.789295196533203,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_butter_to_milk_direct",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "direct",
+      "normalized_xyz_rmse": 0.0012737940645562477,
+      "final_readout_relative_rms_percent": 5.5220417976379395,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_butter_to_milk_indirect",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "indirect",
+      "normalized_xyz_rmse": 0.007994151696918769,
+      "final_readout_relative_rms_percent": 5.705570220947266,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_butter_to_milk_indirect_blocked",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "indirect_blocked",
+      "normalized_xyz_rmse": 0.0,
+      "final_readout_relative_rms_percent": 0.0,
+      "video_latent_exact_recipient": false
+    },
+    {
+      "label": "far_butter_to_milk_joint",
+      "scene": "far",
+      "source": "butter",
+      "target": "milk",
+      "mode": "joint",
+      "normalized_xyz_rmse": 0.009313679333026752,
+      "final_readout_relative_rms_percent": 5.820084095001221,
+      "video_latent_exact_recipient": false
+    }
+  ],
+  "cases": [
+    {
+      "case": "center_milk_to_butter_direct",
+      "scene": "center",
+      "mode": "direct",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_and_lift_5frames": 61,
+          "max_lift_cm": 21.480223928863833,
+          "contact_frames": 73
+        },
+        "basket_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "contact_frames": 0
+        },
+        "cream_cheese_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "contact_frames": 0
+        },
+        "tomato_sauce_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "contact_frames": 0
+        },
+        "butter_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "contact_frames": 0
+        },
+        "orange_juice_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "contact_frames": 0
+        },
+        "chocolate_pudding_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "contact_frames": 0
+        }
+      },
+      "final_milk_in_basket": false,
+      "trajectory_sha256": "debf21dcba9f81854057f3704b7b41b7bb5a429cc7c9ce1d75d6485b61495e5f",
+      "contracts_sha256": "50c550441ad955a156194f05319522d5e9090fc837f052bb76ee7fd47e6f8f01"
+    },
+    {
+      "case": "center_milk_to_butter_indirect",
+      "scene": "center",
+      "mode": "indirect",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_and_lift_5frames": 61,
+          "max_lift_cm": 21.496968320191133,
+          "contact_frames": 73
+        },
+        "basket_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "contact_frames": 0
+        },
+        "cream_cheese_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "contact_frames": 0
+        },
+        "tomato_sauce_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "contact_frames": 0
+        },
+        "butter_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "contact_frames": 0
+        },
+        "orange_juice_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "contact_frames": 0
+        },
+        "chocolate_pudding_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "contact_frames": 0
+        }
+      },
+      "final_milk_in_basket": false,
+      "trajectory_sha256": "7d3f59d00ed4d651992d1b395841e9f82e20ec36d134286a98d7f370c9f1f76b",
+      "contracts_sha256": "7b5fcb5e433f69c31d4a79c9a9bb19334aa8bcfe081f51eaaee6c172b3f5b5fc"
+    },
+    {
+      "case": "center_milk_to_butter_joint",
+      "scene": "center",
+      "mode": "joint",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_and_lift_5frames": 61,
+          "max_lift_cm": 21.478997419963232,
+          "contact_frames": 73
+        },
+        "basket_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "contact_frames": 0
+        },
+        "cream_cheese_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "contact_frames": 0
+        },
+        "tomato_sauce_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "contact_frames": 0
+        },
+        "butter_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "contact_frames": 0
+        },
+        "orange_juice_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "contact_frames": 0
+        },
+        "chocolate_pudding_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "contact_frames": 0
+        }
+      },
+      "final_milk_in_basket": false,
+      "trajectory_sha256": "55a7de0222308b18197c15bd0dbc3e834f4c9a8d5b3e59949208516f95465235",
+      "contracts_sha256": "097a16c3178d944789f41606c0c4d87c12e65261ab510424d7770bf12e28dfb4"
+    },
+    {
+      "case": "far_milk_to_butter_direct",
+      "scene": "far",
+      "mode": "direct",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "contact_frames": 0
+        },
+        "basket_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "contact_frames": 0
+        },
+        "cream_cheese_1": {
+          "first_contact_and_lift_5frames": 68,
+          "max_lift_cm": 23.934400624930408,
+          "contact_frames": 65
+        },
+        "tomato_sauce_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "contact_frames": 0
+        },
+        "butter_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "contact_frames": 0
+        },
+        "orange_juice_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "contact_frames": 0
+        },
+        "chocolate_pudding_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "contact_frames": 0
+        }
+      },
+      "final_milk_in_basket": false,
+      "trajectory_sha256": "0f0245b4557a8bc787bc9fd5ed79eb0ccc1ee56bd54606d7ca76649a7c661ded",
+      "contracts_sha256": "176ed4472ccfefa77392ad5388804515dafb7c194c1caf52d41c408a4d1951c6"
+    },
+    {
+      "case": "far_milk_to_butter_indirect",
+      "scene": "far",
+      "mode": "indirect",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "contact_frames": 0
+        },
+        "basket_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "contact_frames": 0
+        },
+        "cream_cheese_1": {
+          "first_contact_and_lift_5frames": 68,
+          "max_lift_cm": 24.024406294680702,
+          "contact_frames": 63
+        },
+        "tomato_sauce_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "contact_frames": 0
+        },
+        "butter_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "contact_frames": 0
+        },
+        "orange_juice_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "contact_frames": 0
+        },
+        "chocolate_pudding_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "contact_frames": 0
+        }
+      },
+      "final_milk_in_basket": false,
+      "trajectory_sha256": "97676f4a885e4a4313892f6704d31da22d81e3b20c45e0a67ab5183978496285",
+      "contracts_sha256": "0a87ab740d7e66babc5d34b67f415d25afdb0c8eb1cf0960715b38e3b6a794a7"
+    },
+    {
+      "case": "far_milk_to_butter_joint",
+      "scene": "far",
+      "mode": "joint",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "contact_frames": 0
+        },
+        "basket_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "contact_frames": 0
+        },
+        "cream_cheese_1": {
+          "first_contact_and_lift_5frames": 68,
+          "max_lift_cm": 24.171602979271388,
+          "contact_frames": 63
+        },
+        "tomato_sauce_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "contact_frames": 0
+        },
+        "butter_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "contact_frames": 0
+        },
+        "orange_juice_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "contact_frames": 0
+        },
+        "chocolate_pudding_1": {
+          "first_contact_and_lift_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "contact_frames": 0
+        }
+      },
+      "final_milk_in_basket": false,
+      "trajectory_sha256": "3df08a8b16ef2fc3536c80730b5e1cbf19da6bbd0392731a3d91a63b62a9e415",
+      "contracts_sha256": "dc1313ae9a85e3d85bb221453c056741a0d2d5da1a18fd3876c74b1a6d0fac28"
+    }
+  ],
+  "mediator_scope": "Future/clean GEN visual K/V reads, with direct language-to-action reads preserved as recipient. Indirect includes feedback; no additive mediation fractions.",
+  "sources": {
+    "result.json": "727b892df812ff894e04ff26d3bf505c469bb919e17b7f70c4a1589738e378c1",
+    "actions.npz": "97b304467b3af654df12bd4d97753f34ee84c99149539ef2fea99da89340eadb",
+    "readouts_first_last.npz": "ca47a601cbcfc9aff82170d2e3f4427062a83134e2c9b9e7cdae49abf15fcca5",
+    "provenance.json": "aae441a624dcec5c8884b750bdce6fc92b9365fc6a2840d5ac981505893f8e1f",
+    "closed-loop/result.json": "037baa650981717000feb1e1e5193110e5121a2d35cd4b9a5b983776ff39d6c0",
+    "closed-loop/provenance.json": "54bdb5513f3641b1d537ec0736a4827c28e58f08ac8d08728fb8079703abfe82"
+  },
+  "helper_sha256": "b470bfb3dd3dac594f1744fc1b6ded9fbd0ef711a973ee419eecef6af318e5c4"
+}

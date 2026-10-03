@@ -1,0 +1,947 @@
+{
+  "cases": [
+    {
+      "case": "center_milk_to_butter_direct",
+      "scene": "center",
+      "mode": "direct",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 56,
+          "contact_frames": 73,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.480223928863833,
+          "final_lift_cm": 7.841281321439967,
+          "max_xy_displacement_cm": 54.938778600178985
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.180894353998042e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.017369693909241923,
+          0.29474764567589906,
+          0.18068628683662763
+        ],
+        "objects": {
+          "milk_1": [
+            -0.0017875711773184242,
+            0.29079387776915827,
+            0.14814828959843687
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872979,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "finger_contacts": {
+          "milk_1": {
+            "left": true,
+            "right": true,
+            "both": true
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.03050930108868106,
+          -0.02372903903938069
+        ],
+        "milk_in_basket": false
+      },
+      "steps": 128,
+      "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+    },
+    {
+      "case": "center_milk_to_butter_indirect",
+      "scene": "center",
+      "mode": "indirect",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 56,
+          "contact_frames": 73,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.496968320191133,
+          "final_lift_cm": 7.853547540961539,
+          "max_xy_displacement_cm": 54.9762391262089
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.017733244946076053,
+          0.29538588401871096,
+          0.1808169399149131
+        ],
+        "objects": {
+          "milk_1": [
+            -0.002093070656324665,
+            0.2914120877072194,
+            0.1482709517936526
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872978,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "finger_contacts": {
+          "milk_1": {
+            "left": true,
+            "right": true,
+            "both": true
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.030513994721934307,
+          -0.023782433859706797
+        ],
+        "milk_in_basket": false
+      },
+      "steps": 128,
+      "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+    },
+    {
+      "case": "center_milk_to_butter_joint",
+      "scene": "center",
+      "mode": "joint",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 56,
+          "contact_frames": 73,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.478997419963232,
+          "final_lift_cm": 7.9247052725759275,
+          "max_xy_displacement_cm": 54.98774308261702
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.017535067965030307,
+          0.29555089325256007,
+          0.18154703638985636
+        ],
+        "objects": {
+          "milk_1": [
+            -0.0019416387658971069,
+            0.2916777183778951,
+            0.14898252910979648
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.04708677327239995,
+            -0.10416588049857435,
+            0.00892147741860811
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.060060797038729775,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [
+          "milk_1"
+        ],
+        "finger_contacts": {
+          "milk_1": {
+            "left": true,
+            "right": true,
+            "both": true
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.030493392968964278,
+          -0.023784742717353414
+        ],
+        "milk_in_basket": false
+      },
+      "steps": 128,
+      "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+    },
+    {
+      "case": "far_milk_to_butter_direct",
+      "scene": "far",
+      "mode": "direct",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.878128409372016e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 23.934400624930408,
+          "final_lift_cm": 16.16780589635746,
+          "max_xy_displacement_cm": 37.60068350236341
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          -0.01885472517814644,
+          0.2702959799700299,
+          0.17119716067941138
+        ],
+        "objects": {
+          "milk_1": [
+            0.032839183898572634,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            -0.004098071610152932,
+            0.2679811948070345,
+            0.17059953638218253
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872978,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "finger_contacts": {
+          "milk_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.021576456784116148,
+          -0.022274397160816084
+        ],
+        "milk_in_basket": false
+      },
+      "steps": 128,
+      "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+    },
+    {
+      "case": "far_milk_to_butter_indirect",
+      "scene": "far",
+      "mode": "indirect",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.878128409372016e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 63,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 24.024406294680702,
+          "final_lift_cm": 13.276057084108206,
+          "max_xy_displacement_cm": 36.88074749764138
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          0.01082795274833154,
+          0.26302999817260847,
+          0.2028720018257586
+        ],
+        "objects": {
+          "milk_1": [
+            0.032839183898572634,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.02764186069555888,
+            0.25959687310365404,
+            0.14168204825968997
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872978,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "finger_contacts": {
+          "milk_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.026339933829956214,
+          -0.02664924448618687
+        ],
+        "milk_in_basket": false
+      },
+      "steps": 128,
+      "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+    },
+    {
+      "case": "far_milk_to_butter_joint",
+      "scene": "far",
+      "mode": "joint",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 8.87797262534729e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 63,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 24.171602979271388,
+          "final_lift_cm": 13.701479833692073,
+          "max_xy_displacement_cm": 36.76179974880414
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "final": {
+        "step": 128,
+        "eef_xyz": [
+          0.003976244030176778,
+          0.2648266503756725,
+          0.20594155542963555
+        ],
+        "objects": {
+          "milk_1": [
+            0.03283918389857263,
+            -0.24429550302432804,
+            0.0697354773014979
+          ],
+          "basket_1": [
+            0.011157481807677262,
+            0.268975054301453,
+            -0.004582345326536154
+          ],
+          "cream_cheese_1": [
+            0.020593100860517067,
+            0.260720822334798,
+            0.14593627575552864
+          ],
+          "tomato_sauce_1": [
+            -0.14976095092862957,
+            0.06006079703872977,
+            0.038392596419837215
+          ],
+          "butter_1": [
+            0.09595091329540664,
+            -0.1962212987626725,
+            0.008695477418608112
+          ],
+          "orange_juice_1": [
+            0.15000006520572823,
+            0.029998372153907812,
+            0.06973547730149787
+          ],
+          "chocolate_pudding_1": [
+            -0.20000011255647895,
+            -0.08000000000000002,
+            0.013065477418608112
+          ]
+        },
+        "grasped": [],
+        "finger_contacts": {
+          "milk_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "basket_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "cream_cheese_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "tomato_sauce_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "butter_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "orange_juice_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          },
+          "chocolate_pudding_1": {
+            "left": false,
+            "right": false,
+            "both": false
+          }
+        },
+        "gripper_qpos": [
+          0.026346310405556673,
+          -0.026644201118769424
+        ],
+        "milk_in_basket": false
+      },
+      "steps": 128,
+      "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+    }
+  ],
+  "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions."
+}

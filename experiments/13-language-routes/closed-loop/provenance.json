@@ -1,0 +1,21 @@
+{
+  "scope": "Six 128-step closed loops using recipient milk and donor butter at the SAME current observation. Natural-gain text attention routes and recipient-baseline visual K/V clamps. One paired seed per initial condition, two fixed snapshots. No benchmark success estimate; hybrid interventions are not normal policy inputs and do not imply additive mediation fractions.",
+  "script_sha256": "09a557be294f87361f9bce8fa1dc72c6bd600f3c512c00cc752e223e64b0befd",
+  "quantify_helper_sha256": "ee56a1716229e3938886ba4c0bfed88922444d7e8666a6773d6a43a502d53fa8",
+  "stats_sha256": "bf20cb010fad4ee5754ad83dafab0fce509fc99594d75a3a151d07cf81c905ac",
+  "offline_provenance": {
+    "script_sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "route_module_sha256": "b40be8199dbc7c017ed6b4c9ec4fb4276fe6dfa0a7f24a0e5a413f2fc015d5a5",
+    "pixel_helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+    "scope": "Natural gain-1 K/V path interventions, no weights/library edits or training.",
+    "corrected_reference": "runtime-pixel-schedule",
+    "seed": 198,
+    "scenes": [
+      "center",
+      "far"
+    ]
+  },
+  "query_seed_rule": "198 + query_index",
+  "cache_rule": "Recompute R and D on this query image before patching.",
+  "action_conversion": "Unchanged official quantile inverse, rot6d to axisangle, continuous gripper remap, clip [-1,1]."
+}
