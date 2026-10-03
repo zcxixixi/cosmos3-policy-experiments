@@ -1,0 +1,448 @@
+{
+  "scope": "one native transformer forward on saved identical no-system model inputs",
+  "full_official_server_equivalence": false,
+  "case": "far_milk_198_off",
+  "mode": "off",
+  "torch": "2.11.0+cu130",
+  "cudnn_version": 92400,
+  "parameter_keys": 814,
+  "missing_keys": 0,
+  "sequence_length": 387,
+  "und_tokens": 121,
+  "time_mlp_precision": "float32",
+  "other_parameter_precision": "bfloat16",
+  "states": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/runtime-system-prompt/cases/far_milk_198_off/states.pt",
+  "checkpoint": "/home/current/work/cosmos3/checkpoints/Cosmos3-Nano-Policy-LIBEROall-5k",
+  "checkpoint_config_sha256": "4728d7b841e6e8a7ab74f73c8449fe03ee519d1996017bb208c697ab03f82119",
+  "status": "sample30_completed",
+  "scheduler_worker": {
+    "ok": true,
+    "torch": "2.14.0+cu130",
+    "compute_device": "cpu",
+    "scheduler_source_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+    "schedule_exact_to_saved": true
+  },
+  "comparisons": {
+    "forward_seconds": 0.2826051549927797,
+    "readout": {
+      "rms": 0.0015873173251748085,
+      "max_abs": 0.046875,
+      "relative_rms_percent": 0.8249537022372935
+    },
+    "action_velocity_first10": {
+      "rms": 0.0035665009636431932,
+      "max_abs": 0.015625,
+      "relative_rms_percent": 0.3037310738047852
+    },
+    "boundaries": [
+      {
+        "rms": 0.0,
+        "max_abs": 0.0,
+        "relative_rms_percent": 0.0
+      },
+      {
+        "rms": 0.00018379001994617283,
+        "max_abs": 0.00390625,
+        "relative_rms_percent": 0.05496600483922922
+      },
+      {
+        "rms": 0.00038335841963998973,
+        "max_abs": 0.0078125,
+        "relative_rms_percent": 0.11029911536419944
+      },
+      {
+        "rms": 0.0006727149011567235,
+        "max_abs": 0.03125,
+        "relative_rms_percent": 0.18192222952340265
+      },
+      {
+        "rms": 0.0012486069463193417,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.27104178116067246
+      },
+      {
+        "rms": 0.001559898373670876,
+        "max_abs": 0.03125,
+        "relative_rms_percent": 0.3173010995206854
+      },
+      {
+        "rms": 0.00196264311671257,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.38210459260937163
+      },
+      {
+        "rms": 0.002076546661555767,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.39875118677066185
+      },
+      {
+        "rms": 0.002207093173637986,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.4202904019501929
+      },
+      {
+        "rms": 0.002304188907146454,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.44078775359089023
+      },
+      {
+        "rms": 0.002389057306572795,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 0.46688226581821546
+      },
+      {
+        "rms": 0.002461954951286316,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 0.49776318536624015
+      },
+      {
+        "rms": 0.002404996193945408,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 0.5004134622521776
+      },
+      {
+        "rms": 0.0022136967163532972,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.4712303971033409
+      },
+      {
+        "rms": 0.002370554953813553,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5130045324009006
+      },
+      {
+        "rms": 0.0024423599243164062,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5263453672622456
+      },
+      {
+        "rms": 0.002523345872759819,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5390144970844196
+      },
+      {
+        "rms": 0.0025873107369989157,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.540359005861832
+      },
+      {
+        "rms": 0.0027025465387851,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5607903920048063
+      },
+      {
+        "rms": 0.002769934246316552,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5763003824152421
+      },
+      {
+        "rms": 0.0027206987142562866,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.5656326294712992
+      },
+      {
+        "rms": 0.002805879106745124,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 0.6033595203631167
+      },
+      {
+        "rms": 0.002963797654956579,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 0.6452686123135142
+      },
+      {
+        "rms": 0.002874151337891817,
+        "max_abs": 0.125,
+        "relative_rms_percent": 0.6263618987535958
+      },
+      {
+        "rms": 0.003160774474963546,
+        "max_abs": 0.140625,
+        "relative_rms_percent": 0.6885720532456893
+      },
+      {
+        "rms": 0.0036452433560043573,
+        "max_abs": 0.181640625,
+        "relative_rms_percent": 0.7984346365653792
+      },
+      {
+        "rms": 0.003882664255797863,
+        "max_abs": 0.1640625,
+        "relative_rms_percent": 0.8399284874554467
+      },
+      {
+        "rms": 0.004194537177681923,
+        "max_abs": 0.16796875,
+        "relative_rms_percent": 0.8900473362857539
+      },
+      {
+        "rms": 0.004407956264913082,
+        "max_abs": 0.15625,
+        "relative_rms_percent": 0.9379747932994367
+      },
+      {
+        "rms": 0.004818797577172518,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 1.0036851753096898
+      },
+      {
+        "rms": 0.005327905528247356,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 1.0807646321996505
+      },
+      {
+        "rms": 0.0052560074254870415,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 1.0031994546867722
+      },
+      {
+        "rms": 0.005471589043736458,
+        "max_abs": 0.1875,
+        "relative_rms_percent": 0.9698801511988948
+      },
+      {
+        "rms": 0.006346730049699545,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.9946635238016682
+      },
+      {
+        "rms": 0.006536595523357391,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.9651890893885671
+      },
+      {
+        "rms": 0.006996770389378071,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.8859390985931097
+      },
+      {
+        "rms": 0.007270706817507744,
+        "max_abs": 0.25,
+        "relative_rms_percent": 0.7867371020480978
+      }
+    ],
+    "native_layout": {
+      "gen_shape_with_padding": [
+        267,
+        4096
+      ],
+      "real_gen_tokens": 266,
+      "action_global_indexes": [
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386
+      ],
+      "action_gen_rows": [
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265
+      ]
+    },
+    "reference_velocity": "Replay official loaded head on saved Diffusers readout; not a simulator action"
+  },
+  "sampling": {
+    "mode": "free-running: own previous FP32 sampler state; no saved intermediate hidden state used as input",
+    "denoising_forwards": 30,
+    "sampling_seconds": 3.193930667010136,
+    "scheduler_device": "cpu subprocess, existing torch environment; saved Diffusers scheduler originally ran on CUDA",
+    "sampling_precision": "FP32 state/velocity, BF16 model input",
+    "normalized_action10": {
+      "rms": 0.0015113040572032332,
+      "max_abs": 0.007227659225463867,
+      "relative_rms_percent": 0.2515760501441562
+    },
+    "readout_profile": [
+      {
+        "rms": 0.0015873173251748085,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.8249537022372935
+      },
+      {
+        "rms": 0.0016215890645980835,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 0.8436537620090593
+      },
+      {
+        "rms": 0.0016325635369867086,
+        "max_abs": 0.0390625,
+        "relative_rms_percent": 0.8516313362240948
+      },
+      {
+        "rms": 0.0015641327481716871,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.8169523135503407
+      },
+      {
+        "rms": 0.0016215136274695396,
+        "max_abs": 0.0390625,
+        "relative_rms_percent": 0.847194151431234
+      },
+      {
+        "rms": 0.0015710237203165889,
+        "max_abs": 0.0390625,
+        "relative_rms_percent": 0.8221979208096453
+      },
+      {
+        "rms": 0.0016359516885131598,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.8584445466803815
+      },
+      {
+        "rms": 0.0015407035825774074,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.8080228238509545
+      },
+      {
+        "rms": 0.0016023159259930253,
+        "max_abs": 0.03515625,
+        "relative_rms_percent": 0.8415096546823811
+      },
+      {
+        "rms": 0.0016071114223450422,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.8446585147817599
+      },
+      {
+        "rms": 0.0016447600210085511,
+        "max_abs": 0.0546875,
+        "relative_rms_percent": 0.8656612109652221
+      },
+      {
+        "rms": 0.001665388816036284,
+        "max_abs": 0.0390625,
+        "relative_rms_percent": 0.8777973433719213
+      },
+      {
+        "rms": 0.0017932429909706116,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.9461695435499019
+      },
+      {
+        "rms": 0.0017508863238617778,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.9248275860542288
+      },
+      {
+        "rms": 0.001768504036590457,
+        "max_abs": 0.0546875,
+        "relative_rms_percent": 0.9329696662198174
+      },
+      {
+        "rms": 0.001813926501199603,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.9560264135960749
+      },
+      {
+        "rms": 0.0019595094490796328,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 1.0332104363872991
+      },
+      {
+        "rms": 0.0018981503089889884,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 0.9981642016278554
+      },
+      {
+        "rms": 0.0020433515310287476,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 1.070737029571666
+      },
+      {
+        "rms": 0.0020442111417651176,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 1.0702715399415779
+      },
+      {
+        "rms": 0.0022155337501317263,
+        "max_abs": 0.0546875,
+        "relative_rms_percent": 1.1523968471881243
+      },
+      {
+        "rms": 0.0022625981364399195,
+        "max_abs": 0.078125,
+        "relative_rms_percent": 1.1707963447637841
+      },
+      {
+        "rms": 0.0023397880140691996,
+        "max_abs": 0.046875,
+        "relative_rms_percent": 1.2009749083726156
+      },
+      {
+        "rms": 0.0027598578017205,
+        "max_abs": 0.0625,
+        "relative_rms_percent": 1.402611185974897
+      },
+      {
+        "rms": 0.002833355451002717,
+        "max_abs": 0.078125,
+        "relative_rms_percent": 1.4220382499208373
+      },
+      {
+        "rms": 0.003403030103072524,
+        "max_abs": 0.109375,
+        "relative_rms_percent": 1.6839481960269544
+      },
+      {
+        "rms": 0.0038671079091727734,
+        "max_abs": 0.109375,
+        "relative_rms_percent": 1.8741084132641097
+      },
+      {
+        "rms": 0.004361080005764961,
+        "max_abs": 0.1015625,
+        "relative_rms_percent": 2.0608948767102087
+      },
+      {
+        "rms": 0.006006342824548483,
+        "max_abs": 0.138427734375,
+        "relative_rms_percent": 2.788597984203434
+      },
+      {
+        "rms": 0.010021038353443146,
+        "max_abs": 0.17578125,
+        "relative_rms_percent": 4.708533256223136
+      }
+    ],
+    "final_vision_latents": {
+      "rms": 0.004533729050308466,
+      "max_abs": 0.06235089898109436,
+      "relative_rms_percent": 0.5998286830586855
+    },
+    "clean_frame_max_drift": 1.1920928955078125e-06,
+    "saved_diffusers_clean_frame_max_drift": 1.1920928955078125e-06,
+    "action_tail_max": 0.0,
+    "comparison_limit": "Differences include native attention/torch versions AND CPU-versus-CUDA sampler arithmetic; this is not full official-server equivalence",
+    "first_readout_matches_control_exact": true,
+    "first_readout_control_difference": {
+      "rms": 0.0,
+      "max_abs": 0.0,
+      "relative_rms_percent": 0.0
+    }
+  }
+}

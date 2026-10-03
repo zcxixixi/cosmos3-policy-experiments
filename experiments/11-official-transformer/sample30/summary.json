@@ -1,0 +1,66 @@
+{
+  "scope": "Two scenes \u00d7 two nouns \u00d7 seed198, each thirty real native denoising forwards. Same pre-encoded image, tokenizer output, initial noise and historical schedule. No new simulated execution or complete official server.",
+  "cases": [
+    {
+      "case": "center_milk_198_off",
+      "normalized_xyz_rmse": 0.0010582429769835549,
+      "normalized_rot6d_rmse": 0.0012248791968879076,
+      "normalized_gripper_rmse": 0.001933701603977967,
+      "action10_relative_rms_percent": 0.2123430293839415,
+      "first_readout_matches_control_exact": true,
+      "last_readout_relative_rms_percent": 4.625510093985334,
+      "denormalized_xyz_controller_command_rmse": 0.0009118721012475858,
+      "denormalized_xyz_controller_command_max_abs": 0.0036984392338991166,
+      "controller_command_unit": "Dimensionless OSC controller input, not meters. No physical end-effector error is inferred."
+    },
+    {
+      "case": "far_milk_198_off",
+      "normalized_xyz_rmse": 0.0018638785841770251,
+      "normalized_rot6d_rmse": 0.0012884809825881062,
+      "normalized_gripper_rmse": 0.0015675363122704537,
+      "action10_relative_rms_percent": 0.2515760501441562,
+      "first_readout_matches_control_exact": true,
+      "last_readout_relative_rms_percent": 4.708533256223136,
+      "denormalized_xyz_controller_command_rmse": 0.0015716614946037727,
+      "denormalized_xyz_controller_command_max_abs": 0.004584944949507713,
+      "controller_command_unit": "Dimensionless OSC controller input, not meters. No physical end-effector error is inferred."
+    },
+    {
+      "case": "center_butter_198_off",
+      "normalized_xyz_rmse": 0.0015712935187501538,
+      "normalized_rot6d_rmse": 0.001399405174749686,
+      "normalized_gripper_rmse": 0.00191820923618732,
+      "action10_relative_rms_percent": 0.25265247933972834,
+      "first_readout_matches_control_exact": true,
+      "last_readout_relative_rms_percent": 5.015481656876997,
+      "denormalized_xyz_controller_command_rmse": 0.001341032032784445,
+      "denormalized_xyz_controller_command_max_abs": 0.00347530760794878,
+      "controller_command_unit": "Dimensionless OSC controller input, not meters. No physical end-effector error is inferred."
+    },
+    {
+      "case": "far_butter_198_off",
+      "normalized_xyz_rmse": 0.0013216449150195296,
+      "normalized_rot6d_rmse": 0.0011376737676560404,
+      "normalized_gripper_rmse": 0.0018190085006839106,
+      "action10_relative_rms_percent": 0.21235388597567967,
+      "first_readout_matches_control_exact": true,
+      "last_readout_relative_rms_percent": 4.675196778026991,
+      "denormalized_xyz_controller_command_rmse": 0.0011189178456926464,
+      "denormalized_xyz_controller_command_max_abs": 0.0030818992230296134,
+      "controller_command_unit": "Dimensionless OSC controller input, not meters. No physical end-effector error is inferred."
+    }
+  ],
+  "language_effect": [
+    {
+      "scene": "center",
+      "native_language_xyz_rmse": 0.003614835880892225,
+      "diffusers_language_xyz_rmse": 0.004344395966775201
+    },
+    {
+      "scene": "far",
+      "native_language_xyz_rmse": 0.023482856499029366,
+      "diffusers_language_xyz_rmse": 0.0241079190429755
+    }
+  ],
+  "fixed_velocity_device_control": "fixed_velocity_device_control.json"
+}

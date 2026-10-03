@@ -2,8 +2,10 @@
 """Compare a saved Diffusers first pass with the official Cosmos3 network.
 
 Default mode is CPU metadata inspection only. --run explicitly loads the
-existing shards and executes ONE official transformer forward on CUDA.
-No VAE, processor, tokenizer, audio decoder, scheduler, FSDP or downloads.
+existing shards and executes one official transformer forward on CUDA.
+Optional --sample30 then runs a genuine thirty-step native model chain;
+its original FlowUniPC scheduler runs in an existing CPU subprocess.
+No VAE, processor, tokenizer, audio decoder, FSDP, installations or downloads.
 
 This tests the network on identical saved model-facing tensors. It does not
 prove equivalence of the complete official HTTP server or preprocessing.
@@ -13,11 +15,14 @@ the earlier Diffusers probe. No native attention implementation is replaced.
 
 import argparse
 import ast
+import base64
 import hashlib
+import io
 import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import time
 
@@ -29,7 +34,161 @@ def arguments():
     p.add_argument("--states", type=Path, required=True)
     p.add_argument("--output", type=Path)
     p.add_argument("--run", action="store_true")
+    p.add_argument("--sample30", action="store_true",
+                   help="After the first-pass control, freely sample 30 native forwards from saved FP32 noise")
+    p.add_argument("--scheduler-python", type=Path,
+                   help="Existing Python environment that imports the unmodified native FlowUniPC module")
     return p.parse_args()
+
+
+# This child imports the ORIGINAL scheduler file in its existing compatible
+# environment. It never imports a model or uses CUDA. No ConfigMixin, Hub API or
+# numerical solver is reimplemented. Stdout is an internal JSON-lines channel;
+# arrays are losslessly encoded .npy bytes, never printed to the user log.
+SCHEDULER_WORKER = r'''
+import base64,copy,hashlib,importlib.util,io,json,os,sys
+os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['HF_HUB_OFFLINE']='1'
+os.environ['TRANSFORMERS_OFFLINE']='1'
+os.environ['PYTHONDONTWRITEBYTECODE']='1'
+import numpy as np
+import torch
+torch.set_num_threads(4)
+torch.set_grad_enabled(False)
+source=sys.argv[1]
+spec=importlib.util.spec_from_file_location('original_native_flow_unipc',source)
+module=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+def decode(value):
+    return np.load(io.BytesIO(base64.b64decode(value)),allow_pickle=False)
+def encode(value):
+    stream=io.BytesIO();np.save(stream,value,allow_pickle=False)
+    return base64.b64encode(stream.getvalue()).decode('ascii')
+def fp32(value):
+    array=decode(value)
+    if array.dtype!=np.float32:raise ValueError('RPC tensor must be FP32')
+    return torch.from_numpy(array.copy())
+vision=action=vision_scheduler=action_scheduler=None
+for line in sys.stdin:
+    try:
+        request=json.loads(line)
+        if request['op']=='init':
+            if vision is not None:raise ValueError('Worker may only initialize once')
+            vision=fp32(request['vision']);action=fp32(request['action'])
+            raw_dim=int(request['raw_action_dim'])
+            vision_noisy=torch.zeros(vision.shape[2],dtype=torch.float32)
+            vision_noisy[request['vision_noisy_frames']]=1
+            vision_noisy=vision_noisy.reshape(1,1,-1,1,1)
+            action_noisy=torch.zeros(action.shape[0],1,dtype=torch.float32)
+            action_noisy[request['action_noisy_frames']]=1
+            clean_frames=torch.where(vision_noisy.reshape(-1)==0)[0]
+            clean_reference=vision.index_select(2,clean_frames).clone()
+            vision_scheduler=module.FlowUniPCMultistepScheduler(num_train_timesteps=1000,shift=1.)
+            sigmas=np.linspace(1.-1./1000,0.,31)[:-1]
+            vision_scheduler.set_timesteps(30,device='cpu',sigmas=sigmas)
+            action_scheduler=copy.deepcopy(vision_scheduler)
+            response={'ok':True,'torch':torch.__version__,'compute_device':'cpu',
+                      'scheduler_source_sha256':hashlib.sha256(open(source,'rb').read()).hexdigest(),
+                      'sigmas':encode(vision_scheduler.sigmas.numpy()),
+                      'timesteps':encode(vision_scheduler.timesteps.numpy())}
+        elif request['op']=='step':
+            index=int(request['step']);timestep=int(request['timestep'])
+            if index!=int(vision_scheduler.step_index or 0) or index!=int(action_scheduler.step_index or 0):
+                raise ValueError('Independent scheduler histories lost their step alignment')
+            if timestep!=int(vision_scheduler.timesteps[index]):raise ValueError('Timestep mismatch')
+            vvision=fp32(request['vision_velocity']);vaction=fp32(request['action_velocity'])
+            if vvision.shape!=vision.shape or vaction.shape!=action.shape:raise ValueError('Velocity shape mismatch')
+            vvision=vvision*vision_noisy;vaction=vaction*action_noisy
+            vaction[:,raw_dim:]=0
+            t=vision_scheduler.timesteps[index]
+            vision=vision_scheduler.step(vvision.unsqueeze(0),t,vision.unsqueeze(0),return_dict=False)[0].squeeze(0)
+            action=action_scheduler.step(vaction.unsqueeze(0),t,action.unsqueeze(0),return_dict=False)[0].squeeze(0)
+            action[:,raw_dim:]=0
+            drift=(vision.index_select(2,clean_frames)-clean_reference).abs().max().item()
+            response={'ok':True,'step':index,'vision':encode(vision.numpy()),'action':encode(action.numpy()),
+                      'clean_frame_max_drift':drift,'action_tail_max':action[:,raw_dim:].abs().max().item()}
+        elif request['op']=='close':
+            print(json.dumps({'ok':True,'closed':True}),flush=True);break
+        else:raise ValueError('Unknown scheduler operation')
+        print(json.dumps(response),flush=True)
+    except Exception as error:
+        import traceback
+        traceback.print_exc(file=sys.stderr)
+        print(json.dumps({'ok':False,'error':str(error)}),flush=True)
+        break
+'''
+
+
+def encode_array(value):
+    import numpy as np
+    stream = io.BytesIO()
+    np.save(stream, value, allow_pickle=False)
+    return base64.b64encode(stream.getvalue()).decode("ascii")
+
+
+def decode_array(value):
+    import numpy as np
+    return np.load(io.BytesIO(base64.b64decode(value)), allow_pickle=False)
+
+
+class CpuFlowScheduler:
+    """Lossless FP32 RPC to the original scheduler in an existing CPU env."""
+
+    def __init__(self, python, framework):
+        self.source = framework / "cosmos_framework/model/generator/diffusion/samplers/fm_solvers_unipc.py"
+        env = os.environ.copy()
+        env.update(CUDA_VISIBLE_DEVICES="", HF_HUB_OFFLINE="1", TRANSFORMERS_OFFLINE="1",
+                   PYTHONDONTWRITEBYTECODE="1")
+        self.process = subprocess.Popen(
+            [str(python), "-c", SCHEDULER_WORKER, str(self.source)],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True, env=env,
+        )
+
+    def request(self, payload):
+        self.process.stdin.write(json.dumps(payload) + "\n")
+        self.process.stdin.flush()
+        line = self.process.stdout.readline()
+        if not line:
+            raise RuntimeError(f"Original CPU scheduler worker exited: {self.process.poll()}")
+        response = json.loads(line)
+        if not response.get("ok"):
+            raise RuntimeError("Original CPU scheduler worker: " + response.get("error", "unknown error"))
+        return response
+
+    def initialize(self, saved, torch):
+        inp = saved["input"]
+        self.metadata = self.request({
+            "op": "init", "vision": encode_array(saved["initial_vision"].numpy()),
+            "action": encode_array(saved["initial_action"].numpy()), "raw_action_dim": 10,
+            "vision_noisy_frames": inp["vision_noisy_frame_indexes"][0].tolist(),
+            "action_noisy_frames": inp["action_noisy_frame_indexes"][0].tolist(),
+        })
+        if not torch.equal(torch.from_numpy(decode_array(self.metadata["sigmas"])), saved["sigmas"]):
+            raise ValueError("Original CPU worker sigma schedule differs from the saved run")
+        if not torch.equal(torch.from_numpy(decode_array(self.metadata["timesteps"])), saved["timesteps"]):
+            raise ValueError("Original CPU worker timestep schedule differs from the saved run")
+        return {k: v for k, v in self.metadata.items() if k not in ("sigmas", "timesteps")}
+
+    def step(self, index, timestep, vision_velocity, action_velocity, torch):
+        response = self.request({
+            "op": "step", "step": index, "timestep": int(timestep),
+            "vision_velocity": encode_array(vision_velocity.float().cpu().numpy()),
+            "action_velocity": encode_array(action_velocity.float().cpu().numpy()),
+        })
+        vision = torch.from_numpy(decode_array(response.pop("vision")))
+        action = torch.from_numpy(decode_array(response.pop("action")))
+        if vision.dtype != torch.float32 or action.dtype != torch.float32:
+            raise ValueError("CPU scheduler changed the FP32 state dtype")
+        return vision, action, response
+
+    def close(self):
+        if self.process.poll() is None:
+            try:
+                self.request({"op": "close"})
+                self.process.wait(timeout=15)
+            except Exception:
+                self.process.terminate()
+                self.process.wait(timeout=15)
 
 
 def official_key_mapper(framework):
@@ -281,6 +440,101 @@ def run_once(net, mapping, checkpoint, saved, packed, torch):
     return metrics, tensors
 
 
+def sample_native30(net, saved, packed, scheduler, torch):
+    """Free-running native model chain; saved intermediate hidden states are references only."""
+    device = next(net.parameters()).device
+    vision_state = saved["initial_vision"].clone()
+    action_state = saved["initial_action"].clone()
+    action_history = [action_state.clone()]
+    readouts, action_velocities, vision_velocities, step_reports = [], [], [], []
+    action_ids = packed.action.sequence_indexes
+    layout = {}
+
+    def before_first(module, args, kwargs):
+        pack = args[0] if args else kwargs["input"]
+        rows = native_action_rows(pack, action_ids, torch)
+        if "rows" in layout and not torch.equal(rows, layout["rows"]):
+            raise ValueError("Action-token ordering changed during native sampling")
+        layout.update(rows=rows, shape=list(pack["full_only_seq"].shape))
+
+    def after_norm(module, args, out):
+        if list(out.shape) != layout["shape"]:
+            raise ValueError("Final native GEN norm changed the packed token shape")
+        readouts.append(out.index_select(0, layout["rows"]).detach().cpu().clone())
+
+    handles = [net.language_model.model.layers[0].register_forward_pre_hook(before_first, with_kwargs=True),
+               net.language_model.model.norm_moe_gen.register_forward_hook(after_norm)]
+    started = time.perf_counter()
+    try:
+        with torch.inference_mode():
+            for index, timestep in enumerate(saved["timesteps"]):
+                # Keep integration states FP32. Only model-facing copies are BF16;
+                # the next input is THIS chain's previous scheduler output.
+                packed.vision.tokens = [vision_state.to(device=device, dtype=torch.bfloat16)]
+                packed.action.tokens = [action_state.to(device=device, dtype=torch.bfloat16)]
+                packed.vision.timesteps.fill_(int(timestep))
+                packed.action.timesteps.fill_(int(timestep))
+                if index == 0:
+                    if not torch.equal(packed.vision.tokens[0].cpu(), saved["input"]["vision_tokens"][0]):
+                        raise ValueError("Sampling first vision input changed")
+                    if not torch.equal(packed.action.tokens[0].cpu(), saved["input"]["action_tokens"][0]):
+                        raise ValueError("Sampling first action input changed")
+                before = len(readouts)
+                output = net(packed_seq=packed)
+                if len(readouts) != before + 1:
+                    raise ValueError("Expected exactly one native readout per denoising forward")
+                vvision = output["preds_vision"][0].float().detach().cpu()
+                vaction = output["preds_action"][0].float().detach().cpu()
+                if vvision.shape != vision_state.shape or vaction.shape != action_state.shape:
+                    raise ValueError("Native predictions do not match their modality states")
+                if not torch.isfinite(vvision).all() or not torch.isfinite(vaction).all():
+                    raise ValueError("Native sampling produced nonfinite velocities")
+                vision_velocities.append(vvision.clone())
+                # This is the velocity actually integrated by the worker: first ten
+                # LIBERO channels, with padded action channels zeroed as in the source pipeline.
+                masked_action_velocity = vaction.clone()
+                masked_action_velocity[:, 10:] = 0
+                action_velocities.append(masked_action_velocity)
+                vision_state, action_state, worker_step = scheduler.step(index, timestep, vvision, vaction, torch)
+                if not torch.isfinite(vision_state).all() or not torch.isfinite(action_state).all():
+                    raise ValueError("Original CPU scheduler produced a nonfinite integration state")
+                action_history.append(action_state.clone())
+                step_reports.append(worker_step)
+                print(json.dumps({"native_sampling_step": index + 1, "total": 30,
+                                  "clean_frame_max_drift": worker_step["clean_frame_max_drift"]}), flush=True)
+        torch.cuda.synchronize()
+    finally:
+        for handle in handles:
+            handle.remove()
+    if len(readouts) != 30:
+        raise ValueError("This audit requires exactly thirty genuine native denoising forwards")
+    readout_stack = torch.stack(readouts)
+    normalized_actions = action_state[:, :10].clone()
+    clean = torch.ones(vision_state.shape[2], dtype=torch.bool)
+    clean[saved["input"]["vision_noisy_frame_indexes"][0]] = False
+    metrics = {
+        "mode": "free-running: own previous FP32 sampler state; no saved intermediate hidden state used as input",
+        "denoising_forwards": 30,
+        "sampling_seconds": time.perf_counter() - started,
+        "scheduler_device": "cpu subprocess, existing torch environment; saved Diffusers scheduler originally ran on CUDA",
+        "sampling_precision": "FP32 state/velocity, BF16 model input",
+        "normalized_action10": error_metrics(normalized_actions, saved["output_actions"], torch),
+        "readout_profile": [error_metrics(readout_stack[i], saved["readout"][i], torch) for i in range(30)],
+        "final_vision_latents": error_metrics(vision_state, saved["output_video_latents"], torch),
+        "clean_frame_max_drift": float((vision_state[:, :, clean] - saved["initial_vision"][:, :, clean]).abs().max()),
+        "saved_diffusers_clean_frame_max_drift": float((saved["output_video_latents"][:, :, clean] - saved["initial_vision"][:, :, clean]).abs().max()),
+        "action_tail_max": float(action_state[:, 10:].abs().max()),
+        "comparison_limit": "Differences include native attention/torch versions AND CPU-versus-CUDA sampler arithmetic; this is not full official-server equivalence",
+    }
+    tensors = {"initial_vision": saved["initial_vision"], "initial_action": saved["initial_action"],
+               "sample_readout": readout_stack, "normalized_actions": normalized_actions,
+               "final_vision_latents": vision_state, "action_state_history": torch.stack(action_history),
+               "action_velocities": torch.stack(action_velocities), "vision_velocities": torch.stack(vision_velocities),
+               "sigmas": saved["sigmas"], "timesteps": saved["timesteps"],
+               "worker_step_reports": step_reports}
+    return metrics, tensors
+
+
 def main():
     args = arguments()
     os.environ.setdefault("HF_HUB_OFFLINE", "1")
@@ -292,6 +546,8 @@ def main():
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
     if args.run and args.output is None:
         raise ValueError("--run requires a fresh --output directory")
+    if args.sample30 and args.scheduler_python is None:
+        raise ValueError("--sample30 requires explicit --scheduler-python for the existing compatible CPU environment")
     if args.output is not None and args.output.exists():
         raise FileExistsError(f"Preserve previous evidence: output already exists: {args.output}")
     sys.path.insert(0, str(args.framework))
@@ -312,12 +568,32 @@ def main():
         "checkpoint_config_sha256": hashlib.sha256((args.checkpoint / "config.json").read_bytes()).hexdigest(),
         "status": "metadata_only",
     }
-    if args.run:
-        metrics, tensors = run_once(net, mapping, args.checkpoint, saved, packed, torch)
-        report.update(status="forward_completed", comparisons=metrics)
-        args.output.mkdir(parents=True, exist_ok=False)
-        torch.save(tensors, args.output / "native_forward.pt")
-        (args.output / "result.json").write_text(json.dumps(report, indent=2) + "\n")
+    scheduler = None
+    try:
+        if args.sample30:
+            scheduler = CpuFlowScheduler(args.scheduler_python, args.framework)
+            report["scheduler_worker"] = scheduler.initialize(saved, torch)
+            report["scheduler_worker"]["schedule_exact_to_saved"] = True
+        if args.run:
+            metrics, tensors = run_once(net, mapping, args.checkpoint, saved, packed, torch)
+            report.update(status="forward_completed", comparisons=metrics)
+            sample_tensors = None
+            if args.sample30:
+                sample_metrics, sample_tensors = sample_native30(net, saved, packed, scheduler, torch)
+                sample_metrics["first_readout_matches_control_exact"] = bool(torch.equal(
+                    sample_tensors["sample_readout"][0], tensors["native_readout"]))
+                sample_metrics["first_readout_control_difference"] = error_metrics(
+                    sample_tensors["sample_readout"][0], tensors["native_readout"], torch)
+                report.update(status="sample30_completed", sampling=sample_metrics)
+            args.output.mkdir(parents=True, exist_ok=False)
+            torch.save(tensors, args.output / "native_forward.pt")
+            if sample_tensors is not None:
+                torch.save(sample_tensors, args.output / "native_sample30.pt")
+                (args.output / "normalized_actions.json").write_text(json.dumps(sample_tensors["normalized_actions"].tolist()) + "\n")
+            (args.output / "result.json").write_text(json.dumps(report, indent=2) + "\n")
+    finally:
+        if scheduler is not None:
+            scheduler.close()
     print(json.dumps(report, ensure_ascii=False, indent=2), flush=True)
 
 

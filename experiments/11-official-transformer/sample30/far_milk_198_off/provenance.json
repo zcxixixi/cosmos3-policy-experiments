@@ -1,0 +1,36 @@
+{
+  "helper_sha256": "f39c05bd4804e91ed6a8101ee3525d181bda57bd9fa0d969c86901c2220f654e",
+  "states_sha256": "a928adb3e2d46a65630db6098382cbd71661acc68b91f9410237f113c028d67b",
+  "array_shapes": {
+    "native_readout": [
+      30,
+      16,
+      4096
+    ],
+    "reference_readout": [
+      30,
+      16,
+      4096
+    ],
+    "native_normalized_actions": [
+      16,
+      10
+    ],
+    "reference_normalized_actions": [
+      16,
+      10
+    ],
+    "native_action_state_history": [
+      31,
+      16,
+      64
+    ],
+    "timesteps": [
+      30
+    ],
+    "sigmas": [
+      31
+    ]
+  },
+  "scope": "Four paired fixed-input 30-denoising predictions, not new closed-loop execution; full readout arrays retained. CPU integration and native attention differ from the saved Diffusers run."
+}

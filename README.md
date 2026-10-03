@@ -109,7 +109,7 @@ flowchart TD
 | [08 语言何时起作用](experiments/08-language-timing/README.md) | 前期、后期改指令，影响有区别吗？ |
 | [09 输入格式对照](experiments/09-system-prompt/README.md) | 去掉多余开场文字，抓错目标会消失吗？ |
 | [10 抓奶酪还是抓那个位置](experiments/10-identity-position/README.md) | 交换奶酪和黄油后，它会跟着谁走？三个种子重复。 |
-| [11 官方网络首轮核验](experiments/11-official-transformer/README.md) | 同一份输入交给官方网络代码，数值是否能对上？仅首轮检查。 |
+| [11 官方网络计算核验](experiments/11-official-transformer/README.md) | 同一份已编码输入交给官方网络，四组各算30次，动作数值是否接近？未跑新闭环。 |
 
 [下载并打开离线报告](report.html)，可以逐个播放之前的实验视频。新增的 07–11 以本仓库和中文网页为准，离线 HTML 尚未加入这些更新。
 

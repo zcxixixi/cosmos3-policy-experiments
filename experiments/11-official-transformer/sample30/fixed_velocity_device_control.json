@@ -1,0 +1,46 @@
+{
+  "torch": "2.14.0+cu130",
+  "scheduler_source_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "cases": [
+    {
+      "case": "center_milk_198_off",
+      "same_saved_velocities": true,
+      "schedule_exact": true,
+      "action10_rmse": 6.66400223892083e-09,
+      "action10_max_abs": 5.960464477539063e-08,
+      "vision_rmse": 1.0258015770148177e-08,
+      "vision_max_abs": 5.960464477539062e-07,
+      "scope": "Replaying identical fixed native velocities on CUDA versus recorded CPU integration; does not rerun the neural model under GPU integration."
+    },
+    {
+      "case": "far_milk_198_off",
+      "same_saved_velocities": true,
+      "schedule_exact": true,
+      "action10_rmse": 3.6813756904008343e-11,
+      "action10_max_abs": 4.656612873077393e-10,
+      "vision_rmse": 1.116915182564071e-08,
+      "vision_max_abs": 1.1920928955078125e-06,
+      "scope": "Replaying identical fixed native velocities on CUDA versus recorded CPU integration; does not rerun the neural model under GPU integration."
+    },
+    {
+      "case": "center_butter_198_off",
+      "same_saved_velocities": true,
+      "schedule_exact": true,
+      "action10_rmse": 5.276581394042523e-09,
+      "action10_max_abs": 5.960464477539063e-08,
+      "vision_rmse": 9.81067937999569e-09,
+      "vision_max_abs": 7.152557373046875e-07,
+      "scope": "Replaying identical fixed native velocities on CUDA versus recorded CPU integration; does not rerun the neural model under GPU integration."
+    },
+    {
+      "case": "far_butter_198_off",
+      "same_saved_velocities": true,
+      "schedule_exact": true,
+      "action10_rmse": 4.493691529994237e-10,
+      "action10_max_abs": 5.587935447692871e-09,
+      "vision_rmse": 1.0476344236565183e-08,
+      "vision_max_abs": 5.960464477539062e-07,
+      "scope": "Replaying identical fixed native velocities on CUDA versus recorded CPU integration; does not rerun the neural model under GPU integration."
+    }
+  ]
+}
