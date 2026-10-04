@@ -1,0 +1,153 @@
+{
+  "state": "passed",
+  "method": "Independent raw-array arithmetic and direct trajectory contact/lift recomputation; original analyzer RMS/strict functions not imported.",
+  "physical_cases": [
+    {
+      "case": "V195_A195_native",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "first_strict_windows": {
+        "cream_cheese_1": [
+          68,
+          72
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_native",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_strict_windows": {
+        "milk_1": [
+          64,
+          68
+        ]
+      }
+    },
+    {
+      "case": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "first_strict_windows": {
+        "cream_cheese_1": [
+          70,
+          74
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_strict_windows": {
+        "milk_1": [
+          64,
+          68
+        ]
+      }
+    },
+    {
+      "case": "V195_A195_early_l1_9",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_strict_windows": {
+        "milk_1": [
+          61,
+          65
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_early_l1_9",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_strict_windows": {
+        "milk_1": [
+          64,
+          68
+        ]
+      }
+    },
+    {
+      "case": "V195_A195_early_l10_18",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_strict_windows": {
+        "milk_1": [
+          62,
+          66
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_early_l10_18",
+      "selected_objects": [],
+      "first_strict_windows": {}
+    },
+    {
+      "case": "V195_A195_early_l19_27",
+      "selected_objects": [
+        "butter_1"
+      ],
+      "first_strict_windows": {
+        "butter_1": [
+          76,
+          80
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_early_l19_27",
+      "selected_objects": [],
+      "first_strict_windows": {}
+    },
+    {
+      "case": "V195_A195_early_l28_36",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "first_strict_windows": {
+        "cream_cheese_1": [
+          71,
+          75
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_early_l28_36",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_strict_windows": {
+        "milk_1": [
+          64,
+          68
+        ]
+      }
+    }
+  ],
+  "strict_conditions_rechecked": 10836,
+  "hidden_t0_points_checked": 112,
+  "net_update_t0_points_checked": 144,
+  "whole_solver_velocity_final_exports_byte_exact": 36,
+  "final_RMS_points_checked": 24,
+  "maximum_absolute_statistic_error": 0.0,
+  "primary_both_only_milk": true,
+  "model_forwards": 0,
+  "solver_steps": 0,
+  "physics_calls": 0,
+  "cuda_initialized": false,
+  "source_sha256": {
+    "analysis.json": "da8a95aabc50e944de469dc2354895f48bc24e94aa1affd76d1fabcf2fdb1586",
+    "actual-arrays.npz": "b7acf691f995a5bab54e6c406fdc554f18a6674e1f239c95621478ca7854a7a4",
+    "complete.json": "75ae38a4ba03f958c93bee80b3a33f49a186f291eba35169e3c5b332270e6f48"
+  },
+  "scope": "This extra audit checks all physical strict flags/lifts and raw q0 exports, plus specified t0 hidden/update points and final RMS values; it does not re-audit all 360 containers/dispatches or all1536 conversions, which the sealed original CPU audit covers. No functional region, milk identity or15cm rescue conclusion."
+}

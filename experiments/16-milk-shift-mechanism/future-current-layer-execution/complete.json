@@ -1,0 +1,41 @@
+{
+  "state": "complete",
+  "script_sha256": "e6d5abcb19d866f372d1373ba97a383f8093f1917859ff9714451f8e6138d40f",
+  "trial_order": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_early_l1_9",
+    "V198_A195_early_l1_9",
+    "V195_A195_early_l10_18",
+    "V198_A195_early_l10_18",
+    "V195_A195_early_l19_27",
+    "V198_A195_early_l19_27",
+    "V195_A195_early_l28_36",
+    "V198_A195_early_l28_36"
+  ],
+  "physical_trials": 12,
+  "saved_q0_predictions": 12,
+  "native_predictions": 84,
+  "fresh_model_forwards": 2520,
+  "producer_q0_forwards_separate": 360,
+  "combined_two_stage_model_forwards": 2880,
+  "actual_later_whole_noise_pairs": 77,
+  "four_native_and_sham_entire_129_state_5JSON_8PNG_and_8_modelrecords_exact": true,
+  "all12_own_cached_q0_action_execution_and_strict_window_gates_passed": true,
+  "all12_cases_executed_without_q0_selection": true,
+  "primary_prediction": "supported",
+  "primary_both_only_milk": true,
+  "numerical_sham_classification_gate_passed": true,
+  "files_sha256": {
+    "controls.json": "ba2c6fc5b807ae510c2bd36f98c5e74527dc236c39b77f9114d305f955eab520",
+    "primary-prediction.json": "fba470cc1119b9599e594a9cbb24ba312df9e056a08b16d1c349723c238e161e",
+    "provenance.json": "d767625c8c85cbfade91c1fd794f849f4f84cbab4031b1edfc1a1414c343cb1c",
+    "prepared.json": "3f5c9fde7d0755259376ac6d1e2489a96454deed0c688aab845713074812e57a",
+    "server/complete.json": "c1075bc5354bf6dd3879143df67c25e9489058de55d82ac6c29c8a0183472b36",
+    "closed-loop/complete.json": "645883c90aab0ecf2b313b4feb6ea7112cd84bc8385a68c5430f54568afc6709",
+    "summary.json": "8632cb33d27b51ae3590c1235c068c091b34bf466d86fe09c9ee1d1e4903d708"
+  },
+  "scope": "Twelve complete X+12cm physical trajectories executing the frozen window q0 actions, then native inference from actual feedback at later base195. The two native and two global all-allowed shams have separate complete prior references. All four nine-layer groups for both V realizations are executed; only early_l1_9 both selecting exactly milk tests the primary prediction. A hard mask also redistributes remaining attention. Higher-layer groups are same-site-count regional comparisons, not semantically unrelated controls; no score selection, additional internal intervention, training, semantic identity or general neural root-cause claim."
+}

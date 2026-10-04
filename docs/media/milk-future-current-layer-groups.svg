@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="665" viewBox="0 0 1120 665"><rect width="1120" height="665" fill="#f8fafc"/><g font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" fill="#253143">
+<text x="38" y="47" font-size="28" font-weight="700">同一条视觉读取连接：切哪一段，抓取结果不同</text>
+<text x="38" y="84" font-size="19">指令和画面固定；A／B只改变未来生成的初始随机数组</text>
+<rect x="38" y="105" width="1044" height="68" rx="9" fill="#edf4ff"/><text x="59" y="133" font-size="19">只在首轮前15次去噪：禁止“当前视觉向量读取未来向量”</text>
+<text x="59" y="160" font-size="18">动作直接读取未来的连接仍保留；首16步之后，后续7轮恢复原生推理</text>
+<text x="60" y="212" font-size="19" font-weight="700">切断范围</text><text x="545" y="212" font-size="19" font-weight="700">未来起点 A</text><text x="825" y="212" font-size="19" font-weight="700">未来起点 B</text>
+<rect x="38" y="230" width="1044" height="47" rx="5" fill="#fff"/><text x="60" y="260" font-size="19">原生计算</text>
+<text x="545" y="260" fill="#775c32" font-size="21" font-weight="700">奶酪盒</text>
+<text x="825" y="260" fill="#20743c" font-size="21" font-weight="700">牛奶</text>
+<rect x="38" y="283" width="1044" height="47" rx="5" fill="#f0f3f7"/><text x="60" y="313" font-size="19">接口对照：连接保留</text>
+<text x="545" y="313" fill="#775c32" font-size="21" font-weight="700">奶酪盒</text>
+<text x="825" y="313" fill="#20743c" font-size="21" font-weight="700">牛奶</text>
+<rect x="38" y="336" width="1044" height="47" rx="5" fill="#e6f4ea"/><text x="60" y="366" font-size="19">只切第1～9层（主要检验）</text>
+<text x="545" y="366" fill="#20743c" font-size="21" font-weight="700">牛奶</text>
+<text x="825" y="366" fill="#20743c" font-size="21" font-weight="700">牛奶</text>
+<rect x="38" y="389" width="1044" height="47" rx="5" fill="#f0f3f7"/><text x="60" y="419" font-size="19">只切第10～18层</text>
+<text x="545" y="419" fill="#20743c" font-size="21" font-weight="700">牛奶</text>
+<text x="825" y="419" fill="#775c32" font-size="21" font-weight="700">无严格抓起</text>
+<rect x="38" y="442" width="1044" height="47" rx="5" fill="#fff"/><text x="60" y="472" font-size="19">只切第19～27层</text>
+<text x="545" y="472" fill="#775c32" font-size="21" font-weight="700">黄油</text>
+<text x="825" y="472" fill="#775c32" font-size="21" font-weight="700">无严格抓起</text>
+<rect x="38" y="495" width="1044" height="47" rx="5" fill="#f0f3f7"/><text x="60" y="525" font-size="19">只切第28～36层</text>
+<text x="545" y="525" fill="#775c32" font-size="21" font-weight="700">奶酪盒</text>
+<text x="825" y="525" fill="#20743c" font-size="21" font-weight="700">牛奶</text>
+<text x="38" y="584" font-size="18">主要预测成立：第1～9层这段干预救回A，并保留B的牛奶抓取。</text>
+<text x="38" y="615" font-size="17">范围：固定12厘米初态、两份未来起点；抓起不等于最终放篮成功。</text>
+<text x="38" y="642" font-size="17">尚未发现“牛奶脑区”；15厘米和新的牛奶位置还需要验证。</text>
+</g></svg>

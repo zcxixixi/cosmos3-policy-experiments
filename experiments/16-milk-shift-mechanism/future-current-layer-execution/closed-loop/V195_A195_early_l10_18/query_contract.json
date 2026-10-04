@@ -1,0 +1,970 @@
+[
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 0,
+      "seed": 195,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 195,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_00.png",
+      "input_png_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 6.757798382999681,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "case": "V195_A195_early_l10_18",
+      "arm": "early_l10_18",
+      "window_zero_based_inclusive": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "query": 0,
+      "shift_cm": 12,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "numerical_masked_sham": false,
+      "native_noop": false,
+      "common_union66_all_allowed_background": true,
+      "window_cut_sites": 135,
+      "actual_masked_site_substitutions": 1080,
+      "primary_prediction_case": false,
+      "physical_prediction_evaluated": false,
+      "existing_entire_control_record_exact": null,
+      "own_sham_pre_first_cut_prefix_exact": true,
+      "trial": "V195_A195_early_l10_18",
+      "saved_q0_prediction": true,
+      "current_execution_model_calls": 0,
+      "source_record_model_calls": 30,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": false,
+      "saved_q0_source_states_sha256": "57d40877aa4827467be91449ed1ea6f6831e84ebe86fe49fd986fb4f8238d887",
+      "saved_q0_masked_description": {
+        "selected_window_zero_based_inclusive": {
+          "steps": [
+            0,
+            14
+          ],
+          "layers": [
+            9,
+            17
+          ]
+        },
+        "cut_sites": 135,
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "global_all_allowed_background": true,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    },
+    "paired_noise_checked_exact": false,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 1,
+      "seed": 196,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 196,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_01.png",
+      "input_png_sha256": "012b15790cfcf3e9d8dd1d3d79bdf78e75cc2ef46120e1feeda0f72e844ee573",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3235711729976174,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 1,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 2,
+      "seed": 197,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 197,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_02.png",
+      "input_png_sha256": "09f21a99334480c33cce5de656c490d6f4eb9b22f0e1bd8e9e2452934b4c4af2",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3287029290004284,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 2,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 3,
+      "seed": 198,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 198,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_03.png",
+      "input_png_sha256": "c8a4efbb61db19f10a8bb06f520adc48595b17649e13e8756c95c0e4a1575882",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.327779895000276,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 3,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 4,
+      "seed": 199,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 199,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_04.png",
+      "input_png_sha256": "cb1792c42958ae543c1d5cde11b59dfe33c3fa36e5912fb6d7b3e3ae17745777",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3273569119992317,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 4,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 5,
+      "seed": 200,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 200,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_05.png",
+      "input_png_sha256": "7b11a09aa447504576c09ec526500ee2972c44cae4e082099fdc4d20f234a6e7",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3276739319990156,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 5,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 6,
+      "seed": 201,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 201,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_06.png",
+      "input_png_sha256": "3e02ff02dbacfc8eac0813f4699fe8a61d3bc1c3b9cf8dd02d1cf8c8ef03191c",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.327566203999595,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 6,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "V195_A195_early_l10_18",
+      "query": 7,
+      "seed": 202,
+      "prompt": "pick up the milk and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "milk",
+      "task_index": 7,
+      "prompt": "pick up the milk and place it in the basket",
+      "seed": 202,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-layer-execution/closed-loop/V195_A195_early_l10_18/input_07.png",
+      "input_png_sha256": "3f9e916746d1ebd40ec66bd2d71109c1b440917412f0887f71a3456fcc8f941f",
+      "und_len": 121,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3295079600029567,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "V195_A195_early_l10_18",
+      "query": 7,
+      "shift_cm": 12,
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "source_record_model_calls": null,
+      "saved_q0_attention_arm": "early_l10_18",
+      "saved_q0_was_masked": true,
+      "saved_q0_window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          9,
+          17
+        ]
+      },
+      "q0_vision_noise_source_seed": 195,
+      "q0_action_noise_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "Saved q0 has separate V/A sources and invocation195; q1..7=195+query.",
+      "whole_prior_control": false,
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "initial_noise_replacement_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "saved_q0_source_states_sha256": null,
+      "saved_q0_masked_description": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  }
+]

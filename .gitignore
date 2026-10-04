@@ -70,3 +70,12 @@ checkpoints/
 !experiments/16-milk-shift-mechanism/future-current-execution/closed-loop/*/chunk_*/states.pt
 !experiments/16-milk-shift-mechanism/future-current-execution/closed-loop/*/chunk_*/noise-audit.pt
 !experiments/16-milk-shift-mechanism/future-current-execution/closed-loop/*/chunk_*/indexes-and-masks.pt
+
+# Recorded nine-layer-group arrays and executed predictions; no model weights.
+!experiments/16-milk-shift-mechanism/future-current-layer-groups/*/states.pt
+!experiments/16-milk-shift-mechanism/future-current-layer-groups/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-current-layer-groups/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-current-layer-groups/*/boundaries-t00.pt
+!experiments/16-milk-shift-mechanism/future-current-layer-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/future-current-layer-execution/closed-loop/*/chunk_*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-current-layer-execution/closed-loop/*/chunk_*/indexes-and-masks.pt

@@ -1,0 +1,490 @@
+{
+  "state": "complete",
+  "case_arm": "early_l19_27",
+  "selected_window": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      18,
+      26
+    ]
+  },
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "block_before": 1080,
+    "block_after": 1080,
+    "pre_W": 1080,
+    "native_UND_dispatch": 1080,
+    "native_GEN_dispatch": 1080,
+    "all_allowed_dispatch": 1080,
+    "cut_dispatch": 135,
+    "substituted_sites": 1080
+  },
+  "boundary_files": [
+    {
+      "step": 0,
+      "file": "boundaries-t00.pt",
+      "sha256": "e3707d0a41e23cadb1c22f6c986a4bf567fdde0e6c2a23767e019d446e01fd71",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 1,
+      "file": "boundaries-t01.pt",
+      "sha256": "92537ec5a0a8323f90210cc35b2b61f6411fd913da9c81677f086b9969a12c72",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 2,
+      "file": "boundaries-t02.pt",
+      "sha256": "75c45ff7c88b86727c300cb3c32b5f0a276dfac0bdced1df1117aaf36ee76b09",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 3,
+      "file": "boundaries-t03.pt",
+      "sha256": "52f2bb4d1a8ea06c20478733c001c43abb2e07be60882fb9155ecb0b26cbb4c4",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 4,
+      "file": "boundaries-t04.pt",
+      "sha256": "0a577b5a197e32558ca5e4d4f49641d960a9f72fc6648e8ef706d103bb2c0d56",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 5,
+      "file": "boundaries-t05.pt",
+      "sha256": "1225baf936cdf2a020a6414aa433ef25bd1441b9c8ee1cf0c3a8d0453a2049f1",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 6,
+      "file": "boundaries-t06.pt",
+      "sha256": "3c0b0e1c58de4fdb562477042a10a339a92ad02508fba2b76719b65b9643d450",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 7,
+      "file": "boundaries-t07.pt",
+      "sha256": "9bad4fd780e7a6d298cf03aeb2f9114d07a52f94b2cb0728889e5b2b134c1ed0",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 8,
+      "file": "boundaries-t08.pt",
+      "sha256": "eef954b85458719e977212c308b1bf20b31ffe303b9116ed5aa3dd44fdf3dd04",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 9,
+      "file": "boundaries-t09.pt",
+      "sha256": "d5b2f3a3a42363911fd8bee94e3c1705480e1ce6eaccb0ed4f6d83236a61a8b4",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 10,
+      "file": "boundaries-t10.pt",
+      "sha256": "a87f6c4d56fb5134dda61f5c5bdc84e1583a80e30b30a107fc113cd3d84caa7a",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 11,
+      "file": "boundaries-t11.pt",
+      "sha256": "40d470dbb35e25de7b433c68fbc59a14fdd3ea605890eef593141956127a6a8f",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 12,
+      "file": "boundaries-t12.pt",
+      "sha256": "d6e2bab5224989401a89d0a4bdd201989e9eddf158fec5c22ef93ffdb115a4b6",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 13,
+      "file": "boundaries-t13.pt",
+      "sha256": "5f98b87a13fa15e7967d4cd93ea4bf4bd63a704462e7d8a0c9ba8ac5854e6e5f",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 14,
+      "file": "boundaries-t14.pt",
+      "sha256": "3ff739bda0c20068f8407a65ef6f3e97efe7325035329d14ad701c7a3905b779",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 15,
+      "file": "boundaries-t15.pt",
+      "sha256": "5d7b0da60d90e3f8e2c28c016da16f3d21689b14a8c83ef7f50af23b0e4bce33",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 16,
+      "file": "boundaries-t16.pt",
+      "sha256": "df1f9c968addc17b6d3cbf637dabab73ab0410e1948df04b22fdfbe06ecc65f7",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 17,
+      "file": "boundaries-t17.pt",
+      "sha256": "6e7000a0b6dc39dbdb41d3e36f2d946ff6b71e7bf1c5ede9ebbe3aad04232a76",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 18,
+      "file": "boundaries-t18.pt",
+      "sha256": "ee65ee282b70554a3ee6d8449a72354245b7023cb5bc11f429563e4ee8ee9675",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 19,
+      "file": "boundaries-t19.pt",
+      "sha256": "eeff9895e41251a8c051499976cda543f35733823430890f419920c03780dbe0",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 20,
+      "file": "boundaries-t20.pt",
+      "sha256": "245981d27c2ffb80c68adaf18e52370e426b34f94f75f8982b1a167a73bad71c",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 21,
+      "file": "boundaries-t21.pt",
+      "sha256": "6708175ff2e6716d50027f50691d933f01f1df8e11ef831bd7b91654c3ccee0d",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 22,
+      "file": "boundaries-t22.pt",
+      "sha256": "0ea26fc56f57492215fa862eb71dc09f31026c44d61ef2a0081be5545416cfd5",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 23,
+      "file": "boundaries-t23.pt",
+      "sha256": "31523f5ad7241a05b5dcc0b5e7d5150515c4ebc80a1ed6542c04073d98f45eb7",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 24,
+      "file": "boundaries-t24.pt",
+      "sha256": "1f3b0c033aada5e4267b585e3cad834e1169dad9c926ded018bdcaee1b41f736",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 25,
+      "file": "boundaries-t25.pt",
+      "sha256": "6a2e742b2f4c6cf6d286ac6e934d148b17f4de0be1fd07cee375abf84240ceaf",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 26,
+      "file": "boundaries-t26.pt",
+      "sha256": "2e19bd6b8e9ff10c55e343db1d0c9dd567239a0266dcb423b41f691df7cc3c90",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 27,
+      "file": "boundaries-t27.pt",
+      "sha256": "a4ca862075b023bdeed89b0fb764a2910e300ee4bec2d5020fda6ef667255115",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 28,
+      "file": "boundaries-t28.pt",
+      "sha256": "20b0762916dbdb0f7913a1cfc680a61352494cb0976333903c85e2db300bc865",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 29,
+      "file": "boundaries-t29.pt",
+      "sha256": "6b6228327618cdee6d485e2fcb740c6942b520f19c0ef66880e1c9c301a662ec",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    }
+  ],
+  "indexes_and_masks_sha256": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890",
+  "original_full_266_row_projection_calls": 1080,
+  "all_actual_dispatch_flatten_pre_W_byte_exact": true,
+  "all_window_cut_unblocked_GEN_rows_vs_same_input_all_allowed_exact": true,
+  "all_masked_sites_same_union66": true,
+  "future200_and_UND_native_dispatch_returns_preserved": true,
+  "all30_actual_complete_model_kwargs_saved": true,
+  "processor_recompute_calls": 0,
+  "all_owned_hooks_removed": true,
+  "original_dispatch_symbol_restored": true,
+  "numerical_sham_is_native_noop": false,
+  "scope": "One preregistered four-way partition of early future-to-current cuts in a common masked arithmetic background, fixed A195 and two V realizations at X+12cm. Higher layer groups are same-site-count comparisons, not known irrelevant semantic controls; equal 135-site budgets do not imply equal output perturbation. The old eighteen-layer primary remains rejected. Actual q0 inputs, full outputs and current/action boundaries only. Hard masking also renormalizes remaining attention; content and allocation effects are not separated. No training, new physics, semantic unit or neural root-cause claim."
+}
