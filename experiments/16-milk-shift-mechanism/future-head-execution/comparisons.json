@@ -1,0 +1,1972 @@
+{
+  "state": "evaluated_after_all18_complete",
+  "cases": [
+    {
+      "case": "V195_A195_native",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "first_selection_window_start": 68,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.032356772200507755,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 0.9437515532128676
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 23.686113103877325,
+          "final_lift_cm": 14.972877467586187,
+          "max_xy_displacement_cm": 40.32817835442491
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_native",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.262294266716474,
+          "final_lift_cm": 11.91546138420636,
+          "max_xy_displacement_cm": 50.79002698249134
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_all_allowed",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.12032073481416522,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 1.0228064968004287
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 25.80025585841917,
+          "final_lift_cm": 16.58110785137904,
+          "max_xy_displacement_cm": 38.248351251225756
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_all_allowed",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.25583510280858,
+          "final_lift_cm": 12.351812174133928,
+          "max_xy_displacement_cm": 51.600366940613405
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_full_hardmask",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": true,
+      "first_selection_window_start": 61,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 57,
+          "contact_frames": 72,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.833057553905384,
+          "final_lift_cm": 6.7040560891561904,
+          "max_xy_displacement_cm": 50.53066258602972
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_full_hardmask",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.63457259406365,
+          "final_lift_cm": 13.175237291080274,
+          "max_xy_displacement_cm": 51.62203637709688
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_head_G4",
+      "arm": "head_G4",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.09338005493000068,
+          "final_lift_cm": 9.17460746263643e-08,
+          "max_xy_displacement_cm": 0.9645735653262716
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 25.16618383982988,
+          "final_lift_cm": 16.578389955657464,
+          "max_xy_displacement_cm": 38.869059053657104
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_head_G4",
+      "arm": "head_G4",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.6571216917121,
+          "final_lift_cm": 13.386782180783657,
+          "max_xy_displacement_cm": 51.74231227914671
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_head_G6",
+      "arm": "head_G6",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "first_selection_window_start": 69,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.05760066789847473,
+          "final_lift_cm": 9.174608295303699e-08,
+          "max_xy_displacement_cm": 0.9514801668555266
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 69,
+          "max_lift_cm": 23.54074024598383,
+          "final_lift_cm": 15.127978542011403,
+          "max_xy_displacement_cm": 38.99568011868937
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_head_G6",
+      "arm": "head_G6",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.27822772485565,
+          "final_lift_cm": 11.954794711231791,
+          "max_xy_displacement_cm": 50.82645721598592
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_leave_G4",
+      "arm": "leave_G4",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": false,
+      "first_selection_window_start": null,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.6074657697811501,
+          "final_lift_cm": -4.029484482123641,
+          "max_xy_displacement_cm": 9.02409127134271
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_leave_G4",
+      "arm": "leave_G4",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.64521903770033,
+          "final_lift_cm": 13.175402056060262,
+          "max_xy_displacement_cm": 51.667268833101296
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_leave_G6",
+      "arm": "leave_G6",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": true,
+      "first_selection_window_start": 60,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 57,
+          "contact_frames": 72,
+          "first_2cm_for_5frames": 60,
+          "max_lift_cm": 21.845512390537692,
+          "final_lift_cm": 6.624834830923063,
+          "max_xy_displacement_cm": 50.62393015368652
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_leave_G6",
+      "arm": "leave_G6",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.47857692292586,
+          "final_lift_cm": 11.535676617188424,
+          "max_xy_displacement_cm": 51.51078090716816
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_arithmetic_sham_G6",
+      "arm": "arithmetic_sham_G6",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.12032073481416522,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 1.0228064968004287
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 25.80025585841917,
+          "final_lift_cm": 16.58110785137904,
+          "max_xy_displacement_cm": 38.248351251225756
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_arithmetic_sham_G6",
+      "arm": "arithmetic_sham_G6",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.25583510280858,
+          "final_lift_cm": 12.351812174133928,
+          "max_xy_displacement_cm": 51.600366940613405
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_random_G6",
+      "arm": "random_G6",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "first_selection_window_start": 68,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.08312542934088701,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 0.9089349566735685
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 23.90636398826521,
+          "final_lift_cm": 14.927321240921303,
+          "max_xy_displacement_cm": 40.821631052414766
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_random_G6",
+      "arm": "random_G6",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.665096747679346,
+          "final_lift_cm": 13.354123179212909,
+          "max_xy_displacement_cm": 51.765113171041236
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    }
+  ],
+  "conditional_leave_G6_reports": [
+    {
+      "vision_noise_source_seed": 195,
+      "full_case": "V195_A195_full_hardmask",
+      "leave_G6_case": "V195_A195_leave_G6",
+      "native_already_only_milk": false,
+      "full_only_milk": true,
+      "leave_G6_only_milk": true,
+      "loss_of_full_only_milk": false,
+      "preregistered_V195_loss_of_rescue_secondary": true,
+      "V198_complete_report_not_primary": false,
+      "conditional_on_full_cut_numerical_background": true
+    },
+    {
+      "vision_noise_source_seed": 198,
+      "full_case": "V198_A195_full_hardmask",
+      "leave_G6_case": "V198_A195_leave_G6",
+      "native_already_only_milk": true,
+      "full_only_milk": true,
+      "leave_G6_only_milk": true,
+      "loss_of_full_only_milk": false,
+      "preregistered_V195_loss_of_rescue_secondary": false,
+      "V198_complete_report_not_primary": true,
+      "conditional_on_full_cut_numerical_background": true
+    }
+  ],
+  "all_secondary_and_random_cases_reported": true,
+  "random_G6_actual_BF16_strength_reports": [
+    {
+      "case": "V195_A195_random_G6",
+      "vision_noise_source_seed": 195,
+      "sites": 15,
+      "checks": [
+        {
+          "step": 0,
+          "layer_zero_based": 0,
+          "seed": 901000,
+          "target_Dk_FP32_l2": 4.095401287078857,
+          "random_delta_FP32_l2": 4.095399856567383,
+          "target_Dk_actual_BF16_l2": 4.095402325985545,
+          "random_actual_BF16_l2": 4.09553929602656,
+          "actual_BF16_norm_ratio": 1.0000334448315726,
+          "actual_BF16_relative_norm_error": 3.344483157263767e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25580,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.0076368300636460214
+        },
+        {
+          "step": 1,
+          "layer_zero_based": 0,
+          "seed": 901036,
+          "target_Dk_FP32_l2": 4.115284442901611,
+          "random_delta_FP32_l2": 4.115284442901611,
+          "target_Dk_actual_BF16_l2": 4.1152844216921585,
+          "random_actual_BF16_l2": 4.11527129228755,
+          "actual_BF16_norm_ratio": 0.9999968095997108,
+          "actual_BF16_relative_norm_error": 3.1904002891769423e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25585,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007590570268172755
+        },
+        {
+          "step": 2,
+          "layer_zero_based": 0,
+          "seed": 901072,
+          "target_Dk_FP32_l2": 4.125635147094727,
+          "random_delta_FP32_l2": 4.125635623931885,
+          "target_Dk_actual_BF16_l2": 4.125634696966659,
+          "random_actual_BF16_l2": 4.1255507201030746,
+          "actual_BF16_norm_ratio": 0.9999796451043893,
+          "actual_BF16_relative_norm_error": 2.035489561069692e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25581,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007700592998246675
+        },
+        {
+          "step": 3,
+          "layer_zero_based": 0,
+          "seed": 901108,
+          "target_Dk_FP32_l2": 4.133727073669434,
+          "random_delta_FP32_l2": 4.133727073669434,
+          "target_Dk_actual_BF16_l2": 4.133726465225201,
+          "random_actual_BF16_l2": 4.133782288264248,
+          "actual_BF16_norm_ratio": 1.0000135042895355,
+          "actual_BF16_relative_norm_error": 1.35042895355042e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25588,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007509942435293045
+        },
+        {
+          "step": 4,
+          "layer_zero_based": 0,
+          "seed": 901144,
+          "target_Dk_FP32_l2": 4.144734859466553,
+          "random_delta_FP32_l2": 4.144734859466553,
+          "target_Dk_actual_BF16_l2": 4.144735076072168,
+          "random_actual_BF16_l2": 4.144551659686753,
+          "actual_BF16_norm_ratio": 0.999955747138949,
+          "actual_BF16_relative_norm_error": 4.4252861051030656e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25587,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007657732817506912
+        },
+        {
+          "step": 5,
+          "layer_zero_based": 0,
+          "seed": 901180,
+          "target_Dk_FP32_l2": 4.15213680267334,
+          "random_delta_FP32_l2": 4.15213680267334,
+          "target_Dk_actual_BF16_l2": 4.152137588942157,
+          "random_actual_BF16_l2": 4.152066602349306,
+          "actual_BF16_norm_ratio": 0.9999829036029442,
+          "actual_BF16_relative_norm_error": 1.7096397055826884e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25583,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007804539916742361
+        },
+        {
+          "step": 6,
+          "layer_zero_based": 0,
+          "seed": 901216,
+          "target_Dk_FP32_l2": 4.153253555297852,
+          "random_delta_FP32_l2": 4.153253555297852,
+          "target_Dk_actual_BF16_l2": 4.153252968996183,
+          "random_actual_BF16_l2": 4.153271568852995,
+          "actual_BF16_norm_ratio": 1.0000044783828366,
+          "actual_BF16_relative_norm_error": 4.478382836570205e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25584,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007873621176093578
+        },
+        {
+          "step": 7,
+          "layer_zero_based": 0,
+          "seed": 901252,
+          "target_Dk_FP32_l2": 4.163489818572998,
+          "random_delta_FP32_l2": 4.163489818572998,
+          "target_Dk_actual_BF16_l2": 4.163490860125593,
+          "random_actual_BF16_l2": 4.16358963763958,
+          "actual_BF16_norm_ratio": 1.00002372468616,
+          "actual_BF16_relative_norm_error": 2.3724686160075947e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25581,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007907736419856533
+        },
+        {
+          "step": 8,
+          "layer_zero_based": 0,
+          "seed": 901288,
+          "target_Dk_FP32_l2": 4.170069694519043,
+          "random_delta_FP32_l2": 4.170069217681885,
+          "target_Dk_actual_BF16_l2": 4.170068301363215,
+          "random_actual_BF16_l2": 4.17006476362393,
+          "actual_BF16_norm_ratio": 0.9999991516351703,
+          "actual_BF16_relative_norm_error": 8.483648297197277e-07,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25586,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008011658215805528
+        },
+        {
+          "step": 9,
+          "layer_zero_based": 0,
+          "seed": 901324,
+          "target_Dk_FP32_l2": 4.178685188293457,
+          "random_delta_FP32_l2": 4.178684711456299,
+          "target_Dk_actual_BF16_l2": 4.17868579751683,
+          "random_actual_BF16_l2": 4.178779139059335,
+          "actual_BF16_norm_ratio": 1.0000223375355382,
+          "actual_BF16_relative_norm_error": 2.2337535538152764e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25586,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008096476418522174
+        },
+        {
+          "step": 10,
+          "layer_zero_based": 0,
+          "seed": 901360,
+          "target_Dk_FP32_l2": 4.186366081237793,
+          "random_delta_FP32_l2": 4.186365604400635,
+          "target_Dk_actual_BF16_l2": 4.186367162870316,
+          "random_actual_BF16_l2": 4.186383932544596,
+          "actual_BF16_norm_ratio": 1.000004005782013,
+          "actual_BF16_relative_norm_error": 4.0057820129835164e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25589,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.00818426943851444
+        },
+        {
+          "step": 11,
+          "layer_zero_based": 0,
+          "seed": 901396,
+          "target_Dk_FP32_l2": 4.197278022766113,
+          "random_delta_FP32_l2": 4.1972784996032715,
+          "target_Dk_actual_BF16_l2": 4.19727867900778,
+          "random_actual_BF16_l2": 4.197366063883077,
+          "actual_BF16_norm_ratio": 1.000020819412286,
+          "actual_BF16_relative_norm_error": 2.081941228593287e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25569,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008358458105682285
+        },
+        {
+          "step": 12,
+          "layer_zero_based": 0,
+          "seed": 901432,
+          "target_Dk_FP32_l2": 4.2068586349487305,
+          "random_delta_FP32_l2": 4.206857681274414,
+          "target_Dk_actual_BF16_l2": 4.206859951568501,
+          "random_actual_BF16_l2": 4.206795531007467,
+          "actual_BF16_norm_ratio": 0.9999846867825942,
+          "actual_BF16_relative_norm_error": 1.5313217405776847e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25583,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008205221119080307
+        },
+        {
+          "step": 13,
+          "layer_zero_based": 0,
+          "seed": 901468,
+          "target_Dk_FP32_l2": 4.217618942260742,
+          "random_delta_FP32_l2": 4.217620372772217,
+          "target_Dk_actual_BF16_l2": 4.217620250052318,
+          "random_actual_BF16_l2": 4.21764554506517,
+          "actual_BF16_norm_ratio": 1.0000059974609739,
+          "actual_BF16_relative_norm_error": 5.997460973850011e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25587,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008507698815311743
+        },
+        {
+          "step": 14,
+          "layer_zero_based": 0,
+          "seed": 901504,
+          "target_Dk_FP32_l2": 4.2296366691589355,
+          "random_delta_FP32_l2": 4.229636192321777,
+          "target_Dk_actual_BF16_l2": 4.22963739151992,
+          "random_actual_BF16_l2": 4.229661867572429,
+          "actual_BF16_norm_ratio": 1.0000057867968914,
+          "actual_BF16_relative_norm_error": 5.786796891449342e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25576,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008364637665549977
+        }
+      ],
+      "relative_norm_tolerance": 0.1,
+      "actual_BF16_equal_strength_all_sites_within_tolerance": true,
+      "tolerance_is_interpretation_only": true,
+      "failure_does_not_recalibrate_or_select_cases": true
+    },
+    {
+      "case": "V198_A195_random_G6",
+      "vision_noise_source_seed": 198,
+      "sites": 15,
+      "checks": [
+        {
+          "step": 0,
+          "layer_zero_based": 0,
+          "seed": 901000,
+          "target_Dk_FP32_l2": 3.9341487884521484,
+          "random_delta_FP32_l2": 3.934147834777832,
+          "target_Dk_actual_BF16_l2": 3.93414911587915,
+          "random_actual_BF16_l2": 3.934151523426392,
+          "actual_BF16_norm_ratio": 1.0000006119613596,
+          "actual_BF16_relative_norm_error": 6.119613595867435e-07,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25579,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007365593950306926
+        },
+        {
+          "step": 1,
+          "layer_zero_based": 0,
+          "seed": 901036,
+          "target_Dk_FP32_l2": 3.956907033920288,
+          "random_delta_FP32_l2": 3.95690655708313,
+          "target_Dk_actual_BF16_l2": 3.956907549159903,
+          "random_actual_BF16_l2": 3.9569262112106123,
+          "actual_BF16_norm_ratio": 1.0000047163221473,
+          "actual_BF16_relative_norm_error": 4.716322147269025e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25584,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007276717242799871
+        },
+        {
+          "step": 2,
+          "layer_zero_based": 0,
+          "seed": 901072,
+          "target_Dk_FP32_l2": 3.9704208374023438,
+          "random_delta_FP32_l2": 3.9704208374023438,
+          "target_Dk_actual_BF16_l2": 3.970421039037852,
+          "random_actual_BF16_l2": 3.970530645534619,
+          "actual_BF16_norm_ratio": 1.0000276057616282,
+          "actual_BF16_relative_norm_error": 2.760576162819106e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25582,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007302484719410578
+        },
+        {
+          "step": 3,
+          "layer_zero_based": 0,
+          "seed": 901108,
+          "target_Dk_FP32_l2": 3.9827587604522705,
+          "random_delta_FP32_l2": 3.9827587604522705,
+          "target_Dk_actual_BF16_l2": 3.982758457370265,
+          "random_actual_BF16_l2": 3.982701057008473,
+          "actual_BF16_norm_ratio": 0.9999855877873574,
+          "actual_BF16_relative_norm_error": 1.4412212642644917e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25586,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007295568683092845
+        },
+        {
+          "step": 4,
+          "layer_zero_based": 0,
+          "seed": 901144,
+          "target_Dk_FP32_l2": 3.999589681625366,
+          "random_delta_FP32_l2": 3.999588966369629,
+          "target_Dk_actual_BF16_l2": 3.999590076076731,
+          "random_actual_BF16_l2": 3.999520326100909,
+          "actual_BF16_norm_ratio": 0.9999825607188498,
+          "actual_BF16_relative_norm_error": 1.7439281150166686e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25587,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007450448524627748
+        },
+        {
+          "step": 5,
+          "layer_zero_based": 0,
+          "seed": 901180,
+          "target_Dk_FP32_l2": 4.01391077041626,
+          "random_delta_FP32_l2": 4.013910293579102,
+          "target_Dk_actual_BF16_l2": 4.0139121867668415,
+          "random_actual_BF16_l2": 4.01394992903989,
+          "actual_BF16_norm_ratio": 1.0000094028646598,
+          "actual_BF16_relative_norm_error": 9.402864659779908e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25584,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.00750283152252638
+        },
+        {
+          "step": 6,
+          "layer_zero_based": 0,
+          "seed": 901216,
+          "target_Dk_FP32_l2": 4.02656364440918,
+          "random_delta_FP32_l2": 4.02656364440918,
+          "target_Dk_actual_BF16_l2": 4.026563057859619,
+          "random_actual_BF16_l2": 4.026471088222177,
+          "actual_BF16_norm_ratio": 0.9999771592705441,
+          "actual_BF16_relative_norm_error": 2.2840729455908537e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25586,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.0075725120369846115
+        },
+        {
+          "step": 7,
+          "layer_zero_based": 0,
+          "seed": 901252,
+          "target_Dk_FP32_l2": 4.04306697845459,
+          "random_delta_FP32_l2": 4.043065547943115,
+          "target_Dk_actual_BF16_l2": 4.043066336091713,
+          "random_actual_BF16_l2": 4.043082447844367,
+          "actual_BF16_norm_ratio": 1.0000039850329712,
+          "actual_BF16_relative_norm_error": 3.985032971165481e-06,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25580,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007657326704707713
+        },
+        {
+          "step": 8,
+          "layer_zero_based": 0,
+          "seed": 901288,
+          "target_Dk_FP32_l2": 4.0583720207214355,
+          "random_delta_FP32_l2": 4.058371067047119,
+          "target_Dk_actual_BF16_l2": 4.058371856702259,
+          "random_actual_BF16_l2": 4.058302069384681,
+          "actual_BF16_norm_ratio": 0.999982804109618,
+          "actual_BF16_relative_norm_error": 1.7195890381960233e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25587,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007747714902456379
+        },
+        {
+          "step": 9,
+          "layer_zero_based": 0,
+          "seed": 901324,
+          "target_Dk_FP32_l2": 4.075809478759766,
+          "random_delta_FP32_l2": 4.075809955596924,
+          "target_Dk_actual_BF16_l2": 4.075810677384263,
+          "random_actual_BF16_l2": 4.07576247592077,
+          "actual_BF16_norm_ratio": 0.9999881737727022,
+          "actual_BF16_relative_norm_error": 1.1826227297784264e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25586,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.007857091450062166
+        },
+        {
+          "step": 10,
+          "layer_zero_based": 0,
+          "seed": 901360,
+          "target_Dk_FP32_l2": 4.088979244232178,
+          "random_delta_FP32_l2": 4.088978290557861,
+          "target_Dk_actual_BF16_l2": 4.0889792905841915,
+          "random_actual_BF16_l2": 4.088924216479392,
+          "actual_BF16_norm_ratio": 0.9999865310873728,
+          "actual_BF16_relative_norm_error": 1.3468912627212504e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25590,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.00798566428793085
+        },
+        {
+          "step": 11,
+          "layer_zero_based": 0,
+          "seed": 901396,
+          "target_Dk_FP32_l2": 4.1085124015808105,
+          "random_delta_FP32_l2": 4.108510971069336,
+          "target_Dk_actual_BF16_l2": 4.108512881863197,
+          "random_actual_BF16_l2": 4.108671198599021,
+          "actual_BF16_norm_ratio": 1.0000385338297277,
+          "actual_BF16_relative_norm_error": 3.853382972773822e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25572,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008062562908039889
+        },
+        {
+          "step": 12,
+          "layer_zero_based": 0,
+          "seed": 901432,
+          "target_Dk_FP32_l2": 4.123077869415283,
+          "random_delta_FP32_l2": 4.123076438903809,
+          "target_Dk_actual_BF16_l2": 4.123079411418968,
+          "random_actual_BF16_l2": 4.122981465671396,
+          "actual_BF16_norm_ratio": 0.9999762445158585,
+          "actual_BF16_relative_norm_error": 2.3755484141463334e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25584,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.0080255008708013
+        },
+        {
+          "step": 13,
+          "layer_zero_based": 0,
+          "seed": 901468,
+          "target_Dk_FP32_l2": 4.139909267425537,
+          "random_delta_FP32_l2": 4.139909744262695,
+          "target_Dk_actual_BF16_l2": 4.139910573053526,
+          "random_actual_BF16_l2": 4.13991128809853,
+          "actual_BF16_norm_ratio": 1.0000001727199153,
+          "actual_BF16_relative_norm_error": 1.7271991525902308e-07,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25587,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008185628660292094
+        },
+        {
+          "step": 14,
+          "layer_zero_based": 0,
+          "seed": 901504,
+          "target_Dk_FP32_l2": 4.158309459686279,
+          "random_delta_FP32_l2": 4.158310413360596,
+          "target_Dk_actual_BF16_l2": 4.158311859546873,
+          "random_actual_BF16_l2": 4.158141563994128,
+          "actual_BF16_norm_ratio": 0.9999590469501816,
+          "actual_BF16_relative_norm_error": 4.095304981843739e-05,
+          "relative_norm_tolerance": 0.1,
+          "actual_BF16_equal_strength_within_tolerance": true,
+          "actual_BF16_changed_values": 25580,
+          "zero_delta_original_bytes_retained": true,
+          "zero_target": false,
+          "finite": true,
+          "independent_CPU_generator": true,
+          "no_post_BF16_rescaling": true,
+          "BF16_quantization_error_l2": 0.008353105507306767
+        }
+      ],
+      "relative_norm_tolerance": 0.1,
+      "actual_BF16_equal_strength_all_sites_within_tolerance": true,
+      "tolerance_is_interpretation_only": true,
+      "failure_does_not_recalibrate_or_select_cases": true
+    }
+  ],
+  "random_actual_strength_gate_passed": true,
+  "no_q0_or_physics_ranking_or_selection": true,
+  "primary_prediction_sha256": "f0bdc645879b3fea1850482ce61d7dc454f2c0fb2a5b12d821833967ed8cd8f4",
+  "scope": "All eighteen fixed X12 trajectories using saved q0 followed by native actual feedback. Only both head_G6 strict only-milk cases test the primary; G4/leave/random results cannot replace it. G6 is layer0 query heads24..27 at steps0..14, not four heads throughout the network. Full and leave cuts span layers0..8; leave retains only the specified layer0 group. Sufficiency and leave-group effects are conditional on this numerical background and scene. A matching random effect does not support group-specific causation; a failed random strength gate prevents that interpretation. No single-head,identity,functional brain region, cross-position repair,training,additive causal percentage or universal necessity claim."
+}

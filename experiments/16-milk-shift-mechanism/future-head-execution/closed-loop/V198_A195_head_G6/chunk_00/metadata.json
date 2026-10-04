@@ -1,0 +1,140 @@
+{
+  "task": "milk",
+  "task_index": 7,
+  "prompt": "pick up the milk and place it in the basket",
+  "seed": 195,
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "domain_name": "libero",
+  "domain_id": 5,
+  "raw_action_dim": 10,
+  "chunk_size": 16,
+  "num_inference_steps": 30,
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-head-execution/closed-loop/V198_A195_head_G6/input_00.png",
+  "input_png_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "und_len": 121,
+  "timesteps": [
+    999,
+    965,
+    932,
+    899,
+    865,
+    832,
+    799,
+    765,
+    732,
+    699,
+    666,
+    632,
+    599,
+    566,
+    532,
+    499,
+    466,
+    432,
+    399,
+    366,
+    333,
+    299,
+    266,
+    233,
+    199,
+    166,
+    133,
+    99,
+    66,
+    33
+  ],
+  "model_calls": 30,
+  "prepare_calls": 1,
+  "pure_noise_shapes": [
+    [
+      1,
+      48,
+      5,
+      10,
+      20
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "elapsed_s": 7.587479792000522,
+  "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+  "case": "V198_A195_head_G6",
+  "arm": "head_G6",
+  "query": 0,
+  "shift_cm": 12,
+  "vision_noise_source_seed": 198,
+  "action_noise_source_seed": 195,
+  "runtime_rng_seed": 195,
+  "window_zero_based_inclusive": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      0
+    ]
+  },
+  "common_union66_all_allowed_background": true,
+  "producer_script_sha256": "b261366b969a8f33980cbf4d450c381a18a64fa4b16be2e1dd95d6c7220ae898",
+  "inherited_value_source_sha256": "0610b1d0320512ff4f5ce4163b52337ccb3ddf3ed1eb8d6c13f51b614097b911",
+  "control_reference_case": null,
+  "entire_accepted_control_record_exact": false,
+  "captured_sites": 135,
+  "site_capture_manifest_sha256": "06a6226119c91f7723f653d42112b09a0a4d4ceac0da246447c1a5f775586806",
+  "selected_query_heads": [
+    24,
+    25,
+    26,
+    27
+  ],
+  "primary_prediction_case": true,
+  "physical_prediction_evaluated": false,
+  "scope": "X12 fixed image/instruction, V195/V198 with A195, q0 only. G6 names only layer0 query heads24..27, four parameter head positions repeated over15 solver steps, 60 head-sites; G4 similarly means layer0 heads16..19. The complete270-site pre-intervention geometry narrowed the earlier numbered group candidates to L0 before new behavioral outcomes. Shared head numbers in other layers do not imply shared function. All135 sites are captured and all18 cases frozen without posthoc candidate replacement. Actual pre-W32x128 head axes are patched, never residual4096 slices. Same actual Q/K is within one call only; later trajectories can diverge. Head replacement jointly changes future content and allocation. Random_G6 is a sitewise Frobenius-matched Gaussian direction before BF16 rounding; actual BF16 strength is reported and may differ. Conditional necessity applies only to the union66/full-nine-layer-cut background; leave_G6 V195 is the rescue-loss prediction, V198 is descriptive. No cross-position transfer, common head semantic function, identity/familiar-action decoder or neural root-cause claim.",
+  "trial": "V198_A195_head_G6",
+  "saved_q0_prediction": true,
+  "current_execution_model_calls": 0,
+  "source_record_model_calls": 30,
+  "saved_q0_attention_arm": "head_G6",
+  "saved_q0_window": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      0
+    ]
+  },
+  "q0_vision_noise_source_seed": 198,
+  "q0_action_noise_source_seed": 195,
+  "q0_runtime_rng_seed": 195,
+  "later_noise_base": 195,
+  "actual_query_seeds": [
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202
+  ],
+  "seed_rule": "Cached q0 has separate V/A sources and invocation195; q1..7=195+query.",
+  "whole_prior_control": false,
+  "whole_prior_reference_case": null,
+  "component_intervention_in_this_execution": false,
+  "attention_mask_intervention_in_this_execution": false,
+  "head_intervention_in_this_execution": false,
+  "initial_noise_replacement_in_this_execution": false,
+  "paired_noise_checked_exact": false,
+  "saved_q0_source_states_sha256": "440463cb6a56195c7f43d40f29b9dfd03cbb19f1dc1b1405649669ecd05a81ba",
+  "saved_q0_site_captures_source_folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-head-groups/V198_A195_head_G6",
+  "saved_q0_site_capture_manifest_sha256": "06a6226119c91f7723f653d42112b09a0a4d4ceac0da246447c1a5f775586806",
+  "site_capture_arrays_copied_to_execution": false
+}

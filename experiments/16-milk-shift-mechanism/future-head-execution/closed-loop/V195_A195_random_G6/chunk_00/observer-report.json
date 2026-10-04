@@ -1,0 +1,820 @@
+{
+  "state": "complete",
+  "case_arm": "random_G6",
+  "selected_window": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      0
+    ]
+  },
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "block_before": 1080,
+    "block_after": 1080,
+    "pre_W": 1080,
+    "native_UND_dispatch": 1080,
+    "native_GEN_dispatch": 1080,
+    "all_allowed_dispatch": 1080,
+    "cut_dispatch": 15,
+    "substituted_sites": 1080,
+    "clone_sham_dispatch": 0,
+    "value_zero_dispatch": 0
+  },
+  "boundary_files": [
+    {
+      "step": 0,
+      "file": "boundaries-t00.pt",
+      "sha256": "6a7769ae0e360e4b4af136fe2515d697c38fcb81310fef4daca8a48d54716518",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 1,
+      "file": "boundaries-t01.pt",
+      "sha256": "1d849e99db4b8425a955d1e5f2c2f1e623235e6a015008e3730bb3605bd6d44f",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 2,
+      "file": "boundaries-t02.pt",
+      "sha256": "81e23a8f45647f49e821acdd601fa003f4d72bfaf4eced8fd2dd07adfc53dd16",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 3,
+      "file": "boundaries-t03.pt",
+      "sha256": "f99b51509ab3190ea44cfbf369617bd7eef3385c93b9462ab0d10f67e3011ee8",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 4,
+      "file": "boundaries-t04.pt",
+      "sha256": "639b749a07f471b687d8afc3278f6403be5adce45622684c1593089f7070d398",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 5,
+      "file": "boundaries-t05.pt",
+      "sha256": "203665530447c15fb3d292ac244d5d8a52a446c8721968dc931d18b2b5d713d5",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 6,
+      "file": "boundaries-t06.pt",
+      "sha256": "072ff30687d18a76a757590f8c0232cabf0564e74360044882ba452a0daf1bdc",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 7,
+      "file": "boundaries-t07.pt",
+      "sha256": "379efe0d0e5ccaf66414aecc307125d5951ef1777020afc33949eab27c574716",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 8,
+      "file": "boundaries-t08.pt",
+      "sha256": "a551e25904bb35f7f427e75f8e1d1c52ab7200ccd4823e01e33333614b985ca3",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 9,
+      "file": "boundaries-t09.pt",
+      "sha256": "26cdec0fdff15a6b1290a8d3f8d7f32598dc02e9448a6a38bde6d70692761148",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 10,
+      "file": "boundaries-t10.pt",
+      "sha256": "338f659d673f9a6678436fb799e313a6927628e9aa0f8bf72d1455c55a350474",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 11,
+      "file": "boundaries-t11.pt",
+      "sha256": "47294988ff35a412d9c1d90ecb1b83e12397f937dabf6e56fd3e9136a9af9b27",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 12,
+      "file": "boundaries-t12.pt",
+      "sha256": "9b9b92d7f036d615621dee541674998f85baa3883e9ef9c50240e2bca5f70872",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 13,
+      "file": "boundaries-t13.pt",
+      "sha256": "0a601d830896a20878f3fbf3e153345078fb7aa7897c77563cb6cd0ee3d14ef9",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 14,
+      "file": "boundaries-t14.pt",
+      "sha256": "55a0f8dba372c31173020e2d86be3984d5991757a8a9c08c1952ca6565d39955",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 15,
+      "file": "boundaries-t15.pt",
+      "sha256": "686562a428bc1bb647ddf9e89fdf81b2734cbb1bfe88659034dce0bae0c970fa",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 16,
+      "file": "boundaries-t16.pt",
+      "sha256": "cc9b128ab1f9a2cfe653483960770afbc51649bce6fbcba90516dc96507c6d67",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 17,
+      "file": "boundaries-t17.pt",
+      "sha256": "e2773c2beb70194946397875b1d18682fd38b047c7a86cdf056ad2dfea6bc9ed",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 18,
+      "file": "boundaries-t18.pt",
+      "sha256": "3ed37d5c808e945315bbc5c31514e888dcb1d5733640142aa585080ef11118f9",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 19,
+      "file": "boundaries-t19.pt",
+      "sha256": "5e94302321cf3a886d4f4f3cd78a255b13ed2cb413bb61ddfac777433cf68691",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 20,
+      "file": "boundaries-t20.pt",
+      "sha256": "55667c7cc6247195406c72d65511e0c136bf0ff7ca94e835b7bc9e31a47a7c86",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 21,
+      "file": "boundaries-t21.pt",
+      "sha256": "77a5092895d38f952d6f8f151edc374911a1bf47fe870076c78efdb678a71889",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 22,
+      "file": "boundaries-t22.pt",
+      "sha256": "4608158db983af5e1ffda7bae2957380556877f7aa087778bbbc1d4bdca2295d",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 23,
+      "file": "boundaries-t23.pt",
+      "sha256": "da1b34be198060aee2d6824de6107cb92733b01e06a7ecc3f7fe43ca99bd0664",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 24,
+      "file": "boundaries-t24.pt",
+      "sha256": "51426d64a929107532a93383cd54d8042a62b0be03f7bdb6d192c562320054b2",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 25,
+      "file": "boundaries-t25.pt",
+      "sha256": "a20c6027135de8e2ebea5aa08c8d037aeca51cdb324938e2d60d30fad22e2b1b",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 26,
+      "file": "boundaries-t26.pt",
+      "sha256": "c55b5596c7ca78c7d9e3f14c2e1aba3763dcf5cbca61e13731292705230b40a0",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 27,
+      "file": "boundaries-t27.pt",
+      "sha256": "857e731410e426f94a3583f3f1c2ff3e7adafe7f47149770d73c3f5cc1e51314",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 28,
+      "file": "boundaries-t28.pt",
+      "sha256": "2bf3d456a49f8513f610c1aaffa7abc265f3277f6cdff58fb105e33fddd1de79",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 29,
+      "file": "boundaries-t29.pt",
+      "sha256": "651f339a05f48e5f013c66ddf0a954fb96e529dfae63f0d20702df59cf24b009",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    }
+  ],
+  "indexes_and_masks_sha256": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890",
+  "site_capture_manifest_sha256": "ca178c16268e164d842a93a6d1b2df21416507932c0d90134814c3c14f90d307",
+  "captured_sites": 135,
+  "selected_query_heads": [
+    24,
+    25,
+    26,
+    27
+  ],
+  "original_full_266_row_projection_calls": 1080,
+  "all_actual_dispatch_flatten_pre_W_byte_exact": true,
+  "all_masked_sites_same_union66": true,
+  "future200_and_UND_native_dispatch_returns_preserved": true,
+  "action16_same_input_Z0_at_all_masked_sites": true,
+  "all30_actual_complete_model_kwargs_saved": true,
+  "all30_actual37_current_action_boundaries_finite": true,
+  "arithmetic_sham_all_selected_sites_byte_exact_Z0": null,
+  "hardmask_unblocked_queries_byte_exact_Z0": true,
+  "all135_actual_BF16_projection_MLP_residual_chains_byte_exact": true,
+  "propagation_counts": {
+    "projection": 135,
+    "residual": 135,
+    "MLP": 135,
+    "completed": 135
+  },
+  "random_control": {
+    "sites": 15,
+    "checks": [
+      {
+        "step": 0,
+        "layer_zero_based": 0,
+        "seed": 901000,
+        "target_Dk_FP32_l2": 4.095401287078857,
+        "random_delta_FP32_l2": 4.095399856567383,
+        "target_Dk_actual_BF16_l2": 4.095402325985545,
+        "random_actual_BF16_l2": 4.09553929602656,
+        "actual_BF16_norm_ratio": 1.0000334448315726,
+        "actual_BF16_relative_norm_error": 3.344483157263767e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25580,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.0076368300636460214
+      },
+      {
+        "step": 1,
+        "layer_zero_based": 0,
+        "seed": 901036,
+        "target_Dk_FP32_l2": 4.115284442901611,
+        "random_delta_FP32_l2": 4.115284442901611,
+        "target_Dk_actual_BF16_l2": 4.1152844216921585,
+        "random_actual_BF16_l2": 4.11527129228755,
+        "actual_BF16_norm_ratio": 0.9999968095997108,
+        "actual_BF16_relative_norm_error": 3.1904002891769423e-06,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25585,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007590570268172755
+      },
+      {
+        "step": 2,
+        "layer_zero_based": 0,
+        "seed": 901072,
+        "target_Dk_FP32_l2": 4.125635147094727,
+        "random_delta_FP32_l2": 4.125635623931885,
+        "target_Dk_actual_BF16_l2": 4.125634696966659,
+        "random_actual_BF16_l2": 4.1255507201030746,
+        "actual_BF16_norm_ratio": 0.9999796451043893,
+        "actual_BF16_relative_norm_error": 2.035489561069692e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25581,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007700592998246675
+      },
+      {
+        "step": 3,
+        "layer_zero_based": 0,
+        "seed": 901108,
+        "target_Dk_FP32_l2": 4.133727073669434,
+        "random_delta_FP32_l2": 4.133727073669434,
+        "target_Dk_actual_BF16_l2": 4.133726465225201,
+        "random_actual_BF16_l2": 4.133782288264248,
+        "actual_BF16_norm_ratio": 1.0000135042895355,
+        "actual_BF16_relative_norm_error": 1.35042895355042e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25588,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007509942435293045
+      },
+      {
+        "step": 4,
+        "layer_zero_based": 0,
+        "seed": 901144,
+        "target_Dk_FP32_l2": 4.144734859466553,
+        "random_delta_FP32_l2": 4.144734859466553,
+        "target_Dk_actual_BF16_l2": 4.144735076072168,
+        "random_actual_BF16_l2": 4.144551659686753,
+        "actual_BF16_norm_ratio": 0.999955747138949,
+        "actual_BF16_relative_norm_error": 4.4252861051030656e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25587,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007657732817506912
+      },
+      {
+        "step": 5,
+        "layer_zero_based": 0,
+        "seed": 901180,
+        "target_Dk_FP32_l2": 4.15213680267334,
+        "random_delta_FP32_l2": 4.15213680267334,
+        "target_Dk_actual_BF16_l2": 4.152137588942157,
+        "random_actual_BF16_l2": 4.152066602349306,
+        "actual_BF16_norm_ratio": 0.9999829036029442,
+        "actual_BF16_relative_norm_error": 1.7096397055826884e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25583,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007804539916742361
+      },
+      {
+        "step": 6,
+        "layer_zero_based": 0,
+        "seed": 901216,
+        "target_Dk_FP32_l2": 4.153253555297852,
+        "random_delta_FP32_l2": 4.153253555297852,
+        "target_Dk_actual_BF16_l2": 4.153252968996183,
+        "random_actual_BF16_l2": 4.153271568852995,
+        "actual_BF16_norm_ratio": 1.0000044783828366,
+        "actual_BF16_relative_norm_error": 4.478382836570205e-06,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25584,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007873621176093578
+      },
+      {
+        "step": 7,
+        "layer_zero_based": 0,
+        "seed": 901252,
+        "target_Dk_FP32_l2": 4.163489818572998,
+        "random_delta_FP32_l2": 4.163489818572998,
+        "target_Dk_actual_BF16_l2": 4.163490860125593,
+        "random_actual_BF16_l2": 4.16358963763958,
+        "actual_BF16_norm_ratio": 1.00002372468616,
+        "actual_BF16_relative_norm_error": 2.3724686160075947e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25581,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.007907736419856533
+      },
+      {
+        "step": 8,
+        "layer_zero_based": 0,
+        "seed": 901288,
+        "target_Dk_FP32_l2": 4.170069694519043,
+        "random_delta_FP32_l2": 4.170069217681885,
+        "target_Dk_actual_BF16_l2": 4.170068301363215,
+        "random_actual_BF16_l2": 4.17006476362393,
+        "actual_BF16_norm_ratio": 0.9999991516351703,
+        "actual_BF16_relative_norm_error": 8.483648297197277e-07,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25586,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.008011658215805528
+      },
+      {
+        "step": 9,
+        "layer_zero_based": 0,
+        "seed": 901324,
+        "target_Dk_FP32_l2": 4.178685188293457,
+        "random_delta_FP32_l2": 4.178684711456299,
+        "target_Dk_actual_BF16_l2": 4.17868579751683,
+        "random_actual_BF16_l2": 4.178779139059335,
+        "actual_BF16_norm_ratio": 1.0000223375355382,
+        "actual_BF16_relative_norm_error": 2.2337535538152764e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25586,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.008096476418522174
+      },
+      {
+        "step": 10,
+        "layer_zero_based": 0,
+        "seed": 901360,
+        "target_Dk_FP32_l2": 4.186366081237793,
+        "random_delta_FP32_l2": 4.186365604400635,
+        "target_Dk_actual_BF16_l2": 4.186367162870316,
+        "random_actual_BF16_l2": 4.186383932544596,
+        "actual_BF16_norm_ratio": 1.000004005782013,
+        "actual_BF16_relative_norm_error": 4.0057820129835164e-06,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25589,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.00818426943851444
+      },
+      {
+        "step": 11,
+        "layer_zero_based": 0,
+        "seed": 901396,
+        "target_Dk_FP32_l2": 4.197278022766113,
+        "random_delta_FP32_l2": 4.1972784996032715,
+        "target_Dk_actual_BF16_l2": 4.19727867900778,
+        "random_actual_BF16_l2": 4.197366063883077,
+        "actual_BF16_norm_ratio": 1.000020819412286,
+        "actual_BF16_relative_norm_error": 2.081941228593287e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25569,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.008358458105682285
+      },
+      {
+        "step": 12,
+        "layer_zero_based": 0,
+        "seed": 901432,
+        "target_Dk_FP32_l2": 4.2068586349487305,
+        "random_delta_FP32_l2": 4.206857681274414,
+        "target_Dk_actual_BF16_l2": 4.206859951568501,
+        "random_actual_BF16_l2": 4.206795531007467,
+        "actual_BF16_norm_ratio": 0.9999846867825942,
+        "actual_BF16_relative_norm_error": 1.5313217405776847e-05,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25583,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.008205221119080307
+      },
+      {
+        "step": 13,
+        "layer_zero_based": 0,
+        "seed": 901468,
+        "target_Dk_FP32_l2": 4.217618942260742,
+        "random_delta_FP32_l2": 4.217620372772217,
+        "target_Dk_actual_BF16_l2": 4.217620250052318,
+        "random_actual_BF16_l2": 4.21764554506517,
+        "actual_BF16_norm_ratio": 1.0000059974609739,
+        "actual_BF16_relative_norm_error": 5.997460973850011e-06,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25587,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.008507698815311743
+      },
+      {
+        "step": 14,
+        "layer_zero_based": 0,
+        "seed": 901504,
+        "target_Dk_FP32_l2": 4.2296366691589355,
+        "random_delta_FP32_l2": 4.229636192321777,
+        "target_Dk_actual_BF16_l2": 4.22963739151992,
+        "random_actual_BF16_l2": 4.229661867572429,
+        "actual_BF16_norm_ratio": 1.0000057867968914,
+        "actual_BF16_relative_norm_error": 5.786796891449342e-06,
+        "relative_norm_tolerance": 0.1,
+        "actual_BF16_equal_strength_within_tolerance": true,
+        "actual_BF16_changed_values": 25576,
+        "zero_delta_original_bytes_retained": true,
+        "zero_target": false,
+        "finite": true,
+        "independent_CPU_generator": true,
+        "no_post_BF16_rescaling": true,
+        "BF16_quantization_error_l2": 0.008364637665549977
+      }
+    ],
+    "relative_norm_tolerance": 0.1,
+    "actual_BF16_equal_strength_all_sites_within_tolerance": true,
+    "tolerance_is_interpretation_only": true,
+    "failure_does_not_recalibrate_or_select_cases": true
+  },
+  "processor_recompute_calls": 0,
+  "extra_projection_or_MLP_forward_calls": 0,
+  "all_owned_hooks_removed": true,
+  "original_dispatch_symbol_restored": true,
+  "numerical_sham_is_native_noop": false,
+  "scope": "X12 fixed image/instruction, V195/V198 with A195, q0 only. G6 names only layer0 query heads24..27, four parameter head positions repeated over15 solver steps, 60 head-sites; G4 similarly means layer0 heads16..19. The complete270-site pre-intervention geometry narrowed the earlier numbered group candidates to L0 before new behavioral outcomes. Shared head numbers in other layers do not imply shared function. All135 sites are captured and all18 cases frozen without posthoc candidate replacement. Actual pre-W32x128 head axes are patched, never residual4096 slices. Same actual Q/K is within one call only; later trajectories can diverge. Head replacement jointly changes future content and allocation. Random_G6 is a sitewise Frobenius-matched Gaussian direction before BF16 rounding; actual BF16 strength is reported and may differ. Conditional necessity applies only to the union66/full-nine-layer-cut background; leave_G6 V195 is the rescue-loss prediction, V198 is descriptive. No cross-position transfer, common head semantic function, identity/familiar-action decoder or neural root-cause claim."
+}

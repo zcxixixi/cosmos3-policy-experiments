@@ -1,0 +1,99 @@
+{
+  "task": "milk",
+  "task_index": 7,
+  "prompt": "pick up the milk and place it in the basket",
+  "seed": 195,
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "domain_name": "libero",
+  "domain_id": 5,
+  "raw_action_dim": 10,
+  "chunk_size": 16,
+  "num_inference_steps": 30,
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+  "input_png_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "und_len": 121,
+  "timesteps": [
+    999,
+    965,
+    932,
+    899,
+    865,
+    832,
+    799,
+    765,
+    732,
+    699,
+    666,
+    632,
+    599,
+    566,
+    532,
+    499,
+    466,
+    432,
+    399,
+    366,
+    333,
+    299,
+    266,
+    233,
+    199,
+    166,
+    133,
+    99,
+    66,
+    33
+  ],
+  "model_calls": 30,
+  "prepare_calls": 1,
+  "pure_noise_shapes": [
+    [
+      1,
+      48,
+      5,
+      10,
+      20
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "elapsed_s": 7.599342460001935,
+  "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+  "case": "V195_A195_head_G6",
+  "arm": "head_G6",
+  "query": 0,
+  "shift_cm": 12,
+  "vision_noise_source_seed": 195,
+  "action_noise_source_seed": 195,
+  "runtime_rng_seed": 195,
+  "window_zero_based_inclusive": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      0
+    ]
+  },
+  "common_union66_all_allowed_background": true,
+  "producer_script_sha256": "b261366b969a8f33980cbf4d450c381a18a64fa4b16be2e1dd95d6c7220ae898",
+  "inherited_value_source_sha256": "0610b1d0320512ff4f5ce4163b52337ccb3ddf3ed1eb8d6c13f51b614097b911",
+  "control_reference_case": null,
+  "entire_accepted_control_record_exact": false,
+  "captured_sites": 135,
+  "site_capture_manifest_sha256": "47111acac9627f772c41a518794283bf179cda7400e91ada3220d74d500313c8",
+  "selected_query_heads": [
+    24,
+    25,
+    26,
+    27
+  ],
+  "primary_prediction_case": true,
+  "physical_prediction_evaluated": false,
+  "scope": "X12 fixed image/instruction, V195/V198 with A195, q0 only. G6 names only layer0 query heads24..27, four parameter head positions repeated over15 solver steps, 60 head-sites; G4 similarly means layer0 heads16..19. The complete270-site pre-intervention geometry narrowed the earlier numbered group candidates to L0 before new behavioral outcomes. Shared head numbers in other layers do not imply shared function. All135 sites are captured and all18 cases frozen without posthoc candidate replacement. Actual pre-W32x128 head axes are patched, never residual4096 slices. Same actual Q/K is within one call only; later trajectories can diverge. Head replacement jointly changes future content and allocation. Random_G6 is a sitewise Frobenius-matched Gaussian direction before BF16 rounding; actual BF16 strength is reported and may differ. Conditional necessity applies only to the union66/full-nine-layer-cut background; leave_G6 V195 is the rescue-loss prediction, V198 is descriptive. No cross-position transfer, common head semantic function, identity/familiar-action decoder or neural root-cause claim."
+}

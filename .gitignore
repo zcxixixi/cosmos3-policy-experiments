@@ -103,3 +103,13 @@ checkpoints/
 
 # A6000-only absolute input link; restored arrays are already in position-threshold/inputs.
 experiments/16-milk-shift-mechanism/future-value-execution/inputs
+
+# Selected real head/propagation arrays and complete executed predictions; no weights.
+!experiments/16-milk-shift-mechanism/future-head-groups/*/states.pt
+!experiments/16-milk-shift-mechanism/future-head-groups/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-head-groups/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-head-groups/*/boundaries-t00.pt
+!experiments/16-milk-shift-mechanism/future-head-groups/*/sites/t00-L00.pt
+!experiments/16-milk-shift-mechanism/future-head-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/future-head-execution/closed-loop/*/chunk_00/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-head-execution/closed-loop/*/chunk_00/indexes-and-masks.pt
