@@ -1,0 +1,2497 @@
+{
+  "state": "complete",
+  "sources": [
+    {
+      "trial": "x00_seed195",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x00_seed195/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "ce7dcc1cd657f83828baff463b1c4d4595fbf4d2e73e3962899033f4d85d8400"
+    },
+    {
+      "trial": "x00_seed196",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x00_seed196/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "6717615267f77ced414189f66a5773802f136f836b800eada45ee8b0b3f71b9f"
+    },
+    {
+      "trial": "x00_seed198",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x00_seed198/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "8eed184093b2797636ce86a0bae8dba2ce668037406a0fc2e6ae4e308034d073"
+    },
+    {
+      "trial": "x06_seed195",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed195/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "f8b8f17b803863fa91543f14a9074def8b91fc9bf998de64649359fe584fd58a"
+    },
+    {
+      "trial": "x06_seed196",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed196/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "3300d460ba1bd7e80d45bd4f81d8efc2cbf1cede75c7336eb8a1ef39cd0d742d"
+    },
+    {
+      "trial": "x06_seed198",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "04e7838adb524127489e4e20cc6aa84490673103294f6d5e7a4a58a6414c2adf"
+    },
+    {
+      "trial": "x15_seed195",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed195/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "539e3346cbbaa0d59b5c737be30e767c4a704aca3b3c7dd78e8fa0b511228e89"
+    },
+    {
+      "trial": "x15_seed196",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed196/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "67df5ffcdff89a0c19b3ae4ac6b26266a7d7d5846520ab2b68560c7063d33722"
+    },
+    {
+      "trial": "x15_seed198",
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/components.pt",
+      "bytes": 284391533,
+      "sha256": "76ccbba38d997c71061b099a7610b1b350a9fb506dc1f2a08216e30bc78bde92"
+    }
+  ],
+  "entries": [
+    {
+      "key": "x00_seed195__step20__layer17__attention",
+      "trial": "x00_seed195",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "223bb37d0641ddad43b9b4a86afd4868b342d0762afbdefb97f5ae70caec41bd"
+    },
+    {
+      "key": "x00_seed195__step20__layer17__mlp",
+      "trial": "x00_seed195",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7783fa1bb673833013ed6f59b31edb3c8006750ac28ce141d1f148ff88a88416"
+    },
+    {
+      "key": "x00_seed195__step20__layer29__attention",
+      "trial": "x00_seed195",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "30c7b7da49e66a8bcacbea3670f726becbe18e2c11a626b6a5ca417b6d0aaf43"
+    },
+    {
+      "key": "x00_seed195__step20__layer29__mlp",
+      "trial": "x00_seed195",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "778b0a8d40d95d34235c26b89f72c7d8be8ca9f338b5d4ad30aee786ef74d458"
+    },
+    {
+      "key": "x00_seed195__step20__layer31__attention",
+      "trial": "x00_seed195",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "73c81b69f6cac66b8225580fe672d6652ac319bcd2c8efc838cd5ff2a875fb33"
+    },
+    {
+      "key": "x00_seed195__step20__layer31__mlp",
+      "trial": "x00_seed195",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "34ec27b27bc99b5ff19f644424a1cd6e57fdacf61e822530f7fe62fd282dc70b"
+    },
+    {
+      "key": "x00_seed195__step21__layer17__attention",
+      "trial": "x00_seed195",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "4bb0ce06a372c7947a54b8af5378dc8d635a3ef38c8abe92d94dfc7254636d25"
+    },
+    {
+      "key": "x00_seed195__step21__layer17__mlp",
+      "trial": "x00_seed195",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "40efe5b0e2b25c90259c65a7bbb37d3cbea7c8859a026bf701e3b6ba1bf363b1"
+    },
+    {
+      "key": "x00_seed195__step21__layer29__attention",
+      "trial": "x00_seed195",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "6a604786d5ad6c20b37a1a5cae9e2691f7018f2e3cfe217ea39d00ff75ad5d3b"
+    },
+    {
+      "key": "x00_seed195__step21__layer29__mlp",
+      "trial": "x00_seed195",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "5e82a79b07164c903d9290eea1efbf687113c2c1a9b7d907c69b9c61642fb750"
+    },
+    {
+      "key": "x00_seed195__step21__layer31__attention",
+      "trial": "x00_seed195",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "321d193b3d7e0a18745422761a991a72a7687d814611e644d6bd82d9d79743b6"
+    },
+    {
+      "key": "x00_seed195__step21__layer31__mlp",
+      "trial": "x00_seed195",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3442d6a420e081a9c82319afddbdfd41806797239f787c119a1e9003265b7489"
+    },
+    {
+      "key": "x00_seed195__step29__layer17__attention",
+      "trial": "x00_seed195",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "69e690a8825dc3ac157e20238762761d523402f73612f4496abe91c4e3d56f13"
+    },
+    {
+      "key": "x00_seed195__step29__layer17__mlp",
+      "trial": "x00_seed195",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "0d6641689aa281ec22f4dc9bff8f3c95f31d67c304ffdaa27bae47a602a2e2f2"
+    },
+    {
+      "key": "x00_seed195__step29__layer29__attention",
+      "trial": "x00_seed195",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "e633686d901699d374384283219c20ff89c92fee50830f9a07e471de5ad4f9dc"
+    },
+    {
+      "key": "x00_seed195__step29__layer29__mlp",
+      "trial": "x00_seed195",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "1af28503c8520fcdd95c3f3a10b346416e37e6ce9ba5a9e14aef738dc85c4bdd"
+    },
+    {
+      "key": "x00_seed195__step29__layer31__attention",
+      "trial": "x00_seed195",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7f69b502a9170baaff9131bee0901ca060fb755c2820cdc31ef07d22f4425993"
+    },
+    {
+      "key": "x00_seed195__step29__layer31__mlp",
+      "trial": "x00_seed195",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "cdf00e44f332268ec332779aace83acc841293c827573150fb0738e1356868a0"
+    },
+    {
+      "key": "x00_seed196__step20__layer17__attention",
+      "trial": "x00_seed196",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "fbffaa82c76a7e46b7eaf45b07794d18924d7bcdd9cb763b2487470c1600e2f3"
+    },
+    {
+      "key": "x00_seed196__step20__layer17__mlp",
+      "trial": "x00_seed196",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "5242ee1f5532d9660ab55eacc338b248adccca14e8f1e471a441bc107bc6a8d5"
+    },
+    {
+      "key": "x00_seed196__step20__layer29__attention",
+      "trial": "x00_seed196",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "2dbafb5997a025a1b83e5734f415f6f481116a4177e8439db7a039ef2482fa7c"
+    },
+    {
+      "key": "x00_seed196__step20__layer29__mlp",
+      "trial": "x00_seed196",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "772f2ded0271d49bc1ae08a608085bb3519f6293e9d8fa7df92cd0ec09f8dd5e"
+    },
+    {
+      "key": "x00_seed196__step20__layer31__attention",
+      "trial": "x00_seed196",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "daae0c1f1740654833328a5255f881d1f0ac1c216d7aca36143f98b58a1d51ba"
+    },
+    {
+      "key": "x00_seed196__step20__layer31__mlp",
+      "trial": "x00_seed196",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "e7dfde6a0323665b6eb39d8c7608ef985995fd1a4e9b217807d9681e8941efce"
+    },
+    {
+      "key": "x00_seed196__step21__layer17__attention",
+      "trial": "x00_seed196",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "53296d2a13679eebafb90ff2514e0d2d4994b01139cb2ef50a77aaae448073c6"
+    },
+    {
+      "key": "x00_seed196__step21__layer17__mlp",
+      "trial": "x00_seed196",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8c7bf55a1722eba6418d2e6a1464f0f3b9e0f61151b2e09714eaa5ccfcd0944c"
+    },
+    {
+      "key": "x00_seed196__step21__layer29__attention",
+      "trial": "x00_seed196",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "c9bce854ee749079bea906b5fe10c45285447504ef6cca76624c5855869eff3e"
+    },
+    {
+      "key": "x00_seed196__step21__layer29__mlp",
+      "trial": "x00_seed196",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b81a9bf02252980c4fb00458eb34dd1d1f8a460f64cbd75fb78b7548a9638384"
+    },
+    {
+      "key": "x00_seed196__step21__layer31__attention",
+      "trial": "x00_seed196",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "c62dc20c480b6e97e8db84e37419a4d2103198d81c102c86a1e83c5db7c2240f"
+    },
+    {
+      "key": "x00_seed196__step21__layer31__mlp",
+      "trial": "x00_seed196",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d8cae9ecf402a3d9c1d59f0b0c6400b3e5a846e5e3d777504d55c2a2c82aa6d6"
+    },
+    {
+      "key": "x00_seed196__step29__layer17__attention",
+      "trial": "x00_seed196",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7e32b85961b27898967f075647013737ab96498f89f9a08efffc7c26edff5b28"
+    },
+    {
+      "key": "x00_seed196__step29__layer17__mlp",
+      "trial": "x00_seed196",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "427ea7c91fe668d2b43f57f97e2e6e3b37344cf536f5adfbc830c1b1683a548c"
+    },
+    {
+      "key": "x00_seed196__step29__layer29__attention",
+      "trial": "x00_seed196",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "e68b35443f1dbac8d6f76591373fa277668b6a9fa598312e7dc43ebeaa6abcfe"
+    },
+    {
+      "key": "x00_seed196__step29__layer29__mlp",
+      "trial": "x00_seed196",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "cd7dfec96eaa0796542a1924d55b3f9a8f3141b41a85b7d5f413b8c3fa6574f1"
+    },
+    {
+      "key": "x00_seed196__step29__layer31__attention",
+      "trial": "x00_seed196",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "37307554ca02aed29e5c97bed9665d5f60324392d31c7c4625595b797fb30371"
+    },
+    {
+      "key": "x00_seed196__step29__layer31__mlp",
+      "trial": "x00_seed196",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "0ea2607588aefe7eb8dc779e4f4fa01ada0339d04790cddf56d9fcffce099176"
+    },
+    {
+      "key": "x00_seed198__step20__layer17__attention",
+      "trial": "x00_seed198",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "bf083dda5e279df3a5e7ace459d7e0aff3283538de20a924ddd7c2fa5f140065"
+    },
+    {
+      "key": "x00_seed198__step20__layer17__mlp",
+      "trial": "x00_seed198",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "4e5bc8dad9876a2574675343079358f1dee780aa4ec9ce44694a83be67d8848d"
+    },
+    {
+      "key": "x00_seed198__step20__layer29__attention",
+      "trial": "x00_seed198",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "aa29bdac336dccf6f514df87e4f056621aed665b75c11fa6d754f0a004081492"
+    },
+    {
+      "key": "x00_seed198__step20__layer29__mlp",
+      "trial": "x00_seed198",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "2a659156b363e3dd6f4aed7a5c2f8fd821427eee80efd86e749e1aa96e41113b"
+    },
+    {
+      "key": "x00_seed198__step20__layer31__attention",
+      "trial": "x00_seed198",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "559cfd672b872a2c6afb0f6a47a992f8c51e019ce1e3d884cbebad0df2dbee42"
+    },
+    {
+      "key": "x00_seed198__step20__layer31__mlp",
+      "trial": "x00_seed198",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "89dd7a9c123e1bfa0799d1c126966f6f3ac339ec4e278f5b3f98633b3ca57ea1"
+    },
+    {
+      "key": "x00_seed198__step21__layer17__attention",
+      "trial": "x00_seed198",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d5e97e7ca78fb4d882265a8f532649c20501830fe0129fc2042d810b7d8a0afb"
+    },
+    {
+      "key": "x00_seed198__step21__layer17__mlp",
+      "trial": "x00_seed198",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "be5c9ed0ba1e39c676f92ac46a9c21efce8499ee7bc7779cf9c57b47c2d2bdda"
+    },
+    {
+      "key": "x00_seed198__step21__layer29__attention",
+      "trial": "x00_seed198",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "bfbc62df7f24877dc1006c8004e6884182c69cb14045dcb00f4f850b9454416a"
+    },
+    {
+      "key": "x00_seed198__step21__layer29__mlp",
+      "trial": "x00_seed198",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "87a678c0051ccc1957d79d81c07fd7031f880fe60b1f754383ae6fbbc42385f0"
+    },
+    {
+      "key": "x00_seed198__step21__layer31__attention",
+      "trial": "x00_seed198",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "afdeffb60c177d645265afa4d42b5428b16c5ed4c6fc5250e6ad9c4c275be64b"
+    },
+    {
+      "key": "x00_seed198__step21__layer31__mlp",
+      "trial": "x00_seed198",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "2554b765e0bf60b51c77bd3a0e108a4b8e58a7a5e3902d51af6c3dc1e19b64c9"
+    },
+    {
+      "key": "x00_seed198__step29__layer17__attention",
+      "trial": "x00_seed198",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "a9442f47b1a6cf633067b569446f54671bbe728fa301d269f40aac99d865558c"
+    },
+    {
+      "key": "x00_seed198__step29__layer17__mlp",
+      "trial": "x00_seed198",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "95d81587e729936c0d1f79582ad922a7f4b8bc1502648770fb4414c667206d9a"
+    },
+    {
+      "key": "x00_seed198__step29__layer29__attention",
+      "trial": "x00_seed198",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3e22f50db2bf95a6bc19d37f85b8a44b8d119e4a18c4a11fa3b74da51cadee50"
+    },
+    {
+      "key": "x00_seed198__step29__layer29__mlp",
+      "trial": "x00_seed198",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "6466ab03a27f50ddd72fe511735fbd70fc8005e2d3ba8f30e86cee7695adbf7e"
+    },
+    {
+      "key": "x00_seed198__step29__layer31__attention",
+      "trial": "x00_seed198",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "a676ec87a476a036624befb5530abb5474f14f1c0b93ed0692a65c1df4ebb5b3"
+    },
+    {
+      "key": "x00_seed198__step29__layer31__mlp",
+      "trial": "x00_seed198",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "bfad24ab7474404a861fb24fc4284d74d351e0161d13a0eb3018167f68008a33"
+    },
+    {
+      "key": "x06_seed195__step20__layer17__attention",
+      "trial": "x06_seed195",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "9e5427f0299ff21068f24bf0f69103885595551db73dac5ce8910764334c7ba0"
+    },
+    {
+      "key": "x06_seed195__step20__layer17__mlp",
+      "trial": "x06_seed195",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "184a9e9c0ac7c46d65d1f64c273d0fb4113d16708d709b8492b0f22742323f66"
+    },
+    {
+      "key": "x06_seed195__step20__layer29__attention",
+      "trial": "x06_seed195",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "4576a016b4b5ceec74669006a8d2e2acfda0fd28b800362c7272e839474fd5fc"
+    },
+    {
+      "key": "x06_seed195__step20__layer29__mlp",
+      "trial": "x06_seed195",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "ae8a9245500505a1abad3ccbc1d01a513d127bd5ef4d2177c6fb7ac6718a1961"
+    },
+    {
+      "key": "x06_seed195__step20__layer31__attention",
+      "trial": "x06_seed195",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b4998955525d8b27235a8b73fb8b7b694eba87e112c0af9c4cdb96cba764812d"
+    },
+    {
+      "key": "x06_seed195__step20__layer31__mlp",
+      "trial": "x06_seed195",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7b6eb267ac40485c7d889c281bffd8bca4371565cdcca802a90d0657e1cee8bd"
+    },
+    {
+      "key": "x06_seed195__step21__layer17__attention",
+      "trial": "x06_seed195",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8208e668453828ee452544dfe005ea11b6d969ef50c40430826d5361042dec6d"
+    },
+    {
+      "key": "x06_seed195__step21__layer17__mlp",
+      "trial": "x06_seed195",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b603f62ec1f1b445d61d4fd0aff5221014fc3aba4290f2d8581a52ee64a267ca"
+    },
+    {
+      "key": "x06_seed195__step21__layer29__attention",
+      "trial": "x06_seed195",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "6324465450660653885440e263e5f0cc64cdf341c040a1e1b5e90b063d1bbe38"
+    },
+    {
+      "key": "x06_seed195__step21__layer29__mlp",
+      "trial": "x06_seed195",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "909d73ca13e00d8d95c3030182800bfda8582eeb4a0b9c2c4aef0e9e24424f98"
+    },
+    {
+      "key": "x06_seed195__step21__layer31__attention",
+      "trial": "x06_seed195",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d071e167b96d0b8e2f93e277e75e5cf7cfb5ed2f695a762246cd2a79ab941c84"
+    },
+    {
+      "key": "x06_seed195__step21__layer31__mlp",
+      "trial": "x06_seed195",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "1e7063220b792530d8b30a433da42690a81756043c799a9050339965bf0ddc14"
+    },
+    {
+      "key": "x06_seed195__step29__layer17__attention",
+      "trial": "x06_seed195",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "45865e199a9410d09828574cb4d074c1fa61c812993dbc1c4076d33f2efc6c0e"
+    },
+    {
+      "key": "x06_seed195__step29__layer17__mlp",
+      "trial": "x06_seed195",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3df77d497cec498c4c585e966d04aa837242a8b150b748e5bfb5629771bc3147"
+    },
+    {
+      "key": "x06_seed195__step29__layer29__attention",
+      "trial": "x06_seed195",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "16360881393a44ce5a3fefe30438edb724888714714d043081f9b728b0faec9e"
+    },
+    {
+      "key": "x06_seed195__step29__layer29__mlp",
+      "trial": "x06_seed195",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "bd8089c1b0a34db8cf04062a6cd40e4ffed69d39b2c09f3f458efc016f4f42a6"
+    },
+    {
+      "key": "x06_seed195__step29__layer31__attention",
+      "trial": "x06_seed195",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "df6f6243588d3b8587bb9dc7a269b5a116dbb04816940ba2e4582a144f7ce1cf"
+    },
+    {
+      "key": "x06_seed195__step29__layer31__mlp",
+      "trial": "x06_seed195",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "484b79e274dec771b171f2dc68d6f879ccdde3f4b9ca42571da5c75effa3bb46"
+    },
+    {
+      "key": "x06_seed196__step20__layer17__attention",
+      "trial": "x06_seed196",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "cadba1d1f6a126531e2a424271332d5368a1a2fbbebec63304d9d275453f02fb"
+    },
+    {
+      "key": "x06_seed196__step20__layer17__mlp",
+      "trial": "x06_seed196",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "fe3a3c545793be40e5553fdcca2e51c41cd2b735e31425253055f2bde7e50d14"
+    },
+    {
+      "key": "x06_seed196__step20__layer29__attention",
+      "trial": "x06_seed196",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "40ddd054e42494044c5a6c750cd9ea869c954f3784bae6bb125c53074b2650b9"
+    },
+    {
+      "key": "x06_seed196__step20__layer29__mlp",
+      "trial": "x06_seed196",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "c5dff95b6599fdb3572f29b54e8ae93bdb5bb0e53717c4504acf10d35fbc8d0b"
+    },
+    {
+      "key": "x06_seed196__step20__layer31__attention",
+      "trial": "x06_seed196",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "2cea51030d8a38c9deea88676351967291fae9ca9a56c1ddd13a05cd33195915"
+    },
+    {
+      "key": "x06_seed196__step20__layer31__mlp",
+      "trial": "x06_seed196",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "0de19130e1da1c0536d0acad8a60e53852c5815c9430874ab8d7e3c89a7b6984"
+    },
+    {
+      "key": "x06_seed196__step21__layer17__attention",
+      "trial": "x06_seed196",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "5a3fca19bebde00771b0bd49ff6d153e001ab41b82d21ba2100ceb5fe007a605"
+    },
+    {
+      "key": "x06_seed196__step21__layer17__mlp",
+      "trial": "x06_seed196",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "85779256c7047a678624217330c5f07fd321a771425ec41181db59c3ee0d18e7"
+    },
+    {
+      "key": "x06_seed196__step21__layer29__attention",
+      "trial": "x06_seed196",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "89a0a5490b7e1ca92c8ed274b922753ef2cc854eb50093581d8cf28ab69b971f"
+    },
+    {
+      "key": "x06_seed196__step21__layer29__mlp",
+      "trial": "x06_seed196",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "6de9cc99791e91c983f0f03679b394363abdcf203afba54694020956b128fe8a"
+    },
+    {
+      "key": "x06_seed196__step21__layer31__attention",
+      "trial": "x06_seed196",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "e596127c0fcc4b35c5663095093f48b8b6a2221aa0f71b876836379a7448c4f2"
+    },
+    {
+      "key": "x06_seed196__step21__layer31__mlp",
+      "trial": "x06_seed196",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8009e49776539e89bb51e949a7b3ba79dc0505e0def0298d8bde597c336e8791"
+    },
+    {
+      "key": "x06_seed196__step29__layer17__attention",
+      "trial": "x06_seed196",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "1866ddff0f24a0f8d425b4d11c5cab2a86d220100e0b9461c07767ab04d74067"
+    },
+    {
+      "key": "x06_seed196__step29__layer17__mlp",
+      "trial": "x06_seed196",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "944e60526917249644f0581fd7de675d034cc4f6fe3bc93fcf49482d53542d02"
+    },
+    {
+      "key": "x06_seed196__step29__layer29__attention",
+      "trial": "x06_seed196",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7e3c82107353f749d1443a84f77790939c3e0ffa7b7aa88e99ca2b707a320057"
+    },
+    {
+      "key": "x06_seed196__step29__layer29__mlp",
+      "trial": "x06_seed196",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "fa1ce9674e02695fca15d9967239d438b64cc4e9757524edad1ff1dd77389dc4"
+    },
+    {
+      "key": "x06_seed196__step29__layer31__attention",
+      "trial": "x06_seed196",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d3e28212edd1e150fd6f7f1b96c43f00b443c3093b988fa220591b8067d2da49"
+    },
+    {
+      "key": "x06_seed196__step29__layer31__mlp",
+      "trial": "x06_seed196",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "bc5217e43e838556a6e81eeb3b0f99b8e42362f668de8f822c908e6655e1c001"
+    },
+    {
+      "key": "x06_seed198__step20__layer17__attention",
+      "trial": "x06_seed198",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "2362b9f165ad160626b1c58a2773b3d02ff4cda3979e72843d9d3d20d1278f91"
+    },
+    {
+      "key": "x06_seed198__step20__layer17__mlp",
+      "trial": "x06_seed198",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d68ab0ad95e6bb4fb10b6b64cfb48a517bdc200d6d4192616e9c4ab59d2ce41e"
+    },
+    {
+      "key": "x06_seed198__step20__layer29__attention",
+      "trial": "x06_seed198",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d2d1a8a1725d1cc9be6705f37d9dc57d7052a6f5d448f96dd13c074eccfc4d66"
+    },
+    {
+      "key": "x06_seed198__step20__layer29__mlp",
+      "trial": "x06_seed198",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "99fa805bbcab164389bb9f767993e8f355d91fcbecddd3b1124bf1a7e5470d5a"
+    },
+    {
+      "key": "x06_seed198__step20__layer31__attention",
+      "trial": "x06_seed198",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "56e29b1de730a5409725bfef828d24a612e20714406218e6248f325e55035d17"
+    },
+    {
+      "key": "x06_seed198__step20__layer31__mlp",
+      "trial": "x06_seed198",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "014799edb62cd7722468331dfdc088124403693c9695cd98eefba2afa4bf5af0"
+    },
+    {
+      "key": "x06_seed198__step21__layer17__attention",
+      "trial": "x06_seed198",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8e4be431ee40f638a6342cce744f181c4004a9dda27ee98739bd63935fbb6cc9"
+    },
+    {
+      "key": "x06_seed198__step21__layer17__mlp",
+      "trial": "x06_seed198",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "a7f86fb4a39f847dd6e663fa58c25cd732e91e1a82623c2d8b9c286dda39c962"
+    },
+    {
+      "key": "x06_seed198__step21__layer29__attention",
+      "trial": "x06_seed198",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "87cd38ab555df9a355a65cb75d6451b69d3ba35ac1aecf4b8a573a2df1fc124e"
+    },
+    {
+      "key": "x06_seed198__step21__layer29__mlp",
+      "trial": "x06_seed198",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d9411cc6c0d0db8b1fb9f527446dc437fa37c7070a0c9b7df209ab90d844c82e"
+    },
+    {
+      "key": "x06_seed198__step21__layer31__attention",
+      "trial": "x06_seed198",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "aaf7143daa3cb219edcc13f5224ab19858f5beefb388d52a4022e6c9befa59aa"
+    },
+    {
+      "key": "x06_seed198__step21__layer31__mlp",
+      "trial": "x06_seed198",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "ad812a59778656ba7b08d18a714c807ff25eafbf773cf997babea54b0716b835"
+    },
+    {
+      "key": "x06_seed198__step29__layer17__attention",
+      "trial": "x06_seed198",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3443fe9f175acf656c9c9852abbea2dff9fd3516005cf850c40dc23e354be9e1"
+    },
+    {
+      "key": "x06_seed198__step29__layer17__mlp",
+      "trial": "x06_seed198",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d2e940bfa9a60626f5cf58279029d031d546900fc750a9b39f049e93bf1d3ee7"
+    },
+    {
+      "key": "x06_seed198__step29__layer29__attention",
+      "trial": "x06_seed198",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "f38f0abc0f749b5eb16073fc64c14d73e39242dc70ba8977b01c73d45cd3a857"
+    },
+    {
+      "key": "x06_seed198__step29__layer29__mlp",
+      "trial": "x06_seed198",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "0aee8cb4d8fd3ce98d53cf532b8489164bae707066781f2e38b897f3ee4952cb"
+    },
+    {
+      "key": "x06_seed198__step29__layer31__attention",
+      "trial": "x06_seed198",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "227290ab1f74f320fa94d2e9032474e03885933e3d19f1bc101fbe5cb7581084"
+    },
+    {
+      "key": "x06_seed198__step29__layer31__mlp",
+      "trial": "x06_seed198",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "0ee1647cf2fef1f6b9e6ff10ecfc606fd603c01bc361d62ec8fe7f5dc2b2faf7"
+    },
+    {
+      "key": "x15_seed195__step20__layer17__attention",
+      "trial": "x15_seed195",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8e86e1b86455edaba9e39e693052a86d2117c1dfea961362d148a22ffc46a159"
+    },
+    {
+      "key": "x15_seed195__step20__layer17__mlp",
+      "trial": "x15_seed195",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "156164c83fbd09f1f66980e409693a15bd83140477ebc24c6b698aee5f35ac99"
+    },
+    {
+      "key": "x15_seed195__step20__layer29__attention",
+      "trial": "x15_seed195",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "ba7925152ed2456ab945308495682cbe619e7034b098be23545b9da227a5cb2b"
+    },
+    {
+      "key": "x15_seed195__step20__layer29__mlp",
+      "trial": "x15_seed195",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "66fbb8063821ac70d1b986f6664e1e9c56f55839d024b24a1ed401c74a02e760"
+    },
+    {
+      "key": "x15_seed195__step20__layer31__attention",
+      "trial": "x15_seed195",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "f92745c3f71c6d7911db7a6875c10a969ce1a0f3e9909b7b6681a2902a3a53f4"
+    },
+    {
+      "key": "x15_seed195__step20__layer31__mlp",
+      "trial": "x15_seed195",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "d40ea5d2c283c6036a650b9ccbe3760bbaa92c6b154e17d9ef541453b2222d73"
+    },
+    {
+      "key": "x15_seed195__step21__layer17__attention",
+      "trial": "x15_seed195",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3c03622b05a05a2dddaf267a04495462057d91e9d616b57e61ae55c02a9c2b28"
+    },
+    {
+      "key": "x15_seed195__step21__layer17__mlp",
+      "trial": "x15_seed195",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "94794e227fe186cf63ae3929055ee6a060fe04297e1b5159a7be32b91d0afdae"
+    },
+    {
+      "key": "x15_seed195__step21__layer29__attention",
+      "trial": "x15_seed195",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "925f203c5a75c308aeb5c6d7cec7f20cd9074188bda0f98bdc1e667638c27980"
+    },
+    {
+      "key": "x15_seed195__step21__layer29__mlp",
+      "trial": "x15_seed195",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8a4274909ddbec376a599e23de627740aad70a27414a84606c835a21bb140dda"
+    },
+    {
+      "key": "x15_seed195__step21__layer31__attention",
+      "trial": "x15_seed195",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "f1ea8942591e9b801cae656e91b097d88bb9969d3614d63bd5cc158b654e0085"
+    },
+    {
+      "key": "x15_seed195__step21__layer31__mlp",
+      "trial": "x15_seed195",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "97ee657cb703eabc729864d7c9e431237e65c89e360da9d348cf0a41d3404413"
+    },
+    {
+      "key": "x15_seed195__step29__layer17__attention",
+      "trial": "x15_seed195",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "98c200ff475e9babf4c8c9221d5224e400f2417f3e442753e11c2cf1d3950c24"
+    },
+    {
+      "key": "x15_seed195__step29__layer17__mlp",
+      "trial": "x15_seed195",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "8b4aa11af151cff8367e5708f0ce696df767880606115dbf5a5360abbcbb48dc"
+    },
+    {
+      "key": "x15_seed195__step29__layer29__attention",
+      "trial": "x15_seed195",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "88981e8f5ead1d81e4d639e6c09d7154d9004ea7cdb40bf70bd06713505c018c"
+    },
+    {
+      "key": "x15_seed195__step29__layer29__mlp",
+      "trial": "x15_seed195",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "f82724ca37909bba28c6a6f2331298a761442a0458c403be216bcd36e0a9b953"
+    },
+    {
+      "key": "x15_seed195__step29__layer31__attention",
+      "trial": "x15_seed195",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "a963fbda00866b7727c9828803c2eecda6ca7fe34052b45014487b9ce6725014"
+    },
+    {
+      "key": "x15_seed195__step29__layer31__mlp",
+      "trial": "x15_seed195",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "12009da1fa93c4dfaf8b5105eab3dbcb4a3089f9eb6b61b023052733b96a1cc2"
+    },
+    {
+      "key": "x15_seed196__step20__layer17__attention",
+      "trial": "x15_seed196",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "172f6ecf668026998738188c101c7c96ce69007ebfb2611502795d0b67d0e606"
+    },
+    {
+      "key": "x15_seed196__step20__layer17__mlp",
+      "trial": "x15_seed196",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7d99a851e09806b4cd4c31a0edf6b8544fa9009f062c1c68032b1ef8e328a121"
+    },
+    {
+      "key": "x15_seed196__step20__layer29__attention",
+      "trial": "x15_seed196",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "1a60a2689c064ff14b7d76dd061a8064d679e3278ef5ff340fac092f9c842cc5"
+    },
+    {
+      "key": "x15_seed196__step20__layer29__mlp",
+      "trial": "x15_seed196",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "90e575c04adc0a170adfc92a131b47ed18c9e6ec993d8683aec631c4774a7f00"
+    },
+    {
+      "key": "x15_seed196__step20__layer31__attention",
+      "trial": "x15_seed196",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7c6ed43a15915041795752c4584cd55047c2dc1d2211d9bbf146b8193551dea9"
+    },
+    {
+      "key": "x15_seed196__step20__layer31__mlp",
+      "trial": "x15_seed196",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "dbfbbbbf3eb5fd2501625b00f72256f49a873036d5c9129e3bae01b43fc1ac0a"
+    },
+    {
+      "key": "x15_seed196__step21__layer17__attention",
+      "trial": "x15_seed196",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "324ee076a0c0c7da25951b0c442ef702cb69423aeeec3826cd30e8f716e81565"
+    },
+    {
+      "key": "x15_seed196__step21__layer17__mlp",
+      "trial": "x15_seed196",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "e9410f403a324df0f58aef930557c7ae3dacbf894a75229121414cc24fbeab8c"
+    },
+    {
+      "key": "x15_seed196__step21__layer29__attention",
+      "trial": "x15_seed196",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "6d9c9f7e7b67f9d5d9102a9b67f0029ab726a9b84b3024e477a06b7ca2e778bd"
+    },
+    {
+      "key": "x15_seed196__step21__layer29__mlp",
+      "trial": "x15_seed196",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "2c75379bdfacf7effd4e10e4169ae6186dbed0dddd3ecfdd697826f1a86d1ed6"
+    },
+    {
+      "key": "x15_seed196__step21__layer31__attention",
+      "trial": "x15_seed196",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "7b71bc8fe28f2eb88b7468fdc6d86c0657d7c517808c4f2f543d5ce3a5eaaf48"
+    },
+    {
+      "key": "x15_seed196__step21__layer31__mlp",
+      "trial": "x15_seed196",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "963b8c8f01e77930646494917390b6d3f68d3b2b19268495c66a3bd390715f23"
+    },
+    {
+      "key": "x15_seed196__step29__layer17__attention",
+      "trial": "x15_seed196",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b99f2069d8bb80427b7bd82076b03faf6771e153f3f46b6aac00fa3e2a83b4f6"
+    },
+    {
+      "key": "x15_seed196__step29__layer17__mlp",
+      "trial": "x15_seed196",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "0b2fe94ed550a287fe7181a724614c144aad648bc52bf64c2c889849835a0934"
+    },
+    {
+      "key": "x15_seed196__step29__layer29__attention",
+      "trial": "x15_seed196",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "a5856205d5698542a4a34101f2a621562b67678ec74d4ba743b24347616f6b70"
+    },
+    {
+      "key": "x15_seed196__step29__layer29__mlp",
+      "trial": "x15_seed196",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "633bde1b59d6c5297bf534f0aaf99edfffc4034019055697763fcfda925957d1"
+    },
+    {
+      "key": "x15_seed196__step29__layer31__attention",
+      "trial": "x15_seed196",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "6964f4857531fd0fb1df66d49f79c2527e3e10e4a600d6c2d9285610e2aa655e"
+    },
+    {
+      "key": "x15_seed196__step29__layer31__mlp",
+      "trial": "x15_seed196",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "73489eac705cd7e02d8d69970a2b96f02268d5a97b4b0cddfd3c6403c41e3e0b"
+    },
+    {
+      "key": "x15_seed198__step20__layer17__attention",
+      "trial": "x15_seed198",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "347de2b91d677f0f5d6221455c86586142e03a2e7f212978f6799801740d03bf"
+    },
+    {
+      "key": "x15_seed198__step20__layer17__mlp",
+      "trial": "x15_seed198",
+      "step": 20,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "80c22ef991ef30aeb0782066fa789e69d5329afbc1e98c25a48250bedcd8722b"
+    },
+    {
+      "key": "x15_seed198__step20__layer29__attention",
+      "trial": "x15_seed198",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b1f15c610096dde2a6577e632fe2157ab30c77f9a6a3e0c8b1ca42ea603aab29"
+    },
+    {
+      "key": "x15_seed198__step20__layer29__mlp",
+      "trial": "x15_seed198",
+      "step": 20,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b90d7d54ef5699ac6bd5087c4bb70f3250f978e4630fab3e4e54cbd411762c5f"
+    },
+    {
+      "key": "x15_seed198__step20__layer31__attention",
+      "trial": "x15_seed198",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3dc050df908e93fbac16e41126266d70de495408339c9b1cf49cf40c91445579"
+    },
+    {
+      "key": "x15_seed198__step20__layer31__mlp",
+      "trial": "x15_seed198",
+      "step": 20,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "5d0407d47440e2078663d6c57f10b8dbef536922ef9b9874a91709b168960e4f"
+    },
+    {
+      "key": "x15_seed198__step21__layer17__attention",
+      "trial": "x15_seed198",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "69ef8ae379f17ebaa33b38df54be7caa6ce6c3ee0a85dcd6c1cbecceb18930c4"
+    },
+    {
+      "key": "x15_seed198__step21__layer17__mlp",
+      "trial": "x15_seed198",
+      "step": 21,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "b38d0c691035419b1c213c8ac905ab81d7dd94a5bf65d6b6e42511c9dd2c66e8"
+    },
+    {
+      "key": "x15_seed198__step21__layer29__attention",
+      "trial": "x15_seed198",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "51d0e6dca2f5f6096cdaf7db1510e9937fce96a40436cf244ccd6dd7b9a6d7ed"
+    },
+    {
+      "key": "x15_seed198__step21__layer29__mlp",
+      "trial": "x15_seed198",
+      "step": 21,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "523599cc3f90d357ef8f130b6dd76cf6712b999a226fe67ed27910aafe987f22"
+    },
+    {
+      "key": "x15_seed198__step21__layer31__attention",
+      "trial": "x15_seed198",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "f388ba0b7b1ee707a7355f09c654c7cc07a3167282471ffcd35db51afdbe90c6"
+    },
+    {
+      "key": "x15_seed198__step21__layer31__mlp",
+      "trial": "x15_seed198",
+      "step": 21,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "53315651347ca003c562547807a8bf7d25c08400a171e42022c71e78cc934421"
+    },
+    {
+      "key": "x15_seed198__step29__layer17__attention",
+      "trial": "x15_seed198",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "f4dce02fb3a3276ac42da055845f48869b08d90dc5d01b025db6242371934c61"
+    },
+    {
+      "key": "x15_seed198__step29__layer17__mlp",
+      "trial": "x15_seed198",
+      "step": 29,
+      "layer_zero_based": 17,
+      "layer_human": 18,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "acdf936a37c21aef7e6e161250e4f8d09d670e9e3c471c2bbaacb760d224baf7"
+    },
+    {
+      "key": "x15_seed198__step29__layer29__attention",
+      "trial": "x15_seed198",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "090b9601c4f39f70a9344bcb030842dc49c84dbb2cd25ade262185fcc42c7035"
+    },
+    {
+      "key": "x15_seed198__step29__layer29__mlp",
+      "trial": "x15_seed198",
+      "step": 29,
+      "layer_zero_based": 29,
+      "layer_human": 30,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "3eee6f6c7219f1af480e4ce4dfadb9b158b3f412d2bfb844ec9ac3e4c138a0b2"
+    },
+    {
+      "key": "x15_seed198__step29__layer31__attention",
+      "trial": "x15_seed198",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "4e34244b0635b869b74266a1d42b90e3e47d3632076f5e485ed266bc4d8aac9a"
+    },
+    {
+      "key": "x15_seed198__step29__layer31__mlp",
+      "trial": "x15_seed198",
+      "step": 29,
+      "layer_zero_based": 31,
+      "layer_human": 32,
+      "component": "mlp",
+      "shape": [
+        16,
+        4096
+      ],
+      "original_dtype": "torch.bfloat16",
+      "stored_dtype": "uint16 BF16 bit pattern",
+      "raw_bytes_sha256": "86a1e2ed370bb985579d229c8627ca1862f56c20ee91ca8040c2fd891c637036"
+    }
+  ],
+  "count": 162,
+  "export_script_sha256": "d4a93f5bc282f111767c86be450095f4351c6cd5e3d69f76106eb825b523ff1c",
+  "archive_sha256": "06f2b13f0b0def6a890bacad47cf20695ff77f347a0ee237e4a9c2d29fcd8146",
+  "archive_bytes": 16910144,
+  "decode": "bits=np.load(path)[key]; values=torch.from_numpy(bits.copy()).view(torch.bfloat16).float()",
+  "interpretation": "Actual attention/MLP increments on 16 action rows; no residual, identity label or grasp probability."
+}

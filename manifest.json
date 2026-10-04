@@ -3,18 +3,18 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 119,
-      "sha256": "861078d2f0c22722d9ca721d89384ce8f9699fefe046d014c15232247d1df3fd"
+      "bytes": 1056,
+      "sha256": "50c622c6240cdf1c641845b40dd8b105ad5c8bfb6771195562bf58bd8db73d70"
     },
     {
       "path": "README.md",
-      "bytes": 14847,
-      "sha256": "90ec2c0b024bd65d239733efede6e704d9c47a2e7854df7dd746bac21653a1c6"
+      "bytes": 15066,
+      "sha256": "ba9b85e84f94d1b1dfed4a096db5393d5a9bb1c950a6b1358a66239bfcc2f13b"
     },
     {
       "path": "docs/index.html",
-      "bytes": 8603,
-      "sha256": "f3f6ca47949cac75fc5043cfc97a39e54820f62a15e5c7a10056fc02cf779a0d"
+      "bytes": 12729,
+      "sha256": "77df71346308612fd530388e41b8e1ee1cd99a9f1b4943933975866d35b4a93b"
     },
     {
       "path": "docs/media/experiment-summary-poster.png",
@@ -80,6 +80,51 @@
       "path": "docs/media/language-routes-readout.png",
       "bytes": 81978,
       "sha256": "beadc5311d4ccf9a1bbab14f4b660caf6323ed603a66e83a8980e5ec16395630"
+    },
+    {
+      "path": "docs/media/milk-action-vision-interchange.png",
+      "bytes": 218253,
+      "sha256": "1596c0ab5b463af32b1fbf1fc0c698ce3acb348a556cb4682c849ea2e4846ac8"
+    },
+    {
+      "path": "docs/media/milk-actual-trajectory.png",
+      "bytes": 183956,
+      "sha256": "4e620ec56c09bfc07d2aa5d846abb49df9d80076a8541542ba969034ee46a86f"
+    },
+    {
+      "path": "docs/media/milk-attention-heads.png",
+      "bytes": 211700,
+      "sha256": "2a829e9faebc8eb35f5399b68f246fdaf0d5770488ec0675e049b3e735265a46"
+    },
+    {
+      "path": "docs/media/milk-component-pulses.png",
+      "bytes": 235966,
+      "sha256": "d0335a576d34ad49416ded3fda09f81db36cc70eac2496667008043d2bb17d84"
+    },
+    {
+      "path": "docs/media/milk-shift-fifteen.mp4",
+      "bytes": 235458,
+      "sha256": "ab6a4c81511686b0d6581c183ab61673b52e8af4f45cc9b57a0bd3fe2ed1f4c3"
+    },
+    {
+      "path": "docs/media/milk-shift-input.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "docs/media/milk-shift-pulse-layer18.mp4",
+      "bytes": 236583,
+      "sha256": "393999b1e88e1be6f70c5d9ce7544f4780bcba4c32720c0e20ff9dc5ce2d60ee"
+    },
+    {
+      "path": "docs/media/milk-shift-six.mp4",
+      "bytes": 230269,
+      "sha256": "c1c10f0fd4fad5c6234b6db45bdeed88184e02482880e59dc27127cefca57831"
+    },
+    {
+      "path": "docs/media/milk-shift-zero.mp4",
+      "bytes": 228534,
+      "sha256": "155fe7325964c29882fbb036adf6a45a3187fd7cc05922db3e4d53f94b4c3536"
     },
     {
       "path": "docs/media/pi05-center_butter_seed198.mp4",
@@ -21715,6 +21760,3476 @@
       "path": "experiments/15-native-goal-targets/processes/goal-pair-policy.server.process.json",
       "bytes": 1182,
       "sha256": "3128476208d492ecdc7cae828a6278e8460c972f0ab8e186de38314f93612663"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/README.md",
+      "bytes": 11351,
+      "sha256": "aefd6309498427c8121beb86c7fa428d00f42792d7e852cb157e11e080c50716"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/actual_head_captures.pt",
+      "bytes": 2008049,
+      "sha256": "4168f9c0c1721f0bf9de47e35af8369a541bc79ff0dfabaea60a9d4d738aa186"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/complete.json",
+      "bytes": 886,
+      "sha256": "55c2ee89399b62a75bdca6770ca8bd16f8bc437638397fa6c86b2f7991323627"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_donor/head_site.json",
+      "bytes": 1149,
+      "sha256": "ccd273385c2cac920cbc839c5f1a75d3f46f592482571583be648b9cd314efba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_donor/head_site.pt",
+      "bytes": 999947,
+      "sha256": "e7fe90b627b9ea5d6acfa02d27592622132a563937d850a3e8505f9129802279"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_donor/metadata.json",
+      "bytes": 1294,
+      "sha256": "69bee6b5918153c843b390f8f9481f25c82e6d893c0111c7a956df4ba2532c76"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_donor/normalized_actions.json",
+      "bytes": 4114,
+      "sha256": "cf5798854f6968ae0b8bef8960919bf11d5932a2c5e69ec3c8ebd0fc041cf2ad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_recipient/head_site.json",
+      "bytes": 1153,
+      "sha256": "fcafef9db64d0250f63bcfbb02b99650dda33c1940e2426689b38479ad97c676"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_recipient/head_site.pt",
+      "bytes": 999947,
+      "sha256": "3df206e37383e811853ae01edca28e3575a1d3affa2b84c91b83fd663ba077af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_recipient/metadata.json",
+      "bytes": 1293,
+      "sha256": "383eca8a2fa4980688d877998c88306f61eb26d4486ddee408a436266085d614"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/capture_recipient/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/donor_all32_coarse_equivalence/head_site.json",
+      "bytes": 2499,
+      "sha256": "d372aa83b86d0e3ac2db0a6a94725d66f1f6746daebd22b857b3304e54c2ca0b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/donor_all32_coarse_equivalence/head_site.pt",
+      "bytes": 1525451,
+      "sha256": "62c097e1d924521b38f7f0f30f2e3f7f169c5125cc1a38f9cd72af3fbebeecc0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/donor_all32_coarse_equivalence/metadata.json",
+      "bytes": 1294,
+      "sha256": "48984d9aa8be831de023b7c18a94da34fd7812a367cefacc388bb411462f009f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/donor_all32_coarse_equivalence/normalized_actions.json",
+      "bytes": 4117,
+      "sha256": "45b390fcd7fd7e7cb4bc22b6167cf1020ae1e4b58c30b545f7b4704f100252b9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/self_all32/head_site.json",
+      "bytes": 2466,
+      "sha256": "1609d51642141835bca023073003e00c34e9eae92df6dbe3338c16c26206cef0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/self_all32/head_site.pt",
+      "bytes": 1525451,
+      "sha256": "05a5f92103d9034b6d0c4d553e4949f0bc876a804a379bae75aa344474339962"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/self_all32/metadata.json",
+      "bytes": 1293,
+      "sha256": "abe08c23c87ad5975c4269ee510af23ad4d80a35dce7ebae3e33476d5fdb977d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/controls/self_all32/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/figures/head_xyz_and_random_controls.png",
+      "bytes": 211700,
+      "sha256": "2a829e9faebc8eb35f5399b68f246fdaf0d5770488ec0675e049b3e735265a46"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/figures/plot.json",
+      "bytes": 24110,
+      "sha256": "a6ad9b8ccbdf686f746b9b91b101cc9c6b7b21232e04597a1656d1388ef2df39"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/head_site.json",
+      "bytes": 2258,
+      "sha256": "74486edd3ee97cbc9a5566653db1d35b1e6d01f829b4ba7752d1396ba2b771cb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "dd5a2c217b12b51e45b243c6db4e4068c2433de04d2ac76ceedb161c38481ab3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/metadata.json",
+      "bytes": 1294,
+      "sha256": "58b2c74cefde8e1b6af365d6ab7e2db2d38acf59b64bf5b93f9c94401f1418de"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/metrics.json",
+      "bytes": 6301,
+      "sha256": "954f2fc97fba78ca76fe345af72409e38529097e59c501b6a14ebe9d863c790f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/normalized_actions.json",
+      "bytes": 4120,
+      "sha256": "349fe0a3b661371033bd317767db10e07ae46e27714c2e157f0a771e27d52552"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/random_control.json",
+      "bytes": 388,
+      "sha256": "a1e605804d30ae699309e4f7d547aa836edbd6262a73a0f20e420d1ee75a059b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002901/random_control.pt",
+      "bytes": 183075,
+      "sha256": "f761bb72eba4989794d6bee89675ef5106d9bae644a27ec30b240615bd58ffaf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/head_site.json",
+      "bytes": 2258,
+      "sha256": "9f9335ae05c89256882f865894a3e8fad14f521c3f8a1f2d3696a35a0d176af5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "071300ed1c9711997584f49ac16f1984af36dba2afe6cfbab18d02929002565e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/metadata.json",
+      "bytes": 1294,
+      "sha256": "9df02405b0ad78151e426c04def5cf0dad90e5c03c179ef55a70804def78bac0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/metrics.json",
+      "bytes": 6308,
+      "sha256": "68be07527b588e72c50b6e6adde71c1600610245d7a7f1fcd4153311bd656f61"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/normalized_actions.json",
+      "bytes": 4131,
+      "sha256": "a5672df5bb330271628a5b0b12c2c192385b8cd69e340af47617b31f6ed3ec88"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/random_control.json",
+      "bytes": 386,
+      "sha256": "3172d17def94c7b90e4f6746682de4ce330665e444e06983a4400eb7fbe8ad25"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002902/random_control.pt",
+      "bytes": 183075,
+      "sha256": "441bc1b120f72182691c1e584d8dccf4a73fa3dee97f844542e61a093ec7950b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/head_site.json",
+      "bytes": 2257,
+      "sha256": "9a58379bf9b9e698b6423c2e08269e67ab5eb3faa272e1b9cd52de9225e104fa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "dfee8b98b23d793f085f1730c16a80e0433fd415a7d286c59a31ffb277d0979d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/metadata.json",
+      "bytes": 1294,
+      "sha256": "1feb95d5d9e2136da8785bba177a0ca143457a93a5d43c664856a6ed0672e1bd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/metrics.json",
+      "bytes": 6315,
+      "sha256": "48c58db668cde9092a071696eb791da67ba0a3a6e77e96897e340ede7fa4b29d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/normalized_actions.json",
+      "bytes": 4134,
+      "sha256": "03c7e1f72c5b8ae08ae779b809d1b305aea48e58cb075d7d697d057f3dd3e99c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/random_control.json",
+      "bytes": 388,
+      "sha256": "6597adb0feada12d5b7332fd34353b792ffed7296a5285a0ed5f476718a63030"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/random_head23_seed17002903/random_control.pt",
+      "bytes": 183075,
+      "sha256": "0da22f25f1c63be6a068d4d0db0f99d3bfdad374096fcb2e0d05b2210e83d542"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/reverse_head23/head_site.json",
+      "bytes": 2246,
+      "sha256": "b4a8395a1f9e644ff28bcabbe97e2392747980ee4a32ec28c2b2ffdf4b531fee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/reverse_head23/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "49ef972f7abe4c28700c5065319dbb1f1fdaf3f17b6a2a6ee9969822d52fc2d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/reverse_head23/metadata.json",
+      "bytes": 1294,
+      "sha256": "ca333a9f8636ec4de1dcd3d4eb89a77b482791cfd1808c764cd7652004e72f88"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/reverse_head23/metrics.json",
+      "bytes": 6285,
+      "sha256": "1113c6fdf7d33934c8aee7d05aa37dedfdce530745292048148818d7db468813"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/followups/reverse_head23/normalized_actions.json",
+      "bytes": 4106,
+      "sha256": "b78fef53882f1d7a8d57dcaff47fd4c1860aaf92082bc89a317251fe73fbed80"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/progress.json",
+      "bytes": 833,
+      "sha256": "66de3b2060717ca17906fd1266695630ac0fbf23bd4ece0afc3786088f1a86cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/provenance.json",
+      "bytes": 3170,
+      "sha256": "cccdcaec957a90b3b69dfaf15069e3814cf0f3ce56e2a49abf7203f3f100ebb4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/results.json",
+      "bytes": 148312,
+      "sha256": "45f3fd8b1df8d51e5cd23dab19c93c52f1834814e2611be46c4954260ad6d2a8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head00/head_site.json",
+      "bytes": 2237,
+      "sha256": "8ca6e3a2dbaab0aad74e9f13880aa95829cef6953f1d1bd151413edabe2f63bf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head00/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "88cc6c95be11b38de635ef61478d3edf737ad08abee93d254f9a07e29f925a94"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head00/metadata.json",
+      "bytes": 1293,
+      "sha256": "588d6bfc85ac735bfca09f8b035ef9149930f4108b4adb565e28b772e3615abc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head00/metrics.json",
+      "bytes": 6308,
+      "sha256": "a31edbcacc21b2d1fcfe8132fbac6c0b877d19a08349904331d668089a38e366"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head00/normalized_actions.json",
+      "bytes": 4125,
+      "sha256": "d4a178404276853dac9e9c21ba1be5d162c6c6c0727d11c0a2dd0ca8f0f581c7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head01/head_site.json",
+      "bytes": 2237,
+      "sha256": "d43a5913938cb9b7678dd4f0d6ad75193a14a3978f4b36e670c761ee06c482c1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head01/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "b01ee4445153df38ff60abdfacbb8b61ad6e9b0de7805b9a41fdbda22d84c584"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head01/metadata.json",
+      "bytes": 1293,
+      "sha256": "b3054e62991ef5e86d481baaf481268c14a9398f176f5ea3c787d17afb037c92"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head01/metrics.json",
+      "bytes": 6310,
+      "sha256": "f863753f65c208bcff01e8ea5e8d65a73187b3f4a0f68ef013506bb5c5051fa2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head01/normalized_actions.json",
+      "bytes": 4124,
+      "sha256": "d146f0e22108af7f0045dc986feb10450945fda2fe01ddd858381c80ef22301b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head02/head_site.json",
+      "bytes": 2237,
+      "sha256": "69401b9c4d8af2622a00bbe6276bb2d0b6e8b6dcc5887023ff853d91c8ffbf90"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head02/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "0c52e28da09cbc115b5d6af5795d4904188ae8a6be269450eedd4ac7aee37342"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head02/metadata.json",
+      "bytes": 1294,
+      "sha256": "20fd5281c5d7d641b0dd4fa0fff1230d599c0a0465881911627b61830d606882"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head02/metrics.json",
+      "bytes": 6309,
+      "sha256": "c12d2ed67c78e0f152b2e828df49a7c3af9fe34c360401e3614db618c6e997ac"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head02/normalized_actions.json",
+      "bytes": 4123,
+      "sha256": "8d8b272e455de32a3573fb277dfb6893a04cf000d7be4bcb8cf90f808fdf26ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head03/head_site.json",
+      "bytes": 2237,
+      "sha256": "8930d7677fe1cc5da4ad317c5127668a51346afb15883725b1c4c1ad2da341ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head03/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "5d98991e0a770600b06fe127b79cf2c90123e3244be415f7f77a1746b3ba91dd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head03/metadata.json",
+      "bytes": 1293,
+      "sha256": "3e8d5cf58c612c4b2ed063925e22c067a6d06932881b1e478630159efde7e590"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head03/metrics.json",
+      "bytes": 6292,
+      "sha256": "2d1fa1e5ccf2581023e961bd5be00e006b5837d26c8cdccae1432ca5c0fe7f87"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head03/normalized_actions.json",
+      "bytes": 4126,
+      "sha256": "01a9437d823fa309aae9d221e79b89d2d162540512ccf1bb08954fe38a023509"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head04/head_site.json",
+      "bytes": 2237,
+      "sha256": "dec3587e844163fd23e66221d8c3beb7a88d807a6d6a19a2f6f8bdeff8ed83d9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head04/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "fc6b1f3f01c3601378608bb660f98b58da875102a87b3d8e2c3ee11e9c0b7e06"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head04/metadata.json",
+      "bytes": 1293,
+      "sha256": "d98d1cf35297dbf4d6e946262e0bd2c0f4a088dc92ccc38ae1e306597148077d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head04/metrics.json",
+      "bytes": 6315,
+      "sha256": "123f3ed54b04d107338915c3387727456d5c7c2498a3eeb08a8a6d199e972cc7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head04/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "44880caa853df860443ba9b05738a0de486d96b8ca2bfad105d0d5f12e00fd13"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head05/head_site.json",
+      "bytes": 2237,
+      "sha256": "81c7505ed2db0ba09f3b9105b1d68a791213b788979b5dbd79910be26eab13de"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head05/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "66951015e7bf476d381232de879c23542e3047056dd7f5e35767116364a60bd9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head05/metadata.json",
+      "bytes": 1293,
+      "sha256": "c632ba0a3129730c5ee1510dbda3e4f25c94b93a7b8bc38d49b2f6ba985f0c1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head05/metrics.json",
+      "bytes": 6322,
+      "sha256": "15e04823911cf25fdf1903652d137f0abf69d4e82fbd908d420e08f9115c4a72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head05/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "e555c84e722ff306ba71fe4dbcf7cf7805e792b0afdb9c6106c99be11e68e40a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head06/head_site.json",
+      "bytes": 2238,
+      "sha256": "65fbdd9aa847e69530eb92d277fc5d5196b4aa6cd46f006d9c164d15b182a1bf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head06/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "a1eab6a7872acd19ccc7591d6590482fa18228c7107ca86c9b2483d92ac32b75"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head06/metadata.json",
+      "bytes": 1294,
+      "sha256": "a75a0bb64546c40300cbff759349e8c798d60ab560c083a02ce86cc77484d89e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head06/metrics.json",
+      "bytes": 6315,
+      "sha256": "829eab1d2dc395c431883ba9393ccef067de3af4cef8957b9a26484a4baf2555"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head06/normalized_actions.json",
+      "bytes": 4130,
+      "sha256": "4b7fb81cb0f2e1d5d0778b5813e28608204157b7c07cf83633040121d8f9b5a9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head07/head_site.json",
+      "bytes": 2235,
+      "sha256": "d581d9b6d7435102fc050461be4249aa536fa939cffd3d90d45acdeeae0955c6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head07/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "a09c059a524767207ab33cc3fb861dbfd4b21c7dc3adaa7e5970b688f07a2cdd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head07/metadata.json",
+      "bytes": 1294,
+      "sha256": "90907702c7dd023641711e75adf04df91dbc90bd0776a2d1e3f302d12800601e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head07/metrics.json",
+      "bytes": 6321,
+      "sha256": "74d68bc8bc45bfee2839b33ca3af69b3a5575b426db4a8fd6dc2b997041fccec"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head07/normalized_actions.json",
+      "bytes": 4130,
+      "sha256": "790c7339bcb9c84517e4f64ca5b4944167bc47032a7cfddd2b421f6d2b78aea2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head08/head_site.json",
+      "bytes": 2238,
+      "sha256": "29cefedf5bd5ced7c710762c9c77d10c2cf5f592d3d0bb1c8e578aa1f1ab7989"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head08/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "b56bffa25f6c26bdb9c5862fe85e878c934c98ab3b5aff132232e4f22cea5d55"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head08/metadata.json",
+      "bytes": 1294,
+      "sha256": "72f28090202ae91d21d3ed50fd676a73bcfa372f7f4e06c2f0f3d013023a9279"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head08/metrics.json",
+      "bytes": 6314,
+      "sha256": "4310fd92aae28bf6038152c5bd7a73984680b4e931728bcd48c9a1b9e84acd0f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head08/normalized_actions.json",
+      "bytes": 4130,
+      "sha256": "4f5d7e068a0d4f607a2f4a5a79eb0240a8f2d2d04b72ed8415073f0e592a501b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head09/head_site.json",
+      "bytes": 2238,
+      "sha256": "8a280c690ff46389a8ed7b5dc8177bb3ca24432aa66ce296170c06bb80dfad3c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head09/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "de98f5721ee41a7a4614dcaa21827b328db1d147d0784897dece29e2d2e3187d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head09/metadata.json",
+      "bytes": 1293,
+      "sha256": "3d1b0563d82622b07faa2766b94cc126ef874dd86646eaca3c17c7d4baf6cc5d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head09/metrics.json",
+      "bytes": 6309,
+      "sha256": "48fea65043450272aa8cdcb2d7273ac13677a82d601b094520bd5c4e0b6fd052"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head09/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "3f41f8c49c984df3a150c3cfeeed92d4f38da6dd21d0249609620da95994a58f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head10/head_site.json",
+      "bytes": 2238,
+      "sha256": "8b46ac593a19ad380a3db53a157fbf3e50daa2e591557aaee2c4e4d1ce7db54a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head10/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "2008bb2c3016c4a5d03f92e13564294ef17d40dbfe71b3a4d151d20de3774515"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head10/metadata.json",
+      "bytes": 1294,
+      "sha256": "b1e001e6823ecb1a0a7c25ed397746c8b1867e9fc5ab9cfda3a975b1397868c8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head10/metrics.json",
+      "bytes": 6292,
+      "sha256": "de9a6682837ffd8b5305a94958fa0c1b728cee9e23eda4af11b44f06844ece31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head10/normalized_actions.json",
+      "bytes": 4125,
+      "sha256": "d8de3d770ea11f7c04ac8fa5f9b2dbc44bb9f554a69ad4e6854af3a3a56b1475"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head11/head_site.json",
+      "bytes": 2238,
+      "sha256": "138e293331fda1c1412c5e8d16cc4bae61d4fe0a896e6ff9afb42d557655f93e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head11/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "e3dd70a6c0bfca00d1f6a65953642dce0c44cfe621ba7e73b0003b9fe822b40d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head11/metadata.json",
+      "bytes": 1294,
+      "sha256": "f9c0ef0dab737472f6578c2172d677de249e55237ee7c9f07ebc1e4d1a5e4bbf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head11/metrics.json",
+      "bytes": 6324,
+      "sha256": "d90816c68503aba2b365d2f0dbd7b99d617ffa97749998c1a6c4632631833e41"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head11/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "78f28cc7470464d7d2e0bb3e94c5ed57da0ac30bf89fd0fbec4968cb9c50945c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head12/head_site.json",
+      "bytes": 2238,
+      "sha256": "0d928ebf2342ccba104b6a702b91e52e41165aa36ec66920571e35d2684b3004"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head12/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "5c7f0cd3b6c2823bf632474950f01d33c0c9ede712f466aaa9cb62636d03e595"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head12/metadata.json",
+      "bytes": 1294,
+      "sha256": "cc76bc11129d2e57324f6a98baf575afdfe21f4001ea2ffb74a40c4694781f94"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head12/metrics.json",
+      "bytes": 6302,
+      "sha256": "f529a59381238257d05b1325a7bbd6a8c328e82587430ed5a92711e82d201c65"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head12/normalized_actions.json",
+      "bytes": 4120,
+      "sha256": "5fe0423b99b8da62abc91174984fbc8d511991f33053916c6efd292c120b5398"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head13/head_site.json",
+      "bytes": 2238,
+      "sha256": "139f589f95b8844a802bdb3eadc0c6fcae820a646a3d84a74426fb7827a6545d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head13/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "c88c12531b3b37de6769bc3a274c6cc2a9c7a57846b9328669868c8871529ccb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head13/metadata.json",
+      "bytes": 1294,
+      "sha256": "7726e8e1d3a5659b20bbbcbd1883ef551341525add88aa16d3be8e320173d314"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head13/metrics.json",
+      "bytes": 6312,
+      "sha256": "3968618d0d70c01a99fcfe2b56a6c9c48bcdf8bbec2f2c2d48711a1f8332cea7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head13/normalized_actions.json",
+      "bytes": 4129,
+      "sha256": "8801cf8ef52843697fa8f767f0f62ed1ce8e58749b8af61c90eaaf920224e923"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head14/head_site.json",
+      "bytes": 2239,
+      "sha256": "6298a12f29bd00ba927ac3e493e02edde11561f1c811e6c0fb7feb6a5bc7d74b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head14/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "a2376c2a44e81f43dacb8208d968588c80140ebbbdef969df613282d3df0f2c1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head14/metadata.json",
+      "bytes": 1293,
+      "sha256": "3cff2aebbaf77b5891bc677668d4518944b279a461367c0cf653bef358a9637c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head14/metrics.json",
+      "bytes": 6309,
+      "sha256": "4cc8d27839a4b72bc2a21be2e0fd95d9527ae1e7b128f81d8c6a2bfa4b93d8ae"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head14/normalized_actions.json",
+      "bytes": 4123,
+      "sha256": "5ccffecff380324e68a6d5e2e4c7ab867d348100af0e3f46c7aa3d2b44e467ad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head15/head_site.json",
+      "bytes": 2239,
+      "sha256": "1d76ef3ae72d8efdf899a138caae89dfef5acfa0d385164376bcde42e7c61e5e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head15/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "a00a5bbab79d971f37db491c8883bd837cfae5917a1e983537898b8076ee07b1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head15/metadata.json",
+      "bytes": 1294,
+      "sha256": "84b3e2f67ae0b3158e040d59b37c5617194ed41ce0a5f49529a99d9219420e8c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head15/metrics.json",
+      "bytes": 6326,
+      "sha256": "2b0f5a564d494044e5cc9fa0fa1b9b36c5221dec0276f5e169e069d03dd9752a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head15/normalized_actions.json",
+      "bytes": 4132,
+      "sha256": "9a96e9d65eff853eba0f3635bb0b526a8b3f6990ff979d099f95fc75edfb8ddf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head16/head_site.json",
+      "bytes": 2239,
+      "sha256": "544c70dd519bac67b81b2c438c211c0307b568b4aa10961434c036d126a72f50"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head16/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "ba2c8ce84892f6400e3a7b73ec6f0d52d0932bea6aef566240facf46c5849888"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head16/metadata.json",
+      "bytes": 1294,
+      "sha256": "65f4796e569fadf175a030aa303c762715ddce393e006e346a1e2b7e8ca97bc6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head16/metrics.json",
+      "bytes": 6312,
+      "sha256": "812e88cecf2564ce60d407f8d26c6f10eca0bca5fd703d8e53078b9569c5f8a8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head16/normalized_actions.json",
+      "bytes": 4130,
+      "sha256": "1f9fac7880035522dabab98fd4ce07d2189cbfa48176d2147d90e59fdd5ba4a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head17/head_site.json",
+      "bytes": 2238,
+      "sha256": "e90bff2fee5a965b6532cb286ecb0c9513aac3277faad4a6bf8986c5ed357ee6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head17/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "a3b56071dc23751b153fddf3e39bba51e6b146220f0ed19fd514dbcffe787857"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head17/metadata.json",
+      "bytes": 1293,
+      "sha256": "44756e6d6a3d56a6716a23f36dad1ee9ede88d9fdf25d1b55bf3b6268f55c598"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head17/metrics.json",
+      "bytes": 6314,
+      "sha256": "17b6561271ba8af4798bc37c7fdd46814613bea83d62ebb11f91e74385415b65"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head17/normalized_actions.json",
+      "bytes": 4129,
+      "sha256": "4a379615734403ce66a8d112f631df012720efadce83a2a1b470d02a4fa0256f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head18/head_site.json",
+      "bytes": 2238,
+      "sha256": "2e7d2b3284609559c282098116a04aba84ea048b02e5d08833fd300801c6b719"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head18/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "1c6dfb93af5ba0d5755000f4aa8ce5002a31e133e390fb421de961158b31077a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head18/metadata.json",
+      "bytes": 1294,
+      "sha256": "1486667799d11fe806d8c8254fa16abebdae0cd929389c7a1942f39b108dea39"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head18/metrics.json",
+      "bytes": 6322,
+      "sha256": "382b3ad701698a2cd8bdd0b79c37285e47d1b5152e6ff8db00fabd3a4d030b31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head18/normalized_actions.json",
+      "bytes": 4130,
+      "sha256": "68601fd86355958a05009a0c5c139a8855149000af50f6d73a457495abff312e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head19/head_site.json",
+      "bytes": 2239,
+      "sha256": "c65e16ff1d634304cdd75788bc080cc6da16cdbf3548185c25e9066a73f7ed15"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head19/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "0a2ba4be591a8a1e07334a1b53095a94925e6925edffd31ea7253e0529dd131b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head19/metadata.json",
+      "bytes": 1294,
+      "sha256": "ef71afac573d622c13029ca77030c281e7bfdde24cd318c81329b0a5e91f5dec"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head19/metrics.json",
+      "bytes": 6324,
+      "sha256": "ee13d7ecfbcca28322578b57ef7c60cd8ba41c641a2f6d1666167a7aff51ab20"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head19/normalized_actions.json",
+      "bytes": 4119,
+      "sha256": "c2398533cabfa48c68e932590a3da3582baf107dc3ab6db7e18c43ff9ce1925b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head20/head_site.json",
+      "bytes": 2238,
+      "sha256": "c83076c0fed75677c09cf76dc29fb89479d9e3a19bd4c74d737c400dc54b44d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head20/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "867fe8ae7c7ad9d944fc8df2b44b386a59962d7526db9b79311f683ce2aac0c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head20/metadata.json",
+      "bytes": 1293,
+      "sha256": "ff7a996970b88535acbb8d78b27b870cad166912c64a49811be69c78ab1f941f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head20/metrics.json",
+      "bytes": 6292,
+      "sha256": "937c64238db85db84b54ed5619466d9d8130e8391dae4ebceb013caeb5b8a84f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head20/normalized_actions.json",
+      "bytes": 4126,
+      "sha256": "fa156c5dc04c2b2a69a2eec1d5f41e3d45aec62b0918dbdaf956838d6912d0d4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head21/head_site.json",
+      "bytes": 2238,
+      "sha256": "834a39001c10c22cec9cb2e2064eb2587e9910820e195020acbfd45b2a0e032f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head21/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "5e406b7ef335f9ac0c49ab69dba4330887d8a6ff2738e4f0fdbd583292d6cff6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head21/metadata.json",
+      "bytes": 1293,
+      "sha256": "679688ccc77d71a5e8cd6744bb22384ceb5fd63afb62c7a4fc7a764ca5aed355"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head21/metrics.json",
+      "bytes": 6294,
+      "sha256": "0b14770b25b241eb5fa0817521aca2ba379555f34774d1b8bb46e4e81ef8dbc8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head21/normalized_actions.json",
+      "bytes": 4127,
+      "sha256": "783bdf5c953daf3056016489c3f81c7b838de31040c6c162ce0a12f72c2d624d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head22/head_site.json",
+      "bytes": 2238,
+      "sha256": "56406b098bde5804ab18b66bcefe1a89548450437912286b065be556ece13f9f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head22/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "bfee85e7b7703b2e09e3a74463b668a0b0fb17fc5d19f17f08824b62103b409b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head22/metadata.json",
+      "bytes": 1293,
+      "sha256": "bf3eb6f08872b21be00dbb4dd9489b6ef8e76da1d643d424b34cf7067220a053"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head22/metrics.json",
+      "bytes": 6322,
+      "sha256": "f543a83357d0f8e99974b600bbf7ccb2cd8821dac38a71be8c1f2067c4788daf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head22/normalized_actions.json",
+      "bytes": 4134,
+      "sha256": "21d8e0e1041aa2050cff3363e56d10b26152a2cacba6e7f4c8ce5855f210cf9d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head23/head_site.json",
+      "bytes": 2238,
+      "sha256": "ba8df0be0ef0ac40ae715cde2d0a9cafddb2888fde1310e339465928a1b95271"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head23/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "277f03ebae501aeabe219197ef76649b1bebe9c375f2a3adce7d2953be8e4f44"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head23/metadata.json",
+      "bytes": 1294,
+      "sha256": "d26caa91e632f0c2483aa0e3c017b7116c20337f63375786e562f2c32c7eac1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head23/metrics.json",
+      "bytes": 6298,
+      "sha256": "b19b1912a459161abac02b82cff4853e347d475a0c484b5273118fb6c14f4681"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head23/normalized_actions.json",
+      "bytes": 4121,
+      "sha256": "ef7ea879fff71c8b733f9217fe72fc5a25d80ce21176f16f183fdf1a5f970574"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head24/head_site.json",
+      "bytes": 2238,
+      "sha256": "827ed7afbdb865fbbb51e70dec937bc5e2ebc80e6d871cce785e16223d901ea5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head24/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "bad9c4eab94e5c2523ee177ca3a9f1a7482465a6e589c9198168040d3dffcc22"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head24/metadata.json",
+      "bytes": 1294,
+      "sha256": "c38b84609350b74c9acdc52fd40d5d532e9bd5a071fd94a680e640f91a28a4fb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head24/metrics.json",
+      "bytes": 6316,
+      "sha256": "81c418d5d22dc2a7925d4ae51229563938bf954710560ab9ba660f88e3affb79"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head24/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "330fd29e07e69abeea6bd49521fa346406fc92f39d0bed3ad11feac708be9b99"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head25/head_site.json",
+      "bytes": 2238,
+      "sha256": "740ecdbe7f5470f0f77d030c1fcc071f371b916f04a20d5b5fc9ef3e9de14985"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head25/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "ff4f316b4eef51e53a1c4e01dd4b037c0b9093248415f92371f40034c2fc58a6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head25/metadata.json",
+      "bytes": 1293,
+      "sha256": "7087b79a20bfec9d4cdc2ffa52bbb83aac99e07ad2b3a62f6da0e87753c64f75"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head25/metrics.json",
+      "bytes": 6315,
+      "sha256": "130b5be942fb1bade4fbb69e49f69627f67fa9f3d181dcca4f114de0cce3bdf1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head25/normalized_actions.json",
+      "bytes": 4132,
+      "sha256": "e781650d209696e44fe9523cb2fda4ea4240d270088c756b8aa6c64152dca152"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head26/head_site.json",
+      "bytes": 2239,
+      "sha256": "43b05b288592f07131bcc208c5b4c3e2edac8b6d4d23acd3851c1c6cb3bb5b69"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head26/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "54c38f8da7f5421b112b9f3416ab856a2b0dcc6f699759e7a0d9b7690b970a95"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head26/metadata.json",
+      "bytes": 1294,
+      "sha256": "8066bb1e2970fe10e033519bbcee3249442affb8567ba4731a2b7b0ff0f063f5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head26/metrics.json",
+      "bytes": 6309,
+      "sha256": "6277daae0c60e3835c5b838734c81d59062bb2e8566e8536c277761198acd000"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head26/normalized_actions.json",
+      "bytes": 4123,
+      "sha256": "72a94fae6724512ac20d0a5bcccfe12ea94b83e1c1b2969ead6bdcd401602235"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head27/head_site.json",
+      "bytes": 2238,
+      "sha256": "c22f89223b7531a763f57fd9597a9064e25849635554a909a1481562e4858314"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head27/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "fd122ac077d8d2b1e3b14e9c5b29064b824814f114e0824b2d0b53a24bebe3c8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head27/metadata.json",
+      "bytes": 1293,
+      "sha256": "a0403728c598dcfd7710cd77c1a5c3cf0787c8f4ddc7cacced3fdb686af58918"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head27/metrics.json",
+      "bytes": 6306,
+      "sha256": "c4ee770f67f0965c559d7009ed9d34f67d7c981c722e99c9cccae2749338aa3e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head27/normalized_actions.json",
+      "bytes": 4116,
+      "sha256": "cf6ad8e339bc5985640472ae66456a304cbe3b97177f64fc2c85aba141ed4dee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head28/head_site.json",
+      "bytes": 2237,
+      "sha256": "5a2f70fb264ae2cac24dc4138d898611725c95aec13dba0455bd642e7ae3269a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head28/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "040d3ea41a07d4eee376e3ede6ce59ca5b2a75bd9961954b5b4e007e4990119a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head28/metadata.json",
+      "bytes": 1292,
+      "sha256": "17bb25fdbd8337b9c1535f4b50dcf8cb50df28ca7daeda7743d9a19a1c240316"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head28/metrics.json",
+      "bytes": 6305,
+      "sha256": "7a6a3fb30d1b976c8c06bc1a27750b2963992a2b60e7b643e20929aab2447f82"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head28/normalized_actions.json",
+      "bytes": 4119,
+      "sha256": "b25c6c1e684160b5c8ec2eca21b4549df9babc996d9f51814d03c2bfd7ed0b99"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head29/head_site.json",
+      "bytes": 2238,
+      "sha256": "1c15b483b3ba436901a7c385f09aa5353c0eccf131187dd8bed9755f9866e337"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head29/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "8c002833c35f8299137ed6e3db39611c7589e8905275229e72912bd860d297d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head29/metadata.json",
+      "bytes": 1294,
+      "sha256": "eaccc9081e2b96f59fde9ee9f499a3040293fbaed4278f2901898a6abd32a9bc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head29/metrics.json",
+      "bytes": 6320,
+      "sha256": "4821d72e3d81e10c23fc47ba795eb68ddaf62cc8dc20ac24aa22b279f3fb9133"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head29/normalized_actions.json",
+      "bytes": 4122,
+      "sha256": "b711deaf49708a8c35fbcda54feb6cffdf681e2dfe63e05075831f9992db574b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head30/head_site.json",
+      "bytes": 2239,
+      "sha256": "ad181fec9d299913a9684ed6080c5df740aae03c569798497e34a78504a14a49"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head30/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "509b283ff4b823058387ddb9b3874ed84f5d3fa0c0b141537694fcb499b39a6d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head30/metadata.json",
+      "bytes": 1293,
+      "sha256": "7c0444ddae0b9c0f2ba66dc244783a58009765f8f0a1d20e5179e2dce360c95e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head30/metrics.json",
+      "bytes": 6324,
+      "sha256": "9e4d66c4fa5a0811c4ff57639d5ac0fa123be2a9d009087d7a6b0755d9e863dc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head30/normalized_actions.json",
+      "bytes": 4121,
+      "sha256": "f698513854bd4c350e53c01b403365808a8d3ae6f7542bde5906e7cd2dce1529"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head31/head_site.json",
+      "bytes": 2238,
+      "sha256": "946c07f88ea20eba3464b8825b43c2ce52288059a1677525d499344991e5ea7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head31/head_site.pt",
+      "bytes": 1017483,
+      "sha256": "d728d1e376d39748a2cbf16f4214abadef41b75ab798b2d8a4cb1e393e36fc3a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head31/metadata.json",
+      "bytes": 1292,
+      "sha256": "a69d0f37a46e8a7edfc10f9abaf23f6818418d7a3c745f7057befa8a3ee748e6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head31/metrics.json",
+      "bytes": 6310,
+      "sha256": "953f75266d5ab33434876ffbd864800ff8bc6e1157159d7025aba34511adcb64"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/runs/head31/normalized_actions.json",
+      "bytes": 4132,
+      "sha256": "d79a48604468f9388997d33bcce57c4c5678912d3e47b531607d7ae125a1bb79"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/status.json",
+      "bytes": 69,
+      "sha256": "128470da389ed717e63da1784fa390decf813ac4ce490a30bf527753ceed7950"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/attention-heads/validation.json",
+      "bytes": 2680,
+      "sha256": "02492ced4db16564dd43b0b6798338c5d604de4b142df8755725a87d91717a7c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/actions.json",
+      "bytes": 23494,
+      "sha256": "3237163ac7a45ceeb21879b433bb17d06a3b68458df8c3b2a9a9b0566f59df33"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/actual.mp4",
+      "bytes": 236583,
+      "sha256": "393999b1e88e1be6f70c5d9ce7544f4780bcba4c32720c0e20ff9dc5ce2d60ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/denormalized_actions.json",
+      "bytes": 33734,
+      "sha256": "36a6bbaf3038434eaf095778224434d7f8cb27b49401e577a1f2d73a2c96b4ff"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/executed_actions.json",
+      "bytes": 23494,
+      "sha256": "3237163ac7a45ceeb21879b433bb17d06a3b68458df8c3b2a9a9b0566f59df33"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_01.png",
+      "bytes": 141117,
+      "sha256": "d6a81de1dbcb64432cbbfff850d03d74df540c60232afeec252671e3b8a74b05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_02.png",
+      "bytes": 136882,
+      "sha256": "92f723ba9f27e5a774473bcadec3b1f837dba6795c53b9887274ca39f2a71770"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_03.png",
+      "bytes": 127738,
+      "sha256": "71df43fde5242585638cf495ed50b00c52a412d054dac01b375d48a2fb405154"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_04.png",
+      "bytes": 124399,
+      "sha256": "89f9c4863c37ca9b8be66d3d9f655b329ade40434673cfa0c9a39613a8fbcf64"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_05.png",
+      "bytes": 142139,
+      "sha256": "53c18a829162a00856c89c9278496d340612f1e28d347cc315659f4c36b30e0b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_06.png",
+      "bytes": 152475,
+      "sha256": "c0ca6fad1499284e4dfa1a00c231a565895bf85f8c366c8b0bf45b3ffd7d8ee1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/input_07.png",
+      "bytes": 151661,
+      "sha256": "54e4bf194ec5878cf25311b3b6a8c9b04f7204dea90a37584a555789dbe82006"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/normalized_actions.json",
+      "bytes": 32863,
+      "sha256": "74357c3825ed11d8d06a8e5db621d9e7ce82e59ef1aa47c4b2b7a0a3755f8809"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/query_contract.json",
+      "bytes": 16091,
+      "sha256": "5661d5b0dc54e0d2b00f9bc32bd25fc232352b0ee925847474805bef54b92096"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "822d80be09e3e9f99c3d6ce32fccdb5fa742d4c7b8b333d13380b6a9adc46439"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/summary.json",
+      "bytes": 28610,
+      "sha256": "38e8ea03823c1b5dfe70f9bc95b8fb8386f3a35ff2e142e7f5f22c448e8555b9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate00/trajectory.json",
+      "bytes": 3654918,
+      "sha256": "fd119f90f896776b41a77f5408e08819a7eeda4de92316bf7933e5fd0d9c6b0b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/actions.json",
+      "bytes": 23564,
+      "sha256": "fe958f426522cc6334c0e5b665c6c5f1936927114f9f38106f41c4bb22bdd606"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/actual.mp4",
+      "bytes": 236358,
+      "sha256": "450a0c3c4f70cdf970ee6cad0a2526675cc34dc8742958a2a1c19906ad618dea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/denormalized_actions.json",
+      "bytes": 33743,
+      "sha256": "db3c64636cbc7d6e358c0c469bee401a7c7635bae3b8f23eef39978ca75c0df3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/executed_actions.json",
+      "bytes": 23564,
+      "sha256": "fe958f426522cc6334c0e5b665c6c5f1936927114f9f38106f41c4bb22bdd606"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_01.png",
+      "bytes": 141390,
+      "sha256": "b5690996427dc2741bcdf1d21ad75d531eda174a8eec2dc17eb92778ceffd169"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_02.png",
+      "bytes": 136895,
+      "sha256": "b3d0e90f1d9e3ed20716ea29bb47cafe61858cdfb64076fd8bb084e0282c93a4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_03.png",
+      "bytes": 127612,
+      "sha256": "485f63f187f1bfd03dd3a7795da8037acd7250dd8d6e6e79ac60bdd9c76a858b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_04.png",
+      "bytes": 124821,
+      "sha256": "b8881b4afe6c6d8cee56e36567381cbd44ad2e322ffaf50c13eb9512ba2bd97f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_05.png",
+      "bytes": 142438,
+      "sha256": "ed78f0692490cba8c055bb67cbbaba4a7c6315bfc2bdd5b7fc9eefda23495538"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_06.png",
+      "bytes": 152987,
+      "sha256": "05e0fc332e8e67c709ba4b9e1d9ae59859b3b66ac5c6f4342d876bdbf90a7ef2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/input_07.png",
+      "bytes": 151991,
+      "sha256": "1be0b7ec1f8d63844f411951865f9bad2c946852bf00f6e46de7b703ae976500"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/normalized_actions.json",
+      "bytes": 32877,
+      "sha256": "9ecd6c2fa34aa14544077affafc315f1c87b1bbb0eb737369f3f1b89baa72456"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/query_contract.json",
+      "bytes": 16093,
+      "sha256": "b1b48f0d9ebba0941fec0789a32a9dd753619d190138e4f3abb38dc23717a351"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "f2f5754c1d7716a30a14fa4943458653546cae55903ad63c4273af92dd52c7c9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/summary.json",
+      "bytes": 31499,
+      "sha256": "be5c8a6cf952d6da0da4100e1ab6e7f428b67ae95242f8a85e3feee4dd84c94d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate01/trajectory.json",
+      "bytes": 3667395,
+      "sha256": "bb49c1e9f0ac0d04c3a80047bf013a90c5f7bd92fa2264c1e11b88923a706e7a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/actions.json",
+      "bytes": 23496,
+      "sha256": "a63b9f7750858739ee1c888ace723e491052cb112e26123be48d57686227f6ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/actual.mp4",
+      "bytes": 237426,
+      "sha256": "90b3644694cb77c17c25ef4d16e53d112756da17d0b5e195aefe078f30e87ef1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/denormalized_actions.json",
+      "bytes": 33715,
+      "sha256": "f6d8332a86bc52200f6514eb6642ab5b2158a353cfd0c40ac8a8391d8fb0ce38"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/executed_actions.json",
+      "bytes": 23496,
+      "sha256": "a63b9f7750858739ee1c888ace723e491052cb112e26123be48d57686227f6ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_01.png",
+      "bytes": 141344,
+      "sha256": "9bbba1a78b22fde13b8dc6d7ec7fbad65ca7dec9f5d8df76b7b2026f36332fe4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_02.png",
+      "bytes": 136711,
+      "sha256": "9ba009e551d38cdf39c6633eb6880f575658bc9d2922edeba5e6c70bd9120d39"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_03.png",
+      "bytes": 127699,
+      "sha256": "3d908670fb96f3a0bee0ebe04d94661767af44ac87c22b71ff58f4e50ec2dce1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_04.png",
+      "bytes": 126532,
+      "sha256": "9a81f2561a79b9f7041574074f95ca9130d8b3a82e25853e635cb13bb1ca6dd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_05.png",
+      "bytes": 142620,
+      "sha256": "02853e14626e6953b86bab8b07871a4243eb03f021570d0e7a5cd25ede318183"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_06.png",
+      "bytes": 152394,
+      "sha256": "ee4da1bc9a74901673c60f7d26964ba5050cbf798af77f8befca238aee445ce8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/input_07.png",
+      "bytes": 151861,
+      "sha256": "4248b2a2fb4c9d58fbac2931c39f7f9de46a46898e75ec8475f06c5175b9d7b8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/normalized_actions.json",
+      "bytes": 32856,
+      "sha256": "a4542cd3f7a804b4cf2ddfb7606756f207227a7c8e68d204bb5e3254cb795d8c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/query_contract.json",
+      "bytes": 16093,
+      "sha256": "5935c53e8b7c872bbaca0fc2bc7aa7ccdb240aa90caae35259ddea82eba2cde0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "40fcbb06bb053f70c80e9f185135ec5fd1717ea8cf69a76459856fea1c5a6c74"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/summary.json",
+      "bytes": 28666,
+      "sha256": "a081dcd9a1b47f7ec30b907d8a8a901d9d03e76f630a471bc5f71bfa787217f5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/candidate02/trajectory.json",
+      "bytes": 3663763,
+      "sha256": "75f60df0914fca1d26bb8aa884eedcfe5ecc231f714198c0d8fa80e4c2994859"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/complete.json",
+      "bytes": 255,
+      "sha256": "c3ed147e1646a32663d1d7a8218ce9dd5341fd0b0919f80cb32f069e361460f6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/actions.json",
+      "bytes": 23444,
+      "sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/actual.mp4",
+      "bytes": 235458,
+      "sha256": "ab6a4c81511686b0d6581c183ab61673b52e8af4f45cc9b57a0bd3fe2ed1f4c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/denormalized_actions.json",
+      "bytes": 33705,
+      "sha256": "44f702738429612dd19f6515af335ca197a1763bfd95a926d4587cc1c8a8cc9d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/executed_actions.json",
+      "bytes": 23444,
+      "sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_01.png",
+      "bytes": 141335,
+      "sha256": "0a129d8a5a30219a232db6c4cd44159a20fdf8a83e998128ba0fe1776bbbb0eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_02.png",
+      "bytes": 136897,
+      "sha256": "322899fb33b0d8b0b29e3de64925b0c9a3c80b71dce3c74597eac3dda3ce24eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_03.png",
+      "bytes": 127925,
+      "sha256": "f1eaa9f7702010b15c64c7d0bc8aad8342c9328650b07cc00dcf01b0fe81f0fb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_04.png",
+      "bytes": 126535,
+      "sha256": "35980201d7eb849689d261ed105134177171f5a64559c3a905be88333d845d6c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_05.png",
+      "bytes": 142645,
+      "sha256": "40e96e6fb7740d29c551e843d1a00092afed5de429b3bfee2bea6f9e662c8906"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_06.png",
+      "bytes": 152439,
+      "sha256": "3368099aa384b8191d1ab54dc77fe720c2d1187100ffad2a74693a360cf277e1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/input_07.png",
+      "bytes": 151903,
+      "sha256": "f30b2955cba5c2a7ec8611e35c1241356e60d25626ade8e3868695af273f867f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/normalized_actions.json",
+      "bytes": 32836,
+      "sha256": "5dd6beca584f80f7e99ecc4e2b697bb7da46522de3211ced0348fb4a60eb5aef"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/query_contract.json",
+      "bytes": 15990,
+      "sha256": "62a5a0423c2298b5e80624e5e072e7a987ca072732fdcfbb73d26c2293819a5b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "8abe7f88aacc4b15b42db58235cb3eaea6c75fd899c87e71b1069233ea0ea952"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/summary.json",
+      "bytes": 28686,
+      "sha256": "b9155efde281fe72208db730d9f6342e4119f6f5839f3d00a2192ccebf50b3d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/control/trajectory.json",
+      "bytes": 3663597,
+      "sha256": "cbfef2a3fbcca093b90d434dae7b90367a712aef03ecf93de3fc422a6ea90e5c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/provenance.json",
+      "bytes": 1288,
+      "sha256": "42f2f04325cce0f6d7d097617f5f73a562077a61a3e4486ae8ef18fe4701824b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/closed-loop/summary.json",
+      "bytes": 137453,
+      "sha256": "ded1786ab836d560b7ee4e7e29f802d972feb35d3a0bf605f7c12046d0bb0813"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/physical-checks.json",
+      "bytes": 922,
+      "sha256": "4d927e706960b44c3e80f1f54bf8a42dc4afbfb967c8886b9c8e13e2dcdf84d4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/prepared.json",
+      "bytes": 768,
+      "sha256": "b2428fd172c8a61f100c6881fa04087b2d123b6edcfd35c18a36efee9b2b47d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/provenance.json",
+      "bytes": 4423,
+      "sha256": "5b764dbe50a5604e25b8febd3160e611fa01c5e9b268726b9fdc5c3f4eebddad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/selection.json",
+      "bytes": 357157,
+      "sha256": "daf924745d7012b37d2b698c52182feea5f779bff170d66d54d471cabc26b00c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/server/complete.json",
+      "bytes": 188,
+      "sha256": "4d252d66b515df524ce638d08c46b6db194aea74d6c4531f31b95e62ab2c5da0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/server/provenance.json",
+      "bytes": 8436,
+      "sha256": "524d31ddecc75d799aee391c280ba015ec338ba60d1dcb11a0a405b086a8d263"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/simulator_complete.json",
+      "bytes": 255,
+      "sha256": "c3ed147e1646a32663d1d7a8218ce9dd5341fd0b0919f80cb32f069e361460f6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/candidate-execution/summary.json",
+      "bytes": 137453,
+      "sha256": "ded1786ab836d560b7ee4e7e29f802d972feb35d3a0bf605f7c12046d0bb0813"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/complete.json",
+      "bytes": 354,
+      "sha256": "1c0e33b04568c3336116df65f2c13d60c253abe88768d9ca3a07fbb720feef05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/provenance.json",
+      "bytes": 1060,
+      "sha256": "4b7042949eb356ee0150679c09bdb73277dcce590a3eb43c7a286656a4cbd343"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/summary.json",
+      "bytes": 326222,
+      "sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/actions.json",
+      "bytes": 22662,
+      "sha256": "4a8165a8846742dcbcab8686d713f52643016455d9600f394063f12ed04365af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/actual.mp4",
+      "bytes": 230503,
+      "sha256": "922c99a4f75d6b2f8b6c576736952d84e936f3419e716c1556b079f8c7186551"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/chunk_00/metadata.json",
+      "bytes": 1418,
+      "sha256": "be6dfa59821972b2805ef42e8b5718ee6410e8f88cc9d0671930961e0166aaeb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/chunk_00/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "87241a02d0208cc9fb183d8a2179ee576b7feac70ad8f1787307ca03460a9611"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "8eceb109484c5dfe57e1e28430bb5c7654ea16ac7891739bd5ab496e670db73b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/denormalized_actions.json",
+      "bytes": 33580,
+      "sha256": "0845347642163d05556805e12755b8a79859d3c0a83a1601eed09d25f0fd40ca"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/executed_actions.json",
+      "bytes": 22662,
+      "sha256": "4a8165a8846742dcbcab8686d713f52643016455d9600f394063f12ed04365af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_00.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_01.png",
+      "bytes": 144846,
+      "sha256": "b5836c801aed0877c672b29b8d79677a7c247053c239d926cc0fbc89f64ef83f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_02.png",
+      "bytes": 141674,
+      "sha256": "c289c01e60c6d9a5391443984789c3f0025d18447540bce748a929d76cb3299a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_03.png",
+      "bytes": 134546,
+      "sha256": "4bae4bc3862e0fd7162c361dad7271db8aa031c1a8e844140c47b4e0fa126fe2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_04.png",
+      "bytes": 147872,
+      "sha256": "5f910a3830f2b18d9b0cedce4b93ca458c26a5a9b3bcfe17dc0c71df89723b7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_05.png",
+      "bytes": 149254,
+      "sha256": "e77ba1ece520cb49e1b77de2e0be2837f8ddc146c33e6d216ff16aa777f91b1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_06.png",
+      "bytes": 153110,
+      "sha256": "9b23473dea3580fba0016c9fe525782ecc2df8c6d0867ee200d0655ec2bfa30c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/input_07.png",
+      "bytes": 149561,
+      "sha256": "a3facabe13e8b5c6fef8ce7a772da7eb5fd7a4805dcb0e3deea65171eaeb3cb9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/normalized_actions.json",
+      "bytes": 32807,
+      "sha256": "4e9d2968ef1f72a4dba4c120b66633c09d038854490acade319feaa59cdfd9bc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/query_contract.json",
+      "bytes": 15742,
+      "sha256": "95095f6dc477e6dba787b0b42321aad4e3d3e552a65504fd7514f7c49926ce56"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "49b705caafac82c1de9040c46327f74b9a641302f9de02f7d2f05bec3618265b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/summary.json",
+      "bytes": 31919,
+      "sha256": "8e7a520d9fab6cfbc20243fff2c831134d152a36b1f354195b05cdf782252051"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed195/trajectory.json",
+      "bytes": 3612535,
+      "sha256": "b23ff856c7af794777b4532f19c8e707e8cfdce6f2d695f6f2cdb9972c0ff6f0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/actions.json",
+      "bytes": 22995,
+      "sha256": "6a4bd4aed280b849c3082a5bb79f228634bb178fcfffe422d5c75d38c80730af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/actual.mp4",
+      "bytes": 231525,
+      "sha256": "df6b4f2a7d51771663102293c3eca4d6b59056b64bee0ca96b13f2be52d6375c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/chunk_00/metadata.json",
+      "bytes": 1419,
+      "sha256": "fb10a9b980b2af70474f434cedcc5aed09cd4973b07cefa9606186304eaf0565"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/chunk_00/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "221281d7ebd3ed1a5e85971caafd40d436ac1a9696cde5325a3eb9d6c07bd0cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "36ceed538715aac00cfc9870544decfabba6e73aeea869639540a9e1a51246ed"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/denormalized_actions.json",
+      "bytes": 33515,
+      "sha256": "5865171df398ffa3b81e66ea51814225fd6edec628cfb7e0619333ce62c028a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/executed_actions.json",
+      "bytes": 22995,
+      "sha256": "6a4bd4aed280b849c3082a5bb79f228634bb178fcfffe422d5c75d38c80730af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_00.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_01.png",
+      "bytes": 144949,
+      "sha256": "43bf6c688a7826232d801f36e4410baff5d0ebb2ecc7577bcc912bacfaad23a7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_02.png",
+      "bytes": 143050,
+      "sha256": "a6dc1a73afabcf33ab3255f025c9c92d4f94ecb52f8bb29d6e8355d42ff90d34"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_03.png",
+      "bytes": 135335,
+      "sha256": "d4f0d13c5de2808fc4dd78e2a344a6ff2fc446cbb6ad63bd2baa06a86d8595b9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_04.png",
+      "bytes": 147735,
+      "sha256": "e088d21b90e95d2c0ae4b66ee0c453e6f4c338dd0148d54d00168407036bff11"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_05.png",
+      "bytes": 150966,
+      "sha256": "cf5978a20b98cf451f9742a5c0bb9e7e5df57c0a7a520968f723ce6e4099a6d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_06.png",
+      "bytes": 155147,
+      "sha256": "3701a44d025035349f8a3b3051641f7afef396a7dfb9737c939d92083f64bea3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/input_07.png",
+      "bytes": 150890,
+      "sha256": "c6163493cf05b3356b1c0923cbf402ea6df297d7fc4c51a0f7895832cece964f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/normalized_actions.json",
+      "bytes": 32837,
+      "sha256": "2f7c9c80c7d27e015bd07f32fad619bd2cfd8c2dea7eed3cdaa26275454ab3f5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/query_contract.json",
+      "bytes": 15740,
+      "sha256": "dad87701d314affc1a91e4f53933f6cf594733fa2a51f6e6c84143975e8b8ae2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "7ca438923dc7812ff8763dae91974d9257349b453d76c1ee0a1355854448a74c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/summary.json",
+      "bytes": 31113,
+      "sha256": "4d1a9aa6bdb436f8e91dda68f3dba955f7eadfe41e88aa4c5fe897ca65440b8a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed196/trajectory.json",
+      "bytes": 3601746,
+      "sha256": "3c58a0928f1eeae3c410f093fafc0315d24444cab8c018ac8aadda381bd4e949"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/actions.json",
+      "bytes": 23352,
+      "sha256": "85ee6dc7d6dc475ed1e3b1fd477fe336f22ed803d4c20033f658c0fbe3e89cd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/actual.mp4",
+      "bytes": 228534,
+      "sha256": "155fe7325964c29882fbb036adf6a45a3187fd7cc05922db3e4d53f94b4c3536"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/chunk_00/metadata.json",
+      "bytes": 1418,
+      "sha256": "930775616a9d5dc772c035649d6ef7eb5ff8abac96dc09836a0229561d00cfc3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/chunk_00/normalized_actions.json",
+      "bytes": 4118,
+      "sha256": "4ce51362bb6fa44a069a054cdbc2b2c8a6db790eafdcf968f525126428d6a06c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "3211d232b9fc57cb271c36640ecf5673dbcff8c4c7432f78654d6a545c0cb140"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/denormalized_actions.json",
+      "bytes": 33474,
+      "sha256": "a947f303a84e1e9e44823c43e2918a49d6409cd7bb00d1a9c9b107ba25f33404"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/executed_actions.json",
+      "bytes": 23352,
+      "sha256": "85ee6dc7d6dc475ed1e3b1fd477fe336f22ed803d4c20033f658c0fbe3e89cd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_00.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_01.png",
+      "bytes": 144065,
+      "sha256": "baca6fd2b03b728913cadd857b98d2582fd86815a5c43c3d0b56d5bd0efc1c6a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_02.png",
+      "bytes": 145616,
+      "sha256": "1001143270dfeca8c970149c4c2ee2a627e576ca683691df4e5a011f77fd1c7e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_03.png",
+      "bytes": 136579,
+      "sha256": "8b7dbeb5558f250252e309dcba6de5c1a1471911efb6f26b4d132d05f62ab104"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_04.png",
+      "bytes": 143847,
+      "sha256": "714123e9f95cb5734f0d6fce0f57844dbe2278b7f01f0aa643c7a8f3606f8233"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_05.png",
+      "bytes": 150496,
+      "sha256": "53a2b83daf5c7546f844195bdabc164b098c82d3e7748103f146132357d08de7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_06.png",
+      "bytes": 154052,
+      "sha256": "a2ba512096d526bfc56030b28678d47af7fc6cba757f2cb96471f92f0e576402"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/input_07.png",
+      "bytes": 150644,
+      "sha256": "0c6f322c32fce8b78e69f8a60cb77827d0b8a377a12ac0632e4a769f69c69a77"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/normalized_actions.json",
+      "bytes": 32827,
+      "sha256": "d6fa23bd94e78c81dff97ecf2b29218077c5a01a41475693bf6ebb52289072db"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/query_contract.json",
+      "bytes": 15742,
+      "sha256": "5305d4a2b4194ed9e582ee4d49bd296234dc905dfbfbae98243cbbf3564a3139"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "893530cfd75215ebe8a1ad000923504c8434e794c78b22e469c6082ea7229009"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/summary.json",
+      "bytes": 31852,
+      "sha256": "bd3743e0645cb5a9d69f63980a2fbe7243fb724b40c6c18a2f8e5b617c6bf870"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x00_seed198/trajectory.json",
+      "bytes": 3640422,
+      "sha256": "a86309ee1d7d3b750170f31c2d7f3d3cffad2fb90d116bc7e58bf2137cdd3013"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/actions.json",
+      "bytes": 22814,
+      "sha256": "58d51aaa5dd888778f59378a3e149e7545579d04661122a5306a69180779db79"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/actual.mp4",
+      "bytes": 236370,
+      "sha256": "7d734bb20146c077eb7b20196f71196643708243cb41181384f9817bf48069dc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/chunk_00/metadata.json",
+      "bytes": 1418,
+      "sha256": "c7a25791aac889f179b0f1d19ee38d7ce4e865350412e155039954bdb146e4b3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/chunk_00/normalized_actions.json",
+      "bytes": 4114,
+      "sha256": "432e205a9475d016488f353523578984927ab4c7cba9a3d03f21f8d6f3c2060a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "9b629a20c1880f5a01002bf0bfa84caa7d0920e24609b6fbc7b3afd9f6b472c1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/denormalized_actions.json",
+      "bytes": 33581,
+      "sha256": "cfb1a48fffb222626c74d0ba3895e60987411aea0eedb7d878b74b8169584c96"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/executed_actions.json",
+      "bytes": 22814,
+      "sha256": "58d51aaa5dd888778f59378a3e149e7545579d04661122a5306a69180779db79"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "27f1f74302fa55e251a5cd1675ac5843d000b21729e8ca499bb1b588424c90c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/initial_contact_checks.json",
+      "bytes": 9975,
+      "sha256": "7ca04009377984a7115f7adc837c5d6251eb8a441c25d70ef4959965b959745a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_00.png",
+      "bytes": 145521,
+      "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_01.png",
+      "bytes": 144857,
+      "sha256": "2d415f40e3fcae3b27dccba13458badb8ec0c9f1359377429390558ce748139e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_02.png",
+      "bytes": 142544,
+      "sha256": "f474d80f2d97f74d82aed39146deec72f454fd19f70b2a7d45f54d98aca0fe0e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_03.png",
+      "bytes": 135656,
+      "sha256": "772ab944a8ce0cb659399deffc6ba183d0fa130c6556b3516b3a94d7c91fed51"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_04.png",
+      "bytes": 146963,
+      "sha256": "cbaeede0e93b9c88f37e81ce147a4821c39c37b1bd83ac85fe5c3624c5f1c7a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_05.png",
+      "bytes": 149736,
+      "sha256": "da69ab4b2445a0e8e22bdb2b5a485b9e183742a8f8251a613a14b0cbc3d30d5a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_06.png",
+      "bytes": 153247,
+      "sha256": "598d9bb453bce733a3c3dac6ce5eb49a98776325c6a3d2d182220506b6d89f77"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_07.png",
+      "bytes": 150111,
+      "sha256": "77815dbee3508f8b2ac768dec91226565bba95963e8b9d204b49e37baca79fc9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/normalized_actions.json",
+      "bytes": 32856,
+      "sha256": "0986d57c2baed63b5deb895de279abd8672ed2243e2183c681f2d85bf33580ab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/query_contract.json",
+      "bytes": 15726,
+      "sha256": "a4f42a39ebed0c15d49e343fc75936d5ee3eebf92a8f3759e72086fa16113c9c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "13a69ed7ad69676029a7aa5a46ec1681363992a5879d40d5a7eccefe95547ecc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/summary.json",
+      "bytes": 31078,
+      "sha256": "fb87e1957f01030fda9eaf8f70c41e485a903527ff3d3c27debd85d969d51c63"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/trajectory.json",
+      "bytes": 3630449,
+      "sha256": "16e34141ac9fe904292825cab52383f4059d729844c0c7eef0c0211d200f5703"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/actions.json",
+      "bytes": 23153,
+      "sha256": "efbb5dc1ee38420c0e579a94af10f80610d0a6b19abd959e47dd9f4c6abd8dec"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/actual.mp4",
+      "bytes": 230430,
+      "sha256": "7fc085a9462ffcc3ea6be5b192201fa877188355267d54675e9c4098254c12ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/chunk_00/metadata.json",
+      "bytes": 1417,
+      "sha256": "3493437342724afa59dbe5361ed8844338b80b56c398f0058c30713e8b93b74a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/chunk_00/normalized_actions.json",
+      "bytes": 4097,
+      "sha256": "45bd17c9da21f3eafc6c96856ecb4430edafa78af1fb0e5fc16a2e3fa54d9f41"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "aecce1bf96c12386b9a58eab25e6e30c2c25313f189232fe295ed747fd112d6d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/denormalized_actions.json",
+      "bytes": 33649,
+      "sha256": "af9418b27c182e45f39fd7b68fbcedabd1e2925714fb6b7ff8b5e0f8ffc23fd6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/executed_actions.json",
+      "bytes": 23153,
+      "sha256": "efbb5dc1ee38420c0e579a94af10f80610d0a6b19abd959e47dd9f4c6abd8dec"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "27f1f74302fa55e251a5cd1675ac5843d000b21729e8ca499bb1b588424c90c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/initial_contact_checks.json",
+      "bytes": 9975,
+      "sha256": "7ca04009377984a7115f7adc837c5d6251eb8a441c25d70ef4959965b959745a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_00.png",
+      "bytes": 145521,
+      "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_01.png",
+      "bytes": 144127,
+      "sha256": "7bbbab5bcea20ecfdf065afe57ca75c3bd5e5829f711e612df90d87c3fe0c4bd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_02.png",
+      "bytes": 140644,
+      "sha256": "bae543d310c32bc1a75f33c16084d72ec6113354b20c6dbf177a06e10308f4eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_03.png",
+      "bytes": 137321,
+      "sha256": "66bbfc7e58f1a88b4497dfc9d54e31abdeec896a2e283400950ed58fd111e724"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_04.png",
+      "bytes": 146807,
+      "sha256": "3c56f0b0a6331b55b660d7b25567b047a59e353305a1a1472d98ab945e130cfc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_05.png",
+      "bytes": 149997,
+      "sha256": "56ef76491dcbf6f1a9c6303c8a13d188b1874557d18e486849a8e78a11edd71b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_06.png",
+      "bytes": 153420,
+      "sha256": "efea837048f8524e614c86182ee8f1947ff4f03938d395d71b41ecb6ce4c5121"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_07.png",
+      "bytes": 145744,
+      "sha256": "add7e0fc5f0e5fa39d9f3aa5b2b247f0aef7d097f54c7281645ce5d2a0dae677"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/normalized_actions.json",
+      "bytes": 32839,
+      "sha256": "f13e0425902cfe7da7697661767c5a290faa6c2ac7cc6543128be9b2d5e82869"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/query_contract.json",
+      "bytes": 15723,
+      "sha256": "170056b1ae74b156b851a2895ff38ac79fc08df2a75377f941d4e8b929997082"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "5c76a40a00ca607e070bd9273d55bc4b10e74217c0feb2ec2e5a6e4806668d67"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/summary.json",
+      "bytes": 31120,
+      "sha256": "77463ab39bfad414286590b7c70f2e1067d8febb6eeac10497bc681a1c82b159"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/trajectory.json",
+      "bytes": 3589480,
+      "sha256": "64b2f218d8248c0379a7113bf206b2902ffb2d0fe8a74df720380644957a8090"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/actions.json",
+      "bytes": 23358,
+      "sha256": "f2e641ae684c32e328b066ee7d453f980293f38af6531b97760e2cdbedb0fe32"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/actual.mp4",
+      "bytes": 230269,
+      "sha256": "c1c10f0fd4fad5c6234b6db45bdeed88184e02482880e59dc27127cefca57831"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/metadata.json",
+      "bytes": 1416,
+      "sha256": "9d5054c68392c0c23a81ba5f71ae74662b65bb823b643f22d3408188cdbd1ab3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/normalized_actions.json",
+      "bytes": 4114,
+      "sha256": "cf5798854f6968ae0b8bef8960919bf11d5932a2c5e69ec3c8ebd0fc041cf2ad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/denormalized_actions.json",
+      "bytes": 33609,
+      "sha256": "c98cbfde37fa8131b60e184af0d79fc4ea72ae3ba7ca4740a223f7fa7ac73522"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/executed_actions.json",
+      "bytes": 23358,
+      "sha256": "f2e641ae684c32e328b066ee7d453f980293f38af6531b97760e2cdbedb0fe32"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "27f1f74302fa55e251a5cd1675ac5843d000b21729e8ca499bb1b588424c90c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/initial_contact_checks.json",
+      "bytes": 9975,
+      "sha256": "7ca04009377984a7115f7adc837c5d6251eb8a441c25d70ef4959965b959745a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_00.png",
+      "bytes": 145521,
+      "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_01.png",
+      "bytes": 143519,
+      "sha256": "ad6a9b55a17ada8393d97bd3dad6e15ece5d62efa0af3c1302aca17129b3e551"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_02.png",
+      "bytes": 140952,
+      "sha256": "b8312f9cd82c86558253814393fa4b9a28ed37ab80059c6dc3f22cc77cb82a92"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_03.png",
+      "bytes": 135682,
+      "sha256": "79b7a2ca3e41973ab3d5b61641f51098f4d77b7996dca94a0464c7cbf8fd855b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_04.png",
+      "bytes": 146575,
+      "sha256": "963a3a558acd17511734082bc9b1c578c4616ea791d840ab99536c4f03d5256f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_05.png",
+      "bytes": 148275,
+      "sha256": "edeed15e096bd1ba2e59ad55eee48d8786734496b37b8f96e0efcc31620b7c3d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_06.png",
+      "bytes": 151992,
+      "sha256": "81c76da1bfa24409ab5faf46f119d5d7811565f68fb96a9e60d54450709f16bf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_07.png",
+      "bytes": 146004,
+      "sha256": "ca06b2d9c44798e6b421df481c7d76b6260b9c18db6c77e8fbd6aefe12051ea6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/normalized_actions.json",
+      "bytes": 32860,
+      "sha256": "a7b226e27d91b63828436a21e8aac7674bc63181b769c92b53ff88d73e782f34"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/query_contract.json",
+      "bytes": 15724,
+      "sha256": "b4cd4117b64aac48dd58a8f621c0c68a529c2fcb0521f1ab42cefb32455a587e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "018b3e598df0611c1c83c5cef5892816e9aaec40301f3f65f46051b0ffe4b51d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/summary.json",
+      "bytes": 33100,
+      "sha256": "add0449952ffd6069d4fc61d457fcc3e7183468d5a2caa063784941419237faa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/trajectory.json",
+      "bytes": 3684095,
+      "sha256": "50e0881bcc37ba3d24b3be2474a4327c1d2c979b117557b1f049aaac88999c89"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/actions.json",
+      "bytes": 23335,
+      "sha256": "1a978e2b7248c4e94e3fd76a98353725a45fdb66202daaf9788bc687094757c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/actual.mp4",
+      "bytes": 244664,
+      "sha256": "89945ca3fdf810158bcc82281e1254a361dc9db3f70e6c4f8717c4f4558687c4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/chunk_00/metadata.json",
+      "bytes": 1419,
+      "sha256": "0b31f71eb7b33b15451713e56e26444b3a837cd171fa36dc8797ea8d60a6be04"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/chunk_00/normalized_actions.json",
+      "bytes": 4116,
+      "sha256": "8a6ee5fb2ecc9bbf27c688ae06263353ff8b127cf17d343361509a2576b36f96"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "44ea8dd24bfd1d570a6fcfeb9cc068b1924936b2610913df43f6224405c2bb7d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/denormalized_actions.json",
+      "bytes": 33681,
+      "sha256": "13921e6b49a64b6b181c6703130eb23401a5171959bf2aa2908667f77567d247"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/executed_actions.json",
+      "bytes": 23335,
+      "sha256": "1a978e2b7248c4e94e3fd76a98353725a45fdb66202daaf9788bc687094757c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_01.png",
+      "bytes": 140417,
+      "sha256": "f86a5bec3933f9302e8d0af38a155b4dff9e75f57264fda58159706a95c39e72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_02.png",
+      "bytes": 141214,
+      "sha256": "6f3a8b01269706d0c8fadb5c8214ac817dea85cc6b2354ef43f8438aa202abce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_03.png",
+      "bytes": 133587,
+      "sha256": "90f6564c0e6b31ddc32be5b7ddff27eef04a2c44eb434e548a382b621f0e7bad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_04.png",
+      "bytes": 134427,
+      "sha256": "7ef90eeba2ce19552e4545362e2b7dcbbd86622ee8b3e9c72ddcc70a2bba0f53"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_05.png",
+      "bytes": 144099,
+      "sha256": "248e49832b26cd573566d9d14ef26e788648d34ee3d00a713ba624e7ec2c3258"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_06.png",
+      "bytes": 153987,
+      "sha256": "b667cc20709013f38836c2c816c643cb2095d93bd4b4e25cf7d0c094e4c82702"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_07.png",
+      "bytes": 155189,
+      "sha256": "a4d152ca0bb1f436899831de3904c170a02dca3e286dbd54f5afe86a2443e2c9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/normalized_actions.json",
+      "bytes": 32798,
+      "sha256": "e9c181095ba17752219d2b09425946c3b02c82cc4c6b5fdd81ee3dbb9c2daabf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/query_contract.json",
+      "bytes": 15734,
+      "sha256": "6cf108534b4d400b962e91ca8b90547cd9440078127b2ed667bc5d6dc1ccdd24"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "e31fc8ac0ff27ac2c71af15786af7abeb64de7a2d13ad82cf1b9312d8f39232e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/summary.json",
+      "bytes": 32010,
+      "sha256": "8883119f05a74da5a6b277db1abc4a5c4e946794b16eacd2ae0880ff7cdf917c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/trajectory.json",
+      "bytes": 3636169,
+      "sha256": "83316e6e50eda2b0a635166550ebe7e5467926485c37ed6d6488ce67519bb66f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/actions.json",
+      "bytes": 23130,
+      "sha256": "732a669f159d70cbe7cd30dcdcfd25598ce44db13d00685165c52839990b19c0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/actual.mp4",
+      "bytes": 250097,
+      "sha256": "49eca8738c1a2eef8fe9952cbc493ef67932a9f5efe7dd93d027fb95d066ddb8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/chunk_00/metadata.json",
+      "bytes": 1418,
+      "sha256": "51091faa8fef3f89317135545d9334756e50dce38c609ea6d69b8cc4135c189e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/chunk_00/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "6c4d1351225bd7f7bfa5139c3562bd32ab5a3f8f1cf3fed32bab792c4b18b01f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/denormalized_actions.json",
+      "bytes": 33718,
+      "sha256": "d518e15fcbf36818f37951f5e063b3357a240579ff8a7e7bb9989ac89050128f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/executed_actions.json",
+      "bytes": 23130,
+      "sha256": "732a669f159d70cbe7cd30dcdcfd25598ce44db13d00685165c52839990b19c0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_01.png",
+      "bytes": 141368,
+      "sha256": "28b20e665193681278ccef793246a2282e672779d9420c80c7cd9a1c86620186"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_02.png",
+      "bytes": 138390,
+      "sha256": "12341c468d1c4a00b308f59b9e15f86510f089580edfee88f329dc836c1a7032"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_03.png",
+      "bytes": 132763,
+      "sha256": "95c830088e8be65a49bc818bbc91a6e46ec65a5cb42daee35ea4a6537b80baee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_04.png",
+      "bytes": 133464,
+      "sha256": "a3f29822d39d95da3bc65c87e5563080ade2772a59d1264a1e56ee40e787a367"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_05.png",
+      "bytes": 145313,
+      "sha256": "781fd659527f3380163d19bab1c714a67f97a2fd882d4b6cac5b304e1d37a08c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_06.png",
+      "bytes": 154151,
+      "sha256": "5f098cfd5f23c241acaefd9778f2539505a4b96dbddcc0a80bee2ffa7140e204"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_07.png",
+      "bytes": 153586,
+      "sha256": "9637287bfa883ab63287d1735ca78ea5ba2edc1065be86124124ea1620770af2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/normalized_actions.json",
+      "bytes": 32840,
+      "sha256": "c088263e2f0a93b0bf43d49898712d0bc8279e03c71b081bf7588ef36119c4e6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/query_contract.json",
+      "bytes": 15733,
+      "sha256": "590f68a5d949a3db8dced636d9dfe68c46afb99378bf4a8bc54030546dd79346"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "2ac19e624d9ce6aab166013780dd43fe6c5e8d9406f5f0bb5dbfdb3acd7915d9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/summary.json",
+      "bytes": 28393,
+      "sha256": "6fb1161a03f3c0eeb309ae9f1be927171456cd38e7bcc2be1d729f823d8d225b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/trajectory.json",
+      "bytes": 3628884,
+      "sha256": "7c9d3418c0adefe1290d331a45e2b1399f78e55aade8e519c3d5cfad60fe5301"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/actions.json",
+      "bytes": 23444,
+      "sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/actual.mp4",
+      "bytes": 235458,
+      "sha256": "ab6a4c81511686b0d6581c183ab61673b52e8af4f45cc9b57a0bd3fe2ed1f4c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/metadata.json",
+      "bytes": 1419,
+      "sha256": "29fcad366b46282b88cef2e3548907b17d0905426370408f2b57a0c649d193f9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/denormalized_actions.json",
+      "bytes": 33705,
+      "sha256": "44f702738429612dd19f6515af335ca197a1763bfd95a926d4587cc1c8a8cc9d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/executed_actions.json",
+      "bytes": 23444,
+      "sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_00.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_01.png",
+      "bytes": 141335,
+      "sha256": "0a129d8a5a30219a232db6c4cd44159a20fdf8a83e998128ba0fe1776bbbb0eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_02.png",
+      "bytes": 136897,
+      "sha256": "322899fb33b0d8b0b29e3de64925b0c9a3c80b71dce3c74597eac3dda3ce24eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_03.png",
+      "bytes": 127925,
+      "sha256": "f1eaa9f7702010b15c64c7d0bc8aad8342c9328650b07cc00dcf01b0fe81f0fb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_04.png",
+      "bytes": 126535,
+      "sha256": "35980201d7eb849689d261ed105134177171f5a64559c3a905be88333d845d6c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_05.png",
+      "bytes": 142645,
+      "sha256": "40e96e6fb7740d29c551e843d1a00092afed5de429b3bfee2bea6f9e662c8906"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_06.png",
+      "bytes": 152439,
+      "sha256": "3368099aa384b8191d1ab54dc77fe720c2d1187100ffad2a74693a360cf277e1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_07.png",
+      "bytes": 151903,
+      "sha256": "f30b2955cba5c2a7ec8611e35c1241356e60d25626ade8e3868695af273f867f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/normalized_actions.json",
+      "bytes": 32836,
+      "sha256": "5dd6beca584f80f7e99ecc4e2b697bb7da46522de3211ced0348fb4a60eb5aef"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/query_contract.json",
+      "bytes": 15735,
+      "sha256": "95c9a59b6bd0edaebbc6424abd2eb0e6902466b25551583beca524999613b70d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "8abe7f88aacc4b15b42db58235cb3eaea6c75fd899c87e71b1069233ea0ea952"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/summary.json",
+      "bytes": 28444,
+      "sha256": "57c4f244afb6f0fc4150800d59af542299da1b36c2f83021cd7922f115d337e9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/trajectory.json",
+      "bytes": 3663597,
+      "sha256": "cbfef2a3fbcca093b90d434dae7b90367a712aef03ecf93de3fc422a6ea90e5c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/analyze_cosmos_milk_shift_components.py",
+      "bytes": 16249,
+      "sha256": "b29129181c741f58bb130f624dcb914a2bbf76837dbfd979ac75100c94704032"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/analyze_cosmos_milk_shift_trajectories.py",
+      "bytes": 20672,
+      "sha256": "ef6c4aefc533a86d647da299a97656f70532c7b7e78f4690d949907537305e74"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/cosmos_component_interventions.py",
+      "bytes": 32973,
+      "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/export_cosmos_milk_component_excerpt.py",
+      "bytes": 3568,
+      "sha256": "d4a93f5bc282f111767c86be450095f4351c6cd5e3d69f76106eb825b523ff1c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/local-mechanism-literature.md",
+      "bytes": 16239,
+      "sha256": "7a85c0e19995690274bc594d8ed6b12bd1e0c9bd8bfd190353ba300084bf40b8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_attention_heads.py",
+      "bytes": 13456,
+      "sha256": "e2266eb71dbfa623f4e9135daeeeb6e3a01b1ecff64717179bca71505cb9bf5e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_component_pulses.py",
+      "bytes": 16368,
+      "sha256": "da56c043c1abdadf52ba7b51d692f3d151b7f59e513a0e515d627de6f633e8c4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_feedback_inputs.py",
+      "bytes": 15502,
+      "sha256": "4cf8069f2b1e8ee97c36b476bb64e0f01ad3e7c852d0491870224e4a7adc6ad6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_attention_heads.py",
+      "bytes": 32501,
+      "sha256": "24e37b097d80e31c7602989cf59eff255184b94729eb31e6ef992f2b1fb52bed"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_component_pulses.py",
+      "bytes": 28399,
+      "sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_feedback_inputs.py",
+      "bytes": 26333,
+      "sha256": "34e5b749b0c3a086b317189945c71b5983ec70d69a080b289f8df72439afdc1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/rollout_cosmos_milk_pulse_candidates.py",
+      "bytes": 8919,
+      "sha256": "5462c87aad474eb89f6b49328234a1b8f37fff41de72bf5cf815eac9d51599c6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/rollout_cosmos_milk_shift_mechanism.py",
+      "bytes": 27748,
+      "sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/serve_cosmos_milk_pulse_candidates.py",
+      "bytes": 9100,
+      "sha256": "ae85ba51468f591e61988b925ac3d3d68ad9f55a38d0f8d5093be51563e42725"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/serve_cosmos_milk_shift_mechanism.py",
+      "bytes": 9792,
+      "sha256": "5005b97785bc22bc37a2aa7361500ab93ef300ceaa9e0f83fa9e1d4ac71b1ab5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-analysis/attention-delta.png",
+      "bytes": 74356,
+      "sha256": "375c23603bcde71c161d08e2b20a84041300f7fb3158d3bcd962fed40899fa53"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-analysis/attention-mlp-cosine.png",
+      "bytes": 84594,
+      "sha256": "e710d3cb7fe26d8e7474c7433618715614317ee716c328d2dd97fd3a98cae71d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-analysis/component-deltas.npz",
+      "bytes": 280250,
+      "sha256": "862d2fa15e1fc57f820016eb88bef35d248d3b5c9b551badfd1db3a90d32006e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-analysis/mlp-delta.png",
+      "bytes": 74840,
+      "sha256": "81fa28d166eb7c322305404ed01f8318dee67f052298f9f1a6a4d6764fa36ae4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-analysis/plots_complete.json",
+      "bytes": 60,
+      "sha256": "d17a5036b5d2b9f7df66fd42b73e711bdde9422a4b383a8777d98be11938cde8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-analysis/summary.json",
+      "bytes": 43194,
+      "sha256": "3cc8097b713b132db003dd4d15b623cf7ec5ce31c75f57358e8c0a8e008eb271"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-excerpt/actual-bf16-bits.npz",
+      "bytes": 16910144,
+      "sha256": "06f2b13f0b0def6a890bacad47cf20695ff77f347a0ee237e4a9c2d29fcd8146"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-excerpt/manifest.json",
+      "bytes": 73619,
+      "sha256": "315bd585f20c78ba6b7f88518fad43cb7c674eb00fdb25c5eee0618fdb88067c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/complete.json",
+      "bytes": 757,
+      "sha256": "4ab328c823449b1be676a8f146cad4b5acc46f5d7788393d04f8fc023ad725bf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/figures/plot.json",
+      "bytes": 10108,
+      "sha256": "7e327a210902af3582255951d97fb73fd0d8921833797b84b444b68723f8525f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/figures/post_pulse_action_state_axis.png",
+      "bytes": 173870,
+      "sha256": "e4f7f664c98e49fe917f5ea349978ebe96f3c9d2505b9c8da97adb68e3030190"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/figures/signed_xyz_pulses.png",
+      "bytes": 235966,
+      "sha256": "d0335a576d34ad49416ded3fda09f81db36cc70eac2496667008043d2bb17d84"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/pair_selection.json",
+      "bytes": 1698,
+      "sha256": "ea92551df389e57967ba48bb9f697ab469863d6215c04b93f1f078ad522ec0dd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/provenance.json",
+      "bytes": 2981,
+      "sha256": "f459f6e376a2016b770d36bc5d5922a0f4f4868ff1c741491e624695851053d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/results.json",
+      "bytes": 121552,
+      "sha256": "efb2fe3cba6556a51230cc3a3b696c751fdf259500185f492e34b7e9cc57b0ec"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step20/metrics.json",
+      "bytes": 52280,
+      "sha256": "252937e7975aafa5b5f3e3bc4524c2cb0e3c37b49214e1e296ec112534bf9bc8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step20/patch_report.pt",
+      "bytes": 265166,
+      "sha256": "c33953c9c8de3724f9083724101edbe9ad7d0bccdffe2e358ebbdbc1dfc9655a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step20/states.pt",
+      "bytes": 4824169,
+      "sha256": "68a36a4647711e59c3d4b25b654f12afe7770e6f7890124fac06e0c331b4b4c7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step29/metadata.json",
+      "bytes": 1294,
+      "sha256": "2227c9c7ed8edd3c974fef2af02efc2f5a7ddd009058ce53cf59c5f095661571"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step29/metrics.json",
+      "bytes": 49827,
+      "sha256": "80f2023948d1d631eca5a3114a3f19d24f4544f19fd3e82bd366ab131032d123"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step29/normalized_actions.json",
+      "bytes": 4117,
+      "sha256": "45b390fcd7fd7e7cb4bc22b6167cf1020ae1e4b58c30b545f7b4704f100252b9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step29/patch_report.json",
+      "bytes": 1368,
+      "sha256": "463ac97ec2fa1a36dfe79528ebe6b85c70ff4b93b556f50c1f95b48b7aa1d292"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step29/patch_report.pt",
+      "bytes": 265166,
+      "sha256": "eb6fabeab84408153b2188ed42a7a516a289a59d34d28a0fed457853c379045f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer17_attention_step29/states.pt",
+      "bytes": 4824169,
+      "sha256": "67b5b6294a2b2f421a8ff8cd82969530df7f94a6b60e67ec893414fc32213f1e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer29_attention_step29/metadata.json",
+      "bytes": 1294,
+      "sha256": "9f4646e3527589fcc26e265497e8271d0f106de5f3fac23a5faf8d3f85daff4a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer29_attention_step29/metrics.json",
+      "bytes": 49831,
+      "sha256": "296d0d1d80656a7b342ecccecd2db2ff4f0f2db6f4e5b40a71c15d3ba7df9a3a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer29_attention_step29/normalized_actions.json",
+      "bytes": 4122,
+      "sha256": "09753b14010e6b1c2fd1c22912c22db27650d9934770c9817baa6233d0620b31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer29_attention_step29/patch_report.json",
+      "bytes": 1369,
+      "sha256": "8fcf58393c604542da60b4e9a8a51b8373dab0b19f2a356ec845441d963ab162"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer29_attention_step29/patch_report.pt",
+      "bytes": 265166,
+      "sha256": "4d98c411f88941abf791b745e08db620add6ba89633303f8aff89975357856c1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer29_attention_step29/states.pt",
+      "bytes": 4824169,
+      "sha256": "4e4a78a570bb421e4eedd9d24044a13d796ebcbc581555d0f0fb3bbd8f18dc3a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer31_attention_step29/metadata.json",
+      "bytes": 1294,
+      "sha256": "6863199f103a139991956072197ec4dd9fd849a97d24ed76b0c19a0118eb34ad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer31_attention_step29/metrics.json",
+      "bytes": 49826,
+      "sha256": "c9200033952f22ed01bd1d4556ad3d95325c736a01f9c6731ef4278c21eb31a4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer31_attention_step29/normalized_actions.json",
+      "bytes": 4126,
+      "sha256": "6228f843b8343f5de22e710fded6344488b5453a8e67a9ea47288f28dd1b7bb3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer31_attention_step29/patch_report.json",
+      "bytes": 1370,
+      "sha256": "067a5348f384f200597c0e1aa95d63dfca4e48ea392118a5189261e06a095dce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer31_attention_step29/patch_report.pt",
+      "bytes": 265166,
+      "sha256": "f50620e97cd0e5fa6689221c7a6a71affd1725b7ae58d6a1c24d084f3008d33e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/runs/layer31_attention_step29/states.pt",
+      "bytes": 4824169,
+      "sha256": "a1478728e22841774f2b03ce8d514bd9d54b20be3e438aa2938256946c3c1e5b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/top_candidates.json",
+      "bytes": 6937,
+      "sha256": "2f5fe8854edebfbcc5eb4e556badc6da857164c66e7c7c67c1bcf88df8ce9b16"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/component-pulses/validation.json",
+      "bytes": 5739,
+      "sha256": "eceed70ed41b7e9d3de5384c706d98f1be29ceeb078072a8f832cb1519e163c1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/complete.json",
+      "bytes": 695,
+      "sha256": "18c3f89c65a2e4b38ee2d16a671f19354df050f72fa5f1ba849ff01154b8bcdc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/figures/fixed_t21_input_interchange.png",
+      "bytes": 218253,
+      "sha256": "1596c0ab5b463af32b1fbf1fc0c698ce3acb348a556cb4682c849ea2e4846ac8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/figures/plot.json",
+      "bytes": 50912,
+      "sha256": "733e25149302b8562d0011f4c02c0506f8924746086f35dcbfd9108ab765a8a0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/progress.json",
+      "bytes": 297,
+      "sha256": "6c5545c2400ad633b41fa4f71f26a795949ec87270f3beb2025c7b60e0a65c15"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/provenance.json",
+      "bytes": 1626,
+      "sha256": "5ca0b33398da8db28d45d13e28da07b9ed81f7a7245dd6d3389423607e33f7dc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/factorial-arrays.npz",
+      "bytes": 21585,
+      "sha256": "846760547f2032370f98cd0508e2f744533251ed718c0782cb7963d2ad89ea62"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/input-contract.json",
+      "bytes": 2314,
+      "sha256": "235ac4668f577271a1eff287a04695d5b14dfdcbef6cc8a08cdc9310d5d5e62d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/native_R_q0/metadata.json",
+      "bytes": 1370,
+      "sha256": "c63a5d540a3611eca24e9be6d6401a14e7c31c92496378c535cb5c4993ea2683"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/native_R_q0/model_inputs_20_21.pt",
+      "bytes": 229829,
+      "sha256": "54d5ced20d188019894880d8eb3f6621a7513f67343a3e55f826cd8518ded25d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/native_R_q0/normalized_actions.json",
+      "bytes": 4116,
+      "sha256": "8a6ee5fb2ecc9bbf27c688ae06263353ff8b127cf17d343361509a2576b36f96"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/pulse_P_q0/metadata.json",
+      "bytes": 1370,
+      "sha256": "70d8c8a19a7e9226d988fb3b39bbed8605be31997b1e9f2dfe5838bb3062897c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/pulse_P_q0/model_inputs_20_21.pt",
+      "bytes": 229829,
+      "sha256": "6bcfdf28334686248e5bd83b6821deb060601a66cab8f726fed63ba1bfefeccd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/pulse_P_q0/normalized_actions.json",
+      "bytes": 4113,
+      "sha256": "ec6ff35a349f9cce8012d70c3ba08416e784d12592bc79ad19b0d4a244c7ea2e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/pulse_P_q0/patch_report.json",
+      "bytes": 1370,
+      "sha256": "0ba29a6b982139a89ec224967577d8e62b7b058200184f37d28e16866b1b2a5d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PP/arrays.npz",
+      "bytes": 4728617,
+      "sha256": "d8fceeded7599fcfa09d08e61969e3de1348bdd27566812fc5aab11de967595a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PP/metadata.json",
+      "bytes": 1679,
+      "sha256": "058aef4f77340fd511b32e16b8fd2143354e9dd9f445857cfacf10b8a1d72997"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PP/model_output.pt",
+      "bytes": 99917,
+      "sha256": "98b04f9e0f084afd6780b707d0c1a2fcf0bed296e39da5b45076483d08d8e535"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PR/arrays.npz",
+      "bytes": 4728982,
+      "sha256": "9ce9c3c2df7202d7d5e1dd22943ca590632e2635d9d395c30125e89a4a5644a6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PR/metadata.json",
+      "bytes": 1681,
+      "sha256": "48c3c6e7d08bf91c42840e777bbb68e31393f0e5da23b98844190c8bd1636060"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "2e7b54fbef4f19763908d1a602f7983ee6876a3b2dae14c8b8699c35f8687325"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RP/arrays.npz",
+      "bytes": 4728318,
+      "sha256": "38233b3b610660f62c722cc4d5dc2b80caa2471a876ef83651909de89a643db9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RP/metadata.json",
+      "bytes": 1681,
+      "sha256": "2bdb5d030c099ebd2708ea7fea0af26f8e6490a4ec80b1b6ce0a465481a9be61"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RP/model_output.pt",
+      "bytes": 99917,
+      "sha256": "a5355c8b66ab5c1498b1801d40aecf264a427e4108bc933a2e13e601da981819"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RR/arrays.npz",
+      "bytes": 4729221,
+      "sha256": "83b189877bee887c40ce1be7d7ee87da864b3659439f13980d688bd69016f99a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RR/metadata.json",
+      "bytes": 1679,
+      "sha256": "60558e7a90b93c4e75c3878be7147db0704b449367306b525b8198821e43d9e7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "631cde542b9ef21a79257e15d6e74c73cda6805a4b58820c542c8a59f201f8a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed195/summary.json",
+      "bytes": 7012,
+      "sha256": "1a24d78bcad1b439d67aeddb4edf396b5a2ed529465656f241abea05ee2165c9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/factorial-arrays.npz",
+      "bytes": 21461,
+      "sha256": "f9820263f18313c3e152dff0c73c0f0ce66f89b9f2373eee5b30138ea674b150"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/input-contract.json",
+      "bytes": 2314,
+      "sha256": "1ca3908e12791b8e2ea4eff6e7bf572ea5684ddd218dd04acc3b46011d89e6d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/native_R_q0/metadata.json",
+      "bytes": 1370,
+      "sha256": "cd56686c467de38dcd78209747d156aafbc2c4ca7ba4a82664f492879529498e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/native_R_q0/model_inputs_20_21.pt",
+      "bytes": 229829,
+      "sha256": "f86e537b8a80d45b32760a690adbc07b7443153f4a54882d1808118fe182ec6a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/native_R_q0/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "6c4d1351225bd7f7bfa5139c3562bd32ab5a3f8f1cf3fed32bab792c4b18b01f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/pulse_P_q0/metadata.json",
+      "bytes": 1370,
+      "sha256": "876f27ea88902335138ba97a86be6eb68d4786ff1abffc768267b42654bc22ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/pulse_P_q0/model_inputs_20_21.pt",
+      "bytes": 229829,
+      "sha256": "129ec180e204eb2106edc013425fb07d836be5634444b05b27eebd2ee9fb1a39"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/pulse_P_q0/normalized_actions.json",
+      "bytes": 4117,
+      "sha256": "d9db5021507158ee1b8131beeb4ec42fa9be28c153ee613d5a1db473a1aac1ff"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/pulse_P_q0/patch_report.json",
+      "bytes": 1369,
+      "sha256": "120bda729fede4e124cc562f7107117f74ab32cee20bc9ebb54a9ebf75148957"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PP/arrays.npz",
+      "bytes": 4728863,
+      "sha256": "167d0f2c718e168db06262fe7a95f25697c5ea6f8cb02aab1ae95ac870a13815"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PP/metadata.json",
+      "bytes": 1679,
+      "sha256": "12dc0f2b8b49ab4876ade8510ae3612fa6551cc2f828b61ba3e0bacf128bbc43"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PP/model_output.pt",
+      "bytes": 99917,
+      "sha256": "fc744399ed20ec0dd66661f4577f07739d6311b39c4fc7d6a4450314e57a39e3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PR/arrays.npz",
+      "bytes": 4728527,
+      "sha256": "afbe8a89e289c9c5b9fe41b108e22ba5bab998ca20039b93e0602fbe5355ebfb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PR/metadata.json",
+      "bytes": 1681,
+      "sha256": "6ceafd027ff92a8a25b7deefa14561760757ca1c4e39f58455a60e68969abe6c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "59a9df46e3bd9c162fd57ea6b845992d5edb121640055f63a0803fe3c5818c79"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RP/arrays.npz",
+      "bytes": 4728770,
+      "sha256": "2ab7854bf8ccb9c884e9dfcb9487d96519c4940983d2ca7f6521c09f39be2c3f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RP/metadata.json",
+      "bytes": 1681,
+      "sha256": "bcd4105a4937f06e6d91611f20f508eaac2fa999df2baa6e36e87545ada77112"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RP/model_output.pt",
+      "bytes": 99917,
+      "sha256": "131ef4a19f3458d505643057058612d02854b7e8edc834ef88abb6cf887bfb89"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RR/arrays.npz",
+      "bytes": 4728926,
+      "sha256": "1208cee5c97ec5a2d991783b0b0f54cea40f5d626959102170cdd6568b84dc2d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RR/metadata.json",
+      "bytes": 1679,
+      "sha256": "7a8704956d200a3fb9926813d5f55a227c96bd3f102eaa57bad40eb79ded3df6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "69f5ab6427821b56f7f5722531bc9c07a739338507373d9c9a251f747e325326"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed196/summary.json",
+      "bytes": 7034,
+      "sha256": "9eae7ad9b5e971003ed50b761647a0b40b6f1304923f682598bbb94d26db1d3b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/factorial-arrays.npz",
+      "bytes": 21577,
+      "sha256": "d1f290a36e91d5794086f37fc6ff616dc43db32eb998761a86b0be4bba57453e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/input-contract.json",
+      "bytes": 2312,
+      "sha256": "fcbc785b7dc68bae06fb48d805d447554df6c266bfb648a3481b0622f4e9324e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/native_R_q0/metadata.json",
+      "bytes": 1370,
+      "sha256": "02ae68e03aaac4b36c7a510305688c68e0868b7a466edf4ddabe7721f7afe82e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/native_R_q0/model_inputs_20_21.pt",
+      "bytes": 229829,
+      "sha256": "16a2fa8be47b94a62279c365e3f0186fc2cba6817e9abb6388db5a9dcb61dad6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/native_R_q0/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/pulse_P_q0/metadata.json",
+      "bytes": 1369,
+      "sha256": "a34ba814b2843555b09e058139090794f37277d798a90d17597d4104ee4d7227"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/pulse_P_q0/model_inputs_20_21.pt",
+      "bytes": 229829,
+      "sha256": "5583a736b9adede167d7d035284017d8b907aaf68e71f79987298c76eaa1ef01"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/pulse_P_q0/normalized_actions.json",
+      "bytes": 4120,
+      "sha256": "8d6cff35d6d2a3d7948e22291075b50e5e0ba485eeb5f4253440a38232b76519"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/pulse_P_q0/patch_report.json",
+      "bytes": 1369,
+      "sha256": "6ab222b2a73e86e71786cac80ab002770a9bd0b98bc21b9b66492290adeaf541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PP/arrays.npz",
+      "bytes": 4729713,
+      "sha256": "c8960e6ce274dd6b85d9598d7c8e2b617a06171b82e4e9548b9895b95bcee0e7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PP/metadata.json",
+      "bytes": 1679,
+      "sha256": "ea7769b7b090d20c1ab38e54ce2bb339d504f11a601e75ced73a9de8653371a0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PP/model_output.pt",
+      "bytes": 99917,
+      "sha256": "48f6cf97c8bb9b938fcc14630c375958914b11b7c319f34c41b0872593414d54"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PR/arrays.npz",
+      "bytes": 4729186,
+      "sha256": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PR/metadata.json",
+      "bytes": 1681,
+      "sha256": "f735e613ad8bb7459d22e3b6aa7709a70ce94cd1bb068666076d7b9c74189cf6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RP/arrays.npz",
+      "bytes": 4730001,
+      "sha256": "9f1011ee9bd2d85f7a01def7486afcd7d99ad5f2f5a1b515468c624459bd4746"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RP/metadata.json",
+      "bytes": 1681,
+      "sha256": "aae79f57f7eb8f1aa235dc313c244a33571605569070e4c8f672e581b83b3d48"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RP/model_output.pt",
+      "bytes": 99917,
+      "sha256": "5c8f64c9443900208108788aae636caf065c543e3ad89ac75130f1b514f7e14d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RR/arrays.npz",
+      "bytes": 4729764,
+      "sha256": "5485c14ad002d7a48bf0f0d47957c917ca47072a3088ba0f384bde0655f71097"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RR/metadata.json",
+      "bytes": 1679,
+      "sha256": "d58051e9cd113bc0b3828cb421a67abbe56eb7a0a24a80238b8e60959a72e6f7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "575f41f8da4c63526bf1776cf87e188a65293fe85e672ffd0b1c704471912f9f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/seed198/summary.json",
+      "bytes": 7046,
+      "sha256": "473df692dd9c9904d483083c412c83d3c5cb797d58dac2149d0c45184eded7e7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/status.json",
+      "bytes": 69,
+      "sha256": "528c65bd98f607c81064a5ecfe0d85bfaca224ef1aaaa1305120bcec4958abd1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/feedback-inputs/summary.json",
+      "bytes": 24122,
+      "sha256": "14ff8d79984969520611476432c6ff9a2350bff610b89685d0ddd21eda3d041f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/complete.json",
+      "bytes": 322,
+      "sha256": "edd49761a1b680f4a8cc6e62d5212be2029dd11078358cad022f960ad2206863"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/metadata.json",
+      "bytes": 4255,
+      "sha256": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/agentview.png",
+      "bytes": 77468,
+      "sha256": "20d5fef002dbfd1e45ae5b7f27bdad8a2dd5d2d893b9a1105b6d9d1d88bd7a31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/arrays.json",
+      "bytes": 14950,
+      "sha256": "2caf57745387b7d7095cc47a5a1113692d3dcc5f31138970389de26e0f64f3da"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/cameras.npz",
+      "bytes": 1642,
+      "sha256": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/center_restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/controller_checks.json",
+      "bytes": 137,
+      "sha256": "b5486e5fc7b326737a03549d5f12c709609fb25a24014c83dd00ec9e523060e5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/fixtures.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/input.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/objects.npz",
+      "bytes": 7785,
+      "sha256": "7f375083f12d199262f1922b6f819f74c7a137c398b6d4be839f5b1a89b2f9ea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/observations.npz",
+      "bytes": 206370,
+      "sha256": "4e0863d72e50d6e0839771dfd3dfafdbf9247c369d0699d34f10747d33ea0af6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/restored_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/robot0_eye_in_hand.png",
+      "bytes": 66421,
+      "sha256": "998b8904c91957343198c8b5a0fb4d79f77bbb720cb47340890bc7f8d874949c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x00/state.npy",
+      "bytes": 1008,
+      "sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/agentview.png",
+      "bytes": 77553,
+      "sha256": "eda3fa62b684466576867feecd7176b53273011c0b991b1a66b557bd798ce437"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/arrays.json",
+      "bytes": 14950,
+      "sha256": "162d2090b185819e054a803218c5fe64791c82c95481a15465189b7e43d315dd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/cameras.npz",
+      "bytes": 1642,
+      "sha256": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/center_restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/fixtures.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/initial_contact_checks.json",
+      "bytes": 9975,
+      "sha256": "7ca04009377984a7115f7adc837c5d6251eb8a441c25d70ef4959965b959745a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/input.png",
+      "bytes": 145521,
+      "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/objects.npz",
+      "bytes": 7785,
+      "sha256": "a1814875bc0c48ec6b0657474cf82f641b9927d07feb600449405dea404101e1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/observations.npz",
+      "bytes": 206594,
+      "sha256": "beafb7388d936d9a348a52d29c835c0aed277eb1d614bf6d97f06c975230e0cc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/restore_checks.json",
+      "bytes": 35065,
+      "sha256": "27f1f74302fa55e251a5cd1675ac5843d000b21729e8ca499bb1b588424c90c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/restored_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/robot0_eye_in_hand.png",
+      "bytes": 66573,
+      "sha256": "595f487c207f0cab73954e669df1a6b7e8632173acc661aebbe783d0258402dc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x06/state.npy",
+      "bytes": 1008,
+      "sha256": "0faabae2dbe40b143a088e9d6d4759c517ef8f83adb90344c94343ab9085bec9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/agentview.png",
+      "bytes": 77545,
+      "sha256": "e9a8177e075646bfcc7080843899ff9f8fb7ef047d80fe1a2f11f1ca1660eff9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/arrays.json",
+      "bytes": 14950,
+      "sha256": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/cameras.npz",
+      "bytes": 1642,
+      "sha256": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/center_restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/fixtures.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/input.png",
+      "bytes": 145848,
+      "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/objects.npz",
+      "bytes": 7785,
+      "sha256": "c0d350a01deca91b9796f29e9eed0196fd1d033c1fa20aa3086fe4246d87caa8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/observations.npz",
+      "bytes": 207003,
+      "sha256": "6b424796b24c3d6bb697ef7afecd4cffe218e2694b3b205be432c2aa9ab36b92"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/restore_checks.json",
+      "bytes": 35065,
+      "sha256": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/restored_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/robot0_eye_in_hand.png",
+      "bytes": 66846,
+      "sha256": "e035be8f8a448ba38bd613d3338de1ddd751d1a3f5f1129add5a306853a58402"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/inputs/x15/state.npy",
+      "bytes": 1008,
+      "sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/server/complete.json",
+      "bytes": 164,
+      "sha256": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/server/observer_control.json",
+      "bytes": 88,
+      "sha256": "c5f09f567521d4ae8f479ca48f52741a52edc9940b53721fa02ab55571d1f69e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/server/provenance.json",
+      "bytes": 1035,
+      "sha256": "ae05cfba57893c589d6d6644ea13fd45a16acc90366c555f39988968fb5cdfb5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/server_process.json",
+      "bytes": 444,
+      "sha256": "fb9102208463728c82e30b8fde3a41d7dee37d950cb3b469223c69fd0799f7eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/simulator_complete.json",
+      "bytes": 354,
+      "sha256": "1c0e33b04568c3336116df65f2c13d60c253abe88768d9ca3a07fbb720feef05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/simulator_process.json",
+      "bytes": 464,
+      "sha256": "6ed3f23052de0f664ae97165d265407be954c2f1a5ae0433a7ee1a554b20f3ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/summary.json",
+      "bytes": 326222,
+      "sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/trajectory-analysis/actual_eef_xy.png",
+      "bytes": 183956,
+      "sha256": "4e620ec56c09bfc07d2aa5d846abb49df9d80076a8541542ba969034ee46a86f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/trajectory-analysis/complete.json",
+      "bytes": 1411,
+      "sha256": "c38dda544d7e7df13c7962f7b42bc3846e031a3493fba8d24d3f61c1fb4d940e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/trajectory-analysis/metrics.json",
+      "bytes": 103537,
+      "sha256": "4411ab6ab9afb8da3df0dd4e67a06107b1f0319c50e5c67c68189bb8834f86d9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/trajectory-analysis/precontact_xy_distances.png",
+      "bytes": 285712,
+      "sha256": "edf7a2056e4743f2115fccad7e602f73c9bd2443862e50a0badcd97419ed2562"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/trajectory-analysis/trajectory_arrays.npz",
+      "bytes": 533095,
+      "sha256": "79d37e0d10ecd2a468401ca3d0a6eff8c3cf46b10672af481a538cad48f5be52"
     },
     {
       "path": "notes/identity-position-design.md",

@@ -1,0 +1,62 @@
+{
+  "seed_preference": [
+    198,
+    195,
+    196
+  ],
+  "candidates": [
+    {
+      "seed": 198,
+      "donor_trial": "x06_seed198",
+      "recipient_trial": "x15_seed198",
+      "donor_strict_selected": [
+        "milk_1"
+      ],
+      "recipient_strict_selected": [
+        "cream_cheese_1"
+      ],
+      "eligible": true
+    },
+    {
+      "seed": 195,
+      "donor_trial": "x06_seed195",
+      "recipient_trial": "x15_seed195",
+      "donor_strict_selected": [
+        "milk_1"
+      ],
+      "recipient_strict_selected": [
+        "cream_cheese_1"
+      ],
+      "eligible": true
+    },
+    {
+      "seed": 196,
+      "donor_trial": "x06_seed196",
+      "recipient_trial": "x15_seed196",
+      "donor_strict_selected": [
+        "milk_1"
+      ],
+      "recipient_strict_selected": [
+        "cream_cheese_1"
+      ],
+      "eligible": true
+    }
+  ],
+  "chosen": {
+    "seed": 198,
+    "donor_trial": "x06_seed198",
+    "recipient_trial": "x15_seed198",
+    "donor_strict_selected": [
+      "milk_1"
+    ],
+    "recipient_strict_selected": [
+      "cream_cheese_1"
+    ],
+    "eligible": true
+  },
+  "criterion": "Simultaneous left/right fingerpad contact AND >2cm lift in each of five consecutive control-step records.",
+  "exclusive_object_selection_required": true,
+  "baseline_summary_sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533",
+  "script_sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+  "scope": "Fixed first observation/q0 local component-output causal scan only. No MuJoCo intervention rollout; no claim of grasp repair, target identity, attractor, or a localized root cause. Persistence may be solver inheritance."
+}

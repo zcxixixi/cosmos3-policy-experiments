@@ -1,0 +1,26 @@
+{
+  "script_sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845",
+  "inputs_metadata_sha256": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a",
+  "stats_sha256": "bf20cb010fad4ee5754ad83dafab0fce509fc99594d75a3a151d07cf81c905ac",
+  "prompt": "pick up the milk and place it in the basket",
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "queries_per_trial": 8,
+  "actions_per_query": 16,
+  "steps_per_trial": 128,
+  "seeds": [
+    195,
+    196,
+    198
+  ],
+  "shifts_cm": {
+    "x00": 0,
+    "x06": 6,
+    "x15": 15
+  },
+  "additional_warmup_steps": 0,
+  "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift in each of five consecutive control-step records.",
+  "action_conversion": "Quantile affine inverse; _framewise_action_to_delta(6d); _remap_gripper(zero_one); clip [-1,1].",
+  "scope": "Nine matched 128-action milk trials at X+0/6/15cm, three paired noise seeds, existing warmed snapshot and fixed current model. No benchmark success-rate claim."
+}

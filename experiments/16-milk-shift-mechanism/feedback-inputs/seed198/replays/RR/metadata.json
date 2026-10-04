@@ -1,0 +1,68 @@
+{
+  "label": "seed198_RR",
+  "original_denoising_forward": 21,
+  "timestep_values": [
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299,
+    299
+  ],
+  "actual_boundaries": 37,
+  "layer_convention": "Boundary 0 before L0; boundaries 1..36 after zero-based layers 0..35",
+  "original_q0_readout_and_velocity_exact": true,
+  "original_q0_entire_model_output_exact": true,
+  "component_cache_complete": true,
+  "component_forward_count": 1,
+  "component_calls": 72,
+  "action_rows": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265
+  ],
+  "all_observation_hooks_removed": true,
+  "arrays_sha256": "5485c14ad002d7a48bf0f0d47957c917ca47072a3088ba0f384bde0655f71097",
+  "components_sha256": "5802b6e2302d20e9762eb449d00cdd3e9d28dd29e73f40d20e9053752c054219",
+  "model_output_sha256": "575f41f8da4c63526bf1776cf87e188a65293fe85e672ffd0b1c704471912f9f",
+  "readout": {
+    "shape": [
+      16,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "5abb4c80face6482b8292e6a5a95ddb4a359ee96fb994b8584a9b5ac1d8bb59b"
+  },
+  "velocity": {
+    "shape": [
+      16,
+      64
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "d7df3352e7ed0007f1f2785979dfc32c10fe461a9f70895f1dfd1bbb66a868d4"
+  },
+  "scope": "Fixed actual t21 inputs, same sigma and unchanged current visual condition. Conditional action/future-vision latent effects on raw Flow velocity only. No scheduler update or MuJoCo execution in the four-cell replay; no attractor, incorrect-video, object-identity or full root-cause claim."
+}

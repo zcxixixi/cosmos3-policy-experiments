@@ -6,3 +6,16 @@ checkpoints/
 !experiments/15-native-goal-targets/policy/**/states.pt
 *.safetensors
 .env
+
+# Measured experiment16 arrays; model weights stay ignored.
+!experiments/16-milk-shift-mechanism/closed-loop/*/chunk_00/states.pt
+!experiments/16-milk-shift-mechanism/component-pulses/runs/*/states.pt
+!experiments/16-milk-shift-mechanism/component-pulses/runs/*/patch_report.pt
+!experiments/16-milk-shift-mechanism/attention-heads/actual_head_captures.pt
+!experiments/16-milk-shift-mechanism/attention-heads/controls/*/head_site.pt
+!experiments/16-milk-shift-mechanism/attention-heads/runs/*/head_site.pt
+!experiments/16-milk-shift-mechanism/attention-heads/followups/*/head_site.pt
+!experiments/16-milk-shift-mechanism/attention-heads/followups/*/random_control.pt
+!experiments/16-milk-shift-mechanism/feedback-inputs/seed*/native_R_q0/model_inputs_20_21.pt
+!experiments/16-milk-shift-mechanism/feedback-inputs/seed*/pulse_P_q0/model_inputs_20_21.pt
+!experiments/16-milk-shift-mechanism/feedback-inputs/seed*/replays/*/model_output.pt

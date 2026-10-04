@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "label": "head03",
+  "complete": true,
+  "site": "self_attn.to_add_out INPUT, after full attention, before output projection",
+  "layer": 17,
+  "denoising_step": 29,
+  "num_heads": 32,
+  "head_dim": 128,
+  "selected_heads": [
+    3
+  ],
+  "n_model_forwards": 30,
+  "pre_W_site_calls": 30,
+  "post_W_site_calls": 30,
+  "finished_forwards": 30,
+  "processor_recomputations": 0,
+  "intervention_count": 1,
+  "actual_selected_delta_l2": 0.8665079236527906,
+  "unselected_action_heads_exact": true,
+  "all_non_action_rows_exact": true,
+  "non_action_row_count": 250,
+  "non_action_before": {
+    "shape": [
+      250,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "2639362919575f861a0aff9008cb3395a34e88da54aa02a52d2819d530b6dc8b"
+  },
+  "non_action_after": {
+    "shape": [
+      250,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "2639362919575f861a0aff9008cb3395a34e88da54aa02a52d2819d530b6dc8b"
+  },
+  "full_gen_before": {
+    "shape": [
+      266,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "3884cdeba01723d199afc4376648e8d41cee6ac523082d23b1de61ebab01a377"
+  },
+  "full_gen_after": {
+    "shape": [
+      266,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "c9de531617bcc3b4ae5eef0a71a211687545f0c86608c0e16b597bbee9eace1c"
+  },
+  "action_rows": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265
+  ],
+  "z_before": {
+    "shape": [
+      16,
+      32,
+      128
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "14b6a1f6fe6e3bbbcc3d1cebccadf5783c1a87a810b5abd9d507d224a65d1f65"
+  },
+  "z_after": {
+    "shape": [
+      16,
+      32,
+      128
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "3b3e6ad1c3c216e2c2ff9b8c81dd7b98681e91f26e67b6731ec31f350f990dec"
+  },
+  "selected_delta": {
+    "shape": [
+      16,
+      1,
+      128
+    ],
+    "dtype": "torch.float64",
+    "sha256": "34a633b60b0c53ce57ee9c2c22cef85687cb7c12a78870928bc17104026efcdc"
+  },
+  "post_W_action_increment": {
+    "shape": [
+      16,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "698476b1e63939aa1818d0761fb73ebab82b6de9c4f868c05a99393a15534388"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "state": "all_four_exact_controls_passed",
+  "sources": {
+    "recipient": {
+      "trial": "x15_seed198",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed198/input_00.png",
+      "image_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "components_sha256": "76ccbba38d997c71061b099a7610b1b350a9fb506dc1f2a08216e30bc78bde92"
+    },
+    "donor": {
+      "trial": "x06_seed198",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed198/input_00.png",
+      "image_sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135",
+      "states_sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e",
+      "components_sha256": "04e7838adb524127489e4e20cc6aa84490673103294f6d5e7a4a58a6414c2adf"
+    }
+  },
+  "two_fp32_noise_draws_exact": true,
+  "full_30step_metadata_exact": true,
+  "timesteps_sigmas_exact": true,
+  "raw_prepared_action_noise_exact": true,
+  "controls": [
+    {
+      "run": "capture_recipient",
+      "all_saved_baseline_fields_bit_exact": true,
+      "post_W_equals_native_attention_increment": true,
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "head_site_sha256": "3df206e37383e811853ae01edca28e3575a1d3affa2b84c91b83fd663ba077af"
+    },
+    {
+      "run": "capture_donor",
+      "all_saved_baseline_fields_bit_exact": true,
+      "post_W_equals_native_attention_increment": true,
+      "states_sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e",
+      "head_site_sha256": "e7fe90b627b9ea5d6acfa02d27592622132a563937d850a3e8505f9129802279"
+    },
+    {
+      "run": "self_all32",
+      "all_reference_record_fields_bit_exact": true,
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "head_site_sha256": "05a5f92103d9034b6d0c4d553e4949f0bc876a804a379bae75aa344474339962"
+    },
+    {
+      "run": "donor_all32_coarse_equivalence",
+      "all_reference_record_fields_bit_exact": true,
+      "states_sha256": "67b5b6294a2b2f421a8ff8cd82969530df7f94a6b60e67ec893414fc32213f1e",
+      "head_site_sha256": "62c097e1d924521b38f7f0f30f2e3f7f169c5125cc1a38f9cd72af3fbebeecc0"
+    }
+  ],
+  "scope": "Fixed-input q0 real pre-output-projection attention-head causal effects only; no MuJoCo, identity, attractor or root-cause claim.",
+  "all32_pre_W_entire_record_equals_coarse_post_W": true
+}

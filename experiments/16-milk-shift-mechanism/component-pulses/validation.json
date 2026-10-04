@@ -1,0 +1,164 @@
+{
+  "state": "all_exact_controls_passed",
+  "sources": {
+    "recipient": {
+      "trial": "x15_seed198",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed198/input_00.png",
+      "image_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "states_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/states.pt",
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "cache_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/components.pt",
+      "cache_sha256": "76ccbba38d997c71061b099a7610b1b350a9fb506dc1f2a08216e30bc78bde92",
+      "metadata_sha256": "29fcad366b46282b88cef2e3548907b17d0905426370408f2b57a0c649d193f9",
+      "action_rows": [
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265
+      ],
+      "component_frames": 2160,
+      "pure_noise": [
+        {
+          "shape": [
+            1,
+            48,
+            5,
+            10,
+            20
+          ],
+          "dtype": "torch.float32",
+          "sha256": "2434416d082d99ad472b2300c50423e12fa32ac882465d2d51ede924f141ba0d"
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "dtype": "torch.float32",
+          "sha256": "8ef9a92d0f6ed174b2fb5b4f3a25909d7546cea409efb9c1ace5c32b9cc63f30"
+        }
+      ],
+      "timesteps": {
+        "shape": [
+          30
+        ],
+        "dtype": "torch.int64",
+        "sha256": "c6247ccf8865920ea6098aaa57d40845b7e77abd17ba40b2ade02e8b64988963"
+      },
+      "sigmas": {
+        "shape": [
+          31
+        ],
+        "dtype": "torch.float32",
+        "sha256": "2170a15870122584f70ed06f873a298644986306ef288a2e9ea7de3cdcd8d707"
+      }
+    },
+    "donor": {
+      "trial": "x06_seed198",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed198/input_00.png",
+      "image_sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135",
+      "states_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/states.pt",
+      "states_sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e",
+      "cache_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/components.pt",
+      "cache_sha256": "04e7838adb524127489e4e20cc6aa84490673103294f6d5e7a4a58a6414c2adf",
+      "metadata_sha256": "9d5054c68392c0c23a81ba5f71ae74662b65bb823b643f22d3408188cdbd1ab3",
+      "action_rows": [
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265
+      ],
+      "component_frames": 2160,
+      "pure_noise": [
+        {
+          "shape": [
+            1,
+            48,
+            5,
+            10,
+            20
+          ],
+          "dtype": "torch.float32",
+          "sha256": "2434416d082d99ad472b2300c50423e12fa32ac882465d2d51ede924f141ba0d"
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "dtype": "torch.float32",
+          "sha256": "8ef9a92d0f6ed174b2fb5b4f3a25909d7546cea409efb9c1ace5c32b9cc63f30"
+        }
+      ],
+      "timesteps": {
+        "shape": [
+          30
+        ],
+        "dtype": "torch.int64",
+        "sha256": "c6247ccf8865920ea6098aaa57d40845b7e77abd17ba40b2ade02e8b64988963"
+      },
+      "sigmas": {
+        "shape": [
+          31
+        ],
+        "dtype": "torch.float32",
+        "sha256": "2170a15870122584f70ed06f873a298644986306ef288a2e9ea7de3cdcd8d707"
+      }
+    }
+  },
+  "complete_nine_baseline_summaries": true,
+  "both_fp32_random_draws_exact": true,
+  "action_noise_and_all_30_pack_metadata_exact": true,
+  "timesteps_and_sigmas_exact": true,
+  "caches_complete_and_len_steps_30": true,
+  "first_kwargs_match_runtime": true,
+  "controls": [
+    {
+      "run": "recipient_observer_free_repeat",
+      "all_normal_runtime_fields_bit_exact": true,
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599"
+    },
+    {
+      "run": "donor_observer_free_repeat",
+      "all_normal_runtime_fields_bit_exact": true,
+      "states_sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e"
+    },
+    {
+      "run": "self_layer17_attention_step00",
+      "all_normal_runtime_fields_bit_exact": true,
+      "patch_report_sha256": "e3d941b306bca7d0b74a98e06145ccc1b64d2a220de748aad28929d0f74ef2f5",
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599"
+    },
+    {
+      "run": "self_layer17_mlp_step00",
+      "all_normal_runtime_fields_bit_exact": true,
+      "patch_report_sha256": "a9c1bd32e6d56cca26953841f6cec66c9ef11a47478432027afd52ef3393378a",
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599"
+    }
+  ],
+  "scope": "Fixed first observation/q0 local component-output causal scan only. No MuJoCo intervention rollout; no claim of grasp repair, target identity, attractor, or a localized root cause. Persistence may be solver inheritance."
+}

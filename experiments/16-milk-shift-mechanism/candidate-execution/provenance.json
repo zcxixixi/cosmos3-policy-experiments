@@ -1,0 +1,59 @@
+{
+  "wrapper_sha256": "5462c87aad474eb89f6b49328234a1b8f37fff41de72bf5cf815eac9d51599c6",
+  "exact_baseline_simulator_sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845",
+  "pulse_scan_script_sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+  "baseline_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism",
+  "chosen_seed": 198,
+  "baseline_sha256": {
+    "summary.json": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533",
+    "closed-loop/summary.json": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533",
+    "closed-loop/complete.json": "1c0e33b04568c3336116df65f2c13d60c253abe88768d9ca3a07fbb720feef05",
+    "server/complete.json": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c",
+    "inputs/metadata.json": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a"
+  },
+  "pulse_sha256": {
+    "complete.json": "4ab328c823449b1be676a8f146cad4b5acc46f5d7788393d04f8fc023ad725bf",
+    "top_candidates.json": "2f5fe8854edebfbcc5eb4e556badc6da857164c66e7c7c67c1bcf88df8ce9b16",
+    "results.json": "efb2fe3cba6556a51230cc3a3b696c751fdf259500185f492e34b7e9cc57b0ec",
+    "validation.json": "eceed70ed41b7e9d3de5384c706d98f1be29ceeb078072a8f832cb1519e163c1",
+    "pair_selection.json": "ea92551df389e57967ba48bb9f697ab469863d6215c04b93f1f078ad522ec0dd",
+    "provenance.json": "f459f6e376a2016b770d36bc5d5922a0f4f4868ff1c741491e624695851053d6"
+  },
+  "candidate_sources": {
+    "candidate00": {
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/component-pulses/runs/layer17_attention_step29",
+      "sha256": {
+        "states.pt": "67b5b6294a2b2f421a8ff8cd82969530df7f94a6b60e67ec893414fc32213f1e",
+        "patch_report.pt": "eb6fabeab84408153b2188ed42a7a516a289a59d34d28a0fed457853c379045f",
+        "patch_report.json": "463ac97ec2fa1a36dfe79528ebe6b85c70ff4b93b556f50c1f95b48b7aa1d292",
+        "metadata.json": "2227c9c7ed8edd3c974fef2af02efc2f5a7ddd009058ce53cf59c5f095661571",
+        "metrics.json": "80f2023948d1d631eca5a3114a3f19d24f4544f19fd3e82bd366ab131032d123",
+        "normalized_actions.json": "45b390fcd7fd7e7cb4bc22b6167cf1020ae1e4b58c30b545f7b4704f100252b9"
+      }
+    },
+    "candidate01": {
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/component-pulses/runs/layer31_attention_step29",
+      "sha256": {
+        "states.pt": "a1478728e22841774f2b03ce8d514bd9d54b20be3e438aa2938256946c3c1e5b",
+        "patch_report.pt": "f50620e97cd0e5fa6689221c7a6a71affd1725b7ae58d6a1c24d084f3008d33e",
+        "patch_report.json": "067a5348f384f200597c0e1aa95d63dfca4e48ea392118a5189261e06a095dce",
+        "metadata.json": "6863199f103a139991956072197ec4dd9fd849a97d24ed76b0c19a0118eb34ad",
+        "metrics.json": "c9200033952f22ed01bd1d4556ad3d95325c736a01f9c6731ef4278c21eb31a4",
+        "normalized_actions.json": "6228f843b8343f5de22e710fded6344488b5453a8e67a9ea47288f28dd1b7bb3"
+      }
+    },
+    "candidate02": {
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/component-pulses/runs/layer29_attention_step29",
+      "sha256": {
+        "states.pt": "4e4a78a570bb421e4eedd9d24044a13d796ebcbc581555d0f0fb3bbd8f18dc3a",
+        "patch_report.pt": "4d98c411f88941abf791b745e08db620add6ba89633303f8aff89975357856c1",
+        "patch_report.json": "8fcf58393c604542da60b4e9a8a51b8373dab0b19f2a356ec845441d963ab162",
+        "metadata.json": "9f4646e3527589fcc26e265497e8271d0f106de5f3fac23a5faf8d3f85daff4a",
+        "metrics.json": "296d0d1d80656a7b342ecccecd2db2ff4f0f2db6f4e5b40a71c15d3ba7df9a3a",
+        "normalized_actions.json": "09753b14010e6b1c2fd1c22912c22db27650d9934770c9817baa6233d0620b31"
+      }
+    }
+  },
+  "url": "http://127.0.0.1:8926",
+  "scope": "Four actual 128-action executions at the same X+15cm input and paired seed: one native control and three ranked, saved query-zero single-component pulses. After the first 16 actions, queries 1-7 are native inference at current observations. Candidate ranking concerns continuous q0 action outputs, not a repaired grasp, target identity, attractor or localized mechanism. Further controls remain necessary."
+}

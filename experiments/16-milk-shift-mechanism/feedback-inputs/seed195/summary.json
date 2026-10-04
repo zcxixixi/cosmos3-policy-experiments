@@ -1,0 +1,175 @@
+{
+  "cells": {
+    "RR": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.4128260253600978,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "velocity_all64_delta_l2": 0.0
+    },
+    "PP": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.03864205647607347,
+        "rmse_to_donor": 0.4506550053449097,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.09145177717584886,
+        "signed_projection_rms": -0.037753673683623,
+        "delta_cosine_with_donor_direction": -0.9770099504667784
+      },
+      "velocity_all64_delta_l2": 0.2885569993236112
+    },
+    "PR": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.03968736176882946,
+        "rmse_to_donor": 0.45158019449177716,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.09366054529630763,
+        "signed_projection_rms": -0.03866551064773408,
+        "delta_cosine_with_donor_direction": -0.9742524804987682
+      },
+      "velocity_all64_delta_l2": 0.296683798544197
+    },
+    "RP": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.005006274847729425,
+        "rmse_to_donor": 0.41233847060796375,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0012538501939161955,
+        "signed_projection_rms": 0.0005176219919514109,
+        "delta_cosine_with_donor_direction": 0.1033946412642878
+      },
+      "velocity_all64_delta_l2": 0.07014542256220402
+    }
+  },
+  "effects": {
+    "action_only": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.03968736176882946,
+        "rmse_to_donor": 0.45158019449177716,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.09366054529630763,
+        "signed_projection_rms": -0.03866551064773408,
+        "delta_cosine_with_donor_direction": -0.9742524804987682
+      },
+      "raw_all64_delta_l2": 0.296683798544197
+    },
+    "future_vision_only": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.005006274847729425,
+        "rmse_to_donor": 0.41233847060796375,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0012538501939161955,
+        "signed_projection_rms": 0.0005176219919514109,
+        "delta_cosine_with_donor_direction": 0.1033946412642878
+      },
+      "raw_all64_delta_l2": 0.07014542256220402
+    },
+    "interaction": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.006434045698184848,
+        "rmse_to_donor": 0.41248180536658124,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0009549179265425683,
+        "signed_projection_rms": 0.0003942149721596743,
+        "delta_cosine_with_donor_direction": 0.061270154215859685
+      },
+      "raw_all64_delta_l2": 0.1000030290636993
+    },
+    "total_pulse": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.03864205647607347,
+        "rmse_to_donor": 0.4506550053449097,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.09145177717584886,
+        "signed_projection_rms": -0.037753673683623,
+        "delta_cosine_with_donor_direction": -0.9770099504667784
+      },
+      "raw_all64_delta_l2": 0.2885569993236112
+    },
+    "future_vision_given_P_action": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.004315261804175766,
+        "rmse_to_donor": 0.41193578217935123,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.002208768120458764,
+        "signed_projection_rms": 0.0009118369641110852,
+        "delta_cosine_with_donor_direction": 0.21130513176019225
+      },
+      "raw_all64_delta_l2": 0.07168515143641004
+    },
+    "action_given_P_future_vision": {
+      "velocity_xyz": {
+        "rmse_to_recipient": 0.03916414617452026,
+        "rmse_to_donor": 0.4511739479607087,
+        "donor_recipient_gap_rmse": 0.4128260253600978,
+        "gap_floor": 0.00011141959576345575,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.09270562736976505,
+        "signed_projection_rms": -0.038271295675574406,
+        "delta_cosine_with_donor_direction": -0.9772023499512231
+      },
+      "raw_all64_delta_l2": 0.2934312335375908
+    }
+  },
+  "effect_formulas": {
+    "action_only": "PR-RR",
+    "future_vision_only": "RP-RR",
+    "interaction": "PP-PR-RP+RR",
+    "total_pulse": "PP-RR",
+    "future_vision_given_P_action": "PP-PR",
+    "action_given_P_future_vision": "PP-RP"
+  },
+  "decomposition_max_abs_error": 0.0,
+  "axis": "Same t21 paired D-R actual raw Flow velocity XYZ across all 16 predicted action rows",
+  "limitations": [
+    "Only the action/future-video samples in a fixed t21 context are interchanged.",
+    "Joint interaction cannot be uniquely assigned to action or vision.",
+    "No scheduler or visual feedback runs between replay cells; scores are not grasp probabilities."
+  ],
+  "scope": "Fixed actual t21 inputs, same sigma and unchanged current visual condition. Conditional action/future-vision latent effects on raw Flow velocity only. No scheduler update or MuJoCo execution in the four-cell replay; no attractor, incorrect-video, object-identity or full root-cause claim.",
+  "seed": 195,
+  "timestep": 299,
+  "sigma": 0.299699991941452,
+  "pulse_t20_velocity_xyz": {
+    "rmse_to_recipient": 0.1943133797265132,
+    "rmse_to_donor": 0.22546815480862822,
+    "donor_recipient_gap_rmse": 0.415929111965468,
+    "gap_floor": 0.00011126564375090597,
+    "gap_meaningful": true,
+    "signed_projection_fraction": 0.46220108639777746,
+    "signed_projection_rms": 0.19224288741490214,
+    "delta_cosine_with_donor_direction": 0.989344571565143
+  },
+  "final_P_normalized_action_xyz": {
+    "rmse_to_recipient": 0.0013279748003638067,
+    "rmse_to_donor": 0.3981067305077682,
+    "donor_recipient_gap_rmse": 0.3987283865945454,
+    "gap_floor": 5.151889722719835e-05,
+    "gap_meaningful": true,
+    "signed_projection_fraction": 0.001563427444133556,
+    "signed_projection_rms": 0.0006233829023570065,
+    "delta_cosine_with_donor_direction": 0.4694237437233199
+  }
+}

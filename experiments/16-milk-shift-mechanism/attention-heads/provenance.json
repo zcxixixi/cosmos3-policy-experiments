@@ -1,0 +1,73 @@
+{
+  "script_sha256": "24e37b097d80e31c7602989cf59eff255184b94729eb31e6ef992f2b1fb52bed",
+  "sources": {
+    "normal_runtime": {
+      "path": "/home/current/work/cosmos3/work/serve_cosmos_goal_pair.py",
+      "sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506"
+    },
+    "factory": {
+      "path": "/home/current/work/cosmos3/work/probe_cosmos_language_routes.py",
+      "sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72"
+    },
+    "components": {
+      "path": "/home/current/work/cosmos3/work/cosmos_component_interventions.py",
+      "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+    },
+    "direction_metrics": {
+      "path": "/home/current/work/cosmos3/work/probe_cosmos_milk_component_pulses.py",
+      "sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75"
+    }
+  },
+  "actual_transformer_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/transformers/transformer_cosmos3.py",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "baseline_server_provenance": {
+    "script_sha256": "5005b97785bc22bc37a2aa7361500ab93ef300ceaa9e0f83fa9e1d4ac71b1ab5",
+    "normal_runtime_sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory_sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components_sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "inputs_metadata_sha256": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a",
+    "pixel_helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+    "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+    "prompt": "pick up the milk and place it in the basket",
+    "shifts_cm": {
+      "x00": 0,
+      "x06": 6,
+      "x15": 15
+    },
+    "seeds": [
+      195,
+      196,
+      198
+    ],
+    "queries_per_trial": 8,
+    "library_edits": false,
+    "local_interventions": false,
+    "scope": "Paired position baseline. Query-zero observational attention/MLP component recordings; no claim of localized causal mechanism."
+  },
+  "coarse_complete_sha256": "4ab328c823449b1be676a8f146cad4b5acc46f5d7788393d04f8fc023ad725bf",
+  "coarse_results_sha256": "efb2fe3cba6556a51230cc3a3b696c751fdf259500185f492e34b7e9cc57b0ec",
+  "coarse_states_sha256": "67b5b6294a2b2f421a8ff8cd82969530df7f94a6b60e67ec893414fc32213f1e",
+  "fixed_site": {
+    "layer_zero_based": 17,
+    "layer_human": 18,
+    "denoising_step": 29,
+    "num_heads": 32,
+    "head_dim": 128,
+    "input_width": 4096
+  },
+  "donor_trial": "x06_seed198",
+  "recipient_trial": "x15_seed198",
+  "seed": 198,
+  "random_seeds": [
+    17002901,
+    17002902,
+    17002903
+  ],
+  "actual_random_norm_relative_tolerance": 0.001,
+  "control_predictions": 4,
+  "single_head_predictions": 32,
+  "followup_predictions": 4,
+  "library_edits": false,
+  "processor_recomputation": false,
+  "scope": "Fixed-input q0 real pre-output-projection attention-head causal effects only; no MuJoCo, identity, attractor or root-cause claim."
+}

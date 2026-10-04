@@ -1,0 +1,1893 @@
+{
+  "state": "complete",
+  "plot_script_sha256": "4cf8069f2b1e8ee97c36b476bb64e0f01ad3e7c852d0491870224e4a7adc6ad6",
+  "sources": {
+    "json": {
+      "complete": {
+        "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/complete.json",
+        "sha256": "18c3f89c65a2e4b38ee2d16a671f19354df050f72fa5f1ba849ff01154b8bcdc"
+      },
+      "summary": {
+        "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/summary.json",
+        "sha256": "14ff8d79984969520611476432c6ff9a2350bff610b89685d0ddd21eda3d041f"
+      },
+      "provenance": {
+        "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/provenance.json",
+        "sha256": "5ca0b33398da8db28d45d13e28da07b9ed81f7a7245dd6d3389423607e33f7dc"
+      }
+    },
+    "code": {
+      "probe": {
+        "path": "/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/cosmos3-action-resolution/probe_cosmos_milk_feedback_inputs.py",
+        "sha256": "34e5b749b0c3a086b317189945c71b5983ec70d69a080b289f8df72439afdc1d"
+      },
+      "normal_runtime": {
+        "path": "/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/cosmos3-action-resolution/serve_cosmos_goal_pair.py",
+        "sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506"
+      },
+      "factory": {
+        "path": "/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/cosmos3-action-resolution/probe_cosmos_language_routes.py",
+        "sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72"
+      },
+      "components": {
+        "path": "/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/cosmos3-action-resolution/cosmos_component_interventions.py",
+        "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+      },
+      "pulse_contract": {
+        "path": "/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/cosmos3-action-resolution/probe_cosmos_milk_component_pulses.py",
+        "sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75"
+      },
+      "actual_transformer": {
+        "path": "/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/network-source/cosmos3/transformer_cosmos3.py",
+        "sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22"
+      }
+    },
+    "baseline_server_provenance": {
+      "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/server/provenance.json",
+      "sha256": "ae05cfba57893c589d6d6644ea13fd45a16acc90366c555f39988968fb5cdfb5"
+    },
+    "baseline_summary": {
+      "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/summary.json",
+      "sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533"
+    },
+    "coarse_results": {
+      "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/component-pulses/results.json",
+      "sha256": "efb2fe3cba6556a51230cc3a3b696c751fdf259500185f492e34b7e9cc57b0ec"
+    },
+    "seeds": [
+      {
+        "seed": 195,
+        "summary": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/summary.json",
+          "sha256": "1a24d78bcad1b439d67aeddb4edf396b5a2ed529465656f241abea05ee2165c9"
+        },
+        "input_contract": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/input-contract.json",
+          "sha256": "235ac4668f577271a1eff287a04695d5b14dfdcbef6cc8a08cdc9310d5d5e62d"
+        },
+        "baseline": {
+          "R": {
+            "image": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/input_00.png",
+              "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+            },
+            "states": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x15_seed195/chunk_00/states.pt",
+              "sha256": "44ea8dd24bfd1d570a6fcfeb9cc068b1924936b2610913df43f6224405c2bb7d"
+            },
+            "original_component_cache_sha256": "539e3346cbbaa0d59b5c737be30e767c4a704aca3b3c7dd78e8fa0b511228e89"
+          },
+          "D": {
+            "image": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/input_00.png",
+              "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+            },
+            "states": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x06_seed195/chunk_00/states.pt",
+              "sha256": "9b629a20c1880f5a01002bf0bfa84caa7d0920e24609b6fbc7b3afd9f6b472c1"
+            },
+            "original_component_cache_sha256": "f8b8f17b803863fa91543f14a9074def8b91fc9bf998de64649359fe584fd58a"
+          }
+        },
+        "cells": {
+          "RR": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RR/metadata.json",
+              "sha256": "60558e7a90b93c4e75c3878be7147db0704b449367306b525b8198821e43d9e7"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RR/arrays.npz",
+              "sha256": "83b189877bee887c40ce1be7d7ee87da864b3659439f13980d688bd69016f99a"
+            },
+            "producer_actual_entire_output_exact": true,
+            "original_full_model_output_sha256": "631cde542b9ef21a79257e15d6e74c73cda6805a4b58820c542c8a59f201f8a3",
+            "original_component_cache_sha256": "75f983b6df396159a9049a2d9117f110736106f7ee776914c6630269cfc487fd"
+          },
+          "PP": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PP/metadata.json",
+              "sha256": "058aef4f77340fd511b32e16b8fd2143354e9dd9f445857cfacf10b8a1d72997"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PP/arrays.npz",
+              "sha256": "d8fceeded7599fcfa09d08e61969e3de1348bdd27566812fc5aab11de967595a"
+            },
+            "producer_actual_entire_output_exact": true,
+            "original_full_model_output_sha256": "98b04f9e0f084afd6780b707d0c1a2fcf0bed296e39da5b45076483d08d8e535",
+            "original_component_cache_sha256": "c88491baba925961e3169f4ae063f6a2c04b77fe3532b69eb189bc19ae7cba64"
+          },
+          "PR": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PR/metadata.json",
+              "sha256": "48c3c6e7d08bf91c42840e777bbb68e31393f0e5da23b98844190c8bd1636060"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/PR/arrays.npz",
+              "sha256": "9ce9c3c2df7202d7d5e1dd22943ca590632e2635d9d395c30125e89a4a5644a6"
+            },
+            "producer_actual_entire_output_exact": false,
+            "original_full_model_output_sha256": "2e7b54fbef4f19763908d1a602f7983ee6876a3b2dae14c8b8699c35f8687325",
+            "original_component_cache_sha256": "59d5d18b576b3b71acd140a527f2968f0318ee06abfce5faf825eec8928f88bf"
+          },
+          "RP": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RP/metadata.json",
+              "sha256": "2bdb5d030c099ebd2708ea7fea0af26f8e6490a4ec80b1b6ce0a465481a9be61"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/replays/RP/arrays.npz",
+              "sha256": "38233b3b610660f62c722cc4d5dc2b80caa2471a876ef83651909de89a643db9"
+            },
+            "producer_actual_entire_output_exact": false,
+            "original_full_model_output_sha256": "a5355c8b66ab5c1498b1801d40aecf264a427e4108bc933a2e13e601da981819",
+            "original_component_cache_sha256": "ef9ef74df2197f15578a42ca295a35d2e2c5580b33b78efa35ec1523b26c4beb"
+          }
+        },
+        "factorial_arrays": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed195/factorial-arrays.npz",
+          "sha256": "846760547f2032370f98cd0508e2f744533251ed718c0782cb7963d2ad89ea62"
+        }
+      },
+      {
+        "seed": 196,
+        "summary": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/summary.json",
+          "sha256": "9eae7ad9b5e971003ed50b761647a0b40b6f1304923f682598bbb94d26db1d3b"
+        },
+        "input_contract": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/input-contract.json",
+          "sha256": "1ca3908e12791b8e2ea4eff6e7bf572ea5684ddd218dd04acc3b46011d89e6d5"
+        },
+        "baseline": {
+          "R": {
+            "image": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/input_00.png",
+              "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+            },
+            "states": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x15_seed196/chunk_00/states.pt",
+              "sha256": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f"
+            },
+            "original_component_cache_sha256": "67df5ffcdff89a0c19b3ae4ac6b26266a7d7d5846520ab2b68560c7063d33722"
+          },
+          "D": {
+            "image": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/input_00.png",
+              "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+            },
+            "states": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x06_seed196/chunk_00/states.pt",
+              "sha256": "aecce1bf96c12386b9a58eab25e6e30c2c25313f189232fe295ed747fd112d6d"
+            },
+            "original_component_cache_sha256": "3300d460ba1bd7e80d45bd4f81d8efc2cbf1cede75c7336eb8a1ef39cd0d742d"
+          }
+        },
+        "cells": {
+          "RR": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RR/metadata.json",
+              "sha256": "7a8704956d200a3fb9926813d5f55a227c96bd3f102eaa57bad40eb79ded3df6"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RR/arrays.npz",
+              "sha256": "1208cee5c97ec5a2d991783b0b0f54cea40f5d626959102170cdd6568b84dc2d"
+            },
+            "producer_actual_entire_output_exact": true,
+            "original_full_model_output_sha256": "69f5ab6427821b56f7f5722531bc9c07a739338507373d9c9a251f747e325326",
+            "original_component_cache_sha256": "03a84500dc6e01584bf9d932b73597b53bd25a38e538eb5ec8dac5aa17f9d6ef"
+          },
+          "PP": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PP/metadata.json",
+              "sha256": "12dc0f2b8b49ab4876ade8510ae3612fa6551cc2f828b61ba3e0bacf128bbc43"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PP/arrays.npz",
+              "sha256": "167d0f2c718e168db06262fe7a95f25697c5ea6f8cb02aab1ae95ac870a13815"
+            },
+            "producer_actual_entire_output_exact": true,
+            "original_full_model_output_sha256": "fc744399ed20ec0dd66661f4577f07739d6311b39c4fc7d6a4450314e57a39e3",
+            "original_component_cache_sha256": "9c7cfa004d4bbc0269a6da08a086776a2014a544c9578e41f4933eaac6675122"
+          },
+          "PR": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PR/metadata.json",
+              "sha256": "6ceafd027ff92a8a25b7deefa14561760757ca1c4e39f58455a60e68969abe6c"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/PR/arrays.npz",
+              "sha256": "afbe8a89e289c9c5b9fe41b108e22ba5bab998ca20039b93e0602fbe5355ebfb"
+            },
+            "producer_actual_entire_output_exact": false,
+            "original_full_model_output_sha256": "59a9df46e3bd9c162fd57ea6b845992d5edb121640055f63a0803fe3c5818c79",
+            "original_component_cache_sha256": "a82e61c6435a1e067bc98820d95ba4d3fce2ec5bd5cf81f0181857421c83167d"
+          },
+          "RP": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RP/metadata.json",
+              "sha256": "bcd4105a4937f06e6d91611f20f508eaac2fa999df2baa6e36e87545ada77112"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/replays/RP/arrays.npz",
+              "sha256": "2ab7854bf8ccb9c884e9dfcb9487d96519c4940983d2ca7f6521c09f39be2c3f"
+            },
+            "producer_actual_entire_output_exact": false,
+            "original_full_model_output_sha256": "131ef4a19f3458d505643057058612d02854b7e8edc834ef88abb6cf887bfb89",
+            "original_component_cache_sha256": "0a38a2f2887426a975f47172a4058562aef9ec129ac4e8570f2e424d1d649c02"
+          }
+        },
+        "factorial_arrays": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed196/factorial-arrays.npz",
+          "sha256": "f9820263f18313c3e152dff0c73c0f0ce66f89b9f2373eee5b30138ea674b150"
+        }
+      },
+      {
+        "seed": 198,
+        "summary": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/summary.json",
+          "sha256": "473df692dd9c9904d483083c412c83d3c5cb797d58dac2149d0c45184eded7e7"
+        },
+        "input_contract": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/input-contract.json",
+          "sha256": "fcbc785b7dc68bae06fb48d805d447554df6c266bfb648a3481b0622f4e9324e"
+        },
+        "baseline": {
+          "R": {
+            "image": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/input_00.png",
+              "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+            },
+            "states": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x15_seed198/chunk_00/states.pt",
+              "sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599"
+            },
+            "original_component_cache_sha256": "76ccbba38d997c71061b099a7610b1b350a9fb506dc1f2a08216e30bc78bde92"
+          },
+          "D": {
+            "image": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/input_00.png",
+              "sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135"
+            },
+            "states": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/closed-loop/x06_seed198/chunk_00/states.pt",
+              "sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e"
+            },
+            "original_component_cache_sha256": "04e7838adb524127489e4e20cc6aa84490673103294f6d5e7a4a58a6414c2adf"
+          }
+        },
+        "cells": {
+          "RR": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RR/metadata.json",
+              "sha256": "d58051e9cd113bc0b3828cb421a67abbe56eb7a0a24a80238b8e60959a72e6f7"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RR/arrays.npz",
+              "sha256": "5485c14ad002d7a48bf0f0d47957c917ca47072a3088ba0f384bde0655f71097"
+            },
+            "producer_actual_entire_output_exact": true,
+            "original_full_model_output_sha256": "575f41f8da4c63526bf1776cf87e188a65293fe85e672ffd0b1c704471912f9f",
+            "original_component_cache_sha256": "5802b6e2302d20e9762eb449d00cdd3e9d28dd29e73f40d20e9053752c054219"
+          },
+          "PP": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PP/metadata.json",
+              "sha256": "ea7769b7b090d20c1ab38e54ce2bb339d504f11a601e75ced73a9de8653371a0"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PP/arrays.npz",
+              "sha256": "c8960e6ce274dd6b85d9598d7c8e2b617a06171b82e4e9548b9895b95bcee0e7"
+            },
+            "producer_actual_entire_output_exact": true,
+            "original_full_model_output_sha256": "48f6cf97c8bb9b938fcc14630c375958914b11b7c319f34c41b0872593414d54",
+            "original_component_cache_sha256": "1e382cfea02b7f256f23b13ab0bf0b63a6d982d65243328a95ab2cb9ba21ea25"
+          },
+          "PR": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PR/metadata.json",
+              "sha256": "f735e613ad8bb7459d22e3b6aa7709a70ce94cd1bb068666076d7b9c74189cf6"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/PR/arrays.npz",
+              "sha256": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36"
+            },
+            "producer_actual_entire_output_exact": false,
+            "original_full_model_output_sha256": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2",
+            "original_component_cache_sha256": "1284afe64cadca30f179e8b9ea26cc97d545b291b365a4d231d11766f524e91a"
+          },
+          "RP": {
+            "metadata": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RP/metadata.json",
+              "sha256": "aae79f57f7eb8f1aa235dc313c244a33571605569070e4c8f672e581b83b3d48"
+            },
+            "arrays": {
+              "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/replays/RP/arrays.npz",
+              "sha256": "9f1011ee9bd2d85f7a01def7486afcd7d99ad5f2f5a1b515468c624459bd4746"
+            },
+            "producer_actual_entire_output_exact": false,
+            "original_full_model_output_sha256": "5c8f64c9443900208108788aae636caf065c543e3ad89ac75130f1b514f7e14d",
+            "original_component_cache_sha256": "ad06101973257ddc5e8b0c3111a0dff2f8c5cc21574c3f60d14c4a6be2029346"
+          }
+        },
+        "factorial_arrays": {
+          "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/seed198/factorial-arrays.npz",
+          "sha256": "d1f290a36e91d5794086f37fc6ff616dc43db32eb998761a86b0be4bba57453e"
+        }
+      }
+    ]
+  },
+  "figure_count": 1,
+  "panel_count": 3,
+  "effect_order": [
+    "action_only",
+    "future_vision_only",
+    "interaction",
+    "total_pulse"
+  ],
+  "effect_formulas": {
+    "action_only": "PR-RR",
+    "future_vision_only": "RP-RR",
+    "interaction": "PP-PR-RP+RR",
+    "total_pulse": "PP-RR"
+  },
+  "score_definition": "Within each seed, g = actual donor_t21_XYZ_velocity - actual recipient_t21_XYZ_velocity, over all sixteen action rows. Percent = 100*dot(effect_XYZ,g)/dot(g,g). All four effects in that seed use this same fixed-t21 reference; the reference differs across seeds. Zero means no projection on this axis; 100 means a full baseline D-R velocity difference along this axis. These percentages are not probabilities, identities, grasp results or final action scores.",
+  "fixed_denoising_index": 21,
+  "pulse": {
+    "layer_zero_based": 17,
+    "step": 20,
+    "component": "attention"
+  },
+  "actual_values": [
+    {
+      "seed": 195,
+      "timestep": 299,
+      "sigma": 0.299699991941452,
+      "percent": {
+        "action_only": -9.366054529630762,
+        "future_vision_only": 0.12538501939161956,
+        "interaction": 0.09549179265425682,
+        "total_pulse": -9.145177717584886
+      },
+      "decomposition_max_abs_error": 0.0,
+      "denominator_sum_squares": 8.180415706301574,
+      "recipient_t21_velocity_xyz": [
+        [
+          -0.2158203125,
+          1.5,
+          -1.375
+        ],
+        [
+          -0.1923828125,
+          -0.328125,
+          -1.1328125
+        ],
+        [
+          -0.8046875,
+          0.70703125,
+          -0.6796875
+        ],
+        [
+          -0.359375,
+          0.1904296875,
+          0.234375
+        ],
+        [
+          1.3984375,
+          0.365234375,
+          -0.275390625
+        ],
+        [
+          -1.8828125,
+          0.76171875,
+          1.3125
+        ],
+        [
+          -1.796875,
+          0.6328125,
+          1.3359375
+        ],
+        [
+          -0.49609375,
+          1.3046875,
+          0.271484375
+        ],
+        [
+          0.00093841552734375,
+          -0.859375,
+          0.39453125
+        ],
+        [
+          -0.016845703125,
+          -1.046875,
+          0.306640625
+        ],
+        [
+          -1.0859375,
+          1.0078125,
+          -0.671875
+        ],
+        [
+          -1.3671875,
+          0.890625,
+          -1.625
+        ],
+        [
+          -2.90625,
+          -0.57421875,
+          -1.0546875
+        ],
+        [
+          -0.953125,
+          -0.134765625,
+          1.015625
+        ],
+        [
+          -0.8203125,
+          -2.703125,
+          0.73828125
+        ],
+        [
+          -0.97265625,
+          1.8828125,
+          -1.1328125
+        ]
+      ],
+      "donor_t21_velocity_xyz": [
+        [
+          -0.27734375,
+          1.6640625,
+          -1.421875
+        ],
+        [
+          -0.291015625,
+          -0.04638671875,
+          -1.1875
+        ],
+        [
+          -0.93359375,
+          1.1953125,
+          -0.75
+        ],
+        [
+          -0.46484375,
+          0.78515625,
+          0.154296875
+        ],
+        [
+          1.3828125,
+          1.0,
+          -0.3515625
+        ],
+        [
+          -1.8046875,
+          1.421875,
+          1.2109375
+        ],
+        [
+          -1.671875,
+          1.3359375,
+          1.234375
+        ],
+        [
+          -0.203125,
+          1.953125,
+          0.1923828125
+        ],
+        [
+          0.498046875,
+          -0.1982421875,
+          0.337890625
+        ],
+        [
+          0.59375,
+          -0.41796875,
+          0.259765625
+        ],
+        [
+          -0.453125,
+          1.5546875,
+          -0.71484375
+        ],
+        [
+          -0.74609375,
+          1.3984375,
+          -1.6796875
+        ],
+        [
+          -2.28125,
+          -0.080078125,
+          -1.140625
+        ],
+        [
+          -0.306640625,
+          0.380859375,
+          0.93359375
+        ],
+        [
+          -0.150390625,
+          -2.203125,
+          0.6640625
+        ],
+        [
+          -0.32421875,
+          2.390625,
+          -1.2265625
+        ]
+      ],
+      "effect_velocity_xyz": {
+        "action_only": [
+          [
+            0.005859375,
+            -0.0078125,
+            0.0
+          ],
+          [
+            0.0078125,
+            -0.017578125,
+            0.0078125
+          ],
+          [
+            0.015625,
+            -0.0390625,
+            0.0078125
+          ],
+          [
+            0.005859375,
+            -0.04296875,
+            0.001953125
+          ],
+          [
+            0.015625,
+            -0.041015625,
+            0.009765625
+          ],
+          [
+            -0.0078125,
+            -0.0546875,
+            0.0
+          ],
+          [
+            -0.0078125,
+            -0.0625,
+            0.0078125
+          ],
+          [
+            -0.0234375,
+            -0.0703125,
+            -0.001953125
+          ],
+          [
+            -0.04268646240234375,
+            -0.0703125,
+            0.0078125
+          ],
+          [
+            -0.050537109375,
+            -0.0625,
+            0.0
+          ],
+          [
+            -0.0625,
+            -0.06640625,
+            0.00390625
+          ],
+          [
+            -0.078125,
+            -0.0546875,
+            0.015625
+          ],
+          [
+            -0.078125,
+            -0.06640625,
+            0.0078125
+          ],
+          [
+            -0.0546875,
+            -0.044921875,
+            -0.0078125
+          ],
+          [
+            -0.05859375,
+            -0.046875,
+            0.015625
+          ],
+          [
+            -0.04296875,
+            -0.046875,
+            0.015625
+          ]
+        ],
+        "future_vision_only": [
+          [
+            -0.001953125,
+            0.0,
+            0.0
+          ],
+          [
+            -0.001953125,
+            0.0,
+            0.0078125
+          ],
+          [
+            0.00390625,
+            -0.00390625,
+            0.0
+          ],
+          [
+            0.00390625,
+            0.0,
+            0.0
+          ],
+          [
+            0.015625,
+            0.001953125,
+            0.005859375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0078125
+          ],
+          [
+            0.0,
+            0.00390625,
+            0.0078125
+          ],
+          [
+            -0.001953125,
+            0.0,
+            0.0
+          ],
+          [
+            0.0006561279296875,
+            -0.00390625,
+            0.00390625
+          ],
+          [
+            0.0009765625,
+            -0.0078125,
+            0.001953125
+          ],
+          [
+            0.0,
+            0.0,
+            0.00390625
+          ],
+          [
+            -0.0078125,
+            0.00390625,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.00390625,
+            0.005859375,
+            0.0
+          ],
+          [
+            0.0078125,
+            0.015625,
+            0.0078125
+          ],
+          [
+            0.0,
+            0.0078125,
+            0.0
+          ]
+        ],
+        "interaction": [
+          [
+            0.0009765625,
+            0.0,
+            0.0078125
+          ],
+          [
+            -0.0048828125,
+            -0.00390625,
+            -0.0078125
+          ],
+          [
+            -0.00390625,
+            0.0078125,
+            0.0
+          ],
+          [
+            0.001953125,
+            0.0009765625,
+            0.00390625
+          ],
+          [
+            -0.015625,
+            -0.00390625,
+            -0.00390625
+          ],
+          [
+            0.0078125,
+            -0.00390625,
+            -0.0078125
+          ],
+          [
+            -0.0078125,
+            -0.00390625,
+            -0.0078125
+          ],
+          [
+            0.001953125,
+            0.0,
+            0.0
+          ],
+          [
+            0.0110626220703125,
+            0.00390625,
+            -0.00390625
+          ],
+          [
+            -0.00341796875,
+            0.0078125,
+            -0.00390625
+          ],
+          [
+            0.0,
+            0.0,
+            -0.0078125
+          ],
+          [
+            0.0078125,
+            0.0,
+            0.0
+          ],
+          [
+            0.015625,
+            0.0078125,
+            0.0
+          ],
+          [
+            -0.00390625,
+            -0.001953125,
+            0.0078125
+          ],
+          [
+            -0.0078125,
+            -0.015625,
+            -0.0078125
+          ],
+          [
+            0.0,
+            -0.0078125,
+            0.0
+          ]
+        ],
+        "total_pulse": [
+          [
+            0.0048828125,
+            -0.0078125,
+            0.0078125
+          ],
+          [
+            0.0009765625,
+            -0.021484375,
+            0.0078125
+          ],
+          [
+            0.015625,
+            -0.03515625,
+            0.0078125
+          ],
+          [
+            0.01171875,
+            -0.0419921875,
+            0.005859375
+          ],
+          [
+            0.015625,
+            -0.04296875,
+            0.01171875
+          ],
+          [
+            0.0,
+            -0.05859375,
+            0.0
+          ],
+          [
+            -0.015625,
+            -0.0625,
+            0.0078125
+          ],
+          [
+            -0.0234375,
+            -0.0703125,
+            -0.001953125
+          ],
+          [
+            -0.03096771240234375,
+            -0.0703125,
+            0.0078125
+          ],
+          [
+            -0.052978515625,
+            -0.0625,
+            -0.001953125
+          ],
+          [
+            -0.0625,
+            -0.06640625,
+            0.0
+          ],
+          [
+            -0.078125,
+            -0.05078125,
+            0.015625
+          ],
+          [
+            -0.0625,
+            -0.05859375,
+            0.0078125
+          ],
+          [
+            -0.0546875,
+            -0.041015625,
+            0.0
+          ],
+          [
+            -0.05859375,
+            -0.046875,
+            0.015625
+          ],
+          [
+            -0.04296875,
+            -0.046875,
+            0.015625
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 196,
+      "timestep": 299,
+      "sigma": 0.299699991941452,
+      "percent": {
+        "action_only": -10.398966831087087,
+        "future_vision_only": -0.4503886960785124,
+        "interaction": 0.46146898174904627,
+        "total_pulse": -10.387886545416553
+      },
+      "decomposition_max_abs_error": 0.0,
+      "denominator_sum_squares": 3.5643519312143326,
+      "recipient_t21_velocity_xyz": [
+        [
+          0.6015625,
+          -0.345703125,
+          0.8046875
+        ],
+        [
+          1.2421875,
+          1.3125,
+          -1.0625
+        ],
+        [
+          0.98828125,
+          0.953125,
+          -1.515625
+        ],
+        [
+          -0.8671875,
+          1.046875,
+          1.1875
+        ],
+        [
+          -0.55859375,
+          -0.09326171875,
+          -0.5859375
+        ],
+        [
+          -1.7578125,
+          0.59765625,
+          1.953125
+        ],
+        [
+          -2.65625,
+          -0.162109375,
+          0.53515625
+        ],
+        [
+          -1.6484375,
+          -0.57421875,
+          0.24609375
+        ],
+        [
+          -0.09375,
+          0.361328125,
+          -0.9765625
+        ],
+        [
+          -1.359375,
+          0.349609375,
+          0.65625
+        ],
+        [
+          -1.1484375,
+          -0.99609375,
+          -0.9453125
+        ],
+        [
+          -2.125,
+          2.640625,
+          1.25
+        ],
+        [
+          0.6640625,
+          1.3125,
+          2.390625
+        ],
+        [
+          -0.50390625,
+          1.015625,
+          1.421875
+        ],
+        [
+          0.1767578125,
+          1.7265625,
+          -0.32421875
+        ],
+        [
+          -1.3046875,
+          0.53515625,
+          1.3203125
+        ]
+      ],
+      "donor_t21_velocity_xyz": [
+        [
+          0.6328125,
+          -0.36328125,
+          0.828125
+        ],
+        [
+          1.296875,
+          1.2890625,
+          -1.0390625
+        ],
+        [
+          1.1484375,
+          0.94140625,
+          -1.4765625
+        ],
+        [
+          -0.625,
+          1.0625,
+          1.2109375
+        ],
+        [
+          -0.259765625,
+          -0.013916015625,
+          -0.5546875
+        ],
+        [
+          -1.4140625,
+          0.73828125,
+          1.9765625
+        ],
+        [
+          -2.3125,
+          0.0223388671875,
+          0.5390625
+        ],
+        [
+          -1.2734375,
+          -0.302734375,
+          0.228515625
+        ],
+        [
+          0.26953125,
+          0.66796875,
+          -0.98828125
+        ],
+        [
+          -0.9765625,
+          0.6953125,
+          0.6328125
+        ],
+        [
+          -0.71484375,
+          -0.63671875,
+          -0.9765625
+        ],
+        [
+          -1.65625,
+          2.984375,
+          1.203125
+        ],
+        [
+          1.1484375,
+          1.640625,
+          2.34375
+        ],
+        [
+          0.028564453125,
+          1.375,
+          1.390625
+        ],
+        [
+          0.734375,
+          2.140625,
+          -0.35546875
+        ],
+        [
+          -0.7734375,
+          0.9765625,
+          1.3046875
+        ]
+      ],
+      "effect_velocity_xyz": {
+        "action_only": [
+          [
+            -0.00390625,
+            -0.00390625,
+            0.0
+          ],
+          [
+            -0.0078125,
+            0.0,
+            0.0
+          ],
+          [
+            -0.015625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.015625,
+            -0.0078125,
+            -0.0078125
+          ],
+          [
+            -0.0234375,
+            -0.01513671875,
+            0.00390625
+          ],
+          [
+            -0.0234375,
+            -0.015625,
+            0.0078125
+          ],
+          [
+            -0.046875,
+            -0.0283203125,
+            0.0
+          ],
+          [
+            -0.0234375,
+            -0.03515625,
+            0.0009765625
+          ],
+          [
+            -0.0400390625,
+            -0.03515625,
+            0.0
+          ],
+          [
+            -0.03125,
+            -0.044921875,
+            -0.00390625
+          ],
+          [
+            -0.046875,
+            -0.04296875,
+            0.00390625
+          ],
+          [
+            -0.046875,
+            -0.046875,
+            -0.0078125
+          ],
+          [
+            -0.0625,
+            -0.0390625,
+            0.0
+          ],
+          [
+            -0.05859375,
+            -0.0390625,
+            0.0078125
+          ],
+          [
+            -0.0517578125,
+            -0.0390625,
+            0.00390625
+          ],
+          [
+            -0.0546875,
+            -0.037109375,
+            0.015625
+          ]
+        ],
+        "future_vision_only": [
+          [
+            0.0,
+            -0.001953125,
+            0.00390625
+          ],
+          [
+            0.0078125,
+            0.0,
+            -0.0078125
+          ],
+          [
+            -0.00390625,
+            0.00390625,
+            -0.0078125
+          ],
+          [
+            -0.00390625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0078125,
+            -0.00146484375,
+            -0.00390625
+          ],
+          [
+            -0.0078125,
+            0.00390625,
+            0.0078125
+          ],
+          [
+            -0.015625,
+            0.0029296875,
+            -0.00390625
+          ],
+          [
+            0.0,
+            0.0,
+            -0.005859375
+          ],
+          [
+            -0.00634765625,
+            -0.00390625,
+            0.0
+          ],
+          [
+            0.0,
+            -0.00390625,
+            -0.0078125
+          ],
+          [
+            0.0,
+            0.0,
+            -0.00390625
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.00390625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0078125,
+            0.0078125,
+            0.0
+          ],
+          [
+            -0.005859375,
+            0.015625,
+            -0.005859375
+          ],
+          [
+            -0.0078125,
+            0.0078125,
+            0.0078125
+          ]
+        ],
+        "interaction": [
+          [
+            0.0,
+            0.00390625,
+            -0.0078125
+          ],
+          [
+            -0.0078125,
+            0.0078125,
+            0.0
+          ],
+          [
+            0.0078125,
+            -0.0078125,
+            0.0
+          ],
+          [
+            0.00390625,
+            0.0,
+            0.0
+          ],
+          [
+            0.0078125,
+            0.0,
+            -0.00390625
+          ],
+          [
+            0.0,
+            0.00390625,
+            -0.015625
+          ],
+          [
+            0.03125,
+            0.0009765625,
+            -0.00390625
+          ],
+          [
+            0.0,
+            0.00390625,
+            0.0048828125
+          ],
+          [
+            0.00537109375,
+            0.00390625,
+            0.0
+          ],
+          [
+            -0.0078125,
+            0.00390625,
+            0.015625
+          ],
+          [
+            0.0,
+            0.0078125,
+            0.0078125
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.00390625,
+            -0.0078125,
+            0.0
+          ],
+          [
+            0.00390625,
+            -0.0078125,
+            0.0
+          ],
+          [
+            0.00439453125,
+            -0.0078125,
+            0.0
+          ],
+          [
+            0.0078125,
+            -0.01171875,
+            -0.015625
+          ]
+        ],
+        "total_pulse": [
+          [
+            -0.00390625,
+            -0.001953125,
+            -0.00390625
+          ],
+          [
+            -0.0078125,
+            0.0078125,
+            -0.0078125
+          ],
+          [
+            -0.01171875,
+            -0.00390625,
+            -0.0078125
+          ],
+          [
+            -0.015625,
+            -0.0078125,
+            -0.0078125
+          ],
+          [
+            -0.0234375,
+            -0.0166015625,
+            -0.00390625
+          ],
+          [
+            -0.03125,
+            -0.0078125,
+            0.0
+          ],
+          [
+            -0.03125,
+            -0.0244140625,
+            -0.0078125
+          ],
+          [
+            -0.0234375,
+            -0.03125,
+            0.0
+          ],
+          [
+            -0.041015625,
+            -0.03515625,
+            0.0
+          ],
+          [
+            -0.0390625,
+            -0.044921875,
+            0.00390625
+          ],
+          [
+            -0.046875,
+            -0.03515625,
+            0.0078125
+          ],
+          [
+            -0.046875,
+            -0.046875,
+            -0.0078125
+          ],
+          [
+            -0.0625,
+            -0.046875,
+            0.0
+          ],
+          [
+            -0.0625,
+            -0.0390625,
+            0.0078125
+          ],
+          [
+            -0.05322265625,
+            -0.03125,
+            -0.001953125
+          ],
+          [
+            -0.0546875,
+            -0.041015625,
+            0.0078125
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 198,
+      "timestep": 299,
+      "sigma": 0.299699991941452,
+      "percent": {
+        "action_only": -9.42732610265796,
+        "future_vision_only": 0.3423915166765601,
+        "interaction": -0.8485309530215164,
+        "total_pulse": -9.933465539002915
+      },
+      "decomposition_max_abs_error": 0.0,
+      "denominator_sum_squares": 2.737007260322571,
+      "recipient_t21_velocity_xyz": [
+        [
+          0.1416015625,
+          -0.197265625,
+          1.71875
+        ],
+        [
+          -0.87890625,
+          -0.45703125,
+          1.5546875
+        ],
+        [
+          0.2197265625,
+          1.484375,
+          -1.4140625
+        ],
+        [
+          -0.59765625,
+          1.8359375,
+          -1.28125
+        ],
+        [
+          2.203125,
+          -0.2578125,
+          1.3828125
+        ],
+        [
+          0.63671875,
+          0.1484375,
+          0.7265625
+        ],
+        [
+          0.197265625,
+          -0.1435546875,
+          -1.1875
+        ],
+        [
+          -2.421875,
+          1.0390625,
+          -0.287109375
+        ],
+        [
+          -0.9296875,
+          -0.59765625,
+          0.484375
+        ],
+        [
+          -1.3125,
+          0.94921875,
+          0.76953125
+        ],
+        [
+          -0.427734375,
+          0.26171875,
+          -0.5234375
+        ],
+        [
+          1.3203125,
+          -0.73828125,
+          -0.341796875
+        ],
+        [
+          -2.265625,
+          2.109375,
+          0.65234375
+        ],
+        [
+          -0.5234375,
+          1.8984375,
+          -1.7265625
+        ],
+        [
+          -0.361328125,
+          -0.92578125,
+          1.015625
+        ],
+        [
+          0.703125,
+          -0.578125,
+          -0.25390625
+        ]
+      ],
+      "donor_t21_velocity_xyz": [
+        [
+          0.18359375,
+          -0.2060546875,
+          1.71875
+        ],
+        [
+          -0.84375,
+          -0.474609375,
+          1.5390625
+        ],
+        [
+          0.2470703125,
+          1.4765625,
+          -1.4140625
+        ],
+        [
+          -0.546875,
+          1.8203125,
+          -1.28125
+        ],
+        [
+          2.28125,
+          -0.291015625,
+          1.3828125
+        ],
+        [
+          0.75390625,
+          0.140625,
+          0.703125
+        ],
+        [
+          0.3671875,
+          -0.068359375,
+          -1.21875
+        ],
+        [
+          -2.203125,
+          1.1875,
+          -0.32421875
+        ],
+        [
+          -0.68359375,
+          -0.3984375,
+          0.45703125
+        ],
+        [
+          -1.0,
+          1.1640625,
+          0.7265625
+        ],
+        [
+          -0.061279296875,
+          0.546875,
+          -0.55859375
+        ],
+        [
+          1.7578125,
+          -0.416015625,
+          -0.37109375
+        ],
+        [
+          -1.7890625,
+          2.46875,
+          0.6171875
+        ],
+        [
+          0.030517578125,
+          2.28125,
+          -1.7734375
+        ],
+        [
+          0.240234375,
+          -0.546875,
+          0.97265625
+        ],
+        [
+          1.296875,
+          -0.16796875,
+          -0.279296875
+        ]
+      ],
+      "effect_velocity_xyz": {
+        "action_only": [
+          [
+            0.0029296875,
+            0.001953125,
+            0.0078125
+          ],
+          [
+            0.00390625,
+            -0.001953125,
+            -0.0078125
+          ],
+          [
+            0.0,
+            0.0,
+            0.0078125
+          ],
+          [
+            0.00390625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.015625,
+            0.0,
+            0.0078125
+          ],
+          [
+            -0.01171875,
+            -0.0107421875,
+            0.0
+          ],
+          [
+            -0.021484375,
+            -0.0224609375,
+            0.0
+          ],
+          [
+            -0.015625,
+            -0.015625,
+            -0.0078125
+          ],
+          [
+            -0.03125,
+            -0.01171875,
+            0.001953125
+          ],
+          [
+            -0.0390625,
+            -0.015625,
+            0.0
+          ],
+          [
+            -0.037109375,
+            -0.0244140625,
+            -0.00390625
+          ],
+          [
+            -0.0546875,
+            -0.03515625,
+            -0.001953125
+          ],
+          [
+            -0.046875,
+            -0.015625,
+            -0.00390625
+          ],
+          [
+            -0.05859375,
+            -0.03125,
+            0.0
+          ],
+          [
+            -0.041015625,
+            -0.0390625,
+            -0.0078125
+          ],
+          [
+            -0.05859375,
+            -0.04296875,
+            0.0107421875
+          ]
+        ],
+        "future_vision_only": [
+          [
+            0.0009765625,
+            0.0,
+            0.0078125
+          ],
+          [
+            0.00390625,
+            0.001953125,
+            -0.0078125
+          ],
+          [
+            -0.001953125,
+            0.0078125,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.001953125,
+            0.0
+          ],
+          [
+            -0.00390625,
+            0.0,
+            -0.00390625
+          ],
+          [
+            0.0,
+            -0.0068359375,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.00390625
+          ],
+          [
+            -0.0078125,
+            0.0078125,
+            -0.005859375
+          ],
+          [
+            -0.0078125,
+            0.00390625,
+            0.00390625
+          ],
+          [
+            0.001953125,
+            0.005859375,
+            0.00390625
+          ],
+          [
+            0.0,
+            0.0078125,
+            0.0
+          ],
+          [
+            -0.015625,
+            0.015625,
+            0.00390625
+          ],
+          [
+            -0.0078125,
+            0.015625,
+            -0.0078125
+          ],
+          [
+            0.001953125,
+            0.0078125,
+            0.0
+          ],
+          [
+            0.0078125,
+            -0.00390625,
+            0.0048828125
+          ]
+        ],
+        "interaction": [
+          [
+            -0.0029296875,
+            -0.001953125,
+            -0.0078125
+          ],
+          [
+            -0.01171875,
+            0.0,
+            0.015625
+          ],
+          [
+            -0.0009765625,
+            0.0,
+            -0.0078125
+          ],
+          [
+            -0.0078125,
+            0.0078125,
+            0.0
+          ],
+          [
+            0.015625,
+            0.0,
+            -0.0078125
+          ],
+          [
+            0.0,
+            0.00390625,
+            0.00390625
+          ],
+          [
+            -0.001953125,
+            0.00390625,
+            -0.0078125
+          ],
+          [
+            0.0,
+            0.0,
+            0.005859375
+          ],
+          [
+            0.0,
+            0.0,
+            -0.001953125
+          ],
+          [
+            0.0078125,
+            -0.0078125,
+            -0.00390625
+          ],
+          [
+            -0.005859375,
+            -0.0029296875,
+            0.00390625
+          ],
+          [
+            -0.0078125,
+            -0.0078125,
+            0.00390625
+          ],
+          [
+            0.0,
+            -0.03125,
+            0.0
+          ],
+          [
+            0.0078125,
+            -0.015625,
+            0.015625
+          ],
+          [
+            0.00390625,
+            -0.015625,
+            0.0
+          ],
+          [
+            0.00390625,
+            0.0,
+            -0.001953125
+          ]
+        ],
+        "total_pulse": [
+          [
+            0.0009765625,
+            0.0,
+            0.0078125
+          ],
+          [
+            -0.00390625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.0029296875,
+            0.0078125,
+            0.0
+          ],
+          [
+            -0.00390625,
+            0.0078125,
+            0.0
+          ],
+          [
+            0.0,
+            -0.001953125,
+            0.0
+          ],
+          [
+            -0.015625,
+            -0.0068359375,
+            0.0
+          ],
+          [
+            -0.0234375,
+            -0.025390625,
+            -0.0078125
+          ],
+          [
+            -0.015625,
+            -0.015625,
+            -0.005859375
+          ],
+          [
+            -0.0390625,
+            -0.00390625,
+            -0.005859375
+          ],
+          [
+            -0.0390625,
+            -0.01953125,
+            0.0
+          ],
+          [
+            -0.041015625,
+            -0.021484375,
+            0.00390625
+          ],
+          [
+            -0.0625,
+            -0.03515625,
+            0.001953125
+          ],
+          [
+            -0.0625,
+            -0.03125,
+            0.0
+          ],
+          [
+            -0.05859375,
+            -0.03125,
+            0.0078125
+          ],
+          [
+            -0.03515625,
+            -0.046875,
+            -0.0078125
+          ],
+          [
+            -0.046875,
+            -0.046875,
+            0.013671875
+          ]
+        ]
+      }
+    }
+  ],
+  "actual_2x2_decomposition_checked": true,
+  "complete_summary_and_cells_sha_checked": true,
+  "producer_RR_PP_full_model_output_gate_checked": true,
+  "full_output_gate_scope": "Actual entire model return, including vision, was compared bit-exact by the checked producer; the saved gates and original output hashes are preserved here. Plotting hashes the available actual replay NPZ arrays, without loading the remote full-output PT bundles.",
+  "factorial_arrays_hash_scope": "Hash recorded at plotting time; producer did not seal this aggregate NPZ. All four cell velocities and plotted effects were checked against originally hashed cell NPZ arrays, and scores against the sealed summary.",
+  "figure": {
+    "path": "/home/cenxi/Documents/cosmos3-policy-experiments/experiments/16-milk-shift-mechanism/feedback-inputs/figures/fixed_t21_input_interchange.png",
+    "sha256": "1596c0ab5b463af32b1fbf1fc0c698ce3acb348a556cb4682c849ea2e4846ac8"
+  },
+  "interpretation": "Conditional action/future-vision latent effects on fixed-t21 raw Flow velocity. No solver update between cells, no final-action comparison or closed-loop outcome claim."
+}

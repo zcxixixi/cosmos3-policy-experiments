@@ -1,0 +1,2800 @@
+{
+  "cases": [
+    {
+      "trial": "x00_seed195",
+      "shift_cm": 0,
+      "seed": 195,
+      "first_strict_object": "milk_1",
+      "first_strict_step": 56,
+      "first_strict_confirmed_step": 60,
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": 50,
+          "first_right_step": 51,
+          "first_any_finger_step": 50,
+          "first_both_fingers_step": 51,
+          "strict_window_start_step": 56,
+          "strict_confirmed_step": 60,
+          "first_both_eef_xyz": [
+            -0.12614465628116497,
+            -0.2397577125505284,
+            0.10225659346704437
+          ],
+          "strict_start_eef_xyz": [
+            -0.12610643582812076,
+            -0.23833200773191093,
+            0.12214367019765926
+          ],
+          "max_lift_cm": 21.11893219799453
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 50,
+      "first_robot_object_contact_step": 48,
+      "first_physical_contact_step": 48,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          3.100253259150311,
+          -12.872551354556178,
+          -0.27103784086958127
+        ],
+        "actual_eef_xy_path_length_cm": 13.26148279936587,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 25.380662305950757,
+          "minimum": 25.380662305950757,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 23.817285890062422,
+            "final": 10.685370130630446,
+            "reduction": 13.131915759431976,
+            "minimum": 10.685370130630446,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.380662305950757,
+            "displacement_alignment_to_initial_object": 0.9963352850612454
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 17.226795869349036,
+            "reduction": 4.930034695204434,
+            "minimum": 17.226795869349036,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.380662305950757,
+            "displacement_alignment_to_initial_object": 0.6297106668661685
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.20702941668523664,
+          -0.657431790180291,
+          0.021983998121868353
+        ],
+        "min_xyz_command": [
+          0.0012633158766478109,
+          -0.8771110776787401,
+          -0.02458713250234723
+        ],
+        "max_xyz_command": [
+          0.26593330667603016,
+          -0.10532441011869909,
+          0.05339116556569934
+        ],
+        "gripper_first": -0.9943793416023254,
+        "gripper_last": -0.9978402853012085,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 47,
+        "samples": 48,
+        "actual_eef_displacement_xyz_cm": [
+          3.225827145683384,
+          -23.205382052955432,
+          -15.259498332777493
+        ],
+        "actual_eef_xy_path_length_cm": 28.167333084060704,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 10.392201814042844,
+          "minimum": 10.392201814042844,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 23.817285890062422,
+            "final": 0.4892721456208489,
+            "reduction": 23.328013744441574,
+            "minimum": 0.37712587786509605,
+            "minimum_step": 46,
+            "eef_height_cm_at_minimum": 10.696561119428633,
+            "displacement_alignment_to_initial_object": 0.9999209225013839
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 21.639936223928704,
+            "reduction": 0.5168943406247664,
+            "minimum": 16.959323328955694,
+            "minimum_step": 31,
+            "eef_height_cm_at_minimum": 21.25822087344174,
+            "displacement_alignment_to_initial_object": 0.5505027991238001
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 56,
+        "first_both_object_order": [
+          {
+            "step": 51,
+            "object": "milk_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 51,
+            "objects": [
+              "milk_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83293,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 0.2889710909656966
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.4080383368399326e-14
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.21312223580825e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "b23ff856c7af794777b4532f19c8e707e8cfdce6f2d695f6f2cdb9972c0ff6f0",
+          "sim_states": "49b705caafac82c1de9040c46327f74b9a641302f9de02f7d2f05bec3618265b",
+          "summary": "8e7a520d9fab6cfbc20243fff2c831134d152a36b1f354195b05cdf782252051",
+          "normalized_actions.json": "4e9d2968ef1f72a4dba4c120b66633c09d038854490acade319feaa59cdfd9bc",
+          "denormalized_actions.json": "0845347642163d05556805e12755b8a79859d3c0a83a1601eed09d25f0fd40ca",
+          "actions.json": "4a8165a8846742dcbcab8686d713f52643016455d9600f394063f12ed04365af",
+          "executed_actions.json": "4a8165a8846742dcbcab8686d713f52643016455d9600f394063f12ed04365af"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x00_seed196",
+      "shift_cm": 0,
+      "seed": 196,
+      "first_strict_object": "milk_1",
+      "first_strict_step": 57,
+      "first_strict_confirmed_step": 61,
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": 53,
+          "first_right_step": 52,
+          "first_any_finger_step": 52,
+          "first_both_fingers_step": 53,
+          "strict_window_start_step": 57,
+          "strict_confirmed_step": 61,
+          "first_both_eef_xyz": [
+            -0.12173139857383325,
+            -0.24619940566153278,
+            0.10282212060180417
+          ],
+          "strict_start_eef_xyz": [
+            -0.12212045443651687,
+            -0.24507511843983426,
+            0.12198451283143946
+          ],
+          "max_lift_cm": 20.092630679019575
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 52,
+      "first_robot_object_contact_step": 48,
+      "first_physical_contact_step": 48,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          3.0182962957614397,
+          -11.177723418761692,
+          -0.32049212235862323
+        ],
+        "actual_eef_xy_path_length_cm": 11.585459713564825,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 25.331208024461716,
+          "minimum": 25.331208024461716,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 23.817285890062422,
+            "final": 12.382167916608193,
+            "reduction": 11.43511797345423,
+            "minimum": 12.382167916608193,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.331208024461716,
+            "displacement_alignment_to_initial_object": 0.9936183564559947
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 17.061552402016076,
+            "reduction": 5.095278162537394,
+            "minimum": 17.061552402016076,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.331208024461716,
+            "displacement_alignment_to_initial_object": 0.6507542135976901
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.20770746546803015,
+          -0.575472138558683,
+          0.02336920748348348
+        ],
+        "min_xyz_command": [
+          0.001056013884797674,
+          -0.8301980787643194,
+          -0.025118744233623147
+        ],
+        "max_xyz_command": [
+          0.2882374988824874,
+          -0.013868322419315592,
+          0.048159712459892035
+        ],
+        "gripper_first": -1.0,
+        "gripper_last": -1.0,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 47,
+        "samples": 48,
+        "actual_eef_displacement_xyz_cm": [
+          4.025432898182248,
+          -23.638313873248116,
+          -15.403841009452876
+        ],
+        "actual_eef_xy_path_length_cm": 27.53772593776946,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 10.247859137367463,
+          "minimum": 10.247859137367463,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 23.817285890062422,
+            "final": 0.45878145145012983,
+            "reduction": 23.358504438612293,
+            "minimum": 0.45878145145012983,
+            "minimum_step": 47,
+            "eef_height_cm_at_minimum": 10.247859137367463,
+            "displacement_alignment_to_initial_object": 0.9998385121289743
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 21.310199060903663,
+            "reduction": 0.8466315036498067,
+            "minimum": 16.77895050107973,
+            "minimum_step": 19,
+            "eef_height_cm_at_minimum": 25.281696022590726,
+            "displacement_alignment_to_initial_object": 0.5757443344114004
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 57,
+        "first_both_object_order": [
+          {
+            "step": 53,
+            "object": "milk_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 53,
+            "objects": [
+              "milk_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83143,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.2016070758530921
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.4080383368399326e-14
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.264285379103251e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "3c58a0928f1eeae3c410f093fafc0315d24444cab8c018ac8aadda381bd4e949",
+          "sim_states": "7ca438923dc7812ff8763dae91974d9257349b453d76c1ee0a1355854448a74c",
+          "summary": "4d1a9aa6bdb436f8e91dda68f3dba955f7eadfe41e88aa4c5fe897ca65440b8a",
+          "normalized_actions.json": "2f7c9c80c7d27e015bd07f32fad619bd2cfd8c2dea7eed3cdaa26275454ab3f5",
+          "denormalized_actions.json": "5865171df398ffa3b81e66ea51814225fd6edec628cfb7e0619333ce62c028a3",
+          "actions.json": "6a4bd4aed280b849c3082a5bb79f228634bb178fcfffe422d5c75d38c80730af",
+          "executed_actions.json": "6a4bd4aed280b849c3082a5bb79f228634bb178fcfffe422d5c75d38c80730af"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x00_seed198",
+      "shift_cm": 0,
+      "seed": 198,
+      "first_strict_object": "milk_1",
+      "first_strict_step": 61,
+      "first_strict_confirmed_step": 65,
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": 55,
+          "first_right_step": 56,
+          "first_any_finger_step": 55,
+          "first_both_fingers_step": 56,
+          "strict_window_start_step": 61,
+          "strict_confirmed_step": 65,
+          "first_both_eef_xyz": [
+            -0.13112939970126697,
+            -0.23806970331306443,
+            0.10358532888716045
+          ],
+          "strict_start_eef_xyz": [
+            -0.12883609089267106,
+            -0.23576062954585056,
+            0.1259848698705378
+          ],
+          "max_lift_cm": 21.200798848207924
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 55,
+      "first_robot_object_contact_step": 51,
+      "first_physical_contact_step": 51,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          2.1820618784334807,
+          -8.209544112466995,
+          -0.6095709778429548
+        ],
+        "actual_eef_xy_path_length_cm": 8.547626715676168,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 25.042129168977382,
+          "minimum": 25.042129168977382,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 23.817285890062422,
+            "final": 15.400982416588649,
+            "reduction": 8.416303473473773,
+            "minimum": 15.400982416588649,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.042129168977382,
+            "displacement_alignment_to_initial_object": 0.9940559947016848
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 17.86764326180918,
+            "reduction": 4.289187302744288,
+            "minimum": 17.86764326180918,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.042129168977382,
+            "displacement_alignment_to_initial_object": 0.6477509823183698
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.16706065553497057,
+          -0.43411732775344897,
+          0.009357122107758187
+        ],
+        "min_xyz_command": [
+          0.027299822439536436,
+          -0.8206995186066032,
+          -0.028731864877045155
+        ],
+        "max_xyz_command": [
+          0.30877030707573894,
+          0.006153051766971111,
+          0.045876160729676485
+        ],
+        "gripper_first": -0.9992967844009399,
+        "gripper_last": -1.0,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 50,
+        "samples": 51,
+        "actual_eef_displacement_xyz_cm": [
+          2.5479031695310796,
+          -23.047296739596508,
+          -15.336502696811255
+        ],
+        "actual_eef_xy_path_length_cm": 28.154908485470575,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 10.315197450009086,
+          "minimum": 10.315197450009086,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 23.817285890062422,
+            "final": 1.1430372133788194,
+            "reduction": 22.674248676683604,
+            "minimum": 0.6357214169757995,
+            "minimum_step": 48,
+            "eef_height_cm_at_minimum": 11.496328468238225,
+            "displacement_alignment_to_initial_object": 0.9991759774686473
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 22.07244833110199,
+            "reduction": 0.08438223345147833,
+            "minimum": 16.982636518641186,
+            "minimum_step": 36,
+            "eef_height_cm_at_minimum": 21.116340259961408,
+            "displacement_alignment_to_initial_object": 0.5268953102983654
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 61,
+        "first_both_object_order": [
+          {
+            "step": 56,
+            "object": "milk_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 56,
+            "objects": [
+              "milk_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83743,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 0.21606215848424629
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.4080383368399326e-14
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.212055976233981e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "a86309ee1d7d3b750170f31c2d7f3d3cffad2fb90d116bc7e58bf2137cdd3013",
+          "sim_states": "893530cfd75215ebe8a1ad000923504c8434e794c78b22e469c6082ea7229009",
+          "summary": "bd3743e0645cb5a9d69f63980a2fbe7243fb724b40c6c18a2f8e5b617c6bf870",
+          "normalized_actions.json": "d6fa23bd94e78c81dff97ecf2b29218077c5a01a41475693bf6ebb52289072db",
+          "denormalized_actions.json": "a947f303a84e1e9e44823c43e2918a49d6409cd7bb00d1a9c9b107ba25f33404",
+          "actions.json": "85ee6dc7d6dc475ed1e3b1fd477fe336f22ed803d4c20033f658c0fbe3e89cd3",
+          "executed_actions.json": "85ee6dc7d6dc475ed1e3b1fd477fe336f22ed803d4c20033f658c0fbe3e89cd3"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x06_seed195",
+      "shift_cm": 6,
+      "seed": 195,
+      "first_strict_object": "milk_1",
+      "first_strict_step": 60,
+      "first_strict_confirmed_step": 64,
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": 55,
+          "first_right_step": 52,
+          "first_any_finger_step": 52,
+          "first_both_fingers_step": 55,
+          "strict_window_start_step": 60,
+          "strict_confirmed_step": 64,
+          "first_both_eef_xyz": [
+            -0.07653391091053048,
+            -0.2509269012463257,
+            0.10285832688124695
+          ],
+          "strict_start_eef_xyz": [
+            -0.07349387277135831,
+            -0.2477770677255421,
+            0.12991007453712924
+          ],
+          "max_lift_cm": 18.44060531510366
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 52,
+      "first_robot_object_contact_step": 46,
+      "first_physical_contact_step": 46,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          3.6752072558397657,
+          -12.985621286186156,
+          -0.2309477031778029
+        ],
+        "actual_eef_xy_path_length_cm": 13.508785758944656,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 25.420752443642535,
+          "minimum": 25.420752443642535,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 25.41991852083911,
+            "final": 12.098196925990935,
+            "reduction": 13.321721594848176,
+            "minimum": 12.098196925990935,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.420752443642535,
+            "displacement_alignment_to_initial_object": 0.9939091864752299
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 16.686131797539982,
+            "reduction": 5.470698767013488,
+            "minimum": 16.686131797539982,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.420752443642535,
+            "displacement_alignment_to_initial_object": 0.6598714817909067
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.23786676792985947,
+          -0.6638961201299387,
+          0.026011531790572917
+        ],
+        "min_xyz_command": [
+          0.05655710707217454,
+          -0.8940122222273946,
+          0.002006463473662734
+        ],
+        "max_xyz_command": [
+          0.2851663633034527,
+          -0.1408364365407601,
+          0.05045076250098646
+        ],
+        "gripper_first": -0.9957739114761353,
+        "gripper_last": -1.0,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 45,
+        "samples": 46,
+        "actual_eef_displacement_xyz_cm": [
+          8.357144146069928,
+          -24.017199013442404,
+          -14.952232474807598
+        ],
+        "actual_eef_xy_path_length_cm": 28.2931333601814,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 10.699467672012743,
+          "minimum": 10.699467672012743,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 25.41991852083911,
+            "final": 1.3060635885988903,
+            "reduction": 24.113854932240223,
+            "minimum": 0.10930361485184106,
+            "minimum_step": 41,
+            "eef_height_cm_at_minimum": 14.280172772871467,
+            "displacement_alignment_to_initial_object": 0.9986806508652095
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 18.58280025393618,
+            "reduction": 3.574030310617289,
+            "minimum": 16.681350371800928,
+            "minimum_step": 17,
+            "eef_height_cm_at_minimum": 25.40293429540646,
+            "displacement_alignment_to_initial_object": 0.7030663267251449
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 60,
+        "first_both_object_order": [
+          {
+            "step": 55,
+            "object": "milk_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 55,
+            "objects": [
+              "milk_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83563,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.345426408737035
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.4080383368399326e-14
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.205242227418258e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "16e34141ac9fe904292825cab52383f4059d729844c0c7eef0c0211d200f5703",
+          "sim_states": "13a69ed7ad69676029a7aa5a46ec1681363992a5879d40d5a7eccefe95547ecc",
+          "summary": "fb87e1957f01030fda9eaf8f70c41e485a903527ff3d3c27debd85d969d51c63",
+          "normalized_actions.json": "0986d57c2baed63b5deb895de279abd8672ed2243e2183c681f2d85bf33580ab",
+          "denormalized_actions.json": "cfb1a48fffb222626c74d0ba3895e60987411aea0eedb7d878b74b8169584c96",
+          "actions.json": "58d51aaa5dd888778f59378a3e149e7545579d04661122a5306a69180779db79",
+          "executed_actions.json": "58d51aaa5dd888778f59378a3e149e7545579d04661122a5306a69180779db79"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x06_seed196",
+      "shift_cm": 6,
+      "seed": 196,
+      "first_strict_object": "milk_1",
+      "first_strict_step": 58,
+      "first_strict_confirmed_step": 62,
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": 54,
+          "first_right_step": 54,
+          "first_any_finger_step": 54,
+          "first_both_fingers_step": 54,
+          "strict_window_start_step": 58,
+          "strict_confirmed_step": 62,
+          "first_both_eef_xyz": [
+            -0.060275611121366465,
+            -0.24585196166017012,
+            0.10219048531170698
+          ],
+          "strict_start_eef_xyz": [
+            -0.05776644909145622,
+            -0.2441671322883463,
+            0.12277915065139698
+          ],
+          "max_lift_cm": 22.23690800571011
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 54,
+      "first_robot_object_contact_step": 47,
+      "first_physical_contact_step": 47,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          4.127184912373563,
+          -11.034393437772646,
+          -0.28927791790078206
+        ],
+        "actual_eef_xy_path_length_cm": 11.792430537593738,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 25.362422228919556,
+          "minimum": 25.362422228919556,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 25.41991852083911,
+            "final": 13.64773710059236,
+            "reduction": 11.772181420246751,
+            "minimum": 13.64773710059236,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.362422228919556,
+            "displacement_alignment_to_initial_object": 0.9995991460456315
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 15.94405446775766,
+            "reduction": 6.21277609679581,
+            "minimum": 15.94405446775766,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.362422228919556,
+            "displacement_alignment_to_initial_object": 0.7192754452996668
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.2556615142077703,
+          -0.5736020756252521,
+          0.01971405366930412
+        ],
+        "min_xyz_command": [
+          0.017296146458223444,
+          -0.8821123693629503,
+          -0.02067243622150272
+        ],
+        "max_xyz_command": [
+          0.3723242919936776,
+          -0.01904058220515588,
+          0.036116139963269234
+        ],
+        "gripper_first": -1.0,
+        "gripper_last": -1.0,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 46,
+        "samples": 47,
+        "actual_eef_displacement_xyz_cm": [
+          9.519906813774579,
+          -23.482362112687756,
+          -15.451289271898622
+        ],
+        "actual_eef_xy_path_length_cm": 28.124069928916423,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 10.200410874921717,
+          "minimum": 10.200410874921717,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 25.41991852083911,
+            "final": 0.08568231342259115,
+            "reduction": 25.33423620741652,
+            "minimum": 0.08568231342259115,
+            "minimum_step": 46,
+            "eef_height_cm_at_minimum": 10.200410874921717,
+            "displacement_alignment_to_initial_object": 0.9999994210790792
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 17.44676660620883,
+            "reduction": 4.710063958344641,
+            "minimum": 15.653169022937503,
+            "minimum_step": 19,
+            "eef_height_cm_at_minimum": 25.20091548817523,
+            "displacement_alignment_to_initial_object": 0.7379301427729912
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 58,
+        "first_both_object_order": [
+          {
+            "step": 54,
+            "object": "milk_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 54,
+            "objects": [
+              "milk_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 82939,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 0.28731769045303285
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.4080383368399326e-14
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.243376496321043e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "64b2f218d8248c0379a7113bf206b2902ffb2d0fe8a74df720380644957a8090",
+          "sim_states": "5c76a40a00ca607e070bd9273d55bc4b10e74217c0feb2ec2e5a6e4806668d67",
+          "summary": "77463ab39bfad414286590b7c70f2e1067d8febb6eeac10497bc681a1c82b159",
+          "normalized_actions.json": "f13e0425902cfe7da7697661767c5a290faa6c2ac7cc6543128be9b2d5e82869",
+          "denormalized_actions.json": "af9418b27c182e45f39fd7b68fbcedabd1e2925714fb6b7ff8b5e0f8ffc23fd6",
+          "actions.json": "efbb5dc1ee38420c0e579a94af10f80610d0a6b19abd959e47dd9f4c6abd8dec",
+          "executed_actions.json": "efbb5dc1ee38420c0e579a94af10f80610d0a6b19abd959e47dd9f4c6abd8dec"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x06_seed198",
+      "shift_cm": 6,
+      "seed": 198,
+      "first_strict_object": "milk_1",
+      "first_strict_step": 58,
+      "first_strict_confirmed_step": 62,
+      "selected_objects": [
+        "milk_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": 54,
+          "first_right_step": 53,
+          "first_any_finger_step": 53,
+          "first_both_fingers_step": 54,
+          "strict_window_start_step": 58,
+          "strict_confirmed_step": 62,
+          "first_both_eef_xyz": [
+            -0.0696762433388956,
+            -0.24641318507387275,
+            0.10437699266522268
+          ],
+          "strict_start_eef_xyz": [
+            -0.06758554825281214,
+            -0.24136122972627394,
+            0.1305476281699291
+          ],
+          "max_lift_cm": 21.46204428678588
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 2.0469737016526324e-14
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 53,
+      "first_robot_object_contact_step": 47,
+      "first_physical_contact_step": 47,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          3.722050719064067,
+          -8.937838655036735,
+          -0.25719744509321574
+        ],
+        "actual_eef_xy_path_length_cm": 9.787749539363327,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 25.394502701727124,
+          "minimum": 25.394502701727124,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 25.41991852083911,
+            "final": 15.738594368630975,
+            "reduction": 9.681324152208136,
+            "minimum": 15.738594368630975,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.394502701727124,
+            "displacement_alignment_to_initial_object": 0.9999650458007411
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 16.289397292332705,
+            "reduction": 5.867433272220765,
+            "minimum": 16.289397292332705,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 25.394502701727124,
+            "displacement_alignment_to_initial_object": 0.7442661245089296
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.23435343502657777,
+          -0.4736454374035003,
+          0.019366147280379664
+        ],
+        "min_xyz_command": [
+          0.05202322047705202,
+          -0.8857682644330859,
+          -0.006041113520041108
+        ],
+        "max_xyz_command": [
+          0.3938526669510603,
+          -0.00022601076298953832,
+          0.03785643959417939
+        ],
+        "gripper_first": -0.9992915391921997,
+        "gripper_last": -1.0,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 46,
+        "samples": 47,
+        "actual_eef_displacement_xyz_cm": [
+          8.77060797782535,
+          -23.578209558040456,
+          -14.961875864397253
+        ],
+        "actual_eef_xy_path_length_cm": 27.72948505775633,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 10.689824282423086,
+          "minimum": 10.689824282423086,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 25.41991852083911,
+            "final": 0.8057462653226319,
+            "reduction": 24.61417225551648,
+            "minimum": 0.12888848192910926,
+            "minimum_step": 43,
+            "eef_height_cm_at_minimum": 13.2226400347238,
+            "displacement_alignment_to_initial_object": 0.9995465834466588
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 17.981665199249548,
+            "reduction": 4.175165365303922,
+            "minimum": 15.429380198936668,
+            "minimum_step": 20,
+            "eef_height_cm_at_minimum": 25.285563399061537,
+            "displacement_alignment_to_initial_object": 0.718024183044987
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 58,
+        "first_both_object_order": [
+          {
+            "step": 54,
+            "object": "milk_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 54,
+            "objects": [
+              "milk_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 84379,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.4734512849744235
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.4080383368399326e-14
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.367583067443541e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "50e0881bcc37ba3d24b3be2474a4327c1d2c979b117557b1f049aaac88999c89",
+          "sim_states": "018b3e598df0611c1c83c5cef5892816e9aaec40301f3f65f46051b0ffe4b51d",
+          "summary": "add0449952ffd6069d4fc61d457fcc3e7183468d5a2caa063784941419237faa",
+          "normalized_actions.json": "a7b226e27d91b63828436a21e8aac7674bc63181b769c92b53ff88d73e782f34",
+          "denormalized_actions.json": "c98cbfde37fa8131b60e184af0d79fc4ea72ae3ba7ca4740a223f7fa7ac73522",
+          "actions.json": "f2e641ae684c32e328b066ee7d453f980293f38af6531b97760e2cdbedb0fe32",
+          "executed_actions.json": "f2e641ae684c32e328b066ee7d453f980293f38af6531b97760e2cdbedb0fe32"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x15_seed195",
+      "shift_cm": 15,
+      "seed": 195,
+      "first_strict_object": "cream_cheese_1",
+      "first_strict_step": 70,
+      "first_strict_confirmed_step": 74,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 0.26505001093025254
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": 64,
+          "first_right_step": 60,
+          "first_any_finger_step": 60,
+          "first_both_fingers_step": 64,
+          "strict_window_start_step": 70,
+          "strict_confirmed_step": 74,
+          "first_both_eef_xyz": [
+            0.03581299749431072,
+            -0.12312457297198194,
+            0.009774408459060593
+          ],
+          "strict_start_eef_xyz": [
+            0.033832187413026446,
+            -0.12280993809114095,
+            0.03011219967084751
+          ],
+          "max_lift_cm": 23.87266460518792
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 60,
+      "first_robot_object_contact_step": 58,
+      "first_physical_contact_step": 58,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          8.34029658489703,
+          -4.3271516443125195,
+          -1.7882407149754254
+        ],
+        "actual_eef_xy_path_length_cm": 9.494629139997729,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 23.863459431844912,
+          "minimum": 23.863459431844912,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 29.992265390626937,
+            "final": 21.775680179121117,
+            "reduction": 8.21658521150582,
+            "minimum": 21.775680179121117,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 23.863459431844912,
+            "displacement_alignment_to_initial_object": 0.9113329531584506
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 12.770121603718234,
+            "reduction": 9.386708960835236,
+            "minimum": 12.770121603718234,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 23.863459431844912,
+            "displacement_alignment_to_initial_object": 0.9994303838574259
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.49815993313329265,
+          -0.22988450521509782,
+          -0.03000798878929345
+        ],
+        "min_xyz_command": [
+          0.005974183732390392,
+          -0.4868574676325321,
+          -0.04833459039218724
+        ],
+        "max_xyz_command": [
+          0.7985752474576234,
+          0.0012518420997671628,
+          -0.00958876102231443
+        ],
+        "gripper_first": -0.9985085725784302,
+        "gripper_last": -0.9949823021888733,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 57,
+        "samples": 58,
+        "actual_eef_displacement_xyz_cm": [
+          19.79655345427623,
+          -10.895258315094903,
+          -24.293870012459987
+        ],
+        "actual_eef_xy_path_length_cm": 31.54858142359403,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 1.357830134360352,
+          "minimum": 1.357830134360352,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 29.992265390626937,
+            "final": 12.945574354110148,
+            "reduction": 17.04669103651679,
+            "minimum": 12.945574354110148,
+            "minimum_step": 57,
+            "eef_height_cm_at_minimum": 1.357830134360352,
+            "displacement_alignment_to_initial_object": 0.9211548420940797
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 1.3760850071941495,
+            "reduction": 20.78074555735932,
+            "minimum": 0.8180274905816844,
+            "minimum_step": 29,
+            "eef_height_cm_at_minimum": 20.812567768070878,
+            "displacement_alignment_to_initial_object": 0.9983021404354634
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 70,
+        "first_both_object_order": [
+          {
+            "step": 64,
+            "object": "cream_cheese_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 64,
+            "objects": [
+              "cream_cheese_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83563,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.1499132022385083
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.6874236608583624
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.27781155860282e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "83316e6e50eda2b0a635166550ebe7e5467926485c37ed6d6488ce67519bb66f",
+          "sim_states": "e31fc8ac0ff27ac2c71af15786af7abeb64de7a2d13ad82cf1b9312d8f39232e",
+          "summary": "8883119f05a74da5a6b277db1abc4a5c4e946794b16eacd2ae0880ff7cdf917c",
+          "normalized_actions.json": "e9c181095ba17752219d2b09425946c3b02c82cc4c6b5fdd81ee3dbb9c2daabf",
+          "denormalized_actions.json": "13921e6b49a64b6b181c6703130eb23401a5171959bf2aa2908667f77567d247",
+          "actions.json": "1a978e2b7248c4e94e3fd76a98353725a45fdb66202daaf9788bc687094757c5",
+          "executed_actions.json": "1a978e2b7248c4e94e3fd76a98353725a45fdb66202daaf9788bc687094757c5"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x15_seed196",
+      "shift_cm": 15,
+      "seed": 196,
+      "first_strict_object": "cream_cheese_1",
+      "first_strict_step": 67,
+      "first_strict_confirmed_step": 71,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174606907524918e-08
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": 62,
+          "first_right_step": 61,
+          "first_any_finger_step": 61,
+          "first_both_fingers_step": 62,
+          "strict_window_start_step": 67,
+          "strict_confirmed_step": 71,
+          "first_both_eef_xyz": [
+            0.03598773179913665,
+            -0.11170306464970405,
+            0.009755392403086385
+          ],
+          "strict_start_eef_xyz": [
+            0.03284454153925659,
+            -0.11114871276540027,
+            0.029358157489010453
+          ],
+          "max_lift_cm": 24.87831136883159
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 61,
+      "first_robot_object_contact_step": 61,
+      "first_physical_contact_step": 61,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          8.924722333000817,
+          -7.445641186696923,
+          -1.1302911451230913
+        ],
+        "actual_eef_xy_path_length_cm": 11.635930410761755,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 24.521409001697247,
+          "minimum": 24.521409001697247,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 29.992265390626937,
+            "final": 18.772510504735354,
+            "reduction": 11.219754885891582,
+            "minimum": 18.772510504735354,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 24.521409001697247,
+            "displacement_alignment_to_initial_object": 0.9785309001068566
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 11.27103056645906,
+            "reduction": 10.88579999809441,
+            "minimum": 11.27103056645906,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 24.521409001697247,
+            "displacement_alignment_to_initial_object": 0.9688004696270262
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.5313265191829588,
+          -0.3843416581668517,
+          0.0077810182847315446
+        ],
+        "min_xyz_command": [
+          0.03709335057379304,
+          -0.5503180941207111,
+          -0.01872406806796789
+        ],
+        "max_xyz_command": [
+          0.7492719196048379,
+          -0.029187556085843606,
+          0.0369398994371295
+        ],
+        "gripper_first": -1.0,
+        "gripper_last": -1.0,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 60,
+        "samples": 61,
+        "actual_eef_displacement_xyz_cm": [
+          19.04087817682148,
+          -10.416456140876704,
+          -24.69305687949299
+        ],
+        "actual_eef_xy_path_length_cm": 30.26935676184011,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 0.9586432673273498,
+          "minimum": 0.9313175765615939,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 29.992265390626937,
+            "final": 13.13911475802095,
+            "reduction": 16.85315063260599,
+            "minimum": 12.520108318230402,
+            "minimum_step": 27,
+            "eef_height_cm_at_minimum": 22.631641392226456,
+            "displacement_alignment_to_initial_object": 0.9201635916458267
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 1.3034510837904687,
+            "reduction": 20.853379480763003,
+            "minimum": 0.7467137263507084,
+            "minimum_step": 53,
+            "eef_height_cm_at_minimum": 2.426308869645935,
+            "displacement_alignment_to_initial_object": 0.9984468303911442
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 67,
+        "first_both_object_order": [
+          {
+            "step": 62,
+            "object": "cream_cheese_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 62,
+            "objects": [
+              "cream_cheese_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83461,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132524019164114e-08
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 1.2167561866373333
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.207508659537051e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "7c9d3418c0adefe1290d331a45e2b1399f78e55aade8e519c3d5cfad60fe5301",
+          "sim_states": "2ac19e624d9ce6aab166013780dd43fe6c5e8d9406f5f0bb5dbfdb3acd7915d9",
+          "summary": "6fb1161a03f3c0eeb309ae9f1be927171456cd38e7bcc2be1d729f823d8d225b",
+          "normalized_actions.json": "c088263e2f0a93b0bf43d49898712d0bc8279e03c71b081bf7588ef36119c4e6",
+          "denormalized_actions.json": "d518e15fcbf36818f37951f5e063b3357a240579ff8a7e7bb9989ac89050128f",
+          "actions.json": "732a669f159d70cbe7cd30dcdcfd25598ce44db13d00685165c52839990b19c0",
+          "executed_actions.json": "732a669f159d70cbe7cd30dcdcfd25598ce44db13d00685165c52839990b19c0"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    },
+    {
+      "trial": "x15_seed198",
+      "shift_cm": 15,
+      "seed": 198,
+      "first_strict_object": "cream_cheese_1",
+      "first_strict_step": 68,
+      "first_strict_confirmed_step": 72,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "first_contact_by_object": {
+        "milk_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174606907524918e-08
+        },
+        "basket_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 4.250766405533568e-12
+        },
+        "cream_cheese_1": {
+          "first_left_step": 63,
+          "first_right_step": 63,
+          "first_any_finger_step": 63,
+          "first_both_fingers_step": 63,
+          "strict_window_start_step": 68,
+          "strict_confirmed_step": 72,
+          "first_both_eef_xyz": [
+            0.03195876045363864,
+            -0.10865979202657938,
+            0.010255300793457572
+          ],
+          "strict_start_eef_xyz": [
+            0.03415174585593013,
+            -0.1071545840609556,
+            0.035124922465368885
+          ],
+          "max_lift_cm": 23.94962383082208
+        },
+        "tomato_sauce_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.020562075079397e-15
+        },
+        "butter_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 7.57900686654267e-13
+        },
+        "orange_juice_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 9.174607046302796e-08
+        },
+        "chocolate_pudding_1": {
+          "first_left_step": null,
+          "first_right_step": null,
+          "first_any_finger_step": null,
+          "first_both_fingers_step": null,
+          "strict_window_start_step": null,
+          "strict_confirmed_step": null,
+          "first_both_eef_xyz": null,
+          "strict_start_eef_xyz": null,
+          "max_lift_cm": 5.766220834146907e-13
+        }
+      },
+      "first_any_finger_contact_step": 63,
+      "first_robot_object_contact_step": 63,
+      "first_physical_contact_step": 63,
+      "q0_contains_physical_contact": false,
+      "q0_actual_approach": {
+        "first_step": 0,
+        "last_step": 16,
+        "samples": 17,
+        "actual_eef_displacement_xyz_cm": [
+          7.254916754151688,
+          -6.368985491341782,
+          -1.1481543949532185
+        ],
+        "actual_eef_xy_path_length_cm": 9.72170267923183,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 24.50354575186712,
+          "minimum": 24.50354575186712,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 29.992265390626937,
+            "final": 20.573217372534167,
+            "reduction": 9.41904801809277,
+            "minimum": 20.573217372534167,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 24.50354575186712,
+            "displacement_alignment_to_initial_object": 0.9834079823666941
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 13.132788053016267,
+            "reduction": 9.024042511537203,
+            "minimum": 13.132788053016267,
+            "minimum_step": 16,
+            "eef_height_cm_at_minimum": 24.50354575186712,
+            "displacement_alignment_to_initial_object": 0.9622560256919881
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "q0_executed_command_summary": {
+        "units": "Dimensionless controller inputs; these numbers are not displacement in meters.",
+        "mean_xyz_command": [
+          0.444832813774537,
+          -0.33561536364582106,
+          -0.0007820056180207757
+        ],
+        "min_xyz_command": [
+          0.06675086762133985,
+          -0.5661233010108173,
+          -0.010485666571184993
+        ],
+        "max_xyz_command": [
+          0.7836623722592593,
+          -0.00831005255350472,
+          0.020467748399823904
+        ],
+        "gripper_first": -0.9993164539337158,
+        "gripper_last": -0.9990914463996887,
+        "clipped_command_components": 0
+      },
+      "before_first_physical_contact": {
+        "first_step": 0,
+        "last_step": 62,
+        "samples": 63,
+        "actual_eef_displacement_xyz_cm": [
+          18.547377817699427,
+          -10.045231362498198,
+          -24.6853592349708
+        ],
+        "actual_eef_xy_path_length_cm": 30.923342059322867,
+        "eef_reference_height_cm": {
+          "initial": 25.65170014682034,
+          "final": 0.9663409118495392,
+          "minimum": 0.8598523426791336,
+          "maximum": 25.65170014682034
+        },
+        "object_xy_distance_cm": {
+          "milk_1": {
+            "initial": 29.992265390626937,
+            "final": 13.502134404379678,
+            "reduction": 16.49013098624726,
+            "minimum": 12.533383982215904,
+            "minimum_step": 30,
+            "eef_height_cm_at_minimum": 20.6688487273123,
+            "displacement_alignment_to_initial_object": 0.9185065681616199
+          },
+          "cream_cheese_1": {
+            "initial": 22.15683056455347,
+            "final": 1.5403253093318074,
+            "reduction": 20.61650525522166,
+            "minimum": 0.7753769903268487,
+            "minimum_step": 52,
+            "eef_height_cm_at_minimum": 3.001108868526803,
+            "displacement_alignment_to_initial_object": 0.9986725998349882
+          }
+        },
+        "xy_distance_shortened_to": [
+          "milk_1",
+          "cream_cheese_1"
+        ],
+        "interpretation": "\u8ddd\u79bb\u7f29\u77ed\u5bf9\u8c61\u53ef\u80fd\u540c\u65f6\u6709\u591a\u4e2a\uff1b\u8fd9\u4e2a\u5217\u8868\u4e0d\u4f5c\u4e3a\u76ee\u6807\u9009\u62e9\u6216\u6293\u53d6\u5206\u7c7b\u3002"
+      },
+      "contact_before_strict_pattern": {
+        "last_step_in_pattern": 68,
+        "first_both_object_order": [
+          {
+            "step": 63,
+            "object": "cream_cheese_1"
+          }
+        ],
+        "double_finger_state_changes": [
+          {
+            "step": 0,
+            "objects": []
+          },
+          {
+            "step": 63,
+            "objects": [
+              "cream_cheese_1"
+            ]
+          }
+        ],
+        "other_objects_with_any_finger_before_first_strict": [],
+        "other_objects_with_both_fingers_before_first_strict": []
+      },
+      "data_audit": {
+        "trajectory_numeric_leaves_checked": 83959,
+        "all_observations_numeric_finite": true,
+        "sim_states_shape": [
+          129,
+          110
+        ],
+        "sim_states_all_finite": true,
+        "full_recorded_object_qvel": {
+          "milk_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132524019164114e-08
+          },
+          "basket_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 2.8413538466428887e-12
+          },
+          "cream_cheese_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 0.26535662311641
+          },
+          "tomato_sauce_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 7.357386382872445e-14
+          },
+          "butter_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 5.071414066791795e-13
+          },
+          "orange_juice_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 6.132523931188346e-08
+          },
+          "chocolate_pudding_1": {
+            "shape": [
+              129,
+              6
+            ],
+            "all_finite": true,
+            "max_abs": 3.858654931863211e-13
+          }
+        },
+        "all_action_arrays_finite": true,
+        "executed_equals_clipped_native": true,
+        "event_summary_matches_exact": true,
+        "source_sha256": {
+          "trajectory": "cbfef2a3fbcca093b90d434dae7b90367a712aef03ecf93de3fc422a6ea90e5c",
+          "sim_states": "8abe7f88aacc4b15b42db58235cb3eaea6c75fd899c87e71b1069233ea0ea952",
+          "summary": "57c4f244afb6f0fc4150800d59af542299da1b36c2f83021cd7922f115d337e9",
+          "normalized_actions.json": "5dd6beca584f80f7e99ecc4e2b697bb7da46522de3211ced0348fb4a60eb5aef",
+          "denormalized_actions.json": "44f702738429612dd19f6515af335ca197a1763bfd95a926d4587cc1c8a8cc9d",
+          "actions.json": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421",
+          "executed_actions.json": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+        }
+      },
+      "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002"
+    }
+  ],
+  "scope": "\u8fd9\u6279\u5206\u6790\u53ea\u63cf\u8ff0\u673a\u68b0\u81c2\u5728\u63a5\u89e6\u524d\u5b9e\u9645\u671d\u54ea\u91cc\u79fb\u52a8\uff0c\u4ee5\u53ca\u63a5\u89e6\u3001\u62ac\u5347\u7684\u5148\u540e\u987a\u5e8f\u3002XY\u8ddd\u79bb\u662f\u4e8c\u7ef4\u6295\u5f71\uff0cEEF\u9ad8\u5ea6\u662f\u672b\u7aef\u53c2\u8003\u70b9\u7684\u9ad8\u5ea6\uff1b\u4e24\u8005\u90fd\u4e0d\u80fd\u5355\u72ec\u8bc6\u522b\u6293\u53d6\u76ee\u6807\uff0c\u4e5f\u4e0d\u80fd\u6392\u9664\u5939\u722a\u671d\u5411\u3001\u6307\u5c16\u4f4d\u7f6e\u3001\u8def\u5f84\u963b\u6321\u6216\u63a5\u89e6\u6761\u4ef6\u9020\u6210\u7684\u5931\u8d25\u3002\u6293\u8d77\u8c01\u4ec5\u4f9d\u636e\u540c\u4e00\u7269\u4f53\u8fde\u7eed\u4e94\u5e27\u540c\u65f6\u53cc\u6307\u63a5\u89e6\u4e14\u62ac\u5347\u8d85\u8fc72\u5398\u7c73\uff1b\u6b64\u5206\u6790\u4e0d\u5b9a\u4f4d\u7f51\u7edc\u5185\u90e8\u539f\u56e0\u3002",
+  "coordinate_units": "Inputs meters; reported distances/heights/displacements centimeters.",
+  "event_time_rule": "Strict start is the first frame of a 5-frame valid window; confirmation occurs four control steps later.",
+  "precontact_rule": "Exclude first contact frame; earliest observed robot/object or any-finger/object contact.",
+  "script_sha256": "ef6c4aefc533a86d647da299a97656f70532c7b7e78f4690d949907537305e74",
+  "source_summary_sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533"
+}

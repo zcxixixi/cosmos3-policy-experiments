@@ -1,0 +1,71 @@
+{
+  "script_sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+  },
+  "actual_transformer_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/transformers/transformer_cosmos3.py",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "baseline_server_provenance": {
+    "script_sha256": "5005b97785bc22bc37a2aa7361500ab93ef300ceaa9e0f83fa9e1d4ac71b1ab5",
+    "normal_runtime_sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory_sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components_sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "inputs_metadata_sha256": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a",
+    "pixel_helper_sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a",
+    "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+    "prompt": "pick up the milk and place it in the basket",
+    "shifts_cm": {
+      "x00": 0,
+      "x06": 6,
+      "x15": 15
+    },
+    "seeds": [
+      195,
+      196,
+      198
+    ],
+    "queries_per_trial": 8,
+    "library_edits": false,
+    "local_interventions": false,
+    "scope": "Paired position baseline. Query-zero observational attention/MLP component recordings; no claim of localized causal mechanism."
+  },
+  "baseline_summary_sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533",
+  "prompt": "pick up the milk and place it in the basket",
+  "seed": 198,
+  "donor_trial": "x06_seed198",
+  "recipient_trial": "x15_seed198",
+  "layer_convention": "zero based",
+  "denoising_step_convention": "zero based model forward in q0",
+  "layers": [
+    5,
+    11,
+    17,
+    23,
+    29,
+    31,
+    35
+  ],
+  "components": [
+    "attention",
+    "mlp"
+  ],
+  "pulse_steps": [
+    0,
+    10,
+    20,
+    29
+  ],
+  "gain": 1,
+  "patch_site": "GEN action component increment before its residual addition; exactly 16 actual action rows",
+  "library_edits": false,
+  "closed_loop_execution": false,
+  "scan_predictions": 56,
+  "control_predictions": 4,
+  "projection_definition": "sum((P-R)*(D-R))/sum((D-R)^2), final normalized action XYZ; 0 is recipient, 1 donor along this axis",
+  "gap_abs_floor": 1e-06,
+  "gap_relative_floor": 0.0001,
+  "scope": "Fixed first observation/q0 local component-output causal scan only. No MuJoCo intervention rollout; no claim of grasp repair, target identity, attractor, or a localized root cause. Persistence may be solver inheritance."
+}

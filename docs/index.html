@@ -9,45 +9,55 @@
 </head>
 <body><main>
 <section id="latest">
-<p class="muted">当前研究 · 更新于 2026-10-04 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">GitHub 仓库</a></p>
-<h1>牛奶移远后，为什么转去抓奶酪盒？</h1>
-<p>此前观察到：指令一直是“抓牛奶”，牛奶在原位、移动6厘米时能被抓起；移动15厘米后，却转去抓奶酪盒。这次只研究这一个目标切换问题。</p>
-<p class="goal"><b>当前 goal：</b>像研究大脑一样，先记录内部活动，再逐小块增强、削弱或替换。找到牛奶移远后，哪一部分内部计算导致转抓奶酪盒；检验局部干预能否恢复抓牛奶，并在牛奶再次换位置后继续跟着抓。</p>
-<p>实验不支持，就推翻猜想。判断依据是实际抓取、局部干预和对照共同支持的结果。</p>
-<div class="status"><b>真实进度：</b>A6000 重启后已恢复 SSH 连接，GPU 检查时空闲；现有权重、推理程序和正确对照数据仍在。<b>逐个 attention head、MLP 或小范围向量方向的定位尚未运行。</b>已有整块内部状态和文字读取通路的干预；这次页面更新没有新增推理结果。</div>
+<p class="muted">2026-10-04 · 最新实验 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、数据与记录</a></p>
+<h1>牛奶移远后，模型转去抓奶酪盒。内部哪里出了问题？</h1>
+<p class="goal"><b>只查一个问题：</b>指令始终是“抓牛奶，放进篮子”。牛奶移动6厘米时能抓，移动15厘米后却抓奶酪盒。我们要找到导致这个转变的具体内部计算，并检验改动它能否恢复抓牛奶。</p>
+<p><b>目前结论：</b>错误能稳定复现。只换网络内部一小块数字，动作确实会改变；但已经实际执行的三个改法，仍抓奶酪盒。<b>还没有找到能救回抓取的部分。</b></p>
+<div class="status"><b>新线索：</b>较早换数时，当次计算朝“6厘米时的动作”偏，下一次计算却往回偏。现在检查两条路径：是动作数组自身的后续计算造成回拉，还是同时生成的未来画面数组参与了回拉？逐个 attention head 的40次测试已完成：第18层第24个 head 单独换数造成约2.1%的正向投影，三次同强度随机扰动约0.03%～0.09%；反向换数也朝另一边改变约2.0%。这定位了一个会影响两组动作差异的head，还没有证明它负责牛奶身份或能恢复抓取。动作／未来画面分离实验也完成了，结果见下面。</div>
 </section>
-<section id="hypotheses">
-<h2>先检验一个大胆猜想</h2>
-<div class="hypothesis"><p><b>牛奶移出熟悉范围后，某种熟悉抓法压过了牛奶的身份和当前位置信息。</b></p><p>暂时削弱候选部分，看是否能恢复抓牛奶。也做短暂扰动后撤掉的实验：小改变是否被拉回旧抓法，大改变是否能维持新目标？只抓另一个固定点或普遍乱动，都不能算恢复。</p></div>
-<p>同时检查两个替代解释：牛奶移远后，视觉处理没有形成可靠的牛奶信息；或者动作本来朝向牛奶，但路径、夹爪和接触条件导致抓错。</p>
-<p class="muted">这些都是待检验的解释。脑科学提供实验思路，没有证明这个模型存在相同机制。</p>
-<details><summary>实验怎样做到有说服力？</summary>
-<p>先固定权重、指令、机器人初态、相机、其他物体和推理设置，复核牛奶原位、移动6厘米、移动15厘米的结果，每种先用三个配对随机种子。复现后，再细查6至15厘米之间的目标切换范围。</p>
-<p>记录转抓前后的真实内部活动，先粗查各层，再细查有线索的 attention head、MLP 或向量方向。网络的36层和30次去噪是两个需要分别检查的维度。碗／酒瓶对照只用于验证干预方法，不能直接解释牛奶场景的失败。</p>
-<p>每个候选都要测：换回自己的数字、改变无关部分、施加相同强度的随机扰动，以及改变物体位置和随机种子。判断依据是局部干预、后续动作和实际抓取共同支持的证据。碗／酒瓶两句的文本长度不同，局部交换要正确对齐，不能悄悄补齐或截断。</p>
-<p>每批实验结束后，更新首页：怀疑什么、改了哪里、实际发生什么、支持或推翻了什么、还不知道什么，并附对应图、视频和原始数据。进行中的实验明确标注进度。</p>
-<p>研究依据：<a href="https://www.nature.com/articles/s41586-019-0919-7">运动计划与短暂扰动</a>、<a href="https://www.nature.com/articles/nature13258">局部去抑制实验</a>、<a href="https://www.nature.com/articles/nature12742">信息如何参与目标选择</a>。</p>
+<section>
+<h2>1. 先确认：这次不是偶然抓错</h2>
+<p>只移动牛奶。机器人、相机、其他物体、指令和推理设置保持一致。每个位置用同样的三份配对随机噪声。</p>
+<table><thead><tr><th>牛奶在哪</th><th>三条实际执行各抓谁</th></tr></thead><tbody><tr><td>原位</td><td>牛奶、牛奶、牛奶</td></tr><tr><td>沿 X 移动6厘米</td><td>牛奶、牛奶、牛奶</td></tr><tr><td>沿 X 移动15厘米</td><td>奶酪盒、奶酪盒、奶酪盒</td></tr></tbody></table>
+<p class="muted">这是一个初始场景、三份噪声的诊断，不是通用成功率。“抓起”要求两侧夹爪接触、抬高超过2厘米，并持续5份记录；不代表最后放入篮子成功。</p>
+<div class="video-picker" role="group" aria-label="选择一条实际执行录像"><button type="button" data-video="fifteen" aria-pressed="true">15厘米：抓错</button><button type="button" data-video="zero" aria-pressed="false">原位：抓牛奶</button><button type="button" data-video="six" aria-pressed="false">6厘米：抓牛奶</button><button type="button" data-video="pulse" aria-pressed="false">第18层换数后</button></div>
+<video id="execution" controls preload="none" playsinline src="media/milk-shift-fifteen.mp4" aria-label="MuJoCo实际执行录像"></video>
+<p id="video-caption" class="muted" aria-live="polite">当前：牛奶移动15厘米，模型抓奶酪盒。这是 MuJoCo 执行动作，不是模型生成的预测视频。</p>
+<noscript><p><a href="media/milk-shift-fifteen.mp4">15厘米录像</a> · <a href="media/milk-shift-zero.mp4">原位录像</a> · <a href="media/milk-shift-six.mp4">6厘米录像</a> · <a href="media/milk-shift-pulse-layer18.mp4">第18层换数录像</a></p></noscript>
+</section>
+<section>
+<h2>2. 真的进去换数字了，换在哪里？</h2>
+<p><b>猜想：</b>移远后，某种熟悉抓法压过了当前牛奶的信息。如果把局部计算暂时换成“6厘米、最后抓牛奶”的数字，错误动作应该能被推开。</p>
+<p>模型每轮有30次去噪计算，每次通过36层。我们测了7层、两种部件（attention 和 MLP）、4个计算时刻，共<b>56个局部改法</b>。每次只换一个部件给16步动作提供的数组；输入画面、文字和随机噪声不变，其他部分继续正常算。56次测试都只改首轮推理；三条实际执行也只在首轮换一次，之后7轮用新拍的画面正常推理。</p>
+<p>先做4个对照：不改数字时必须完全复现；换回自己的数字也必须完全复现。四个对照都通过，完整记录逐项一致。</p>
+<table><thead><tr><th>影响最大的三个改法</th><th>动作朝参考方向偏多少</th><th>实际抓谁</th></tr></thead><tbody><tr><td>第18层 attention，最后一次去噪</td><td>7.3%</td><td>奶酪盒</td></tr><tr><td>第32层 attention，最后一次去噪</td><td>3.5%</td><td>奶酪盒</td></tr><tr><td>第30层 attention，最后一次去噪</td><td>3.0%</td><td>奶酪盒</td></tr></tbody></table>
+<p>百分比的意思：沿“15厘米时的动作 → 6厘米时的动作”这条方向，看改动走了多远。<b>它不是抓牛奶的概率，也不是成功率。</b>第18层改法让前16步的机械臂位置最多偏了约3毫米，后续仍抓奶酪盒。</p>
+<p><b>这批实验推翻了一个简单想法：</b>单次换入这些部件的自然数字，就足以恢复抓牛奶。它没有推翻“某条内部路径导致抓错”的可能性；也没有证明哪个部件代表牛奶。</p>
+<details><summary>展开看56个局部改法的图</summary><figure><img src="media/milk-component-pulses.png" alt="七个网络层、四个去噪时刻的attention和MLP局部换数后，动作沿参考方向的变化百分比"><figcaption>横轴是去噪计算时刻，纵轴是网络层。颜色表示动作变化在上述参考方向上的分量。这里只测试首轮输入；整块换数得到的线索还需逐头与路径实验核验。</figcaption></figure></details>
+</section>
+<section>
+<h2>3. 为什么刚推了一下，又偏回来了？</h2>
+<p>第18层 attention 在第21次去噪时换数，当次模型对动作的更新沿参考方向偏了<b>45.6%</b>；撤掉干预后，下一次更新反向偏了<b>9.9%</b>。30次计算结束，最终动作沿这个方向的变化接近零（−0.08%）。</p>
+<p>这两个数比较的是<b>各自计算时刻</b>下，改动相对原结果的更新量，不是实际移动厘米数。每个时刻的参考方向和分母都可能变化，不能把这两个百分比当同一把尺子。“最终接近零”也只指最终动作在参考轴上的投影，不代表所有数组完全没变。需要下面的同一时刻实验才能查清后续变化来自哪里。</p>
+<p><b>现在真的把两条路径拆开测了：</b>在同一次后续计算里，分别只换动作数组、只换未来画面数组、两者一起换、两者都不换。当前输入画面、文字和其他数字保持一致。三份噪声都做了这四组。</p>
+<table><thead><tr><th>只改什么输入</th><th>三次后续更新沿参考方向的变化</th></tr></thead><tbody><tr><td>只换动作数组</td><td>−9.4%、−10.4%、−9.4%</td></tr><tr><td>只换未来画面数组</td><td>+0.1%、−0.5%、+0.3%</td></tr><tr><td>两者一起换</td><td>−9.1%、−10.4%、−9.9%</td></tr></tbody></table>
+<p><b>结论：</b>只换动作数组，就能重现主要的反向响应。“未来画面主要把动作拉回去”的猜想不符合这批数据。现在把范围缩到：<b>网络接收改后的动作数组时，哪个部件产生了这次反向响应？</b></p>
+<p class="muted">这张表用同一个计算时刻、同一参考方向和分母，可以比较；它测的是网络更新，不是最终抓取。动作与未来画面的共同作用也单独保留在原始数据里。</p>
+<figure><img src="media/milk-action-vision-interchange.png" alt="三份配对噪声下，动作输入、未来画面输入、交互和总响应的固定时刻实验"><figcaption>橙色：只换动作。蓝色：只换未来画面。粉色：额外交互。灰色：总变化。主要反向变化来自动作输入；图的英文细节对应上面的中文表。</figcaption></figure>
+<details><summary>第18层里，哪个head更明显？</summary><figure><img src="media/milk-attention-heads.png" alt="第18层32个真实attention head逐个换数的效果，以及最强head与三个同强度随机对照"><figcaption>第24个head换数的动作投影约2.1%，随机对照约0.03%～0.09%。反向换数约2.0%，按反向基准计算。它影响两组动作差异，尚不能叫牛奶身份head。</figcaption></figure></details>
+<details><summary>依据、真实输入与数据在哪里？</summary>
+<p>脑科学给我们的启发是“短暂扰动，然后观察恢复”；神经网络研究提供局部 activation patching 方法。这里还没有证明大脑和模型具有相同机制。</p>
+<p><a href="https://www.nature.com/articles/s41586-019-0919-7">短暂扰动与运动计划</a> · <a href="https://www.nature.com/articles/nature12742">信息如何参与选择</a> · <a href="https://arxiv.org/html/2509.00328v1">VLA内部干预研究</a> · <a href="https://arxiv.org/html/2404.15255v1">局部换数方法的检验</a></p>
+<figure><img src="media/milk-shift-input.png" alt="15厘米条件下模型实际收到的固定相机和手腕相机输入"><figcaption>真实输入：两路当前相机各256×256，按当前代码旋转并拼接；文字始终是 pick up the milk and place it in the basket。这里没有喂额外示范或增加机器人状态输入。</figcaption></figure>
+<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/README.md">完整实验说明、真实内部数组、逐步物理轨迹、控制检查与代码</a>。抓取位置和对象依据真实 MuJoCo 状态与接触记录判断。当前只测了一个场景；一次局部干预的负结果不能概括整个模型。</p>
 </details>
 </section>
-<section id="goal-control">
-<h2>最近完成的实际实验：说碗抓碗，说酒瓶抓酒瓶</h2>
-<p>同一份物理初态、同一张起始画面，分别说“把碗放到柜子上”和“把酒瓶放到柜子上”。同一个模型，没有重新训练、喂示范或替换内部数字。</p>
-<figure><img src="media/goal-pair-input.png" alt="共同初始输入：左为固定相机，右为手腕相机，场景中有碗和酒瓶"><figcaption>模型实际收到的两路起始画面，各256×256。执行后，各自拍新画面继续推理。</figcaption></figure>
-<table><thead><tr><th>指令</th><th>实际抓起谁？</th><th>最后放好了吗？</th></tr></thead><tbody><tr><td>把碗放到柜子上</td><td>碗，最高抬起28.6 cm</td><td>没有通过放置检查</td></tr><tr><td>把酒瓶放到柜子上</td><td>酒瓶，最高抬起30.0 cm</td><td>最后仍夹着，没通过放置检查</td></tr></tbody></table>
-<p><b>这个对照说明：</b>当前模型在这组场景里能随指令换目标。牛奶场景的失败还在；为什么失败，还没有定位到具体内部部分。</p>
-<div class="video-picker" role="group" aria-label="选择一条实际执行录像"><button type="button" data-video="bowl" aria-pressed="true">看抓碗</button><button type="button" data-video="wine" aria-pressed="false">看抓酒瓶</button></div>
-<video id="execution" controls preload="none" playsinline src="media/goal-bowl.mp4" aria-label="MuJoCo实际执行录像"></video>
-<p id="video-caption" class="muted" aria-live="polite">当前录像：抓碗。由 MuJoCo 执行模型动作；不是生成视频。</p>
-<noscript><p><a href="media/goal-bowl.mp4">打开抓碗录像</a> · <a href="media/goal-wine.mp4">打开抓酒瓶录像</a></p></noscript>
-<p class="muted">两条各128步，一个共同初态、一组配对噪声；不是成功率统计。抓起要求双侧夹爪接触、抬高超过2 cm并持续至少5份记录。抓起与最终放好分别判断。</p>
-<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/15-native-goal-targets/README.md">本次实验的输入、真实内部数组、逐步轨迹和运行代码</a></p>
-</section>
-<footer class="muted">测试对象：社区权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">cosmos3-nano-policy-liberoall-5k</a> 与当前推理程序。此前资料在仓库保留供核验，首页只展示当前研究和最近完成的实际实验。</footer>
+<footer class="muted">对象：社区权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">cosmos3-nano-policy-liberoall-5k</a> 与当前推理程序。没有重新训练。老实验保留在仓库供核验，首页只展示当前问题与最新结果。</footer>
 </main>
 <script>
 const player=document.getElementById('execution');
 const caption=document.getElementById('video-caption');
-const clips={bowl:{src:'media/goal-bowl.mp4',label:'抓碗'},wine:{src:'media/goal-wine.mp4',label:'抓酒瓶'}};
+const clips={fifteen:{src:'media/milk-shift-fifteen.mp4',label:'牛奶移动15厘米，模型抓奶酪盒'},zero:{src:'media/milk-shift-zero.mp4',label:'牛奶在原位，模型抓牛奶'},six:{src:'media/milk-shift-six.mp4',label:'牛奶移动6厘米，模型抓牛奶'},pulse:{src:'media/milk-shift-pulse-layer18.mp4',label:'第18层attention只换一次数字，模型仍抓奶酪盒'}};
 for(const button of document.querySelectorAll('[data-video]')){
  button.addEventListener('click',()=>{
   if(button.getAttribute('aria-pressed')==='true')return;
@@ -55,7 +65,7 @@ for(const button of document.querySelectorAll('[data-video]')){
   const clip=clips[button.dataset.video];
   player.src=clip.src;
   player.load();
-  caption.textContent='当前录像：'+clip.label+'。由 MuJoCo 执行模型动作；不是生成视频。';
+  caption.textContent='当前：'+clip.label+'。这是 MuJoCo 执行动作，不是模型生成的预测视频。';
   for(const other of document.querySelectorAll('[data-video]'))other.setAttribute('aria-pressed',String(other===button));
  });
 }

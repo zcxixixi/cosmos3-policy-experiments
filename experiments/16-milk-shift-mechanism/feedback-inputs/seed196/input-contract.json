@@ -1,0 +1,56 @@
+{
+  "seed": 196,
+  "sources": {
+    "R": {
+      "trial": "x15_seed196",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed196/input_00.png",
+      "image_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "states_sha256": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f",
+      "components_sha256": "67df5ffcdff89a0c19b3ae4ac6b26266a7d7d5846520ab2b68560c7063d33722"
+    },
+    "D": {
+      "trial": "x06_seed196",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed196/input_00.png",
+      "image_sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135",
+      "states_sha256": "aecce1bf96c12386b9a58eab25e6e30c2c25313f189232fe295ed747fd112d6d",
+      "components_sha256": "3300d460ba1bd7e80d45bd4f81d8efc2cbf1cede75c7336eb8a1ef39cd0d742d"
+    }
+  },
+  "both_pure_noise_draws_exact": true,
+  "complete_schedule_and_30step_metadata_exact": true,
+  "native_R_all_record_fields_exact": true,
+  "seed198_P_all_coarse_record_fields_exact": false,
+  "other_t21_kwargs_all_exact": true,
+  "vision": {
+    "runtime_vision_shape": [
+      1,
+      48,
+      5,
+      10,
+      20
+    ],
+    "verified_squeezed_order": "C,T,H,W",
+    "runtime_patch_grid": [
+      5,
+      5,
+      10
+    ],
+    "current_condition_frames": [
+      0
+    ],
+    "future_noisy_frames": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "current_condition_bit_exact": true,
+    "packed_current_condition_bit_exact": true,
+    "future_latents_bit_exact": false,
+    "future_latent_delta_l2": 0.28575047850608826,
+    "action_sample_delta_l2": 0.05921155586838722,
+    "packing_method_source_sha256": "88d5a13eec926ad19e69abaca586e2bba07c948dd2b30f7734cf997cdbfe8d29",
+    "timestep_method_source_sha256": "ca517902ae726143e562e8df62382b8f21a9726d0b76ad79814e6c1c0262e336"
+  },
+  "scope": "Fixed actual t21 inputs, same sigma and unchanged current visual condition. Conditional action/future-vision latent effects on raw Flow velocity only. No scheduler update or MuJoCo execution in the four-cell replay; no attractor, incorrect-video, object-identity or full root-cause claim."
+}

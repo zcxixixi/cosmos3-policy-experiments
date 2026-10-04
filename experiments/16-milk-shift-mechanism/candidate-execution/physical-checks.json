@@ -1,0 +1,35 @@
+{
+  "state": "complete",
+  "baseline_control_exact": {
+    "trajectory.json": true,
+    "executed_actions.json": true,
+    "sim_states.npy": true
+  },
+  "candidates": [
+    {
+      "case": "candidate00",
+      "q0_max_eef_delta_mm": 2.973218924816173,
+      "all128_max_eef_delta_mm": 43.456043345611356,
+      "selection": [
+        "cream_cheese_1"
+      ]
+    },
+    {
+      "case": "candidate01",
+      "q0_max_eef_delta_mm": 1.0402911200962304,
+      "all128_max_eef_delta_mm": 25.13703291805251,
+      "selection": [
+        "cream_cheese_1"
+      ]
+    },
+    {
+      "case": "candidate02",
+      "q0_max_eef_delta_mm": 1.8555583676761238,
+      "all128_max_eef_delta_mm": 3.1456355866850716,
+      "selection": [
+        "cream_cheese_1"
+      ]
+    }
+  ],
+  "definition": "Euclidean world-space EEF reference-point difference from exact reproduced native x15_seed198; not finger tips or target identity score."
+}

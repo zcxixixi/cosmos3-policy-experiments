@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "n_steps": 30,
+  "n_layers": 36,
+  "expected_steps": 30,
+  "missing_component_calls": [],
+  "unfinished_forwards": [],
+  "component_call_count": 2160,
+  "processor_recompute_calls": 0,
+  "output_exactness_checked_by_helper": false,
+  "layer": 17,
+  "component": "attention",
+  "steps": [
+    20
+  ],
+  "gain": 1.0,
+  "mode": "donor_blend",
+  "intervention_count": 1,
+  "recipient_label": "x15_seed198",
+  "donor_label": "x06_seed198",
+  "donor_initial_vision_equal": false,
+  "patch_site": "component increment before decoder residual addition",
+  "action_rows": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265
+  ],
+  "changes": [
+    {
+      "step": 20,
+      "layer": 17,
+      "component": "attention",
+      "shape": [
+        16,
+        4096
+      ],
+      "exact_no_change": false,
+      "delta_l2": 6.151386260986328,
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "347de2b91d677f0f5d6221455c86586142e03a2e7f212978f6799801740d03bf"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "2362b9f165ad160626b1c58a2773b3d02ff4cda3979e72843d9d3d20d1278f91"
+      }
+    }
+  ]
+}
