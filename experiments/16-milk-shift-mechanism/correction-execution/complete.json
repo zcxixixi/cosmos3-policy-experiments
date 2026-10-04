@@ -1,0 +1,20 @@
+{
+  "state": "complete",
+  "trials": [
+    "native_R",
+    "P",
+    "P_persistent_gain100",
+    "P_random_normmatched"
+  ],
+  "seed": 198,
+  "physical_trials": 4,
+  "queries": 32,
+  "saved_q0_predictions": 4,
+  "native_new_image_predictions": 28,
+  "native_R_full_129_state_and_actions_and_trajectory_exact": true,
+  "server_complete_sha256": "043f63a85f7825635b673c4242289ada1e9f2ea01df7fe5e4b2616fb2e7405b5",
+  "simulator_complete_sha256": "e3da57f976277d0306521982da39b5e05dbef7df02fd7579b84e19f7ba302211",
+  "native_control_sha256": "c29d5c509cba09c460e923e56ad1c58665d6bb96519dc3576dcb3ffcd60f404a",
+  "provenance_sha256": "a0dd15027d5b9adfa1a56487a0a995b3f76d7d82708fccce2e759c03fe9cf0a4",
+  "scope": "Four preregistered seed198 128-action executions from the unchanged X+15cm physical initial state. Query0 executes saved native_R/P/persistent gain1/random actions; gain100 means 100% replacement, numerical gain1. Queries1..7 are native predictions on actual current images. Strict dual-finger contact and >2cm lift for five consecutive records determines selected objects. No training or claim of a milk neuron, identity probability, attractor or localized root cause."
+}

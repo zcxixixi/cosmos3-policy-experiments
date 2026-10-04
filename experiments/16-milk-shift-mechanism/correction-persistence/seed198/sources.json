@@ -1,0 +1,46 @@
+{
+  "R": {
+    "trial": "x15_seed198",
+    "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x15_seed198/input_00.png",
+    "image_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+    "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+    "components_sha256": "76ccbba38d997c71061b099a7610b1b350a9fb506dc1f2a08216e30bc78bde92"
+  },
+  "D": {
+    "trial": "x06_seed198",
+    "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/closed-loop/x06_seed198/input_00.png",
+    "image_sha256": "bfea48ad37f98a58b6d8a825ace04a5e32da731932f2f88ef67fadf21ca89135",
+    "states_sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e",
+    "components_sha256": "04e7838adb524127489e4e20cc6aa84490673103294f6d5e7a4a58a6414c2adf"
+  },
+  "feedback": {
+    "feedback_input_contract": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/input-contract.json",
+      "sha256": "fcbc785b7dc68bae06fb48d805d447554df6c266bfb648a3481b0622f4e9324e"
+    },
+    "feedback_native_R_states": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/native_R_q0/states.pt",
+      "sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599"
+    },
+    "feedback_P_states": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/pulse_P_q0/states.pt",
+      "sha256": "68a36a4647711e59c3d4b25b654f12afe7770e6f7890124fac06e0c331b4b4c7"
+    },
+    "feedback_R_inputs": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/native_R_q0/model_inputs_20_21.pt",
+      "sha256": "16a2fa8be47b94a62279c365e3f0186fc2cba6817e9abb6388db5a9dcb61dad6"
+    },
+    "feedback_P_inputs": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/pulse_P_q0/model_inputs_20_21.pt",
+      "sha256": "5583a736b9adede167d7d035284017d8b907aaf68e71f79987298c76eaa1ef01"
+    },
+    "feedback_PP_metadata": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/replays/PP/metadata.json",
+      "sha256": "ea7769b7b090d20c1ab38e54ce2bb339d504f11a601e75ced73a9de8653371a0"
+    },
+    "feedback_PP_components": {
+      "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/replays/PP/components.pt",
+      "sha256": "1e382cfea02b7f256f23b13ab0bf0b63a6d982d65243328a95ab2cb9ba21ea25"
+    }
+  }
+}

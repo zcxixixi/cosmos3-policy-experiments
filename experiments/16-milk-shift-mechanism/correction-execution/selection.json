@@ -1,0 +1,123 @@
+{
+  "state": "prepared_for_actual_execution",
+  "seed": 198,
+  "trial_order": [
+    "native_R",
+    "P",
+    "P_persistent_gain100",
+    "P_random_normmatched"
+  ],
+  "trials": {
+    "native_R": {
+      "scene": "x15",
+      "seed": 198,
+      "arm": {
+        "name": "native_R",
+        "pulse": false,
+        "reset_steps": [],
+        "gain": null,
+        "mode": "native"
+      },
+      "run": "seed198_native_R",
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/native_R",
+      "files_sha256": {
+        "states.pt": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+        "actualsession.pt": "da864d1e7554fc566722dccccbcd9845bf6165aa56f8889b8a268aeef9847cef",
+        "actualsession.json": "8f5a5a70117a079b84fe7a11dd3d8e4bbaad7eb6c93117e2ae1d005a29c4d833",
+        "metadata.json": "cb6e740cd68ddc0eeb5488fd7904906d6330d09dfa9d5ae6f33efcae3d4692ca",
+        "normalized_actions.json": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6",
+        "metrics.json": "7d771ce43dc3c56f53da0e0a1ce6150508e5e95153a152a9305f2c61ddb9db67",
+        "norms.json": "3510e03961cd1662ae58a9482c38e8f10b844ca8d5b0aff8b7dc96f94190805d"
+      }
+    },
+    "P": {
+      "scene": "x15",
+      "seed": 198,
+      "arm": {
+        "name": "P",
+        "pulse": true,
+        "reset_steps": [],
+        "gain": null,
+        "mode": "native"
+      },
+      "run": "seed198_P",
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P",
+      "files_sha256": {
+        "states.pt": "68a36a4647711e59c3d4b25b654f12afe7770e6f7890124fac06e0c331b4b4c7",
+        "actualsession.pt": "4a7ffba38e8dfbac4f2ed1241a1877d87a617d70a865d490218d48f189eaaec5",
+        "actualsession.json": "02e9714c749ec137dea03ecfc7006e28d5e2fca0e4654273b7788978a26ae122",
+        "metadata.json": "677a24efd4a4415eb8cfbc67487d26f4d9b6b5d6651fddf24cfd4a415ed860c0",
+        "normalized_actions.json": "8d6cff35d6d2a3d7948e22291075b50e5e0ba485eeb5f4253440a38232b76519",
+        "metrics.json": "eb85a31ceda38fe3995fe579f84fd8a48991ee06af50ba1b1a9c1af9a27b275e",
+        "norms.json": "6ee96db5e92e6d23c61ebdc94ecb3890f784af8c1ac302148d3f1d8afa2982d0"
+      }
+    },
+    "P_persistent_gain100": {
+      "scene": "x15",
+      "seed": 198,
+      "arm": {
+        "name": "P_persistent_gain100",
+        "pulse": true,
+        "reset_steps": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "gain": 1.0,
+        "mode": "blend_R"
+      },
+      "run": "seed198_P_persistent_gain100",
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_persistent_gain100",
+      "files_sha256": {
+        "states.pt": "755f37aa92408a855f1b3683f5e66beafcc40e4d3f51771636f3eda9b39e3c8d",
+        "actualsession.pt": "c122d0efaaf92ef340978c8b6ac143b98aafa4f6dc1648a3746ef58d33c9fa9e",
+        "actualsession.json": "b82d6c4e1175a8981f92a8b2464961ea74bd3ed9f23ca0acbcf6cddab88aabfb",
+        "metadata.json": "5967b57e7a4b0d2491c6011b768ec873a03bac33ecaf22034c13f84ab2feef62",
+        "normalized_actions.json": "1132f96ff6e08704c11c69599abe92dc10af33a8054dba2356742daf31f47e5b",
+        "metrics.json": "90f581f25c633a6cde8f7f300678526fb11df94b4dbeaee595a90c07483478f9",
+        "norms.json": "354e72a1919cb75dc8feec694cc59b665ee833d277813d56fedeef18b01636cb"
+      }
+    },
+    "P_random_normmatched": {
+      "scene": "x15",
+      "seed": 198,
+      "arm": {
+        "name": "P_random_normmatched",
+        "pulse": true,
+        "reset_steps": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "gain": null,
+        "mode": "random"
+      },
+      "run": "seed198_P_random_normmatched",
+      "directory": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_random_normmatched",
+      "files_sha256": {
+        "states.pt": "985d0e011e3e03ea0062b789b02ae273b541de990984f6c0ebe733a6baf8d8a5",
+        "actualsession.pt": "1e96f841050fc6c0e434a44870e700f1be30bfbe602131eeab9f493322599e4a",
+        "actualsession.json": "d91dfcd93405eb49f4b8b6b17c633c88f731a3ef0cfc3419329fe2d6a7956a8d",
+        "metadata.json": "f1b0f6e9445d28961f1208988c63d8e5f1913060b952f0f58da61a0196174f16",
+        "normalized_actions.json": "a45171ee8e32a9932bdd12f78e89c13cb2f5907301772d9dfc3c432a22698530",
+        "metrics.json": "f0d8091fc808b18d4087a1f38384417428a1e5e214bd88f1f4dffba5f0f3f837",
+        "norms.json": "beff9cfe46482232e4eed262407f41f19999fcfe56cc0406c06f411b080e657c"
+      }
+    }
+  },
+  "q0_source": "Each preregistered arm uses its completed correction-persistence states/actions.",
+  "later_queries": "Queries1..7 native at actual new images; no component patches.",
+  "scope": "Four preregistered seed198 128-action executions from the unchanged X+15cm physical initial state. Query0 executes saved native_R/P/persistent gain1/random actions; gain100 means 100% replacement, numerical gain1. Queries1..7 are native predictions on actual current images. Strict dual-finger contact and >2cm lift for five consecutive records determines selected objects. No training or claim of a milk neuron, identity probability, attractor or localized root cause."
+}

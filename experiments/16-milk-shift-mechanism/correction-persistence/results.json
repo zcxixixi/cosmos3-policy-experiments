@@ -1,0 +1,3357 @@
+{
+  "state": "complete",
+  "predictions": 24,
+  "cases": [
+    {
+      "run": "seed195_native_R",
+      "seed": 195,
+      "arm": "native_R",
+      "pulse": false,
+      "reset_steps": [],
+      "gain": null,
+      "intervention_count": 0,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.3987283865945454,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0013279748003638067,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_normalized_xyz": [
+        [
+          -0.12183773517608643,
+          -0.03519175201654434,
+          -0.02764269709587097
+        ],
+        [
+          -0.09201124310493469,
+          -0.03634989634156227,
+          -0.030983468517661095
+        ],
+        [
+          -0.03502959758043289,
+          -0.03666674718260765,
+          -0.03139485418796539
+        ],
+        [
+          0.049131352454423904,
+          -0.05505022034049034,
+          -0.031586650758981705
+        ],
+        [
+          0.19855207204818726,
+          -0.09162260591983795,
+          -0.024638362228870392
+        ],
+        [
+          0.30512794852256775,
+          -0.10203513503074646,
+          -0.017918672412633896
+        ],
+        [
+          0.3717716932296753,
+          -0.15545937418937683,
+          -0.01961367391049862
+        ],
+        [
+          0.508999764919281,
+          -0.2558983564376831,
+          -0.012498235329985619
+        ],
+        [
+          0.688569188117981,
+          -0.3282338082790375,
+          -0.010228011757135391
+        ],
+        [
+          0.7755258083343506,
+          -0.4050530195236206,
+          -0.02478943020105362
+        ],
+        [
+          0.8053706288337708,
+          -0.5019397139549255,
+          -0.03980410099029541
+        ],
+        [
+          0.8047662973403931,
+          -0.5797639489173889,
+          -0.049982719123363495
+        ],
+        [
+          0.8002581000328064,
+          -0.6154912710189819,
+          -0.051556896418333054
+        ],
+        [
+          0.8158935308456421,
+          -0.6164593696594238,
+          -0.048443928360939026
+        ],
+        [
+          0.8266545534133911,
+          -0.602479100227356,
+          -0.04477282613515854
+        ],
+        [
+          0.8326927423477173,
+          -0.5493732690811157,
+          -0.04628181457519531
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.6380649610000546,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/native_R",
+      "files_sha256": {
+        "states.pt": "44ea8dd24bfd1d570a6fcfeb9cc068b1924936b2610913df43f6224405c2bb7d",
+        "actualsession.pt": "047f690e82e8e6ea0d3ef620a1be8abe4bfb90d33e66403214a2202acecfa4d5",
+        "actualsession.json": "75a7c346fd29bab2be7c08761f1302691e94dadc41f11722c62f301709e590d4",
+        "metadata.json": "1d442be3cbeced933f4fde8cc3de73e6e6843f8cc051a2816fe07724cb6ac9bc",
+        "normalized_actions.json": "8a6ee5fb2ecc9bbf27c688ae06263353ff8b127cf17d343361509a2576b36f96",
+        "metrics.json": "dca9439b4968b8ed452df41dfa9cc7afcdd65ecdd461628196130c2dfe8a472a",
+        "norms.json": "3510e03961cd1662ae58a9482c38e8f10b844ca8d5b0aff8b7dc96f94190805d"
+      }
+    },
+    {
+      "run": "seed195_P",
+      "seed": 195,
+      "arm": "P",
+      "pulse": true,
+      "reset_steps": [],
+      "gain": null,
+      "intervention_count": 1,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0013279748003638067,
+        "rmse_to_donor": 0.3981067305077682,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.001563427444133556,
+        "signed_projection_rms": 0.0006233829023570065,
+        "delta_cosine_with_donor_direction": 0.4694237437233199
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0013279748003638067,
+        "rmse_to_donor": 0.0,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 1.0,
+        "signed_projection_rms": 0.0013279748003638065,
+        "delta_cosine_with_donor_direction": 1.0
+      },
+      "final_normalized_xyz": [
+        [
+          -0.12251012027263641,
+          -0.035416629165410995,
+          -0.028340090066194534
+        ],
+        [
+          -0.09215512871742249,
+          -0.03655334934592247,
+          -0.03046378493309021
+        ],
+        [
+          -0.03527814894914627,
+          -0.03751732409000397,
+          -0.03197801113128662
+        ],
+        [
+          0.049670521169900894,
+          -0.055746518075466156,
+          -0.03275514394044876
+        ],
+        [
+          0.19913509488105774,
+          -0.09194715321063995,
+          -0.02535981312394142
+        ],
+        [
+          0.3041442036628723,
+          -0.101809561252594,
+          -0.01702851988375187
+        ],
+        [
+          0.37450936436653137,
+          -0.15522892773151398,
+          -0.019424470141530037
+        ],
+        [
+          0.5088300108909607,
+          -0.2575908303260803,
+          -0.013381147757172585
+        ],
+        [
+          0.6879612803459167,
+          -0.3300996720790863,
+          -0.00995294563472271
+        ],
+        [
+          0.7751069068908691,
+          -0.40678417682647705,
+          -0.02497650310397148
+        ],
+        [
+          0.8048738241195679,
+          -0.503221333026886,
+          -0.03965534269809723
+        ],
+        [
+          0.7997524738311768,
+          -0.5820621848106384,
+          -0.04997263476252556
+        ],
+        [
+          0.7998413443565369,
+          -0.6136361360549927,
+          -0.052546992897987366
+        ],
+        [
+          0.8143433332443237,
+          -0.6200003623962402,
+          -0.05052816495299339
+        ],
+        [
+          0.8267601132392883,
+          -0.6021353602409363,
+          -0.04520636796951294
+        ],
+        [
+          0.832301676273346,
+          -0.5508593320846558,
+          -0.04632936418056488
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.204660351000257,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/P",
+      "files_sha256": {
+        "states.pt": "536770c613defb5109d51d0defb9901ced26171f8b1201ec2528e31391e406af",
+        "actualsession.pt": "bdb0108070a5428dc30fe3b9c1500051d32c62bc7254de11b82de35ca1762502",
+        "actualsession.json": "ab0236942696265de2ed97035a049b98b84d846d3c5910a3d23c1b3ebe4c5e6e",
+        "metadata.json": "dab4ca319697dd5523256ea5c14ef24c861ca2629b807beacf779224f3f394d4",
+        "normalized_actions.json": "ec6ff35a349f9cce8012d70c3ba08416e784d12592bc79ad19b0d4a244c7ea2e",
+        "metrics.json": "d82c04158b5c4bc8a81e46c4da9ddbc4155ca6d5faede85cb0685dc585f22d1e",
+        "norms.json": "c489991833b922377cdc1b8d033d5a3dbb9f964c1cfb6d16ba639b17de0c7346"
+      }
+    },
+    {
+      "run": "seed195_R_persistent_self",
+      "seed": 195,
+      "arm": "R_persistent_self",
+      "pulse": false,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 1.0,
+      "intervention_count": 9,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.3987283865945454,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0013279748003638067,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_normalized_xyz": [
+        [
+          -0.12183773517608643,
+          -0.03519175201654434,
+          -0.02764269709587097
+        ],
+        [
+          -0.09201124310493469,
+          -0.03634989634156227,
+          -0.030983468517661095
+        ],
+        [
+          -0.03502959758043289,
+          -0.03666674718260765,
+          -0.03139485418796539
+        ],
+        [
+          0.049131352454423904,
+          -0.05505022034049034,
+          -0.031586650758981705
+        ],
+        [
+          0.19855207204818726,
+          -0.09162260591983795,
+          -0.024638362228870392
+        ],
+        [
+          0.30512794852256775,
+          -0.10203513503074646,
+          -0.017918672412633896
+        ],
+        [
+          0.3717716932296753,
+          -0.15545937418937683,
+          -0.01961367391049862
+        ],
+        [
+          0.508999764919281,
+          -0.2558983564376831,
+          -0.012498235329985619
+        ],
+        [
+          0.688569188117981,
+          -0.3282338082790375,
+          -0.010228011757135391
+        ],
+        [
+          0.7755258083343506,
+          -0.4050530195236206,
+          -0.02478943020105362
+        ],
+        [
+          0.8053706288337708,
+          -0.5019397139549255,
+          -0.03980410099029541
+        ],
+        [
+          0.8047662973403931,
+          -0.5797639489173889,
+          -0.049982719123363495
+        ],
+        [
+          0.8002581000328064,
+          -0.6154912710189819,
+          -0.051556896418333054
+        ],
+        [
+          0.8158935308456421,
+          -0.6164593696594238,
+          -0.048443928360939026
+        ],
+        [
+          0.8266545534133911,
+          -0.602479100227356,
+          -0.04477282613515854
+        ],
+        [
+          0.8326927423477173,
+          -0.5493732690811157,
+          -0.04628181457519531
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2276017879999017,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/R_persistent_self",
+      "files_sha256": {
+        "states.pt": "44ea8dd24bfd1d570a6fcfeb9cc068b1924936b2610913df43f6224405c2bb7d",
+        "actualsession.pt": "4b3d040697ec478515ab9275c6dc458df39456530f792063314eaae3caccffca",
+        "actualsession.json": "e9ba1f28a7b4541e20de9e6bc6ef54734d17b71f494df20fbb10d0e3c2512d27",
+        "metadata.json": "169ff7c08444e5c7109824d86dcbd0113c4bc3ecb651921d0d4996f0ba7b34ec",
+        "normalized_actions.json": "8a6ee5fb2ecc9bbf27c688ae06263353ff8b127cf17d343361509a2576b36f96",
+        "metrics.json": "dca9439b4968b8ed452df41dfa9cc7afcdd65ecdd461628196130c2dfe8a472a",
+        "norms.json": "7c7a64ccb3ef446a7aae96a889f478948db6432fc95969245f6bc6c749c8f573"
+      }
+    },
+    {
+      "run": "seed195_P_persistent_gain100",
+      "seed": 195,
+      "arm": "P_persistent_gain100",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 1.0,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0035318543627231836,
+        "rmse_to_donor": 0.39546591176372503,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.008187954641169705,
+        "signed_projection_rms": 0.003264769943582916,
+        "delta_cosine_with_donor_direction": 0.9243784166303121
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0035318543627231836,
+        "rmse_to_donor": 0.0030426926021761176,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 1.4118190637694532,
+        "signed_projection_rms": 0.0018748601393590559,
+        "delta_cosine_with_donor_direction": 0.5308429926067146
+      },
+      "final_normalized_xyz": [
+        [
+          -0.12193607538938522,
+          -0.03639522194862366,
+          -0.026269927620887756
+        ],
+        [
+          -0.09246120601892471,
+          -0.03749077394604683,
+          -0.03159230202436447
+        ],
+        [
+          -0.03524766117334366,
+          -0.04024357721209526,
+          -0.03295666724443436
+        ],
+        [
+          0.049385882914066315,
+          -0.058347187936306,
+          -0.03271776810288429
+        ],
+        [
+          0.19830778241157532,
+          -0.09483064711093903,
+          -0.023838771507143974
+        ],
+        [
+          0.3058129549026489,
+          -0.10575740039348602,
+          -0.015963492915034294
+        ],
+        [
+          0.37156566977500916,
+          -0.1604408174753189,
+          -0.019301002845168114
+        ],
+        [
+          0.5074018836021423,
+          -0.26226019859313965,
+          -0.011907283216714859
+        ],
+        [
+          0.6854867935180664,
+          -0.3329845666885376,
+          -0.011050846427679062
+        ],
+        [
+          0.7733087539672852,
+          -0.4107935428619385,
+          -0.02337266318500042
+        ],
+        [
+          0.7981359362602234,
+          -0.5066472887992859,
+          -0.03907841444015503
+        ],
+        [
+          0.8002076745033264,
+          -0.5858239531517029,
+          -0.04954123497009277
+        ],
+        [
+          0.7938711643218994,
+          -0.6198068857192993,
+          -0.052230481058359146
+        ],
+        [
+          0.809714674949646,
+          -0.62311851978302,
+          -0.049813732504844666
+        ],
+        [
+          0.8184247612953186,
+          -0.6080726385116577,
+          -0.045047827064991
+        ],
+        [
+          0.8307150602340698,
+          -0.5533539056777954,
+          -0.045966170728206635
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2372927669998717,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/P_persistent_gain100",
+      "files_sha256": {
+        "states.pt": "f6453166db511adfa433534bbae1402804e30a8243a080cf66b17113e5f25a9e",
+        "actualsession.pt": "452b4820891e67a58855cc96df29b64d3c27ac76effe4c79f658e193ae231ea9",
+        "actualsession.json": "29c52da33c6a09621f733cfee6a2f43ccd97cb15648c1c4d1ebed3cd501a11c1",
+        "metadata.json": "ea19994aab0b0473d4083a1e822d3d0857ec5f2f0de33fa9e8ec6f5d493ae9fe",
+        "normalized_actions.json": "1621a51ef4fafd2d687ef6c98d67e3c057122793dc3cf65824ed348298e07172",
+        "metrics.json": "110df27539d1a26ba60e74c44290a5a833516cd59dfe309ade134372ae8f5a3c",
+        "norms.json": "88189db6d1b02138a7bff2fb290a87dfe351a86ae290d66c826ebcd6d94e811c"
+      }
+    },
+    {
+      "run": "seed195_P_single_reset",
+      "seed": 195,
+      "arm": "P_single_reset",
+      "pulse": true,
+      "reset_steps": [
+        21
+      ],
+      "gain": 1.0,
+      "intervention_count": 2,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.001371167576926589,
+        "rmse_to_donor": 0.3979464957849533,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.001964951149346728,
+        "signed_projection_rms": 0.0007834818015161184,
+        "delta_cosine_with_donor_direction": 0.5713975554120511
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.001371167576926589,
+        "rmse_to_donor": 0.0010435936974542701,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.7242713529471143,
+        "signed_projection_rms": 0.0009618141053391682,
+        "delta_cosine_with_donor_direction": 0.701456278228976
+      },
+      "final_normalized_xyz": [
+        [
+          -0.12290243804454803,
+          -0.03565813601016998,
+          -0.028130292892456055
+        ],
+        [
+          -0.09259963780641556,
+          -0.036154329776763916,
+          -0.030311141163110733
+        ],
+        [
+          -0.03536733239889145,
+          -0.03718094527721405,
+          -0.03118624910712242
+        ],
+        [
+          0.049607157707214355,
+          -0.05653483420610428,
+          -0.03238174691796303
+        ],
+        [
+          0.19900000095367432,
+          -0.09225152432918549,
+          -0.025653265416622162
+        ],
+        [
+          0.30559107661247253,
+          -0.10189656168222427,
+          -0.018173055723309517
+        ],
+        [
+          0.37228667736053467,
+          -0.15424960851669312,
+          -0.019825315102934837
+        ],
+        [
+          0.5083133578300476,
+          -0.2582532465457916,
+          -0.012611040845513344
+        ],
+        [
+          0.6885335445404053,
+          -0.3295813500881195,
+          -0.010375048033893108
+        ],
+        [
+          0.7733892202377319,
+          -0.4068096876144409,
+          -0.02381483092904091
+        ],
+        [
+          0.8033307194709778,
+          -0.502748966217041,
+          -0.03984089940786362
+        ],
+        [
+          0.8008304834365845,
+          -0.5829490423202515,
+          -0.04939287155866623
+        ],
+        [
+          0.7983138561248779,
+          -0.6172136068344116,
+          -0.05297831445932388
+        ],
+        [
+          0.8129938840866089,
+          -0.6191926002502441,
+          -0.04866223782300949
+        ],
+        [
+          0.8262708783149719,
+          -0.6018691658973694,
+          -0.04553880915045738
+        ],
+        [
+          0.835033655166626,
+          -0.5508182644844055,
+          -0.04627549275755882
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2061168250002083,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/P_single_reset",
+      "files_sha256": {
+        "states.pt": "ee79ea9c12ab03c91f75882fa884c03910baa11d949fdc34ca76c16fb956f08e",
+        "actualsession.pt": "135c045de0040331d0f917e6fcc1ea8c6229ade6a0f2aad6a2e1a2dbde7a889b",
+        "actualsession.json": "bbb7727524c366b063b1395e9ba158591c12d42a7d4001e838a6f595d8052a42",
+        "metadata.json": "cfba38a6def86550cf119e49b31af49a23bae2ec50f3e477a5ac69e174b62941",
+        "normalized_actions.json": "9553de8051856af1459540d6dcaa9569e8d91734b9d31ff6bfca0ae0b7931b35",
+        "metrics.json": "67eb3d428d4943e45c44b1011ddd59760129aefbe8cb58eaeb4f2e049989fc86",
+        "norms.json": "8b798fb7402fb2c48c05cff021590442aca6d3197d41606a04724ed77f5718bb"
+      }
+    },
+    {
+      "run": "seed195_P_persistent_gain050",
+      "seed": 195,
+      "arm": "P_persistent_gain050",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 0.5,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.001689637979545291,
+        "rmse_to_donor": 0.39728239786240255,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.003628903328135593,
+        "signed_projection_rms": 0.001446946769135081,
+        "delta_cosine_with_donor_direction": 0.8563649649521242
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.001689637979545291,
+        "rmse_to_donor": 0.001301469487867778,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.8291869677810593,
+        "signed_projection_rms": 0.0011011393980033225,
+        "delta_cosine_with_donor_direction": 0.6517013770604617
+      },
+      "final_normalized_xyz": [
+        [
+          -0.1221139058470726,
+          -0.0347110815346241,
+          -0.02788528800010681
+        ],
+        [
+          -0.09239466488361359,
+          -0.036987945437431335,
+          -0.03051636554300785
+        ],
+        [
+          -0.03456577658653259,
+          -0.038267627358436584,
+          -0.03198372572660446
+        ],
+        [
+          0.049635086208581924,
+          -0.05695014074444771,
+          -0.032597076147794724
+        ],
+        [
+          0.19763751327991486,
+          -0.09245730936527252,
+          -0.02436823397874832
+        ],
+        [
+          0.30533820390701294,
+          -0.10394468158483505,
+          -0.017679264768958092
+        ],
+        [
+          0.3719361424446106,
+          -0.15621331334114075,
+          -0.01877472549676895
+        ],
+        [
+          0.5085982084274292,
+          -0.25894972681999207,
+          -0.012302370741963387
+        ],
+        [
+          0.6875625848770142,
+          -0.3300354480743408,
+          -0.0098479138687253
+        ],
+        [
+          0.7741683721542358,
+          -0.40828633308410645,
+          -0.023397788405418396
+        ],
+        [
+          0.8033422827720642,
+          -0.5042676329612732,
+          -0.040604785084724426
+        ],
+        [
+          0.7999072670936584,
+          -0.5822216868400574,
+          -0.0504726879298687
+        ],
+        [
+          0.797940731048584,
+          -0.6177535653114319,
+          -0.05245853215456009
+        ],
+        [
+          0.8132073283195496,
+          -0.6195686459541321,
+          -0.04943672940135002
+        ],
+        [
+          0.8250097632408142,
+          -0.6063661575317383,
+          -0.04481760412454605
+        ],
+        [
+          0.8310021162033081,
+          -0.5511098504066467,
+          -0.04668143764138222
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.255944418999661,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/P_persistent_gain050",
+      "files_sha256": {
+        "states.pt": "8d400a8591fbab05348bd25a72cb92c556496a48847009e3a630ad50b498d15c",
+        "actualsession.pt": "bcdc0737c45a381913411039e85011c9d5ba46404d141cbb6efccdcf99f87931",
+        "actualsession.json": "f0d68984fc325e75ca304cb9167e1f76cfd35f6bdc17788d2418acd5fa7e8f91",
+        "metadata.json": "6ef78715cc3f198ddae90c8c39c5db0dd62a8b47e9fe9d2b284fe4c2f8b4c245",
+        "normalized_actions.json": "13462a753c1b7ab2d6bb8f434fcfd72df28f979eec719d0df25a65f38702756c",
+        "metrics.json": "bd52bc7c27366b9ab9180c373545d6bebf8e60cd12041e0ef9ac431190c0edf0",
+        "norms.json": "aaf79de775999fa8d4c01b05a633b2e56bf1d71034ea7e4cfac6c188cae670a8"
+      }
+    },
+    {
+      "run": "seed195_P_persistent_gain200",
+      "seed": 195,
+      "arm": "P_persistent_gain200",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 2.0,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.018340846680032715,
+        "rmse_to_donor": 0.3808378886467958,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.04492020011915675,
+        "signed_projection_rms": 0.017910958919015476,
+        "delta_cosine_with_donor_direction": 0.9765611823425115
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.018340846680032715,
+        "rmse_to_donor": 0.017737092332243062,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 6.675787267257583,
+        "signed_projection_rms": 0.00886527726350763,
+        "delta_cosine_with_donor_direction": 0.483362486921559
+      },
+      "final_normalized_xyz": [
+        [
+          -0.11746198683977127,
+          -0.03783618286252022,
+          -0.024932686239480972
+        ],
+        [
+          -0.08678921312093735,
+          -0.04259149730205536,
+          -0.02993187867105007
+        ],
+        [
+          -0.02935456484556198,
+          -0.056823067367076874,
+          -0.03129958361387253
+        ],
+        [
+          0.05247269198298454,
+          -0.07650602608919144,
+          -0.03097967803478241
+        ],
+        [
+          0.19824033975601196,
+          -0.11081460863351822,
+          -0.022497983649373055
+        ],
+        [
+          0.3048628568649292,
+          -0.12591320276260376,
+          -0.018902286887168884
+        ],
+        [
+          0.3677995204925537,
+          -0.18821561336517334,
+          -0.018791165202856064
+        ],
+        [
+          0.49450406432151794,
+          -0.28930410742759705,
+          -0.010280737653374672
+        ],
+        [
+          0.6717206835746765,
+          -0.3614127039909363,
+          -0.004783251788467169
+        ],
+        [
+          0.7563527822494507,
+          -0.4326125383377075,
+          -0.01766490936279297
+        ],
+        [
+          0.7798763513565063,
+          -0.5251481533050537,
+          -0.03186247497797012
+        ],
+        [
+          0.7751213908195496,
+          -0.6066092252731323,
+          -0.04139497131109238
+        ],
+        [
+          0.7695578932762146,
+          -0.6420974731445312,
+          -0.04442514106631279
+        ],
+        [
+          0.7867507934570312,
+          -0.6463077664375305,
+          -0.04203641042113304
+        ],
+        [
+          0.7967929840087891,
+          -0.6283279657363892,
+          -0.034827955067157745
+        ],
+        [
+          0.8077874183654785,
+          -0.5697960257530212,
+          -0.03762634098529816
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.262405410000156,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/P_persistent_gain200",
+      "files_sha256": {
+        "states.pt": "ff8c86c442fbd261223b8076af5dc42bf5bcc24d560998f62d30e1fcc99b95a1",
+        "actualsession.pt": "1fd1086489f9f740095b3f3eb1a8d7224c335d3797bd0aa0cd4c17ea9f6c7ff8",
+        "actualsession.json": "af9311039bf0e0fa403ea4171da78f7749af0f13b0a83e903d641c3898fd9a2f",
+        "metadata.json": "af480ac14bfa5419e593eb5283c4a7afd3b9361d29df423791fa33ce47e4eb26",
+        "normalized_actions.json": "7e8bc1fccff0daf896bc01f6ece196927edf28961253f3e6075728abe462dcb1",
+        "metrics.json": "2f2045c97e1e0e427ffa6d6c6a73ef9aec00cbd5e14162ae8f29a9f34c457b06",
+        "norms.json": "59514f22c1abac099baaef283eaa34d904c4629c39d7c15430582854f4ac30e0"
+      }
+    },
+    {
+      "run": "seed195_P_random_normmatched",
+      "seed": 195,
+      "arm": "P_random_normmatched",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": null,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.001413656287059251,
+        "rmse_to_donor": 0.39814879819935173,
+        "donor_recipient_gap_rmse": 0.3987283865945454,
+        "gap_floor": 5.151889722719835e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0014588205128880588,
+        "signed_projection_rms": 0.000581673149434883,
+        "delta_cosine_with_donor_direction": 0.4114671683347475
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.001413656287059251,
+        "rmse_to_donor": 0.0011111529878362588,
+        "donor_recipient_gap_rmse": 0.0013279748003638067,
+        "gap_floor": 4.089998444395853e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.7165454330960648,
+        "signed_projection_rms": 0.000951554278467344,
+        "delta_cosine_with_donor_direction": 0.6731157263459058
+      },
+      "final_normalized_xyz": [
+        [
+          -0.12247032672166824,
+          -0.035488326102495193,
+          -0.027308546006679535
+        ],
+        [
+          -0.09255988895893097,
+          -0.03663320094347,
+          -0.031121619045734406
+        ],
+        [
+          -0.034248337149620056,
+          -0.03779350966215134,
+          -0.031191425397992134
+        ],
+        [
+          0.05017104744911194,
+          -0.056629523634910583,
+          -0.03308723121881485
+        ],
+        [
+          0.1985418200492859,
+          -0.09107409417629242,
+          -0.02553878352046013
+        ],
+        [
+          0.3056851029396057,
+          -0.10147994756698608,
+          -0.017042113468050957
+        ],
+        [
+          0.37329837679862976,
+          -0.15584354102611542,
+          -0.0199211947619915
+        ],
+        [
+          0.5094365477561951,
+          -0.2577260136604309,
+          -0.012806692160665989
+        ],
+        [
+          0.6864679455757141,
+          -0.3291010856628418,
+          -0.010395324788987637
+        ],
+        [
+          0.7768830060958862,
+          -0.4078645408153534,
+          -0.023387178778648376
+        ],
+        [
+          0.8020124435424805,
+          -0.5034870505332947,
+          -0.03978270664811134
+        ],
+        [
+          0.8010609745979309,
+          -0.5809270143508911,
+          -0.051310062408447266
+        ],
+        [
+          0.7987115383148193,
+          -0.6139853596687317,
+          -0.05255064368247986
+        ],
+        [
+          0.813357412815094,
+          -0.6188867092132568,
+          -0.04849736765027046
+        ],
+        [
+          0.8259779810905457,
+          -0.602301299571991,
+          -0.04527132958173752
+        ],
+        [
+          0.8361734747886658,
+          -0.5496582388877869,
+          -0.0466628223657608
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.280278016000011,
+      "sources_sha256": "c2d913c0cc9bf76798fa08248b5ab97442d0da0b5f034ae46da3ce8498ac8661",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed195/runs/P_random_normmatched",
+      "files_sha256": {
+        "states.pt": "80f5761824e638c5418467e256c3160ca555207a612dff4efb041d43f076cced",
+        "actualsession.pt": "a7fc9486f58cbb728209b16d5e0e54770409285d1c8f182872615b051f969aac",
+        "actualsession.json": "cbec3ef9401b026fc1a96bc798030cae05cd2f624ca55ccf5f9dd37cd84dfc29",
+        "metadata.json": "87749868c5e974b4980fda96ecc6aa6ec2c607244c7bb9a264430f45307ffb73",
+        "normalized_actions.json": "1bee60951c8a12de4a3a56f8ce4ea9ab49299e0a97ae9b5b0bc235fd90bf351a",
+        "metrics.json": "2017ffc00ac3aa6a7f52f2a5395b7ba6c1861524bfdab305bb8b32d48d6ecb0d",
+        "norms.json": "b521fd1a95124c53d64e5ea1a7abd95f1413c5761d0549a2f245851a40febdf3"
+      }
+    },
+    {
+      "run": "seed196_native_R",
+      "seed": 196,
+      "arm": "native_R",
+      "pulse": false,
+      "reset_steps": [],
+      "gain": null,
+      "intervention_count": 0,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.26575226104495786,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0014283583378347261,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08436088263988495,
+          -0.0714406743645668,
+          -0.019972339272499084
+        ],
+        [
+          -0.017597157508134842,
+          -0.13749930262565613,
+          -0.016674183309078217
+        ],
+        [
+          0.11719255894422531,
+          -0.24550800025463104,
+          0.004212230443954468
+        ],
+        [
+          0.2493094652891159,
+          -0.31545835733413696,
+          0.024208474904298782
+        ],
+        [
+          0.37879037857055664,
+          -0.3855054974555969,
+          0.0394025593996048
+        ],
+        [
+          0.45891639590263367,
+          -0.4458972215652466,
+          0.03762620687484741
+        ],
+        [
+          0.5366753935813904,
+          -0.5006650686264038,
+          0.02619141712784767
+        ],
+        [
+          0.6115177869796753,
+          -0.5491470098495483,
+          0.01671898178756237
+        ],
+        [
+          0.6698462963104248,
+          -0.5819743871688843,
+          0.012644840404391289
+        ],
+        [
+          0.7044051885604858,
+          -0.6121809482574463,
+          0.006862984970211983
+        ],
+        [
+          0.7339777946472168,
+          -0.6513826251029968,
+          0.011926161125302315
+        ],
+        [
+          0.7452221512794495,
+          -0.6806265115737915,
+          0.010960912331938744
+        ],
+        [
+          0.7644443511962891,
+          -0.6920318007469177,
+          0.0066628530621528625
+        ],
+        [
+          0.7733166813850403,
+          -0.691719114780426,
+          -0.00027139484882354736
+        ],
+        [
+          0.7710065245628357,
+          -0.6817780137062073,
+          -0.007974419742822647
+        ],
+        [
+          0.7608531713485718,
+          -0.6672312617301941,
+          -0.019729239866137505
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2175584120000167,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/native_R",
+      "files_sha256": {
+        "states.pt": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f",
+        "actualsession.pt": "fb3f690b72daac7784d22d34da7708994c8cad86e2029f72087098c8766c0353",
+        "actualsession.json": "ec9d987dd7e2b2e716f610890a6d05e4e9e0e70b9af9e9235c84f2ef4be52ec4",
+        "metadata.json": "012dfea7f67366da5b53ba9785367f6584e9a2b22a2d8253371d6d10c14983e3",
+        "normalized_actions.json": "6c4d1351225bd7f7bfa5139c3562bd32ab5a3f8f1cf3fed32bab792c4b18b01f",
+        "metrics.json": "dccbf120243f9cbbb59a3433c26789611ddd6e8a9d49c9407707c102c36aa7c8",
+        "norms.json": "3510e03961cd1662ae58a9482c38e8f10b844ca8d5b0aff8b7dc96f94190805d"
+      }
+    },
+    {
+      "run": "seed196_P",
+      "seed": 196,
+      "arm": "P",
+      "pulse": true,
+      "reset_steps": [],
+      "gain": null,
+      "intervention_count": 1,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0014283583378347261,
+        "rmse_to_donor": 0.2651240511858979,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0023755429128148237,
+        "signed_projection_rms": 0.0006313059002898647,
+        "delta_cosine_with_donor_direction": 0.44198005750214786
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0014283583378347261,
+        "rmse_to_donor": 0.0,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 1.0,
+        "signed_projection_rms": 0.0014283583378347261,
+        "delta_cosine_with_donor_direction": 1.0
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08548468351364136,
+          -0.0718773901462555,
+          -0.019786741584539413
+        ],
+        [
+          -0.017149314284324646,
+          -0.13752736151218414,
+          -0.017656235024333
+        ],
+        [
+          0.1155792698264122,
+          -0.2475736439228058,
+          0.0038817524909973145
+        ],
+        [
+          0.2490336149930954,
+          -0.3169670104980469,
+          0.025057751685380936
+        ],
+        [
+          0.3768041431903839,
+          -0.38604021072387695,
+          0.038622915744781494
+        ],
+        [
+          0.45646730065345764,
+          -0.4457888603210449,
+          0.03670158237218857
+        ],
+        [
+          0.5341113805770874,
+          -0.503212034702301,
+          0.024837637320160866
+        ],
+        [
+          0.6103504300117493,
+          -0.5504367351531982,
+          0.017408382147550583
+        ],
+        [
+          0.666269063949585,
+          -0.5815642476081848,
+          0.011736059561371803
+        ],
+        [
+          0.7041996717453003,
+          -0.6122947335243225,
+          0.00530586950480938
+        ],
+        [
+          0.7345763444900513,
+          -0.6501252055168152,
+          0.011109886690974236
+        ],
+        [
+          0.742485523223877,
+          -0.6795225143432617,
+          0.011511977761983871
+        ],
+        [
+          0.7647615075111389,
+          -0.6955819725990295,
+          0.007270101457834244
+        ],
+        [
+          0.7709153294563293,
+          -0.6942390203475952,
+          -0.0004338473081588745
+        ],
+        [
+          0.7715945243835449,
+          -0.6825305819511414,
+          -0.008886076509952545
+        ],
+        [
+          0.7609041333198547,
+          -0.6667064428329468,
+          -0.019721103832125664
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2252691070002584,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/P",
+      "files_sha256": {
+        "states.pt": "ee7e091300d1a208d40111548f195a48754697ec42995b33103856b27710fda6",
+        "actualsession.pt": "b1a1573c2053080ec7de58f6d3b3da193518400356a0f2efdc85a3788b9389b2",
+        "actualsession.json": "b42b9984bc6e3ef16893fa55a5a5b4a09b932763f5d6cffbad50d28938b65c4d",
+        "metadata.json": "0c5f31052b556fa8909c62ec8576c81c77e88e9cd70443b026a61965f0f8a168",
+        "normalized_actions.json": "d9db5021507158ee1b8131beeb4ec42fa9be28c153ee613d5a1db473a1aac1ff",
+        "metrics.json": "131c27889eacb6f7d896882a258925b0eeeb51526e0a5bc3d6bc6c601e53940e",
+        "norms.json": "e8ffe5c445fedba1dbca10f92e6e9a6ca808cecba8e55db14febc059563aec05"
+      }
+    },
+    {
+      "run": "seed196_R_persistent_self",
+      "seed": 196,
+      "arm": "R_persistent_self",
+      "pulse": false,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 1.0,
+      "intervention_count": 9,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.26575226104495786,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0014283583378347261,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08436088263988495,
+          -0.0714406743645668,
+          -0.019972339272499084
+        ],
+        [
+          -0.017597157508134842,
+          -0.13749930262565613,
+          -0.016674183309078217
+        ],
+        [
+          0.11719255894422531,
+          -0.24550800025463104,
+          0.004212230443954468
+        ],
+        [
+          0.2493094652891159,
+          -0.31545835733413696,
+          0.024208474904298782
+        ],
+        [
+          0.37879037857055664,
+          -0.3855054974555969,
+          0.0394025593996048
+        ],
+        [
+          0.45891639590263367,
+          -0.4458972215652466,
+          0.03762620687484741
+        ],
+        [
+          0.5366753935813904,
+          -0.5006650686264038,
+          0.02619141712784767
+        ],
+        [
+          0.6115177869796753,
+          -0.5491470098495483,
+          0.01671898178756237
+        ],
+        [
+          0.6698462963104248,
+          -0.5819743871688843,
+          0.012644840404391289
+        ],
+        [
+          0.7044051885604858,
+          -0.6121809482574463,
+          0.006862984970211983
+        ],
+        [
+          0.7339777946472168,
+          -0.6513826251029968,
+          0.011926161125302315
+        ],
+        [
+          0.7452221512794495,
+          -0.6806265115737915,
+          0.010960912331938744
+        ],
+        [
+          0.7644443511962891,
+          -0.6920318007469177,
+          0.0066628530621528625
+        ],
+        [
+          0.7733166813850403,
+          -0.691719114780426,
+          -0.00027139484882354736
+        ],
+        [
+          0.7710065245628357,
+          -0.6817780137062073,
+          -0.007974419742822647
+        ],
+        [
+          0.7608531713485718,
+          -0.6672312617301941,
+          -0.019729239866137505
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2689617299997735,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/R_persistent_self",
+      "files_sha256": {
+        "states.pt": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f",
+        "actualsession.pt": "3691f2e2b1dec56215fcfbcc613a0c33467e3dbe43868f02ed80407100fd61bc",
+        "actualsession.json": "5f3e8aadb7b3af0208de3d7af8280aefb92750b4fb3bdfb0afe387a9b604857a",
+        "metadata.json": "71b7b14a756b2cafa2fc18ea7d66e2c88446df045dc450d653be439c0403144a",
+        "normalized_actions.json": "6c4d1351225bd7f7bfa5139c3562bd32ab5a3f8f1cf3fed32bab792c4b18b01f",
+        "metrics.json": "dccbf120243f9cbbb59a3433c26789611ddd6e8a9d49c9407707c102c36aa7c8",
+        "norms.json": "7c7a64ccb3ef446a7aae96a889f478948db6432fc95969245f6bc6c749c8f573"
+      }
+    },
+    {
+      "run": "seed196_P_persistent_gain100",
+      "seed": 196,
+      "arm": "P_persistent_gain100",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 1.0,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0027917293852280866,
+        "rmse_to_donor": 0.26319165791774735,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.009644059449195995,
+        "signed_projection_rms": 0.0025629306042758266,
+        "delta_cosine_with_donor_direction": 0.9180440689692542
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0027917293852280866,
+        "rmse_to_donor": 0.002320463542352199,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 1.0904305959652634,
+        "signed_projection_rms": 0.0015575256335770735,
+        "delta_cosine_with_donor_direction": 0.557907095801774
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08379308134317398,
+          -0.07174453139305115,
+          -0.019346125423908234
+        ],
+        [
+          -0.016966963186860085,
+          -0.13938632607460022,
+          -0.014694452285766602
+        ],
+        [
+          0.11701063066720963,
+          -0.24636045098304749,
+          0.0038479119539260864
+        ],
+        [
+          0.24678358435630798,
+          -0.3169820010662079,
+          0.024654019623994827
+        ],
+        [
+          0.3750183880329132,
+          -0.38674163818359375,
+          0.038409288972616196
+        ],
+        [
+          0.4547193944454193,
+          -0.4462328851222992,
+          0.03748875856399536
+        ],
+        [
+          0.5330519080162048,
+          -0.5028481483459473,
+          0.026524130254983902
+        ],
+        [
+          0.6092302799224854,
+          -0.5493415594100952,
+          0.0173835176974535
+        ],
+        [
+          0.6657387018203735,
+          -0.5841432809829712,
+          0.01150314137339592
+        ],
+        [
+          0.6988511681556702,
+          -0.6149617433547974,
+          0.007359448820352554
+        ],
+        [
+          0.7300445437431335,
+          -0.6547694206237793,
+          0.011982997879385948
+        ],
+        [
+          0.7387481331825256,
+          -0.6821482181549072,
+          0.01182374358177185
+        ],
+        [
+          0.7612898349761963,
+          -0.6959224939346313,
+          0.008772596716880798
+        ],
+        [
+          0.7676947116851807,
+          -0.696500301361084,
+          0.0001980513334274292
+        ],
+        [
+          0.7672014236450195,
+          -0.6877006888389587,
+          -0.008903274312615395
+        ],
+        [
+          0.756489098072052,
+          -0.670348584651947,
+          -0.019109509885311127
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2944370619998153,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/P_persistent_gain100",
+      "files_sha256": {
+        "states.pt": "1c96a911a2227bafbb0fed77ec8d06efb8373b4e78b85048e6644955e1438c7f",
+        "actualsession.pt": "ba88f2460a032a33eeb40c8714df6acf575c6d2dab5903647383fa224b794304",
+        "actualsession.json": "62f7a7938ef33e5f9abb6850ac29bede71aaa73fc2ac4b91192284e0fc745a66",
+        "metadata.json": "65efbc59ec1fa308473f143467926653b8cc016875f6b3c4943768e53a2e6541",
+        "normalized_actions.json": "3de298b1468e770d850142eda74e79a21cd03267108b16d9af7a2b703b0c7935",
+        "metrics.json": "05d6c2860fec4fd5b432219684f3d6bbabd4932f38c4ed17257a059d5cd76969",
+        "norms.json": "0bbd05059e7234af90880d8b49cc0fd1d05d38502550b1e3fab2d5b8ececa616"
+      }
+    },
+    {
+      "run": "seed196_P_single_reset",
+      "seed": 196,
+      "arm": "P_single_reset",
+      "pulse": true,
+      "reset_steps": [
+        21
+      ],
+      "gain": 1.0,
+      "intervention_count": 2,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0013706179208878716,
+        "rmse_to_donor": 0.2652420925770079,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.001931171759856578,
+        "signed_projection_rms": 0.000513213261648056,
+        "delta_cosine_with_donor_direction": 0.37443933413303243
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0013706179208878716,
+        "rmse_to_donor": 0.001062592561411139,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.683679973320044,
+        "signed_projection_rms": 0.0009765399903023079,
+        "delta_cosine_with_donor_direction": 0.7124815569825002
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08532607555389404,
+          -0.07206285744905472,
+          -0.020138747990131378
+        ],
+        [
+          -0.017011145129799843,
+          -0.13828621804714203,
+          -0.0166843980550766
+        ],
+        [
+          0.11784610897302628,
+          -0.2465187907218933,
+          0.0038649439811706543
+        ],
+        [
+          0.2486266940832138,
+          -0.31610655784606934,
+          0.025495804846286774
+        ],
+        [
+          0.37660133838653564,
+          -0.38677525520324707,
+          0.03832823783159256
+        ],
+        [
+          0.4570857584476471,
+          -0.44510701298713684,
+          0.03708760440349579
+        ],
+        [
+          0.5339799523353577,
+          -0.5021559000015259,
+          0.024612680077552795
+        ],
+        [
+          0.6107630729675293,
+          -0.5472323894500732,
+          0.016920365393161774
+        ],
+        [
+          0.6674601435661316,
+          -0.5827745795249939,
+          0.011828288435935974
+        ],
+        [
+          0.7055971026420593,
+          -0.6142550110816956,
+          0.006083885207772255
+        ],
+        [
+          0.7335324883460999,
+          -0.6498481035232544,
+          0.011740917339920998
+        ],
+        [
+          0.7433791756629944,
+          -0.6792047023773193,
+          0.01003112643957138
+        ],
+        [
+          0.7641392350196838,
+          -0.6942597031593323,
+          0.007146954536437988
+        ],
+        [
+          0.7694223523139954,
+          -0.691946268081665,
+          0.0006313137710094452
+        ],
+        [
+          0.7705460786819458,
+          -0.6827219724655151,
+          -0.01081189326941967
+        ],
+        [
+          0.7605077028274536,
+          -0.6660024523735046,
+          -0.020896650850772858
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2626121830003285,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/P_single_reset",
+      "files_sha256": {
+        "states.pt": "dff1130f00f0ecb4fefb032dff6a98302d870b446d7a828e7b00c46768084153",
+        "actualsession.pt": "d8f15551ad0ed07de59ff862125b80313ff098fb843d68828db5c13f21ab9a13",
+        "actualsession.json": "3b9e437180136f1ab393e80215533e6ec17f7794bc838edc3da6982f16567410",
+        "metadata.json": "701fdec3d8a5d985cb87d4df22e71b23cf92d2890e67cc00c4983a9dc6683c4f",
+        "normalized_actions.json": "da6f1fb30e9e4fe6c24a7bc3c40d0c6dbe6bd89e3c57094252c2fbc050bfcd36",
+        "metrics.json": "ce14363e9c53aa68991d86f9d589b1f3d1007fde6ab67fb08af685883f3edcaa",
+        "norms.json": "b329f82c48a31f1c3af68383efbf19498afb55616c1f1bbcc41d76c45d967c16"
+      }
+    },
+    {
+      "run": "seed196_P_persistent_gain050",
+      "seed": 196,
+      "arm": "P_persistent_gain050",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 0.5,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0016717326701601249,
+        "rmse_to_donor": 0.26445121563773466,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.004903509407868282,
+        "signed_projection_rms": 0.0013031187121962185,
+        "delta_cosine_with_donor_direction": 0.7795018518549387
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0016717326701601249,
+        "rmse_to_donor": 0.0015267951286048998,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.6136126463541779,
+        "signed_projection_rms": 0.0008764587396208212,
+        "delta_cosine_with_donor_direction": 0.5242816362121288
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08560267835855484,
+          -0.07132552564144135,
+          -0.020023202523589134
+        ],
+        [
+          -0.01737350970506668,
+          -0.13761770725250244,
+          -0.016733117401599884
+        ],
+        [
+          0.11519695073366165,
+          -0.24615155160427094,
+          0.004756011068820953
+        ],
+        [
+          0.2478513866662979,
+          -0.31676140427589417,
+          0.02607068419456482
+        ],
+        [
+          0.3759360611438751,
+          -0.38663455843925476,
+          0.0403067022562027
+        ],
+        [
+          0.45750102400779724,
+          -0.4473641812801361,
+          0.036890458315610886
+        ],
+        [
+          0.5336883068084717,
+          -0.5027603507041931,
+          0.026498746126890182
+        ],
+        [
+          0.6081799864768982,
+          -0.5490052103996277,
+          0.01658354327082634
+        ],
+        [
+          0.6684715747833252,
+          -0.5833359956741333,
+          0.012923454865813255
+        ],
+        [
+          0.7036752700805664,
+          -0.6151238083839417,
+          0.006174614652991295
+        ],
+        [
+          0.7325375080108643,
+          -0.6542215347290039,
+          0.010604720562696457
+        ],
+        [
+          0.742125391960144,
+          -0.6820053458213806,
+          0.011420194059610367
+        ],
+        [
+          0.7628961205482483,
+          -0.6919275522232056,
+          0.00667494535446167
+        ],
+        [
+          0.7694156169891357,
+          -0.6933659911155701,
+          0.0009238570928573608
+        ],
+        [
+          0.7705284357070923,
+          -0.6850890517234802,
+          -0.009687939658761024
+        ],
+        [
+          0.7596468925476074,
+          -0.6694534420967102,
+          -0.021015450358390808
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.300876941000297,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/P_persistent_gain050",
+      "files_sha256": {
+        "states.pt": "1137198f06fd0a21ce2d72c9876786a89df43d849a5f2f0674d7c69b7753abb6",
+        "actualsession.pt": "29bd36589e2cb18f0815debe9ade779ca229c33db4c1d3a48b96020578467941",
+        "actualsession.json": "82da1c302bbd9ba7ef1301c3c425afedf92190b245be50b7029e210a055b2ad5",
+        "metadata.json": "a247907517d1cc50864e7f257a4a56ff693e629d267f3a7209e8fb3bfdfeb92f",
+        "normalized_actions.json": "41ffaaa93919f90d0ab2b72390a6fc7f79735356e5bc7ce07a5fcb9737755ccd",
+        "metrics.json": "f561f9d2259f2a8c57a21d6c2a54aec41b9547eb4de489a7fc4642c4066a0069",
+        "norms.json": "70c8d86acc554c79f27a159236860b277f46c03a9f9685ab96f07e2cdd7fe61c"
+      }
+    },
+    {
+      "run": "seed196_P_persistent_gain200",
+      "seed": 196,
+      "arm": "P_persistent_gain200",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 2.0,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.012336221458135269,
+        "rmse_to_donor": 0.2541153500616995,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.04390725722390059,
+        "signed_projection_rms": 0.011668452883534141,
+        "delta_cosine_with_donor_direction": 0.94586927797403
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.012336221458135269,
+        "rmse_to_donor": 0.011789660553372808,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 3.7315986569302093,
+        "signed_projection_rms": 0.00533006005507913,
+        "delta_cosine_with_donor_direction": 0.43206585364630906
+      },
+      "final_normalized_xyz": [
+        [
+          -0.07877416908740997,
+          -0.06686630100011826,
+          -0.022654473781585693
+        ],
+        [
+          -0.02066645398736,
+          -0.13740314543247223,
+          -0.011489272117614746
+        ],
+        [
+          0.11751173436641693,
+          -0.2427341192960739,
+          0.002884417772293091
+        ],
+        [
+          0.24317245185375214,
+          -0.3160938620567322,
+          0.02581402286887169
+        ],
+        [
+          0.37120428681373596,
+          -0.3879331350326538,
+          0.04120380058884621
+        ],
+        [
+          0.4438120424747467,
+          -0.4517650902271271,
+          0.03868565708398819
+        ],
+        [
+          0.5247635245323181,
+          -0.5099471807479858,
+          0.026328686624765396
+        ],
+        [
+          0.5944038033485413,
+          -0.5604742169380188,
+          0.02368885837495327
+        ],
+        [
+          0.6571186780929565,
+          -0.5923622250556946,
+          0.015556413680315018
+        ],
+        [
+          0.6899574398994446,
+          -0.6294610500335693,
+          0.010475276038050652
+        ],
+        [
+          0.7161252498626709,
+          -0.6692509651184082,
+          0.01430555246770382
+        ],
+        [
+          0.7156299948692322,
+          -0.6983405351638794,
+          0.017468085512518883
+        ],
+        [
+          0.7451937794685364,
+          -0.706261932849884,
+          0.01722218468785286
+        ],
+        [
+          0.748865008354187,
+          -0.718640148639679,
+          0.002418879419565201
+        ],
+        [
+          0.7561410665512085,
+          -0.70375657081604,
+          -0.003785477951169014
+        ],
+        [
+          0.7421519756317139,
+          -0.6846618056297302,
+          -0.011553101241588593
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.303883704999862,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/P_persistent_gain200",
+      "files_sha256": {
+        "states.pt": "e327682c13e5681b863ed68c349c0d324d64e6020582475302fa7ea7ed9270f3",
+        "actualsession.pt": "5a76d61b7df77159ea06b933845b50d40a9517cce0c39c7a5395ead0739cc155",
+        "actualsession.json": "ad2d8c267076b760806fddfa287c9df14e9d4a2ccbbabdb7da9f021674c2626b",
+        "metadata.json": "efe53de63443d565d1d80420dcdf27a29adee26a6eef4e33513a1ffff8444a12",
+        "normalized_actions.json": "2917089a363ae71fea5a9e01799f20619a4ee482f1a172ac2a1e76467fba7766",
+        "metrics.json": "39550c97a8c30b36d7e16fda53b952108f77cf040ceb855c143e834d14c67139",
+        "norms.json": "33ba25ad466d420b01f34eee201d3a82d0d8521ca5fea758277e7fc928770f7e"
+      }
+    },
+    {
+      "run": "seed196_P_random_normmatched",
+      "seed": 196,
+      "arm": "P_random_normmatched",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": null,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0014685632200834246,
+        "rmse_to_donor": 0.2649944353001743,
+        "donor_recipient_gap_rmse": 0.26575226104495786,
+        "gap_floor": 4.822633694564412e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0028628276179008066,
+        "signed_projection_rms": 0.0007608029124390901,
+        "delta_cosine_with_donor_direction": 0.5180593535468437
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0014685632200834246,
+        "rmse_to_donor": 0.0012492394940736608,
+        "donor_recipient_gap_rmse": 0.0014283583378347261,
+        "gap_floor": 4.576238186159232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.6460828385772148,
+        "signed_projection_rms": 0.0009228378094136922,
+        "delta_cosine_with_donor_direction": 0.6283950168391584
+      },
+      "final_normalized_xyz": [
+        [
+          -0.08502296358346939,
+          -0.07144542038440704,
+          -0.020336344838142395
+        ],
+        [
+          -0.01691533252596855,
+          -0.13723401725292206,
+          -0.017250560224056244
+        ],
+        [
+          0.11664766073226929,
+          -0.24619132280349731,
+          0.003638654947280884
+        ],
+        [
+          0.24882277846336365,
+          -0.31735438108444214,
+          0.024814747273921967
+        ],
+        [
+          0.37710458040237427,
+          -0.38626334071159363,
+          0.0382152758538723
+        ],
+        [
+          0.4559391140937805,
+          -0.4439128041267395,
+          0.03643098473548889
+        ],
+        [
+          0.5333223938941956,
+          -0.5039046406745911,
+          0.026155896484851837
+        ],
+        [
+          0.6116097569465637,
+          -0.5491188168525696,
+          0.01637616939842701
+        ],
+        [
+          0.6677088141441345,
+          -0.5809937119483948,
+          0.011941486969590187
+        ],
+        [
+          0.7051719427108765,
+          -0.6141163110733032,
+          0.005580591037869453
+        ],
+        [
+          0.7339619398117065,
+          -0.6526314616203308,
+          0.012217968702316284
+        ],
+        [
+          0.7445855140686035,
+          -0.6795568466186523,
+          0.010727303102612495
+        ],
+        [
+          0.7604581117630005,
+          -0.6927133798599243,
+          0.007425226271152496
+        ],
+        [
+          0.7697471380233765,
+          -0.6933702230453491,
+          0.001210097223520279
+        ],
+        [
+          0.769322395324707,
+          -0.6820904016494751,
+          -0.009240563958883286
+        ],
+        [
+          0.7617457509040833,
+          -0.6678999066352844,
+          -0.01924309693276882
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.3292861579998316,
+      "sources_sha256": "7ab8cb1fdfb591792d44f5c24c51c5a9113e966ff0d9c9a6a1ff62fb31b8b100",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed196/runs/P_random_normmatched",
+      "files_sha256": {
+        "states.pt": "772d6139933f8c89f990093c63842fe40a29dea9c63182bc1cba2fde54a8815d",
+        "actualsession.pt": "235e5e7155da36771f29aabe58f96b0d70d472c1b1851fa50a91045dc4cd6195",
+        "actualsession.json": "1465fb97eb6c018c12f0480597907245c6144108f141372d67d96af19201d65e",
+        "metadata.json": "38ba60f2966b4cdb2a88b2a49a71b33bfc825835f0a8730e94bc7845f6d4b2d2",
+        "normalized_actions.json": "12530594e110d5faab8600b8c5db401521caa25e5ef012f92783704f99e19b2d",
+        "metrics.json": "25a655206f9687afbc68a7fd4128a04f96b0a8340ba4e0cdc5509f9a1ad5cc08",
+        "norms.json": "83eb6439ef8d2e89c507223c14b84028be601677e4a40ea725c9d9cc42eeafd9"
+      }
+    },
+    {
+      "run": "seed198_native_R",
+      "seed": 198,
+      "arm": "native_R",
+      "pulse": false,
+      "reset_steps": [],
+      "gain": null,
+      "intervention_count": 0,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.22592529631065583,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0009203981065018424,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_normalized_xyz": [
+        [
+          -0.0486442968249321,
+          -0.04657858610153198,
+          -0.005526058375835419
+        ],
+        [
+          -0.032721128314733505,
+          -0.04707140475511551,
+          -0.01027737557888031
+        ],
+        [
+          -0.008547931909561157,
+          -0.07181905955076218,
+          -0.011184711009263992
+        ],
+        [
+          0.01835501752793789,
+          -0.10927111655473709,
+          -0.0025979354977607727
+        ],
+        [
+          0.09336215257644653,
+          -0.2011103332042694,
+          0.01771647483110428
+        ],
+        [
+          0.16330182552337646,
+          -0.3342227041721344,
+          0.021832264959812164
+        ],
+        [
+          0.2433292269706726,
+          -0.46306148171424866,
+          0.007383065298199654
+        ],
+        [
+          0.3429926633834839,
+          -0.5484249591827393,
+          -0.001657063141465187
+        ],
+        [
+          0.4907090663909912,
+          -0.5975748896598816,
+          -0.005495984107255936
+        ],
+        [
+          0.6059401631355286,
+          -0.6002127528190613,
+          -0.005615308880805969
+        ],
+        [
+          0.7094671726226807,
+          -0.6162940859794617,
+          0.0013168100267648697
+        ],
+        [
+          0.7573258876800537,
+          -0.6306334137916565,
+          -0.0013850834220647812
+        ],
+        [
+          0.7670891880989075,
+          -0.6385924220085144,
+          -0.010104202665388584
+        ],
+        [
+          0.7912957072257996,
+          -0.669188380241394,
+          -0.008450012654066086
+        ],
+        [
+          0.7988965511322021,
+          -0.6967211365699768,
+          -0.0054892972111701965
+        ],
+        [
+          0.8147331476211548,
+          -0.7108535170555115,
+          0.006188188213855028
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2739820130000226,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/native_R",
+      "files_sha256": {
+        "states.pt": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+        "actualsession.pt": "da864d1e7554fc566722dccccbcd9845bf6165aa56f8889b8a268aeef9847cef",
+        "actualsession.json": "8f5a5a70117a079b84fe7a11dd3d8e4bbaad7eb6c93117e2ae1d005a29c4d833",
+        "metadata.json": "cb6e740cd68ddc0eeb5488fd7904906d6330d09dfa9d5ae6f33efcae3d4692ca",
+        "normalized_actions.json": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6",
+        "metrics.json": "7d771ce43dc3c56f53da0e0a1ce6150508e5e95153a152a9305f2c61ddb9db67",
+        "norms.json": "3510e03961cd1662ae58a9482c38e8f10b844ca8d5b0aff8b7dc96f94190805d"
+      }
+    },
+    {
+      "run": "seed198_P",
+      "seed": 198,
+      "arm": "P",
+      "pulse": true,
+      "reset_steps": [],
+      "gain": null,
+      "intervention_count": 1,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0009203981065018424,
+        "rmse_to_donor": 0.22610013446915517,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.000765877065581725,
+        "signed_projection_rms": -0.00017303100297908684,
+        "delta_cosine_with_donor_direction": -0.18799582675884227
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0009203981065018424,
+        "rmse_to_donor": 0.0,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 1.0,
+        "signed_projection_rms": 0.0009203981065018424,
+        "delta_cosine_with_donor_direction": 1.0
+      },
+      "final_normalized_xyz": [
+        [
+          -0.04885745793581009,
+          -0.04581349715590477,
+          -0.006274405866861343
+        ],
+        [
+          -0.032117702066898346,
+          -0.04778224974870682,
+          -0.010780494660139084
+        ],
+        [
+          -0.008402718231081963,
+          -0.07263762503862381,
+          -0.011384673416614532
+        ],
+        [
+          0.019185084849596024,
+          -0.11006325483322144,
+          -0.001990828663110733
+        ],
+        [
+          0.09275805950164795,
+          -0.19993069767951965,
+          0.016909901052713394
+        ],
+        [
+          0.16395065188407898,
+          -0.33494332432746887,
+          0.02184898778796196
+        ],
+        [
+          0.2444739192724228,
+          -0.462057501077652,
+          0.006750108674168587
+        ],
+        [
+          0.34279870986938477,
+          -0.5486372709274292,
+          -0.0012938110157847404
+        ],
+        [
+          0.49127429723739624,
+          -0.5954393148422241,
+          -0.005782037973403931
+        ],
+        [
+          0.6053495407104492,
+          -0.6006157398223877,
+          -0.004780756309628487
+        ],
+        [
+          0.7075024247169495,
+          -0.6140845417976379,
+          0.0018181782215833664
+        ],
+        [
+          0.7560416460037231,
+          -0.6303567886352539,
+          -0.0023294901475310326
+        ],
+        [
+          0.7672232389450073,
+          -0.6378885507583618,
+          -0.010326618328690529
+        ],
+        [
+          0.7898781299591064,
+          -0.6691608428955078,
+          -0.009435068815946579
+        ],
+        [
+          0.8009400963783264,
+          -0.6966896057128906,
+          -0.004956629127264023
+        ],
+        [
+          0.8159327507019043,
+          -0.7094225287437439,
+          0.005572175607085228
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.2790409819999695,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P",
+      "files_sha256": {
+        "states.pt": "68a36a4647711e59c3d4b25b654f12afe7770e6f7890124fac06e0c331b4b4c7",
+        "actualsession.pt": "4a7ffba38e8dfbac4f2ed1241a1877d87a617d70a865d490218d48f189eaaec5",
+        "actualsession.json": "02e9714c749ec137dea03ecfc7006e28d5e2fca0e4654273b7788978a26ae122",
+        "metadata.json": "677a24efd4a4415eb8cfbc67487d26f4d9b6b5d6651fddf24cfd4a415ed860c0",
+        "normalized_actions.json": "8d6cff35d6d2a3d7948e22291075b50e5e0ba485eeb5f4253440a38232b76519",
+        "metrics.json": "eb85a31ceda38fe3995fe579f84fd8a48991ee06af50ba1b1a9c1af9a27b275e",
+        "norms.json": "6ee96db5e92e6d23c61ebdc94ecb3890f784af8c1ac302148d3f1d8afa2982d0"
+      }
+    },
+    {
+      "run": "seed198_R_persistent_self",
+      "seed": 198,
+      "arm": "R_persistent_self",
+      "pulse": false,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 1.0,
+      "intervention_count": 9,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.22592529631065583,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0009203981065018424,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "final_normalized_xyz": [
+        [
+          -0.0486442968249321,
+          -0.04657858610153198,
+          -0.005526058375835419
+        ],
+        [
+          -0.032721128314733505,
+          -0.04707140475511551,
+          -0.01027737557888031
+        ],
+        [
+          -0.008547931909561157,
+          -0.07181905955076218,
+          -0.011184711009263992
+        ],
+        [
+          0.01835501752793789,
+          -0.10927111655473709,
+          -0.0025979354977607727
+        ],
+        [
+          0.09336215257644653,
+          -0.2011103332042694,
+          0.01771647483110428
+        ],
+        [
+          0.16330182552337646,
+          -0.3342227041721344,
+          0.021832264959812164
+        ],
+        [
+          0.2433292269706726,
+          -0.46306148171424866,
+          0.007383065298199654
+        ],
+        [
+          0.3429926633834839,
+          -0.5484249591827393,
+          -0.001657063141465187
+        ],
+        [
+          0.4907090663909912,
+          -0.5975748896598816,
+          -0.005495984107255936
+        ],
+        [
+          0.6059401631355286,
+          -0.6002127528190613,
+          -0.005615308880805969
+        ],
+        [
+          0.7094671726226807,
+          -0.6162940859794617,
+          0.0013168100267648697
+        ],
+        [
+          0.7573258876800537,
+          -0.6306334137916565,
+          -0.0013850834220647812
+        ],
+        [
+          0.7670891880989075,
+          -0.6385924220085144,
+          -0.010104202665388584
+        ],
+        [
+          0.7912957072257996,
+          -0.669188380241394,
+          -0.008450012654066086
+        ],
+        [
+          0.7988965511322021,
+          -0.6967211365699768,
+          -0.0054892972111701965
+        ],
+        [
+          0.8147331476211548,
+          -0.7108535170555115,
+          0.006188188213855028
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.317436867000197,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/R_persistent_self",
+      "files_sha256": {
+        "states.pt": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+        "actualsession.pt": "03cf0376f68a3056d598a5e4945e791ca6bec71fbbf194eba6da5636fc9372ff",
+        "actualsession.json": "7ae5abc5b3ce72ff00f116be968facd16b3bbe56e23e740bec759fc52c40ce24",
+        "metadata.json": "c9ff18ae3674344c8e781b2ead1d86ba87b6e18f89f08ffc218e599fbe6f0e18",
+        "normalized_actions.json": "da5e569a4374b52ebed5d8d65fa6f2ac58e1d90019381461bb157a6dd11c3aa6",
+        "metrics.json": "7d771ce43dc3c56f53da0e0a1ce6150508e5e95153a152a9305f2c61ddb9db67",
+        "norms.json": "7c7a64ccb3ef446a7aae96a889f478948db6432fc95969245f6bc6c749c8f573"
+      }
+    },
+    {
+      "run": "seed198_P_persistent_gain100",
+      "seed": 198,
+      "arm": "P_persistent_gain100",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 1.0,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.001997054608501982,
+        "rmse_to_donor": 0.22427298137118296,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.00732586945814433,
+        "signed_projection_rms": 0.0016550992280644416,
+        "delta_cosine_with_donor_direction": 0.8287701402947382
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.001997054608501982,
+        "rmse_to_donor": 0.0020932562393504877,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.26774914596748045,
+        "signed_projection_rms": 0.00024643580696595443,
+        "delta_cosine_with_donor_direction": 0.12339963359880742
+      },
+      "final_normalized_xyz": [
+        [
+          -0.04911010339856148,
+          -0.04654676094651222,
+          -0.007837079465389252
+        ],
+        [
+          -0.03223486617207527,
+          -0.048273175954818726,
+          -0.01096763089299202
+        ],
+        [
+          -0.009326724335551262,
+          -0.07237119972705841,
+          -0.01278967410326004
+        ],
+        [
+          0.017497245222330093,
+          -0.11010867357254028,
+          -0.00305856391787529
+        ],
+        [
+          0.09203969687223434,
+          -0.20047271251678467,
+          0.017237048596143723
+        ],
+        [
+          0.16030997037887573,
+          -0.33544617891311646,
+          0.020851310342550278
+        ],
+        [
+          0.2423229217529297,
+          -0.4632110893726349,
+          0.006455719470977783
+        ],
+        [
+          0.3423193097114563,
+          -0.5498055219650269,
+          -0.0007017450407147408
+        ],
+        [
+          0.48848700523376465,
+          -0.598534107208252,
+          -0.0059083933010697365
+        ],
+        [
+          0.6040793657302856,
+          -0.6003871560096741,
+          -0.005837669596076012
+        ],
+        [
+          0.7046845555305481,
+          -0.616662859916687,
+          0.0001898985356092453
+        ],
+        [
+          0.7526511549949646,
+          -0.6323413252830505,
+          -0.0027572494000196457
+        ],
+        [
+          0.7625598907470703,
+          -0.6406570672988892,
+          -0.009735016152262688
+        ],
+        [
+          0.7858949899673462,
+          -0.6700470447540283,
+          -0.010056901723146439
+        ],
+        [
+          0.7960839867591858,
+          -0.7000083923339844,
+          -0.004701059311628342
+        ],
+        [
+          0.8123618364334106,
+          -0.7148436903953552,
+          0.005275016650557518
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.323859296000137,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_persistent_gain100",
+      "files_sha256": {
+        "states.pt": "755f37aa92408a855f1b3683f5e66beafcc40e4d3f51771636f3eda9b39e3c8d",
+        "actualsession.pt": "c122d0efaaf92ef340978c8b6ac143b98aafa4f6dc1648a3746ef58d33c9fa9e",
+        "actualsession.json": "b82d6c4e1175a8981f92a8b2464961ea74bd3ed9f23ca0acbcf6cddab88aabfb",
+        "metadata.json": "5967b57e7a4b0d2491c6011b768ec873a03bac33ecaf22034c13f84ab2feef62",
+        "normalized_actions.json": "1132f96ff6e08704c11c69599abe92dc10af33a8054dba2356742daf31f47e5b",
+        "metrics.json": "90f581f25c633a6cde8f7f300678526fb11df94b4dbeaee595a90c07483478f9",
+        "norms.json": "354e72a1919cb75dc8feec694cc59b665ee833d277813d56fedeef18b01636cb"
+      }
+    },
+    {
+      "run": "seed198_P_single_reset",
+      "seed": 198,
+      "arm": "P_single_reset",
+      "pulse": true,
+      "reset_steps": [
+        21
+      ],
+      "gain": 1.0,
+      "intervention_count": 2,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0011033106372181532,
+        "rmse_to_donor": 0.22590923897594276,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 8.299550344021714e-05,
+        "signed_projection_rms": 1.8750783707183112e-05,
+        "delta_cosine_with_donor_direction": 0.016995017608513817
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0011033106372181532,
+        "rmse_to_donor": 0.0009710244007452188,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.6619616286985792,
+        "signed_projection_rms": 0.000609268229631048,
+        "delta_cosine_with_donor_direction": 0.5522182140536908
+      },
+      "final_normalized_xyz": [
+        [
+          -0.04899778962135315,
+          -0.04579398036003113,
+          -0.005202926695346832
+        ],
+        [
+          -0.03255806118249893,
+          -0.048102300614118576,
+          -0.010545775294303894
+        ],
+        [
+          -0.008434921503067017,
+          -0.07227097451686859,
+          -0.012505322694778442
+        ],
+        [
+          0.01785212568938732,
+          -0.11012092232704163,
+          -0.002652142196893692
+        ],
+        [
+          0.09373367577791214,
+          -0.20163707435131073,
+          0.016896046698093414
+        ],
+        [
+          0.1632719337940216,
+          -0.33409276604652405,
+          0.022058483213186264
+        ],
+        [
+          0.24294200539588928,
+          -0.4623037278652191,
+          0.00698215514421463
+        ],
+        [
+          0.3433071970939636,
+          -0.5487893223762512,
+          -0.002080619800835848
+        ],
+        [
+          0.4902575612068176,
+          -0.596505880355835,
+          -0.00556052103638649
+        ],
+        [
+          0.6062595248222351,
+          -0.6005977392196655,
+          -0.005536587908864021
+        ],
+        [
+          0.7069873213768005,
+          -0.612874448299408,
+          0.002778424881398678
+        ],
+        [
+          0.75418621301651,
+          -0.6287803649902344,
+          -0.0019560251384973526
+        ],
+        [
+          0.7686433792114258,
+          -0.6403249502182007,
+          -0.010885688476264477
+        ],
+        [
+          0.7909908890724182,
+          -0.6709362268447876,
+          -0.00830266997218132
+        ],
+        [
+          0.7995975613594055,
+          -0.6978352069854736,
+          -0.005202757194638252
+        ],
+        [
+          0.816576361656189,
+          -0.7106474041938782,
+          0.005015685688704252
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.298799766999764,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_single_reset",
+      "files_sha256": {
+        "states.pt": "6acd9c4ef1b79ae3092c55714483e4987a95407d8ba90b86613c7ee703973b5b",
+        "actualsession.pt": "e546d43f88df413b3ac81e50be79665b47840b372438e13eb55e5b095ba8c545",
+        "actualsession.json": "59a386eb9f591c386b4eb130a125e57154a97c044c71a4eb3b2b8e8e368bae4c",
+        "metadata.json": "7a37cb84a9b9cd5e0f39fe373eb2f946b4645ad1e94696c6e22994e3cb8b3aeb",
+        "normalized_actions.json": "6547b68152814085510549b38a888df58065ead79c4463bc4701980ac1d31730",
+        "metrics.json": "b690e19a324968de42ac66ddb0e41b483acbc0f8382309cb357979feeaa49f8c",
+        "norms.json": "c6aedff14bfda18b4cfed3832a89547d909fc206ee367d7bd5ad926f912db3ed"
+      }
+    },
+    {
+      "run": "seed198_P_persistent_gain050",
+      "seed": 198,
+      "arm": "P_persistent_gain050",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 0.5,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.0010410529135974308,
+        "rmse_to_donor": 0.2254281175864819,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0022088284898250108,
+        "signed_projection_rms": 0.000499030231063134,
+        "delta_cosine_with_donor_direction": 0.4793514571115317
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.0010410529135974308,
+        "rmse_to_donor": 0.001205060295852141,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.28257293170295134,
+        "signed_projection_rms": 0.00026007959128807083,
+        "delta_cosine_with_donor_direction": 0.24982360444038115
+      },
+      "final_normalized_xyz": [
+        [
+          -0.04955219849944115,
+          -0.04556124284863472,
+          -0.006500612944364548
+        ],
+        [
+          -0.033490993082523346,
+          -0.047509290277957916,
+          -0.009938128292560577
+        ],
+        [
+          -0.009146494790911674,
+          -0.0714683011174202,
+          -0.012606501579284668
+        ],
+        [
+          0.017459262162446976,
+          -0.10960377007722855,
+          -0.0031844191253185272
+        ],
+        [
+          0.09246013313531876,
+          -0.19993238151073456,
+          0.0176093652844429
+        ],
+        [
+          0.1618199199438095,
+          -0.3341537415981293,
+          0.022446947172284126
+        ],
+        [
+          0.24340757727622986,
+          -0.4627061188220978,
+          0.006325297057628632
+        ],
+        [
+          0.34341633319854736,
+          -0.5488019585609436,
+          -0.0022739991545677185
+        ],
+        [
+          0.4900766611099243,
+          -0.5976092219352722,
+          -0.00615348294377327
+        ],
+        [
+          0.605397641658783,
+          -0.601354718208313,
+          -0.005800614133477211
+        ],
+        [
+          0.7065856456756592,
+          -0.6148436665534973,
+          0.0013642450794577599
+        ],
+        [
+          0.7574230432510376,
+          -0.6322881579399109,
+          -0.0014128340408205986
+        ],
+        [
+          0.7662938237190247,
+          -0.6387453675270081,
+          -0.010541001334786415
+        ],
+        [
+          0.7884683012962341,
+          -0.6675581336021423,
+          -0.008957751095294952
+        ],
+        [
+          0.7990092635154724,
+          -0.6978101134300232,
+          -0.004960961639881134
+        ],
+        [
+          0.8122216463088989,
+          -0.7122512459754944,
+          0.005357801914215088
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.3383990659999654,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_persistent_gain050",
+      "files_sha256": {
+        "states.pt": "d31842aac588493a5284e4327e4395fcdc769c26a2205be2328438e67e3f75d8",
+        "actualsession.pt": "eb2e0ebe69ed5c3453a3a28fa4cab39bbd8133ad62803801b5bec949ad55ed2e",
+        "actualsession.json": "3ca0d06a3f4cc03190e4d44d5dc1f95ae337924fc95d255b2fa6d0bf6513267a",
+        "metadata.json": "cae6883daa7076ef31f6a812354c047d38a1a9e6679ff79c6c6284eda6598110",
+        "normalized_actions.json": "c2de9a42b6ae7ef87a0654ba4fd087280d25f8c4add45f6bab03c13f1166f91e",
+        "metrics.json": "7bb6cda149224215a843f817f04eebbce574656dbd9820af1d8190a4deeffa79",
+        "norms.json": "09dc26c8f0f695fd8bcddf8f354b2a18be5de53db94db59c06cbfb1314589682"
+      }
+    },
+    {
+      "run": "seed198_P_persistent_gain200",
+      "seed": 198,
+      "arm": "P_persistent_gain200",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": 2.0,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.00975580916425353,
+        "rmse_to_donor": 0.21659517264425288,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.04137697084816072,
+        "signed_projection_rms": 0.00934810439930808,
+        "delta_cosine_with_donor_direction": 0.9582090262241568
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.00975580916425353,
+        "rmse_to_donor": 0.00991257192650389,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -1.3198269537730627,
+        "signed_projection_rms": -0.0012147662291628215,
+        "delta_cosine_with_donor_direction": -0.12451721930087283
+      },
+      "final_normalized_xyz": [
+        [
+          -0.048872943967580795,
+          -0.04549850896000862,
+          -0.009189050644636154
+        ],
+        [
+          -0.028870714828372,
+          -0.04863352328538895,
+          -0.00919894129037857
+        ],
+        [
+          -0.006790713407099247,
+          -0.07615648210048676,
+          -0.013807661831378937
+        ],
+        [
+          0.01842232421040535,
+          -0.11603623628616333,
+          -7.063895463943481e-05
+        ],
+        [
+          0.08891118317842484,
+          -0.2003156840801239,
+          0.017079472541809082
+        ],
+        [
+          0.15633347630500793,
+          -0.3343471884727478,
+          0.02309619076550007
+        ],
+        [
+          0.23808325827121735,
+          -0.4673115015029907,
+          0.009679917246103287
+        ],
+        [
+          0.3335973620414734,
+          -0.5535570979118347,
+          -0.00013264920562505722
+        ],
+        [
+          0.4798894226551056,
+          -0.6060515642166138,
+          -0.004850361496210098
+        ],
+        [
+          0.5901630520820618,
+          -0.6122519969940186,
+          -0.0013680141419172287
+        ],
+        [
+          0.6943941116333008,
+          -0.6268039345741272,
+          0.005129854194819927
+        ],
+        [
+          0.7420212030410767,
+          -0.6461821794509888,
+          -0.0008855490013957024
+        ],
+        [
+          0.7529751062393188,
+          -0.6542133688926697,
+          -0.004262943752110004
+        ],
+        [
+          0.7684040069580078,
+          -0.6837256550788879,
+          -0.0022819265723228455
+        ],
+        [
+          0.7781786322593689,
+          -0.7166191935539246,
+          -0.0004990901798009872
+        ],
+        [
+          0.7972345352172852,
+          -0.7297583818435669,
+          0.010828722268342972
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.3391249480000624,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_persistent_gain200",
+      "files_sha256": {
+        "states.pt": "4fc6192ea74fdc0ca3320c7dc0ccfa1f4a6905c296b044c5ebab75d1f8619007",
+        "actualsession.pt": "d072cb282df1c07213f3e4f637eed3d9089a42528b7c2b00e96a43e8949daf05",
+        "actualsession.json": "c7ca52ff78bef238834b679d8af70ca3d8c5d91470aed776c87995e2ee55e81a",
+        "metadata.json": "73091efde9be95c446e5d0b2baa65bd53b8bebf9f4a0cc5c613195f5d79dd0f8",
+        "normalized_actions.json": "b96e6a657b5ca07aa3f76f0ff31412fe08a7595ef064e26b3cc4ca195ad3732b",
+        "metrics.json": "e4d147f8f30ba07b3142de29fb76c4f1ce957b48b8d0845f318732310aa1c44a",
+        "norms.json": "ecd657fec7db75d452424c59575b73f77f044cc1047ee76a728486aeae9ab160"
+      }
+    },
+    {
+      "run": "seed198_P_random_normmatched",
+      "seed": 198,
+      "arm": "P_random_normmatched",
+      "pulse": true,
+      "reset_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "gain": null,
+      "intervention_count": 10,
+      "all_native_contract_fields_exact": true,
+      "final_normalized_action_xyz": {
+        "rmse_to_recipient": 0.000986201156950025,
+        "rmse_to_donor": 0.226051818231937,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.0005506460994008261,
+        "signed_projection_rms": -0.0001244048831694385,
+        "delta_cosine_with_donor_direction": -0.12614554575678988
+      },
+      "final_R_to_P_axis": {
+        "rmse_to_recipient": 0.000986201156950025,
+        "rmse_to_donor": 0.0010099880347270405,
+        "donor_recipient_gap_rmse": 0.0009203981065018424,
+        "gap_floor": 4.1954828272114556e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.47197421976851034,
+        "signed_projection_rms": 0.00043440417819262135,
+        "delta_cosine_with_donor_direction": 0.4404823246568494
+      },
+      "final_normalized_xyz": [
+        [
+          -0.04913195222616196,
+          -0.046150967478752136,
+          -0.005364101380109787
+        ],
+        [
+          -0.03179367631673813,
+          -0.046517014503479004,
+          -0.011295035481452942
+        ],
+        [
+          -0.008967938832938671,
+          -0.07265976071357727,
+          -0.011720400303602219
+        ],
+        [
+          0.019878126680850983,
+          -0.10925015062093735,
+          -0.0021279752254486084
+        ],
+        [
+          0.09224802255630493,
+          -0.20096522569656372,
+          0.017699267715215683
+        ],
+        [
+          0.16186073422431946,
+          -0.3341948986053467,
+          0.021548287943005562
+        ],
+        [
+          0.24275588989257812,
+          -0.46221816539764404,
+          0.007602199912071228
+        ],
+        [
+          0.34322088956832886,
+          -0.549120306968689,
+          -0.0007043355144560337
+        ],
+        [
+          0.49010169506073,
+          -0.5968872904777527,
+          -0.0045250896364450455
+        ],
+        [
+          0.6047781109809875,
+          -0.6019527912139893,
+          -0.005818048492074013
+        ],
+        [
+          0.7088950872421265,
+          -0.6147915124893188,
+          0.002425204962491989
+        ],
+        [
+          0.7558099031448364,
+          -0.6284547448158264,
+          -0.0013043340295553207
+        ],
+        [
+          0.7691128253936768,
+          -0.6375042200088501,
+          -0.010754304938018322
+        ],
+        [
+          0.7901527285575867,
+          -0.6667503714561462,
+          -0.008707907050848007
+        ],
+        [
+          0.8001790642738342,
+          -0.6975241303443909,
+          -0.006324898451566696
+        ],
+        [
+          0.8152769804000854,
+          -0.711205780506134,
+          0.005252103321254253
+        ]
+      ],
+      "normalized_action_shape": [
+        16,
+        10
+      ],
+      "elapsed_s": 3.3604497310002444,
+      "sources_sha256": "e14de391961a6ef52ba198484ec5a12b296e3429f6b260e73449570e14b665eb",
+      "artifacts": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/correction-persistence/seed198/runs/P_random_normmatched",
+      "files_sha256": {
+        "states.pt": "985d0e011e3e03ea0062b789b02ae273b541de990984f6c0ebe733a6baf8d8a5",
+        "actualsession.pt": "1e96f841050fc6c0e434a44870e700f1be30bfbe602131eeab9f493322599e4a",
+        "actualsession.json": "d91dfcd93405eb49f4b8b6b17c633c88f731a3ef0cfc3419329fe2d6a7956a8d",
+        "metadata.json": "f1b0f6e9445d28961f1208988c63d8e5f1913060b952f0f58da61a0196174f16",
+        "normalized_actions.json": "a45171ee8e32a9932bdd12f78e89c13cb2f5907301772d9dfc3c432a22698530",
+        "metrics.json": "f0d8091fc808b18d4087a1f38384417428a1e5e214bd88f1f4dffba5f0f3f837",
+        "norms.json": "beff9cfe46482232e4eed262407f41f19999fcfe56cc0406c06f411b080e657c"
+      }
+    }
+  ],
+  "controls": [
+    {
+      "run": "seed195_native_R",
+      "seed": 195,
+      "arm": "native_R",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "44ea8dd24bfd1d570a6fcfeb9cc068b1924936b2610913df43f6224405c2bb7d",
+      "actualsession_sha256": "047f690e82e8e6ea0d3ef620a1be8abe4bfb90d33e66403214a2202acecfa4d5"
+    },
+    {
+      "run": "seed195_P",
+      "seed": 195,
+      "arm": "P",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "536770c613defb5109d51d0defb9901ced26171f8b1201ec2528e31391e406af",
+      "actualsession_sha256": "bdb0108070a5428dc30fe3b9c1500051d32c62bc7254de11b82de35ca1762502"
+    },
+    {
+      "run": "seed195_R_persistent_self",
+      "seed": 195,
+      "arm": "R_persistent_self",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "44ea8dd24bfd1d570a6fcfeb9cc068b1924936b2610913df43f6224405c2bb7d",
+      "actualsession_sha256": "4b3d040697ec478515ab9275c6dc458df39456530f792063314eaae3caccffca"
+    },
+    {
+      "run": "seed196_native_R",
+      "seed": 196,
+      "arm": "native_R",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f",
+      "actualsession_sha256": "fb3f690b72daac7784d22d34da7708994c8cad86e2029f72087098c8766c0353"
+    },
+    {
+      "run": "seed196_P",
+      "seed": 196,
+      "arm": "P",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "ee7e091300d1a208d40111548f195a48754697ec42995b33103856b27710fda6",
+      "actualsession_sha256": "b1a1573c2053080ec7de58f6d3b3da193518400356a0f2efdc85a3788b9389b2"
+    },
+    {
+      "run": "seed196_R_persistent_self",
+      "seed": 196,
+      "arm": "R_persistent_self",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "3c4211f228bf9c0b63e5597b5c70bd42cf2f43767e437fbc3ce7cd38e8e64d3f",
+      "actualsession_sha256": "3691f2e2b1dec56215fcfbcc613a0c33467e3dbe43868f02ed80407100fd61bc"
+    },
+    {
+      "run": "seed198_native_R",
+      "seed": 198,
+      "arm": "native_R",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "actualsession_sha256": "da864d1e7554fc566722dccccbcd9845bf6165aa56f8889b8a268aeef9847cef"
+    },
+    {
+      "run": "seed198_P",
+      "seed": 198,
+      "arm": "P",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "68a36a4647711e59c3d4b25b654f12afe7770e6f7890124fac06e0c331b4b4c7",
+      "actualsession_sha256": "4a7ffba38e8dfbac4f2ed1241a1877d87a617d70a865d490218d48f189eaaec5"
+    },
+    {
+      "run": "seed198_R_persistent_self",
+      "seed": 198,
+      "arm": "R_persistent_self",
+      "all_saved_fields_bit_exact": true,
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "actualsession_sha256": "03cf0376f68a3056d598a5e4945e791ca6bec71fbbf194eba6da5636fc9372ff"
+    }
+  ],
+  "completed": [
+    "seed195_native_R",
+    "seed195_P",
+    "seed195_R_persistent_self",
+    "seed195_P_persistent_gain100",
+    "seed195_P_single_reset",
+    "seed195_P_persistent_gain050",
+    "seed195_P_persistent_gain200",
+    "seed195_P_random_normmatched",
+    "seed196_native_R",
+    "seed196_P",
+    "seed196_R_persistent_self",
+    "seed196_P_persistent_gain100",
+    "seed196_P_single_reset",
+    "seed196_P_persistent_gain050",
+    "seed196_P_persistent_gain200",
+    "seed196_P_random_normmatched",
+    "seed198_native_R",
+    "seed198_P",
+    "seed198_R_persistent_self",
+    "seed198_P_persistent_gain100",
+    "seed198_P_single_reset",
+    "seed198_P_persistent_gain050",
+    "seed198_P_persistent_gain200",
+    "seed198_P_random_normmatched"
+  ],
+  "protocol_sha256": "514eb5fb66eb782c9f71dda880419963e5ad5485c0c245d1ce5f2297af1c79bb",
+  "future_physical_candidates": [
+    {
+      "seed": 198,
+      "arm": "native_R"
+    },
+    {
+      "seed": 198,
+      "arm": "P"
+    },
+    {
+      "seed": 198,
+      "arm": "P_persistent_gain100"
+    },
+    {
+      "seed": 198,
+      "arm": "P_random_normmatched"
+    }
+  ],
+  "physical_selection_predeclared": true,
+  "interpretation": "Short or sustained increment replacement tests whether this candidate computation changes the later trajectory of internal actions. Continued changes can be inherited by solver state; no actual grasp rescue is established.",
+  "next_validation": "Execute predeclared seed198 native_R/P/gain100/random candidates in the same MuJoCo scene, then vary milk and distractor positions if behavior changes.",
+  "scope": "Paired fixed-input q0 computation with one L17 attention pulse and short/sustained candidate L3 MLP replacement. Later computation and the multistep solver respond freely. Continuous normalized action outputs only; no MuJoCo, milk-neuron, attractor or grasp-rescue claim."
+}

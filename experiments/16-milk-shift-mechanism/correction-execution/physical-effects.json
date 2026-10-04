@@ -1,0 +1,37 @@
+{
+  "scope": "Actual MuJoCo EEF distance to the byte-exact native control, not action probabilities or imagined video. One seed198 and one x15 initial state.",
+  "cases": [
+    {
+      "arm": "native_R",
+      "actual_eef_max_difference_first16_m": 0.0,
+      "actual_eef_max_difference_all128_m": 0.0,
+      "selected_objects": [
+        "cream_cheese_1"
+      ]
+    },
+    {
+      "arm": "P",
+      "actual_eef_max_difference_first16_m": 6.895066159223152e-05,
+      "actual_eef_max_difference_all128_m": 0.00272847237138229,
+      "selected_objects": [
+        "cream_cheese_1"
+      ]
+    },
+    {
+      "arm": "P_persistent_gain100",
+      "actual_eef_max_difference_first16_m": 0.000371662006031772,
+      "actual_eef_max_difference_all128_m": 0.014286962842144663,
+      "selected_objects": [
+        "cream_cheese_1"
+      ]
+    },
+    {
+      "arm": "P_random_normmatched",
+      "actual_eef_max_difference_first16_m": 7.504385099114553e-05,
+      "actual_eef_max_difference_all128_m": 0.00441264151978519,
+      "selected_objects": [
+        "cream_cheese_1"
+      ]
+    }
+  ]
+}

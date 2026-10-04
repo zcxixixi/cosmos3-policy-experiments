@@ -1,0 +1,69 @@
+{
+  "state": "exact",
+  "trial": "native_R",
+  "baseline_trial": "x15_seed198",
+  "physical_records": 129,
+  "executed_actions": 128,
+  "actual_input_images": 8,
+  "all_sim_state_bytes_exact": true,
+  "all_action_and_trajectory_and_input_files_bytes_exact": true,
+  "files": {
+    "sim_states.npy": {
+      "baseline_sha256": "8abe7f88aacc4b15b42db58235cb3eaea6c75fd899c87e71b1069233ea0ea952",
+      "actual_sha256": "8abe7f88aacc4b15b42db58235cb3eaea6c75fd899c87e71b1069233ea0ea952"
+    },
+    "trajectory.json": {
+      "baseline_sha256": "cbfef2a3fbcca093b90d434dae7b90367a712aef03ecf93de3fc422a6ea90e5c",
+      "actual_sha256": "cbfef2a3fbcca093b90d434dae7b90367a712aef03ecf93de3fc422a6ea90e5c"
+    },
+    "actions.json": {
+      "baseline_sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421",
+      "actual_sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+    },
+    "executed_actions.json": {
+      "baseline_sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421",
+      "actual_sha256": "ca682f091b6e86bb1f65f802d642549d2f6a4e9c93d2bccc1cda485fb79bf421"
+    },
+    "normalized_actions.json": {
+      "baseline_sha256": "5dd6beca584f80f7e99ecc4e2b697bb7da46522de3211ced0348fb4a60eb5aef",
+      "actual_sha256": "5dd6beca584f80f7e99ecc4e2b697bb7da46522de3211ced0348fb4a60eb5aef"
+    },
+    "denormalized_actions.json": {
+      "baseline_sha256": "44f702738429612dd19f6515af335ca197a1763bfd95a926d4587cc1c8a8cc9d",
+      "actual_sha256": "44f702738429612dd19f6515af335ca197a1763bfd95a926d4587cc1c8a8cc9d"
+    },
+    "input_00.png": {
+      "baseline_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "actual_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
+    },
+    "input_01.png": {
+      "baseline_sha256": "0a129d8a5a30219a232db6c4cd44159a20fdf8a83e998128ba0fe1776bbbb0eb",
+      "actual_sha256": "0a129d8a5a30219a232db6c4cd44159a20fdf8a83e998128ba0fe1776bbbb0eb"
+    },
+    "input_02.png": {
+      "baseline_sha256": "322899fb33b0d8b0b29e3de64925b0c9a3c80b71dce3c74597eac3dda3ce24eb",
+      "actual_sha256": "322899fb33b0d8b0b29e3de64925b0c9a3c80b71dce3c74597eac3dda3ce24eb"
+    },
+    "input_03.png": {
+      "baseline_sha256": "f1eaa9f7702010b15c64c7d0bc8aad8342c9328650b07cc00dcf01b0fe81f0fb",
+      "actual_sha256": "f1eaa9f7702010b15c64c7d0bc8aad8342c9328650b07cc00dcf01b0fe81f0fb"
+    },
+    "input_04.png": {
+      "baseline_sha256": "35980201d7eb849689d261ed105134177171f5a64559c3a905be88333d845d6c",
+      "actual_sha256": "35980201d7eb849689d261ed105134177171f5a64559c3a905be88333d845d6c"
+    },
+    "input_05.png": {
+      "baseline_sha256": "40e96e6fb7740d29c551e843d1a00092afed5de429b3bfee2bea6f9e662c8906",
+      "actual_sha256": "40e96e6fb7740d29c551e843d1a00092afed5de429b3bfee2bea6f9e662c8906"
+    },
+    "input_06.png": {
+      "baseline_sha256": "3368099aa384b8191d1ab54dc77fe720c2d1187100ffad2a74693a360cf277e1",
+      "actual_sha256": "3368099aa384b8191d1ab54dc77fe720c2d1187100ffad2a74693a360cf277e1"
+    },
+    "input_07.png": {
+      "baseline_sha256": "f30b2955cba5c2a7ec8611e35c1241356e60d25626ade8e3868695af273f867f",
+      "actual_sha256": "f30b2955cba5c2a7ec8611e35c1241356e60d25626ade8e3868695af273f867f"
+    }
+  },
+  "scope": "Four preregistered seed198 128-action executions from the unchanged X+15cm physical initial state. Query0 executes saved native_R/P/persistent gain1/random actions; gain100 means 100% replacement, numerical gain1. Queries1..7 are native predictions on actual current images. Strict dual-finger contact and >2cm lift for five consecutive records determines selected objects. No training or claim of a milk neuron, identity probability, attractor or localized root cause."
+}

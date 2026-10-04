@@ -12,8 +12,8 @@
 <p class="muted">2026-10-04 · 最新实验 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、数据与记录</a></p>
 <h1>牛奶移远后，模型转去抓奶酪盒。内部哪里出了问题？</h1>
 <p class="goal"><b>只查一个问题：</b>指令始终是“抓牛奶，放进篮子”。牛奶移动6厘米时能抓，移动15厘米后却抓奶酪盒。我们要找到导致这个转变的具体内部计算，并检验改动它能否恢复抓牛奶。</p>
-<p><b>目前结论：</b>错误能稳定复现。只换网络内部一小块数字，动作确实会改变；但已经实际执行的三个改法，仍抓奶酪盒。<b>还没有找到能救回抓取的部分。</b></p>
-<div class="status"><b>最新进展：找到一次反向响应的重要部件——第4层 MLP。</b>我们逐一改了36层里的 attention 和 MLP，共72个位置。保持改后的动作输入不变，只把第4层 MLP 的输出换回原值，这次反向响应减少了约68%；三次同强度随机扰动只有约0.1%～5%。下一步让这处改动持续几次，检查最后是否真的改抓牛奶。它目前解释了一段内部计算，还没解释实际抓错的全部原因。</div>
+<p><b>目前结论：</b>第4层 MLP 确实参与一次反向响应，但持续改动它之后，机械臂仍抓奶酪盒。<b>我们找到了一个响应部件，还没找到抓错的根因。</b></p>
+<div class="status"><b>最新完成：24次内部计算＋4条真实执行。</b>单次换回第4层 MLP 的输出，能减少约68%的即时反向响应；连续换9次，最终动作朝参考方向只多偏约0.7%～1.0%，实际仍抓奶酪盒。下一步继续拆这块 MLP，检验它是通用去噪部件，还是参与了目标选择。不是看到一个热力图亮点就给它命名“牛奶区域”。</div>
 </section>
 <section>
 <h2>1. 先确认：这次不是偶然抓错</h2>
@@ -21,13 +21,14 @@
 <table><thead><tr><th>牛奶在哪</th><th>三条实际执行各抓谁（种子195、196、198）</th></tr></thead><tbody><tr><td>原位</td><td>牛奶、牛奶、牛奶</td></tr><tr><td>沿 X 移动6厘米</td><td>牛奶、牛奶、牛奶</td></tr><tr><td>沿 X 移动9厘米 · 新补测</td><td>牛奶、牛奶、牛奶</td></tr><tr><td>沿 X 移动12厘米 · 新补测</td><td>奶酪盒、奶酪盒、牛奶</td></tr><tr><td>沿 X 移动15厘米</td><td>奶酪盒、奶酪盒、奶酪盒</td></tr></tbody></table>
 <p><b>补测发现：</b>12厘米不是固定抓错——完全相同的物理画面，只换推理随机噪声，就会出现两种抓取对象。9厘米三次都抓牛奶，12厘米已出现转抓，15厘米三次都抓奶酪盒。这个结果支持继续查“内部怎样选定目标”，还不能直接说它记住了训练动作。</p>
 <p class="muted">这是一个初始场景、三份噪声的诊断，不是通用成功率。“抓起”要求两侧夹爪接触、抬高超过2厘米，并持续5份记录；不代表最后放入篮子成功。</p>
-<div class="video-picker" role="group" aria-label="选择一条实际执行录像"><button type="button" data-video="fifteen" aria-pressed="true">15厘米：抓错</button><button type="button" data-video="zero" aria-pressed="false">原位：抓牛奶</button><button type="button" data-video="six" aria-pressed="false">6厘米：抓牛奶</button><button type="button" data-video="nine" aria-pressed="false">9厘米：抓牛奶</button><button type="button" data-video="twelveCheese" aria-pressed="false">12厘米：抓错</button><button type="button" data-video="twelveMilk" aria-pressed="false">12厘米：抓对</button><button type="button" data-video="pulse" aria-pressed="false">第18层换数后</button></div>
-<video id="execution" controls preload="none" playsinline src="media/milk-shift-fifteen.mp4" aria-label="MuJoCo实际执行录像"></video>
-<p id="video-caption" class="muted" aria-live="polite">当前：牛奶移动15厘米，模型抓奶酪盒。这是 MuJoCo 执行动作，不是模型生成的预测视频。</p>
-<noscript><p><a href="media/milk-shift-fifteen.mp4">15厘米录像</a> · <a href="media/milk-shift-zero.mp4">原位录像</a> · <a href="media/milk-shift-six.mp4">6厘米录像</a> · <a href="media/milk-shift-pulse-layer18.mp4">第18层换数录像</a></p></noscript>
+<div class="video-picker" role="group" aria-label="选择一条实际执行录像"><button type="button" data-video="persistent" aria-pressed="true">最新：第4层连续改9次</button><button type="button" data-video="fifteen" aria-pressed="false">15厘米：正常抓错</button><button type="button" data-video="zero" aria-pressed="false">原位：抓牛奶</button><button type="button" data-video="six" aria-pressed="false">6厘米：抓牛奶</button><button type="button" data-video="nine" aria-pressed="false">9厘米：抓牛奶</button><button type="button" data-video="twelveCheese" aria-pressed="false">12厘米：抓错</button><button type="button" data-video="twelveMilk" aria-pressed="false">12厘米：抓对</button><button type="button" data-video="pulse" aria-pressed="false">第18层换数后</button></div>
+<video id="execution" controls preload="none" playsinline src="media/milk-mlp-persistent.mp4" aria-label="MuJoCo实际执行录像"></video>
+<p id="video-caption" class="muted" aria-live="polite">当前：先推一下，再连续换回第4层 MLP 九次；仍抓奶酪盒。这是 MuJoCo 执行动作，不是模型生成的预测视频。</p>
+<noscript><p><a href="media/milk-mlp-persistent.mp4">最新：第4层连续改录像</a> · <a href="media/milk-shift-fifteen.mp4">15厘米录像</a> · <a href="media/milk-shift-zero.mp4">原位录像</a> · <a href="media/milk-shift-six.mp4">6厘米录像</a> · <a href="media/milk-shift-nine.mp4">9厘米录像</a> · <a href="media/milk-shift-twelve-cheese.mp4">12厘米抓错</a> · <a href="media/milk-shift-twelve-milk.mp4">12厘米抓对</a> · <a href="media/milk-shift-pulse-layer18.mp4">第18层换数录像</a></p></noscript>
 </section>
+<details><summary>此前的定位过程：为什么开始查第4层 MLP？</summary>
 <section>
-<h2>2. 真的进去换数字了，换在哪里？</h2>
+<h2>局部换数：动作变了，抓取没救回来</h2>
 <p><b>猜想：</b>移远后，某种熟悉抓法压过了当前牛奶的信息。如果把局部计算暂时换成“6厘米、最后抓牛奶”的数字，错误动作应该能被推开。</p>
 <p>模型每轮有30次去噪计算，每次通过36层。我们测了7层、两种部件（attention 和 MLP）、4个计算时刻，共<b>56个局部改法</b>。每次只换一个部件给16步动作提供的数组；输入画面、文字和随机噪声不变，其他部分继续正常算。56次测试都只改首轮推理；三条实际执行也只在首轮换一次，之后7轮用新拍的画面正常推理。</p>
 <p>先做4个对照：不改数字时必须完全复现；换回自己的数字也必须完全复现。四个对照都通过，完整记录逐项一致。</p>
@@ -37,7 +38,7 @@
 <details><summary>展开看56个局部改法的图</summary><figure><img src="media/milk-component-pulses.png" alt="七个网络层、四个去噪时刻的attention和MLP局部换数后，动作沿参考方向的变化百分比"><figcaption>横轴是去噪计算时刻，纵轴是网络层。颜色表示动作变化在上述参考方向上的分量。这里只测试首轮输入；整块换数得到的线索还需逐头与路径实验核验。</figcaption></figure></details>
 </section>
 <section>
-<h2>3. 为什么刚推了一下，又偏回来了？</h2>
+<h2>拆开输入：主要响应来自动作数组</h2>
 <p>第18层 attention 在第21次去噪时换数，当次模型对动作的更新沿参考方向偏了<b>45.6%</b>；撤掉干预后，下一次更新反向偏了<b>9.9%</b>。30次计算结束，最终动作沿这个方向的变化接近零（−0.08%）。</p>
 <p>这两个数比较的是<b>各自计算时刻</b>下，改动相对原结果的更新量，不是实际移动厘米数。每个时刻的参考方向和分母都可能变化，不能把这两个百分比当同一把尺子。“最终接近零”也只指最终动作在参考轴上的投影，不代表所有数组完全没变。需要下面的同一时刻实验才能查清后续变化来自哪里。</p>
 <p><b>现在真的把两条路径拆开测了：</b>在同一次后续计算里，分别只换动作数组、只换未来画面数组、两者一起换、两者都不换。当前输入画面、文字和其他数字保持一致。三份噪声都做了这四组。</p>
@@ -53,24 +54,37 @@
 <p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/README.md">完整实验说明、真实内部数组、逐步物理轨迹、控制检查与代码</a>。抓取位置和对象依据真实 MuJoCo 状态与接触记录判断。当前只测了一个场景；一次局部干预的负结果不能概括整个模型。</p>
 </details>
 </section>
+</details>
 <section>
-<h2>4. 现在查到网络里的哪一块？</h2>
+<h2>2. 现在查到网络里的哪一块？</h2>
 <p><b>这次的猜想：</b>改后的动作数组进入下一次计算后，某个部件会产生反方向的更新。如果找对部件，把它的输出换回未扰动时的数值，这次反方向更新应该减小。</p>
 <p>我们固定同一次计算、同一份改后的动作输入和同一份画面，逐个测试36层的 attention 和 MLP。每次只换一个部件给16步动作提供的 <b>16×4096 个数</b>，后面的网络照常计算。不是把整个模型换成另一个模型，也没有直接修改最终动作。</p>
 <table><thead><tr><th>只改哪里</th><th>这次反向响应减少多少</th></tr></thead><tbody><tr><td>第4层 MLP：换回未扰动时的真实输出</td><td><b>67.9%</b></td></tr><tr><td>同一位置、同样改变量，随机方向1</td><td>0.1%</td></tr><tr><td>同一位置、同样改变量，随机方向2</td><td>5.0%</td></tr><tr><td>同一位置、同样改变量，随机方向3</td><td>2.4%</td></tr></tbody></table>
 <p><b>用人话说：</b>我们没有只看两组数字像不像。我们在计算中途，真的换掉第4层 MLP 的一小块输出；后面的网络重新算出来，反向响应就明显小了。反过来，把扰动时的这块输出放进未扰动的计算，也会产生对应变化，幅度约66%。这支持它确实参与了这次响应。</p>
 <figure><img src="media/milk-action-correction-sites.png" alt="36层attention和MLP的逐个局部干预热力图，以及第4层MLP真实替换与三个等强度随机方向的对照"><figcaption>左图每格都是一次真实局部改动后的输出效果；编号从0开始，数字3就是第4层。深红格表示第4层 MLP 的效果最明显。右图比较真实替换和三个等强度随机改动。这里的百分比只衡量一次内部反向响应，不是抓牛奶概率。</figcaption></figure>
 <p><b>现在知道：</b>这次动作输入引起的反向响应，有一个可局部干预的重要计算部件。<b>还不知道：</b>它是不是导致抓奶酪盒的原因。普通去噪也可能产生这种反向更新，不能看到“往回偏”就断言模型背答案。</p>
-<p><b>下一步的检验：</b>在三份配对噪声下，让第4层 MLP 的这处改动持续到后几次计算；再把真实产生的动作交给 MuJoCo。若内部响应变了、实际抓取没变，就不能把这个部件叫作抓错的根因。</p>
+<p>这之后的持续改动与实际执行已经完成，结果如下。即时响应变小，并不意味着最后一定抓对。</p>
 <p class="muted">这批是一个种子、一个去噪时刻的80次单次网络计算：72个部件、4个完全复现对照、1次反向替换、3次随机对照。当前输入、其他物体、噪声及计算时间都核验过；选中的部件尚需在其他种子和真实执行中验证。</p>
 <p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/action-correction-sites">实际数组、完整72个部件的数值与对照</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_action_correction_sites.py">实际干预代码</a></p>
+</section>
+<section>
+<h2>3. 连续改这块 MLP，最后抓谁？</h2>
+<p>先在第21次去噪短暂推一下动作，再在后9次计算中，持续把第4层 MLP 的动作行输出换回未扰动时的值。三份噪声分别测了只改一次、连续改、半强度、双强度和同强度随机方向，共24次完整首轮推理。</p>
+<table><thead><tr><th>首轮内部怎么改</th><th>三个种子的最终动作，朝6厘米参考方向偏多少</th></tr></thead><tbody><tr><td>只推一下，后面正常计算</td><td>+0.16%、+0.24%、−0.08%</td></tr><tr><td>再连续换回第4层 MLP，9次</td><td><b>+0.82%、+0.96%、+0.73%</b></td></tr><tr><td>同位置、逐次同强度随机方向</td><td>+0.15%、+0.29%、−0.06%</td></tr><tr><td>连续改，强度加倍</td><td>+4.49%、+4.39%、+4.14%（本批未执行）</td></tr></tbody></table>
+<p>这说明持续改动确实能让一部分动作变化保留下来，而且方向比随机改动更一致。但<b>68%是一次即时响应的减少，0.7%～1.0%是最终动作在另一条参考轴上的偏移，两者不能互换。</b>这些数都不是抓牛奶概率。</p>
+<details><summary>展开看24次真实计算的对照图</summary><figure><img src="media/milk-mlp-persistence.png" alt="三个配对种子下，短暂、持续及随机第4层MLP改动对最终XYZ动作的实际投影"><figcaption>蓝色：连续9次，约0.7%～1.0%。紫色：双强度，约4.1%～4.5%，本批未执行。灰色：逐次同强度随机方向。所有图都从真实动作数组重算，使用相同展示刻度；百分比不是抓取成功率。</figcaption></figure></details>
+<p><b>实际执行：</b>按实验前就定好的四组，把种子198的原生动作、只推一下、连续替换、随机替换，分别交给 MuJoCo。之后7轮全部用真实新画面正常推理。<b>四条都抓奶酪盒，都在第68步确认抓起。</b>正常对照的129份仿真状态、全部动作和每轮画面与旧结果逐字节一致。</p>
+<p>连续替换在最初16步让机械臂参考点最多偏移约<b>0.37毫米</b>；后续完整执行最多偏移约14.3毫米，但对象没有改变。上面的“第4层连续改9次”按钮可以看实际录像。</p>
+<p><b>这批推翻了什么？</b>“削弱这段反向响应，就足以让它改抓牛奶”的简单想法。<b>接下来改查：</b>这块 MLP 内少数单元是否负责这种响应；同一群单元是否也响应无关方向的动作扰动。如果也会，就更像通用去噪，不能把它当作选牛奶的部位。</p>
+<p class="muted">三个种子内的最终投影分别用各自6厘米与15厘米配对基准；参考动作来自不同物体位置，不能当纯牛奶身份。四条物理验证只有一个种子、一个15厘米初态。没有挑分数最高的双强度组替换预先登记的执行组。</p>
+<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/correction-persistence">24次内部计算、实际数值与预登记协议</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/correction-execution">4条物理执行、完整轨迹和核验</a></p>
 </section>
 <footer class="muted">对象：社区权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">cosmos3-nano-policy-liberoall-5k</a> 与当前推理程序。没有重新训练。老实验保留在仓库供核验，首页只展示当前问题与最新结果。</footer>
 </main>
 <script>
 const player=document.getElementById('execution');
 const caption=document.getElementById('video-caption');
-const clips={fifteen:{src:'media/milk-shift-fifteen.mp4',label:'牛奶移动15厘米，模型抓奶酪盒'},zero:{src:'media/milk-shift-zero.mp4',label:'牛奶在原位，模型抓牛奶'},six:{src:'media/milk-shift-six.mp4',label:'牛奶移动6厘米，模型抓牛奶'},nine:{src:'media/milk-shift-nine.mp4',label:'牛奶移动9厘米，模型抓牛奶（种子198）'},twelveCheese:{src:'media/milk-shift-twelve-cheese.mp4',label:'牛奶移动12厘米，模型抓奶酪盒（种子195）'},twelveMilk:{src:'media/milk-shift-twelve-milk.mp4',label:'同一个12厘米初态，模型抓牛奶（种子198）'},pulse:{src:'media/milk-shift-pulse-layer18.mp4',label:'第18层attention只换一次数字，模型仍抓奶酪盒'}};
+const clips={fifteen:{src:'media/milk-shift-fifteen.mp4',label:'牛奶移动15厘米，模型抓奶酪盒'},zero:{src:'media/milk-shift-zero.mp4',label:'牛奶在原位，模型抓牛奶'},six:{src:'media/milk-shift-six.mp4',label:'牛奶移动6厘米，模型抓牛奶'},nine:{src:'media/milk-shift-nine.mp4',label:'牛奶移动9厘米，模型抓牛奶（种子198）'},twelveCheese:{src:'media/milk-shift-twelve-cheese.mp4',label:'牛奶移动12厘米，模型抓奶酪盒（种子195）'},twelveMilk:{src:'media/milk-shift-twelve-milk.mp4',label:'同一个12厘米初态，模型抓牛奶（种子198）'},pulse:{src:'media/milk-shift-pulse-layer18.mp4',label:'第18层attention只换一次数字，模型仍抓奶酪盒'},persistent:{src:'media/milk-mlp-persistent.mp4',label:'先推一下，再连续换回第4层MLP九次；仍抓奶酪盒（种子198）'}};
 for(const button of document.querySelectorAll('[data-video]')){
  button.addEventListener('click',()=>{
   if(button.getAttribute('aria-pressed')==='true')return;

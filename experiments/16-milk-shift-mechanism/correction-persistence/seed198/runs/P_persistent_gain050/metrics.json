@@ -1,0 +1,1385 @@
+{
+  "final_normalized_action_xyz": {
+    "rmse_to_recipient": 0.0010410529135974308,
+    "rmse_to_donor": 0.2254281175864819,
+    "donor_recipient_gap_rmse": 0.22592529631065583,
+    "gap_floor": 4.335462329498292e-05,
+    "gap_meaningful": true,
+    "signed_projection_fraction": 0.0022088284898250108,
+    "signed_projection_rms": 0.000499030231063134,
+    "delta_cosine_with_donor_direction": 0.4793514571115317
+  },
+  "final_normalized_action_all10": {
+    "rmse_to_recipient": 0.0009697499616490838,
+    "rmse_to_donor": 0.12451543724177105,
+    "donor_recipient_gap_rmse": 0.12479191615494303,
+    "gap_floor": 6.04409929032037e-05,
+    "gap_meaningful": true,
+    "signed_projection_fraction": 0.002243258873784416,
+    "signed_projection_rms": 0.00027994057329113685,
+    "delta_cosine_with_donor_direction": 0.28867294082187017
+  },
+  "per_denoising_step": [
+    {
+      "step": 0,
+      "timestep": 999,
+      "sigma": 0.9990000128746033,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.019158240564054095,
+        "donor_recipient_gap_rmse": 0.019158240564054095,
+        "gap_floor": 1.9329910593213094e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.044151409391934175,
+        "donor_recipient_gap_rmse": 0.044151409391934175,
+        "gap_floor": 4.8161287309414515e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.18982118072103965,
+        "donor_recipient_gap_rmse": 0.18982118072103965,
+        "gap_floor": 0.00011329766319020727,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.006321037603087602,
+        "donor_recipient_gap_rmse": 0.006321037603087602,
+        "gap_floor": 0.00010573384017323666,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 1,
+      "timestep": 965,
+      "sigma": 0.9657000303268433,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.01854229653956298,
+        "donor_recipient_gap_rmse": 0.01854229653956298,
+        "gap_floor": 1.9264799607831334e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.04242688533533348,
+        "donor_recipient_gap_rmse": 0.04242688533533348,
+        "gap_floor": 4.8121480460390496e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.182246769189869,
+        "donor_recipient_gap_rmse": 0.182246769189869,
+        "gap_floor": 0.00011259095926652773,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.01222901254765023,
+        "donor_recipient_gap_rmse": 0.01222901254765023,
+        "gap_floor": 0.00010228693795263486,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 2,
+      "timestep": 932,
+      "sigma": 0.9323999881744385,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.01701937171374469,
+        "donor_recipient_gap_rmse": 0.01701937171374469,
+        "gap_floor": 1.919916146827051e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.040221376164143355,
+        "donor_recipient_gap_rmse": 0.040221376164143355,
+        "gap_floor": 4.804270674445879e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.17599432005711876,
+        "donor_recipient_gap_rmse": 0.17599432005711876,
+        "gap_floor": 0.00011229443600070095,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.017909697629514863,
+        "donor_recipient_gap_rmse": 0.017909697629514863,
+        "gap_floor": 9.888397915580767e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 3,
+      "timestep": 899,
+      "sigma": 0.8991000056266785,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.017714545586489376,
+        "donor_recipient_gap_rmse": 0.017714545586489376,
+        "gap_floor": 1.9163287936401894e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.04299387611500944,
+        "donor_recipient_gap_rmse": 0.04299387611500944,
+        "gap_floor": 4.8032074206317676e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.19078299848342123,
+        "donor_recipient_gap_rmse": 0.19078299848342123,
+        "gap_floor": 0.00011238852028423043,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.024665658084851178,
+        "donor_recipient_gap_rmse": 0.024665658084851178,
+        "gap_floor": 9.549326747749016e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 4,
+      "timestep": 865,
+      "sigma": 0.8658000230789185,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.01833385386301197,
+        "donor_recipient_gap_rmse": 0.01833385386301197,
+        "gap_floor": 1.914907968837309e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.04511331361111529,
+        "donor_recipient_gap_rmse": 0.04511331361111529,
+        "gap_floor": 4.808518745642232e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.20010497993755408,
+        "donor_recipient_gap_rmse": 0.20010497993755408,
+        "gap_floor": 0.00011232035983651719,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.03140740809048229,
+        "donor_recipient_gap_rmse": 0.03140740809048229,
+        "gap_floor": 9.211996779076329e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 5,
+      "timestep": 832,
+      "sigma": 0.8324999809265137,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.01910527334675012,
+        "donor_recipient_gap_rmse": 0.01910527334675012,
+        "gap_floor": 1.9118150625034322e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0476567656639473,
+        "donor_recipient_gap_rmse": 0.0476567656639473,
+        "gap_floor": 4.80501372200821e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.21128922443474193,
+        "donor_recipient_gap_rmse": 0.21128922443474193,
+        "gap_floor": 0.00011222830886889491,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.03863277889811212,
+        "donor_recipient_gap_rmse": 0.03863277889811212,
+        "gap_floor": 8.879449139829563e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 6,
+      "timestep": 799,
+      "sigma": 0.7991999983787537,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.019413629463675797,
+        "donor_recipient_gap_rmse": 0.019413629463675797,
+        "gap_floor": 1.908455858837818e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.04838810113924731,
+        "donor_recipient_gap_rmse": 0.04838810113924731,
+        "gap_floor": 4.8052872390842054e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.21445437895935734,
+        "donor_recipient_gap_rmse": 0.21445437895935734,
+        "gap_floor": 0.0001123645138817978,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.045717730060006685,
+        "donor_recipient_gap_rmse": 0.045717730060006685,
+        "gap_floor": 8.549389979394038e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 7,
+      "timestep": 765,
+      "sigma": 0.7659000158309937,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.01974304761258132,
+        "donor_recipient_gap_rmse": 0.01974304761258132,
+        "gap_floor": 1.908984009748715e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.0493809479011595,
+        "donor_recipient_gap_rmse": 0.0493809479011595,
+        "gap_floor": 4.811509511635889e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.21840181626356042,
+        "donor_recipient_gap_rmse": 0.21840181626356042,
+        "gap_floor": 0.00011249168578304754,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05303827002124647,
+        "donor_recipient_gap_rmse": 0.05303827002124647,
+        "gap_floor": 8.22195680596319e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 8,
+      "timestep": 732,
+      "sigma": 0.7326000332832336,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.020133030093058522,
+        "donor_recipient_gap_rmse": 0.020133030093058522,
+        "gap_floor": 1.906081811774182e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05019854483839008,
+        "donor_recipient_gap_rmse": 0.05019854483839008,
+        "gap_floor": 4.8111934724131505e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.22241317453558546,
+        "donor_recipient_gap_rmse": 0.22241317453558546,
+        "gap_floor": 0.00011252736897601866,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.06049916643189825,
+        "donor_recipient_gap_rmse": 0.06049916643189825,
+        "gap_floor": 7.900105954248825e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 9,
+      "timestep": 699,
+      "sigma": 0.6992999911308289,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.02030863332775865,
+        "donor_recipient_gap_rmse": 0.02030863332775865,
+        "gap_floor": 1.903597798396287e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05063712449224388,
+        "donor_recipient_gap_rmse": 0.05063712449224388,
+        "gap_floor": 4.811724484071135e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.2244155033697917,
+        "donor_recipient_gap_rmse": 0.2244155033697917,
+        "gap_floor": 0.00011264650595444577,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.06796435329224328,
+        "donor_recipient_gap_rmse": 0.06796435329224328,
+        "gap_floor": 7.582061037766013e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 10,
+      "timestep": 666,
+      "sigma": 0.6660000085830688,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.020430115415449212,
+        "donor_recipient_gap_rmse": 0.020430115415449212,
+        "gap_floor": 1.89918730395619e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05075963761256053,
+        "donor_recipient_gap_rmse": 0.05075963761256053,
+        "gap_floor": 4.80375732204355e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.22501634261903905,
+        "donor_recipient_gap_rmse": 0.22501634261903905,
+        "gap_floor": 0.00011241751266400727,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.07543938450009578,
+        "donor_recipient_gap_rmse": 0.07543938450009578,
+        "gap_floor": 7.270463809445768e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 11,
+      "timestep": 632,
+      "sigma": 0.6327000260353088,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.02069895882665545,
+        "donor_recipient_gap_rmse": 0.02069895882665545,
+        "gap_floor": 1.8985947067978913e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05104387187951235,
+        "donor_recipient_gap_rmse": 0.05104387187951235,
+        "gap_floor": 4.809028399570222e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.2259643720717121,
+        "donor_recipient_gap_rmse": 0.2259643720717121,
+        "gap_floor": 0.00011261528764667115,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.08297075223658738,
+        "donor_recipient_gap_rmse": 0.08297075223658738,
+        "gap_floor": 6.964627637924126e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 12,
+      "timestep": 599,
+      "sigma": 0.599399983882904,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.021112891198339506,
+        "donor_recipient_gap_rmse": 0.021112891198339506,
+        "gap_floor": 1.897322009353664e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.052012233112858214,
+        "donor_recipient_gap_rmse": 0.052012233112858214,
+        "gap_floor": 4.8067172115443655e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.2301191713509548,
+        "donor_recipient_gap_rmse": 0.2301191713509548,
+        "gap_floor": 0.00011258551563022605,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.09072956730285012,
+        "donor_recipient_gap_rmse": 0.09072956730285012,
+        "gap_floor": 6.666526998833433e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 13,
+      "timestep": 566,
+      "sigma": 0.566100001335144,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.021154935372435842,
+        "donor_recipient_gap_rmse": 0.021154935372435842,
+        "gap_floor": 1.8931595833848774e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05124830807490595,
+        "donor_recipient_gap_rmse": 0.05124830807490595,
+        "gap_floor": 4.798323030376334e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.22717733927924436,
+        "donor_recipient_gap_rmse": 0.22717733927924436,
+        "gap_floor": 0.00011230770682080498,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.09814789717475568,
+        "donor_recipient_gap_rmse": 0.09814789717475568,
+        "gap_floor": 6.37835667949218e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 14,
+      "timestep": 532,
+      "sigma": 0.532800018787384,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.021663637422955944,
+        "donor_recipient_gap_rmse": 0.021663637422955944,
+        "gap_floor": 1.898402026465487e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.052082353512575036,
+        "donor_recipient_gap_rmse": 0.052082353512575036,
+        "gap_floor": 4.813730968941023e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.23048922901035748,
+        "donor_recipient_gap_rmse": 0.23048922901035748,
+        "gap_floor": 0.0001128737225832585,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.10593223867085069,
+        "donor_recipient_gap_rmse": 0.10593223867085069,
+        "gap_floor": 6.094920100916446e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 15,
+      "timestep": 499,
+      "sigma": 0.49950000643730164,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.02187505185552083,
+        "donor_recipient_gap_rmse": 0.02187505185552083,
+        "gap_floor": 1.8972921642276637e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.051634695686538,
+        "donor_recipient_gap_rmse": 0.051634695686538,
+        "gap_floor": 4.80587469993244e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.22813673547166713,
+        "donor_recipient_gap_rmse": 0.22813673547166713,
+        "gap_floor": 0.00011239749298378075,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.11340833216650638,
+        "donor_recipient_gap_rmse": 0.11340833216650638,
+        "gap_floor": 5.826518218090423e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 16,
+      "timestep": 466,
+      "sigma": 0.46619999408721924,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.022463879094859623,
+        "donor_recipient_gap_rmse": 0.022463879094859623,
+        "gap_floor": 1.8992281346738496e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.052934054978703446,
+        "donor_recipient_gap_rmse": 0.052934054978703446,
+        "gap_floor": 4.809186895194703e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.23437991931838945,
+        "donor_recipient_gap_rmse": 0.23437991931838945,
+        "gap_floor": 0.00011266896580629431,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.1214035425507445,
+        "donor_recipient_gap_rmse": 0.1214035425507445,
+        "gap_floor": 5.568051139894014e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 17,
+      "timestep": 432,
+      "sigma": 0.43290001153945923,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.022845753271567498,
+        "donor_recipient_gap_rmse": 0.022845753271567498,
+        "gap_floor": 1.9055335650353384e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.052782255620742034,
+        "donor_recipient_gap_rmse": 0.052782255620742034,
+        "gap_floor": 4.821973070436899e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.23326233762256376,
+        "donor_recipient_gap_rmse": 0.23326233762256376,
+        "gap_floor": 0.0001129266220062883,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.12905671555753032,
+        "donor_recipient_gap_rmse": 0.12905671555753032,
+        "gap_floor": 5.3229455944459564e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 18,
+      "timestep": 399,
+      "sigma": 0.39959999918937683,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.02342514323390249,
+        "donor_recipient_gap_rmse": 0.02342514323390249,
+        "gap_floor": 1.9071836076801803e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.052688812258610225,
+        "donor_recipient_gap_rmse": 0.052688812258610225,
+        "gap_floor": 4.8113123761211225e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.23213751411446162,
+        "donor_recipient_gap_rmse": 0.23213751411446162,
+        "gap_floor": 0.00011278903007511263,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.13672846137694675,
+        "donor_recipient_gap_rmse": 0.13672846137694675,
+        "gap_floor": 5.0940868560442044e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 19,
+      "timestep": 366,
+      "sigma": 0.3663000166416168,
+      "readout": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.02408978379740234,
+        "donor_recipient_gap_rmse": 0.02408978379740234,
+        "gap_floor": 1.912998083091607e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.05312338075937611,
+        "donor_recipient_gap_rmse": 0.05312338075937611,
+        "gap_floor": 4.81188591643394e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.23369528436053252,
+        "donor_recipient_gap_rmse": 0.23369528436053252,
+        "gap_floor": 0.00011266953599408454,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0,
+        "rmse_to_donor": 0.1445574428203773,
+        "donor_recipient_gap_rmse": 0.1445574428203773,
+        "gap_floor": 4.8846419762606306e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0,
+        "signed_projection_rms": 0.0,
+        "delta_cosine_with_donor_direction": null
+      }
+    },
+    {
+      "step": 20,
+      "timestep": 333,
+      "sigma": 0.3330000042915344,
+      "readout": {
+        "rmse_to_recipient": 0.010121966268567466,
+        "rmse_to_donor": 0.020003321926055348,
+        "donor_recipient_gap_rmse": 0.02498252474271344,
+        "gap_floor": 1.920744525842028e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.26152377229998025,
+        "signed_projection_rms": 0.006533524112292011,
+        "delta_cosine_with_donor_direction": 0.645479735748683
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.024471195669549695,
+        "rmse_to_donor": 0.030973075707837673,
+        "donor_recipient_gap_rmse": 0.05337836402777587,
+        "gap_floor": 4.8122400664177154e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.43673913601703485,
+        "signed_projection_rms": 0.023312420587493603,
+        "delta_cosine_with_donor_direction": 0.9526473860246236
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.10772343702441747,
+        "rmse_to_donor": 0.12828771466481276,
+        "donor_recipient_gap_rmse": 0.2339752098882599,
+        "gap_floor": 0.0001125611702419312,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.4556721879113904,
+        "signed_projection_rms": 0.10661599580681018,
+        "delta_cosine_with_donor_direction": 0.9897195889010089
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.006727378622812891,
+        "rmse_to_donor": 0.14562945838954594,
+        "donor_recipient_gap_rmse": 0.15231273499651932,
+        "gap_floor": 4.6952262735942195e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.04389139311774808,
+        "signed_projection_rms": 0.006685218128571615,
+        "delta_cosine_with_donor_direction": 0.9937329981549863
+      }
+    },
+    {
+      "step": 21,
+      "timestep": 299,
+      "sigma": 0.299699991941452,
+      "readout": {
+        "rmse_to_recipient": 0.0025234307654071206,
+        "rmse_to_donor": 0.026806898262765416,
+        "donor_recipient_gap_rmse": 0.026196209230977742,
+        "gap_floor": 1.9368043240783748e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.018944291615214128,
+        "signed_projection_rms": -0.0004962686268848066,
+        "delta_cosine_with_donor_direction": -0.19666425316200045
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.004155461350559824,
+        "rmse_to_donor": 0.057647604394238855,
+        "donor_recipient_gap_rmse": 0.05462518831846019,
+        "gap_floor": 4.8230161616385914e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.05396729545068445,
+        "signed_projection_rms": -0.0029479736770316174,
+        "delta_cosine_with_donor_direction": -0.7094215126400986
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.015043896975589742,
+        "rmse_to_donor": 0.2527308375854408,
+        "donor_recipient_gap_rmse": 0.23879067106998456,
+        "gap_floor": 0.00011269377173522518,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.058097671304753754,
+        "signed_projection_rms": -0.013873181918465533,
+        "delta_cosine_with_donor_direction": -0.9221800668388108
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0016584549551045967,
+        "rmse_to_donor": 0.1587617281830008,
+        "donor_recipient_gap_rmse": 0.1603773566961857,
+        "gap_floor": 4.528243850073403e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.010076644824905008,
+        "signed_projection_rms": 0.001616065661384564,
+        "delta_cosine_with_donor_direction": 0.9744404913805094
+      }
+    },
+    {
+      "step": 22,
+      "timestep": 266,
+      "sigma": 0.266400009393692,
+      "readout": {
+        "rmse_to_recipient": 0.0021959127559260205,
+        "rmse_to_donor": 0.027506021648519296,
+        "donor_recipient_gap_rmse": 0.027401658535819006,
+        "gap_floor": 1.9494634694131582e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.0006048495080890559,
+        "signed_projection_rms": -1.6573879686214408e-05,
+        "delta_cosine_with_donor_direction": -0.007547603902517143
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0028373052617520185,
+        "rmse_to_donor": 0.05505508918800765,
+        "donor_recipient_gap_rmse": 0.05436036018350329,
+        "gap_floor": 4.819894167706081e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.011499604677835501,
+        "signed_projection_rms": -0.0006251226522550372,
+        "delta_cosine_with_donor_direction": -0.22032266343771126
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.007060407300372387,
+        "rmse_to_donor": 0.23863645042002257,
+        "donor_recipient_gap_rmse": 0.23553211889232809,
+        "gap_floor": 0.00011253951072051909,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.012817641923133366,
+        "signed_projection_rms": -0.0030189663613587364,
+        "delta_cosine_with_donor_direction": -0.42759096365439253
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.002784817555943954,
+        "rmse_to_donor": 0.16530168040589077,
+        "donor_recipient_gap_rmse": 0.16804454396846036,
+        "gap_floor": 4.3882030720019753e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.01632634727727687,
+        "signed_projection_rms": 0.0027435535828807056,
+        "delta_cosine_with_donor_direction": 0.9851825219303242
+      }
+    },
+    {
+      "step": 23,
+      "timestep": 233,
+      "sigma": 0.23309999704360962,
+      "readout": {
+        "rmse_to_recipient": 0.0024729797931493437,
+        "rmse_to_donor": 0.029574372194491407,
+        "donor_recipient_gap_rmse": 0.02920680780940181,
+        "gap_floor": 1.9686923510052625e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.009079458407582801,
+        "signed_projection_rms": -0.0002651819967237283,
+        "delta_cosine_with_donor_direction": -0.10723176851599689
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.0036771781123537193,
+        "rmse_to_donor": 0.057916171963479826,
+        "donor_recipient_gap_rmse": 0.055554787080571294,
+        "gap_floor": 4.816237119282507e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.04121830919219224,
+        "signed_projection_rms": -0.002289874390993395,
+        "delta_cosine_with_donor_direction": -0.6227259928749203
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.012238728378412386,
+        "rmse_to_donor": 0.25017051047748634,
+        "donor_recipient_gap_rmse": 0.239041081052846,
+        "gap_floor": 0.00011220931406911068,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.04633181877845223,
+        "signed_projection_rms": -0.011075208047945772,
+        "delta_cosine_with_donor_direction": -0.9049312727195646
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0024409927031571804,
+        "rmse_to_donor": 0.1737158377845155,
+        "donor_recipient_gap_rmse": 0.1760921243791609,
+        "gap_floor": 4.2785363446262e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.01349959103582307,
+        "signed_projection_rms": 0.0023771716637479615,
+        "delta_cosine_with_donor_direction": 0.9738544734989694
+      }
+    },
+    {
+      "step": 24,
+      "timestep": 199,
+      "sigma": 0.19979999959468842,
+      "readout": {
+        "rmse_to_recipient": 0.0026163922144486085,
+        "rmse_to_donor": 0.03164285928269761,
+        "donor_recipient_gap_rmse": 0.03140277982098407,
+        "gap_floor": 1.9942328918434905e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.00420351088159352,
+        "signed_projection_rms": -0.00013200192668979196,
+        "delta_cosine_with_donor_direction": -0.05045188789388395
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.003631484900356454,
+        "rmse_to_donor": 0.05807512048056961,
+        "donor_recipient_gap_rmse": 0.05642089469029166,
+        "gap_floor": 4.818151494248993e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.027677821404539123,
+        "signed_projection_rms": -0.0015616074467222022,
+        "delta_cosine_with_donor_direction": -0.43001898385118453
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.010291861873324983,
+        "rmse_to_donor": 0.24831380023771102,
+        "donor_recipient_gap_rmse": 0.24055479230960325,
+        "gap_floor": 0.00011214985797743834,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.03185959040477552,
+        "signed_projection_rms": -0.007663977152889804,
+        "delta_cosine_with_donor_direction": -0.7446638176085245
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.002328823846888493,
+        "rmse_to_donor": 0.18182495748507418,
+        "donor_recipient_gap_rmse": 0.18406724086685228,
+        "gap_floor": 4.197924022992773e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.012187708903489212,
+        "signed_projection_rms": 0.0022433579503536296,
+        "delta_cosine_with_donor_direction": 0.963300832457099
+      }
+    },
+    {
+      "step": 25,
+      "timestep": 166,
+      "sigma": 0.1665000021457672,
+      "readout": {
+        "rmse_to_recipient": 0.003002065199776923,
+        "rmse_to_donor": 0.034363671214547094,
+        "donor_recipient_gap_rmse": 0.03422685609379733,
+        "gap_floor": 2.0277571094260216e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.0001586994866533916,
+        "signed_projection_rms": -5.431784491845143e-06,
+        "delta_cosine_with_donor_direction": -0.0018093492747088798
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.004083567685021162,
+        "rmse_to_donor": 0.0596499525709033,
+        "donor_recipient_gap_rmse": 0.05790303013211253,
+        "gap_floor": 4.8213785874305736e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.02813806649290945,
+        "signed_projection_rms": -0.0016292793119983217,
+        "delta_cosine_with_donor_direction": -0.39898427984300167
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.012166273101990603,
+        "rmse_to_donor": 0.2510328835748781,
+        "donor_recipient_gap_rmse": 0.24172725065391928,
+        "gap_floor": 0.0001118795709568596,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.037970819823726826,
+        "signed_projection_rms": -0.009178581881064822,
+        "delta_cosine_with_donor_direction": -0.7544283943094335
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0019328062446616675,
+        "rmse_to_donor": 0.1902209666825485,
+        "donor_recipient_gap_rmse": 0.19208608650374698,
+        "gap_floor": 4.149812479812387e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.009713295757826718,
+        "signed_projection_rms": 0.0018657889691743815,
+        "delta_cosine_with_donor_direction": 0.9653264388645344
+      }
+    },
+    {
+      "step": 26,
+      "timestep": 133,
+      "sigma": 0.133200004696846,
+      "readout": {
+        "rmse_to_recipient": 0.00321840609573553,
+        "rmse_to_donor": 0.038250424288483534,
+        "donor_recipient_gap_rmse": 0.038027631105953995,
+        "gap_floor": 2.071277547527672e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.002294478107605913,
+        "signed_projection_rms": -8.725356705672506e-05,
+        "delta_cosine_with_donor_direction": -0.027110800955894993
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.004527019377051496,
+        "rmse_to_donor": 0.06278923512808841,
+        "donor_recipient_gap_rmse": 0.06092785869901231,
+        "gap_floor": 4.825881523804151e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.02825682260791516,
+        "signed_projection_rms": -0.0017216276951381114,
+        "delta_cosine_with_donor_direction": -0.38030049172429853
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.012788868021199995,
+        "rmse_to_donor": 0.2582649561863185,
+        "donor_recipient_gap_rmse": 0.24905481327835938,
+        "gap_floor": 0.00011211316443451025,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.03634576822429869,
+        "signed_projection_rms": -0.009052088518561239,
+        "delta_cosine_with_donor_direction": -0.7078099878390854
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0017174227642456044,
+        "rmse_to_donor": 0.19892486716295008,
+        "donor_recipient_gap_rmse": 0.20049293372300905,
+        "gap_floor": 4.138538086628248e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.007827160216099912,
+        "signed_projection_rms": 0.0015692903144458928,
+        "delta_cosine_with_donor_direction": 0.913747242156313
+      }
+    },
+    {
+      "step": 27,
+      "timestep": 99,
+      "sigma": 0.09989999979734421,
+      "readout": {
+        "rmse_to_recipient": 0.003735994383230016,
+        "rmse_to_donor": 0.042884828085267994,
+        "donor_recipient_gap_rmse": 0.04289572921587215,
+        "gap_floor": 2.121311721091885e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.004046849545217525,
+        "signed_projection_rms": 0.0001735925622690263,
+        "delta_cosine_with_donor_direction": 0.04646488845064697
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.005482731768700736,
+        "rmse_to_donor": 0.06344157233038995,
+        "donor_recipient_gap_rmse": 0.062074392289399365,
+        "gap_floor": 4.816108277508065e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.018366742637237816,
+        "signed_projection_rms": -0.001140104387542338,
+        "delta_cosine_with_donor_direction": -0.207944585954551
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.014555914397989174,
+        "rmse_to_donor": 0.2489847514701577,
+        "donor_recipient_gap_rmse": 0.24212478779432445,
+        "gap_floor": 0.00011153336044900305,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.026926657359861012,
+        "signed_projection_rms": -0.006519611199266832,
+        "delta_cosine_with_donor_direction": -0.44790117755621617
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0016310869607375857,
+        "rmse_to_donor": 0.20686294378672632,
+        "donor_recipient_gap_rmse": 0.20824943046788175,
+        "gap_floor": 4.161090859519869e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.006666327154880551,
+        "signed_projection_rms": 0.0013882588333164491,
+        "delta_cosine_with_donor_direction": 0.8511249655804198
+      }
+    },
+    {
+      "step": 28,
+      "timestep": 66,
+      "sigma": 0.066600002348423,
+      "readout": {
+        "rmse_to_recipient": 0.004919211053063983,
+        "rmse_to_donor": 0.050279879080559184,
+        "donor_recipient_gap_rmse": 0.05031591933467083,
+        "gap_floor": 2.1622917024506424e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0054951665518720785,
+        "signed_projection_rms": 0.00027649435695457675,
+        "delta_cosine_with_donor_direction": 0.05620705311725939
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.00790349766961039,
+        "rmse_to_donor": 0.07156491303165212,
+        "donor_recipient_gap_rmse": 0.06980054392740141,
+        "gap_floor": 4.796263902169695e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.019186280852211173,
+        "signed_projection_rms": -0.0013392128394282266,
+        "delta_cosine_with_donor_direction": -0.16944559173815057
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.025392287762311942,
+        "rmse_to_donor": 0.2689148499184808,
+        "donor_recipient_gap_rmse": 0.25692441030513186,
+        "gap_floor": 0.0001111532647392947,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.04287428065514674,
+        "signed_projection_rms": -0.011015449274580298,
+        "delta_cosine_with_donor_direction": -0.4338108238884164
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.001690392182094035,
+        "rmse_to_donor": 0.21606315696057155,
+        "donor_recipient_gap_rmse": 0.21685201870043894,
+        "gap_floor": 4.228299056601053e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0036615536797239786,
+        "signed_projection_rms": 0.0007940153070281652,
+        "delta_cosine_with_donor_direction": 0.46972253861500346
+      }
+    },
+    {
+      "step": 29,
+      "timestep": 33,
+      "sigma": 0.0333000011742115,
+      "readout": {
+        "rmse_to_recipient": 0.007343259700169541,
+        "rmse_to_donor": 0.05838141516777148,
+        "donor_recipient_gap_rmse": 0.05839813757733589,
+        "gap_floor": 2.127369681112143e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.008192182894303558,
+        "signed_projection_rms": 0.00047840822372023693,
+        "delta_cosine_with_donor_direction": 0.06514929925591376
+      },
+      "action_velocity_all64": {
+        "rmse_to_recipient": 0.013022392148394981,
+        "rmse_to_donor": 0.08430705079212279,
+        "donor_recipient_gap_rmse": 0.08374706157587215,
+        "gap_floor": 4.736823844308695e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.005380583862601494,
+        "signed_projection_rms": 0.0004506080880554313,
+        "delta_cosine_with_donor_direction": 0.034602558648256426
+      },
+      "action_velocity_xyz": {
+        "rmse_to_recipient": 0.036781400975706424,
+        "rmse_to_donor": 0.29694410824754186,
+        "donor_recipient_gap_rmse": 0.291896936366941,
+        "gap_floor": 0.00010754727390549153,
+        "gap_meaningful": true,
+        "signed_projection_fraction": -0.009501396046763996,
+        "signed_projection_rms": -0.002773428397259375,
+        "delta_cosine_with_donor_direction": -0.07540301140489954
+      },
+      "action_state_after_step_xyz": {
+        "rmse_to_recipient": 0.0010410529135974308,
+        "rmse_to_donor": 0.2254281175864819,
+        "donor_recipient_gap_rmse": 0.22592529631065583,
+        "gap_floor": 4.335462329498292e-05,
+        "gap_meaningful": true,
+        "signed_projection_fraction": 0.0022088284898250108,
+        "signed_projection_rms": 0.000499030231063134,
+        "delta_cosine_with_donor_direction": 0.4793514571115317
+      }
+    }
+  ],
+  "final_R_to_P_axis": {
+    "rmse_to_recipient": 0.0010410529135974308,
+    "rmse_to_donor": 0.001205060295852141,
+    "donor_recipient_gap_rmse": 0.0009203981065018424,
+    "gap_floor": 4.1954828272114556e-05,
+    "gap_meaningful": true,
+    "signed_projection_fraction": 0.28257293170295134,
+    "signed_projection_rms": 0.00026007959128807083,
+    "delta_cosine_with_donor_direction": 0.24982360444038115
+  },
+  "axis_note": "Each denoising metric uses that step own paired R/D reference, not a fixed axis across steps. Sigma is fixed across arms at the same step. Final R-to-P axis is separate from final paired R-to-D axis; projections are continuous and may be negative or >1."
+}

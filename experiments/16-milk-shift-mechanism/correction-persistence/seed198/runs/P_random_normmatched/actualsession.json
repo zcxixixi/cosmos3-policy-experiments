@@ -1,0 +1,5427 @@
+{
+  "version": 1,
+  "complete": true,
+  "seed": 198,
+  "arm": {
+    "name": "P_random_normmatched",
+    "pulse": true,
+    "reset_steps": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "gain": null,
+    "mode": "random"
+  },
+  "n_model_forwards": 30,
+  "finished_forwards": 30,
+  "attention_site_calls": 30,
+  "mlp_site_calls": 30,
+  "explicit_processor_recomputations": 0,
+  "intervention_count": 10,
+  "expected_intervention_count": 10,
+  "step21_actual_kwargs_exact": true,
+  "step21_actual_MLP_before_exact": true,
+  "first_model_kwargs": {
+    "input_ids": {
+      "shape": [
+        121
+      ],
+      "dtype": "torch.int64",
+      "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+    },
+    "text_indexes": {
+      "shape": [
+        121
+      ],
+      "dtype": "torch.int64",
+      "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+    },
+    "position_ids": {
+      "shape": [
+        3,
+        387
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+    },
+    "und_len": 121,
+    "sequence_length": 387,
+    "vision_tokens": [
+      {
+        "shape": [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "cebf9dd708ba7dadf3d7278cded7c522bf790463adcaa3e4a80cd09ab87b7d2c"
+      }
+    ],
+    "vision_token_shapes": [
+      [
+        5,
+        5,
+        10
+      ]
+    ],
+    "vision_sequence_indexes": {
+      "shape": [
+        250
+      ],
+      "dtype": "torch.int64",
+      "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+    },
+    "vision_mse_loss_indexes": {
+      "shape": [
+        200
+      ],
+      "dtype": "torch.int64",
+      "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+    },
+    "vision_timesteps": {
+      "shape": [
+        200
+      ],
+      "dtype": "torch.int64",
+      "sha256": "d1e221d11a4b48c7bd90fab727eae4bb13fb606b2748247983fcd9b37ef4dc95"
+    },
+    "vision_noisy_frame_indexes": [
+      {
+        "shape": [
+          4
+        ],
+        "dtype": "torch.int64",
+        "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+      }
+    ],
+    "sound_tokens": null,
+    "sound_token_shapes": null,
+    "sound_sequence_indexes": null,
+    "sound_mse_loss_indexes": null,
+    "sound_timesteps": null,
+    "sound_noisy_frame_indexes": null,
+    "action_tokens": [
+      {
+        "shape": [
+          16,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a20e73abcffa63fd7b68435bf522fb17800ea9aefa25cb576d3e737682430ee5"
+      }
+    ],
+    "action_token_shapes": [
+      [
+        16,
+        1,
+        1
+      ]
+    ],
+    "action_sequence_indexes": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.int64",
+      "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+    },
+    "action_mse_loss_indexes": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.int64",
+      "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+    },
+    "action_timesteps": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.int64",
+      "sha256": "69f2fb826f33886be887a0db65de85a1f19600b12bd63b9d3a4e8e30c7be7abc"
+    },
+    "action_noisy_frame_indexes": [
+      {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+      }
+    ],
+    "action_domain_ids": [
+      {
+        "shape": [
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+      }
+    ],
+    "return_dict": false
+  },
+  "actual_step21_kwargs": {
+    "input_ids": {
+      "shape": [
+        121
+      ],
+      "dtype": "torch.int64",
+      "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+    },
+    "text_indexes": {
+      "shape": [
+        121
+      ],
+      "dtype": "torch.int64",
+      "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+    },
+    "position_ids": {
+      "shape": [
+        3,
+        387
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+    },
+    "und_len": 121,
+    "sequence_length": 387,
+    "vision_tokens": [
+      {
+        "shape": [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "62a626394bc61e709c962ee8bfe3ee9d090c81631d7d73105807894a8b74bea2"
+      }
+    ],
+    "vision_token_shapes": [
+      [
+        5,
+        5,
+        10
+      ]
+    ],
+    "vision_sequence_indexes": {
+      "shape": [
+        250
+      ],
+      "dtype": "torch.int64",
+      "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+    },
+    "vision_mse_loss_indexes": {
+      "shape": [
+        200
+      ],
+      "dtype": "torch.int64",
+      "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+    },
+    "vision_timesteps": {
+      "shape": [
+        200
+      ],
+      "dtype": "torch.int64",
+      "sha256": "bee7b190130bd08b9dad0ce09c0166f3661a18dfe4051dd7f02c3f8b579b08a1"
+    },
+    "vision_noisy_frame_indexes": [
+      {
+        "shape": [
+          4
+        ],
+        "dtype": "torch.int64",
+        "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+      }
+    ],
+    "sound_tokens": null,
+    "sound_token_shapes": null,
+    "sound_sequence_indexes": null,
+    "sound_mse_loss_indexes": null,
+    "sound_timesteps": null,
+    "sound_noisy_frame_indexes": null,
+    "action_tokens": [
+      {
+        "shape": [
+          16,
+          64
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "b74d1064e386761c93140030568c3aaba7771d323533db5188af587073890257"
+      }
+    ],
+    "action_token_shapes": [
+      [
+        16,
+        1,
+        1
+      ]
+    ],
+    "action_sequence_indexes": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.int64",
+      "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+    },
+    "action_mse_loss_indexes": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.int64",
+      "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+    },
+    "action_timesteps": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.int64",
+      "sha256": "f2caa0ed79e00201205fec1d79eb4da56b6ebff36c4ada6f54f0631c66b1e63e"
+    },
+    "action_noisy_frame_indexes": [
+      {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+      }
+    ],
+    "action_domain_ids": [
+      {
+        "shape": [
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+      }
+    ],
+    "return_dict": false
+  },
+  "steps": [
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d1e221d11a4b48c7bd90fab727eae4bb13fb606b2748247983fcd9b37ef4dc95"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "69f2fb826f33886be887a0db65de85a1f19600b12bd63b9d3a4e8e30c7be7abc"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "0fb10cbde3d26413dd3976fb27ff6d8685f021ee758eafeafb50b657f5ba4e5e"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "621eedec63efc4eefc4a3ea0971d03371e79b0515f3826c58e674fdec1032dac"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2288f9a0d18094efa9fabcabe456f0d78a24f3688ba0818468a10b346a970af1"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "bca5b51042a19fa04272b8b216eadea9b91cc416fc10480891262a22872c6b48"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "947c1d72a4869ee40e56cab32a903d6c4a9884d8de2b727b66dbcfffe872b2da"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "29c5ed7ce60a9d7c8d424dadd24ebab0e16f2e15c03011773981cfdb8dc44d99"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "bf79f681450328e1357dc63a97c8cc2f3dbd9871fd4ab85c0983679cbe8d3a2c"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "673fc7e620211e6c7e9f134008fdec4318cdb4e044faa311b150001f4121a8a1"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "1b3f754460984887f57be5cc9a96ff330a4b7cc774ae50897e5a0530bdd2e1c8"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "e3348559d0d0e9bc383929715aa1f09f5a930c8311d558c1fe5169e937ece4ab"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "eb9387565e7e7b93eecae0e631eb95c1d18e5b50b4e93e22b9dbec82af3adc68"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "cf2fbddfd10627c6429d16f53ab71b4dc200b0de463aaa51ae1268bc2e119a63"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "ca176c68cd4a3fb5d019a325b31f0ed4910cf1a8d8fe5ed69fd80c0c739229d7"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "35230f92dc520953ddf14222a6ea7e2d365c4d4fa64a75fd5a5a31a07f94891f"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d7108c4b8ab528dfedaeb6bec5489d524e63f186ff0f214c38a25f57bd68790a"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "62fdde5e7bea090e0dde6c5300783a568a15bdc975dbe829862dbfe628e73564"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "5a5f7c57e1a5764c6d5c59ff22c95d123d85b117da0cf4d63ed33e1363095d0f"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "1949251c2afbee5881c6f82d15591f2c65171b372f9d18168871d3946d17743f"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "81a7c25f7ca3525d5674f8ded6e3e00991c4d6fe77cbb11aaf3e43444c9f6d27"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "bed3789ea6d904b1b501a8f88579d7e2249ae847b763b04682a2ede001460c68"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "e5ccb6a501dea03cb4227220d4d9d3dfdd97a13dc795fe3cac6b9299afca086b"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "a3289b37264f10dc007a01e3244392fffa381b04ba00a8f5365054be466a99f3"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "e6326213e99b7066601cfb38f25448a3cb1721f4e5be9605a6906190749feada"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "ba44ca200b8fc7e6f3e0bc252d54858d5b3e54dfd691c57feef6cbee310753c1"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4e56591ae9a206c805f2a6def1bc6e856ac3913fc1c665e2259c8557ea4bd599"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c005388d722a474bf854a63d121a6421d60318aa0742b800005014aa2b46e639"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c24619c6b8c5a5c5b6103be55fc328ee69c59a2a82067cb11a377b1da1ea2cd0"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "a33894ae6c060a620b11353bf1c25e65634e41a0d908d2d52116de90957cf3aa"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "605935e0781feee98a60ab89ba8efd2f2f76f237924015b5d45a88c8a9c405af"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "5cdc8f838ff5fae5e90fa2f3672cf54c6539cda8dc57b8fb0292c86f3ea9a3e0"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "af28197329140620e6be1dcd8df04789fd9d1278da3da8d74758333b93b8b111"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "b3e3db2144fb5436af4c788a6ff7e4f33b78deee52e0cecc86c716f30133b947"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "411b7837c521557211897e9abf9939f9ed50e575b0e21816948e1c997fce02bc"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "b4852bf909ff1f24c3ce861bd3af8dffcd4ae4b829f8fda2a58b8ecbb24e6116"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "764e6493842ae5e54d4382cede7c4b62f59036ebccf50baf301655384504fc9d"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "beb5240cd588de78b09e696f3536110cb3915773fa0d28a51601bec8b0304943"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "696f9178aa00beca393ada8e7db553a11212886fe5a10f961a11ec224080f100"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "3aabe8540df8544354a022731c94ea8cd61c907f4a21772a57a5fc080b4d375c"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "48c9c46302c11ac6d1ab519e093a6f4347ef2289efef65f9fc354a643fd52a32"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "5c0adff6e798c1531ab26b77dea3d07f792bbf3c498615aebc1dc4d80887b47b"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "bee7b190130bd08b9dad0ce09c0166f3661a18dfe4051dd7f02c3f8b579b08a1"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f2caa0ed79e00201205fec1d79eb4da56b6ebff36c4ada6f54f0631c66b1e63e"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "472fb675e4cf17d8f748459378e9a5f75cba42c36c5647b110e2656b753f2cf7"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "22c53c5ab023c02f01a74ac3fac9e253b60de2631d9dd325f41c4afb58c3778c"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "8840810732c37ed06fd29a5fe5790ddf584e0565a429d4cb5e006ce9adfaed26"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "add5ce998cd8d1789fe9233ba9a98aa8a8a981166f52c1f8c8172abb64ffb75b"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "868d9e4eaf1b9ad85e67f51027aca0e218b797e16237f3cc3b267f8267d10c68"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "797653d6635e4ef227b71a938a2263064d315b11f3d79b5b59110ab2f15a20e4"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8c12439befa3a1892e5bfd65caf26d5820219b250f260dd142ebda39ca8e9d0"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "efb699fb49528c9eb7ca1e3f79162431b51f49d1da4c75cacc84a1ed4f2c4fbf"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "8afbdbbef73b83c2b555bbc973fe8d1a088a480c07c156b39ac3afa5b5f8c9e0"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "afc25fea7795ffb6bcf970a894effe141ac2d086dab190a2c842699f80e26cc4"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "6612df6320f59f28ca2cd0e064853863c0a5b4b691bc62424f840427576a24c9"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4675e820e33db7dc15003b55c986c4266a146a50559c7d206b498d00f752be41"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c6c5aaf524f782f55864df0348ed0a76443510ea7de2fe591eb95f94fbda82c1"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "75a98951c543ccaf7b56fb6744d4cc4e86cba17064cecf26992dbaaba9a2d0ef"
+        }
+      }
+    },
+    {
+      "layout": {
+        "und_len": 121,
+        "gen_len": 266,
+        "action_rows": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+        },
+        "global_action_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        }
+      },
+      "metadata": {
+        "und_len": 121,
+        "sequence_length": 387,
+        "input_ids": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "17ecfef416f4c7860c48d0a7189af959b3310db87f33644d674f252e917a7941"
+        },
+        "text_indexes": {
+          "shape": [
+            121
+          ],
+          "dtype": "torch.int64",
+          "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+        },
+        "position_ids": {
+          "shape": [
+            3,
+            387
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1a9283c270e992180d29874c305322de8b46b170295764d301ce5a7311689a4a"
+        },
+        "vision_sequence_indexes": {
+          "shape": [
+            250
+          ],
+          "dtype": "torch.int64",
+          "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+        },
+        "vision_mse_loss_indexes": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+        },
+        "vision_token_shapes": [
+          [
+            5,
+            5,
+            10
+          ]
+        ],
+        "vision_noisy_frame_indexes": [
+          {
+            "shape": [
+              4
+            ],
+            "dtype": "torch.int64",
+            "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+          }
+        ],
+        "action_sequence_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_mse_loss_indexes": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+        },
+        "action_token_shapes": [
+          [
+            16,
+            1,
+            1
+          ]
+        ],
+        "action_noisy_frame_indexes": [
+          {
+            "shape": [
+              16
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f23d672bb9b341f9afa8498423b75deb80e726145969391d4b9392464c2298ee"
+          }
+        ],
+        "action_domain_ids": [
+          {
+            "shape": [
+              1
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+          }
+        ],
+        "vision_timesteps": {
+          "shape": [
+            200
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4535815a50c7e10b1b45872bf0bd62d897176033ed739b8b9833a7bf40051ac0"
+        },
+        "action_timesteps": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.int64",
+          "sha256": "09da31b8d4b7d40c3ec19d59e99ab5d62f8ac6e534f2c78c58e64df46c0544b5"
+        }
+      }
+    }
+  ],
+  "events": {
+    "(20, 17, 'attention')": {
+      "step": 20,
+      "layer": 17,
+      "component": "attention",
+      "mode": "natural_D_pulse",
+      "gain": 1.0,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "347de2b91d677f0f5d6221455c86586142e03a2e7f212978f6799801740d03bf"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "2362b9f165ad160626b1c58a2773b3d02ff4cda3979e72843d9d3d20d1278f91"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "db4c1d62bc1c084d277630da4a0881d94419dc3043448dfa8e4d7c05da906199"
+      },
+      "actual_delta_l2": 6.151403858430055,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "347de2b91d677f0f5d6221455c86586142e03a2e7f212978f6799801740d03bf"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "2362b9f165ad160626b1c58a2773b3d02ff4cda3979e72843d9d3d20d1278f91"
+      },
+      "source_cache_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "2362b9f165ad160626b1c58a2773b3d02ff4cda3979e72843d9d3d20d1278f91"
+      },
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8e9b099ecb0101c40087e506b2d9881fef7b03c244dab919fe979d79d8496890"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8e9b099ecb0101c40087e506b2d9881fef7b03c244dab919fe979d79d8496890"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "65dacc135bb6915df3d9c00883846f48cefff935232ca69a0b1015af471e0573"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d6934b4b6934b1414b0e774598ff75e11b716f5853a9b785a4c19095a6c41c17"
+      },
+      "random_calibration": null
+    },
+    "(21, 3, 'mlp')": {
+      "step": 21,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "9c2abb00a48ed2f14154a65efc74a7cf06383581699601d89e06fa7457c00b57"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "5f6409213d23165ea9fd8d1e5c2f6e295b65566712dbc7edb7a93c9010f4357d"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "42c06440c1f746acf537298adf18f4057f9e720062d21464f0647dfa72d76dde"
+      },
+      "actual_delta_l2": 0.459027316080408,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "9c2abb00a48ed2f14154a65efc74a7cf06383581699601d89e06fa7457c00b57"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "5f6409213d23165ea9fd8d1e5c2f6e295b65566712dbc7edb7a93c9010f4357d"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "84a8c0210f919c39ce91d3703e0a3cf2029b9c3561a521067c9b849d6d885b70"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "84a8c0210f919c39ce91d3703e0a3cf2029b9c3561a521067c9b849d6d885b70"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d869afabd8e4b1bba2f4ec663bfd895be62ce3da61d73b66231dd992fcce04d7"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "20ca1b8ca6da3f235e43c85c61bf42af0398781361b2972069643e889e93aade"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019821,
+        "target_actual_delta_l2": 0.45891675354168315,
+        "actual_quantized_delta_l2": 0.459027316080408,
+        "relative_norm_error": 0.0002409206852257158,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 8,
+        "scale_before_quantization": 0.45533146640463873,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "eee8f515356b6dc8d15ad3a8a23e3029e855afa73bc8e9d71d631144e7c1a4a5"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "3bf78a59a27d64b08cb0881b1d263e55e56299542467e54ac83f57f1a5284ccb"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "42c06440c1f746acf537298adf18f4057f9e720062d21464f0647dfa72d76dde"
+        },
+        "actual_hook_delta_l2": 0.459027316080408,
+        "actual_hook_relative_error": 0.0002409206852257158
+      }
+    },
+    "(22, 3, 'mlp')": {
+      "step": 22,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "fdb72e335350554d8c4326137a172bde6efd6444e968c9b3068e4ad03d5b831a"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "cdf6fb3c796a26a663037240bce328b8ac0cccb6e54e78c5c047fd18971ca476"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "812fbc4af0c64dc6cdbf3c38961ad4975de01257053a7db946718a34d0a5949c"
+      },
+      "actual_delta_l2": 0.2701129373214925,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "fdb72e335350554d8c4326137a172bde6efd6444e968c9b3068e4ad03d5b831a"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "cdf6fb3c796a26a663037240bce328b8ac0cccb6e54e78c5c047fd18971ca476"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "b1900ca75bdf35ea6b9b3c3beead044802b686ca4a1289376d0ab0546d27d2d3"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "b1900ca75bdf35ea6b9b3c3beead044802b686ca4a1289376d0ab0546d27d2d3"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d49e589bb342d272f5024dab5dd353cd70194a8a33728d66eb7f5590bde118aa"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "94513e2ee14676f48768448953e364c3dbb0ccd3a570b6a83a26dbcbbd073861"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019822,
+        "target_actual_delta_l2": 0.2701439862691141,
+        "actual_quantized_delta_l2": 0.2701129373214925,
+        "relative_norm_error": 0.00011493480958223226,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.2675058614032048,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "8644b43d3591fa889845305df2a62487995a793b14b4fd5eb072f430d9a90dfa"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "b55567b9714df10e237cc703608ee0bd9413618b55acd89dd11dd3ba53aaeb17"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "812fbc4af0c64dc6cdbf3c38961ad4975de01257053a7db946718a34d0a5949c"
+        },
+        "actual_hook_delta_l2": 0.2701129373214925,
+        "actual_hook_relative_error": 0.00011493480958223226
+      }
+    },
+    "(23, 3, 'mlp')": {
+      "step": 23,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "86b4884115ab466ad3aa3a8019c61c6fae5c31b5bd28bfde140b085a2618d5c2"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "1d7846cb4233014e643c4a968a1805d8564ec3d808d3e2dd60a26afdc0d7b6f6"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "42e9a9dd275fa277dfc859f790c65c1ad8984cd2aa06c4ec9390fe9cec19a6b6"
+      },
+      "actual_delta_l2": 0.3127206082564097,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "86b4884115ab466ad3aa3a8019c61c6fae5c31b5bd28bfde140b085a2618d5c2"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "1d7846cb4233014e643c4a968a1805d8564ec3d808d3e2dd60a26afdc0d7b6f6"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "42082bb042158da6d55c7ee1e232fa32b6821d9de0d03394d827850ff198836d"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "42082bb042158da6d55c7ee1e232fa32b6821d9de0d03394d827850ff198836d"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "95fd87787c09a4e0c63e62ab112fd2a6b2c40bf54396cf62d558dd883c1b6f7b"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "db45acb4ce3520e4ef815c70e2c7896f678b036ddc5b8cc3283f5a3ec9351e5e"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019823,
+        "target_actual_delta_l2": 0.31280434401667645,
+        "actual_quantized_delta_l2": 0.3127206082564097,
+        "relative_norm_error": 0.0002676937257057513,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.30974961409463864,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "8d0c7c2e26fd97a2d7b8c71de58744b7d60c3685e604d2b5913bd71866e0c749"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "6fc68fc9614f8221b06fb27ee1cc61423e452163438ec18a0ea9a9835a65baa6"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "42e9a9dd275fa277dfc859f790c65c1ad8984cd2aa06c4ec9390fe9cec19a6b6"
+        },
+        "actual_hook_delta_l2": 0.3127206082564097,
+        "actual_hook_relative_error": 0.0002676937257057513
+      }
+    },
+    "(24, 3, 'mlp')": {
+      "step": 24,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "f559f2e645cb169cc83f26d37f093ea1604dad0301a748b0222c27a14ad6f3fb"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "6eba569d6325e32ba36727e1133cc973e78fac1cb924fc23327c96c21dc9b31c"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "71860313205517682dae26a8a046335a1a080091549028a66059f02660a39e44"
+      },
+      "actual_delta_l2": 0.3179600418188091,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "f559f2e645cb169cc83f26d37f093ea1604dad0301a748b0222c27a14ad6f3fb"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "6eba569d6325e32ba36727e1133cc973e78fac1cb924fc23327c96c21dc9b31c"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a96d61f32a8f79c0f5c01543aa321567d60a94c775990eda8139f50959d8b86c"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a96d61f32a8f79c0f5c01543aa321567d60a94c775990eda8139f50959d8b86c"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "040e4baaecff536522b94f90f94d2f55f9718501d6bdca3b2190d38091b36d7e"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "579f2eec55300440e34181cf52796a116d39c7913331c92ab63dd25da58a4d76"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019824,
+        "target_actual_delta_l2": 0.3180153882224698,
+        "actual_quantized_delta_l2": 0.3179600418188091,
+        "relative_norm_error": 0.00017403687277533304,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.31490976919685976,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "f93407203c3b3587e4621b33113a4e496e69dcd54eba3d7da15d577b412c4162"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "c9285db492de0aaf545cb46d939f9eed75679d9602c391bcd3a06fe14929e7f1"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "71860313205517682dae26a8a046335a1a080091549028a66059f02660a39e44"
+        },
+        "actual_hook_delta_l2": 0.3179600418188091,
+        "actual_hook_relative_error": 0.00017403687277533304
+      }
+    },
+    "(25, 3, 'mlp')": {
+      "step": 25,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "200cf011fc087c0422022415c77765adae135d2caf1119ded2ab1ef4bb430606"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8e4f5eb32259f9a7d511012bc24ecf7492d8dc4d0796fdf68e0c3516c591caeb"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "85c3fa9269e47f35ec3124a89eb3008fc6ba641bec2c2250acbe54114efed17c"
+      },
+      "actual_delta_l2": 0.3308422524783203,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "200cf011fc087c0422022415c77765adae135d2caf1119ded2ab1ef4bb430606"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8e4f5eb32259f9a7d511012bc24ecf7492d8dc4d0796fdf68e0c3516c591caeb"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "0891566a8852727178845d9b41cf03c876923eb72d20625701387a406e6f4ea9"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "0891566a8852727178845d9b41cf03c876923eb72d20625701387a406e6f4ea9"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "5fe18a22df4e2c5b7f49c3b923ca433e944bae5d3c0e039ab9753ac258474ada"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "e80184a27316258f9bd16e98aa573cedcc8dafad1885ddd0f044fb4e4ee76d0a"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019825,
+        "target_actual_delta_l2": 0.33107260134099725,
+        "actual_quantized_delta_l2": 0.3308422524783203,
+        "relative_norm_error": 0.0006957654053641323,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.3278394704685266,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "001a5d9fda5cfea1487e10e7a6452255c95f17aaea0a355991abc0df6bb4c77b"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "b33ad3367da26d5bcc84fe46614acea9f670cc83ae3de18a94edaf0587d17262"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "85c3fa9269e47f35ec3124a89eb3008fc6ba641bec2c2250acbe54114efed17c"
+        },
+        "actual_hook_delta_l2": 0.3308422524783203,
+        "actual_hook_relative_error": 0.0006957654053641323
+      }
+    },
+    "(26, 3, 'mlp')": {
+      "step": 26,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "409a24592ea9954fccc2e5c034c9df2fe3af75e5f91a0aff86be97397050f52d"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "ebbe6a4f249bd552a3852f359c6d6a4ded09221837199c5a4ca5724b28f733dc"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "5a336e8a6b27d4a7e8d825309ab24b9049b794972238012005935a55e3896913"
+      },
+      "actual_delta_l2": 0.33568814404288755,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "409a24592ea9954fccc2e5c034c9df2fe3af75e5f91a0aff86be97397050f52d"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "ebbe6a4f249bd552a3852f359c6d6a4ded09221837199c5a4ca5724b28f733dc"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "81d7f658470ee909d084522b966a2340c987385d69b647705de3c0e25256bf5a"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "81d7f658470ee909d084522b966a2340c987385d69b647705de3c0e25256bf5a"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "ac031c8b47e409895b142e4939380d3877a748db53128040c613d2416f8f40a0"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "205f55d2a00791248972bbe48ebb9998b236eb7131d995f08a0ad73e74355096"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019826,
+        "target_actual_delta_l2": 0.33588030500096705,
+        "actual_quantized_delta_l2": 0.33568814404288755,
+        "relative_norm_error": 0.0005721114195098404,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.33260022389744204,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "28e819640370d1eb0947a9ddadc825ecfbd284bc3ab27d0a0f1ac8f786fa88e9"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "ef4ff1cd553f854eb844d8ff48e660a5e46401ef5dd11db893950fbb5f24c09a"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "5a336e8a6b27d4a7e8d825309ab24b9049b794972238012005935a55e3896913"
+        },
+        "actual_hook_delta_l2": 0.33568814404288755,
+        "actual_hook_relative_error": 0.0005721114195098404
+      }
+    },
+    "(27, 3, 'mlp')": {
+      "step": 27,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "641154facbcc274addb3ca04b163436aa63704f110d7686a0f1fec733bb27c9d"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "210ad7cdf7219dcacdad505d519c6f1be9f430150ae9ddf26c6e424e392db658"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "1c674b7ef5ed940f88c3512c608a71a52d9ee180178e55a3b8daeaf3ef9671a0"
+      },
+      "actual_delta_l2": 0.3567417369664336,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "641154facbcc274addb3ca04b163436aa63704f110d7686a0f1fec733bb27c9d"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "210ad7cdf7219dcacdad505d519c6f1be9f430150ae9ddf26c6e424e392db658"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "3aba7790b58553c558dd8a3813f5c2eb54f186e333e716d96f93531effc0a284"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "3aba7790b58553c558dd8a3813f5c2eb54f186e333e716d96f93531effc0a284"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d900b43373748b45a153dc77ea6711ccc56ead0d71dc401234cbeb6f5adb2755"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d36aad19c60d2c43264b2c46fa1873b02a5669fcee8aca2c17e5802f7b5f544a"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019827,
+        "target_actual_delta_l2": 0.35696663482853225,
+        "actual_quantized_delta_l2": 0.3567417369664336,
+        "relative_norm_error": 0.0006300248823162447,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 9,
+        "scale_before_quantization": 0.3527834320766354,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "7117555f294c5565073bf8b201a21cc30edcf0634d0b96986861eee62848fab8"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "039e88a05d7ecee9977686e6c4d6e1ee85ad62a727e48ad3963f87f1c6cb4194"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "1c674b7ef5ed940f88c3512c608a71a52d9ee180178e55a3b8daeaf3ef9671a0"
+        },
+        "actual_hook_delta_l2": 0.3567417369664336,
+        "actual_hook_relative_error": 0.0006300248823162447
+      }
+    },
+    "(28, 3, 'mlp')": {
+      "step": 28,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "87b3c3130bfc2aac608249dbd19b57792b26d39c2606dd82ade68614593bba30"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d07bddd8f4a19a2a2a270a8dcb9e515976487cea1f42fc3a45b8a5fe78bd891a"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "6dd22916ea55419ce6050f9313bf761a614b40cf8c1dfe12d91d7dfbaa8c0504"
+      },
+      "actual_delta_l2": 0.33863077597953717,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "87b3c3130bfc2aac608249dbd19b57792b26d39c2606dd82ade68614593bba30"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "d07bddd8f4a19a2a2a270a8dcb9e515976487cea1f42fc3a45b8a5fe78bd891a"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "2fdcfce30f9fb19d83b69055d66a581112d2a60a3c9140d2c7106391b907bbaa"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "2fdcfce30f9fb19d83b69055d66a581112d2a60a3c9140d2c7106391b907bbaa"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "f035e78103ff00d6915c01bde8c07dd4f15225d0a738620e08198dd52c448998"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "c557bb81e43a01d4d107a245d4fd5b6154caa863f5d04989e83acada4b6fac85"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019828,
+        "target_actual_delta_l2": 0.3387131547440425,
+        "actual_quantized_delta_l2": 0.33863077597953717,
+        "relative_norm_error": 0.00024321099830797437,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.33540540909224525,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "1e171b7a66fee308c43cd91bb9a65da38a532227939f6609061500229adb834d"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "535c34a7bb7c97a61eda56a112ddf2c6679a57e153d70ae31a0fe68efed44cf4"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "6dd22916ea55419ce6050f9313bf761a614b40cf8c1dfe12d91d7dfbaa8c0504"
+        },
+        "actual_hook_delta_l2": 0.33863077597953717,
+        "actual_hook_relative_error": 0.00024321099830797437
+      }
+    },
+    "(29, 3, 'mlp')": {
+      "step": 29,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "actual_norm_matched_random",
+      "gain": null,
+      "action_rows": {
+        "shape": [
+          16
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+      },
+      "before": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "e4b4990fb7bbf1f6d364343ab2071b0ea2b438c55524a8a67f3d4556077779fb"
+      },
+      "after": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "4362de2c3173be6e55f8205a182ef2ba2e0079b3b68ec8a4d916e85bfd6d5b64"
+      },
+      "actual_delta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.float64",
+        "sha256": "6e3a280df05f6ca06109a66cfd1762565b358d34dfa95eec157bc99cc64e7627"
+      },
+      "actual_delta_l2": 0.38083981500207276,
+      "exact_no_change": false,
+      "before_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "e4b4990fb7bbf1f6d364343ab2071b0ea2b438c55524a8a67f3d4556077779fb"
+      },
+      "after_meta": {
+        "shape": [
+          16,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "4362de2c3173be6e55f8205a182ef2ba2e0079b3b68ec8a4d916e85bfd6d5b64"
+      },
+      "source_cache_meta": null,
+      "nonaction_rows_count": 250,
+      "nonaction_rows_bit_exact": true,
+      "nonaction_before": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "f39c4d521ff836b4ecde29d41e4ba51f346e4ffae01c275e4202d1ca13c21d25"
+      },
+      "nonaction_after": {
+        "shape": [
+          250,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "f39c4d521ff836b4ecde29d41e4ba51f346e4ffae01c275e4202d1ca13c21d25"
+      },
+      "full_GEN_before": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "053eabaf25070b2a5bcbf337a18f70bb77645e307bdcbccebe1a86596c99653b"
+      },
+      "full_GEN_after": {
+        "shape": [
+          266,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "a8b00a157c2af3fd799a6cc217e4ef349d874e97408b12196378108ccd1cba90"
+      },
+      "random_calibration": {
+        "cpu_generator_seed": 730019829,
+        "target_actual_delta_l2": 0.38116973685669586,
+        "actual_quantized_delta_l2": 0.38083981500207276,
+        "relative_norm_error": 0.0008655510202457189,
+        "relative_norm_tolerance": 0.001,
+        "zero_target_noop": false,
+        "calibration_iterations": 10,
+        "scale_before_quantization": 0.3774473761452046,
+        "raw_gaussian": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "6090df9f0e8809427e1693135ee35bf4fe5fc8819718523a6829076ab7354dc4"
+        },
+        "unit_direction": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "7520b12a8361d80fed4799f90094de8fb60c075312aaf5a8e58c18badbdeaf3f"
+        },
+        "actual_quantized_delta": {
+          "shape": [
+            16,
+            4096
+          ],
+          "dtype": "torch.float64",
+          "sha256": "6e3a280df05f6ca06109a66cfd1762565b358d34dfa95eec157bc99cc64e7627"
+        },
+        "actual_hook_delta_l2": 0.38083981500207276,
+        "actual_hook_relative_error": 0.0008655510202457189
+      }
+    }
+  },
+  "nonaction_rows_bit_exact": true,
+  "untouched_increment_rows": "Every non-action GEN row of each selected output; decoder residuals retained"
+}

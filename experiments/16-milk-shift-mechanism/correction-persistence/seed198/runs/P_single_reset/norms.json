@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "step": 20,
+      "layer": 17,
+      "component": "attention",
+      "mode": "natural_D_pulse",
+      "gain": 1.0,
+      "actual_delta_l2": 6.151403858430055,
+      "exact_no_change": false,
+      "nonaction_rows_bit_exact": true,
+      "random_target_actual_delta_l2": null,
+      "random_actual_delta_l2": null,
+      "random_relative_error": null
+    },
+    {
+      "step": 21,
+      "layer": 3,
+      "component": "mlp",
+      "mode": "current_plus_gain_times_R_minus_current_in_native_bf16",
+      "gain": 1.0,
+      "actual_delta_l2": 0.45891675354168315,
+      "exact_no_change": false,
+      "nonaction_rows_bit_exact": true,
+      "random_target_actual_delta_l2": null,
+      "random_actual_delta_l2": null,
+      "random_relative_error": null
+    }
+  ],
+  "norm_relative_tolerance": 0.001
+}
