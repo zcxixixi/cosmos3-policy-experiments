@@ -1,0 +1,361 @@
+{
+  "plan": [
+    {
+      "case": "x15_V195_A195_native",
+      "scene": "x15",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native",
+      "window": null
+    },
+    {
+      "case": "x15_V198_A195_native",
+      "scene": "x15",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native",
+      "window": null
+    },
+    {
+      "case": "x18_V195_A195_native",
+      "scene": "x18",
+      "shift_cm": 18,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native",
+      "window": null
+    },
+    {
+      "case": "x18_V198_A195_native",
+      "scene": "x18",
+      "shift_cm": 18,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native",
+      "window": null
+    },
+    {
+      "case": "x15_V195_A195_all_allowed",
+      "scene": "x15",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed",
+      "window": null
+    },
+    {
+      "case": "x15_V198_A195_all_allowed",
+      "scene": "x15",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed",
+      "window": null
+    },
+    {
+      "case": "x18_V195_A195_all_allowed",
+      "scene": "x18",
+      "shift_cm": 18,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed",
+      "window": null
+    },
+    {
+      "case": "x18_V198_A195_all_allowed",
+      "scene": "x18",
+      "shift_cm": 18,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed",
+      "window": null
+    },
+    {
+      "case": "x15_V195_A195_early_l1_9",
+      "scene": "x15",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_l1_9",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x15_V198_A195_early_l1_9",
+      "scene": "x15",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_l1_9",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x18_V195_A195_early_l1_9",
+      "scene": "x18",
+      "shift_cm": 18,
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_l1_9",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x18_V198_A195_early_l1_9",
+      "scene": "x18",
+      "shift_cm": 18,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_l1_9",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    }
+  ],
+  "trial_order": [
+    "x15_V195_A195_native",
+    "x15_V198_A195_native",
+    "x18_V195_A195_native",
+    "x18_V198_A195_native",
+    "x15_V195_A195_all_allowed",
+    "x15_V198_A195_all_allowed",
+    "x18_V195_A195_all_allowed",
+    "x18_V198_A195_all_allowed",
+    "x15_V195_A195_early_l1_9",
+    "x15_V198_A195_early_l1_9",
+    "x18_V195_A195_early_l1_9",
+    "x18_V198_A195_early_l1_9"
+  ],
+  "case_scene": {
+    "x15_V195_A195_native": "x15",
+    "x15_V198_A195_native": "x15",
+    "x18_V195_A195_native": "x18",
+    "x18_V198_A195_native": "x18",
+    "x15_V195_A195_all_allowed": "x15",
+    "x15_V198_A195_all_allowed": "x15",
+    "x18_V195_A195_all_allowed": "x18",
+    "x18_V198_A195_all_allowed": "x18",
+    "x15_V195_A195_early_l1_9": "x15",
+    "x15_V198_A195_early_l1_9": "x15",
+    "x18_V195_A195_early_l1_9": "x18",
+    "x18_V198_A195_early_l1_9": "x18"
+  },
+  "scenes": {
+    "x15": {
+      "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15/input.png",
+      "shift_cm": 15,
+      "files_sha256": {
+        "state.npy": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+        "arrays.json": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd",
+        "fixtures.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+        "cameras.npz": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb",
+        "observations.npz": "6b424796b24c3d6bb697ef7afecd4cffe218e2694b3b205be432c2aa9ab36b92",
+        "objects.npz": "c0d350a01deca91b9796f29e9eed0196fd1d033c1fa20aa3086fe4246d87caa8",
+        "controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+        "input.png": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+        "agentview.png": "e9a8177e075646bfcc7080843899ff9f8fb7ef047d80fe1a2f11f1ca1660eff9",
+        "robot0_eye_in_hand.png": "e035be8f8a448ba38bd613d3338de1ddd751d1a3f5f1129add5a306853a58402",
+        "restore_checks.json": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3",
+        "center_restore_checks.json": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd",
+        "controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "restored_controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "initial_contact_checks.json": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+      },
+      "physical_scene": {
+        "shift_cm": 15,
+        "milk_joint": "milk_1_joint0",
+        "milk_qpos_address": 9,
+        "changed_state_indexes": [
+          10
+        ],
+        "milk_qpos": [
+          0.0328391838985527,
+          -0.24429550302424152,
+          0.06973547638403721,
+          0.49999991071248306,
+          0.500000089475164,
+          0.49999993103157,
+          0.5000000687807573
+        ],
+        "input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+        "state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+        "arrays_sha256": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd",
+        "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+      },
+      "hash_scope": "New CPU restored real scene and observations; no X12 image/input symlink."
+    },
+    "x18": {
+      "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x18",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x18/input.png",
+      "shift_cm": 18,
+      "files_sha256": {
+        "state.npy": "c9652ea4a52942089d79cacdc2d4f4c2ce98cb74f87523d5332d1cc8711a4319",
+        "arrays.json": "cc8f97772b189e7ba1fa555e37342f3e0ecadae20586bee28745667d80bcf5ca",
+        "fixtures.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+        "cameras.npz": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb",
+        "observations.npz": "bfb27c9eeb09ce99d8e35c12e60614fdeb5a36b7a484a366096dc27ea9be776e",
+        "objects.npz": "83281206c38a7d92f3dceaf29e557e4e2fa62e8d945eebb54144c0a3cd965d4a",
+        "controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+        "input.png": "511b58bf7e6a3a27784d06e43320ceed74f5af749ab44055d169ba0065a0d60a",
+        "agentview.png": "4b67e4fee7135d8e284a245a7eba24d15a5e6b731ebdbb268b28cdddeda9a19b",
+        "robot0_eye_in_hand.png": "952839380ebaaff395057f5e557c506dc89bed28826335ef6cacfa4d66b4dc00",
+        "restore_checks.json": "300414256e7167ccd81e663604e3b97f4c4890c1b83ca46844f7df8d45dc28ba",
+        "center_restore_checks.json": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd",
+        "controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "restored_controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "initial_contact_checks.json": "e5c4bdd33f69a30b7e10347248123dca820e3a0247920cb9e94fea8806550801"
+      },
+      "physical_scene": {
+        "shift_cm": 18,
+        "milk_joint": "milk_1_joint0",
+        "milk_qpos_address": 9,
+        "changed_state_indexes": [
+          10
+        ],
+        "milk_qpos": [
+          0.0628391838985527,
+          -0.24429550302424152,
+          0.06973547638403721,
+          0.49999991071248306,
+          0.500000089475164,
+          0.49999993103157,
+          0.5000000687807573
+        ],
+        "input_png_sha256": "511b58bf7e6a3a27784d06e43320ceed74f5af749ab44055d169ba0065a0d60a",
+        "state_sha256": "c9652ea4a52942089d79cacdc2d4f4c2ce98cb74f87523d5332d1cc8711a4319",
+        "arrays_sha256": "cc8f97772b189e7ba1fa555e37342f3e0ecadae20586bee28745667d80bcf5ca",
+        "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+      },
+      "hash_scope": "New CPU restored real scene and observations; no X12 image/input symlink."
+    }
+  },
+  "prompt": "pick up the milk and place it in the basket",
+  "windows_zero_based_inclusive": {
+    "early_l1_9": {
+      "steps": [
+        0,
+        14
+      ],
+      "layers": [
+        0,
+        8
+      ]
+    }
+  },
+  "primary_window": "early_l1_9",
+  "primary_cases": [
+    "x15_V195_A195_early_l1_9",
+    "x15_V198_A195_early_l1_9",
+    "x18_V195_A195_early_l1_9",
+    "x18_V198_A195_early_l1_9"
+  ],
+  "primary_evaluation": {
+    "status": "not_evaluated_q0_only",
+    "all_four_cut_selected_objects_must_equal": [
+      "milk_1"
+    ],
+    "numerical_shams_must_preserve_own_native_selected_objects": true,
+    "no_other_location_or_window_promoted": true
+  },
+  "new_native_reference_rule": "First four native q0 are included in twelve, with actual new-scene full kwargs/preparation/records. No old X12 current/image/full-record substitute or independent nohook repeat.",
+  "original_randn_rule": "Consume true A195 RNG draw, then return sealed V/A full FP32 source draw; two actual draws per prediction.",
+  "source_scene_full_input_rule": "Same scene AND V fresh native is the initial full-kwargs reference for sham/cut.",
+  "future_current_cut": "Only future200 keys to current50 queries; action-to-current retained.",
+  "masked_sites_per_case": 1080,
+  "cut_sites_per_window_case": 135,
+  "common_masked_union66": true,
+  "actual_model_forwards": 360,
+  "total_official_dispatch_calls": 35100,
+  "original_dispatch_calls": 25920,
+  "all_allowed_dispatch_calls": 8640,
+  "cut_dispatch_calls": 540,
+  "extra_dispatch_calls": 9180,
+  "original_randn_calls_consumed": 24,
+  "no_extra_source_forwards": true,
+  "physics_calls": 0,
+  "later_physics_preregistered": {
+    "trial_order": [
+      "x15_V195_A195_native",
+      "x15_V198_A195_native",
+      "x18_V195_A195_native",
+      "x18_V198_A195_native",
+      "x15_V195_A195_all_allowed",
+      "x15_V198_A195_all_allowed",
+      "x18_V195_A195_all_allowed",
+      "x18_V198_A195_all_allowed",
+      "x15_V195_A195_early_l1_9",
+      "x15_V198_A195_early_l1_9",
+      "x18_V195_A195_early_l1_9",
+      "x18_V198_A195_early_l1_9"
+    ],
+    "cases": 12,
+    "cached_q0": 12,
+    "later_noise_base": 195,
+    "q1_to_q7_seeds": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "requests": 96,
+    "later_predictions": 84,
+    "later_model_forwards": 2520,
+    "total_two_stage_model_forwards": 2880,
+    "steps_per_case": 128,
+    "queries_per_case": 8,
+    "whole_noise_pairs_expected": 77,
+    "all12_execute_without_q0_score_selection": true,
+    "stop_native_interpretation_if_sham_changes_classification": true,
+    "execute_all12_even_if_sham_changes_classification": true
+  },
+  "scope": "Fixed first-nine-layer future-to-current cut transferred without tuning to X+15/18cm, two frozen V realizations with A195. Every native is a fresh new-scene reference; every sham/cut uses that same scene/V reference. Four cut cases and four numerical sham classification controls are preregistered for physics, without q0 selection. Only along-X transfer is tested. Hard masks also reallocate attention. No new physics, training, semantic anatomy or general root-cause claim."
+}

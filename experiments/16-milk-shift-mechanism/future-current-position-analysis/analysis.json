@@ -1,0 +1,536 @@
+{
+  "scope": "Post hoc CPU audit of twelve preregistered X+15/X+18cm trials, two fixed V draws with A195. Four native runs are first observations, not independent repetitions or old X12 whole-record controls. All eight masked runs share the full36x30 union66 all-allowed numerical background; four cuts block future200->current50 only at steps0..14/layers0..8. Only all four cut cases selecting strictly only milk AND all four shams retaining their own native classifications support the primary. Native milk preservation is not rescue. RMS is an array distance, not probability, cm, success rate, functional specialization or a mediation fraction. Net block updates combine attention and MLP residuals and BF16 rounding. Hard masks also redistribute attention. Only current/action boundaries are saved, not future boundaries or full QKV. No new model, solver, environment, physics, training or general root-cause claim.",
+  "case_order": [
+    "x15_V195_A195_native",
+    "x15_V198_A195_native",
+    "x18_V195_A195_native",
+    "x18_V198_A195_native",
+    "x15_V195_A195_all_allowed",
+    "x15_V198_A195_all_allowed",
+    "x18_V195_A195_all_allowed",
+    "x18_V198_A195_all_allowed",
+    "x15_V195_A195_early_l1_9",
+    "x15_V198_A195_early_l1_9",
+    "x18_V195_A195_early_l1_9",
+    "x18_V198_A195_early_l1_9"
+  ],
+  "scenes": {
+    "x15": 15,
+    "x18": 18
+  },
+  "primary_prediction": "rejected",
+  "primary_cases": [
+    {
+      "case": "x15_V195_A195_early_l1_9",
+      "scene": "x15",
+      "vision_noise_source_seed": 195,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x15_V195_A195_native",
+      "same_scene_V_sham": "x15_V195_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "9abc7c40bf3ad0a3be07282491a29b8c14e73dbf4ecd6ab83f0cbe9de71d0c69"
+    },
+    {
+      "case": "x15_V198_A195_early_l1_9",
+      "scene": "x15",
+      "vision_noise_source_seed": 198,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x15_V198_A195_native",
+      "same_scene_V_sham": "x15_V198_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "30323799a32dbdae7d551dc79e2f41e69da4c1c4bf0f152431a0141f0e9042ed"
+    },
+    {
+      "case": "x18_V195_A195_early_l1_9",
+      "scene": "x18",
+      "vision_noise_source_seed": 195,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x18_V195_A195_native",
+      "same_scene_V_sham": "x18_V195_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "b45adcdd71465703ea0d3f521958fd53b897c5e6e1c298e4ea024ca72793133e"
+    },
+    {
+      "case": "x18_V198_A195_early_l1_9",
+      "scene": "x18",
+      "vision_noise_source_seed": 198,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x18_V198_A195_native",
+      "same_scene_V_sham": "x18_V198_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "0e3c7c70fcd8545a873b3570172545428b6264221f924155426a516a44b09a47"
+    }
+  ],
+  "primary_requires_all_four_strict_only_milk_AND_all_four_shams_preserve_native": true,
+  "selected_steps_zero_based_inclusive": [
+    0,
+    14
+  ],
+  "selected_layers_zero_based_inclusive": [
+    0,
+    8
+  ],
+  "q0_total_official_dispatch_calls": 35100,
+  "q0_extra_official_dispatch_calls": 9180,
+  "active_cut_sites_checked": 540,
+  "active_cut_sites_per_cut_case": 135,
+  "all_allowed_dispatch_calls": 8640,
+  "physical_selected_objects": {
+    "x15_V195_A195_native": [
+      "cream_cheese_1"
+    ],
+    "x15_V198_A195_native": [
+      "cream_cheese_1"
+    ],
+    "x18_V195_A195_native": [
+      "cream_cheese_1"
+    ],
+    "x18_V198_A195_native": [
+      "cream_cheese_1"
+    ],
+    "x15_V195_A195_all_allowed": [
+      "cream_cheese_1"
+    ],
+    "x15_V198_A195_all_allowed": [
+      "cream_cheese_1"
+    ],
+    "x18_V195_A195_all_allowed": [
+      "cream_cheese_1"
+    ],
+    "x18_V198_A195_all_allowed": [
+      "cream_cheese_1"
+    ],
+    "x15_V195_A195_early_l1_9": [
+      "cream_cheese_1"
+    ],
+    "x15_V198_A195_early_l1_9": [
+      "cream_cheese_1"
+    ],
+    "x18_V195_A195_early_l1_9": [
+      "cream_cheese_1"
+    ],
+    "x18_V198_A195_early_l1_9": [
+      "cream_cheese_1"
+    ]
+  },
+  "definitions": {
+    "boundaries": "0=actual decoder input;1..36=actual block outputs after attention+MLP residuals;36 precedes final norm.",
+    "net_update": "H[b+1]\u2212H[b] computed in float64 from lossless BF16\u2192FP32 exports; not a separate attention or MLP increment.",
+    "own_reference": "Each case minus its SAME scene AND V global all-allowed sham on its own dynamic trajectory.",
+    "cross_V_reference": "V198\u2212V195 within the SAME scene/arm; denominator V195 same scene/arm. No cross-position hidden-distance conflation.",
+    "relative": "100\u00d7RMS(delta)/RMS(reference); null/NaN if reference<=1e-12; not cm, probability, success or mediation.",
+    "solver": "Actual saved FP32 action_states, not reconstructed from BF16 inputs; XYZ first3 normalized action dimensions.",
+    "actual_input": "Every saved BF16 action input equals the actual FP32 solver sample cast, and current frame0 is clamped."
+  },
+  "gap_floor": 1e-12,
+  "invalid_relative_denominators": {
+    "vs_sham_hidden_relative_current": 0,
+    "cross_V_hidden_relative_current": 0,
+    "vs_sham_hidden_relative_action": 0,
+    "cross_V_hidden_relative_action": 0
+  },
+  "q0_final_action_distances": {
+    "x15_V195_A195_native": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.002102717451487121,
+      "all10_RMS_to_own_scene_V_sham": 0.001651552961501505
+    },
+    "x15_V198_A195_native": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.002425012175557869,
+      "all10_RMS_to_own_scene_V_sham": 0.0017396288398477862
+    },
+    "x18_V195_A195_native": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.0011424343171378558,
+      "all10_RMS_to_own_scene_V_sham": 0.001357394410699937
+    },
+    "x18_V198_A195_native": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.0013930642135235745,
+      "all10_RMS_to_own_scene_V_sham": 0.0013949733466808957
+    },
+    "x15_V195_A195_all_allowed": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.0,
+      "all10_RMS_to_own_scene_V_sham": 0.0
+    },
+    "x15_V198_A195_all_allowed": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.0,
+      "all10_RMS_to_own_scene_V_sham": 0.0
+    },
+    "x18_V195_A195_all_allowed": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.0,
+      "all10_RMS_to_own_scene_V_sham": 0.0
+    },
+    "x18_V198_A195_all_allowed": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.0,
+      "all10_RMS_to_own_scene_V_sham": 0.0
+    },
+    "x15_V195_A195_early_l1_9": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.011864814771642333,
+      "all10_RMS_to_own_scene_V_sham": 0.007567517990555852
+    },
+    "x15_V198_A195_early_l1_9": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.02192234029485843,
+      "all10_RMS_to_own_scene_V_sham": 0.01347862965265464
+    },
+    "x18_V195_A195_early_l1_9": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.00531897166108784,
+      "all10_RMS_to_own_scene_V_sham": 0.004789789609842894
+    },
+    "x18_V198_A195_early_l1_9": {
+      "XYZ_RMS_to_own_scene_V_sham": 0.01762391843357844,
+      "all10_RMS_to_own_scene_V_sham": 0.010934795358690044
+    }
+  },
+  "actual_arrays": {
+    "normalized_actions": {
+      "shape": [
+        12,
+        128,
+        10
+      ],
+      "dtype": "float64"
+    },
+    "denormalized_actions": {
+      "shape": [
+        12,
+        128,
+        10
+      ],
+      "dtype": "float64"
+    },
+    "native_commands": {
+      "shape": [
+        12,
+        128,
+        7
+      ],
+      "dtype": "float64"
+    },
+    "executed_commands": {
+      "shape": [
+        12,
+        128,
+        7
+      ],
+      "dtype": "float64"
+    },
+    "object_xyz": {
+      "shape": [
+        12,
+        129,
+        7,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "finger_contacts": {
+      "shape": [
+        12,
+        129,
+        7,
+        2
+      ],
+      "dtype": "bool"
+    },
+    "strict_lift_m": {
+      "shape": [
+        12,
+        129,
+        7
+      ],
+      "dtype": "float64"
+    },
+    "strict_contact_and_lift": {
+      "shape": [
+        12,
+        129,
+        7
+      ],
+      "dtype": "bool"
+    },
+    "object_names": {
+      "shape": [
+        7
+      ],
+      "dtype": "<U19"
+    },
+    "hidden_rms_current": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_delta_rms_current": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_relative_current": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "net_update_rms_current": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_net_update_delta_rms_current": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_delta_rms_current": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_relative_current": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "hidden_rms_action": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_delta_rms_action": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_relative_action": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "net_update_rms_action": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_net_update_delta_rms_action": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_delta_rms_action": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_relative_action": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "q0_action_states_FP32": {
+      "shape": [
+        12,
+        31,
+        16,
+        64
+      ],
+      "dtype": "float32"
+    },
+    "q0_action_velocity_BF16_export_FP32": {
+      "shape": [
+        12,
+        30,
+        16,
+        64
+      ],
+      "dtype": "float32"
+    },
+    "q0_final_normalized_actions": {
+      "shape": [
+        12,
+        16,
+        10
+      ],
+      "dtype": "float32"
+    },
+    "q0_vs_sham_solver_XYZ_rms": {
+      "shape": [
+        12,
+        31
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_velocity_XYZ_rms": {
+      "shape": [
+        12,
+        30
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_full_readout_rms": {
+      "shape": [
+        12,
+        30
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_final_all10_rms": {
+      "shape": [
+        12
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_final_XYZ_rms": {
+      "shape": [
+        12
+      ],
+      "dtype": "float64"
+    },
+    "sigmas": {
+      "shape": [
+        31
+      ],
+      "dtype": "float32"
+    },
+    "timesteps": {
+      "shape": [
+        30
+      ],
+      "dtype": "int64"
+    },
+    "case_labels": {
+      "shape": [
+        12
+      ],
+      "dtype": "<U25"
+    },
+    "case_scenes": {
+      "shape": [
+        12
+      ],
+      "dtype": "<U3"
+    },
+    "case_vision_source_seeds": {
+      "shape": [
+        12
+      ],
+      "dtype": "int64"
+    },
+    "case_arms": {
+      "shape": [
+        12
+      ],
+      "dtype": "<U11"
+    },
+    "cross_V_case_scenes": {
+      "shape": [
+        6
+      ],
+      "dtype": "<U3"
+    },
+    "cross_V_arms": {
+      "shape": [
+        6
+      ],
+      "dtype": "<U11"
+    }
+  },
+  "site_gate_limit": "Frozen live dispatch/mask/footprint/QKV/RNG reports checked with source SHA. Full QKV was not saved; no independent attention recomputation.",
+  "controller_limit": "Typed actual arrays at0/16; all129 serialized controller fields checked. Intermediate original dtypes unavailable.",
+  "native_reference_limit": "Four fresh observations; zero independent native repeats and zero old X12 whole-trajectory comparisons.",
+  "functional_specificity_established": false,
+  "native_milk_preservation_is_not_rescue": true,
+  "actual_physical_actions_checked": 1536,
+  "whole_noise_pairs_checked": 77,
+  "whole_model_records_checked": 96,
+  "actual_boundary_files_checked": 360,
+  "new_native_first_observations": 4,
+  "old_whole_controls_rechecked": 0,
+  "model_forwards": 0,
+  "attention_dispatch_calls": 0,
+  "solver_steps": 0,
+  "environment_creations": 0,
+  "physics_calls": 0,
+  "cuda_initialized": false
+}

@@ -79,3 +79,14 @@ checkpoints/
 !experiments/16-milk-shift-mechanism/future-current-layer-execution/closed-loop/*/chunk_*/states.pt
 !experiments/16-milk-shift-mechanism/future-current-layer-execution/closed-loop/*/chunk_*/noise-audit.pt
 !experiments/16-milk-shift-mechanism/future-current-layer-execution/closed-loop/*/chunk_*/indexes-and-masks.pt
+
+# Fixed early-nine-layer transfer to X15/X18; actual arrays, never model weights.
+!experiments/16-milk-shift-mechanism/future-current-positions/*/states.pt
+!experiments/16-milk-shift-mechanism/future-current-positions/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-current-positions/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-current-positions/*/new-input-contract.pt
+!experiments/16-milk-shift-mechanism/future-current-positions/*/boundaries-t00.pt
+!experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_00/new-input-contract.pt

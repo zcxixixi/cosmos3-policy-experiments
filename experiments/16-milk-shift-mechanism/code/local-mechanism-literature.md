@@ -16,7 +16,7 @@
 
 [Mechanistic Interpretability for Steering Vision-Language-Action Models，原文 §4 / §6](https://arxiv.org/html/2509.00328v1)；[作者代码](https://github.com/Physical-AI-Safety-Institute/mechanistic-steering-vlas)。[arXiv 记录](https://arxiv.org/abs/2509.00328)标明 CoRL 2025。
 
-作者将 FFN 看作输入相关系数乘固定 value vectors 的和；按词表投影选语义簇，覆写部分中间神经元系数。OpenVLA 的 hook 放在 `down_proj`，实质改变其输入系数；π0-FAST 用改写的 FFN 实现同一操作。LIBERO 与 UR5 的干预能改变位移、速度和高度。真实机器人 slow / low 效应较明显，fast / high 接近基线；随机神经元和改提示是对照。论文也明确语义聚类可能混合“slow / careful / stuck”，含义会随模型、任务和时间漂移。
+作者将 FFN 看作输入相关系数乘固定 value vectors 的和；按词表投影选语义簇，覆写部分中间神经元系数。OpenVLA 的 hook 放在 `down_proj`，实质改变其输入系数；π0-FAST 用改写的 FFN 实现同一操作。LIBERO 有实际模拟器执行。UR5 的 π0-FAST 先经过机器人数据的 LoRA 适配；运输高度实验分别执行各干预版本，速度实验则只执行未改模型的动作，在相同观测上比较各版本预测的位移，不能把后者叫独立真实闭环速度实验。随机神经元和改提示是对照。论文也明确语义聚类可能混合“slow / careful / stuck”，含义会随模型、任务和时间漂移。
 
 **可借用：** MLP 内部确有可干预的行为控制接口；候选需要自然激活与语义特异性对照。**不可借用：** 文本词表投影里的“milk”就等于 Cosmos3 的纯物体身份变量；大倍率 steering 改变动作也不等于该神经元正常负责选择奶盒。Cosmos3 的 GEN MLP / 连续 Flow velocity 与该文 autoregressive action-token 设置不同。
 
@@ -138,3 +138,37 @@ MLP 的实际计算在 [第 179–194 行](/home/cenxi/Documents/Codex/2026-09-2
 已保存的 `target-reader-inputs/seed195/dispatch-t29.pt` 实际 kwargs 中，UND 是 121 个 text-side tokens，包含指令包装、任务元数据和特殊 token，不是 121 个普通词；真实 10-token 指令在全局索引 45–54。GEN 是 266 个 tokens：50 个当前条件视觉、200 个未来视觉、16 个动作。声音相关输入全为 `None`；当前 UND 中没有图像 token。实际 action domain id 是 **5**，选择 LIBERO 机器人域的输入/输出权重，不能解释成牛奶或奶酪类别；`DomainAwareLinear` 第 197–225 行的定义明确是每个 embodiment domain 一组权重。
 
 因此可以说：**有文字处理流、共享视觉动作生成流和动作专用读出这些架构分工。** 是否在它们内部学出了对某类运动、词义或物体选择更特异的局部通路，仍要看自然输入对照和真实因果干预；层或通道更亮只说明这一输入下数值幅度或净更新量更大，不足以命名“运动区”“语言区”或“海马体”。
+
+## 2026-10-04 功能分工与“皮层区域”：三项原始研究
+
+本节回应网络是否也有语言区、运动区。复核原始研究和作者代码，未新增模型或机器人运行。需要分清：**设计好的参数分支、训练后出现的功能倾向、具有空间邻近关系的功能地图**。三者不等价。
+
+### 语言 head 的训练后分工：Kumar 等，Nature Communications 2024
+
+[Shared functional specialization in transformer-based language models and the human brain](https://doi.org/10.1038/s41467-024-49173-5)；[开放原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC11217339/)；[作者 PDF](https://hassonlab.princeton.edu/sites/g/files/toruqf3591/files/documents/Kumar_NatCommun_2024.pdf)。核验位置：Results 的 “Interpreting transformations via headwise analysis”、Fig. 4–5，以及 Methods 的 “Encoding model estimation and evaluation” 和 “Summarizing headwise transformation weights”。
+
+训练后的 BERT 部分 attention head 对不同语言依赖呈现不同偏好；研究还用这些上下文变换预测听故事时的人类皮层 fMRI。它没有预先指定某 head 专管某种语法，但结构和训练制度会影响分工。关键方法是时间连续分段的三折编码回归验证：所谓 headwise 分数在测试时只保留某 head 对应的**编码回归系数**，不是删除 BERT 中其他 head。打乱回归系数也是统计对照。
+
+**支持：** 普通 Transformer 可学出局部功能倾向，并与脑响应形成预测关联。**不支持：** head 等于脑区、该 head 对理解具有已证必要性，或语言与运动的双重因果分离。研究没有机器人动作实验。
+
+### 可干预的运动控制通路：Häon 等，CoRL 2025
+
+[正式会议原文与 PDF](https://proceedings.mlr.press/v305/haon25a.html)；[开放全文 §3–4、§6](https://arxiv.org/html/2509.00328v1)；[作者代码](https://github.com/Physical-AI-Safety-Institute/mechanistic-steering-vlas)。
+
+这项研究提供比活动相关更强的证据：保持模型权重不变，覆写 FFN 的选中中间单元，可改变 OpenVLA 模拟执行的运动，以及适配后 π0-FAST 的实际 UR5 运输高度。真实速度测试的执行范围已在上文澄清。词表投影用于筛选，干预用于检查输出作用；投影关联本身不是单元语义证明。其动作相关权重遍布各层，论文未找到一条“前面纯语义、后面纯运动”的硬分界。
+
+**支持：** 少数内部单元可以成为可控的行为接口。**不支持：** 所选单位仅编码速度或某个物体、存在一块纯运动皮层，或相同单元编号和功能可直接迁移到 Cosmos3。
+
+### 真正的空间功能地图：Margalit 等，Neuron 2024（TDANN）
+
+[A unifying framework for functional organization in early and higher ventral visual cortex](https://doi.org/10.1016/j.neuron.2024.04.018)；[开放作者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC11257790/)；[官方代码](https://github.com/neuroailab/TDANN)。核验位置：Fig. 1–3、Fig. 5，Methods 的 “Loss functions” 与训练六步骤，Discussion。
+
+作者先给各层单元二维模拟皮层位置，并加入“近邻响应更相似”的空间损失；位置还经过保持粗略视网膜映射的预优化，再冻结位置、重新随机初始化网络权重训练。自监督自然图像训练后，早层出现方向偏好图，较高层出现面孔、身体等类别选择性簇；同样布局下仅任务训练的模型没有相同聚集。类别偏好和聚集在这些约束下形成，并非事先把某一片贴上“面孔区”标签。
+
+**支持：** 加入空间组织约束后，人工网络能学出类似视觉皮层的功能地图。**不支持：** 无此约束的普通 Transformer 或 Cosmos3 天然存在二维皮层地图；也不证明语言、运动或海马体功能。论文只基准比较 V1/VTC，部分类别簇的布局仍与真实皮层不同。
+
+### 对当前 Cosmos 实验的判读
+
+当前可核事实是 UND 与 GEN 的设计分工，以及在共享 GEN 内切断特定读取连接会改变部分场景的真实行为。后者定位的是**在固定输入、噪声和数值背景下有作用的通路**。第 1–9 层的切边效果不能单独命名成“牛奶区”或通用运动区；4096 个残差坐标也没有 TDANN 的皮层邻近含义。
+
+若要进一步声称语言与运动存在功能分离，需要独立操纵词义/目标和运动需求，检验同一局部干预是否选择性损伤其中一个、保留另一个，并在未用于挑选通路的布局上确认。活动幅度、可读出信息、局部干预和真实任务行为应分别报告，不能互相代替。

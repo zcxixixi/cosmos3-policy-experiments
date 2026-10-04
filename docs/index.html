@@ -8,75 +8,68 @@
 </style>
 </head>
 <body><main>
-<section id="latest"><p class="muted">2026-10-04 · 最新：早期去噪的四个9层组 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、真实数组与录像</a></p>
-<h1>把范围缩到前9层，A改抓牛奶，B仍抓牛奶。</h1>
+<section id="latest"><p class="muted">2026-10-04 · 最新：固定前9层改法，测试15和18厘米 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、真实数组与录像</a></p>
+<h1>换个牛奶位置，前9层的改动没能救回抓取。</h1>
 <p class="goal"><b>一直只查这个问题：</b>指令是“抓牛奶，放进篮子”。牛奶移远后却抓奶酪盒。我们要找到导致转抓的具体内部计算，并验证改它能否恢复跟着牛奶抓。</p>
-<p>上轮一次切18层：A从奶酪盒改抓牛奶，B却没达到严格抓起条件。我们怀疑<b>切的范围太大，也伤害了原本抓对的计算</b>，于是把36层分成四个9层组，全部测试。</p>
-<div class="status"><b>这次预登记的主要预测成立：</b>只在前15次去噪中切第1～9层的“未来→当前视觉”连接，A和B都严格且只抓起牛奶。12条执行和实际数组的CPU审计已通过。<b>这只验证了12厘米、同一初态和两份未来起点；还没有解决15厘米，也没有发现“牛奶脑区”。</b></div>
-<p class="muted">关于“网络有没有语言区、运动区”，下面单独说明<a href="#functional">已有研究与这次结果各能说明什么</a>。</p></section>
-<section><h2>1. 从18层，缩到四个9层组</h2>
-<p>照片先变成一组<b>当前视觉向量</b>；网络同时计算用于生成未来画面的向量。原模型允许当前视觉读取未来向量。这次仍只禁止这种读取，<b>动作直接读取未来的连接保留</b>。</p>
-<p>文字、照片、机器人初态、动作随机起点都相同。A／B只有<b>未来生成的初始随机数组</b>不同：A原本抓奶酪盒，B原本抓牛奶。它们不是两张照片，也不是两条指令。</p>
-<figure><img src="media/milk-future-current-layer-groups.svg" alt="前15次去噪中，第1到9、第10到18、第19到27、第28到36层四组切边的全部A和B结果"><figcaption>四组都在第0～14次去噪中切同一条连接，每组包含9层×15次＝135个处理位置。更高层是同规模的层段比较，不能当作已经知道“无关”的连接。</figcaption></figure>
-<p><b>两种时间要分开：</b>网络先用30次去噪生成首轮16步动作，我们只在这里改内部连接。机械臂执行完16步后重新拍照；后续7轮恢复原生推理。每条实际执行128步。</p>
-<p>所有经过mask接口的组，都在全36层、30次去噪中使用同样的“连接全保留”计算背景，四个9层干预组只在各自登记的135处切边；两条接口对照全程保留连接。这样可以对齐接口带来的数值影响。<b>切边本身仍会重新分配剩下的attention权重</b>，还没有区分“去掉了什么内容”和“改变了读取比例”。</p></section>
-<section><h2>2. 四组全部结果：只有第一组同时保住A和B</h2>
-<p>事先只把<b>第1～9层的A、B都严格且只抓牛奶</b>定为主要预测。其余三组照样执行并报告，没有根据结果换一个“赢家”。</p>
-<table><thead><tr><th>首轮怎么改</th><th>A的严格抓起结果</th><th>B的严格抓起结果</th></tr></thead><tbody>
-<tr><td>原生计算</td><td>奶酪盒，第68～72步</td><td>牛奶，第64～68步</td></tr>
-<tr><td>连接全保留的接口对照</td><td>奶酪盒，第70～74步</td><td>牛奶，第64～68步</td></tr>
-<tr><td><b>前15次 × 第1～9层（主要预测）</b></td><td><b>牛奶，第61～65步</b></td><td><b>牛奶，第64～68步</b></td></tr>
-<tr><td>前15次 × 第10～18层</td><td>牛奶，第62～66步</td><td>未达到严格抓起条件</td></tr>
-<tr><td>前15次 × 第19～27层</td><td>黄油，第76～80步</td><td>未达到严格抓起条件</td></tr>
-<tr><td>前15次 × 第28～36层</td><td>奶酪盒，第71～75步</td><td>牛奶，第64～68步</td></tr>
-</tbody></table>
-<p><b>这把候选缩到了早期去噪、第1～9层的这条读取通路。</b>不能据此说这9层只负责牛奶、较高层只负责运动，或已经定位单个head／MLP单元。相同处理位置数也不代表相同扰动强度或相同后续传播机会。</p>
-<details><summary>严格抓起判据与接口对照</summary>
-<p>每份记录都要同时满足：左右指垫接触物体、相对初态抬高严格超过2厘米，连续5份记录。全部物体的129份记录都检查了。未达到条件不等于机械臂没动；抓起也不等于最终放进篮子。</p>
-<p>原生与“同样经过mask接口但连接全保留”的对照都保留A奶酪、B牛奶。接口对照不是数值完全不变，因此每个9层组都与<b>自己同起点的接口对照</b>比较。</p></details></section>
-<section><h2>3. 一次只看一条实际录像</h2>
-<p>默认看主要检验的A，再切到B。都是<b>MuJoCo实际执行</b>；没有用模型生成的视频替代执行结果。</p>
-<div class="video-picker" role="group" aria-label="一次选择一条实际机械臂录像">
-<button type="button" data-video="V195_A195_native" aria-pressed="false">原生 · A：奶酪盒</button>
-<button type="button" data-video="V198_A195_native" aria-pressed="false">原生 · B：牛奶</button>
-<button type="button" data-video="V195_A195_all_allowed" aria-pressed="false">连接全保留 · A：奶酪盒</button>
-<button type="button" data-video="V198_A195_all_allowed" aria-pressed="false">连接全保留 · B：牛奶</button>
-<button type="button" data-video="V195_A195_early_l1_9" aria-pressed="true">第1～9层 · A：牛奶</button>
-<button type="button" data-video="V198_A195_early_l1_9" aria-pressed="false">第1～9层 · B：牛奶</button>
-<button type="button" data-video="V195_A195_early_l10_18" aria-pressed="false">第10～18层 · A：牛奶</button>
-<button type="button" data-video="V198_A195_early_l10_18" aria-pressed="false">第10～18层 · B：未达到严格条件</button>
-<button type="button" data-video="V195_A195_early_l19_27" aria-pressed="false">第19～27层 · A：黄油</button>
-<button type="button" data-video="V198_A195_early_l19_27" aria-pressed="false">第19～27层 · B：未达到严格条件</button>
-<button type="button" data-video="V195_A195_early_l28_36" aria-pressed="false">第28～36层 · A：奶酪盒</button>
-<button type="button" data-video="V198_A195_early_l28_36" aria-pressed="false">第28～36层 · B：牛奶</button>
-</div>
-<video id="execution" controls preload="none" playsinline src="media/milk-future-current-early_l1_9-v195.mp4" aria-label="前15次去噪第1到9层切未来到当前视觉后的A组实际抓牛奶录像"></video>
-<p id="video-caption" class="muted" aria-live="polite">当前：前15次 × 第1～9层，起点A：牛奶；第61～65步。这是MuJoCo实际执行；抓起不等于最终放篮成功。</p></section>
-<section><h2>4. 改动从哪里传下去？</h2>
-<p>下面只看预先指定的第1～9层组。<b>左边是当前视觉向量，右边是动作向量；上面A，下面B。</b>越亮，说明这一层的净更新，与保留连接时的净更新差得越多；黑格不等于原计算没有活动。</p>
-<figure><img src="media/milk-future-current-layer-primary-block-net-updates.png" alt="预先指定第1到9层组的真实当前视觉和动作层净更新，分别与同起点接口对照比较"><figcaption>每格先算本层输出减输入，再比较干预与对照。这里看切边后的影响，不是原生活跃程度。包含attention与MLP的合并净改动，不是单个head活动、功能区或牛奶概率。每列的A／B共用刻度，左右刻度不同。层号0～35，对应第1～36层。</figcaption></figure>
-<p>白线标出第9层和第15次去噪之后的边界。<b>直接干预结束后，差异仍可能传下去：</b>前面改变的向量成为后面的输入，后续去噪也使用已经改变的动作／视频状态。单凭差异持续，不能说网络在“记忆”或“锁死目标”。</p>
-<details><summary>更多内部曲线、实际数组与完整审计</summary>
-<figure><img src="media/milk-future-current-layer-same-sham-and-cross-source.png" alt="当前和动作的真实数组差异，上排每9层组与同起点接口对照比较，下排同一条件里B与A比较"><figcaption>上排：干预对自己的同起点对照；下排：同一条件里B对A。百分数是数组距离与参考幅度之比，不是成功率或解释了多少行为。</figcaption></figure>
-<figure><img src="media/milk-future-current-layer-strict-window-outcomes.png" alt="全部12条真实严格抓起结果及首轮FP32动作状态相对接口对照的差异"><figcaption>曲线来自保存的FP32动作状态，没有从低精度网络输入猜出来。动作单位经过归一化，不能直接称为厘米。</figcaption></figure>
-<p>首轮12组共360次网络计算，后续84轮共2520次，合计2880次。四条原生／接口对照完整复现旧记录。CPU独立重算全部1536条动作转换、96份完整模型记录、77组后续噪声配对、12条真实接触与抬高判据，另核全部360份逐层文件及1080个切边位置；作图新增模型、求解器或物理计算0次。</p>
-<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-layer-analysis">审计、实际数组和图</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-layer-execution">全部12条执行、动作和96份模型记录</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-layer-groups">预登记范围、首轮真实数组与来源</a></p>
-<p>公开12份第1次去噪的完整逐层文件，余348份保存在A6000；全部360份都有来源SHA，统计覆盖全部层与时刻。另一次<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/future-current-layer-analysis/independent-audit.json">独立原数组重算</a>复核真实接触与抬高条件、指定逐层距离和最终动作，误差0。没有声称记录全部未来token、QKV或所有单元。</p></details></section>
-<section id="functional"><h2>5. 神经网络也有语言区、运动区吗？</h2>
-<p><b>可以有功能分化，但不能按一张亮度图命名脑区。</b>2025年的VLA研究干预少量MLP单元，可改变部分预测位移或真实机器人运输高度，并设随机单元对照。这支持内部组件能控制某些运动特征，不等于找到了完整“运动皮层”。<a href="https://arxiv.org/html/2509.00328v1#S4">CoRL论文原文</a></p>
-<p>2024年的研究发现，语言模型里不同attention head的计算，对人听故事时不同语言皮层位置的fMRI活动有不同预测关联。<b>这是功能对应的证据，不能说一个head就是一个脑区，也不是运动功能的因果验证。</b><a href="https://www.nature.com/articles/s41467-024-49173-5">Nature Communications论文原文</a></p>
-<p>当前Cosmos3确实让<b>文字和生成内容各用一套attention、MLP参数</b>；当前视觉、未来画面和动作又共用生成通路，动作另有输出头。因此结构有分工，功能也可能分布在许多层和单元中。</p>
-<p>这轮找到的是：<b>在这份初态和两份未来起点下，第1～9层的一条读取路径会因果影响最后抓谁。</b>要进一步称为“管目标身份”的部件，还得区分物体与位置，检查改它是否同时破坏普通运动，并在新布局中复现。现在不把这9层叫“牛奶区”或“海马体”。</p></section>
-<section><h2>下一步：冻结第1～9层，回到15厘米和新位置</h2>
-<p><b>不继续按这批结果无限二分。</b>先固定已经登记的第1～9层、前15次去噪和同一切边规则，回到原本抓错的15厘米场景，再测没有用于挑选范围的新牛奶位置。每个位置保留原生／接口对照和实际执行，检验是否仍跟着牛奶抓。当前任务还没有完成。</p></section>
-<details><summary>旧18层预测被否定，记录继续保留</summary>
-<p>上轮主要预测是“前15次去噪切第1～18层，A和B都只抓牛奶”。实际A抓牛奶，B未达到严格条件，所以主要预测被否定。本轮提出更小范围的新预测，不改写上轮结论。18层联合干预与9层子范围可能非线性相互作用，<b>不能把它们的效果相加当作各层贡献</b>。</p>
-<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-analysis">旧18层统计与数组</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-execution">旧12条完整执行</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-windows">旧预登记范围</a></p>
-<p>更早的随机数组交叉显示，四次抓谁跟着未来起点改变；切不同读取连接又看到影响可跨层绕行。其他代码、图与视频继续保存在<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/README.md">实验记录</a>。</p></details>
-<footer class="muted">对象：社区权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">cosmos3-nano-policy-liberoall-5k</a> 与当前推理程序。这是固定12厘米初态和两份未来起点的对照，不是成功率统计；没有重新训练。</footer>
+<p>之前在12厘米处，只改前9层的一条连接，A改抓牛奶、B仍抓牛奶。这次<b>不改层数、不调强度</b>，把牛奶移到15厘米和新的18厘米位置，检验它是否仍然跟着牛奶抓。</p>
+<div class="status"><b>这次主要预测被否定：</b>十二条MuJoCo实际执行，原生、连接全保留的接口对照、前9层切边，全部严格且只抓奶酪盒。四条接口对照都保留原生的抓取类别。<b>12厘米的有效结果仍保留，但不能把这条通路叫作通用“牛奶区”。</b></div>
+<p class="muted">12条实际执行和内部数组CPU核验已完成，另一次独立原数组重算误差0。当前研究目标尚未完成。关于“网络有没有语言区、运动区”，可直接看<a href="#functional">功能分工与相关研究</a>。</p></section>
+<section><h2>1. 这次只换牛奶位置，原样保留改法</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px"><figure><img src="media/milk-future-position-x15.png" alt="牛奶沿X轴移动15厘米的真实双相机模型输入"><figcaption>牛奶X+15厘米：真实输入。</figcaption></figure><figure><img src="media/milk-future-position-x18.png" alt="牛奶沿X轴移动18厘米的真实双相机模型输入"><figcaption>牛奶X+18厘米：未用于挑选层段的新位置。</figcaption></figure></div>
+<p>每个位置有两份未来生成起点，195／198；<b>动作随机起点始终为195</b>。同位置的三种条件使用同一张照片、指令和机器人初态。195／198是未来生成的初始随机数组，不是两条指令或两张照片。</p>
+<p><b>改的是内部读取：</b>仅首轮前15次去噪、第1～9层，禁止50个当前视觉向量读取200个未来视觉向量。动作直接读取未来的连接保留。每条执行首轮16步后，重新拍照，后续7轮恢复原生推理，总计128步。</p>
+<p>接口对照使用相同的计算接口，但保留全部连接；干预与自己同位置、同起点的接口对照比较。<b>硬切边也会重新分配剩余attention权重</b>，还未区分“移走的内容”和“改变的读取比例”。</p></section>
+<section><h2>2. 十二条全部结果：仍然抓奶酪盒</h2>
+<p>事先要求：<b>四条干预都严格且只抓牛奶，并且四条接口对照保留各自原生抓取类别。</b>没有看到结果后更换层段或成功判据。</p>
+<table><thead><tr><th>牛奶位置／未来起点</th><th>原生</th><th>接口对照</th><th>前9层切边</th></tr></thead><tbody><tr><td>X+15cm／195</td><td>奶酪盒，第70步</td><td>奶酪盒，第68步</td><td>奶酪盒，第70步</td></tr>
+<tr><td>X+15cm／198</td><td>奶酪盒，第71步</td><td>奶酪盒，第71步</td><td>奶酪盒，第71步</td></tr>
+<tr><td>X+18cm／195</td><td>奶酪盒，第72步</td><td>奶酪盒，第72步</td><td>奶酪盒，第71步</td></tr>
+<tr><td>X+18cm／198</td><td>奶酪盒，第71步</td><td>奶酪盒，第71步</td><td>奶酪盒，第71步</td></tr></tbody></table>
+<p>这里的步数是严格窗口第一步：左右指垫同时接触、相对初态抬高严格超过2厘米，连续5份记录。全部物体都检查，<b>不是只看牛奶有没有动，也不是最终放篮成功率</b>。</p>
+<p><b>被否定的是“这套改法能在新位置恢复牛奶抓取”。</b>这不能反过来证明网络没识别到牛奶，也不能说这条通路完全没影响。下面实际数字显示内部和动作确实变了，但最终抓取类别没变。</p></section>
+<section><h2>3. 一次只看一条实际录像</h2><p>默认看15厘米、起点195、前9层切边。都是<b>MuJoCo实际执行</b>，没有用生成视频代替执行。</p>
+<div class="video-picker" role="group" aria-label="一次选择一条实际机械臂录像"><button type="button" data-video="x15_V195_A195_native" aria-pressed="false">15cm／195 · 原生</button>
+<button type="button" data-video="x15_V195_A195_all_allowed" aria-pressed="false">15cm／195 · 连接全保留</button>
+<button type="button" data-video="x15_V195_A195_early_l1_9" aria-pressed="true">15cm／195 · 前9层切边</button>
+<button type="button" data-video="x15_V198_A195_native" aria-pressed="false">15cm／198 · 原生</button>
+<button type="button" data-video="x15_V198_A195_all_allowed" aria-pressed="false">15cm／198 · 连接全保留</button>
+<button type="button" data-video="x15_V198_A195_early_l1_9" aria-pressed="false">15cm／198 · 前9层切边</button>
+<button type="button" data-video="x18_V195_A195_native" aria-pressed="false">18cm／195 · 原生</button>
+<button type="button" data-video="x18_V195_A195_all_allowed" aria-pressed="false">18cm／195 · 连接全保留</button>
+<button type="button" data-video="x18_V195_A195_early_l1_9" aria-pressed="false">18cm／195 · 前9层切边</button>
+<button type="button" data-video="x18_V198_A195_native" aria-pressed="false">18cm／198 · 原生</button>
+<button type="button" data-video="x18_V198_A195_all_allowed" aria-pressed="false">18cm／198 · 连接全保留</button>
+<button type="button" data-video="x18_V198_A195_early_l1_9" aria-pressed="false">18cm／198 · 前9层切边</button></div>
+<video id="execution" controls preload="none" playsinline src="media/milk-future-position-x15_V195_A195_early_l1_9.mp4" aria-label="15厘米起点195前9层切边后实际抓奶酪盒录像"></video>
+<p id="video-caption" class="muted" aria-live="polite">当前：牛奶移15厘米，未来起点195，前9层切边：奶酪盒；严格窗口从第70步开始。这是MuJoCo实际执行；抓起不等于最终放篮成功。</p></section>
+<section><h2>4. 内部变了，为什么不能叫“牛奶区”？</h2>
+<p>首轮输出的XYZ动作，与自己接口对照的RMS距离如下。<b>数字非零，说明动作数组确实受影响；最后仍抓奶酪盒，说明这点改变没有恢复目标选择。</b>这是归一化动作数字的距离，不是厘米、概率或成功率。</p>
+<table><thead><tr><th>固定前9层干预</th><th>XYZ动作距离</th><th>实际抓起谁</th></tr></thead><tbody><tr><td>15cm／195</td><td>0.011865</td><td>奶酪盒</td></tr><tr><td>15cm／198</td><td>0.021922</td><td>奶酪盒</td></tr><tr><td>18cm／195</td><td>0.005319</td><td>奶酪盒</td></tr><tr><td>18cm／198</td><td>0.017624</td><td>奶酪盒</td></tr></tbody></table>
+<details><summary>展开：真实逐层热力图、数组与核验</summary>
+<figure><img src="media/milk-future-position-primary-block-net-updates.png" alt="四条固定前9层干预的当前视觉与动作净更新相对同位置同起点接口对照的实际差异"><figcaption>四行分别是15cm／195、15cm／198、18cm／195、18cm／198；左当前视觉，右动作。越亮是干预与对照的整层净更新差越大，不是原生活跃程度。层输出减输入包含attention和MLP的合并效果，不能命名脑区。白线标第9层和第15次去噪之后。黑格不表示没有计算。</figcaption></figure>
+<figure><img src="media/milk-future-position-same-sham-and-cross-source.png" alt="同位置同起点接口对照距离与同位置跨未来起点距离"><figcaption>同起点干预比较与跨起点比较分开。百分数是数组差与参考幅度之比，不是行为解释比例。</figcaption></figure>
+<figure><img src="media/milk-future-position-strict-window-outcomes.png" alt="全部12条实际严格抓起结果与保存的FP32首轮动作求解过程"><figcaption>曲线来自真实FP32动作状态，没有从低精度输入反推。主预测是四条都只抓牛奶；不能用内部曲线替代实际判据。</figcaption></figure>
+<p>首轮12组共360次网络计算，后续84轮共2520次，合计2880次。CPU核对1536条动作转换、96份完整模型记录、77组后续噪声配对、全部360份逐层文件和540处切边；作图新增模型、求解器和物理计算均为0。四条原生是新位置首次观察，不是独立重复，也没有与旧12厘米完整轨迹作相等性对照。</p>
+<p>独立原数组重算另检查10836个真实接触与抬高条件、36份原PT导出字节、24个最终动作距离、32个t0内部距离、24个t0净更新距离，误差0。公开12份第1次去噪完整边界，另348份保留A6000；全部360份有来源SHA，统计覆盖全部时刻。没有记录全部QKV或未来逐层状态，执行目录中重复的t0边界不重复提交。</p>
+<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-position-analysis">审计、实际数组和图</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/future-current-position-analysis/independent-audit.json">独立重算</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-position-execution">全部12条实际执行</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-positions">首轮协议、来源与真实数组</a></p></details></section>
+<section id="functional"><h2>5. 网络也可能有“管语言”和“管运动”的部分</h2>
+<p><b>可能有，但更像功能倾向，不一定是整齐分开的两块区域。</b>一层里面可以有许多小部件，语言与动作也可以在同一层交互。下面三项研究的证据强度不同。</p>
+<p><b>机器人内部部件能改变运动。</b>CoRL 2025的研究干预少量MLP单元，可以改变OpenVLA模拟执行，以及适配后π0-FAST真实UR5的运输高度。它说明内部部件能控制某些行为，没有证明存在一块纯运动皮层；其语义和动作相关表示遍布多层。<a href="https://proceedings.mlr.press/v305/haon25a.html">论文原文</a></p>
+<p><b>语言模型会学出不同处理偏好。</b>Nature Communications 2024发现BERT不同attention head的计算，对人听故事时不同语言皮层位置的fMRI活动有不同预测关联。它不是一个head对应一个脑区的证明，也不是删除head后的因果检验。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11217339/">论文原文</a></p>
+<p><b>人工网络也能学出成片的视觉功能地图。</b>Neuron 2024的TDANN加入单元空间位置和近邻响应约束，训练后出现方向偏好图及面孔、身体等类别簇。额外空间约束很关键；不能推断普通Cosmos也有同样的二维皮层地图。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11257790/">论文原文</a></p>
+<p>Cosmos3在结构上让<b>文字处理与生成各用一套attention、MLP参数</b>。当前视觉、未来画面和动作又共用生成通路，动作另有输出头。这是设计的分工；内部是否学出更细的语言或运动功能，要另做实验。</p>
+<table><thead><tr><th>先只改变什么</th><th>再短暂干预一个小部件，检查什么</th></tr></thead><tbody><tr><td>目标名字或目标位置</td><td>是否影响朝哪个物体去，同时保留一般运动能力？</td></tr><tr><td>目标不变，只改向上／向下等运动需求</td><td>是否影响运动方向，同时保留目标选择？</td></tr></tbody></table>
+<p>如果两类改动有不同的局部影响，才更支持功能分工。<b>记录活动用于找候选，局部干预用于检验它实际做什么。</b>当前还没有定位到这样的具体head或MLP单元。</p></section>
+<section><h2>下一步只查：移走的内容，还是改变的读取比例？</h2>
+<p>切边同时做了两件事：不再读未来内容，又把读取权重分给其他来源。下一批保持同一实际Q/K和全部key，只改未来V内容，再与硬切边比较，区分这两个解释。将使用真实attention计算，并保留接口对照。<b>这个更细的实验还未执行，也未定位具体功能head。</b></p></section>
+<details><summary>保留旧结果：12厘米九层有效，18层预测失败</summary>
+<p>12厘米那批，第1～9层切边让A改抓牛奶、B仍抓牛奶；第10～18层A抓牛奶、B无严格抓起；第19～27层A抓黄油、B无严格抓起；第28～36层保留A奶酪、B牛奶。那批主要预测supported，这批跨位置预测rejected，两者都保留。</p>
+<p>更早一次切第1～18层：A改抓牛奶，B没有严格抓起，主要预测rejected。联合干预可能有非线性交互，不能把九层与十八层效果相加当各层贡献。</p>
+<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-layer-analysis">旧九层全部数组和结论</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-layer-execution">旧九层全部执行</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-analysis">旧十八层数据</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-current-execution">旧十八层执行</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/README.md">完整历史记录</a></p></details>
+<footer class="muted">对象：社区权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">cosmos3-nano-policy-liberoall-5k</a> 与当前推理程序。最新12条只测试沿X移动15／18厘米和两份固定未来起点，不是成功率统计；没有重新训练。研究目标未完成。</footer>
 </main>
 <script>
 const player=document.getElementById('execution');const caption=document.getElementById('video-caption');
-const clips={"V195_A195_native":{"src":"media/milk-noise-cross-native195.mp4","label":"原生计算，起点A：奶酪盒；第68～72步"},"V198_A195_native":{"src":"media/milk-initial-noise-v198-a195.mp4","label":"原生计算，起点B：牛奶；第64～68步"},"V195_A195_all_allowed":{"src":"media/milk-future-read-all_allowed-v195.mp4","label":"连接全保留的接口对照，起点A：奶酪盒；第70～74步"},"V198_A195_all_allowed":{"src":"media/milk-future-read-all_allowed-v198.mp4","label":"连接全保留的接口对照，起点B：牛奶；第64～68步"},"V195_A195_early_l1_9":{"src":"media/milk-future-current-early_l1_9-v195.mp4","label":"前15次 × 第1～9层，起点A：牛奶；第61～65步"},"V198_A195_early_l1_9":{"src":"media/milk-future-current-early_l1_9-v198.mp4","label":"前15次 × 第1～9层，起点B：牛奶；第64～68步"},"V195_A195_early_l10_18":{"src":"media/milk-future-current-early_l10_18-v195.mp4","label":"前15次 × 第10～18层，起点A：牛奶；第62～66步"},"V198_A195_early_l10_18":{"src":"media/milk-future-current-early_l10_18-v198.mp4","label":"前15次 × 第10～18层，起点B：未达到严格抓起条件"},"V195_A195_early_l19_27":{"src":"media/milk-future-current-early_l19_27-v195.mp4","label":"前15次 × 第19～27层，起点A：黄油；第76～80步"},"V198_A195_early_l19_27":{"src":"media/milk-future-current-early_l19_27-v198.mp4","label":"前15次 × 第19～27层，起点B：未达到严格抓起条件"},"V195_A195_early_l28_36":{"src":"media/milk-future-current-early_l28_36-v195.mp4","label":"前15次 × 第28～36层，起点A：奶酪盒；第71～75步"},"V198_A195_early_l28_36":{"src":"media/milk-future-current-early_l28_36-v198.mp4","label":"前15次 × 第28～36层，起点B：牛奶；第64～68步"}};
+const clips={"x15_V195_A195_native": {"src": "media/milk-future-position-x15_V195_A195_native.mp4", "label": "牛奶移15厘米，未来起点195，原生：奶酪盒；严格窗口从第70步开始"}, "x15_V195_A195_all_allowed": {"src": "media/milk-future-position-x15_V195_A195_all_allowed.mp4", "label": "牛奶移15厘米，未来起点195，连接全保留：奶酪盒；严格窗口从第68步开始"}, "x15_V195_A195_early_l1_9": {"src": "media/milk-future-position-x15_V195_A195_early_l1_9.mp4", "label": "牛奶移15厘米，未来起点195，前9层切边：奶酪盒；严格窗口从第70步开始"}, "x15_V198_A195_native": {"src": "media/milk-future-position-x15_V198_A195_native.mp4", "label": "牛奶移15厘米，未来起点198，原生：奶酪盒；严格窗口从第71步开始"}, "x15_V198_A195_all_allowed": {"src": "media/milk-future-position-x15_V198_A195_all_allowed.mp4", "label": "牛奶移15厘米，未来起点198，连接全保留：奶酪盒；严格窗口从第71步开始"}, "x15_V198_A195_early_l1_9": {"src": "media/milk-future-position-x15_V198_A195_early_l1_9.mp4", "label": "牛奶移15厘米，未来起点198，前9层切边：奶酪盒；严格窗口从第71步开始"}, "x18_V195_A195_native": {"src": "media/milk-future-position-x18_V195_A195_native.mp4", "label": "牛奶移18厘米，未来起点195，原生：奶酪盒；严格窗口从第72步开始"}, "x18_V195_A195_all_allowed": {"src": "media/milk-future-position-x18_V195_A195_all_allowed.mp4", "label": "牛奶移18厘米，未来起点195，连接全保留：奶酪盒；严格窗口从第72步开始"}, "x18_V195_A195_early_l1_9": {"src": "media/milk-future-position-x18_V195_A195_early_l1_9.mp4", "label": "牛奶移18厘米，未来起点195，前9层切边：奶酪盒；严格窗口从第71步开始"}, "x18_V198_A195_native": {"src": "media/milk-future-position-x18_V198_A195_native.mp4", "label": "牛奶移18厘米，未来起点198，原生：奶酪盒；严格窗口从第71步开始"}, "x18_V198_A195_all_allowed": {"src": "media/milk-future-position-x18_V198_A195_all_allowed.mp4", "label": "牛奶移18厘米，未来起点198，连接全保留：奶酪盒；严格窗口从第71步开始"}, "x18_V198_A195_early_l1_9": {"src": "media/milk-future-position-x18_V198_A195_early_l1_9.mp4", "label": "牛奶移18厘米，未来起点198，前9层切边：奶酪盒；严格窗口从第71步开始"}};
 for(const button of document.querySelectorAll('[data-video]')){button.addEventListener('click',()=>{if(button.getAttribute('aria-pressed')==='true')return;player.pause();const clip=clips[button.dataset.video];player.src=clip.src;player.setAttribute('aria-label',clip.label+'的MuJoCo实际执行录像');player.load();caption.textContent='当前：'+clip.label+'。这是MuJoCo实际执行；抓起不等于最终放篮成功。';for(const other of document.querySelectorAll('[data-video]'))other.setAttribute('aria-pressed',String(other===button));});}
 </script></body></html>

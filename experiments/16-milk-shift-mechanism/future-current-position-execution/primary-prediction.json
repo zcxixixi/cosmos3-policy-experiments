@@ -1,0 +1,99 @@
+{
+  "state": "evaluated_after_all12_complete",
+  "primary_window": "early_l1_9",
+  "criterion": "Each of four cut cases selected_objects == [milk_1] by both-finger contact and lift >.02m for five consecutive records AND all four same-scene/V shams match native classifications.",
+  "cases": [
+    {
+      "case": "x15_V195_A195_early_l1_9",
+      "scene": "x15",
+      "vision_noise_source_seed": 195,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x15_V195_A195_native",
+      "same_scene_V_sham": "x15_V195_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "9abc7c40bf3ad0a3be07282491a29b8c14e73dbf4ecd6ab83f0cbe9de71d0c69"
+    },
+    {
+      "case": "x15_V198_A195_early_l1_9",
+      "scene": "x15",
+      "vision_noise_source_seed": 198,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x15_V198_A195_native",
+      "same_scene_V_sham": "x15_V198_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "30323799a32dbdae7d551dc79e2f41e69da4c1c4bf0f152431a0141f0e9042ed"
+    },
+    {
+      "case": "x18_V195_A195_early_l1_9",
+      "scene": "x18",
+      "vision_noise_source_seed": 195,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x18_V195_A195_native",
+      "same_scene_V_sham": "x18_V195_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "b45adcdd71465703ea0d3f521958fd53b897c5e6e1c298e4ea024ca72793133e"
+    },
+    {
+      "case": "x18_V198_A195_early_l1_9",
+      "scene": "x18",
+      "vision_noise_source_seed": 198,
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_only_milk": false,
+      "same_scene_V_native": "x18_V198_A195_native",
+      "same_scene_V_sham": "x18_V198_A195_all_allowed",
+      "native_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_matches_native_classification": true,
+      "native_already_only_milk": false,
+      "effect": "did_not_strictly_select_only_milk",
+      "strict_windows_sha256": "0e3c7c70fcd8545a873b3570172545428b6264221f924155426a516a44b09a47"
+    }
+  ],
+  "prediction": "rejected",
+  "all_four_only_milk": false,
+  "numerical_sham_classification_gate_passed": true,
+  "all12_cases_executed": true,
+  "alternate_window_or_descriptive_metric_cannot_replace_primary": true,
+  "native_milk_preservation_is_not_rescue": true,
+  "functional_specificity_established": false,
+  "scope": "Twelve preregistered X+15/X+18cm physical trajectories using their own fresh saved q0 predictions, then native inference from actual feedback at later base195. X+0cm is a restore reference only. Same-scene/V native q0 records validate preparation, with no old X+12cm physical equality or native-repeat claim. All four fixed early_l1_9 cases selecting exactly milk and all four shams matching native classifications test the sole primary prediction. Native milk retained by a cut is preservation. Hard masking also redistributes attention. This is a generalization prerequisite, with no functional/cortex-like specificity, semantic identity, neural root cause, training, selection or additional window claim."
+}

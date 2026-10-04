@@ -1,0 +1,43 @@
+{
+  "state": "exact",
+  "first_cut_step": 0,
+  "first_cut_layer_zero_based": 0,
+  "earlier_complete_model_outputs_and_head_prefix_exact": true,
+  "all_actual_complete_kwargs_through_first_cut_step_exact": true,
+  "earlier_all37_and_first_cut_before_layer_current_action_boundaries_exact": true,
+  "solver_samples_through_first_cut_input_exact": true,
+  "after_first_cut_equal_to_independent_sham_required": false,
+  "scope": "Actual saved full kwargs/output and current/action boundaries; no assertion of unsaved full-QKV prefix arrays.",
+  "scene": "x15",
+  "comparison_case": "x15_V195_A195_all_allowed",
+  "comparison_same_scene_and_V": true,
+  "actual_input_checks": {
+    "inner_outer_first_kwargs_byte_exact": true,
+    "all30_actual_FP32_solver_sample_to_BF16_action_kwargs_exact": true,
+    "new_scene_prepared_current_FP32_cast_to_actual_BF16_frame0_exact": true,
+    "all30_current_condition_frame0_exact": true,
+    "official_schedule_exact": true,
+    "all31_solver_padding54_zero": true
+  },
+  "preparation": {
+    "all_thirty_layout_schedule_metadata_exact": true,
+    "actual_model_calls": 30,
+    "processor_recompute_calls": 0,
+    "all_owned_observer_hooks_removed": true,
+    "current_condition_frame0_all_thirty_model_calls_byte_exact": true,
+    "prepared_vision_entire_tensor_equals_V_source": true,
+    "prepared_action_entire_tensor_equals_A_source": true,
+    "other_ten_prepared_fields_byte_exact": true,
+    "other_initial_model_kwargs_byte_exact": true,
+    "native_raw_action_dim": 10,
+    "all_prepared_model_input_and_31_solver_state_padding54_zero": true,
+    "action_condition_mask_all_zero": true,
+    "vision_conditioned_frame": 0,
+    "future_noisy_frames": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

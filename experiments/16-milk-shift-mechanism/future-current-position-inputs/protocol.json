@@ -1,0 +1,54 @@
+{
+  "script_sha256": "de6fb4a17640fd3c5def823d6a50c8f2a07aac72e9793b74b7ec15ca14f67cc1",
+  "source_files": {
+    "simulator": {
+      "path": "/home/current/work/cosmos3/work/rollout_cosmos_milk_shift_mechanism.py",
+      "sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845"
+    },
+    "collector": {
+      "path": "/home/current/work/cosmos3/work/collect_cosmos_goal_pair.py",
+      "sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945"
+    },
+    "controller": {
+      "path": "/home/current/work/cosmos3/work/rollout_cosmos_goal_pair.py",
+      "sha256": "bc18a41d97dcdf7c321ef093faf4eea076678298f269efa5cf8fc9c623157dc7"
+    }
+  },
+  "shifts_cm": {
+    "x00": 0,
+    "x15": 15,
+    "x18": 18
+  },
+  "policy_scenes": [
+    "x15",
+    "x18"
+  ],
+  "reference_only_scene": "x00",
+  "prompt": "pick up the milk and place it in the basket",
+  "no_env_step_during_collection_or_restore": true,
+  "policy_model_forwards": 0,
+  "fixed_followup": {
+    "vision_source_seeds": [
+      195,
+      198
+    ],
+    "action_source_seed": 195,
+    "arms": [
+      "native",
+      "all_allowed",
+      "early_l1_9"
+    ],
+    "fresh_q0_predictions": 12,
+    "selected_window": {
+      "steps": [
+        0,
+        14
+      ],
+      "layers": [
+        0,
+        8
+      ]
+    },
+    "no_selection_by_outcome": true
+  }
+}

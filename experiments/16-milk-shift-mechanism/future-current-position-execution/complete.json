@@ -1,0 +1,42 @@
+{
+  "state": "complete",
+  "script_sha256": "24c237af1c137d4979c358b665f1906ae02acae464140b2a371f4e98789b76f2",
+  "trial_order": [
+    "x15_V195_A195_native",
+    "x15_V198_A195_native",
+    "x18_V195_A195_native",
+    "x18_V198_A195_native",
+    "x15_V195_A195_all_allowed",
+    "x15_V198_A195_all_allowed",
+    "x18_V195_A195_all_allowed",
+    "x18_V198_A195_all_allowed",
+    "x15_V195_A195_early_l1_9",
+    "x15_V198_A195_early_l1_9",
+    "x18_V195_A195_early_l1_9",
+    "x18_V198_A195_early_l1_9"
+  ],
+  "physical_trials": 12,
+  "saved_q0_predictions": 12,
+  "native_predictions": 84,
+  "fresh_model_forwards": 2520,
+  "producer_q0_forwards_separate": 360,
+  "combined_two_stage_model_forwards": 2880,
+  "actual_later_whole_noise_pairs": 77,
+  "all12_own_cached_q0_action_execution_and_strict_window_gates_passed": true,
+  "all12_cases_executed_without_q0_selection": true,
+  "primary_prediction": "rejected",
+  "primary_all_four_only_milk": false,
+  "numerical_sham_classification_gate_passed": true,
+  "native_milk_preservation_is_not_rescue": true,
+  "functional_specificity_established": false,
+  "files_sha256": {
+    "controls.json": "b768495d3ae58eaa42d58ef347610d160efe36aeb7460aa8bc93d3b1fb001d26",
+    "primary-prediction.json": "5e0a737bd781ff19779634692bbca4b323cc379af552b8151d21b44f51876fec",
+    "provenance.json": "02a5e20f75b763b807a2747cb102c62ba5ddb66c886fc05e78bc79a720377e7f",
+    "prepared.json": "1687610f6e4a7549a41bf3dc4dfcbb94c028ce5525cf29f098a8b8c3c0a3a0e9",
+    "server/complete.json": "8d39e9a690f3497daaca2622fb0af64301b2a044bcdcf65fb326ac38e3686b9c",
+    "closed-loop/complete.json": "2d3d2178ba0dae96acafe4f61f6677804f7035a76044559a54d27f0c641591da",
+    "summary.json": "0a4d3560499ae28eac8c00945165862da106f7789bfe329c97c5f344b811a259"
+  },
+  "scope": "Twelve preregistered X+15/X+18cm physical trajectories using their own fresh saved q0 predictions, then native inference from actual feedback at later base195. X+0cm is a restore reference only. Same-scene/V native q0 records validate preparation, with no old X+12cm physical equality or native-repeat claim. All four fixed early_l1_9 cases selecting exactly milk and all four shams matching native classifications test the sole primary prediction. Native milk retained by a cut is preservation. Hard masking also redistributes attention. This is a generalization prerequisite, with no functional/cortex-like specificity, semantic identity, neural root cause, training, selection or additional window claim."
+}
