@@ -1,0 +1,167 @@
+{
+  "seed": 195,
+  "calls": 5,
+  "all_allowed_current_byte_exact": false,
+  "numerical_discrepancy_preserved_without_correction": true,
+  "metrics": {
+    "native": {
+      "current_vs_native": {
+        "byte_exact": true,
+        "delta_l2": 0.0,
+        "delta_maxabs": 0.0,
+        "changed_values": 0
+      },
+      "official_full_vs_native": {
+        "byte_exact": true,
+        "delta_l2": 0.0,
+        "delta_maxabs": 0.0,
+        "changed_values": 0
+      },
+      "merged_noncurrent_native_byte_exact": true,
+      "retained_UND_native_byte_exact": true,
+      "mask": null
+    },
+    "all_allowed": {
+      "current_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 0.029392456960423214,
+        "delta_maxabs": 0.00390625,
+        "changed_values": 35799
+      },
+      "official_full_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 0.07307052204177715,
+        "delta_maxabs": 0.00390625,
+        "changed_values": 182928
+      },
+      "merged_noncurrent_native_byte_exact": true,
+      "retained_UND_native_byte_exact": true,
+      "mask": {
+        "shape": [
+          1,
+          1,
+          266,
+          387
+        ],
+        "dtype": "torch.bool",
+        "sha256": "aa7e658176d14272c120c549ee288f9328e8aa98bbf557e1ee03f5f578280575",
+        "device": "cuda:0",
+        "forbidden_query_key_pairs": 0
+      }
+    },
+    "cut_future": {
+      "current_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 9.810686954987624,
+        "delta_maxabs": 0.380859375,
+        "changed_values": 201478
+      },
+      "official_full_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 9.810915039558216,
+        "delta_maxabs": 0.380859375,
+        "changed_values": 348607
+      },
+      "merged_noncurrent_native_byte_exact": true,
+      "retained_UND_native_byte_exact": true,
+      "mask": {
+        "shape": [
+          1,
+          1,
+          266,
+          387
+        ],
+        "dtype": "torch.bool",
+        "sha256": "3521bbb684b5686c79d4ed9580a3f131eab33ce20cfa69eb5b228d21cc637215",
+        "device": "cuda:0",
+        "forbidden_query_key_pairs": 10000
+      },
+      "current_vs_all_allowed": {
+        "byte_exact": false,
+        "delta_l2": 9.811105543367876,
+        "delta_maxabs": 0.380859375,
+        "changed_values": 201471
+      },
+      "all_allowed_numeric_floor_l2": 0.029392456960423214,
+      "signal_exceeds_ten_times_sham_floor": true,
+      "sham_floor_to_native_cut_signal_ratio": 0.002995963187417827
+    },
+    "cut_action": {
+      "current_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 0.740190446466747,
+        "delta_maxabs": 0.064453125,
+        "changed_values": 138106
+      },
+      "official_full_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 0.7432074284517949,
+        "delta_maxabs": 0.064453125,
+        "changed_values": 285235
+      },
+      "merged_noncurrent_native_byte_exact": true,
+      "retained_UND_native_byte_exact": true,
+      "mask": {
+        "shape": [
+          1,
+          1,
+          266,
+          387
+        ],
+        "dtype": "torch.bool",
+        "sha256": "3a1a4c7701b07e18e2c8a81084cceb3aac948ae10d1885f06a19e7a03f88de22",
+        "device": "cuda:0",
+        "forbidden_query_key_pairs": 800
+      },
+      "current_vs_all_allowed": {
+        "byte_exact": false,
+        "delta_l2": 0.7400376889112447,
+        "delta_maxabs": 0.064453125,
+        "changed_values": 134189
+      },
+      "all_allowed_numeric_floor_l2": 0.029392456960423214,
+      "signal_exceeds_ten_times_sham_floor": true,
+      "sham_floor_to_native_cut_signal_ratio": 0.03970931683964077
+    },
+    "cut_both": {
+      "current_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 10.315917920442812,
+        "delta_maxabs": 0.38037109375,
+        "changed_values": 201760
+      },
+      "official_full_vs_native": {
+        "byte_exact": false,
+        "delta_l2": 10.316134834616035,
+        "delta_maxabs": 0.38037109375,
+        "changed_values": 348889
+      },
+      "merged_noncurrent_native_byte_exact": true,
+      "retained_UND_native_byte_exact": true,
+      "mask": {
+        "shape": [
+          1,
+          1,
+          266,
+          387
+        ],
+        "dtype": "torch.bool",
+        "sha256": "864513a8c2f8630c7be36baad5a53e08926c3f1fd7dc7d7094d1bfe0c3b98353",
+        "device": "cuda:0",
+        "forbidden_query_key_pairs": 10800
+      },
+      "current_vs_all_allowed": {
+        "byte_exact": false,
+        "delta_l2": 10.316321296069702,
+        "delta_maxabs": 0.38037109375,
+        "changed_values": 201777
+      },
+      "all_allowed_numeric_floor_l2": 0.029392456960423214,
+      "signal_exceeds_ten_times_sham_floor": true,
+      "sham_floor_to_native_cut_signal_ratio": 0.0028492333098324553
+    }
+  },
+  "Q_K_V_bytes_and_global_CPU_CUDA_RNG_unchanged": true,
+  "merged_noncurrent_and_saved_UND_retained_byte_exact": true,
+  "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+}

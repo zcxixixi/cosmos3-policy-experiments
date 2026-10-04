@@ -44,3 +44,11 @@ checkpoints/
 
 # Actual closed-loop prediction records, not model weights.
 !experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/*/chunk_*/states.pt
+
+# Actual initial-noise and mask arithmetic arrays; no model weights.
+!experiments/16-milk-shift-mechanism/initial-noise-factors/*/states.pt
+!experiments/16-milk-shift-mechanism/initial-noise-factors/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/initial-noise-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/initial-noise-execution/closed-loop/*/chunk_*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/current-mask-dispatch-output/seed*/inputs.pt
+!experiments/16-milk-shift-mechanism/current-mask-dispatch-output/seed*/outputs.pt

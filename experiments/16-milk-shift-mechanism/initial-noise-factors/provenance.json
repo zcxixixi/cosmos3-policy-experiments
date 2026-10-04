@@ -1,0 +1,118 @@
+{
+  "script_sha256": "9081abb51200d1335bb4f84fde87fc23eec45a97ca46789f2dcf700acaf26c1e",
+  "protocol_sha256": "7d30b1ed13248131e49657f78851d58794944224f06e3627578b4ee4ac4135e5",
+  "sources_sha256": "e112afd3e0bfd473f02abb74c3f6f0294b9b2dd0c46206b972ed7f6b406c1dca",
+  "raw_source_noise": {
+    "195": [
+      {
+        "shape": [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        "dtype": "torch.float32",
+        "sha256": "3883cea79b4316ba3a5c76f65dc76b07d1ea0ca753d05d925f283439e16d7e09",
+        "stride": [
+          48000,
+          1000,
+          200,
+          20,
+          1
+        ],
+        "device": "cpu"
+      },
+      {
+        "shape": [
+          16,
+          64
+        ],
+        "dtype": "torch.float32",
+        "sha256": "5e46904c445a51541320b68f636b2d06a4a5b58f804425b0aa9c45d05d0c9424",
+        "stride": [
+          64,
+          1
+        ],
+        "device": "cpu"
+      }
+    ],
+    "198": [
+      {
+        "shape": [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        "dtype": "torch.float32",
+        "sha256": "2434416d082d99ad472b2300c50423e12fa32ac882465d2d51ede924f141ba0d",
+        "stride": [
+          48000,
+          1000,
+          200,
+          20,
+          1
+        ],
+        "device": "cpu"
+      },
+      {
+        "shape": [
+          16,
+          64
+        ],
+        "dtype": "torch.float32",
+        "sha256": "8ef9a92d0f6ed174b2fb5b4f3a25909d7546cea409efb9c1ace5c32b9cc63f30",
+        "stride": [
+          64,
+          1
+        ],
+        "device": "cpu"
+      }
+    ]
+  },
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "metrics": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75"
+  },
+  "upstream": {
+    "reader_complete_sha256": "d657c7f560eba0bf8e96f0a49d208b23b87e5dbe16b313cd8b42b96c70892913",
+    "reader_sources_sha256": "49621d580b8333147134b94d025d71ccbf7bcdd7256aa14afbf7c6685d142c8d",
+    "reader_provenance_sha256": "bc5fe13a0c94b41ffe14996cead0d8124cb8a2235bb95ca0eebcf075b6d78bc2",
+    "feedback_provenance_sha256": "5ca0b33398da8db28d45d13e28da07b9ed81f7a7245dd6d3389423607e33f7dc",
+    "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+    "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+    "threshold": {
+      "threshold_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold",
+      "wrapper_sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36",
+      "shared_scene_array_manifest_sha256": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba",
+      "shared_scene_state_sha256": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed",
+      "shared_scene_controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+      "all_three_initial_png_bytes_exact": true,
+      "documents_current_sha256": {
+        "provenance.json": "e8e5dd692ee016b3bf437c507454ae5424ac3c94848784e318fca6af510393e9",
+        "wrapper-server-complete.json": "e994fa7ad174782ecedbeda5d10a4908bfa7e9a62927d6594d510356258d6cf1",
+        "wrapper-simulator-complete.json": "6241dddd43554587eb01c092e49ab446cb8ac06ab2db502b8935553d8fc892f3",
+        "server/complete.json": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c",
+        "closed-loop/complete.json": "abfaea32659cd6c5b0052448ce7df36609f270674043363729b33db74683f496",
+        "inputs/complete.json": "28dbb173569feca418e25d67f77b925a093cdd10a1e80ecb58c32c193157a0cc",
+        "inputs/metadata.json": "998f0f2ab8420607a0f780de3fa0070365a821bd18a70af00b80bc9338ad4485",
+        "summary.json": "293d967ccdb60686bc7c58a73485d9a081d0089471f021fc76ba04480fe82914"
+      }
+    },
+    "source_hash_scope": "Source q0 hashes were first sealed at the earlier completed target-reader stage; not a historical threshold whole-case manifest."
+  },
+  "actual_scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "actual_randn_source": "/home/current/work/cosmos3/diffusers/src/diffusers/utils/torch_utils.py",
+  "actual_randn_source_sha256": "8cd8f36eec58ec95f0bda584bae9b66203766c5c0f8af568a8005552f2b37439",
+  "actual_randn_signature": "(shape: 'tuple | list', generator: \"list['torch.Generator'] | 'torch.Generator' | None\" = None, device: \"str | 'torch.device' | None\" = None, dtype: \"'torch.dtype' | None\" = None, layout: \"'torch.layout' | None\" = None)",
+  "actual_randn_function_source_sha256": "032d6aa2e3d648c3726503b9dfdd0e81f45a4b56b2afb493245dc4331a22c0c0",
+  "library_edits": false,
+  "training": false,
+  "model_component_patches": false,
+  "physics_calls": 0,
+  "scope": "Four fresh q0 predictions at the same X+12cm image/current condition, crossing the vision and action FP32 initial draws of two saved sampling realizations. Native prepare, clamping, masks, full schedule and model remain unchanged. No training, component patch, path isolation, physics, later-query experiment or claim of object intention/commitment/root cause."
+}

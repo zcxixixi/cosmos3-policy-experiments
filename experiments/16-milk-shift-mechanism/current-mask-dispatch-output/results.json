@@ -1,0 +1,553 @@
+{
+  "state": "complete",
+  "official_dispatch_calls": 15,
+  "cases": [
+    {
+      "seed": 195,
+      "dispatch_calls": 5,
+      "report": {
+        "seed": 195,
+        "calls": 5,
+        "all_allowed_current_byte_exact": false,
+        "numerical_discrepancy_preserved_without_correction": true,
+        "metrics": {
+          "native": {
+            "current_vs_native": {
+              "byte_exact": true,
+              "delta_l2": 0.0,
+              "delta_maxabs": 0.0,
+              "changed_values": 0
+            },
+            "official_full_vs_native": {
+              "byte_exact": true,
+              "delta_l2": 0.0,
+              "delta_maxabs": 0.0,
+              "changed_values": 0
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": null
+          },
+          "all_allowed": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.029392456960423214,
+              "delta_maxabs": 0.00390625,
+              "changed_values": 35799
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.07307052204177715,
+              "delta_maxabs": 0.00390625,
+              "changed_values": 182928
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "aa7e658176d14272c120c549ee288f9328e8aa98bbf557e1ee03f5f578280575",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 0
+            }
+          },
+          "cut_future": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 9.810686954987624,
+              "delta_maxabs": 0.380859375,
+              "changed_values": 201478
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 9.810915039558216,
+              "delta_maxabs": 0.380859375,
+              "changed_values": 348607
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "3521bbb684b5686c79d4ed9580a3f131eab33ce20cfa69eb5b228d21cc637215",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 10000
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 9.811105543367876,
+              "delta_maxabs": 0.380859375,
+              "changed_values": 201471
+            },
+            "all_allowed_numeric_floor_l2": 0.029392456960423214,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.002995963187417827
+          },
+          "cut_action": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.740190446466747,
+              "delta_maxabs": 0.064453125,
+              "changed_values": 138106
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.7432074284517949,
+              "delta_maxabs": 0.064453125,
+              "changed_values": 285235
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "3a1a4c7701b07e18e2c8a81084cceb3aac948ae10d1885f06a19e7a03f88de22",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 800
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 0.7400376889112447,
+              "delta_maxabs": 0.064453125,
+              "changed_values": 134189
+            },
+            "all_allowed_numeric_floor_l2": 0.029392456960423214,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.03970931683964077
+          },
+          "cut_both": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 10.315917920442812,
+              "delta_maxabs": 0.38037109375,
+              "changed_values": 201760
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 10.316134834616035,
+              "delta_maxabs": 0.38037109375,
+              "changed_values": 348889
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "864513a8c2f8630c7be36baad5a53e08926c3f1fd7dc7d7094d1bfe0c3b98353",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 10800
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 10.316321296069702,
+              "delta_maxabs": 0.38037109375,
+              "changed_values": 201777
+            },
+            "all_allowed_numeric_floor_l2": 0.029392456960423214,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.0028492333098324553
+          }
+        },
+        "Q_K_V_bytes_and_global_CPU_CUDA_RNG_unchanged": true,
+        "merged_noncurrent_and_saved_UND_retained_byte_exact": true,
+        "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+      },
+      "files_sha256": {
+        "inputs.pt": "a80a99f5789e6afe2d4d31af7f27a6cbceb0c8ada75240835eb55241ae17b9d7",
+        "outputs.pt": "f50b221d9d07dc60360d754db31efd98859b337beff910370cd65f92f2c7c594",
+        "report.json": "2bb25dea244d008e0b3c8001ac7f09ed00302202372fc0e11624256a122beaed",
+        "native.json": "b3abca6e00c76548b3b9cfb17f36c7d192e692e4b9f5bcb6f85a09a73bfc45f5",
+        "all_allowed.json": "2634d1c34c893269f98035270f94b713501c1853cf6fcb92a14e612bd73fbfe2",
+        "cut_future.json": "d27c5b6ea5a843b362875cf3d0de2ac2c20b3288be49d4e83f03d9f3de5127dc",
+        "cut_action.json": "2b5cc82ca8add7329a2e12ee829fbd8cf9949feb19a5879d44874051ec02b9cf",
+        "cut_both.json": "11ff5f15f7c5253379940cb037132c4b848d87be503ea677c9c9969255d5122d"
+      }
+    },
+    {
+      "seed": 196,
+      "dispatch_calls": 5,
+      "report": {
+        "seed": 196,
+        "calls": 5,
+        "all_allowed_current_byte_exact": false,
+        "numerical_discrepancy_preserved_without_correction": true,
+        "metrics": {
+          "native": {
+            "current_vs_native": {
+              "byte_exact": true,
+              "delta_l2": 0.0,
+              "delta_maxabs": 0.0,
+              "changed_values": 0
+            },
+            "official_full_vs_native": {
+              "byte_exact": true,
+              "delta_l2": 0.0,
+              "delta_maxabs": 0.0,
+              "changed_values": 0
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": null
+          },
+          "all_allowed": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.030080287797557777,
+              "delta_maxabs": 0.00390625,
+              "changed_values": 36130
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.07180857516269779,
+              "delta_maxabs": 0.00390625,
+              "changed_values": 183191
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "aa7e658176d14272c120c549ee288f9328e8aa98bbf557e1ee03f5f578280575",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 0
+            }
+          },
+          "cut_future": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 9.992730575045199,
+              "delta_maxabs": 0.345703125,
+              "changed_values": 201093
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 9.992943309815985,
+              "delta_maxabs": 0.345703125,
+              "changed_values": 348154
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "3521bbb684b5686c79d4ed9580a3f131eab33ce20cfa69eb5b228d21cc637215",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 10000
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 9.992827028895139,
+              "delta_maxabs": 0.345703125,
+              "changed_values": 201100
+            },
+            "all_allowed_numeric_floor_l2": 0.030080287797557777,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.0030102170344387296
+          },
+          "cut_action": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.7806098975292111,
+              "delta_maxabs": 0.06640625,
+              "changed_values": 137592
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.7833284495494073,
+              "delta_maxabs": 0.06640625,
+              "changed_values": 284653
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "3a1a4c7701b07e18e2c8a81084cceb3aac948ae10d1885f06a19e7a03f88de22",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 800
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 0.7805149636337458,
+              "delta_maxabs": 0.06640625,
+              "changed_values": 134023
+            },
+            "all_allowed_numeric_floor_l2": 0.030080287797557777,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.03853434076709506
+          },
+          "cut_both": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 10.563846550115844,
+              "delta_maxabs": 0.349609375,
+              "changed_values": 201496
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 10.564047783976902,
+              "delta_maxabs": 0.349609375,
+              "changed_values": 348557
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "864513a8c2f8630c7be36baad5a53e08926c3f1fd7dc7d7094d1bfe0c3b98353",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 10800
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 10.563985758324273,
+              "delta_maxabs": 0.349609375,
+              "changed_values": 201510
+            },
+            "all_allowed_numeric_floor_l2": 0.030080287797557777,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.0028474748904060818
+          }
+        },
+        "Q_K_V_bytes_and_global_CPU_CUDA_RNG_unchanged": true,
+        "merged_noncurrent_and_saved_UND_retained_byte_exact": true,
+        "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+      },
+      "files_sha256": {
+        "inputs.pt": "554b92d9fe60c4b2c892b9657ec43469bd9bc3cd21b87c757c1a48350e39d73f",
+        "outputs.pt": "22d1917105c16cfe35573bda74ad590de82e33df8381efc825fc89d6b2a96666",
+        "report.json": "fb264f4377064cfc7c090a5fc0fa04067be22b063a3f5908b3db47da5db138d9",
+        "native.json": "b3abca6e00c76548b3b9cfb17f36c7d192e692e4b9f5bcb6f85a09a73bfc45f5",
+        "all_allowed.json": "be317b38bde74dd2676c79e9660d9add2f8387db34b7bca9b7349646f1836929",
+        "cut_future.json": "1c2ffa8cc97c4ec6c9d4c02005c85ea1d9c034c4892222a3b3f6c77d8b259383",
+        "cut_action.json": "0f27d3e171543cfe79f61fcdce35d65989b0b0adf610c85a1ae98831c4f4d032",
+        "cut_both.json": "43a04064ae6815caf2d0268c2b29168e1b2f5fdec0c1650b8f94d92a29d6aa39"
+      }
+    },
+    {
+      "seed": 198,
+      "dispatch_calls": 5,
+      "report": {
+        "seed": 198,
+        "calls": 5,
+        "all_allowed_current_byte_exact": false,
+        "numerical_discrepancy_preserved_without_correction": true,
+        "metrics": {
+          "native": {
+            "current_vs_native": {
+              "byte_exact": true,
+              "delta_l2": 0.0,
+              "delta_maxabs": 0.0,
+              "changed_values": 0
+            },
+            "official_full_vs_native": {
+              "byte_exact": true,
+              "delta_l2": 0.0,
+              "delta_maxabs": 0.0,
+              "changed_values": 0
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": null
+          },
+          "all_allowed": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.029657497258790872,
+              "delta_maxabs": 0.001953125,
+              "changed_values": 35998
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.0727940655534417,
+              "delta_maxabs": 0.00390625,
+              "changed_values": 182948
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "aa7e658176d14272c120c549ee288f9328e8aa98bbf557e1ee03f5f578280575",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 0
+            }
+          },
+          "cut_future": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 9.726121441791069,
+              "delta_maxabs": 0.3642578125,
+              "changed_values": 201142
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 9.726348631902113,
+              "delta_maxabs": 0.3642578125,
+              "changed_values": 348092
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "3521bbb684b5686c79d4ed9580a3f131eab33ce20cfa69eb5b228d21cc637215",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 10000
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 9.725921808869774,
+              "delta_maxabs": 0.3642578125,
+              "changed_values": 201136
+            },
+            "all_allowed_numeric_floor_l2": 0.029657497258790872,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.0030492624872396653
+          },
+          "cut_action": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.7343658842064505,
+              "delta_maxabs": 0.0625,
+              "changed_values": 137325
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 0.7373687413516155,
+              "delta_maxabs": 0.0625,
+              "changed_values": 284275
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "3a1a4c7701b07e18e2c8a81084cceb3aac948ae10d1885f06a19e7a03f88de22",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 800
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 0.7341656157796433,
+              "delta_maxabs": 0.0625,
+              "changed_values": 133740
+            },
+            "all_allowed_numeric_floor_l2": 0.029657497258790872,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.04038517841939037
+          },
+          "cut_both": {
+            "current_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 10.199239169979917,
+              "delta_maxabs": 0.3642578125,
+              "changed_values": 201510
+            },
+            "official_full_vs_native": {
+              "byte_exact": false,
+              "delta_l2": 10.199455821527376,
+              "delta_maxabs": 0.3642578125,
+              "changed_values": 348460
+            },
+            "merged_noncurrent_native_byte_exact": true,
+            "retained_UND_native_byte_exact": true,
+            "mask": {
+              "shape": [
+                1,
+                1,
+                266,
+                387
+              ],
+              "dtype": "torch.bool",
+              "sha256": "864513a8c2f8630c7be36baad5a53e08926c3f1fd7dc7d7094d1bfe0c3b98353",
+              "device": "cuda:0",
+              "forbidden_query_key_pairs": 10800
+            },
+            "current_vs_all_allowed": {
+              "byte_exact": false,
+              "delta_l2": 10.199041867859387,
+              "delta_maxabs": 0.3642578125,
+              "changed_values": 201498
+            },
+            "all_allowed_numeric_floor_l2": 0.029657497258790872,
+            "signal_exceeds_ten_times_sham_floor": true,
+            "sham_floor_to_native_cut_signal_ratio": 0.0029078146677924475
+          }
+        },
+        "Q_K_V_bytes_and_global_CPU_CUDA_RNG_unchanged": true,
+        "merged_noncurrent_and_saved_UND_retained_byte_exact": true,
+        "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+      },
+      "files_sha256": {
+        "inputs.pt": "88c97ade41e5e0a619559becb9a9e1fdde655d7b4ed0ee079ede149399c89652",
+        "outputs.pt": "dd5703f44ba59bea7748c8d2815741eb4a2f4be7ca8b5e1ae46ca7896fb46448",
+        "report.json": "e14e918e1b14005ecbef2a20be391ee839d1e6c4a2be8f6b7bc20c415cb0580e",
+        "native.json": "b3abca6e00c76548b3b9cfb17f36c7d192e692e4b9f5bcb6f85a09a73bfc45f5",
+        "all_allowed.json": "f6d83f87ccb07156e4a988ff30871301db57b46a6488fa1eb82e778529e60abc",
+        "cut_future.json": "532573714134b470ed31e668a3cc341ae243e749a5ab76fa4926e4d7307269e4",
+        "cut_action.json": "d377d5606751bf3e815b05ab34ced6b17f03cd385ac2de06c21bf05d97c12554",
+        "cut_both.json": "2ea0f91efd648d3a09317b1aab75658cd5cadff510c308f16b53821a895a6cc3"
+      }
+    }
+  ],
+  "all_native_full_GEN_replays_byte_exact": true,
+  "model_forwards": 0,
+  "physics_calls": 0,
+  "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+}

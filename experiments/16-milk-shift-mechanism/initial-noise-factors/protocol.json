@@ -1,0 +1,49 @@
+{
+  "plan": {
+    "V195_A195": {
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "native_whole_record_control": true
+    },
+    "V198_A198": {
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 198,
+      "runtime_rng_seed": 198,
+      "native_whole_record_control": true
+    },
+    "V198_A195": {
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "native_whole_record_control": false
+    },
+    "V195_A198": {
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 198,
+      "runtime_rng_seed": 198,
+      "native_whole_record_control": false
+    }
+  },
+  "trial_order": [
+    "V195_A195",
+    "V198_A198",
+    "V198_A195",
+    "V195_A198"
+  ],
+  "scene": "x12",
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+  "image_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "prompt": "pick up the milk and place it in the basket",
+  "q0_predictions": 4,
+  "forwards_per_prediction": 30,
+  "actual_model_forwards": 120,
+  "physics_calls": 0,
+  "component_intervention_count": 0,
+  "random_draw_rule": "Original full draw consumed before whole saved FP32 source replacement; invocation seed equals action source.",
+  "native_gate": "Both same-source ENTIRE NormalRuntime records byte-exact before either mixed cell.",
+  "no_latent_path_patch": true,
+  "no_training": true,
+  "no_later_query_inference": true,
+  "scope": "Four fresh q0 predictions at the same X+12cm image/current condition, crossing the vision and action FP32 initial draws of two saved sampling realizations. Native prepare, clamping, masks, full schedule and model remain unchanged. No training, component patch, path isolation, physics, later-query experiment or claim of object intention/commitment/root cause."
+}

@@ -10,25 +10,30 @@
 <body><main>
 <section id="latest">
 <p class="muted">2026-10-04 · 最新内部实验 · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">代码、真实数组与记录</a></p>
-<h1>这四次测试，抓谁仍跟着第一轮动作走。</h1>
+<h1>只换未来生成的随机起点，抓取对象就变了。</h1>
 <p class="goal"><b>只查一个问题：</b>指令一直是“抓牛奶，放进篮子”。牛奶移动6厘米时能抓，移动15厘米后却抓奶酪盒。我们要查清网络里的哪段计算导致选错，并验证改它能否救回抓取。</p>
-<p><b>最新实验：</b>把两条运行的第一轮16步动作，与两条后续随机采样序列交叉。第一轮用抓错运行的动作，两种后续序列都抓奶酪盒；第一轮用抓对运行的动作，两种后续序列都抓牛奶。</p>
-<div class="status"><b>当前结论：</b>在这一个12厘米初态、两条后续序列里，第一轮造成的状态差异很关键。<b>这还不能证明第一轮已经选定目标，也没找到网络根因。</b>另完成24次内部单元干预、真实去噪重算与90次原生网络复现，见下方。</div>
-<p class="muted">最新4条是真正把动作交给 MuJoCo 的128步闭环执行；不是模型生成的视频，也不是重新训练后的结果。</p>
+<p><b>最新实验：</b>在同一个12厘米初态，拆开模型第一轮真正使用的两份随机数组：一份用来生成未来画面，一份用来生成动作。各取A、B两份，交叉成四组；之后都用同一组后续采样。</p>
+<div class="status"><b>已经测到：</b>这四次实际执行中，抓谁跟着<b>未来画面一路的随机起点</b>变；更换动作一路的起点，没有改变这四次抓取的对象。<b>当前照片和指令完全相同。</b>这定位了一路有影响的输入，还没找到网络里的具体部位，也没证明模型“把想象当成现实”。</div>
+<p class="muted">四条都是把动作交给 MuJoCo 的128步闭环执行；不是模型生成的视频。只统计抓起了谁，没有把它写成最终放篮成功。</p>
 </section>
 <section>
-<h2>1. 第一轮留下的差异，能改变后面抓谁吗？</h2>
-<p>同一初态、同一句“抓牛奶”。A原生运行抓奶酪盒，B原生运行抓牛奶。我们只重放各自已经保存的第一轮动作；后7轮都重新拍当前画面、正常推理，使用预先指定的采样序列。</p>
-<table><thead><tr><th>首轮16步动作</th><th>之后用A的采样序列</th><th>之后用B的采样序列</th></tr></thead><tbody><tr><td>A的动作（seed195）</td><td><b>奶酪盒</b>，第68～72步</td><td><b>奶酪盒</b>，第68～72步</td></tr><tr><td>B的动作（seed198）</td><td><b>牛奶</b>，第65～69步</td><td><b>牛奶</b>，第64～68步</td></tr></tbody></table>
-<p><b>说明：</b>第一轮造成的手臂状态和下一帧画面差异，会影响这两种后续采样下的最终抓取。这里换的是整轮真实动作，<b>还不能确定是哪个动作分量、相机信息或内部通路起作用</b>。只有两条采样序列，不是“之后怎样随机都没用”的证明。</p>
-<div class="video-picker" role="group" aria-label="选择一条交叉实验录像"><button type="button" data-video="crossAA" aria-pressed="false">A首轮＋A后续：抓错</button><button type="button" data-video="crossBB" aria-pressed="false">B首轮＋B后续：抓牛奶</button><button type="button" data-video="crossAB" aria-pressed="false">A首轮＋B后续：仍抓错</button><button type="button" data-video="crossBA" aria-pressed="true">B首轮＋A后续：抓牛奶</button></div>
-<video id="execution" controls preload="none" playsinline src="media/milk-noise-cross-q0198_later195.mp4" aria-label="MuJoCo交叉实验实际执行录像"></video>
-<p id="video-caption" class="muted" aria-live="polite">当前：第一轮换用B的真实动作，之后按A的采样序列正常看新画面推理；抓起牛奶，第65～69步连续满足抓起条件。</p>
-<details><summary>切换此前的实际录像</summary><div class="video-picker" role="group" aria-label="选择一条实际执行录像"><button type="button" data-video="persistent" aria-pressed="false">此前：第4层连续改9次</button><button type="button" data-video="fifteen" aria-pressed="false">15厘米：正常抓错</button><button type="button" data-video="zero" aria-pressed="false">原位：抓牛奶</button><button type="button" data-video="six" aria-pressed="false">6厘米：抓牛奶</button><button type="button" data-video="nine" aria-pressed="false">9厘米：抓牛奶</button><button type="button" data-video="twelveCheese" aria-pressed="false">12厘米：抓错</button><button type="button" data-video="twelveMilk" aria-pressed="false">12厘米：抓对</button><button type="button" data-video="pulse" aria-pressed="false">第18层换数后</button></div>
-</details>
-<noscript><p><a href="media/milk-noise-cross-native195.mp4">A＋A</a> · <a href="media/milk-noise-cross-native198.mp4">B＋B</a> · <a href="media/milk-noise-cross-q0195_later198.mp4">A＋B</a> · <a href="media/milk-noise-cross-q0198_later195.mp4">B＋A</a></p></noscript>
-<details><summary>怎样确认四组比较是公平的？</summary><p>先重跑两个原生对照，129份仿真状态、128步动作及8轮画面都逐字节等旧结果，再跑两组交叉。两组交叉进入第2轮前，前17份状态、16步动作、下一张画面和控制器数组都精确等各自首轮来源。28次新推理共840次网络计算；4份首轮直接读取保存动作，没有隐藏重算。重复采样的16组原始噪声全部核验相同。</p><p>后续画面会因手臂运动不同而不同；同一采样序列不代表同一网络输入。表里的“抓起”仍要求双侧夹爪接触、抬高2厘米并持续5份记录，不代表最后放入篮子成功。</p><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/query-noise-cross">完整4条真实视频、轨迹、噪声、动作与核验</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/code/run_cosmos_milk_query_noise_cross.py">实际执行代码</a></p></details>
+<h2>1. 我们到底改了什么，机械臂又抓了谁？</h2>
+<p>当前照片、文字、机器人与物体初态都不改。A和B只是两份真实随机起点（seed195／198），<b>没有告诉模型“抓奶酪”或“抓牛奶”</b>。模型从这些数组开始，逐步生成未来画面和动作。</p>
+<table><thead><tr><th>未来生成的起点</th><th>动作起点A</th><th>动作起点B</th></tr></thead><tbody><tr><td>A</td><td><b>抓奶酪盒</b>，第68～72步</td><td><b>抓奶酪盒</b>，第70～74步</td></tr><tr><td>B</td><td><b>抓牛奶</b>，第64～68步</td><td><b>抓牛奶</b>，第65～69步</td></tr></tbody></table>
+<p><b>这张表支持什么？</b>在这一个初态、这两份起点里，未来生成一路会影响最初动作，并影响后续实际抓取。它不是单凭照片就稳定选中牛奶。<b>还不能说它记住了训练答案，也不能说动作随机性在其他条件下一定没用。</b></p>
+<div class="video-picker" role="group" aria-label="选择一条未来与动作起点交叉实验录像"><button type="button" data-video="factorAA" aria-pressed="false">未来A＋动作A：奶酪</button><button type="button" data-video="factorAB" aria-pressed="false">未来A＋动作B：奶酪</button><button type="button" data-video="factorBA" aria-pressed="true">未来B＋动作A：牛奶</button><button type="button" data-video="factorBB" aria-pressed="false">未来B＋动作B：牛奶</button></div>
+<video id="execution" controls preload="none" playsinline src="media/milk-initial-noise-v198-a195.mp4" aria-label="MuJoCo未来与动作起点交叉实验实际执行录像"></video>
+<p id="video-caption" class="muted" aria-live="polite">当前：未来生成起点B、动作起点A，之后统一用A的后续采样；抓起牛奶，第64～68步连续满足抓起条件。</p>
+<details><summary>切换此前的实际录像</summary><div class="video-picker" role="group" aria-label="选择一条此前实际执行录像"><button type="button" data-video="crossAA" aria-pressed="false">旧实验：A首轮＋A后续</button><button type="button" data-video="crossBB" aria-pressed="false">旧实验：B首轮＋B后续</button><button type="button" data-video="crossAB" aria-pressed="false">旧实验：A首轮＋B后续</button><button type="button" data-video="crossBA" aria-pressed="false">旧实验：B首轮＋A后续</button><button type="button" data-video="persistent" aria-pressed="false">此前：第4层连续改9次</button><button type="button" data-video="fifteen" aria-pressed="false">15厘米：正常抓错</button><button type="button" data-video="zero" aria-pressed="false">原位：抓牛奶</button><button type="button" data-video="six" aria-pressed="false">6厘米：抓牛奶</button><button type="button" data-video="nine" aria-pressed="false">9厘米：抓牛奶</button><button type="button" data-video="twelveCheese" aria-pressed="false">12厘米：抓错</button><button type="button" data-video="twelveMilk" aria-pressed="false">12厘米：抓对</button><button type="button" data-video="pulse" aria-pressed="false">第18层换数后</button></div></details>
+<noscript><p><a href="media/milk-noise-cross-native195.mp4">未来A＋动作A</a> · <a href="media/milk-initial-noise-v195-a198.mp4">未来A＋动作B</a> · <a href="media/milk-initial-noise-v198-a195.mp4">未来B＋动作A</a> · <a href="media/milk-noise-cross-q0198_later195.mp4">未来B＋动作B</a></p></noscript>
+<details><summary>怎样确认不是输入、动作转换或抓取统计搞错？</summary><p>两条原生对照先精确复现全部129份仿真状态、128步动作与8轮输入画面，再执行两条混合起点。第一轮实际返回的两份随机数组、模型收到的当前帧、时间表和动作补齐部分都核过。其后每轮重新拍各自当前画面，使用同一组种子196～202；21组后续原始噪声逐字节相等，画面会因运动不同而不同。</p><p>另一次只读复核重算了全部512步动作的还原、6D旋转到7维控制的转换与裁剪，均精确吻合。抓起要求每份记录同时有双侧指垫接触、相对初态抬高超过2厘米，连续5份记录；表格标出整个窗口，不是单帧目测。没有其他物体满足这个条件。</p><p>本批4次新首轮预测共120次网络计算，后28次预测共840次，合计960次；四条真实物理执行。A＋A、B＋B的录像和旧文件字节相同，网页复用原视频文件。</p><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/initial-noise-factors">四份首轮真实数组与输入核验</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/initial-noise-execution">四条视频、全部动作、轨迹与结果</a></p></details>
+<details><summary>此前一步：第一轮动作与后续噪声交叉</summary><p>先把抓错／抓对运行的首轮16步动作分别接上两种后续采样。四组抓取都跟随首轮来源：source195两次抓奶酪盒，source198两次抓牛奶。这才进一步拆首轮里未来生成与动作生成的两份随机数组，得到上面的新结果。首轮结束还没接触物体，不能把终局标签倒推为首轮已经选定目标。</p><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/query-noise-cross">此前四条执行与完整核验</a></p></details>
 </section>
+<section>
+<h2>2. 猜想哪些有依据，哪些没有过关？</h2>
+<table><thead><tr><th>我们的猜想</th><th>实际怎么试</th><th>目前怎么判断</th></tr></thead><tbody><tr><td>某块网络把动作拉回熟悉抓法</td><td>拆第4层MLP，连续9次改它，再让机械臂执行</td><td>四条仍抓奶酪。反向更新也符合普通去噪；<b>尚不能证明记忆机制</b></td></tr><tr><td>少数单元或门控路主导这次响应</td><td>只改128个内部单元；分别改两条分支</td><td>两项预定预测<b>都没成立</b>，不能叫牛奶单元</td></tr><tr><td>未来生成一路影响抓取选择</td><td>只交换两份未来／动作初始数组，四条真实执行</td><td>这四次<b>支持</b>；具体网络通路尚未定位</td></tr><tr><td>未来表示反过来影响当前画面的处理，或直接影响动作</td><td>准备分别切断这两条attention连接</td><td><b>下一项待检验猜想</b>，没有动作结果</td></tr></tbody></table>
+</section>
+<details><summary>此前的真实去噪重算：为什么“回拉”不能直接叫背答案</summary>
 <section>
 <h2>2. 为什么那个“反方向更新”不能当成背答案？</h2>
 <p>模型收到的是<b>还带噪声的中间动作</b>，输出的是<b>去噪方向</b>。求解器再把两者结合，得到本轮对干净动作的估计。因此我们把输入推开一点后，网络反着修正，本来就可能是正常计算。</p>
@@ -42,6 +47,7 @@
 <p><b>现在的结论：</b>那次“反着修正”大部分符合去噪计算，不能拿它当作熟悉动作记忆的证据。它没有证明所有变化都消失，也没有证明模型没记住训练数据。这里算的是<b>本轮干净动作的估计</b>，还不是最终执行动作。</p>
 <details><summary>展开完整数组重算图和数值边界</summary><figure><img src="media/milk-flow-response.png" alt="真实Flow数组计算：沿输入方向剩余差异与全部方向的差异长度，分开保存的FP32状态和BF16输入约定"><figcaption>橙色PR实际FP32行：沿原方向−2.11%，总长度26.76%。蓝色三组无关输入是BF16模型输入约定，不能冒充保存过的求解器轨迹。右侧绿色和粉色点来自此前真实单元替换输出，不是新推理或抓取结果。</figcaption></figure><p>本项是对既有数据的CPU事后分析，新增模型计算0次、仿真0次。真实源码的padding掩码、前10个有效输出与原始XYZ逐字节核过，原始头没有被掩码操作改写。FP32状态和BF16模型输入各有自己的分母；改变未来视觉的原生P也另外保留，没有混用。</p><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/flow-response-analysis">真实数组、重算指标与图</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/code/analyze_cosmos_milk_flow_response.py">实际CPU分析代码</a></p></details>
 </section>
+</details>
 <details><summary>第4层内部实验：实际换过哪些数？两个预测为何被推翻？</summary>
 <section>
 <h2>这次究竟改了网络里的什么？</h2>
@@ -80,14 +86,22 @@
 </section>
 </details>
 <section>
-<h2>3. 继续查首轮：两种噪声，谁改变了动作？</h2>
-<p>12厘米处同一幅画面、同一句“抓牛奶”，三条完整执行中两次抓奶酪盒，一次抓牛奶。这给了我们一个更直接的对照：<b>文本内容一样，生成动作的部分是否换了读取方式？</b></p>
-<p><b>已重放三次首轮推理，共90次网络计算：</b>在第18层、最后一次去噪，保存注意力真正收到的 Q、K、V、输出和原生模型返回。三份运行的文本侧 K、V 完全一致；完整推理记录也逐字节复现旧结果，额外三次官方注意力计算精确复现原输出。<b>这只确认了实际数组与计算接口，没有证明模型理解了牛奶，更没有找到抓错原因。</b></p>
-<details><summary>文字侧的121个位置，装的究竟是什么？</summary><p>真实输入不是只传一句话，而是把这句话放进包含相机说明、时间、fps、分辨率等信息的 JSON，再加聊天边界标记。真正指令是其中10个 token；“milk”在全局第48号位置。其他位置主要是格式和元数据，不是121个指令词。这条文字分支没有当前图像的 embedding，图像 latent 另走生成分支。</p><p>我们用实际离线 tokenizer 核过：把 milk 换成 butter，仍是121个位置，而且只有第48号 token ID 改变。这只说明可以做不改变长度的目标词对照；没有证明输出会按目标词抓取。</p></details>
-<p>重新检查真实轨迹还发现：第一轮结束时，三条都没接触物体；明显分流发生在第二轮。每轮的随机噪声都不同，不能把最终抓牛奶的运行，其第一轮 Q 直接叫“正确读法”。</p>
-<p><b>上面的四组交叉已经完成，结果都跟着首轮动作来源。</b>接下来把首轮实际使用的两份初始噪声拆开：一份用于预测画面，一份用于动作。分别交换它们，检查哪一路改变了最初动作，再沿这条网络通路做局部干预。<b>这项噪声拆分尚未执行，当前没有它的结论。</b></p>
-<p class="muted">方法参考 <a href="https://arxiv.org/html/2509.00328v1">VLA 中间单元干预</a> 和 <a href="https://arxiv.org/html/2404.15255v1">局部路径干预的解释与对照</a>。脑科学给的是“短暂改活动、检验后续行为”的实验逻辑，不提供模型中的牛奶区域标签。</p>
-<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/mlp-units">原18次数组与失败记录</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/mlp-generic-inputs">后6次、冻结输入、完整核验与汇总</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/README.md">实验说明与代码</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/target-reader-inputs">新三份真实注意力输入与输出</a></p>
+<h2>3. 下一步：只查未来信息怎么影响动作</h2>
+<p>查真实源码发现：这两路生成<b>在同一个网络里互相读信息</b>。虽然当前照片始终不改，它经过网络后的内部数组仍能读到未来生成的数组；动作也能直接读未来数组。因此要区分下面两条连接。</p>
+<figure><svg viewBox="0 0 840 230" role="img" aria-labelledby="path-title path-desc" style="display:block;width:100%;height:auto;background:#f6f9fc;border:1px solid #dae4ef;border-radius:8px">
+<title id="path-title">待检验的两条未来信息通路</title><desc id="path-desc">真实attention允许未来生成的200个位置影响当前画面的50个位置，再影响16个动作位置；也允许未来直接影响动作。将分别切断两条入口，保留文字和真实输入。图示是代码通路，不是已找到的错误部位。</desc>
+<defs><marker id="path-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#b97920"/></marker></defs>
+<g fill="#fff" stroke="#9bb2c9"><rect x="30" y="55" width="200" height="80" rx="8"/><rect x="320" y="55" width="200" height="80" rx="8"/><rect x="610" y="55" width="200" height="80" rx="8"/></g>
+<g fill="#253143" text-anchor="middle" font-family="system-ui,Noto Sans CJK SC,sans-serif" font-size="18"><text x="130" y="86">未来生成的数组</text><text x="130" y="113" font-size="15">200个位置</text><text x="420" y="86">当前画面的内部数组</text><text x="420" y="113" font-size="15">50个位置</text><text x="710" y="86">动作内部数组</text><text x="710" y="113" font-size="15">16个位置</text></g>
+<g fill="none" stroke="#b97920" stroke-width="2.5" marker-end="url(#path-arrow)"><path d="M230 95 H310"/><path d="M520 95 H600"/><path d="M130 135 V185 H710 V144"/></g>
+<g fill="#946019" text-anchor="middle" font-family="system-ui,Noto Sans CJK SC,sans-serif" font-size="15"><text x="275" y="43">待切连接①</text><text x="420" y="174">待切连接②：未来直接影响动作</text></g>
+<text x="420" y="217" text-anchor="middle" fill="#5d6b7e" font-family="system-ui,Noto Sans CJK SC,sans-serif" font-size="14">图示代码允许的信息流；文字、其他连接与原照片保持。</text>
+</svg><figcaption>当前照片没有被换成想象的照片。要查的是：网络内部处理当前照片时，有没有受到未来生成这一路的影响。</figcaption></figure>
+<p><b>具体检验：</b>固定动作起点A，只切①、只切②、两条一起切，先与各自全允许对照比较，再核原生结果。若只切某条就改变实际抓取，这条连接才有因果依据；如果两条一起切后都抓奶酪，只说明正确抓牛奶也用到了未来信息，不能硬说它造成错误。</p>
+<p><b>防止实验自己制造假结果：</b>额外加“用了同样的屏蔽接口，但不禁止任何连接”的对照。这个对照必须保留原来抓谁；若它自己就改变抓取，就停下核对计算差异。本组10次首轮预测与后续执行尚未完成，不能当成结果。</p>
+<details><summary>已做的接口核验：只有注意力算术，没有执行动作</summary><p>用第18层、最后一次去噪的真实Q／K／V，复算15次官方attention。三份原生输出都精确复现；但即使mask不屏蔽任何连接，当前图像行的输出也出现约0.029～0.030的L2差异。只切未来到当前的连接，差异约9.7～10.0；这些数是数组距离，没有米或物体身份单位。它确认了方法会改变内部计算，也提醒我们必须加接口对照；不能推断最终动作或抓谁。新增模型计算0次，物理执行0次。</p><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/current-mask-dispatch-output">真实输入、输出、mask与完整数值</a></p></details>
+<p class="muted">脑科学里的“预测可能反过来影响感知”给了这个猜想灵感，参考 <a href="https://www.nature.com/articles/nn0199_79">Rao与Ballard（1999）</a>；并不等于Cosmos采用了那套机制。局部路径实验的对照与解释限制参考 <a href="https://arxiv.org/html/2404.15255v1">activation patching 方法讨论</a>。</p>
+<details><summary>此前真实文字／注意力输入核验</summary><p>90次原生网络复现、3次额外官方attention重放均通过。当前指令放在含相机、fps、分辨率等元数据的JSON和聊天边界中，共121个文本侧token位置，含JSON、聊天和vision_start边界；实际指令10个token，milk在第48号。三份不同随机起点的文本侧K/V字节一致。milk换butter时长度不变、只变一个token。这确认了实际接口，不证明语义理解或抓取选择。</p><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/target-reader-inputs">真实原始输入与输出</a></p></details>
 </section>
 <details><summary>已有抓错录像和此前定位：需要时展开</summary>
 <section>
@@ -157,7 +171,7 @@
 <script>
 const player=document.getElementById('execution');
 const caption=document.getElementById('video-caption');
-const clips={crossAA:{src:'media/milk-noise-cross-native195.mp4',label:'A首轮＋A后续，抓奶酪盒，第68～72步连续满足抓起条件'},crossBB:{src:'media/milk-noise-cross-native198.mp4',label:'B首轮＋B后续，抓牛奶，第64～68步连续满足抓起条件'},crossAB:{src:'media/milk-noise-cross-q0195_later198.mp4',label:'A首轮＋B后续，仍抓奶酪盒，第68～72步连续满足抓起条件'},crossBA:{src:'media/milk-noise-cross-q0198_later195.mp4',label:'B首轮＋A后续，抓牛奶，第65～69步连续满足抓起条件'},fifteen:{src:'media/milk-shift-fifteen.mp4',label:'牛奶移动15厘米，模型抓奶酪盒'},zero:{src:'media/milk-shift-zero.mp4',label:'牛奶在原位，模型抓牛奶'},six:{src:'media/milk-shift-six.mp4',label:'牛奶移动6厘米，模型抓牛奶'},nine:{src:'media/milk-shift-nine.mp4',label:'牛奶移动9厘米，模型抓牛奶（种子198）'},twelveCheese:{src:'media/milk-shift-twelve-cheese.mp4',label:'牛奶移动12厘米，模型抓奶酪盒（种子195）'},twelveMilk:{src:'media/milk-shift-twelve-milk.mp4',label:'同一个12厘米初态，模型抓牛奶（种子198）'},pulse:{src:'media/milk-shift-pulse-layer18.mp4',label:'第18层attention只换一次数字，模型仍抓奶酪盒'},persistent:{src:'media/milk-mlp-persistent.mp4',label:'先推一下，再连续换回第4层MLP九次；仍抓奶酪盒（种子198）'}};
+const clips={factorAA:{src:'media/milk-noise-cross-native195.mp4',label:'未来起点A＋动作起点A；后续统一A，抓奶酪盒，第68～72步连续满足抓起条件'},factorAB:{src:'media/milk-initial-noise-v195-a198.mp4',label:'未来起点A＋动作起点B；后续统一A，抓奶酪盒，第70～74步连续满足抓起条件'},factorBA:{src:'media/milk-initial-noise-v198-a195.mp4',label:'未来起点B＋动作起点A；后续统一A，抓牛奶，第64～68步连续满足抓起条件'},factorBB:{src:'media/milk-noise-cross-q0198_later195.mp4',label:'未来起点B＋动作起点B；后续统一A，抓牛奶，第65～69步连续满足抓起条件'},crossAA:{src:'media/milk-noise-cross-native195.mp4',label:'A首轮＋A后续，抓奶酪盒，第68～72步连续满足抓起条件'},crossBB:{src:'media/milk-noise-cross-native198.mp4',label:'B首轮＋B后续，抓牛奶，第64～68步连续满足抓起条件'},crossAB:{src:'media/milk-noise-cross-q0195_later198.mp4',label:'A首轮＋B后续，仍抓奶酪盒，第68～72步连续满足抓起条件'},crossBA:{src:'media/milk-noise-cross-q0198_later195.mp4',label:'B首轮＋A后续，抓牛奶，第65～69步连续满足抓起条件'},fifteen:{src:'media/milk-shift-fifteen.mp4',label:'牛奶移动15厘米，模型抓奶酪盒'},zero:{src:'media/milk-shift-zero.mp4',label:'牛奶在原位，模型抓牛奶'},six:{src:'media/milk-shift-six.mp4',label:'牛奶移动6厘米，模型抓牛奶'},nine:{src:'media/milk-shift-nine.mp4',label:'牛奶移动9厘米，模型抓牛奶（种子198）'},twelveCheese:{src:'media/milk-shift-twelve-cheese.mp4',label:'牛奶移动12厘米，模型抓奶酪盒（种子195）'},twelveMilk:{src:'media/milk-shift-twelve-milk.mp4',label:'同一个12厘米初态，模型抓牛奶（种子198）'},pulse:{src:'media/milk-shift-pulse-layer18.mp4',label:'第18层attention只换一次数字，模型仍抓奶酪盒'},persistent:{src:'media/milk-mlp-persistent.mp4',label:'先推一下，再连续换回第4层MLP九次；仍抓奶酪盒（种子198）'}};
 for(const button of document.querySelectorAll('[data-video]')){
  button.addEventListener('click',()=>{
   if(button.getAttribute('aria-pressed')==='true')return;

@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    195,
+    196,
+    198
+  ],
+  "layer_zero_based": 17,
+  "denoising_step": 29,
+  "arms": [
+    "native",
+    "all_allowed",
+    "cut_future",
+    "cut_action",
+    "cut_both"
+  ],
+  "planned_official_dispatch_calls": 15,
+  "model_forwards": 0,
+  "solver_steps": 0,
+  "physics_calls": 0,
+  "mask_shape": [
+    1,
+    1,
+    266,
+    387
+  ],
+  "mask_dtype": "torch.bool",
+  "bool_true_means_allowed": true,
+  "noncurrent_queries_preserved_by_native_output_row_selection": true,
+  "numerical_error_policy": "Native replay must be byte exact. All-allowed discrepancies are saved, never residual-corrected. Cut signal exceeds sham floor only if its current-row L2 is >10 times the all-allowed current-row discrepancy and nonzero.",
+  "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+}

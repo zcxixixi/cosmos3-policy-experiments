@@ -1,0 +1,78 @@
+{
+  "script_sha256": "5cc1f9a1daa609cc27262c171967ff66c4884cc951f72f72f9ee0f0cb447ca2c",
+  "protocol_sha256": "a9d98f5a675cd26efc4912035ebb8edc0cf750792312e060a7ce04f6ba8c9b12",
+  "source_audit": {
+    "reader_documents_sha256": {
+      "complete": "d657c7f560eba0bf8e96f0a49d208b23b87e5dbe16b313cd8b42b96c70892913",
+      "results": "19dca4a76998e8b9212c3c286ef17f354525bf8a97c758656c18831b805128e8",
+      "provenance": "bc5fe13a0c94b41ffe14996cead0d8124cb8a2235bb95ca0eebcf075b6d78bc2",
+      "protocol": "41990dfda2e446198326e3db1f770815889bf62cf97897abc46f7daca195e73b",
+      "sources": "49621d580b8333147134b94d025d71ccbf7bcdd7256aa14afbf7c6685d142c8d"
+    },
+    "reader_case_files_rehashed": {
+      "195": {
+        "dispatch-t29.pt": "4dd822e6918478c732a85b2c9aa6c7695348ffdc05b4ef813e0a5f207d487787",
+        "dispatch-t29.json": "999bad3ed60bcad18cb63840685b14243d0b29b5affad04662013990e89a8b95",
+        "token-indexes.pt": "103c43c2d10acd554f4486b634e8f6ead0e169e1c42a805d3ff0ac3b97b68985",
+        "token-indexes.json": "f38d85741a0d2308e7c6ddc3e766b20c2392b7a30e3fb75b7fef7ba3ede5a46d",
+        "observer-report.json": "29224198c2df41ac242f37f8b04f71e46b3580805fe7fd0223250d9c0dc65896"
+      },
+      "196": {
+        "dispatch-t29.pt": "c882c5a2b99b26c257519051380d26ddbbf193d452ff95eedf71ff98ec30b766",
+        "dispatch-t29.json": "2ffc1e41d7c91c535bbe4b147736756ebc1a2e959fface15601279254b81ae76",
+        "token-indexes.pt": "103c43c2d10acd554f4486b634e8f6ead0e169e1c42a805d3ff0ac3b97b68985",
+        "token-indexes.json": "f38d85741a0d2308e7c6ddc3e766b20c2392b7a30e3fb75b7fef7ba3ede5a46d",
+        "observer-report.json": "29224198c2df41ac242f37f8b04f71e46b3580805fe7fd0223250d9c0dc65896"
+      },
+      "198": {
+        "dispatch-t29.pt": "f5108f9910a19becc479a1506e758d420c478a6d4c5d92fb6fedd4a51dcd8b15",
+        "dispatch-t29.json": "a39e2c116625a974f0e490c560f4336d591a307ec7aeca88304d699dd3be2fef",
+        "token-indexes.pt": "103c43c2d10acd554f4486b634e8f6ead0e169e1c42a805d3ff0ac3b97b68985",
+        "token-indexes.json": "f38d85741a0d2308e7c6ddc3e766b20c2392b7a30e3fb75b7fef7ba3ede5a46d",
+        "observer-report.json": "29224198c2df41ac242f37f8b04f71e46b3580805fe7fd0223250d9c0dc65896"
+      }
+    },
+    "historical_whole_q0_exact_gate": "Anchored completed producer; no new whole-q0 tensor replay in this script."
+  },
+  "dispatch_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/attention_dispatch.py",
+  "dispatch_source_sha256": "93a57f07a77f8710233458ce8adc300e3eeaa57cb09a46a94cee02121d38ed88",
+  "dispatch_signature": "(query: 'torch.Tensor', key: 'torch.Tensor', value: 'torch.Tensor', attn_mask: 'torch.Tensor | None' = None, dropout_p: 'float' = 0.0, is_causal: 'bool' = False, scale: 'float | None' = None, enable_gqa: 'bool' = False, attention_kwargs: 'dict[str, Any] | None' = None, *, backend: 'AttentionBackendName | None' = None, parallel_config: \"'ParallelConfig' | None\" = None) -> 'torch.Tensor'",
+  "registry_backend": "native",
+  "registry_backend_function": "_native_attention",
+  "registry_backend_function_source_sha256": "95e749097c2b477f4b6a6ea9d09cbab112ef89dcc7cd4d8681e001dc00da8f4d",
+  "registry_supported_arguments": [
+    "_parallel_config",
+    "attn_mask",
+    "dropout_p",
+    "enable_gqa",
+    "is_causal",
+    "key",
+    "query",
+    "return_lse",
+    "scale",
+    "value"
+  ],
+  "attn_mask_supported": true,
+  "settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest"
+  },
+  "backend_evidence_limit": "Current registry selection is recorded; no kernel profiler, and historical backend=None alone did not record the registry selection.",
+  "library_edits": false,
+  "model_initialized": false,
+  "model_forwards": 0,
+  "solver_steps": 0,
+  "physics_calls": 0,
+  "scope": "Saved L17/t29 full-GEN official attention arithmetic only. Fifteen attention dispatches, zero model forwards, zero solver steps and zero physics. No latent identity decoding, downstream action effect or grasp conclusion. Noncurrent GEN rows and saved UND outputs are retained in merged arrays; no merged array is sent into a model."
+}

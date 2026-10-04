@@ -1,0 +1,27 @@
+{
+  "state": "complete",
+  "script_sha256": "985f10b079684689dcd9735f8f55159c97976eaef1ac33ff163011980f6ca9d8",
+  "trial_order": [
+    "V195_A195",
+    "V198_A198",
+    "V198_A195",
+    "V195_A198"
+  ],
+  "physical_trials": 4,
+  "saved_q0_predictions": 4,
+  "native_predictions": 28,
+  "fresh_model_forwards": 840,
+  "earlier_separate_q0_probe_model_forwards": 120,
+  "two_native_complete_129_state_and_all_action_trajectory_and_PNG_controls_exact": true,
+  "all_four_own_cached_q0_action_execution_controls_exact": true,
+  "actual_later_whole_noise_pairs": 21,
+  "files_sha256": {
+    "controls.json": "119a16277488373bc6f0429cd1bfe355c4e11f426100cc0c76958807482e85c9",
+    "provenance.json": "beea61ecfb4630a28d37915313fd5d21e8c7e4cf2d0ce5024f813db264d1b442",
+    "prepared.json": "6d6c2be05018e34f9c066cf5518a8f1041d8223e4ef8cfdcdb72d80196d2168f",
+    "server/complete.json": "c41d84a8aed8e2548d91e25f0a802552f4603ffc2e5bdee7578cf5ca8ab9748c",
+    "closed-loop/complete.json": "659a4d18a92eb982c86055a777c8023b3ed2f3e6a483db1035f3fc2844bf80f7",
+    "summary.json": "f1a55fe88087b0e2f2044804805df102ce6f4379a5d84855a149fc7237a1820c"
+  },
+  "scope": "Four X+12cm physical trajectories using saved factorial initial-noise q0 predictions and the same native later sampling base195. All later images come from each actual evolving environment. Two complete native controls precede mixed cells. No network patch, new training, inferred intention, q0 target commitment or neural-root-cause claim."
+}

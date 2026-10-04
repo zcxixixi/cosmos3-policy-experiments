@@ -1,0 +1,145 @@
+{
+  "cases": {
+    "195": {
+      "trial": "x12_seed195",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_00.png",
+      "image_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+      "original_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "q0_folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_00",
+      "q0_files_current_sha256": {
+        "states.pt": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c",
+        "components.pt": "b29efff23b06ad131b66a3a3ee69f95920ce64c4ce60723158d29f8a57891512",
+        "metadata.json": "5ab7b46b2d8f6df605fbee302ab9fd55ca58706fc67cf143d1a6a348800e6e56",
+        "normalized_actions.json": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a"
+      },
+      "physical_initial_state_current_sha256": "2b49476f230b3c72126d285864760f8f33e5357adddb49caf4d1bf26af96ddab",
+      "initial_controller_current_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+      "physical_initial_state_and_controller_bytes_exact": true,
+      "source_hash_scope": "Q0 and trial artifact hashes are first observed and sealed here; the threshold completion files recorded counts and provenance, not a whole-case file manifest."
+    },
+    "198": {
+      "trial": "x12_seed198",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_00.png",
+      "image_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+      "original_selected_objects": [
+        "milk_1"
+      ],
+      "q0_folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_00",
+      "q0_files_current_sha256": {
+        "states.pt": "15d36da92502a17a0aacb8b75a5a7c518965d5efb421724fb8bf33fb2ad384fd",
+        "components.pt": "a571a83e516023f7d09ee6ac96be27f0f7e01ec7aa196c876ea6e90eacb848d0",
+        "metadata.json": "177bb7cb38ef02cb94b8ec4e9feb8ac0827ed7e812bbbe4b1770f6b68a362abf",
+        "normalized_actions.json": "15ddf2a8c32623e09ea03edae578cb3610b4a1ac7030260690b38167c97f3eda"
+      },
+      "physical_initial_state_current_sha256": "8d9ca0e7727e7265210e04b987111279f8fcdfe42e637de03ecd058d34c49243",
+      "initial_controller_current_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+      "physical_initial_state_and_controller_bytes_exact": true,
+      "source_hash_scope": "Q0 and trial artifact hashes are first observed and sealed here; the threshold completion files recorded counts and provenance, not a whole-case file manifest."
+    }
+  },
+  "upstream": {
+    "reader_complete_sha256": "d657c7f560eba0bf8e96f0a49d208b23b87e5dbe16b313cd8b42b96c70892913",
+    "reader_sources_sha256": "49621d580b8333147134b94d025d71ccbf7bcdd7256aa14afbf7c6685d142c8d",
+    "reader_provenance_sha256": "bc5fe13a0c94b41ffe14996cead0d8124cb8a2235bb95ca0eebcf075b6d78bc2",
+    "feedback_provenance_sha256": "5ca0b33398da8db28d45d13e28da07b9ed81f7a7245dd6d3389423607e33f7dc",
+    "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+    "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+    "threshold": {
+      "threshold_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold",
+      "wrapper_sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36",
+      "shared_scene_array_manifest_sha256": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba",
+      "shared_scene_state_sha256": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed",
+      "shared_scene_controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+      "all_three_initial_png_bytes_exact": true,
+      "documents_current_sha256": {
+        "provenance.json": "e8e5dd692ee016b3bf437c507454ae5424ac3c94848784e318fca6af510393e9",
+        "wrapper-server-complete.json": "e994fa7ad174782ecedbeda5d10a4908bfa7e9a62927d6594d510356258d6cf1",
+        "wrapper-simulator-complete.json": "6241dddd43554587eb01c092e49ab446cb8ac06ab2db502b8935553d8fc892f3",
+        "server/complete.json": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c",
+        "closed-loop/complete.json": "abfaea32659cd6c5b0052448ce7df36609f270674043363729b33db74683f496",
+        "inputs/complete.json": "28dbb173569feca418e25d67f77b925a093cdd10a1e80ecb58c32c193157a0cc",
+        "inputs/metadata.json": "998f0f2ab8420607a0f780de3fa0070365a821bd18a70af00b80bc9338ad4485",
+        "summary.json": "293d967ccdb60686bc7c58a73485d9a081d0089471f021fc76ba04480fe82914"
+      }
+    },
+    "source_hash_scope": "Source q0 hashes were first sealed at the earlier completed target-reader stage; not a historical threshold whole-case manifest."
+  },
+  "frozen_threshold_contract": {
+    "wrapper_sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36",
+    "baseline": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism",
+    "baseline_server_provenance_sha256": "ae05cfba57893c589d6d6644ea13fd45a16acc90366c555f39988968fb5cdfb5",
+    "baseline_inputs_metadata_sha256": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a",
+    "baseline_simulator_provenance_sha256": "4b7042949eb356ee0150679c09bdb73277dcce590a3eb43c7a286656a4cbd343",
+    "baseline_summary_sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533",
+    "frozen_files": {
+      "server": {
+        "path": "/home/current/work/cosmos3/work/serve_cosmos_milk_shift_mechanism.py",
+        "sha256": "5005b97785bc22bc37a2aa7361500ab93ef300ceaa9e0f83fa9e1d4ac71b1ab5"
+      },
+      "simulator": {
+        "path": "/home/current/work/cosmos3/work/rollout_cosmos_milk_shift_mechanism.py",
+        "sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845"
+      },
+      "normal_runtime": {
+        "path": "/home/current/work/cosmos3/work/serve_cosmos_goal_pair.py",
+        "sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506"
+      },
+      "factory": {
+        "path": "/home/current/work/cosmos3/work/probe_cosmos_language_routes.py",
+        "sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72"
+      },
+      "components": {
+        "path": "/home/current/work/cosmos3/work/cosmos_component_interventions.py",
+        "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+      },
+      "pixel_helper": {
+        "path": "/home/current/work/cosmos3/work/check_cosmos_official_pixels_cpu.py",
+        "sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a"
+      },
+      "scheduler": {
+        "path": "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/model/generator/diffusion/samplers/fm_solvers_unipc.py",
+        "sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe"
+      },
+      "collector": {
+        "path": "/home/current/work/cosmos3/work/collect_cosmos_goal_pair.py",
+        "sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945"
+      },
+      "controller_helper": {
+        "path": "/home/current/work/cosmos3/work/rollout_cosmos_goal_pair.py",
+        "sha256": "bc18a41d97dcdf7c321ef093faf4eea076678298f269efa5cf8fc9c623157dc7"
+      },
+      "normalizer_stats": {
+        "path": "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/data/generator/action/normalizer_stats/libero_native_frame_wise_relative_rot6d.json",
+        "sha256": "bf20cb010fad4ee5754ad83dafab0fce509fc99594d75a3a151d07cf81c905ac"
+      },
+      "source_state": {
+        "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/state.npy",
+        "sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9"
+      },
+      "source_png": {
+        "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/input.png",
+        "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+      }
+    },
+    "shifts_cm": {
+      "x00": 0,
+      "x09": 9,
+      "x12": 12
+    },
+    "seeds": [
+      195,
+      196,
+      198
+    ],
+    "prompt": "pick up the milk and place it in the basket",
+    "port": 8927,
+    "url": "http://127.0.0.1:8927",
+    "trials": 9,
+    "queries": 72,
+    "paired_noise_checks": 48,
+    "library_edits": false,
+    "scope": "Nine matched 128-action milk trials at X+0/9/12cm with three paired noise seeds and the existing warmed snapshot. Narrow the target-switch position range; no semantic, neural-root-cause or benchmark-rate claim."
+  }
+}
