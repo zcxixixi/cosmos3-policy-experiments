@@ -1,0 +1,46 @@
+{
+  "state": "complete",
+  "script_sha256": "7f2a8db2a45abb920257b11167c055a056f6cc7d9105894f8043c76965ec1a50",
+  "primary_prediction": "insufficient",
+  "actual_boundary_files": 540,
+  "actual_site_files": 2430,
+  "physical_counts": {
+    "actual_records": 144,
+    "actual_converted_actions": 2304,
+    "actual_later_whole_two_draw_pairs": 119,
+    "six_whole_milk_reference_controls": [
+      "milk_V195_A195_native",
+      "milk_V198_A195_native",
+      "milk_V195_A195_all_allowed",
+      "milk_V198_A195_all_allowed",
+      "milk_V195_A195_full_hardmask",
+      "milk_V198_A195_full_hardmask"
+    ],
+    "converter_sources": {
+      "converter_path": "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/simulation/libero/closed_loop_eval.py",
+      "converter_sha256": "1a2de0ae18b59de6455c4dca650f6db20de9beb9c39f8efa2b77f0913c2ba4be",
+      "pose_utils_path": "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/data/generator/action/utils/pose_utils.py",
+      "pose_utils_sha256": "73daa21bc5d66d94ee9217b6065b50ab81ee644d07067bb360326e4edf490380",
+      "function_sha256": {
+        "_framewise_action_to_delta": "64f6b83511ae9bc1ec36a2f9817ededc6e889439079907220386620d1b254cc4",
+        "_remap_gripper": "676a771f99d827ec451dcbc728a45fda764349a61df43664e9d35fc53853deda"
+      },
+      "convention": "Actual np.asarray(JSON) float64; quantile affine inverse; official row6d converter; official zero_one gripper; clip[-1,1]. No TorchFP32 reconversion."
+    }
+  },
+  "files_sha256": {
+    "arrays.npz": "cad1b8803c5c646b2743903cbecc6d18f06b4bf87114c3d1d5ca7a15155a4304",
+    "analysis.json": "9511ef24706809d1a097a01a8f0f30017a6ea3ecaa4cca2bed497c2decf83144",
+    "provenance.json": "7daa006269ffaa1177a2f46c8fa335ade8d996f7591263cb99fd2a0981ad24fb",
+    "t0-language-and-interaction.png": "5768afe9188e452dc7685e9dc4289d1f9bdd49b810633078bae2d5f0014a34e4",
+    "t0-action-token-contrasts.png": "96618591ea401d38717e735292819111a0f355937baa9df11cdf6994f9b884d6",
+    "later-action-total-effects.png": "34fab68780615500740e940ce11dfa7e3ab7a47b32c0c8aac40836c18205a736"
+  },
+  "model_calls": 0,
+  "official_dispatch_calls": 0,
+  "solver_calls": 0,
+  "physics_calls": 0,
+  "CUDA_initialized": false,
+  "elapsed_s": 53.611989033997816,
+  "scope": "Fixed X12, A195 and two actual V noise sources. Main instructions milk/cheese must have equal length and exactly one different target token. Canonical cream cheese is auxiliary, with different text length. Primary t0 action boundary36 precedes final norm; later denoising and closed-loop differences contain dynamically changed inputs. All masked q0 arms share union66 all-allowed numerical background through t29; the future-to-current cut is restricted to t0..14 and L0..8. Hard masks also redistribute remaining attention weights. Common hidden displacement does not imply fixed world position, unused semantics, successful grasp, language/motor double dissociation or a functional brain region. Cross-arm MLP differences contain changed input and are not a same-input overwrite test. No new inference, attention replay, solver update, environment or physics."
+}

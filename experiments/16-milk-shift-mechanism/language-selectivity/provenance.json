@@ -1,0 +1,152 @@
+{
+  "script_sha256": "74ac42db450a1a7cd308c837bf75049cd2dcae858a4869dab1f0f60450c69b13",
+  "protocol_sha256": "27560984a6dbbcb415fb14ba84607e7e8b169a1f16b494d63032987364b36c78",
+  "sources_sha256": "7287c1f6d6e51bc357204d6b7667cf7f1ce7f962aa67d309ce174b90d30122bc",
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "metrics": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+    "reader": "a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb"
+  },
+  "accepted_head_source_sha256": "b261366b969a8f33980cbf4d450c381a18a64fa4b16be2e1dd95d6c7220ae898",
+  "accepted_head_complete_sha256": "e8a6b61cbe0a4d5da291dea68f15f45059f195c79fb9ad721b7b01670ab81dc0",
+  "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+  "dispatch_source_sha256": "93a57f07a77f8710233458ce8adc300e3eeaa57cb09a46a94cee02121d38ed88",
+  "dispatch_signature": "(query: 'torch.Tensor', key: 'torch.Tensor', value: 'torch.Tensor', attn_mask: 'torch.Tensor | None' = None, dropout_p: 'float' = 0.0, is_causal: 'bool' = False, scale: 'float | None' = None, enable_gqa: 'bool' = False, attention_kwargs: 'dict[str, Any] | None' = None, *, backend: 'AttentionBackendName | None' = None, parallel_config: \"'ParallelConfig' | None\" = None) -> 'torch.Tensor'",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "actual_prompt_token_ids": {
+    "milk": [
+      29245,
+      705,
+      279,
+      14074,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ],
+    "cheese": [
+      29245,
+      705,
+      279,
+      17163,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ],
+    "cream_cheese": [
+      29245,
+      705,
+      279,
+      12644,
+      17163,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ]
+  },
+  "output_head_actual_sha256": "dcae3ead9c67d82c783a2e74a1d7eae20b3513314eb2dc4fc1fdb0ef88a25f7e",
+  "output_head_metadata": {
+    "domain_id": 5,
+    "norm_state": {
+      "type": "dict",
+      "items": {
+        "weight": {
+          "type": "tensor",
+          "shape": [
+            4096
+          ],
+          "dtype": "torch.bfloat16",
+          "stride": [
+            1
+          ],
+          "device": "cpu",
+          "bytes": 8192,
+          "sha256": "d7449237ca40697402018b875dd8998af44d7b557040c117291629a3978d8a72"
+        }
+      }
+    },
+    "weight": {
+      "shape": [
+        4096,
+        64
+      ],
+      "dtype": "torch.bfloat16",
+      "stride": [
+        64,
+        1
+      ],
+      "device": "cpu",
+      "bytes": 524288,
+      "sha256": "e528bcbb4d90c46196905bd82eb6cfb838a37627613aa37bc91727badde9d131"
+    },
+    "bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.bfloat16",
+      "stride": [
+        1
+      ],
+      "device": "cpu",
+      "bytes": 128,
+      "sha256": "50f7246ffd9dc17e8183867166d200e0da19e42fa533607a43fa51470880f019"
+    },
+    "source_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+    "capture": "one actual read-only parameter extraction; no forward",
+    "training": false,
+    "patch": false
+  },
+  "torch_version": "2.14.0+cu130",
+  "CPU_threads": 4,
+  "registry_backend": "native",
+  "registry_backend_function": "_native_attention",
+  "registry_supported_arguments": [
+    "_parallel_config",
+    "attn_mask",
+    "dropout_p",
+    "enable_gqa",
+    "is_causal",
+    "key",
+    "query",
+    "return_lse",
+    "scale",
+    "value"
+  ],
+  "registry_backend_function_source_sha256": "95e749097c2b477f4b6a6ea9d09cbab112ef89dcc7cd4d8681e001dc00da8f4d",
+  "backend_settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "configured_attention_backend": "None",
+    "configured_parallel": "None",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "grad_enabled": false,
+    "kernel_evidence_limit": "Configured backend and enabled flags are recorded, not a profiler observation of the selected kernel."
+  },
+  "kernel_evidence_limit": "Registry/settings recorded; no selected-kernel profiler observation.",
+  "library_edits": false,
+  "training": false,
+  "physics_calls": 0,
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}

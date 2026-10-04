@@ -1,0 +1,2458 @@
+{
+  "state": "complete",
+  "case_arm": "all_allowed",
+  "goal": "milk",
+  "window": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      8
+    ]
+  },
+  "sites": 135,
+  "files": [
+    {
+      "step": 0,
+      "layer_zero_based": 0,
+      "file": "sites/t00-L00.pt",
+      "sha256": "4fc5692d51ccdc7d5f64b483b3744e6edcd756c732de0260469b2e3090a69ed0",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 1,
+      "file": "sites/t00-L01.pt",
+      "sha256": "4d61c05ab4033faf6b4cb34e23ae8ec4fee9e78e73312a2666d4f72945b6e558",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 2,
+      "file": "sites/t00-L02.pt",
+      "sha256": "d6398459f799524753fb6df38edf68f9cb33d6077d66f9f81a37242296fcc7c7",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 3,
+      "file": "sites/t00-L03.pt",
+      "sha256": "1ec9505b303105ae9288638bba556f99c130371e02268bd5a84f1f65acf724df",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 4,
+      "file": "sites/t00-L04.pt",
+      "sha256": "6979034a28d36baddec0aac06408a9db367a763f9773276b767e272b11dc4aca",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 5,
+      "file": "sites/t00-L05.pt",
+      "sha256": "705bd06c4f2208e482d6a6dddbd0d4e4efa8a9901d95ffd250a3ef283d903eb1",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 6,
+      "file": "sites/t00-L06.pt",
+      "sha256": "5184c810afb518b48871e164143e618fd1ccadb752f9e957dfb82ad61595e5a1",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 7,
+      "file": "sites/t00-L07.pt",
+      "sha256": "54e3942e7a68547f1b871ab9060a8d581fb0e1b20e85efe54be0652eaf5c4c99",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 0,
+      "layer_zero_based": 8,
+      "file": "sites/t00-L08.pt",
+      "sha256": "be7f43940b0feb84606cb488db5ef9d1e8b2748834cc98b7c325cb479b9fc307",
+      "bytes": 5295469,
+      "captured_endpoints": [
+        "Znative",
+        "Z0",
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 0,
+      "file": "sites/t01-L00.pt",
+      "sha256": "acb245dd14bad47a8ee8dac0383563ef0f8173c9562d360c5b3886b9039d3cfa",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 1,
+      "file": "sites/t01-L01.pt",
+      "sha256": "07bc0cb282b601618b32b36a0ca3679de7280e48be641e14fb03af8ec7ec0136",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 2,
+      "file": "sites/t01-L02.pt",
+      "sha256": "1da26bd5b2e03c374f97fcd2b7426a007c3b85aceaec269f48720b6bb5839cd0",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 3,
+      "file": "sites/t01-L03.pt",
+      "sha256": "85f00b98d37418a19404676d29a24786398ccfffccdea8284d5b33939b9cdb63",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 4,
+      "file": "sites/t01-L04.pt",
+      "sha256": "691da67d42f575d9cc72a9afb06cdab74e467d2e43f449c03830cb744026fca0",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 5,
+      "file": "sites/t01-L05.pt",
+      "sha256": "56f1244b959bc3a0a21091188306b657051a3854d93a97ea115f979044a8832a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 6,
+      "file": "sites/t01-L06.pt",
+      "sha256": "2f1bcbf169db7985b91aa870520059b963350211b3c764f5efa4478ab5ada863",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 7,
+      "file": "sites/t01-L07.pt",
+      "sha256": "e675e50f199cb9065870d76f1230dfcd15c0cfd90332abd78e5d3cbf4cf82976",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 8,
+      "file": "sites/t01-L08.pt",
+      "sha256": "3ac1a4bccbb1625358e733c6b1ab90046a656c97e808031680865626b0c9145e",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 0,
+      "file": "sites/t02-L00.pt",
+      "sha256": "eab531680652369043a2f6b3794087e6c4b9efa00b67e3a65128acdeb67d37c4",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 1,
+      "file": "sites/t02-L01.pt",
+      "sha256": "85442c646749c79bda76134f3fdd88b5d71a1cfb9c55df8b55473fd4f1a8de95",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 2,
+      "file": "sites/t02-L02.pt",
+      "sha256": "c6a7cac1d899f152ea1ff1389410fe041a6691510b7ac233b5a6b06f85e3a52b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 3,
+      "file": "sites/t02-L03.pt",
+      "sha256": "1cd1e623009401e2fa202eccf4cf9a71bb66a8c816e70a012097a511bc099f00",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 4,
+      "file": "sites/t02-L04.pt",
+      "sha256": "39d796a0804a903e0759263c79a65edcbd4d7b308ed3f8cd3d2fb331ab1a20cf",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 5,
+      "file": "sites/t02-L05.pt",
+      "sha256": "697a2f94459753179d17204d09d91abb1c6e3952baea7a9fd40245530ee583d3",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 6,
+      "file": "sites/t02-L06.pt",
+      "sha256": "6f3d9363c58c4ee23c558b3b9cc9f8705ef214ca342ee2e76ffc55f7235fe8b4",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 7,
+      "file": "sites/t02-L07.pt",
+      "sha256": "2e0a1bd0976514d1ed0bb65ac3b07ce37a9c65e71c8dee7d2f9f22073cf9189f",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 8,
+      "file": "sites/t02-L08.pt",
+      "sha256": "e249a22f7ffee5cdfa8a625918b1b5b6d40d5ab42b14a39c86df425f42c1dff3",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 0,
+      "file": "sites/t03-L00.pt",
+      "sha256": "0d6acf04300c945a3497a6f460856ddfb98abb004dfd4034af7c2a87511368ac",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 1,
+      "file": "sites/t03-L01.pt",
+      "sha256": "bd0371e112cb1e4e8db0269e8b3bf24c1169c2e89f18bd03421634b7d99fa857",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 2,
+      "file": "sites/t03-L02.pt",
+      "sha256": "66f64bccd49e4097e9e20515148c6e1d8c2774fa02d9331a8b2e290f3d8bf87c",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 3,
+      "file": "sites/t03-L03.pt",
+      "sha256": "c5e9b21dd9c0c0b5a63da72287efcec1308ad58a336e3061bd7e407dfe210f03",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 4,
+      "file": "sites/t03-L04.pt",
+      "sha256": "8b2a9a9df315f063aa86f9ca552133df6f8cf3c78902a07ab905b685d7c4759f",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 5,
+      "file": "sites/t03-L05.pt",
+      "sha256": "89603f7a56b5f360e87c6d97be318738c9d7a27f1de3c2abe17504b21047b68b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 6,
+      "file": "sites/t03-L06.pt",
+      "sha256": "4dcd89a49ffb41c0eaf5faaf88f6145f66c099fe441318f39550594424c1ee41",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 7,
+      "file": "sites/t03-L07.pt",
+      "sha256": "f7bd1a74a22de3fb32cc8b1cd79880c7054cf9784ef9c15187579ae48a61d3ca",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 8,
+      "file": "sites/t03-L08.pt",
+      "sha256": "1beace9fca20ec5b96957227a45ef4f4da5462c00969ac8adb366017c5f35c38",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 0,
+      "file": "sites/t04-L00.pt",
+      "sha256": "b75b09954dd93417a51264c4eff1ea72f246be70fd7a2b8a69a275fe8270a540",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 1,
+      "file": "sites/t04-L01.pt",
+      "sha256": "c5c69c97de4d6c6910779b2cf533827d3ee00df365b5ed029224f94d1c6a6fd2",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 2,
+      "file": "sites/t04-L02.pt",
+      "sha256": "d801ace381dece748acbd476b1c62271d4be14431cd6c778d0acd1b282fd1a04",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 3,
+      "file": "sites/t04-L03.pt",
+      "sha256": "63fc04e55cdd7cc6b0e2278159426d3e48190023752b9e47f90f43243e5ddb53",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 4,
+      "file": "sites/t04-L04.pt",
+      "sha256": "effca26e2d1741bc73923fdbfda02881002e7941fe8c1a55366665de31ba310e",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 5,
+      "file": "sites/t04-L05.pt",
+      "sha256": "1fe200502dabd1bc66307913dcbc2a9d9d8a5d0a2a1634128a8e77d17676c678",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 6,
+      "file": "sites/t04-L06.pt",
+      "sha256": "71fd34f95ded949edcad02b68dc3e130bbf8c16a6e69bf7e680dbf712ba4ce59",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 7,
+      "file": "sites/t04-L07.pt",
+      "sha256": "25f5182568bdcf8b40ef8009a3241563975a1f255831594c302de7414962794e",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 8,
+      "file": "sites/t04-L08.pt",
+      "sha256": "ea079b46e3b478854f78632d0c621c8926bcb3d087c313f70a4572bfc9602865",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 0,
+      "file": "sites/t05-L00.pt",
+      "sha256": "1a78d616f5c3398bacc72d07ebca80491d87c9b020e47b180d697723ff34f5d8",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 1,
+      "file": "sites/t05-L01.pt",
+      "sha256": "3530fd6db7b0f8c6bd28c055a76df0ad485616c343999c4e09c6f113552fd108",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 2,
+      "file": "sites/t05-L02.pt",
+      "sha256": "e5a5b57735d57f8721f13cc3400a62a70802c41673768ec04db7905aca707dc5",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 3,
+      "file": "sites/t05-L03.pt",
+      "sha256": "0ea53572d8b8f1db6e3280c53262ac1c1924cf4ba62e995660fa2690049e0f05",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 4,
+      "file": "sites/t05-L04.pt",
+      "sha256": "5073332fd27e254225c1c012d2e93479044500a1d8faa8c1ad5899a668213096",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 5,
+      "file": "sites/t05-L05.pt",
+      "sha256": "2f53f0488e39478f7da2ec1e596fb208af964b764f6d4f31fd659882a9e5f096",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 6,
+      "file": "sites/t05-L06.pt",
+      "sha256": "f1e1d361a71593b197616f0a387f04ae9b0bcf33e933bf0de7de17544e3edc23",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 7,
+      "file": "sites/t05-L07.pt",
+      "sha256": "e7d4c9fccffae53f12f794b8ca721374a6db21b79896c726dee07709a6ac3c47",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 8,
+      "file": "sites/t05-L08.pt",
+      "sha256": "00ec546ff5e672001e513803b079fae1b2fa8fca3f9ca369b715a26f71a70161",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 0,
+      "file": "sites/t06-L00.pt",
+      "sha256": "b927086955bb4441b2d57735338325565987aa30a8a1d6b404e4a34fc12e79c3",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 1,
+      "file": "sites/t06-L01.pt",
+      "sha256": "73e1f76af01b3e80924183b953ba108a8aaff69319caad42df6728cf05bdf12c",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 2,
+      "file": "sites/t06-L02.pt",
+      "sha256": "754f24cccb8d6826a94badcae7d77a50e9dd51550d53e8769b5c27a37753abca",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 3,
+      "file": "sites/t06-L03.pt",
+      "sha256": "1ee641e7aba199d6469411e005336d8c5d5b846b4a5d9703c2e7194e73011b44",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 4,
+      "file": "sites/t06-L04.pt",
+      "sha256": "119d9964c45d70280644ebc85047d65034607b265397a589d9d942dca0cce55d",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 5,
+      "file": "sites/t06-L05.pt",
+      "sha256": "54e0cb6836c6159d446358f1deb307ffbd772da2e7929f1c0a914e4912321651",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 6,
+      "file": "sites/t06-L06.pt",
+      "sha256": "4c8a07aa15eac4bb3e2da1fdca67f5a4cc03d60606126e04813a8929bd0c30ed",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 7,
+      "file": "sites/t06-L07.pt",
+      "sha256": "af418abb285864e15fdac3fbc4a7b13c31ce3712bbe76c5e9231d1f8df3fe833",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 8,
+      "file": "sites/t06-L08.pt",
+      "sha256": "d526e8da8bac498cc62d888fc7921cc0ba90c403b5808f14728fdd32afc7a17a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 0,
+      "file": "sites/t07-L00.pt",
+      "sha256": "ae67f2184a75237b6c50cdc20efc4fffc503f5814c2208108b4b418eb954da39",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 1,
+      "file": "sites/t07-L01.pt",
+      "sha256": "4d579131464c010ef8d838d3fba3e461710ecf7cac6a21de7ab38c4eb55fbb03",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 2,
+      "file": "sites/t07-L02.pt",
+      "sha256": "1077927f18d29b7f682c771f7844ac4d7a437049bf6ad58116ce4bea86ed94d4",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 3,
+      "file": "sites/t07-L03.pt",
+      "sha256": "1ad7a0b8e46319485135fe4769fdc070674d5aacfa66d725ef550f99e22a6611",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 4,
+      "file": "sites/t07-L04.pt",
+      "sha256": "e22d5b154caf4fbc795108aa9b76da0f4cd358fe94da0eae88e3674360cb1747",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 5,
+      "file": "sites/t07-L05.pt",
+      "sha256": "01fbd7fe0f7733e97e67df0ac86b3370e2cb55f48e0b33866330130bbcdc8d2b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 6,
+      "file": "sites/t07-L06.pt",
+      "sha256": "c6eb7d7ee2890812a6efd6aa2eaa4de4bfae1587f59062f24452d0264b148738",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 7,
+      "file": "sites/t07-L07.pt",
+      "sha256": "cc7ba9dbe37f19e5d37419826b66b1b911079a2b62c1979892ccde8564352a57",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 8,
+      "file": "sites/t07-L08.pt",
+      "sha256": "047a548022abfa8af8df4530ae882a93717d72ef3b98a009037409a7bf7db4e6",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 0,
+      "file": "sites/t08-L00.pt",
+      "sha256": "222588df6eb36440c463ac5c16b2d9e1aa90f54e7874c270b4a5345e1099d133",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 1,
+      "file": "sites/t08-L01.pt",
+      "sha256": "eabe9349e358bec755eaba6bedc1cced083e5c2f7e19750d48b7c3bb3d157626",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 2,
+      "file": "sites/t08-L02.pt",
+      "sha256": "2c8db6984625723f52d28e2f72f88d529e76c870ab143853f4273021dfce016b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 3,
+      "file": "sites/t08-L03.pt",
+      "sha256": "86657359a9c518490e834caefe766754fd4f65fda2457bf0dfe9f3c2fe682928",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 4,
+      "file": "sites/t08-L04.pt",
+      "sha256": "b036464113af1dc91c3d948833aa8f6d97679aeafcb5b5c5420f7fab6b63c714",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 5,
+      "file": "sites/t08-L05.pt",
+      "sha256": "e12b28437d06386a0eec522e35ab78e27746c9d7c4b2611e64d64f1b3616e936",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 6,
+      "file": "sites/t08-L06.pt",
+      "sha256": "de039cb405d7bf4a63ca23d05de6149c7a28213f9f1cadb94655ea7878b90955",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 7,
+      "file": "sites/t08-L07.pt",
+      "sha256": "75a65ab039f99694ccdeacfec3ce3d4bb63d22d5a82e544b1568aab5d9c64a37",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 8,
+      "file": "sites/t08-L08.pt",
+      "sha256": "c895570fb88f40aa73821625a259577f6564ad9dc082994b4ff7692896e98e3c",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 0,
+      "file": "sites/t09-L00.pt",
+      "sha256": "4e3dc4c06c66a6c90e775d534305b5318d190ae31a85496278c01a6c3be1f2f4",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 1,
+      "file": "sites/t09-L01.pt",
+      "sha256": "d991590a465ea5bd8faccd7a4c66b00565b9f2c70e764176d95248ff3a39d75b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 2,
+      "file": "sites/t09-L02.pt",
+      "sha256": "cc8624848edfd7df053579e074e5944368746543d95b84212aad35f689a2f293",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 3,
+      "file": "sites/t09-L03.pt",
+      "sha256": "7fb5cd62487a5580f812ccc03334db5da4b60753213d6db314cfaad25c601d1a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 4,
+      "file": "sites/t09-L04.pt",
+      "sha256": "130a66473f8d3e7562e6e17c971a3cd1f9aa0ea8135563720aceb3fcc17fed65",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 5,
+      "file": "sites/t09-L05.pt",
+      "sha256": "a791030fae2dbf9ec6f3ed28fbbac4a5138752074e896c30d2054d8c20ae838d",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 6,
+      "file": "sites/t09-L06.pt",
+      "sha256": "a30034fe3300715cc8e8d48c3336fd55cb56d278d145bb5a79db2cd1d7f927c6",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 7,
+      "file": "sites/t09-L07.pt",
+      "sha256": "2c1d98709de433df96a6d51645399651882f1b0c778c684dcd77d6b4c3838bef",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 8,
+      "file": "sites/t09-L08.pt",
+      "sha256": "b5d5fcd41e474d3eaf8998fbabe5af7945d96f117ad45e7d463abb71872493ae",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 0,
+      "file": "sites/t10-L00.pt",
+      "sha256": "67d595026c5c6c9b0111a121a3e3aa38255df8f1e70a0b78575ed2eb35a7e88b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 1,
+      "file": "sites/t10-L01.pt",
+      "sha256": "d2a529fdf46d60ef6ab4d7d45b60431c658aa7b987b1795bb568b06cbccc590b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 2,
+      "file": "sites/t10-L02.pt",
+      "sha256": "57afd2c82663e3faef1ea5ca7ad503d723dd29aad3f3f6c80d6f2094378839ce",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 3,
+      "file": "sites/t10-L03.pt",
+      "sha256": "cfabf276dffc44a527c4eaa621d2bc6dab8b1937a9777f5f0ccb0428921921f5",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 4,
+      "file": "sites/t10-L04.pt",
+      "sha256": "15c0f0e75f43e846b279e440367dbe3f77cea31716d65d6731c03b16086111ad",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 5,
+      "file": "sites/t10-L05.pt",
+      "sha256": "2034322d32c1ed484ae9836db8dacec0db446e86e14989a007bf0fe4bb586b52",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 6,
+      "file": "sites/t10-L06.pt",
+      "sha256": "ef2390e7905cb56b4a4e7913fc2cd722e5ad17ad2725f83946dc577d67fef438",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 7,
+      "file": "sites/t10-L07.pt",
+      "sha256": "4b0c3ff571a8e6cca064772271a3fabe2ae922beaa4fb72552db8ae85fd90450",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 8,
+      "file": "sites/t10-L08.pt",
+      "sha256": "b87c65d21a1948b28322ab1a1471cf20d0a8b81892266e1d8688bd44dcc2e3a9",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 0,
+      "file": "sites/t11-L00.pt",
+      "sha256": "212d4f342f1219fa43df6bb1b287ab2fc98a0a5abc58455e10a817f47dfdf5df",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 1,
+      "file": "sites/t11-L01.pt",
+      "sha256": "c9dc385784505842b5fce1233fa7f8f4ec9fe7a7437754ba6d901d859105c9d2",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 2,
+      "file": "sites/t11-L02.pt",
+      "sha256": "7fa9e3b7f152008ca47434c34c40f2dfdccb7c4e24dc9b45fd38d27ae8d4c5a2",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 3,
+      "file": "sites/t11-L03.pt",
+      "sha256": "dbbdc73c2925e988b790db6bcc368bab88637a377b26b7d11b280f939e81d481",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 4,
+      "file": "sites/t11-L04.pt",
+      "sha256": "cd89980bc3c9657122d05b1986fd1c8f26e3fe64d55014c151d9d4f035518d9a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 5,
+      "file": "sites/t11-L05.pt",
+      "sha256": "a772eaa3205f9ba239197d4ec591aa1f3cf06a5d4c77a44da55bc44221ca1294",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 6,
+      "file": "sites/t11-L06.pt",
+      "sha256": "c81dd226b1694602c7e8db237a4288b7edae79ee1c2d448b135392884b593f9f",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 7,
+      "file": "sites/t11-L07.pt",
+      "sha256": "ac48e48d7c79720dea31c1aeedc47890a4aec1f59c2d927b06700b26acc5c79c",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 8,
+      "file": "sites/t11-L08.pt",
+      "sha256": "f08acc4c934aed41da1d913160556cc5264e8f2bca7d0581652506a9d3146659",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 0,
+      "file": "sites/t12-L00.pt",
+      "sha256": "45023d57276b98fb90107034b8c186b839d95384d16e2b03d6f712a25c593c08",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 1,
+      "file": "sites/t12-L01.pt",
+      "sha256": "c8b9b5b4204632b57e50387dc3421807383d05df9abf9e2cf2378f20fb4704ba",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 2,
+      "file": "sites/t12-L02.pt",
+      "sha256": "7ca8395aa798ce0111ced1a82eb8837da058a525486eb1d9a154120b1141ff1e",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 3,
+      "file": "sites/t12-L03.pt",
+      "sha256": "f59cc4508260c8d9d4ea9e9f6d101bb1b4cc416affd92ccbfa3b24a78d054d06",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 4,
+      "file": "sites/t12-L04.pt",
+      "sha256": "e728ad8a2ff5c98c5ef119d55149d1ffcd38c7fb93e80bf4c0498b38a955cba4",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 5,
+      "file": "sites/t12-L05.pt",
+      "sha256": "d4e614467339b954d272d980bef3b32ed8924d7d4347e0908ab3bc1fb39b41b8",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 6,
+      "file": "sites/t12-L06.pt",
+      "sha256": "dcb3df1441155d28afe77599ca5599731b9ad2a93164d87ada0b8338e3481d20",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 7,
+      "file": "sites/t12-L07.pt",
+      "sha256": "d806ec0a903a60e2e5fd7d0b2383158bc23dfa0d51456b86d53b36116b3418d9",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 8,
+      "file": "sites/t12-L08.pt",
+      "sha256": "1ae0bc5338630e003b6d37da47b4d905eb44228388e1a1d7c8c0c900f36d01d1",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 0,
+      "file": "sites/t13-L00.pt",
+      "sha256": "dd6861ea697f1f5e4161265e934d12d8e4856e5f2660660c21a00991f7774a69",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 1,
+      "file": "sites/t13-L01.pt",
+      "sha256": "0e0f7a95d35c8bc9a80f9c6f06a573aac3582dd20e802f6131e32bcaae98167f",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 2,
+      "file": "sites/t13-L02.pt",
+      "sha256": "6bd7da2597057d9c74b59de3ef110538a9e6d45f6c1f159a4d5538ea3a944a1d",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 3,
+      "file": "sites/t13-L03.pt",
+      "sha256": "609e8f16724bd66e8d817151a8d80b80f146a68a967fc33f25318a9af3f94923",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 4,
+      "file": "sites/t13-L04.pt",
+      "sha256": "82f5c0663209b82811395e864ce3bb42225f541af917cd4c7d6642fdea298e4a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 5,
+      "file": "sites/t13-L05.pt",
+      "sha256": "9600ab937966ca52a9eb124fca1eb7856029fb737d474228df02ed0709592c45",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 6,
+      "file": "sites/t13-L06.pt",
+      "sha256": "aad785b8a20a7d3b6763ed7f797d347c14074936bb130222a96292f1e9a1aa15",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 7,
+      "file": "sites/t13-L07.pt",
+      "sha256": "61e9bc95ce6c261e3ec728634f61a905c1682d198dbbc9a47bbdab0541dab438",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 8,
+      "file": "sites/t13-L08.pt",
+      "sha256": "2d9d67edccf30fda600fd0edb893c6db8883f0c33ddc3a4099dabaab21172ef5",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 0,
+      "file": "sites/t14-L00.pt",
+      "sha256": "6b8bce0d0794fd532ebfad85ddad1a4e2a79bb8107b2cad4a893b8285670289a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 1,
+      "file": "sites/t14-L01.pt",
+      "sha256": "7c0b39f265780caf4b7ea8bae53d2590e47738356e2d978256003399d4b63b0b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 2,
+      "file": "sites/t14-L02.pt",
+      "sha256": "55bf71687aedd125714471e8c216193cc2b95aa40a3fc3dd6985c546b01ce4bc",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 3,
+      "file": "sites/t14-L03.pt",
+      "sha256": "3d0c7e2b2a78a117657595e0a938fd1a46caf8e267d97e9894680079622e263b",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 4,
+      "file": "sites/t14-L04.pt",
+      "sha256": "2de53a6834e519243ce9c9d6521530799ce04b2b25dfcf3b78689246c2892da9",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 5,
+      "file": "sites/t14-L05.pt",
+      "sha256": "e8f27624b51efd1e7eaa6d01cef30860abb67874927a63a9cef0c18c44466a5a",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 6,
+      "file": "sites/t14-L06.pt",
+      "sha256": "0d518a7323b9de963c99a2bc64ccdbc581d4f68890b01c5ddc853a08b277d9e1",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 7,
+      "file": "sites/t14-L07.pt",
+      "sha256": "98c657d4693536c03eb790710268bfee232e96aff33362bc81995d511971e5f1",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 8,
+      "file": "sites/t14-L08.pt",
+      "sha256": "fdda463df4b71f099f9f6574e317f8662b4f0bde5a255723226bdff8d2f8c6fc",
+      "bytes": 2480252,
+      "captured_endpoints": [
+        "Zreal"
+      ],
+      "missing_endpoints": [
+        "Znative",
+        "Z0",
+        "Zv",
+        "Zk",
+        "Zclone"
+      ],
+      "actual_BF16_residual_chain_byte_exact": true
+    }
+  ],
+  "total_bytes": 360170973,
+  "no_extra_dispatch_for_missing_endpoints": true,
+  "full_QKV_steps": [
+    0
+  ],
+  "full_QKV_sites": 9,
+  "real_pre_W_and_five_propagation_sites": 135,
+  "live_QKV_and_endpoint_byte_SHA_sites": 135,
+  "missing_raw_rule": "Null distinguishes omitted raw; executed_endpoints/live metadata distinguish unexecuted endpoints.",
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}

@@ -1,0 +1,525 @@
+{
+  "state": "complete",
+  "goal": "cream_cheese",
+  "case_arm": "all_allowed",
+  "selected_window": null,
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "block_before": 1080,
+    "block_after": 1080,
+    "pre_W": 1080,
+    "native_UND_dispatch": 1080,
+    "native_GEN_dispatch": 1080,
+    "all_allowed_dispatch": 1080,
+    "cut_dispatch": 0,
+    "substituted_sites": 1080,
+    "clone_sham_dispatch": 0,
+    "value_zero_dispatch": 0
+  },
+  "boundary_files": [
+    {
+      "step": 0,
+      "file": "boundaries-t00.pt",
+      "sha256": "e7376c9e2b4ee8094f3732b9df910a83fddf63b570643d16ed5e4a5460534263",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": [
+        37,
+        122,
+        4096
+      ],
+      "full_kwargs_and_tuple_saved": true,
+      "actual_model_kwargs_sha256": "a2e821de67ef3f8ce7f3be8cba5ebc1760195cf86b562f9c11b97da347b3be89",
+      "model_output_sha256": "fe1f27d15c5db7685cd587b746bf4830f0f7fd0cfe804933a355fbdacf5a8f6d"
+    },
+    {
+      "step": 1,
+      "file": "boundaries-t01.pt",
+      "sha256": "a76c2c5fdfd73b83eb6409f7c5141179e118d92e669c081beac0400c8e8ea6be",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "f84f69f30763eee78bd05cbadb1d0b382af17e2ebf1e99d09f497a0af3119f66",
+      "model_output_sha256": "629c791a3d08b8e61ea0470c9da523faa4e4211d755fc823c52e68e78ee072a5"
+    },
+    {
+      "step": 2,
+      "file": "boundaries-t02.pt",
+      "sha256": "d5076304bfcfd6e3a805f28983a64fc7a9c524a56b6315cc87732daa64bced85",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "54c0a73dbdb1d8420c9a8dab51ca1646c192d0b671bb2cf3c5ce3f1527d69ee2",
+      "model_output_sha256": "6a4f564cfc73a4e68fa3215fc74e5e7bbe8eae13936d498a1b370d25f5413b64"
+    },
+    {
+      "step": 3,
+      "file": "boundaries-t03.pt",
+      "sha256": "a5cec47f5011d9d30a83579f5e8573ec2298af2e0fe770dd4409e5abedb7099d",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "2404319e4eaa6b2b2aba0ba8aa60e0361fb978fc4616208745c48571ef8fb3d1",
+      "model_output_sha256": "30e841a9f713d0211db86121551d592ba681a310dd75b6203d4672d9ae3c17fa"
+    },
+    {
+      "step": 4,
+      "file": "boundaries-t04.pt",
+      "sha256": "85195aec9ccd9b521247ea60e8910fc7ee3b7e3d3eb65af95b9d91a8714c7c63",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "b22267be82ac3d1fa41dec090526b74e9af7a7f65df7a40f49b34304dfceb7aa",
+      "model_output_sha256": "cf1c82ee66e36416dd8e07897dc8a1904b1d7d55fc730b0c3e4ed3e2d4d2654b"
+    },
+    {
+      "step": 5,
+      "file": "boundaries-t05.pt",
+      "sha256": "b50fb622ae590fa3e319919f5dc83030e1b2ecbbc392b6d97bcbcfcd80c0339f",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "f85f407ab016ed7710a7fe68087924d2c7b9dfcf707700fb3c20f3bafafc5335",
+      "model_output_sha256": "2a9b4eb7fefbafe875532cba925a7f72aad912128ef0121497a9b577ed1ce928"
+    },
+    {
+      "step": 6,
+      "file": "boundaries-t06.pt",
+      "sha256": "1192ac2efd52ac44cb0b00558b9814179d6bab484fd712e369a2988a839a3e15",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "e13af62a442be06766214c5170a8a1bd2acd8d7de6170cb613f16d8c7b80ce95",
+      "model_output_sha256": "e9d9a32147a261afd194551ac28308d24929ae2764f52b9ab489473cdecb7fcd"
+    },
+    {
+      "step": 7,
+      "file": "boundaries-t07.pt",
+      "sha256": "1f6096018080fb89bb8fdb72d90529a7c5c86d2827096bb07c5236779624485c",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "ac6ed751ef11ec3964e0d517367817e47e3d146a4fe97af8d6baf5e3667a30d9",
+      "model_output_sha256": "ad8c21ebc023b38d3334e90e7d5949ba22fc1af0121fd25e9368e13cb5d21afa"
+    },
+    {
+      "step": 8,
+      "file": "boundaries-t08.pt",
+      "sha256": "6bff26b0537ebdd5751d518857b872aebdf7ac023afc4498c2c98a96bbe725a5",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "289399cf74f84260babc8b89cab2791e4fea7fe30c4cd77d5a7fcb67a06c7552",
+      "model_output_sha256": "cc3b1f79a6dcce7375f35e8929a9d86d9f05bdbb4a93d58239938b098823228b"
+    },
+    {
+      "step": 9,
+      "file": "boundaries-t09.pt",
+      "sha256": "68ddae945c09629b3ef387b200b24ee77a3f352e0a7784e21c8666ce1fafc597",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "313034808365ea86ebf2919e51f79aa94cce248ff33c3aa1185fc5fec5e8ffff",
+      "model_output_sha256": "aa9c242bdbf70f496a319fe17c761349838395b379e9d2d4b2528049418a4225"
+    },
+    {
+      "step": 10,
+      "file": "boundaries-t10.pt",
+      "sha256": "fd3a843a45c39f0731aac49189ed7e29612b7d8d6210f5c2a9f0cbb179b2ae56",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "fca49b0f91cce56b8ada3601f774552db14b326221808fccadd29ad7bd084b77",
+      "model_output_sha256": "df3d48e6200c2244477b2a910a10b91798e92d75c75e63dad9d30bb15460a65c"
+    },
+    {
+      "step": 11,
+      "file": "boundaries-t11.pt",
+      "sha256": "5deb2134e7c4606165b2ef9b6d284ac0d0a54cb216e025b80bd5c2ed7fe795fa",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "1f9907dfb7c01e70cfd3482b7d8085c8e9ca6452d8240eb35c5abe21bc7e8e46",
+      "model_output_sha256": "dd2cbc889909b26d51d280997414ef27dbce852d510b39c4933bf85bacf7fdd5"
+    },
+    {
+      "step": 12,
+      "file": "boundaries-t12.pt",
+      "sha256": "9dfb32fb85e72028fa235ffd537eea7bd6ecf3f1860745af839827ac211d2459",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "5f3ffc425506d4f697aa101be28c32a09cee802ee292a76a6c3bb0ae57565d32",
+      "model_output_sha256": "182f016f355536aa410d640ab041862fdfa8c6da335ad3611845a9298f2b09fa"
+    },
+    {
+      "step": 13,
+      "file": "boundaries-t13.pt",
+      "sha256": "9f90f393b465e1e87549993b5aef54cc4a047ab06af91cc30107b5686ebb33a1",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "b6320860cb3c5a2e30ab75960eba8983ef3f67e574c7a7b6a3654e12aeede2bb",
+      "model_output_sha256": "3eb5dc4ecf949347978d58b37df01df098b52402d7c1db315fa3a9260b4e84d0"
+    },
+    {
+      "step": 14,
+      "file": "boundaries-t14.pt",
+      "sha256": "faf6127dd4e30ebeaf74a71b3b22484d5be8717be4dd5ef96f65c753dbed0c67",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": true,
+      "actual_model_kwargs_sha256": "cf9ff873cd0906806227e25343b8f69be59d293f28c2893147457cc14f8aac30",
+      "model_output_sha256": "b216e00e591a2e6f2433c833abe007cee979e916b0d24c7841125ee253743af5"
+    },
+    {
+      "step": 15,
+      "file": "boundaries-t15.pt",
+      "sha256": "9745573918d31bf629abda79b80761addf228511e4a851db1542d78395534c1d",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": true,
+      "actual_model_kwargs_sha256": "f82a7d082d5c3516ff7fcc3be974eaf220bab365386dcc4e8d761aa5ca0bc4e0",
+      "model_output_sha256": "0b3a0c6903c90e2c493d28151468e4c718cfc5a19120938217b55f2c7d32802a"
+    },
+    {
+      "step": 16,
+      "file": "boundaries-t16.pt",
+      "sha256": "5e8ef7aa90be8b6257c83efca122de866b186294eea072eb5cc5eab7f596f011",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "4ee47761803ec61e14356a6dffe8ac7aecc4f3ac9d370a2c5ea9721cc3e0ca60",
+      "model_output_sha256": "da0d4a751eefc1f94b5c29ec62f05fc54cb8b6d828e686420608cc89d16776ac"
+    },
+    {
+      "step": 17,
+      "file": "boundaries-t17.pt",
+      "sha256": "7bb478f0aca1d2d17e3ee5f3f29802fd779e7b1acb96b21eb7f745e620e58577",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "ac0077705acffa62bf52b8c5656ca645f100b32278d2258c8cf4e33f8e390ebc",
+      "model_output_sha256": "b0969775561d8f2924e0b019fdfd8331b59e285b65bda82a0d807cc634627a7c"
+    },
+    {
+      "step": 18,
+      "file": "boundaries-t18.pt",
+      "sha256": "e9bcbdbdde773587bf569e4ae511e58bf69146cfb3025a75431ebd730705fa62",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "004fc0db39478db97738a6c1ff9fb6c1e509442545fc392d37fd580029d72d68",
+      "model_output_sha256": "0f5782a3490404c0913286caa4f8f64b8c90e3b2019796fc621008b70d66dbff"
+    },
+    {
+      "step": 19,
+      "file": "boundaries-t19.pt",
+      "sha256": "96760c71ae363b60fab7e222f374116292ca71f8c58270853cde2693d2cc84c9",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "dbdcbff816b8b6a59f61ea55c879fa577dd15df1538a6c3b513c5834c9d6402f",
+      "model_output_sha256": "ab4a668a3736ec1cfb4fb5b61dfb69d83695a9d28c80188e18d556d285bab146"
+    },
+    {
+      "step": 20,
+      "file": "boundaries-t20.pt",
+      "sha256": "4695fc0052cb3cb9bdfa9e31b70512e15f282dd965e665b7c8b2525eaa66cfff",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "0f8c109dabd67a66485f4d7291a0834a3bfc84616a429cb85c3a38907b9d918f",
+      "model_output_sha256": "b67ad1d97d3a0bf019e3c1705efde64da08b29b78d410fc50663d00baad5a68a"
+    },
+    {
+      "step": 21,
+      "file": "boundaries-t21.pt",
+      "sha256": "922d504b786bc0a75c4788a43b30e10fa02de4370005c1734d82c50e86d0601d",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "3160d983cf267f3b5fb3223cb8b59be7f40a67fe78bc77a5f1a56cc1e853cf4c",
+      "model_output_sha256": "c3d5bb039b4aabf0e75b5ff4ad0e8d79aa74c7671e0919d72d3aaee616d707ff"
+    },
+    {
+      "step": 22,
+      "file": "boundaries-t22.pt",
+      "sha256": "29b92e69852d337c2cd73697526c73b5ef65d66bf1a827399eec563aea6dd728",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "e3574b2350396c7f087688f0d1bd9ed01be0a01282b20bdb13dd7f6c34286ecb",
+      "model_output_sha256": "8ca2e9283fad51963998d1c59b5220284e5028154e7aa8b06d5d0d05bf4e06e6"
+    },
+    {
+      "step": 23,
+      "file": "boundaries-t23.pt",
+      "sha256": "b700af1e14c52e59873ce1063ab55e18ea6106bdbc138b0688db76bfcb965a50",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "d8f71da3b73cdad35c301eb8b5c24e9fd6fd81200cbe7912732bc21ce0a1d5cd",
+      "model_output_sha256": "ade6977f6f4b778f1ff910c1d47c791d92c989c9f6a75b7107bb2915327efeea"
+    },
+    {
+      "step": 24,
+      "file": "boundaries-t24.pt",
+      "sha256": "e3ddfda87115520a24a0fb2e5e2570dc750e2275303cf8c2f8cade309d0245f0",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "a4064132d1bde8631b4f9548c8ada8979ddd224252c7cf883553c028d2d9615d",
+      "model_output_sha256": "d9622e6ce62cd613b61f425593041ddbf315cdc3ee20346b45c7d7ce633ed661"
+    },
+    {
+      "step": 25,
+      "file": "boundaries-t25.pt",
+      "sha256": "66ccadbc0817fcae5f37a5de3f6a3d8cd458ea975baa0ac553a6ff9f4bf1a5a0",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "c99c68d4e16b2799a086f7f629cb6afe780c3b5e489cbe0e2351570b83020265",
+      "model_output_sha256": "b3b02325ce49da294a580eb5dacb079d06f05fa99251e1ab68147ba03b9113bf"
+    },
+    {
+      "step": 26,
+      "file": "boundaries-t26.pt",
+      "sha256": "ce0891af5a67de5ed742b53f5ee68932d303fd023ad206e43881287c68a0e639",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "bf51e9bd8d3bc4a184524fdc04490003c99dba62872f4121d6a58295aedaf5c7",
+      "model_output_sha256": "8db55f083700e85946e4f252515a91a48bbd60eb4c038c611f447bc53bd32784"
+    },
+    {
+      "step": 27,
+      "file": "boundaries-t27.pt",
+      "sha256": "dce1ba2882a1f835cbaa5120c7c45bba45906c372443501694103f9e91a64520",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "cff382295ea0a109932293e273f08dca990c720b9fe9552d7769a08c9b4b4d7a",
+      "model_output_sha256": "3ee2db53a9c7f7646b3db1538f35a769fe1b773865c601206d13b1aad88ffae0"
+    },
+    {
+      "step": 28,
+      "file": "boundaries-t28.pt",
+      "sha256": "b7b93ebd23e870412d1a485eb2a356b60fca1ee77ab71d4fb23b164d6f287a0e",
+      "current_shape": null,
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": false,
+      "actual_model_kwargs_sha256": "46c53c7a4bb0da395e3ca32a5dcc7743eb3c63e3f095ba54c493b3340c37e4ac",
+      "model_output_sha256": "3a0cb0e8263e1a63439d07756a7ac5f5f6b13f3a40d077531a42da0b3ef93e97"
+    },
+    {
+      "step": 29,
+      "file": "boundaries-t29.pt",
+      "sha256": "2f20f7645670fe204f3a3daa5e371ad2d1c49507fbbe8f7d4c873b8f145d4b2b",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ],
+      "und_shape": null,
+      "full_kwargs_and_tuple_saved": true,
+      "actual_model_kwargs_sha256": "5e521cf40e2a8530597c17b8918e47c8edff4b89d946f5647bb7c4fd7a713d84",
+      "model_output_sha256": "6490cdc95ab7e70223d573eb4516eaf25baf57900b232757add4dd6afee040b6"
+    }
+  ],
+  "indexes_and_masks_sha256": "f4fe6f106d3006b8baf1c12dffad0c2832e027edb0c39756eaf578a690bcc2a5",
+  "site_capture_manifest_sha256": "b36f37c748091d441cd2b0b3aeedad42e4f9a876d6f1da60b647ef35796f2fe9",
+  "captured_sites": 135,
+  "original_full_266_row_projection_calls": 1080,
+  "all_actual_dispatch_flatten_pre_W_byte_exact": true,
+  "all_masked_sites_same_union66": true,
+  "action16_same_input_Z0_at_all_masked_sites": true,
+  "future200_and_UND_native_dispatch_returns_preserved": true,
+  "all30_actual37_current_action_boundaries_finite": true,
+  "all135_actual_BF16_projection_MLP_residual_chains_byte_exact": true,
+  "propagation_counts": {
+    "projection": 135,
+    "residual": 135,
+    "MLP": 135,
+    "completed": 135
+  },
+  "actual_action_input_output_saved_all30": true,
+  "full_current_kwargs_tuple_saved_steps": [
+    0,
+    14,
+    15,
+    29
+  ],
+  "full_UND_saved_steps": [
+    0
+  ],
+  "other_full_raw_arrays_omitted": true,
+  "milk_all30_live_full_kwargs_current_action_tuple_byte_exact": false,
+  "processor_recompute_calls": 0,
+  "extra_projection_or_MLP_forward_calls": 0,
+  "all_owned_hooks_removed": true,
+  "original_dispatch_symbol_restored": true,
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}

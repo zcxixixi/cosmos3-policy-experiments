@@ -16,15 +16,15 @@
 
 先固定设置，复核0、6、15厘米三种条件，每种先用三个配对随机种子；复现后细查目标切换范围。优先检验“牛奶移出熟悉范围后，熟悉抓法压过身份和位置信息”的猜想，同时检查视觉信息不足和抓取执行失败两个替代解释。记录各层活动，再局部增强、削弱或替换；用自身替换、无关部分、等强度随机扰动、新位置和新种子作对照。碗／酒瓶正确对照用于验证干预方法，不直接解释牛奶失败。
 
-**最新：从前9层缩小到第1层四个真实head，18条MuJoCo执行完成。** 事先主猜想是只切24–27号头即可救回195、保留198抓牛奶。结果195仍抓奶酪69步、198抓牛奶64步，主猜想被否定；反过来前9层切边只保留这4头，两组仍抓牛奶60/64步。因此当前背景下，这4头未单独救回，也没有阻断粗干预的救回。
+**最新：抓对牛奶，仍不能算听懂指令。** 本批固定12厘米临界初态，三种指令×原生／同形全连接／前9层切边×两份未来噪声，共18条MuJoCo执行，全部完成。切边后，“milk”和“cheese”两组都抓牛奶，而写完整“cream cheese”两组都抓奶酪盒。这否定了把此前牛奶救回直接算作恢复指令遵循的解释；不证明忽略全部语言或记住固定动作。
 
-16–19号头单独切也未改抓取类别；在前9层切边背景中保留这4头，195没有满足严格抓起，但牛奶发生9.024厘米平面位移并倒地，奶酪盒未移动。不能把这种失败直接归为目标仍是奶酪；还需要区分瞄准与抓稳。随机方向和同数值替换对照均保留原抓取类别。只有两个未来生成起点、同一12厘米初态，不是成功率；15/18厘米的旧失败仍未解决。
+milk与cheese实际文字输入等长，只有目标位置一个token改变；cream cheese多1个token，是长度／排列混杂的次对照。下一步先区分“完整名称的词义”与“输入长度”，再选自然有效的语言供体做局部内部替换。
 
-保存2430处真实head/当前视觉的W投影、残差、MLP及层输出，540份真实逐层边界。首轮540次＋后续3780次网络计算，18轨迹、144执行模型记录、2304实际动作、119整噪声配对；8条历史控制完整复现。所有18录像、144实际记录、物理轨迹、每组首处原数组与首步边界公开。剩余完整原PT保留A6000，来源SHA全部公开。
+内部“共同动作偏移”预登记检验为**证据不足**：首轮首个去噪、第36层动作状态中，语言对照差只有连接实现数值底座差的2.01／2.44倍，未过事先>10倍判定门。不能改判支持或拒绝；输出头的实数子空间比例也不能说成“95%语言消失”。目前仍未定位具体head、MLP单元或15厘米转抓的机制。
 
-CPU全量传播复核也已完成：单改24–27号头造成的差异穿过第一层MLP并到达动作状态，真实抓取仍未改对。因此“第一层把差异擦掉”不符合本轮测量；尚未找到能稳定切换目标的内部改法。[真实传播数组与审计](experiments/16-milk-shift-mechanism/future-head-effects-matched-runtime/)。原CPU版本范数差导致的失败记录和精确修复也一并保留。
+本批保存2430处真实内部记录、540份逐层边界；首轮＋后续共4320次网络计算、144份执行预测记录、2304条真实控制命令。公开18录像、完整物理轨迹与模型执行记录、封存NPZ和源SHA。其余完整内部PT保留A6000；首页只展示最新批次。抓起判据是双指接触＋抬升>2厘米连续5条记录，不等于放篮成功；研究目标仍未完成。
 
-[18条完整实际结果](experiments/16-milk-shift-mechanism/future-head-execution/comparisons.json)、[事先主猜想](experiments/16-milk-shift-mechanism/future-head-groups/primary-prediction.json)、[原始内部数组](experiments/16-milk-shift-mechanism/future-head-groups/)、[实验历史](experiments/16-milk-shift-mechanism/README.md)。[首页](https://zcxixixi.github.io/cosmos3-policy-experiments/#latest)只展示最新批次。研究目标仍未完成。
+[18条完整实际结果](experiments/16-milk-shift-mechanism/future-language-selectivity-execution/comparisons.json) · [真实内部数组与审计](experiments/16-milk-shift-mechanism/future-language-selectivity-analysis/) · [预登记猜想](experiments/16-milk-shift-mechanism/language-selectivity/primary-prediction.json) · [详细复现说明与历史](experiments/16-milk-shift-mechanism/README.md) · [最新网页和单条录像](https://zcxixixi.github.io/cosmos3-policy-experiments/#latest)
 
 ## 先看结果
 

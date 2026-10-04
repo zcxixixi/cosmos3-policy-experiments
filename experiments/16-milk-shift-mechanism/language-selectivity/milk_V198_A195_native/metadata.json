@@ -1,0 +1,105 @@
+{
+  "task": "milk",
+  "task_index": 7,
+  "prompt": "pick up the milk and place it in the basket",
+  "seed": 195,
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "domain_name": "libero",
+  "domain_id": 5,
+  "raw_action_dim": 10,
+  "chunk_size": 16,
+  "num_inference_steps": 30,
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+  "input_png_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "und_len": 121,
+  "timesteps": [
+    999,
+    965,
+    932,
+    899,
+    865,
+    832,
+    799,
+    765,
+    732,
+    699,
+    666,
+    632,
+    599,
+    566,
+    532,
+    499,
+    466,
+    432,
+    399,
+    366,
+    333,
+    299,
+    266,
+    233,
+    199,
+    166,
+    133,
+    99,
+    66,
+    33
+  ],
+  "model_calls": 30,
+  "prepare_calls": 1,
+  "pure_noise_shapes": [
+    [
+      1,
+      48,
+      5,
+      10,
+      20
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "elapsed_s": 9.00673732800351,
+  "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+  "case": "milk_V198_A195_native",
+  "goal": "milk",
+  "arm": "native",
+  "query": 0,
+  "scene_task_index": 7,
+  "scene_prompt": "pick up the milk and place it in the basket",
+  "policy_prompt": "pick up the milk and place it in the basket",
+  "target_object": "milk_1",
+  "shift_cm": 12,
+  "vision_noise_source_seed": 198,
+  "action_noise_source_seed": 195,
+  "runtime_rng_seed": 195,
+  "window_zero_based_inclusive": null,
+  "common_union66_all_allowed_background": false,
+  "producer_script_sha256": "74ac42db450a1a7cd308c837bf75049cd2dcae858a4869dab1f0f60450c69b13",
+  "control_reference_case": "V198_A195_native",
+  "entire_accepted_control_record_exact": true,
+  "captured_sites": 135,
+  "site_capture_manifest_sha256": "7ab8e3e438071db6dde67be5790870004b8d695127b587eeb1b62bbd437234f6",
+  "actual_target_positions": [
+    48
+  ],
+  "actual_target_token_ids": [
+    14074
+  ],
+  "raw_current_steps": [
+    0,
+    14,
+    15,
+    29
+  ],
+  "raw_UND_steps": [
+    0
+  ],
+  "full_QKV_site_steps": [
+    0
+  ],
+  "physical_prediction_evaluated": false,
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}

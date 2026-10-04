@@ -1,0 +1,44 @@
+{
+  "state": "exact",
+  "primary_goals": [
+    "milk",
+    "cheese"
+  ],
+  "cases": [
+    {
+      "vision_noise_source_seed": 195,
+      "changed_actual_input_id_positions": [
+        48
+      ],
+      "milk_target_ids": [
+        14074
+      ],
+      "cheese_target_ids": [
+        17163
+      ],
+      "actual_und_len": 121,
+      "actual_sequence_length": 387,
+      "all30_lengths_text_indices_position_ids_and_other_pack_fields_byte_exact": true,
+      "complete_initial_kwargs_only_one_target_ID_changed": true
+    },
+    {
+      "vision_noise_source_seed": 198,
+      "changed_actual_input_id_positions": [
+        48
+      ],
+      "milk_target_ids": [
+        14074
+      ],
+      "cheese_target_ids": [
+        17163
+      ],
+      "actual_und_len": 121,
+      "actual_sequence_length": 387,
+      "all30_lengths_text_indices_position_ids_and_other_pack_fields_byte_exact": true,
+      "complete_initial_kwargs_only_one_target_ID_changed": true
+    }
+  ],
+  "canonical_name_is_secondary_and_may_change_packing": true,
+  "canonical_actual_und_len": 122,
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}

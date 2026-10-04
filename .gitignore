@@ -113,3 +113,11 @@ experiments/16-milk-shift-mechanism/future-value-execution/inputs
 !experiments/16-milk-shift-mechanism/future-head-execution/closed-loop/*/chunk_*/states.pt
 !experiments/16-milk-shift-mechanism/future-head-execution/closed-loop/*/chunk_00/noise-audit.pt
 !experiments/16-milk-shift-mechanism/future-head-execution/closed-loop/*/chunk_00/indexes-and-masks.pt
+
+# Measured language-selectivity records and partial actual output head; no full checkpoint.
+!experiments/16-milk-shift-mechanism/language-selectivity/*/states.pt
+!experiments/16-milk-shift-mechanism/language-selectivity/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/language-selectivity/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/language-selectivity/*/language-contract.pt
+!experiments/16-milk-shift-mechanism/language-selectivity/output-head-actual.pt
+!experiments/16-milk-shift-mechanism/future-language-selectivity-execution/closed-loop/*/chunk_*/states.pt

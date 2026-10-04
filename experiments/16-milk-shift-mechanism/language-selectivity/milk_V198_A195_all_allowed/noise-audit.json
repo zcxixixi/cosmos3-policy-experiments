@@ -1,0 +1,156 @@
+{
+  "noise": {
+    "draw_count": 2,
+    "original_randn_calls": 2,
+    "invoke_seed": 195,
+    "vision_noise_source_seed": 198,
+    "action_noise_source_seed": 195,
+    "original_symbol_restored": true,
+    "actual_generator_identity_same_for_both_draws": true,
+    "original_two_draw_rng_state_chain_exact": true,
+    "calls": [
+      {
+        "ordinal": 0,
+        "modality": "vision",
+        "returned_source_seed": 198,
+        "original_generated_seed": 195,
+        "original_generated_metadata": {
+          "shape": [
+            1,
+            48,
+            5,
+            10,
+            20
+          ],
+          "dtype": "torch.float32",
+          "sha256": "3883cea79b4316ba3a5c76f65dc76b07d1ea0ca753d05d925f283439e16d7e09",
+          "stride": [
+            48000,
+            1000,
+            200,
+            20,
+            1
+          ],
+          "device": "cuda:0"
+        },
+        "returned_metadata": {
+          "shape": [
+            1,
+            48,
+            5,
+            10,
+            20
+          ],
+          "dtype": "torch.float32",
+          "sha256": "2434416d082d99ad472b2300c50423e12fa32ac882465d2d51ede924f141ba0d",
+          "stride": [
+            48000,
+            1000,
+            200,
+            20,
+            1
+          ],
+          "device": "cuda:0"
+        },
+        "generator_before": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "e5024788649a7a232bc663563b4f26b4c7f7447931f50d5eb449dd355ca5a326"
+        },
+        "generator_after": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "0779859da03f3844a310a68613925c2ac1eb540f7fd3fa90b203b12f98b2f13f"
+        },
+        "actual_inner_observer_noise": {
+          "shape": [
+            1,
+            48,
+            5,
+            10,
+            20
+          ],
+          "dtype": "torch.float32",
+          "sha256": "2434416d082d99ad472b2300c50423e12fa32ac882465d2d51ede924f141ba0d"
+        },
+        "original_generated_matches_A_seed_source_byte_exact": true,
+        "actual_returned_matches_selected_source_byte_exact": true,
+        "inner_observer_matches_actual_returned_byte_exact": true
+      },
+      {
+        "ordinal": 1,
+        "modality": "action",
+        "returned_source_seed": 195,
+        "original_generated_seed": 195,
+        "original_generated_metadata": {
+          "shape": [
+            16,
+            64
+          ],
+          "dtype": "torch.float32",
+          "sha256": "5e46904c445a51541320b68f636b2d06a4a5b58f804425b0aa9c45d05d0c9424",
+          "stride": [
+            64,
+            1
+          ],
+          "device": "cuda:0"
+        },
+        "returned_metadata": {
+          "shape": [
+            16,
+            64
+          ],
+          "dtype": "torch.float32",
+          "sha256": "5e46904c445a51541320b68f636b2d06a4a5b58f804425b0aa9c45d05d0c9424",
+          "stride": [
+            64,
+            1
+          ],
+          "device": "cuda:0"
+        },
+        "generator_before": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "0779859da03f3844a310a68613925c2ac1eb540f7fd3fa90b203b12f98b2f13f"
+        },
+        "generator_after": {
+          "shape": [
+            16
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "07381816c67ea27dda34fc5c16843a08aea0741040b0f2ebb2857811f98c14b3"
+        },
+        "actual_inner_observer_noise": {
+          "shape": [
+            16,
+            64
+          ],
+          "dtype": "torch.float32",
+          "sha256": "5e46904c445a51541320b68f636b2d06a4a5b58f804425b0aa9c45d05d0c9424"
+        },
+        "original_generated_matches_A_seed_source_byte_exact": true,
+        "actual_returned_matches_selected_source_byte_exact": true,
+        "inner_observer_matches_actual_returned_byte_exact": true
+      }
+    ]
+  },
+  "preparation": {
+    "actual_model_calls": 30,
+    "prepared_vision_entire_tensor_equals_V_source": true,
+    "prepared_action_entire_tensor_equals_A_source": true,
+    "other_ten_prepared_fields_byte_exact": true,
+    "initial_vision_action_tokens_and_A195_FP32_solver_sample_byte_exact": true,
+    "all30_actual_action_solver_casts_outputs_schedule_and_current_SHA_checked": true,
+    "all_prepared_model_input_and_31_solver_state_padding54_zero": true,
+    "action_condition_mask_all_zero": true,
+    "complete_initial_kwargs_equal_same_goal_V_native": true,
+    "native_first_observation": false,
+    "no_independent_new_goal_native_repeat": true
+  }
+}

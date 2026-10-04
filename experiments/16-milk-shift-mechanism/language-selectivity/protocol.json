@@ -1,0 +1,452 @@
+{
+  "plan": [
+    {
+      "case": "milk_V195_A195_native",
+      "goal": "milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": "V195_A195_native"
+    },
+    {
+      "case": "milk_V198_A195_native",
+      "goal": "milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": "V198_A195_native"
+    },
+    {
+      "case": "cheese_V195_A195_native",
+      "goal": "cheese",
+      "prompt": "pick up the cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "cheese_V198_A195_native",
+      "goal": "cheese",
+      "prompt": "pick up the cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "cream_cheese_V195_A195_native",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "cream_cheese_V198_A195_native",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "milk_V195_A195_all_allowed",
+      "goal": "milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": "V195_A195_all_allowed"
+    },
+    {
+      "case": "milk_V198_A195_all_allowed",
+      "goal": "milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": "V198_A195_all_allowed"
+    },
+    {
+      "case": "cheese_V195_A195_all_allowed",
+      "goal": "cheese",
+      "prompt": "pick up the cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "cheese_V198_A195_all_allowed",
+      "goal": "cheese",
+      "prompt": "pick up the cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "cream_cheese_V195_A195_all_allowed",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "cream_cheese_V198_A195_all_allowed",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": null,
+      "control_reference_case": null
+    },
+    {
+      "case": "milk_V195_A195_full_hardmask",
+      "goal": "milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      },
+      "control_reference_case": "V195_A195_full_hardmask"
+    },
+    {
+      "case": "milk_V198_A195_full_hardmask",
+      "goal": "milk",
+      "prompt": "pick up the milk and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      },
+      "control_reference_case": "V198_A195_full_hardmask"
+    },
+    {
+      "case": "cheese_V195_A195_full_hardmask",
+      "goal": "cheese",
+      "prompt": "pick up the cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      },
+      "control_reference_case": null
+    },
+    {
+      "case": "cheese_V198_A195_full_hardmask",
+      "goal": "cheese",
+      "prompt": "pick up the cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      },
+      "control_reference_case": null
+    },
+    {
+      "case": "cream_cheese_V195_A195_full_hardmask",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      },
+      "control_reference_case": null
+    },
+    {
+      "case": "cream_cheese_V198_A195_full_hardmask",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      },
+      "control_reference_case": null
+    }
+  ],
+  "trial_order": [
+    "milk_V195_A195_native",
+    "milk_V198_A195_native",
+    "cheese_V195_A195_native",
+    "cheese_V198_A195_native",
+    "cream_cheese_V195_A195_native",
+    "cream_cheese_V198_A195_native",
+    "milk_V195_A195_all_allowed",
+    "milk_V198_A195_all_allowed",
+    "cheese_V195_A195_all_allowed",
+    "cheese_V198_A195_all_allowed",
+    "cream_cheese_V195_A195_all_allowed",
+    "cream_cheese_V198_A195_all_allowed",
+    "milk_V195_A195_full_hardmask",
+    "milk_V198_A195_full_hardmask",
+    "cheese_V195_A195_full_hardmask",
+    "cheese_V198_A195_full_hardmask",
+    "cream_cheese_V195_A195_full_hardmask",
+    "cream_cheese_V198_A195_full_hardmask"
+  ],
+  "prompts": {
+    "milk": "pick up the milk and place it in the basket",
+    "cheese": "pick up the cheese and place it in the basket",
+    "cream_cheese": "pick up the cream cheese and place it in the basket"
+  },
+  "scene_prompt": "pick up the milk and place it in the basket",
+  "scene_task_index": 7,
+  "shift_cm": 12,
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+  "image_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "primary_hypothesis": {
+    "name": "H_common_shift",
+    "primary_goals": [
+      "milk",
+      "cheese"
+    ],
+    "secondary_goal": "cream_cheese",
+    "measurement": "t0 actual action_hidden boundary36; delta=cut-all_allowed for each language",
+    "cosine_min": 0.95,
+    "relative_delta_difference_max": 0.1,
+    "numerical_background_multiplier": 10,
+    "numerical_background": "D=norm(sham_milk-sham_cheese); E=max(norm(native-sham) for the two languages); D>10E",
+    "zero_delta_norms_invalid": true,
+    "cosine_gate_redundant_not_independent_evidence": true,
+    "all18_physics_required": true,
+    "no_q0_selection": true
+  },
+  "selected_window_zero_based_inclusive": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      8
+    ]
+  },
+  "target_token_ids_preregistered": {
+    "milk": [
+      14074
+    ],
+    "cheese": [
+      17163
+    ],
+    "cream_cheese": [
+      12644,
+      17163
+    ]
+  },
+  "prompt_token_lengths_preregistered": {
+    "milk": 10,
+    "cheese": 10,
+    "cream_cheese": 11
+  },
+  "primary_language_gate": "Actual full packed milk/cheese input IDs differ only at one target token; all other first kwargs and all30 structural metadata equal.",
+  "masked_background": "All36 layers/all30 steps union66 Z0; only selected current50 uses same-live-QK Zk; action16 Z0, future200 and UND native.",
+  "q0_predictions": 18,
+  "model_forwards": 540,
+  "expected_counts": {
+    "model_before": 540,
+    "model_after": 540,
+    "block_before": 19440,
+    "block_after": 19440,
+    "pre_W": 19440,
+    "native_UND_dispatch": 19440,
+    "native_GEN_dispatch": 19440,
+    "all_allowed_dispatch": 12960,
+    "substituted_sites": 12960,
+    "clone_sham_dispatch": 0,
+    "value_zero_dispatch": 0,
+    "cut_dispatch": 810
+  },
+  "total_official_dispatch_calls": 52650,
+  "original_dispatch_calls": 38880,
+  "extra_all_allowed_dispatch_calls": 12960,
+  "selected_extra_dispatch_calls": 810,
+  "captures_per_case": 135,
+  "total_site_captures": 2430,
+  "max_capture_file_bytes": 100000000,
+  "action_boundary_raw_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "current_boundary_raw_steps": [
+    0,
+    14,
+    15,
+    29
+  ],
+  "UND_boundary_raw_steps": [
+    0
+  ],
+  "full_kwargs_and_tuple_raw_steps": [
+    0,
+    14,
+    15,
+    29
+  ],
+  "all30_action_input_output_timesteps_sigma_raw": true,
+  "full_QKV_site_raw_steps": [
+    0
+  ],
+  "pre_W_and_five_propagation_raw_sites_per_case": 135,
+  "missing_raw_rule": "Explicit null with live numerical-byte SHA; unexecuted endpoints separately named; no capture-only dispatch.",
+  "six_milk_controls": "ENTIRE prior head-stage NormalRuntime records, plus live all30 full kwargs/current/action/tuple equality before sparse saving.",
+  "later_physics_preregistered": {
+    "trial_order": [
+      "milk_V195_A195_native",
+      "milk_V198_A195_native",
+      "cheese_V195_A195_native",
+      "cheese_V198_A195_native",
+      "cream_cheese_V195_A195_native",
+      "cream_cheese_V198_A195_native",
+      "milk_V195_A195_all_allowed",
+      "milk_V198_A195_all_allowed",
+      "cheese_V195_A195_all_allowed",
+      "cheese_V198_A195_all_allowed",
+      "cream_cheese_V195_A195_all_allowed",
+      "cream_cheese_V198_A195_all_allowed",
+      "milk_V195_A195_full_hardmask",
+      "milk_V198_A195_full_hardmask",
+      "cheese_V195_A195_full_hardmask",
+      "cheese_V198_A195_full_hardmask",
+      "cream_cheese_V195_A195_full_hardmask",
+      "cream_cheese_V198_A195_full_hardmask"
+    ],
+    "cases": 18,
+    "cached_q0": 18,
+    "later_noise_base": 195,
+    "q1_to_q7_seeds": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "later_predictions": 126,
+    "later_model_forwards": 3780,
+    "total_two_stage_model_forwards": 4320,
+    "later_whole_noise_pairs": 119,
+    "no_q0_score_or_rank_selection": true
+  },
+  "physics_calls": 0,
+  "no_training": true,
+  "no_residual_compensation": true,
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}

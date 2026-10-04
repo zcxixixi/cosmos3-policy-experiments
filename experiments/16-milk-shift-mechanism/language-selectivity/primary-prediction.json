@@ -1,0 +1,19 @@
+{
+  "status": "not_evaluated_q0_only",
+  "name": "H_common_shift",
+  "primary_goals": [
+    "milk",
+    "cheese"
+  ],
+  "secondary_goal": "cream_cheese",
+  "measurement": "t0 actual action_hidden boundary36; delta=cut-all_allowed for each language",
+  "cosine_min": 0.95,
+  "relative_delta_difference_max": 0.1,
+  "numerical_background_multiplier": 10,
+  "numerical_background": "D=norm(sham_milk-sham_cheese); E=max(norm(native-sham) for the two languages); D>10E",
+  "zero_delta_norms_invalid": true,
+  "cosine_gate_redundant_not_independent_evidence": true,
+  "all18_physics_required": true,
+  "no_q0_selection": true,
+  "scope": "Eighteen fixed X12 q0 cases, scene task7 unchanged, actual policy instructions milk/cheese/cream cheese, V195/V198 and A/runtime195. Primary milk/cheese requires equal actual packed lengths/positions and exactly one changed target ID. Canonical cream cheese may change packing and is secondary. Same-call hardmask changes both content and allocation. No identity decoder or universal root cause. All18 physical cases remain required before evaluating the preregistered hypothesis; q0 raw production does not evaluate it. Sparse arrays are never described as full capture."
+}
