@@ -1,0 +1,167 @@
+{
+  "state": "complete",
+  "exploratory": true,
+  "actual_model_forwards": 0,
+  "torch_version": "2.14.0+cu130",
+  "script_sha256": "2364172850828cdecded432c16021602fe948598c79a39f5da4b1ea9c465dfc8",
+  "accepted_complete_sha256": "e8a6b61cbe0a4d5da291dea68f15f45059f195c79fb9ad721b7b01670ab81dc0",
+  "source": "outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-head-groups",
+  "actual_sources_sha256": {
+    "V195_A195_all_allowed": {
+      "states.pt": "a138fdfafe03594ce914489ab24987719335e188b6794cccc19f67c5de1a17ac",
+      "boundaries-t00.pt": "ed53026fff83ff6b940eec0eb3647e25010413755776a65c82cad612d952c1ac"
+    },
+    "V195_A195_head_G6": {
+      "states.pt": "75270ab28cb8983e9b12bf2e3a3aa133d584223ba99bc8165c03690288313002",
+      "boundaries-t00.pt": "96462e65807cbe4c91e7984763588f2f3e1bbd5744c8dc1b8f0caff76d0d3a0a"
+    },
+    "V195_A195_full_hardmask": {
+      "states.pt": "475d0c1008a8ef3e2dd3e67f9b384ee76b18bdb48dca14b696b97f1fc06cf6de",
+      "boundaries-t00.pt": "e0ca90e83b8e2e5df0df83fea068a03c0d5c54bb68908229b5dfe7d7fa29893a"
+    },
+    "V198_A195_all_allowed": {
+      "states.pt": "6fe31b9d8ef0a453a16992752a685e71f45a63aaa76e2f73172f0373fc496c6f",
+      "boundaries-t00.pt": "d61ddfea555009f3df053de0e986e1adcf6962d5d2e26e04de906e513912866f"
+    },
+    "V198_A195_head_G6": {
+      "states.pt": "440463cb6a56195c7f43d40f29b9dfd03cbb19f1dc1b1405649669ecd05a81ba",
+      "boundaries-t00.pt": "d43919d50ce9f873b0486e6ecc4726818c49d568cce39cc1f757d864ee69f5d6"
+    },
+    "V198_A195_full_hardmask": {
+      "states.pt": "45bed306bb5c3504f620752cd756c571d3d6a3d4d467b86f1021b52c2a03ecd6",
+      "boundaries-t00.pt": "036c37bcc63164b0447971298d9aa6f9c4484b271d5acbd86f675ddbfa633a17"
+    }
+  },
+  "rows": [
+    {
+      "V": 195,
+      "arm": "head_G6",
+      "t": 0,
+      "measures": {
+        "L36": {
+          "delta_rms": 0.01786813474563074,
+          "reference_rms": 0.9305340767763397,
+          "relative_delta": 0.019202020851865554
+        },
+        "readout": {
+          "delta_rms": 0.002810552511132115,
+          "reference_rms": 0.1879823573433861,
+          "relative_delta": 0.014951150474180393
+        },
+        "XYZ_velocity": {
+          "delta_rms": 0.007228995248775844,
+          "reference_rms": 1.1058695311525186,
+          "relative_delta": 0.006536933196126587
+        },
+        "actual10_velocity": {
+          "delta_rms": 0.00623147723128934,
+          "reference_rms": 1.1673989510804808,
+          "relative_delta": 0.005337915736108744
+        },
+        "final_q0_XYZ": {
+          "delta_rms": 0.00228052703533972,
+          "reference_rms": 0.4023323359650723,
+          "relative_delta": 0.005668266831870306
+        }
+      }
+    },
+    {
+      "V": 195,
+      "arm": "full_hardmask",
+      "t": 0,
+      "measures": {
+        "L36": {
+          "delta_rms": 0.0596765063556079,
+          "reference_rms": 0.9305340767763397,
+          "relative_delta": 0.06413145724049778
+        },
+        "readout": {
+          "delta_rms": 0.007840219631685014,
+          "reference_rms": 0.1879823573433861,
+          "relative_delta": 0.0417072098812089
+        },
+        "XYZ_velocity": {
+          "delta_rms": 0.04851569355393141,
+          "reference_rms": 1.1058695311525186,
+          "relative_delta": 0.04387108260715816
+        },
+        "actual10_velocity": {
+          "delta_rms": 0.03330675093288562,
+          "reference_rms": 1.1673989510804808,
+          "relative_delta": 0.028530735702699327
+        },
+        "final_q0_XYZ": {
+          "delta_rms": 0.2669724790979656,
+          "reference_rms": 0.4023323359650723,
+          "relative_delta": 0.6635620735220803
+        }
+      }
+    },
+    {
+      "V": 198,
+      "arm": "head_G6",
+      "t": 0,
+      "measures": {
+        "L36": {
+          "delta_rms": 0.01534908106960971,
+          "reference_rms": 0.9276149682282716,
+          "relative_delta": 0.016546823407697038
+        },
+        "readout": {
+          "delta_rms": 0.002641038356791242,
+          "reference_rms": 0.18761853959586053,
+          "relative_delta": 0.014076638494682707
+        },
+        "XYZ_velocity": {
+          "delta_rms": 0.006881837921264992,
+          "reference_rms": 1.0993695011927263,
+          "relative_delta": 0.006259804291276736
+        },
+        "actual10_velocity": {
+          "delta_rms": 0.0065104395647441,
+          "reference_rms": 1.1666564251614489,
+          "relative_delta": 0.005580425757174523
+        },
+        "final_q0_XYZ": {
+          "delta_rms": 0.0018907076705756388,
+          "reference_rms": 0.41957256240872165,
+          "relative_delta": 0.00450627100047078
+        }
+      }
+    },
+    {
+      "V": 198,
+      "arm": "full_hardmask",
+      "t": 0,
+      "measures": {
+        "L36": {
+          "delta_rms": 0.0484309103396661,
+          "reference_rms": 0.9276149682282716,
+          "relative_delta": 0.05221014321509742
+        },
+        "readout": {
+          "delta_rms": 0.006671114373332473,
+          "reference_rms": 0.18761853959586053,
+          "relative_delta": 0.03555679725309865
+        },
+        "XYZ_velocity": {
+          "delta_rms": 0.03500144151042281,
+          "reference_rms": 1.0993695011927263,
+          "relative_delta": 0.031837741061989715
+        },
+        "actual10_velocity": {
+          "delta_rms": 0.029214210016464164,
+          "reference_rms": 1.1666564251614489,
+          "relative_delta": 0.025040971263173156
+        },
+        "final_q0_XYZ": {
+          "delta_rms": 0.013134139783699737,
+          "reference_rms": 0.41957256240872165,
+          "relative_delta": 0.03130361935084132
+        }
+      }
+    }
+  ],
+  "formula": "Float64 before subtraction; RMS(arm-sameVallallowed)/RMS(sameVallallowed) at each own position.",
+  "scope": "t0 pre-final-norm L36, actual action_proj_out pre-hook readout and post-hook velocity. Final q0 XYZ is a total sampler effect. Different positions have different scales and reference norms. No information-retention percentage, target probability, semantic unit, new-language result or root-cause claim."
+}
