@@ -1,0 +1,192 @@
+{
+  "source_pair": [
+    "V195_A195",
+    "V198_A195"
+  ],
+  "action_noise_source_seed": 195,
+  "plan": [
+    {
+      "case": "V195_A195_native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native"
+    },
+    {
+      "case": "V198_A195_native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native"
+    },
+    {
+      "case": "V195_A195_all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed"
+    },
+    {
+      "case": "V198_A195_all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed"
+    },
+    {
+      "case": "V195_A195_cut_future_current",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "cut_future_current"
+    },
+    {
+      "case": "V198_A195_cut_future_current",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "cut_future_current"
+    },
+    {
+      "case": "V195_A195_cut_future_action",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "cut_future_action"
+    },
+    {
+      "case": "V198_A195_cut_future_action",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "cut_future_action"
+    },
+    {
+      "case": "V195_A195_cut_future_both",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "cut_future_both"
+    },
+    {
+      "case": "V198_A195_cut_future_both",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "cut_future_both"
+    }
+  ],
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+  "image_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "prompt": "pick up the milk and place it in the basket",
+  "shift_cm": 12,
+  "q0_predictions": 10,
+  "model_forwards": 300,
+  "steps": 30,
+  "layers": 36,
+  "physics_calls": 0,
+  "original_dispatch_calls": 21600,
+  "extra_all_allowed_dispatch_calls": 8640,
+  "extra_cut_dispatch_calls": 6480,
+  "total_official_dispatch_calls": 36720,
+  "processor_recompute_calls": 0,
+  "mask_shape": [
+    1,
+    1,
+    266,
+    387
+  ],
+  "bool_true_means_allowed": true,
+  "query_groups": {
+    "current": 50,
+    "action": 16,
+    "future": 200,
+    "text_UND": 121
+  },
+  "native_control": "Two untouched original dispatch cases first; entire q0 record equals its completed fixed-A195 source.",
+  "masked_common_footprint": "All eight masked cases substitute current50+action16 union66 rows; original native future200 and causal UND dispatch retained. Original full266 to_add_out shape/call unchanged.",
+  "cut_gate": "Every unblocked GEN query, including future200, must byte-equal all-allowed computed on the same actual site Q/K/V. Any failure stops with actual output witness; no residual compensation.",
+  "noise_pair_rule": "Within each V family all five entire V/A noise pairs exact. Across V families action draw only exact; invocation seed195 is not a whole-noise matching rule.",
+  "boundary_saved_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "public_selected_steps": [
+    0,
+    10,
+    20,
+    29
+  ],
+  "boundary_scope": "37 actual current/action decoder boundaries per step; boundary36 is before final norm. No full QKV exports.",
+  "engineering_predictions": {
+    "both": "Cross-V all current/action boundaries, full64 action velocities/readouts, all31 FP32 action states and final10dim actions byte-equal; future payload may differ.",
+    "single_first_layer": "At step0, current-cut boundary1 current rows and action-cut boundary1 action rows cross-V byte-equal; subsequent single-edge routes can differ."
+  },
+  "later_physics_preregistered": {
+    "trial_order": [
+      "V195_A195_native",
+      "V198_A195_native",
+      "V195_A195_all_allowed",
+      "V198_A195_all_allowed",
+      "V195_A195_cut_future_current",
+      "V198_A195_cut_future_current",
+      "V195_A195_cut_future_action",
+      "V198_A195_cut_future_action",
+      "V195_A195_cut_future_both",
+      "V198_A195_cut_future_both"
+    ],
+    "cases": 10,
+    "cached_q0": 10,
+    "later_noise_base": 195,
+    "q1_to_q7_seeds": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "later_predictions": 70,
+    "later_model_forwards": 2100,
+    "total_two_stage_model_forwards": 2400,
+    "native_references": {
+      "195": "V195_A195",
+      "198": "V198_A195"
+    },
+    "no_selection_after_q0_scores": true,
+    "both_prediction": "If q0 ten-dimension actions equal, Both trials entire129 sim states, five action/trajectory JSON, eight inputPNG and q1..7 entire modelrecords must byte-equal.",
+    "numerical_sham_interpretation_gate": "If either all-allowed physical sham changes its native grasp classification, stop original-native-necessity interpretation; only a modified mask-kernel regime effect can be described. Never change source pair or loosen controls."
+  },
+  "no_training": true,
+  "no_residual_compensation": true,
+  "scope": "Ten fixed-A195 X+12cm q0 predictions with two future-noise realizations. Masked attention arithmetic and propagated actual current/action hidden states, raw action outputs and solver states only. Numerical shams can change the native trajectory. No training, new physics, latent identity decoder, target commitment or root-cause claim. All ten physical cases remain a separately preregistered stage."
+}

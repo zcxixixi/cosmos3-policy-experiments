@@ -1,0 +1,480 @@
+{
+  "state": "complete",
+  "arm": "cut_future_action",
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "block_before": 1080,
+    "block_after": 1080,
+    "pre_W": 1080,
+    "native_UND_dispatch": 1080,
+    "native_GEN_dispatch": 1080,
+    "all_allowed_dispatch": 1080,
+    "cut_dispatch": 1080,
+    "substituted_sites": 1080
+  },
+  "boundary_files": [
+    {
+      "step": 0,
+      "file": "boundaries-t00.pt",
+      "sha256": "255bd757ad888660f473666e58d2bd67739f272467b8c5b9cdd3e5d1a73dec84",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 1,
+      "file": "boundaries-t01.pt",
+      "sha256": "ff942dec12ec4f0a82932f224153b4c4e221d3bd23aa365450d6a67b10b5c0b0",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 2,
+      "file": "boundaries-t02.pt",
+      "sha256": "359159c73ea2d2eaddd1e913a33c8b725a52ccae721a12082cd3ef6af33419d8",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 3,
+      "file": "boundaries-t03.pt",
+      "sha256": "fad9fb8d5507a9b005b80241fa5a31c732ddb552eaf770c042d08bf737a89cf2",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 4,
+      "file": "boundaries-t04.pt",
+      "sha256": "9a2ce05849294a1842b14bd72a384e5a868cd9a8bd66b94254c0b2ac1da13fc1",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 5,
+      "file": "boundaries-t05.pt",
+      "sha256": "5969ea498e27654c12ebe6a2445f35ff4851c6318c564a46b762d762214c2479",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 6,
+      "file": "boundaries-t06.pt",
+      "sha256": "b52f87acdce31ef6fe2823fc1c7d078c2c201716fbf6de44c8693d15806b63b6",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 7,
+      "file": "boundaries-t07.pt",
+      "sha256": "e2395e091a2f6952cd85f3de45c69aadd772bf83665174a8077ad8e1ecc9439d",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 8,
+      "file": "boundaries-t08.pt",
+      "sha256": "271cf71025fb113031c83bbc8538dac69c2c62a8f3e9d953d58f2139cfed0bcd",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 9,
+      "file": "boundaries-t09.pt",
+      "sha256": "57be92a066a911801d93f75ecf4114d4eb7fa04ead64640b968ba06c5f241c48",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 10,
+      "file": "boundaries-t10.pt",
+      "sha256": "cd122c2b6341ff406d96a42dcd6713f7dd67c69b58093a9c427a5a202bb05563",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 11,
+      "file": "boundaries-t11.pt",
+      "sha256": "d2ebdb3bcb360570e3400dbb5f22ea9d31c5cc4837037a99994193bb8a11e893",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 12,
+      "file": "boundaries-t12.pt",
+      "sha256": "1fb5a9edcea02bbe3b07b7b6a68e6be4f7a9716101f119847716a5a4f889b452",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 13,
+      "file": "boundaries-t13.pt",
+      "sha256": "51e1439656cb0ed287c35475825fb95aec94fb471c8e577e1d2802d0aa8dced4",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 14,
+      "file": "boundaries-t14.pt",
+      "sha256": "f23f24aaa60bad7ae61a664881d0f8d1d72b5f482c61529f85917ec666d00262",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 15,
+      "file": "boundaries-t15.pt",
+      "sha256": "083194af80ffd28199a36c6fe6ff464b0c06c83098a2d2591cc15ba6b7a35c5d",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 16,
+      "file": "boundaries-t16.pt",
+      "sha256": "b426da02b1dc49b25cfcb3de087df3f622712c7052689233a26a6e57cf6e5815",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 17,
+      "file": "boundaries-t17.pt",
+      "sha256": "96aca2befb00277383f75e800346d7ef4d0c0f4fd302c6ff5692c2d619ee9a3e",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 18,
+      "file": "boundaries-t18.pt",
+      "sha256": "8fe45df0a8ebc2568bbf3bf03cc4e7838b583691c137c363340e9c3f948e3403",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 19,
+      "file": "boundaries-t19.pt",
+      "sha256": "28e963685d6b34a95f35fe969b0ee274c011f85dda1e00cb7c078e6ba9a3ca74",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 20,
+      "file": "boundaries-t20.pt",
+      "sha256": "c4b6b9e700ec3adee4307ea4d6e318c5c885d2d3f07a52c37ddcd4c830475fc1",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 21,
+      "file": "boundaries-t21.pt",
+      "sha256": "dce4c55a4e7a6aecc7b131c1027f9436fa11f0a1ccda297d8764d0751bdf0866",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 22,
+      "file": "boundaries-t22.pt",
+      "sha256": "0c72e77bdd8055bc66b1630f69e5c638bbded641e69810ebfae0b67a1d8349fc",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 23,
+      "file": "boundaries-t23.pt",
+      "sha256": "6dadf2c7b12c97bbf68e13c1604447386e0e126ce124a61fec97b3e1d48f23cd",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 24,
+      "file": "boundaries-t24.pt",
+      "sha256": "d747a7b549e04cf5622265f7a786298a7edd9a0898f9a31487452b6bc1b73e33",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 25,
+      "file": "boundaries-t25.pt",
+      "sha256": "88121b34243a540644452cbac8b57dd68b8707022c19268a0218462b89df887f",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 26,
+      "file": "boundaries-t26.pt",
+      "sha256": "e6d952b13d4f960c8e9990fdae4199449d5fdfc30e47e3a4f05662593b862eac",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 27,
+      "file": "boundaries-t27.pt",
+      "sha256": "e049d1c350184245460fbb0b11a6da9da40064be21dc630cc546120ffbf303e7",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 28,
+      "file": "boundaries-t28.pt",
+      "sha256": "b007bdec1026dd496cde4ee85702302b7cc89887cd9a857def783d26173c6c49",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 29,
+      "file": "boundaries-t29.pt",
+      "sha256": "42af42e44f811a819ce8bb102a7be46f36210709a69675e5a5c4d7b7d3e291fe",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    }
+  ],
+  "indexes_and_masks_sha256": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890",
+  "all_actual_dispatch_return_pre_W_byte_exact": true,
+  "original_full_266_row_GEMM_calls": 1080,
+  "actual_unblocked_GEN_vs_same_input_all_allowed_exact": true,
+  "full_future200_dispatch_rows_preserved_native": true,
+  "UND_dispatch_unmodified": true,
+  "same_union66_substitution_every_masked_site": true,
+  "original_dispatch_symbol_restored": true,
+  "all_owned_hooks_removed": true,
+  "processor_recompute_calls": 0,
+  "numerical_sham_is_native_noop": false,
+  "scope": "Ten fixed-A195 X+12cm q0 predictions with two future-noise realizations. Masked attention arithmetic and propagated actual current/action hidden states, raw action outputs and solver states only. Numerical shams can change the native trajectory. No training, new physics, latent identity decoder, target commitment or root-cause claim. All ten physical cases remain a separately preregistered stage."
+}

@@ -52,3 +52,12 @@ checkpoints/
 !experiments/16-milk-shift-mechanism/initial-noise-execution/closed-loop/*/chunk_*/noise-audit.pt
 !experiments/16-milk-shift-mechanism/current-mask-dispatch-output/seed*/inputs.pt
 !experiments/16-milk-shift-mechanism/current-mask-dispatch-output/seed*/outputs.pt
+
+# Recorded path-cut activations and executed predictions; no checkpoint weights.
+!experiments/16-milk-shift-mechanism/future-read-cuts/*/states.pt
+!experiments/16-milk-shift-mechanism/future-read-cuts/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-read-cuts/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-read-cuts/*/boundaries-t00.pt
+!experiments/16-milk-shift-mechanism/future-read-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/future-read-execution/closed-loop/*/chunk_*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-read-execution/closed-loop/*/chunk_*/indexes-and-masks.pt

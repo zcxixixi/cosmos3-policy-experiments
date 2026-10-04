@@ -1,0 +1,299 @@
+{
+  "state": "exact",
+  "cases": [
+    {
+      "case": "V195_A195_native",
+      "arm": "native",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": true,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c",
+        "normalized_actions.json": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a",
+        "metadata.json": "47a27858d5474733f80626c46eaae14aebdbbc4244cfddc77e9771735c37ebbb",
+        "noise-audit.pt": "ce9e4d524753a0846f4afd8c7e9f182903beea2f3c4a8f21900f5cb333256b81",
+        "noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+        "observer-report.json": "57e6bb08225335245559ccf9459740f04450d7ca50f329ee9be6c688527c3b78",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 0,
+        "common_union_query_rows": 0,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": false,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V198_A195_native",
+      "arm": "native",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": true,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "e9bbce0941a496cb833f550897c1f7573fcb1863fb5ed2c69a9fa81d0be4ed28",
+        "normalized_actions.json": "9b2412b7191ae6df094d7bf05b45107757186b1b5488c9c0dd125418efdb0baf",
+        "metadata.json": "b8c6b0bee67da101999ab2f5208c3c2f48d2a7312d2d8dbecafe3c9b762d93c6",
+        "noise-audit.pt": "5a4f00b4d0af04d5eb3e3747421dfd779ff4760f5b5dbbdf2d2379e03fffd372",
+        "noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+        "observer-report.json": "edcb4b187ea062644f3b438d277f3eae0119e3275357bdf942e1051f3d9f3216",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 0,
+        "common_union_query_rows": 0,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": false,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V195_A195_all_allowed",
+      "arm": "all_allowed",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "a138fdfafe03594ce914489ab24987719335e188b6794cccc19f67c5de1a17ac",
+        "normalized_actions.json": "c421cb140f6116e9efdfd3f247a366c7b95cd4456e33b9a0f997d3c35ed17fce",
+        "metadata.json": "370c45d545366b0a408ef6bdd7ad0497d9732602668ca46f3572cd2fc85f5276",
+        "noise-audit.pt": "9b8a3c6da1d6be606d4011f33763a7bb38959230dc062567aabb32a247086692",
+        "noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+        "observer-report.json": "8ff0e69880f445e93ebd8051f1fe60196c0ce79cff5bd3ec251ae08ee0e02a08",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": false,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V198_A195_all_allowed",
+      "arm": "all_allowed",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "6fe31b9d8ef0a453a16992752a685e71f45a63aaa76e2f73172f0373fc496c6f",
+        "normalized_actions.json": "06117b493414fd8fcd7701455f1c79758207e5398fe59a163045dce18764b6f1",
+        "metadata.json": "b373cd31d6352c20f81dd265504652fa717bfc76e6ca2466b7df8e2a0d712da6",
+        "noise-audit.pt": "85e9ffcaee9c08dd282e1930e995de53647ae656032399610b844b13eaeb8a5d",
+        "noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+        "observer-report.json": "7d68e141ed33b8f8524918702f5e6af5eeeaa3927d558645e85d164ad85ea994",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": false,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V195_A195_cut_future_current",
+      "arm": "cut_future_current",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "bc88e911fca7b373458864244771c5280331f5a69cf5a21c36d78ea640d828f6",
+        "normalized_actions.json": "68779982349caf04653496c3d305336230adbc6842aed271a3f7c2833cd0fc8f",
+        "metadata.json": "70611d1d3b1c34d0bc6a0c01d75764070a34d00de5980acff9ca0ca3358aa9bc",
+        "noise-audit.pt": "9228d14726d7b15c0fa25af1722a61ce3980ea04ae0cfa0ad3cf699fea3f9bdd",
+        "noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+        "observer-report.json": "74afb7a28cb10a9777b96a5daf24dd9268a450308c664d5ac3031ef2d8075213",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V198_A195_cut_future_current",
+      "arm": "cut_future_current",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "c436502f8ce4a0c8757c8f967555d041dff9a0b36f57c99f5e2cacfec2d7ffa0",
+        "normalized_actions.json": "7847e455b04002ec7bb0803a7940b6c71c1ac493040fe8d590c2ecbbdc93d528",
+        "metadata.json": "73ae5e056c1479c29d611c536068a1945b602e7e7706f5ad091ba50f9041063e",
+        "noise-audit.pt": "60908efdc7bf0a56e9aebf9f894c8d94d3724bdb1e1433f31439a4ed19a91449",
+        "noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+        "observer-report.json": "1d1c8508ed9183b3624d66ec76bbeb3a146f17d24ac9777680e9246af214955b",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V195_A195_cut_future_action",
+      "arm": "cut_future_action",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "06db0e4ee14654a0d26731ce0d8b4edab5d009cc73848641b77a7d1d7a5ef6a7",
+        "normalized_actions.json": "edde444b254339f4ed4439ba19da8993289a0834e511f2ff6d2e3239a5dd10de",
+        "metadata.json": "57fdc8aaa0046b80292422664169b4535d75cfabf060179b618ff3df20986a42",
+        "noise-audit.pt": "9228d14726d7b15c0fa25af1722a61ce3980ea04ae0cfa0ad3cf699fea3f9bdd",
+        "noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+        "observer-report.json": "a95e5031e91b57b9821cb21d05640d17aa4d88a6a94fc9b2d15eef44d1918d24",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V198_A195_cut_future_action",
+      "arm": "cut_future_action",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "4117b5781111fbd2fdd06da4fd43aa55d8ab1b84d7003c400838b54e05097476",
+        "normalized_actions.json": "3e04bc1aed82e865dbaf5f882f52f31002c46e915883ed44ba7d023ad8a64fcc",
+        "metadata.json": "44c6fc8e1bc60fc7f3c7982c82053cf3cb3b65ab20c1ca7539728bea35a8aa16",
+        "noise-audit.pt": "60908efdc7bf0a56e9aebf9f894c8d94d3724bdb1e1433f31439a4ed19a91449",
+        "noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+        "observer-report.json": "183fc2d91d18355b6feaa693c1793e795e851799a2c70b4e6c48de2f926fc968",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V195_A195_cut_future_both",
+      "arm": "cut_future_both",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "2ca4cd5a6b2314c7c9e2273eb0fe832273f34b2e4796cd3df2bbd6c61d4fd2e1",
+        "normalized_actions.json": "ce8035bcc0d525612a47e596ca1ea55a824e23f950c03e9d977627b793bba71e",
+        "metadata.json": "bbc4a98900a334c60588e63b142b75c705fe8b8b4fbd543f6c0e116b10a6f50f",
+        "noise-audit.pt": "9228d14726d7b15c0fa25af1722a61ce3980ea04ae0cfa0ad3cf699fea3f9bdd",
+        "noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+        "observer-report.json": "1f95205fe1257d1b6cfa06bcc15df5e35eed2abf2451cdc0a72daf0afff2423c",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    },
+    {
+      "case": "V198_A195_cut_future_both",
+      "arm": "cut_future_both",
+      "actual_noise_preparation_initial_kwargs_and_schedule_exact": true,
+      "native_entire_fixed_A195_source_record_exact": null,
+      "q0_model_forwards_in_this_execution": 0,
+      "producer_files_sha256": {
+        "states.pt": "e2c4ffc20bee445b953cfb7466f69aaf72a94b80a92cb8af98c389d9e42aefd0",
+        "normalized_actions.json": "ce8035bcc0d525612a47e596ca1ea55a824e23f950c03e9d977627b793bba71e",
+        "metadata.json": "60dc7e1b7445beb2c4411258a121af8d3a67ea7116cb0f9d97c4fef2e8b2371b",
+        "noise-audit.pt": "60908efdc7bf0a56e9aebf9f894c8d94d3724bdb1e1433f31439a4ed19a91449",
+        "noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+        "observer-report.json": "c0674f45a4c8805cdf0daf10c14684c0448dbf3e66b8f1bd06296b8b118d6ec5",
+        "indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+      },
+      "saved_masked_description": {
+        "actual_substituted_sites": 1080,
+        "common_union_query_rows": 66,
+        "future200_retained_native": true,
+        "UND_retained_native": true,
+        "full_GEN_output_projection_shape": [
+          266,
+          4096
+        ],
+        "original_projection_calls": 1080,
+        "cut_unblocked_query_gate_vs_same_input_all_allowed": true,
+        "residual_compensation": false
+      }
+    }
+  ],
+  "both_q0_all10_actions_exact": true,
+  "q0_whole_noise_pair_checks": 0,
+  "same_seed_does_not_imply_same_whole_V_A_pair": true,
+  "extra_q0_model_forwards": 0
+}

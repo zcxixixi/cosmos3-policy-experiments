@@ -1,0 +1,678 @@
+{
+  "scope": "CPU summaries of actual saved decoder coordinates, current50 and action16. RMS amplitude is not a firing rate, attention weight, causal importance, object probability, target decision or task success. Adjacent-boundary differences combine attention and MLP residual updates. The 4096 decoder coordinates are not the attention pre-projection heads or 12288 MLP units. Future200 hidden boundaries were not saved. Model/attention/solver/physics calls: zero.",
+  "cases": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_cut_future_current",
+    "V198_A195_cut_future_current",
+    "V195_A195_cut_future_action",
+    "V198_A195_cut_future_action",
+    "V195_A195_cut_future_both",
+    "V198_A195_cut_future_both"
+  ],
+  "selected_steps": [
+    0,
+    10,
+    20,
+    29
+  ],
+  "boundary_convention": "0 is actual decoder input; 1..36 are actual complete decoder-block outputs before the final norm. A difference H[b]\u2212H[b\u22121] combines attention and MLP residual additions.",
+  "RMS_definition": "sqrt(mean(H\u00b2)) across all recorded tokens and all4096 channels; per-token maps average channels only. Float64 arithmetic on lossless BF16\u2192FP32 exports.",
+  "relative_definition": "RMS(Hcase\u2212Href)/RMS(Href); plot percentages multiply by100. This equals an array L2 ratio for equal shapes; not restoration, causal mediation or success.",
+  "reference_case_labels": [
+    "V195_A195_native",
+    "V195_A195_native",
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed"
+  ],
+  "cross_V_reference": "Each arm separately compares V198\u2212V195 with denominator V195 same arm. Native and sham contrasts are not mixed.",
+  "denominator_floor": 1e-12,
+  "invalid_denominators": 0,
+  "first_step_cross_V_ratios": {
+    "native": {
+      "current": {
+        "0": 0.0,
+        "1": 0.034773394593800314,
+        "2": 0.04292735744838493,
+        "36": 0.06923452526094927
+      },
+      "action": {
+        "0": 0.0,
+        "1": 0.03724853319739921,
+        "2": 0.036059917056478194,
+        "36": 0.05604867559798679
+      }
+    },
+    "all_allowed": {
+      "current": {
+        "0": 0.0,
+        "1": 0.034783885350527344,
+        "2": 0.04294009500780979,
+        "36": 0.06976014908330694
+      },
+      "action": {
+        "0": 0.0,
+        "1": 0.03724813500110349,
+        "2": 0.036074486504061656,
+        "36": 0.057273688936250934
+      }
+    },
+    "cut_future_current": {
+      "current": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0037541224670674385,
+        "36": 0.02227624693248165
+      },
+      "action": {
+        "0": 0.0,
+        "1": 0.03724813500110349,
+        "2": 0.036194592625929584,
+        "36": 0.05825473422541604
+      }
+    },
+    "cut_future_action": {
+      "current": {
+        "0": 0.0,
+        "1": 0.034783885350527344,
+        "2": 0.04271508655859448,
+        "36": 0.06684944124075472
+      },
+      "action": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0031241734242130246,
+        "36": 0.02101154193762309
+      }
+    },
+    "cut_future_both": {
+      "current": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "36": 0.0
+      },
+      "action": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "36": 0.0
+      }
+    }
+  },
+  "independent_Both_boundary_checks": [
+    {
+      "step": 0,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 0,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 1,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 1,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 2,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 2,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 3,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 3,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 4,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 4,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 5,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 5,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 6,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 6,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 7,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 7,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 8,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 8,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 9,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 9,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 10,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 10,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 11,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 11,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 12,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 12,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 13,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 13,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 14,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 14,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 15,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 15,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 16,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 16,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 17,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 17,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 18,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 18,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 19,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 19,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 20,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 20,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 21,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 21,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 22,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 22,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 23,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 23,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 24,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 24,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 25,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 25,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 26,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 26,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 27,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 27,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 28,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 28,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 29,
+      "field": "current",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    },
+    {
+      "step": 29,
+      "field": "action",
+      "BF16_to_FP32_exact_value_bytes_equal": true
+    }
+  ],
+  "all_arms_t0_both_population_input_boundary0_bytes_equal": true,
+  "first_two_layer_routing_limit": "At step0 the blocked population is byte equal after layer0. A difference after layer1 is consistent with the still-open other population bridge under the verified rowwise model and mask gates. These arrays do not decode object identity or show q0 target commitment.",
+  "token_grid": "Actual time-major current-frame 5\u00d710 packed spatial tokens, ordered by recorded current_rows0..49; not image pixels, a semantic object ROI or a named brain region.",
+  "channel_exports": "Token0 values are actual decoder coordinates at predefined selected steps. Channel delta mean/RMS aggregate across current50 or action16 tokens. Consecutive channels are never relabeled as heads or anatomical regions.",
+  "arrays": {
+    "case_labels": {
+      "shape": [
+        10
+      ],
+      "dtype": "<U28"
+    },
+    "arms": {
+      "shape": [
+        5
+      ],
+      "dtype": "<U18"
+    },
+    "selected_steps": {
+      "shape": [
+        4
+      ],
+      "dtype": "int64"
+    },
+    "sigmas": {
+      "shape": [
+        31
+      ],
+      "dtype": "float32"
+    },
+    "timesteps": {
+      "shape": [
+        30
+      ],
+      "dtype": "int64"
+    },
+    "hidden_rms_current": {
+      "shape": [
+        10,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "reference_delta_rms_current": {
+      "shape": [
+        10,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "reference_relative_current": {
+      "shape": [
+        10,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "update_rms_current": {
+      "shape": [
+        10,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "hidden_token_rms_current": {
+      "shape": [
+        10,
+        30,
+        37,
+        50
+      ],
+      "dtype": "float64"
+    },
+    "update_token_rms_current": {
+      "shape": [
+        10,
+        30,
+        36,
+        50
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_delta_rms_current": {
+      "shape": [
+        5,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_relative_current": {
+      "shape": [
+        5,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_token_relative_current": {
+      "shape": [
+        5,
+        30,
+        37,
+        50
+      ],
+      "dtype": "float64"
+    },
+    "selected_token0_hidden_current": {
+      "shape": [
+        10,
+        4,
+        37,
+        4096
+      ],
+      "dtype": "float32"
+    },
+    "selected_channel_delta_mean_current": {
+      "shape": [
+        10,
+        4,
+        37,
+        4096
+      ],
+      "dtype": "float32"
+    },
+    "selected_channel_delta_rms_current": {
+      "shape": [
+        10,
+        4,
+        37,
+        4096
+      ],
+      "dtype": "float32"
+    },
+    "hidden_rms_action": {
+      "shape": [
+        10,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "reference_delta_rms_action": {
+      "shape": [
+        10,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "reference_relative_action": {
+      "shape": [
+        10,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "update_rms_action": {
+      "shape": [
+        10,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "hidden_token_rms_action": {
+      "shape": [
+        10,
+        30,
+        37,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "update_token_rms_action": {
+      "shape": [
+        10,
+        30,
+        36,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_delta_rms_action": {
+      "shape": [
+        5,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_relative_action": {
+      "shape": [
+        5,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_token_relative_action": {
+      "shape": [
+        5,
+        30,
+        37,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "selected_token0_hidden_action": {
+      "shape": [
+        10,
+        4,
+        37,
+        4096
+      ],
+      "dtype": "float32"
+    },
+    "selected_channel_delta_mean_action": {
+      "shape": [
+        10,
+        4,
+        37,
+        4096
+      ],
+      "dtype": "float32"
+    },
+    "selected_channel_delta_rms_action": {
+      "shape": [
+        10,
+        4,
+        37,
+        4096
+      ],
+      "dtype": "float32"
+    },
+    "reference_case_labels": {
+      "shape": [
+        10
+      ],
+      "dtype": "<U21"
+    }
+  },
+  "source_audit": {
+    "producer_documents_sha256": {
+      "complete": "5773204576a6052108a58f7937a91e80bb33168f90783b18f40435e8d7f23585",
+      "results": "7d082f71fc1655b4d3d1cd02898759590da55ab2059087cfb6d752b117c919e1",
+      "provenance": "bad45b968ee6286c769b798eb48fbf8cffa1ea8725626a469edd3a005b464040",
+      "protocol": "3c2e34da2228794eb5615abe442e9616b63f77ecf245ec33fe7222786829c9ab",
+      "sources": "3dce44808c6adad55b16efa1a9904f129af0dda4fc6a72cd4e3a0d8c2dbe5ee8",
+      "closure": "25413d57b0cd7001d115eeb29636d0df0303a459732b9a2a5cac7861690ea01a"
+    },
+    "producer_script_sha256": "c106bba687c6eaf0853ac9abe7aa2767f9464365162399c201e98b2369af7a4a",
+    "original_native_entire_records_independently_rechecked": true,
+    "producer_site_footprint_limit": "Site metadata/flags and their sealed files are checked. No stored full QKV exists to independently recompute the producer's per-site attention gate.",
+    "tensor_hash_scope": "Per-tensor raw-byte hashes are computed by this CPU analysis; source container hashes were already sealed by the completed producer."
+  },
+  "model_forwards": 0,
+  "attention_dispatch_calls": 0,
+  "solver_steps": 0,
+  "physics_calls": 0,
+  "cuda_initialized": false
+}

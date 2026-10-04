@@ -1,0 +1,25 @@
+{
+  "stage": "complete",
+  "completed": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_cut_future_current",
+    "V198_A195_cut_future_current",
+    "V195_A195_cut_future_action",
+    "V198_A195_cut_future_action",
+    "V195_A195_cut_future_both",
+    "V198_A195_cut_future_both"
+  ],
+  "expected_model_forwards": 300,
+  "actual_counts": {
+    "model_before": 300,
+    "model_after": 300,
+    "native_UND_dispatch": 10800,
+    "native_GEN_dispatch": 10800,
+    "all_allowed_dispatch": 8640,
+    "cut_dispatch": 6480
+  },
+  "elapsed_s": 70.16065176400116
+}

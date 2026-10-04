@@ -1,0 +1,39 @@
+{
+  "state": "complete",
+  "script_sha256": "e0c5073ee320bbc173eebf827126c9431043a3efaa960eb0a8ccff289cae30ed",
+  "trial_order": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_cut_future_current",
+    "V198_A195_cut_future_current",
+    "V195_A195_cut_future_action",
+    "V198_A195_cut_future_action",
+    "V195_A195_cut_future_both",
+    "V198_A195_cut_future_both"
+  ],
+  "physical_trials": 10,
+  "saved_q0_predictions": 10,
+  "native_predictions": 70,
+  "fresh_model_forwards": 2100,
+  "producer_q0_forwards_separate": 300,
+  "combined_two_stage_model_forwards": 2400,
+  "actual_later_whole_noise_pairs": 63,
+  "two_native_entire_129_state_5JSON_8PNG_and_8_modelrecords_exact": true,
+  "both_entire_129_state_5JSON_8PNG_and_7_later_modelrecords_exact": true,
+  "all_ten_own_cached_q0_action_execution_and_strict_window_gates_passed": true,
+  "numerical_sham_classification_gate_passed": true,
+  "all_ten_cases_executed_regardless_of_sham_classification": true,
+  "files_sha256": {
+    "controls.json": "3874f6d50ece97a6f83282a1f5dcc454d5428b84a3eb372164a2fb374063a8b6",
+    "both-controls.json": "6489b37df9af0638c400d8575855056145e43643541e0ec30d0a45136d5745e2",
+    "sham-interpretation-controls.json": "13faa5a8035bf8b5a950a14195c3db2013f0b598cae54344cc4a9f7e7f723527",
+    "provenance.json": "dcd3662203316e76a8e36fe1045badb6550f375844cd0e1c39c25a167a937531",
+    "prepared.json": "4b5d426a130f236c67cd603bed017bb300a49857651b783459c7e16c2e74e139",
+    "server/complete.json": "83074cb58a4483067e51ec292ddc7bfeb9db94c8e03dda05dcf211c7e53e8c69",
+    "closed-loop/complete.json": "20280c1c9c113052f92eca89bb53d6f8e540185526107d6f83a8954daa94ee17",
+    "summary.json": "3d460470f1e7e6e844729952cac93ce95a964194e6fb44eaa9a0fe82d7439175"
+  },
+  "scope": "Ten complete X+12cm physical trajectories executing the frozen ten saved future-read q0 predictions, then native feedback inference at later base195. Both numerical shams are retained and all cases execute in preregistered order. No additional network intervention or training. Sham classification changes invalidate original-native-path interpretation without changing the source pair or selecting another candidate. Equality gates concern actual arrays and physical execution, not semantic identity or a neural root cause."
+}

@@ -4,7 +4,56 @@
 
 我们只查一个问题：指令一直是“抓牛奶，放进篮子”，牛奶移6厘米能抓，移15厘米却抓奶酪盒。这一批没有重新训练，也没有额外喂示范。
 
-**最新结果：这四次实际抓取，跟着未来生成一路的随机起点改变。**当前12厘米初态、当前照片和指令都相同，首轮交叉V（未来画面）和A（动作）两份真实初始噪声。V195两次抓奶酪盒，V198两次抓牛奶；后续采样统一base195。具体内部通路尚未定位，不能写成记住答案、把想象当现实或最终放篮成功。
+## 最新：活动图、跨层绕行和10条真实执行
+
+**能记录哪些层改了较多数字，也已找到会改变实际抓取的一组连接；还没缩到具体层／head，更未验证15厘米救回和新位置跟随。**
+
+### 活动地图与跨层传播
+
+[冻结CPU活动分析器](code/analyze_cosmos_milk_future_read_activity.py) SHA `2835bf585095f143adc13ff9d5b61a392b9c30069bb937908a7961c24d8b5843`，[真实NPZ](future-read-activity/activity-arrays.npz) SHA `768f6565d162c8d80674192da95d911e1102ba0e72f004f065d60861348d2908`，[analysis](future-read-activity/analysis.json) SHA `17c46077d1b6312deb1ee6e3f16b529b12635c629a300e3062133b9e77d1c563`。只读CPU，0model／attention／solver／physics，CUDA未初始化。十组全300个逐层PT容器SHA核验、逐张量首次rawhash封存；独立复核10个t0完整PT并重算全部5arm两population b0/1/2/36，误差<1e-12。
+
+真正保存的是 current `[37,50,4096]` 与 action `[37,16,4096]`，每组30次。boundary0输入，1..36完整block输出，均在最终norm之前。`RMS(Hb−Hb-1)` 是attention＋MLP残差的合并净更新，不能当全部计算强度、放电率、功能或重要性。nativeV195的平均动作净更新最大三层是人类第36／4／35层（0.321156／0.243269／0.172843）；当前视觉为36／35／4层（0.440760／0.420168／0.297605），任意decoder单位，仅此运行。4096个坐标不是head，更不是12288个MLP单元；future200完整逐层hidden未保存。
+
+下表是t0两份V在**同一个arm**内的真实相对L2距离（分母V195同arm）。不能将native与sham差异混作路径效果，不能当成功率。
+
+| 条件 | current第1层 | current第2层 | action第1层 | action第2层 |
+|---|---:|---:|---:|---:|
+| allallowed同接口 | 3.478% | 4.294% | 3.725% | 3.607% |
+| 切future→current | 0% | 0.375% | 3.725% | 3.619% |
+| 切future→action | 3.478% | 4.272% | 0% | 0.312% |
+| 两条都切 | 0% | 0% | 0% | 0% |
+
+实际t0每arm的两population入口b0均byteexact；一条入口被切时其b1也byteexact，b2重新出现差异。结合已核的UND不读GEN、逐行MLP/norm和真实mask，可以定位到仍开放的另一population跨层桥。不是同层循环、持续放电、吸引子、海马体或牛奶身份编码。Both全30×37两population逐位相同，是隔离V影响的工程结果，不是活动为零或语义理解证据。
+
+[简单活动图](future-read-activity/native-net-update-overview.png)、[跨V同arm传播图](future-read-activity/cross-source-same-arm-propagation.png)、[对同V接口对照的切断影响](future-read-activity/cut-vs-same-source-sham.png)、[真5×10当前token grid](future-read-activity/current-token-grid-first-two-layers.png)。黑格在传播图表示两组没有差异，不表示无活动。逐token map只平均4096坐标，没有解码成像素或物体ROI。
+
+### 正式网络干预和MuJoCo结果
+
+[冻结q0 probe](code/probe_cosmos_milk_future_read_cuts.py) SHA `c106bba687c6eaf0853ac9abe7aa2767f9464365162399c201e98b2369af7a4a`。两个V195_A195／V198_A195来源、5arm，原照片/指令/prepare/schedule/54维padding保持。每masked站点同66行替换足迹，官方fullGEN dispatch上构建4D布尔mask；每实际site未屏蔽query对同输入allallowed byteexact，本次原生future200与UND保留，完整266行原投影仅一次。不补偿mask数值漂移。
+
+10个新q0=300 forwards，UND10800＋GEN10800＋allallowed8640＋cut6480＝36720实际官方dispatch。两native整个记录byteexact各自固定A195旧源。记录readout `[30,16,4096]`、velocity `[30,16,64]`、solver `[31,1,16,64]`、actions `[16,10]`，全部原始draw/RNG/初始kwargs和30份边界。Both这些动作字段及所有current/action边界精确同。成功site fullQKV与每站原始返回没额外导出，不能冒称CPU独立重算全部live gate；真实GPU断言、事件和SHA仍保留。
+
+[物理adapter](code/run_cosmos_milk_future_read_execution.py) SHA `e0c5073ee320bbc173eebf827126c9431043a3efaa960eb0a8ccff289cae30ed`。10cachedq0＋70新q1..7＝80请求；后者2100forwards，与300合计2400，63次实际后续whole噪声pair精确同。每轮用各自真实新画面。全部预登记10条执行，未按成绩选择、未训练。首轮切全部36层、30次去噪，后续原生；干预不是仅切一次局部层。
+
+| 首轮条件 | V195_A195 | V198_A195 |
+|---|---|---|
+| 原生 | 奶酪68..72 | 牛奶64..68 |
+| 全连接接口对照 | 奶酪70..74 | 牛奶64..68 |
+| 切未来→当前视觉 | 牛奶60..64 | 无严格抓起 |
+| 切未来→动作 | 奶酪79..83 | 奶酪80..84 |
+| 两个入口都切 | 奶酪79..83 | 奶酪79..83，整个轨迹精确同 |
+
+严格标准：每份同时左右指垫接触、比初态抬高严格>.02m，连续5记录；列出整个窗口，不是终局放篮成功。两native全部129仿真states、5JSON、8PNG、8整个模型records精确复现旧源；Both129states／5JSON／8PNG／后7wholemodelrecords精确同。两接口对照对象保留，**但数字并非noop**：归一化最终actions对native L2195=.01851345、198=.01964879；切断只与同V接口对照比较。全10窗口／实际首轮执行转换另有独立CPU复核。
+
+**结论：**future→current切断能让A抓取改善，却让B未严格抓起；future→action或Both切断会损害本样本B正确抓取。未来读取关系参与行为，但不是只有有害信息。尚不能将网络区域叫记忆区／牛奶区，不能声称根因或通用修复。屏蔽会重归一化attention，且范围较大；下一步预登记分层窗口，区分对A有益与B有害的部位，再细分head，最后15厘米与新位置验证。
+
+[10条原始闭环录像、全部轨迹动作及80模型记录](future-read-execution)、[complete](future-read-execution/complete.json)、[controls](future-read-execution/controls.json)、[summary](future-read-execution/summary.json) SHA `3d460470f1e7e6e844729952cac93ce95a964194e6fb44eaa9a0fe82d7439175`。
+
+**公开原始文件范围：**q0十组所有states/noise/indexes＋每组t0完整boundary（共10份），见[public-export](future-read-cuts/public-export.json)；其余290份逐层文件存A6000，原results列全300SHA。统计NPZ覆盖全部层和30时刻，并包括预定0／10／20／29时刻的token0真实坐标与逐channel聚合；不是全部6GB rawhidden的公开副本。全部physical文件已公开。不是权重下载包。
+
+方法灵感：[On the Biology of a Large Language Model2025](https://transformer-circuits.pub/2025/attribution-graphs/biology.html)的活动、连接与干预思路；[Heimersheim/Nanda2024](https://arxiv.org/html/2404.15255v1)的patching与多路径限制。这里没有训练SAE/CLT/替代网络，也不证明模型有海马体。此前[Rao/Ballard1999](https://www.nature.com/articles/nn0199_79)预测反馈只是提出假设的灵感。
+
+**此前四起点结果：这四次实际抓取，跟着未来生成一路的随机起点改变。**当前12厘米初态、当前照片和指令都相同，首轮交叉V（未来画面）和A（动作）两份真实初始噪声。V195两次抓奶酪盒，V198两次抓牛奶；后续采样统一base195。具体内部通路尚未定位，不能写成记住答案、把想象当现实或最终放篮成功。
 
 ## 新完成：未来生成起点 × 动作起点，四条真实执行
 
@@ -23,15 +72,9 @@
 
 [四份完整q0真实数组与核验](initial-noise-factors)、[四条执行、全部trajectory/controller/模型records与噪声](initial-noise-execution)、[物理汇总](initial-noise-execution/summary.json)、[控制](initial-noise-execution/controls.json)、[complete](initial-noise-execution/complete.json)。summary SHA `f1a55fe88087b0e2f2044804805df102ce6f4379a5d84855a149fc7237a1820c`。仅此初态和两对V/A样本，不是统计成功率。
 
-## 下一项待检验：未来→当前视觉、未来→动作的两条attention入口
+## 已执行：未来→当前视觉、未来→动作的入口
 
-固定A195，比较V195_A195（奶酪68..72）和V198_A195（牛奶64..68）。真实GEN266 query可读取UND121＋GEN266 key，非因果；实际布局current50、future200、action16。当前输入照片的latent被保留，不代表经过多层的当前视觉hidden不读未来信息。源码提供两条可能入口，尚不能叫身份通路。
-
-已完成[15次官方attention算术核验](current-mask-dispatch-output)，使用3份真实第18层／去噪索引29的fullQKV，仅复算native、allallowed、current切future／action／both五种条件。3个native wholeGEN输出byteexact，masked未屏蔽行等同各自allallowed，合并非current行和UND保留。allallowed current对native L2195／196／198为0.02939246／0.03008029／0.02965750，非byteexact；cut future对native为9.81069／9.99273／9.72612。单位只是数组距离，不能解码牛奶或推断动作。0model forward、0solver step、0physics。实际mask接口数值漂移必须保存，不能用native−sham残差补偿掩盖。
-
-计划5条件×2V，共10首轮：两个native、两个allallowed sham、分别切future→current／future→action／两者。所有masked组统一替换current＋action66行，保留本次原生future200输出与UND、完整原生投影；每个实际site核所有未屏蔽query对同输入allallowed byteexact。已完成的是15次算术核验，**这10组全网络推理与执行尚未完成**。若sham自己改变抓取，则停止原生任务路径解释；若两条切断后统一奶酪，则只说明V198正确抓取需要这些入口，不能叫有害预测污染。若统一牛奶且动作正常，才支持本样本中的有害回流候选；还需细分层、位置并验证15厘米救回和其他位置跟随。
-
-脑科学预测反馈只作假设灵感：[Rao与Ballard1999](https://www.nature.com/articles/nn0199_79)，不是Cosmos采用该机制的证据。局部干预与多路径解释参考[Heimersheim与Nanda2024](https://arxiv.org/html/2404.15255v1)。
+这10组与活动图已完成，见本文件顶部。此前[15次独立官方attention算术核验](current-mask-dispatch-output)只是接口可行性控制，0model／physics；其allallowed数字漂移被保留，没有用native−sham残差修补。正式10组使用fullGEN266 Q读UND121＋GEN266 K/V，非因果；统一替换current50＋action16的66行，保留本次原生future200和UND输出，整个原生投影仍做一次。掩码同时改变剩余读取权重的归一化，不是从结果简单减去未来项。
 
 **内部单元实验：**预选128个真实MLP单元没有承担一半响应，门控路也没有主导作用。三个无关方向的输入也受这组位置影响，不能把它们叫作牛奶身份单元。抓错根因尚未定位。此前持续改这块MLP的实际四条执行仍抓奶酪盒。
 

@@ -1,0 +1,23 @@
+{
+  "script_sha256": "2835bf585095f143adc13ff9d5b61a392b9c30069bb937908a7961c24d8b5843",
+  "source_audit": {
+    "producer_documents_sha256": {
+      "complete": "5773204576a6052108a58f7937a91e80bb33168f90783b18f40435e8d7f23585",
+      "results": "7d082f71fc1655b4d3d1cd02898759590da55ab2059087cfb6d752b117c919e1",
+      "provenance": "bad45b968ee6286c769b798eb48fbf8cffa1ea8725626a469edd3a005b464040",
+      "protocol": "3c2e34da2228794eb5615abe442e9616b63f77ecf245ec33fe7222786829c9ab",
+      "sources": "3dce44808c6adad55b16efa1a9904f129af0dda4fc6a72cd4e3a0d8c2dbe5ee8",
+      "closure": "25413d57b0cd7001d115eeb29636d0df0303a459732b9a2a5cac7861690ea01a"
+    },
+    "producer_script_sha256": "c106bba687c6eaf0853ac9abe7aa2767f9464365162399c201e98b2369af7a4a",
+    "original_native_entire_records_independently_rechecked": true,
+    "producer_site_footprint_limit": "Site metadata/flags and their sealed files are checked. No stored full QKV exists to independently recompute the producer's per-site attention gate.",
+    "tensor_hash_scope": "Per-tensor raw-byte hashes are computed by this CPU analysis; source container hashes were already sealed by the completed producer."
+  },
+  "scope": "CPU summaries of actual saved decoder coordinates, current50 and action16. RMS amplitude is not a firing rate, attention weight, causal importance, object probability, target decision or task success. Adjacent-boundary differences combine attention and MLP residual updates. The 4096 decoder coordinates are not the attention pre-projection heads or 12288 MLP units. Future200 hidden boundaries were not saved. Model/attention/solver/physics calls: zero.",
+  "device": "CPU",
+  "model_forwards": 0,
+  "attention_dispatch_calls": 0,
+  "solver_steps": 0,
+  "physics_calls": 0
+}
