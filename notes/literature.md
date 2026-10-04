@@ -32,3 +32,13 @@ clean→counterfactual 的恢复支持在指定背景中的充分性；反向替
 ## 最低可发表表述
 
 只有层状态/注意力变化：**表征对输入敏感**。真实readout变化：**输入差异传到动作读出**。受控局部patch引起对应目标行为变化：**该内部位置在此条件下因果影响目标选择**。通过双向、路径、语义/范数控制和独立布局复现：才进一步主张**某条信息通路介导语言到动作**。单次跨场景GEN交换、全UND移除、探针准确率、失败或预测视频看起来合理，均不能单独证明“milk概念被定位”“语言已理解但输出头坏了”或“Cosmos内部规划形成后才失效”。
+
+## 功能分工：语言、目标与运动（2026-10-04）
+
+下列证据分别涉及可干预的运动特征、已有通路之间的功能差异、以及模型计算与脑活动的对应；三者不能合并成“VLA 已有类似皮层的语言区和运动区”。这些研究均未验证当前 Cosmos3 checkpoint。
+
+1. **Häon 等，Mechanistic Interpretability for Steering Vision-Language-Action Models（2509.00328v1；CoRL 2025）。** 作者用 FFN 输出权重的词表投影选择 fast/slow、high/low 等单元组，再在推理时覆盖这些组的激活。OpenVLA 的 LIBERO 实验及 π0-FAST 的 UR5 实验表明部分干预可改变运动幅度或运输高度，并比较未干预、改提示和随机单元对照。这是内部特征能够因果影响动作的证据，而非完整功能区域或目标身份回路的证明。特别注意：UR5 checkpoint 先经机器人数据适配；速度实验只执行未干预动作，其他方案在相同观测上比较预测位移，不能把全部速度结果称为独立真实闭环执行。论文也报告 high/fast 未明显超过原生，并承认词义聚类可能混淆“慢”和“卡住”。可迁移到 Cosmos3 的是候选单元、self/随机控制与行为检验；具体层号、词义标签及词表投影不能直接移植到其连续动作头。[原文 §3–4、§6](https://arxiv.org/html/2509.00328v1)、[CoRL 正式论文](https://proceedings.mlr.press/v305/haon25a.html)
+
+2. **Grant 等，Not All Features Are Created Equal（2603.19233v1），§4.5。** 在 π0.5 中，错任务 expert 状态注入导致主动向错误位置运动，而 PaliGemma 注入更易导致停滞；在 SmolVLA 的 732 个 MetaWorld 跨任务配对中，expert 与 VLM 注入的 source-like 行为分别为 15.8% 和 9.0%。结合目标/状态探针，这支持既有 VLM 与 action-expert 通路在测试背景中的功能差异。限度是：通路划分本身来自架构，整状态注入还携带位置、轨迹等信息；停滞不能独自证明目标信息被删除，探针可解码也不能证明策略使用。旧节所述残差/hook 与 SAE 消融局限继续适用。对 Cosmos3 可迁移的是分通路、分输入内容的干预和目标/运动指标对照；不能直接把 UND/GEN 命名为语言区/运动区，尤其 GEN 同时处理视频与动作。[原文 §3.2、§4.5](https://arxiv.org/html/2603.19233v1#S4.SS5)、[附录 E.1、F.3、G.5](https://arxiv.org/html/2603.19233v1)
+
+3. **Kumar 等，Shared functional specialization in transformer-based language models and the human brain（Nature Communications，2024）。** 作者分析 BERT attention heads 对词间上下文的实际变换，并以自然故事聆听时的 fMRI 做编码预测；不同 head 的变换对不同语言皮层位置有差异化预测，其对应关系呈层级与上下文长度梯度。这支持模型计算具有可测的功能分化，并与部分脑活动组织存在对应。这里的脑对应证据是预测关联，不能推出模型与大脑采用同一机制、head 等同一个脑区，或已经建立语言与运动的因果双重分离。可迁移的研究思路是按具体计算/任务区分组件，而不是只看激活强弱；该论文未研究 VLA 运动控制，不能替 Cosmos3 提供功能区标签。[原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC11217339/)、[作者实验室记录](https://hassonlab.princeton.edu/publications/shared-functional-specialization-transformer-based-language-models-and-human-brain)
