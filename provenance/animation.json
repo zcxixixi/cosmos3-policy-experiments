@@ -1,0 +1,484 @@
+{
+  "seconds": 142.91666666666666,
+  "frames": 3430,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "original_camera_resolution": [
+    256,
+    256
+  ],
+  "narration": "Synthetic Chinese voice; subtitles follow sentence timing.",
+  "sources": [
+    {
+      "path": "experiments/07-language-path/result.json",
+      "sha256": "8b6e7c20b74aa38ecac37ef9c97afb38f0af086d02f62238e0cac40fd8dbd14b"
+    },
+    {
+      "path": "experiments/10-identity-position/summary.json",
+      "sha256": "daad560219a53de6df905a1c4cb9062c79890c905da51fdfa366c61f2bf342ff"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/result.json",
+      "sha256": "7ab4bc0b2d267f30ce9cc51ccac2999404b7ae2a37dca4a06d828392787eea51"
+    },
+    {
+      "path": "experiments/09-system-prompt/closed-loop/center_milk_off/actual.mp4",
+      "sha256": "5c5f6a7dcf86bbf50f85495379ac25be9556bbb3d9c86bcc3594e368646f5179"
+    },
+    {
+      "path": "experiments/09-system-prompt/closed-loop/center_butter_off/actual.mp4",
+      "sha256": "879cc7a99135a1da22260ff1375776ef9a5b105812c8d2752df509c73a6d5785"
+    },
+    {
+      "path": "experiments/09-system-prompt/closed-loop/far_milk_off/actual.mp4",
+      "sha256": "e661b587b050cd641139a9e66dba58006623c5a1058475e74b7b5734bd78077e"
+    },
+    {
+      "path": "experiments/10-identity-position/far_cream_butter_swap_milk_off/actual.mp4",
+      "sha256": "39b5c6489ba5cd5e8b01c166d03ea7e6872e2925389e7b53f8042e68b15a7be9"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/bowl/actual.mp4",
+      "sha256": "06d442f0e2a3d73b04cb764f1d2c41e4ce736e5809ad7b1e040f92116a4034fd"
+    },
+    {
+      "path": "experiments/15-native-goal-targets/policy/closed-loop/wine/actual.mp4",
+      "sha256": "8f3f280b2ce4c00691b9ad4d220e41d6c8f95d0a623c0b40a6583dce422f7eb5"
+    },
+    {
+      "path": "experiments/13-language-routes/README.md",
+      "sha256": "b37504739a97348a3814fdcfc7a11197aab5037e9946a0b8058907bc86694de1"
+    },
+    {
+      "path": "experiments/13-language-routes/closed-loop/result.json",
+      "sha256": "037baa650981717000feb1e1e5193110e5121a2d35cd4b9a5b983776ff39d6c0"
+    }
+  ],
+  "scenes": [
+    {
+      "key": "00_intro",
+      "kind": "intro",
+      "chapter": "01 / 我们在查什么",
+      "title": "指令和摆放，分别怎样影响它抓谁？",
+      "minimum": 11,
+      "voice": "我们想查清楚，指令和摆放分别怎样影响机械臂抓谁？这次没有重新训练模型，而是改指令、改摆放，再让仿真机械臂实际执行。",
+      "audio_seconds": 12.1,
+      "frames": 315,
+      "seconds": 13.125,
+      "start": 0,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 50690478,
+          "text": "我们想查清楚，指令和摆放分别怎样影响机械臂抓谁？"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 51190478,
+          "duration": 69166669,
+          "text": "这次没有重新训练模型，而是改指令、改摆放，再让仿真机械臂实际执行。"
+        }
+      ]
+    },
+    {
+      "key": "01_milk",
+      "kind": "clip",
+      "chapter": "02 / 同一起点，只换目标名称",
+      "title": "说拿牛奶：抓起牛奶",
+      "minimum": 9,
+      "source": "experiments/09-system-prompt/closed-loop/center_milk_off",
+      "target": "牛奶",
+      "selected": "牛奶",
+      "prompt": "拿牛奶，放进篮子",
+      "color": "#19816c",
+      "notes": [
+        "牛奶在原来的位置",
+        "没有替换模型",
+        "实际抓起：牛奶"
+      ],
+      "voice": "先让它拿牛奶。牛奶在原位置时，机械臂抓起了牛奶。注意，抓起来还不等于放进篮子成功。",
+      "audio_seconds": 9.14,
+      "frames": 244,
+      "seconds": 10.166666666666666,
+      "start": 13.125,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 17952381,
+          "text": "先让它拿牛奶。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 18452381,
+          "duration": 37738096,
+          "text": "牛奶在原位置时，机械臂抓起了牛奶。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 56190478,
+          "duration": 34642858,
+          "text": "注意，抓起来还不等于放进篮子成功。"
+        }
+      ]
+    },
+    {
+      "key": "02_butter",
+      "kind": "clip",
+      "chapter": "02 / 同一起点，只换目标名称",
+      "title": "改说拿黄油：还是抓牛奶",
+      "minimum": 10,
+      "source": "experiments/09-system-prompt/closed-loop/center_butter_off",
+      "target": "黄油",
+      "selected": "牛奶",
+      "prompt": "拿黄油，放进篮子",
+      "color": "#bc651c",
+      "notes": [
+        "恢复到同一份初态",
+        "只换指令中的目标",
+        "实际仍抓：牛奶"
+      ],
+      "voice": "恢复到同一份初态，只把指令改成拿黄油。它还是抓牛奶。这次换目标名称，没有换对抓取对象。",
+      "audio_seconds": 9.43,
+      "frames": 251,
+      "seconds": 10.458333333333334,
+      "start": 23.291666666666664,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 39857144,
+          "text": "恢复到同一份初态，只把指令改成拿黄油。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 40357144,
+          "duration": 17619048,
+          "text": "它还是抓牛奶。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 57976193,
+          "duration": 35833334,
+          "text": "这次换目标名称，没有换对抓取对象。"
+        }
+      ]
+    },
+    {
+      "key": "03_far",
+      "kind": "clip",
+      "chapter": "03 / 改位置，再看它抓谁",
+      "title": "牛奶移远15厘米：改抓奶酪盒",
+      "minimum": 10,
+      "source": "experiments/09-system-prompt/closed-loop/far_milk_off",
+      "target": "牛奶",
+      "selected": "奶酪盒",
+      "prompt": "拿牛奶，放进篮子",
+      "color": "#bc651c",
+      "notes": [
+        "牛奶沿X轴移远15 cm",
+        "指令仍然是拿牛奶",
+        "实际抓起：奶酪盒"
+      ],
+      "voice": "把牛奶移远十五厘米，仍然说拿牛奶。它却改抓奶酪盒。接下来要查，它认的是奶酪，还是那个位置？",
+      "audio_seconds": 9.53,
+      "frames": 253,
+      "seconds": 10.541666666666666,
+      "start": 33.75,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 35214287,
+          "text": "把牛奶移远十五厘米，仍然说拿牛奶。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 35714287,
+          "duration": 19404762,
+          "text": "它却改抓奶酪盒。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 55119050,
+          "duration": 39642858,
+          "text": "接下来要查，它认的是奶酪，还是那个位置？"
+        }
+      ]
+    },
+    {
+      "key": "04_swap",
+      "kind": "clip",
+      "chapter": "03 / 改位置，再看它抓谁",
+      "title": "交换奶酪和黄油：抓旧位置上的黄油",
+      "minimum": 12,
+      "source": "experiments/10-identity-position/far_cream_butter_swap_milk_off",
+      "target": "牛奶",
+      "selected": "黄油",
+      "prompt": "拿牛奶，放进篮子",
+      "color": "#bc651c",
+      "notes": [
+        "牛奶保持移远，指令不变",
+        "交换奶酪盒和黄油的位置",
+        "抓了旧奶酪位置上的黄油"
+      ],
+      "voice": "牛奶保持移远，指令也不变。我们交换奶酪盒和黄油的位置。它改抓了旧奶酪位置上的黄油。这支持摆放位置在影响它抓谁。",
+      "audio_seconds": 12.02,
+      "frames": 313,
+      "seconds": 13.041666666666666,
+      "start": 44.291666666666664,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 28785715,
+          "text": "牛奶保持移远，指令也不变。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 29285715,
+          "duration": 28333334,
+          "text": "我们交换奶酪盒和黄油的位置。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 57619050,
+          "duration": 30000001,
+          "text": "它改抓了旧奶酪位置上的黄油。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 87619051,
+          "duration": 32023810,
+          "text": "这支持摆放位置在影响它抓谁。"
+        }
+      ]
+    },
+    {
+      "key": "05_arrays",
+      "kind": "arrays",
+      "chapter": "04 / 去网络里面查真实数字",
+      "title": "语言确实影响了动作前的内部数组",
+      "minimum": 16,
+      "voice": "再去网络内部看真实数字。固定相机画面和随机噪声，只换牛奶与黄油两个目标词。动作前的数组确实改变了。这里的百分比是数组差异，不是听懂了多少。",
+      "audio_seconds": 15.17,
+      "frames": 389,
+      "seconds": 16.208333333333332,
+      "start": 57.33333333333333,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 28071429,
+          "text": "再去网络内部看真实数字。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 28571429,
+          "duration": 54404764,
+          "text": "固定相机画面和随机噪声，只换牛奶与黄油两个目标词。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 82976194,
+          "duration": 27380953,
+          "text": "动作前的数组确实改变了。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 110357147,
+          "duration": 40833335,
+          "text": "这里的百分比是数组差异，不是听懂了多少。"
+        }
+      ]
+    },
+    {
+      "key": "06_routes",
+      "kind": "routes",
+      "chapter": "04 / 去网络里面查真实数字",
+      "title": "数字会变，仍不等于抓对了目标",
+      "minimum": 16,
+      "voice": "我们还分别改了文字直接影响动作，以及经过预测画面影响动作的两种读取方式。两种都能改动作数字，但六条实际执行仍没改抓黄油。参与计算，不等于选对物体。",
+      "audio_seconds": 15.41,
+      "frames": 394,
+      "seconds": 16.416666666666668,
+      "start": 73.54166666666666,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 72952384,
+          "text": "我们还分别改了文字直接影响动作，以及经过预测画面影响动作的两种读取方式。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 73452384,
+          "duration": 52261907,
+          "text": "两种都能改动作数字，但六条实际执行仍没改抓黄油。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 125714291,
+          "duration": 27738096,
+          "text": "参与计算，不等于选对物体。"
+        }
+      ]
+    },
+    {
+      "key": "07_goal_input",
+      "kind": "goal_input",
+      "chapter": "05 / 找一个正常能换对目标的对照",
+      "title": "换到碗和酒瓶：从同一初态出发",
+      "minimum": 10,
+      "voice": "但是，不能说模型根本不使用语言。我们找了一组碗和酒瓶的共同初态，用同一个模型，只换这两条环境原有的指令。",
+      "audio_seconds": 10.42,
+      "frames": 275,
+      "seconds": 11.458333333333334,
+      "start": 89.95833333333333,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 35571430,
+          "text": "但是，不能说模型根本不使用语言。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 36071430,
+          "duration": 67500003,
+          "text": "我们找了一组碗和酒瓶的共同初态，用同一个模型，只换这两条环境原有的指令。"
+        }
+      ]
+    },
+    {
+      "key": "08_bowl",
+      "kind": "clip",
+      "chapter": "05 / 同一初态，指令改变了抓取对象",
+      "title": "说放碗：抓起了碗，但最后没放好",
+      "minimum": 10,
+      "source": "experiments/15-native-goal-targets/policy/closed-loop/bowl",
+      "target": "碗",
+      "selected": "碗",
+      "prompt": "把碗放到柜子上",
+      "color": "#19816c",
+      "notes": [
+        "实际抓起：碗",
+        "最高抬升28.6 cm",
+        "最后没有通过放置检查"
+      ],
+      "voice": "说把碗放到柜子上，它抓起了碗。最高抬升二十八点六厘米。目标抓对了，但最后没有完成放置。",
+      "audio_seconds": 9.5,
+      "frames": 252,
+      "seconds": 10.5,
+      "start": 101.41666666666666,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 33547620,
+          "text": "说把碗放到柜子上，它抓起了碗。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 34047620,
+          "duration": 26547620,
+          "text": "最高抬升二十八点六厘米。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 60595240,
+          "duration": 33928572,
+          "text": "目标抓对了，但最后没有完成放置。"
+        }
+      ]
+    },
+    {
+      "key": "09_wine",
+      "kind": "clip",
+      "chapter": "05 / 同一初态，指令改变了抓取对象",
+      "title": "说放酒瓶：抓起酒瓶，但最后没放好",
+      "minimum": 11,
+      "source": "experiments/15-native-goal-targets/policy/closed-loop/wine",
+      "target": "酒瓶",
+      "selected": "酒瓶",
+      "prompt": "把酒瓶放到柜子上",
+      "color": "#19816c",
+      "notes": [
+        "实际抓起：酒瓶",
+        "最高抬升30.0 cm",
+        "最后仍夹着，没放好"
+      ],
+      "voice": "从同一初态出发，说把酒瓶放到柜子上，它抓起酒瓶。最高抬升三十厘米。但结束时还夹着，没有放好。",
+      "audio_seconds": 10.22,
+      "frames": 270,
+      "seconds": 11.25,
+      "start": 111.91666666666666,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 50333335,
+          "text": "从同一初态出发，说把酒瓶放到柜子上，它抓起酒瓶。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 50833335,
+          "duration": 21547620,
+          "text": "最高抬升三十厘米。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 72380955,
+          "duration": 29285715,
+          "text": "但结束时还夹着，没有放好。"
+        }
+      ]
+    },
+    {
+      "key": "10_conclusion",
+      "kind": "conclusion",
+      "chapter": "06 / 现在知道什么，还差什么",
+      "title": "有了明确证据，还没有找到唯一根因",
+      "minimum": 17,
+      "voice": "现在能确认，语言可以起作用，摆放也会影响选择。仍不知道牛奶场景为什么抓错。我们还没证明它在背训练答案，也没定位到为什么选错目标。下一步是只换指定的内部数据，再用实际抓取核验原因。",
+      "audio_seconds": 18.74,
+      "frames": 474,
+      "seconds": 19.75,
+      "start": 123.16666666666666,
+      "captions": [
+        {
+          "type": "SentenceBoundary",
+          "offset": 1000000,
+          "duration": 48428573,
+          "text": "现在能确认，语言可以起作用，摆放也会影响选择。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 48928573,
+          "duration": 32142858,
+          "text": "仍不知道牛奶场景为什么抓错。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 81071432,
+          "duration": 53214288,
+          "text": "我们还没证明它在背训练答案，也没定位到为什么选错目标。"
+        },
+        {
+          "type": "SentenceBoundary",
+          "offset": 134285720,
+          "duration": 52619050,
+          "text": "下一步是只换指定的内部数据，再用实际抓取核验原因。"
+        }
+      ]
+    }
+  ],
+  "scope": "Animation explains archived observations, not a new trial or a claimed root cause. Real clips replay all 129 frames in order, uniformly slowed. Diagram motion is explanatory, not latent coordinates.",
+  "output_sha256": "a3f7dbb8e590d4cd55084cd9834360314dc002a37c78d6a8c6106aa810248df5",
+  "created_on": "2026-10-04",
+  "renderer_sha256": "c9e096fef9c9dba5bfecb64abb11bfaf048843bbef9d9e23c53ccc01f67834dc"
+}

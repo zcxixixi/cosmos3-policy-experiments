@@ -8,7 +8,13 @@
 <p>我们想查清楚：它有没有用上指令？有没有认准牛奶？还是照着熟悉的位置抓东西？下面先看机械臂实际做了什么，再看网络里的数值。</p>
 <p class="lead"><b>牛奶移远后，它抓奶酪盒；把黄油放到奶酪盒原来的位置，它就改抓黄油。换三个随机种子，结果都一样。</b><br>这支持“摆放位置在影响它抓谁”，还不能证明它背了训练答案。最新的碗／酒瓶对照里，它又能按指令抓对目标，所以问题还要结合具体场景去查。</p>
 <p class="note">测试的是社区微调权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">fwd4xl/cosmos3-nano-policy-liberoall-5k</a>，配合我们当前的推理程序。我们还在检查输入和调用方式，暂时不能把问题都归到模型本身。</p>
-<nav aria-label="阅读导航"><a href="#latest">最新对照和视频</a><a href="#language">文字有没有进去？</a><a href="#exchange">我们怎么查内部？</a><a href="#conclusion">现在知道什么？</a></nav>
+<nav aria-label="阅读导航"><a href="#animation">两分多钟的动画讲解</a><a href="#latest">最新对照和视频</a><a href="#language">文字有没有进去？</a><a href="#exchange">我们怎么查内部？</a><a href="#conclusion">现在知道什么？</a></nav>
+<section id="animation"><h2>先看动画：我们做了什么，查到了什么？</h2>
+<p>中文旁白和字幕，逐条播放真实抓取录像：先改指令、再改摆放，随后去网络里比较数字，最后看碗／酒瓶能否按指令换目标。</p>
+<video controls preload="none" playsinline poster="media/experiment-summary-poster.png" src="media/experiment-summary.mp4"></video>
+<p><a href="media/experiment-summary.mp4">打开或下载MP4</a> · <a href="media/experiment-summary.srt">中文字幕</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/provenance/animation.json">素材来源与制作记录</a></p>
+<p class="note">流程动画为讲解示意；机械臂录像来自MuJoCo实际执行。讲解画布为1080p，原始两路相机各256×256；放慢播放没有增加原录像细节。本视频总结已有实验，没有新增推理或训练，也没有宣称找到唯一根因。</p>
+</section>
 <section id="latest"><h2>新对照：同一个画面，说碗抓碗，说酒瓶抓酒瓶</h2>
 <p>之前说“拿黄油”却仍抓牛奶。我们需要先找到一个正常就能换对目标的例子，再去网络内部查：什么信息让它改抓了物体？</p>
 <p><b>我们只改了一句话：</b>在完全相同的起始场景里，一次说“把碗放到柜子上”，另一次说“把酒瓶放到柜子上”。用的还是同一个模型，没有重新训练，也没给它示范。两句都是这套环境原有的任务指令。</p>

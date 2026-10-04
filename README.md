@@ -2,6 +2,8 @@
 
 [打开中文实验网页](https://zcxixixi.github.io/cosmos3-policy-experiments/)。正文先说明改了什么、实际结果和结论；计算细节可展开查看。
 
+[观看两分多钟的中文动画讲解](https://zcxixixi.github.io/cosmos3-policy-experiments/#animation) · [MP4](docs/media/experiment-summary.mp4) · [中文字幕](docs/media/experiment-summary.srt)。动画串起改指令、改摆放、内部数组对照和碗／酒瓶实验，真实录像逐条播放。抓对目标与最终放好分开讲；没有把数组变化写成理解程度或根因。
+
 我们让机械臂“拿牛奶放进篮子”。它有时抓牛奶，有时却抓奶酪盒。改成“拿黄油”，它也常常继续抓原来的东西。
 
 我想弄清楚：它是不是记住了某种场景下的动作？是不是没识别出目标？还是我们说的话进入了网络，却没有有效控制它抓谁？这里记录每次怎么试、真实结果是什么，以及我们查到哪一步了。

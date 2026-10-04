@@ -15,3 +15,5 @@ archive保存A6000上使用的实验助手，不是一个已经打包好的独�
 实验14使用官方已有 `pi05_libero`。`probe_pi05_target_control.py`保存12组首段输入与输出；`probe_pi05_replay_precision.py`核对四次直接调用。服务与旧离线输出的差异没有解决，保留失败记录；后来的`serve_pi05_target_control.py`在同一服务核对实际与保存原输入的两次计算，逐字节一致才由`rollout_pi05_target_control.py`执行第一份原生7维动作。四条每条128步，预测10步、执行5步再规划。历史服务源码可从提交`67cde60`和`a4b2000`查看，当前快照是四条实际执行用的版本。`plot_pi05_actual_eef_xy.py`仅从真实轨迹计算水平距离、绘图；不调用模型。见[实验14](../experiments/14-pi05-target-control/README.md)。
 
 实验15用同一个碗／酒瓶初态，测试两句原生指令。`collect_cosmos_goal_pair.py`采集并核对状态、相机和图片；`serve_cosmos_goal_pair.py`保存每轮真实噪声、动作采样数组和输出，核对首轮重复；`rollout_cosmos_goal_pair.py`核对恢复后的控制器状态，执行两条各128步，并分别评价两种放置目标。本轮没有替换内部数组；两条实际抓起了各自的目标，最后都没完成柜顶放置。保存的20份 `states.pt` 已纳入实验15，权重仍未纳入仓库。见[实验15](../experiments/15-native-goal-targets/README.md)。
+
+`render_experiment_animation.py`把已归档的真实录像和统计做成1080p中文动画讲解，不运行模型。它从实验07原始JSON重算数组差异，按顺序放慢完整录像，配中文合成语音和句子时间字幕。需要Pillow、NumPy、edge-tts、现有FFmpeg及脚本中指定的中文字体；传入`--ffmpeg`和`--work`，中间产物留在工作目录。素材校验值和各幕时间见[制作记录](../provenance/animation.json)。
