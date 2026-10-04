@@ -1,0 +1,405 @@
+{
+  "scope": "Post hoc CPU audit of completed fixed-A195, V195/V198, X+12cm window experiments. Every physical outcome is reported; only the preregistered early-low pair tests the primary. RMS is a saved-array distance, not function, language/motor anatomy, object information, probability or success percentage. Decoder block net updates combine attention and MLP residual additions and BF16 rounding. A hard mask also redistributes remaining attention. Current/action boundaries are available, future hidden boundaries and full QKV are not. No new model, solver, physics, training or general target/identity/root-cause experiment.",
+  "case_order": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_early_low",
+    "V198_A195_early_low",
+    "V195_A195_early_high",
+    "V198_A195_early_high",
+    "V195_A195_late_low",
+    "V198_A195_late_low",
+    "V195_A195_late_high",
+    "V198_A195_late_high"
+  ],
+  "primary_prediction": "rejected",
+  "primary_cases": [
+    "V195_A195_early_low",
+    "V198_A195_early_low"
+  ],
+  "primary_requires_strict_only_milk_for_each_case": true,
+  "no_other_window_promoted": true,
+  "physical_selected_objects": {
+    "V195_A195_native": [
+      "cream_cheese_1"
+    ],
+    "V198_A195_native": [
+      "milk_1"
+    ],
+    "V195_A195_all_allowed": [
+      "cream_cheese_1"
+    ],
+    "V198_A195_all_allowed": [
+      "milk_1"
+    ],
+    "V195_A195_early_low": [
+      "milk_1"
+    ],
+    "V198_A195_early_low": [],
+    "V195_A195_early_high": [
+      "cream_cheese_1"
+    ],
+    "V198_A195_early_high": [],
+    "V195_A195_late_low": [
+      "cream_cheese_1"
+    ],
+    "V198_A195_late_low": [
+      "milk_1"
+    ],
+    "V195_A195_late_high": [
+      "cream_cheese_1"
+    ],
+    "V198_A195_late_high": [
+      "milk_1"
+    ]
+  },
+  "definitions": {
+    "boundaries": "0=actual decoder input;1..36=actual whole block outputs after attention+MLP residuals, before final norm.",
+    "net_update": "Actual H[b+1]\u2212H[b], float64 arithmetic on lossless BF16\u2192FP32 exports; not an isolated attention/MLP increment.",
+    "same_V_reference": "Every window compared with its SAME-V global all-allowed sham on its own dynamic trajectory.",
+    "cross_V_reference": "V198\u2212V195 within EACH arm; reference RMS is V195 same arm. Native/sham/windows remain distinct.",
+    "relative": "100\u00d7RMS(delta)/RMS(reference); null/NaN if reference<=1e-12. Not task success, restoration or causal mediation.",
+    "solver": "Actual saved FP32 action_states, not reconstructed from BF16 inputs. XYZ is first3 normalized action dimensions.",
+    "input_cast": "At every step actual BF16 action_tokens equals saved FP32 solver sample cast; no new solver/model evaluation."
+  },
+  "gap_floor": 1e-12,
+  "invalid_relative_denominators": {
+    "vs_sham_hidden_relative_current": 0,
+    "cross_V_hidden_relative_current": 0,
+    "vs_sham_hidden_relative_action": 0,
+    "cross_V_hidden_relative_action": 0
+  },
+  "q0_final_action_distances": {
+    "V195_A195_native": {
+      "XYZ_RMS_to_same_V_sham": 0.0009634210158113258,
+      "all10_RMS_to_same_V_sham": 0.0014636165201331686
+    },
+    "V198_A195_native": {
+      "XYZ_RMS_to_same_V_sham": 0.0013992620633459455,
+      "all10_RMS_to_same_V_sham": 0.0015533732852501534
+    },
+    "V195_A195_all_allowed": {
+      "XYZ_RMS_to_same_V_sham": 0.0,
+      "all10_RMS_to_same_V_sham": 0.0
+    },
+    "V198_A195_all_allowed": {
+      "XYZ_RMS_to_same_V_sham": 0.0,
+      "all10_RMS_to_same_V_sham": 0.0
+    },
+    "V195_A195_early_low": {
+      "XYZ_RMS_to_same_V_sham": 0.355598480822915,
+      "all10_RMS_to_same_V_sham": 0.19694023107116507
+    },
+    "V198_A195_early_low": {
+      "XYZ_RMS_to_same_V_sham": 0.18400253945993847,
+      "all10_RMS_to_same_V_sham": 0.10341590580866666
+    },
+    "V195_A195_early_high": {
+      "XYZ_RMS_to_same_V_sham": 0.19194012422237622,
+      "all10_RMS_to_same_V_sham": 0.10691751016005854
+    },
+    "V198_A195_early_high": {
+      "XYZ_RMS_to_same_V_sham": 0.13373611019101841,
+      "all10_RMS_to_same_V_sham": 0.09387693452536483
+    },
+    "V195_A195_late_low": {
+      "XYZ_RMS_to_same_V_sham": 0.00895767711478725,
+      "all10_RMS_to_same_V_sham": 0.008550760928201308
+    },
+    "V198_A195_late_low": {
+      "XYZ_RMS_to_same_V_sham": 0.008275680828111481,
+      "all10_RMS_to_same_V_sham": 0.010363187149406141
+    },
+    "V195_A195_late_high": {
+      "XYZ_RMS_to_same_V_sham": 0.003788642614229478,
+      "all10_RMS_to_same_V_sham": 0.004033163934874606
+    },
+    "V198_A195_late_high": {
+      "XYZ_RMS_to_same_V_sham": 0.006487066504270454,
+      "all10_RMS_to_same_V_sham": 0.004422212370327859
+    }
+  },
+  "actual_arrays": {
+    "normalized_actions": {
+      "shape": [
+        12,
+        128,
+        10
+      ],
+      "dtype": "float64"
+    },
+    "denormalized_actions": {
+      "shape": [
+        12,
+        128,
+        10
+      ],
+      "dtype": "float64"
+    },
+    "native_commands": {
+      "shape": [
+        12,
+        128,
+        7
+      ],
+      "dtype": "float64"
+    },
+    "executed_commands": {
+      "shape": [
+        12,
+        128,
+        7
+      ],
+      "dtype": "float64"
+    },
+    "object_xyz": {
+      "shape": [
+        12,
+        129,
+        7,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "finger_contacts": {
+      "shape": [
+        12,
+        129,
+        7,
+        2
+      ],
+      "dtype": "bool"
+    },
+    "strict_lift_m": {
+      "shape": [
+        12,
+        129,
+        7
+      ],
+      "dtype": "float64"
+    },
+    "strict_contact_and_lift": {
+      "shape": [
+        12,
+        129,
+        7
+      ],
+      "dtype": "bool"
+    },
+    "object_names": {
+      "shape": [
+        7
+      ],
+      "dtype": "<U19"
+    },
+    "hidden_rms_current": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_delta_rms_current": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_relative_current": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "net_update_rms_current": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_net_update_delta_rms_current": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_delta_rms_current": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_relative_current": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "hidden_rms_action": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_delta_rms_action": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_hidden_relative_action": {
+      "shape": [
+        12,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "net_update_rms_action": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "vs_sham_net_update_delta_rms_action": {
+      "shape": [
+        12,
+        30,
+        36
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_delta_rms_action": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "cross_V_hidden_relative_action": {
+      "shape": [
+        6,
+        30,
+        37
+      ],
+      "dtype": "float64"
+    },
+    "q0_action_states_FP32": {
+      "shape": [
+        12,
+        31,
+        16,
+        64
+      ],
+      "dtype": "float32"
+    },
+    "q0_action_velocity_BF16_export_FP32": {
+      "shape": [
+        12,
+        30,
+        16,
+        64
+      ],
+      "dtype": "float32"
+    },
+    "q0_final_normalized_actions": {
+      "shape": [
+        12,
+        16,
+        10
+      ],
+      "dtype": "float32"
+    },
+    "q0_vs_sham_solver_XYZ_rms": {
+      "shape": [
+        12,
+        31
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_velocity_XYZ_rms": {
+      "shape": [
+        12,
+        30
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_full_readout_rms": {
+      "shape": [
+        12,
+        30
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_final_all10_rms": {
+      "shape": [
+        12
+      ],
+      "dtype": "float64"
+    },
+    "q0_vs_sham_final_XYZ_rms": {
+      "shape": [
+        12
+      ],
+      "dtype": "float64"
+    },
+    "sigmas": {
+      "shape": [
+        31
+      ],
+      "dtype": "float32"
+    },
+    "timesteps": {
+      "shape": [
+        30
+      ],
+      "dtype": "int64"
+    },
+    "case_labels": {
+      "shape": [
+        12
+      ],
+      "dtype": "<U21"
+    },
+    "arms": {
+      "shape": [
+        6
+      ],
+      "dtype": "<U11"
+    }
+  },
+  "site_gate_limit": "Recorded live c106/8fef footprint/QKV/RNG/unblocked-query gates and masks are checked. Full QKV was not saved; no independent attention recomputation is claimed.",
+  "controller_limit": "Typed actual controller arrays at0/16; all129 serialized schemas/finite values. No unavailable intermediate original dtype arrays invented.",
+  "actual_physical_actions_checked": 1536,
+  "whole_noise_pairs_checked": 77,
+  "whole_model_records_checked": 96,
+  "actual_boundary_files_checked": 360,
+  "four_entire_native_and_sham_controls_rechecked": true,
+  "model_forwards": 0,
+  "attention_dispatch_calls": 0,
+  "solver_steps": 0,
+  "physics_calls": 0,
+  "cuda_initialized": false
+}

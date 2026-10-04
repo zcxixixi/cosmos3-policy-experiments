@@ -111,3 +111,30 @@
 ## 本轮最小可解释结论
 
 最有价值的交付是一个具体 `(t,l,head / MLP,query span,visual ROI)`，说明“自然位置供体脉冲如何改变真实动作、何处首次被保留或抹去、哪个局部干预能阻断这个过程”，并给出 self-patch / 反向 / 背景 / seed 对照。只测到差异增大，不支持机制定位；只测到输出失败，不支持身份覆写；只测到后效应，不支持吸引子。
+
+## 2026-10-04 实际 Cosmos3 结构：哪些分工由架构保证
+
+本节只读核验实际源码、checkpoint 配置和已保存的真实输入；没有运行模型或新增干预。它回答“有没有管语言、管运动的区域”中的架构问题，不以活动热图命名功能区。
+
+冻结的本地源码是 [transformer_cosmos3.py](/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/network-source/cosmos3/transformer_cosmos3.py:50)，与远端实际 `/home/current/work/cosmos3/diffusers/src/diffusers/models/transformers/transformer_cosmos3.py` 字节一致，SHA256 为 `ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22`。实际 pipeline 为 `/home/current/work/cosmos3/diffusers/src/diffusers/pipelines/cosmos/pipeline_cosmos3_omni.py`，SHA256 为 `ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca`。以下行号以这两份源码为准。
+
+实际 checkpoint 配置 `/home/current/work/cosmos3/checkpoints/Cosmos3-Nano-Policy-LIBEROall-5k/transformer/config.json` 的 SHA256 是 `eeb0aa0c7e905aa941163d38a9a7af6ed65232f29af01a093633a40ed86f170c`；第 12–16、23–26 行确认 head_dim=128、SiLU、hidden_size=4096、intermediate_size=12288、32 个 query heads、8 个 KV heads、36 层。第 4 行 action_dim=64，第 24 行 num_embodiment_domains=32。本地 `work/network-source/cosmos3/config.json` 与此实际 checkpoint 配置的文件 SHA 不同，不能把本地配置文件默认当作运行配置。
+
+| 结构与实际调用 | 可核验源码位置 | 通俗含义与边界 |
+| --- | --- | --- |
+| UND 和 GEN 各自独立的 Q/K/V、attention 输出投影和归一化参数 | transformer 第 257–288 行构造两套；第 68–79、119–122 行 forward 真正分别调用 | 文字处理流与生成流有设计好的参数分工；不是仅在一个共享模块中把输入换个标签。 |
+| UND 和 GEN 各自独立的 MLP、输入 Norm、post-attention Norm | 第 335–353 行各自实例化；第 361–371 行分别调用，各自加 attention 和 MLP 残差 | 每层同时包含两条处理流。两者 MLP 都是 dense gated MLP；变量名 `mlp_moe_gen` 不代表这里存在稀疏 router 或按物体身份分工的专家。 |
+| UND 只因果读取 UND；GEN 读取 UND 与全部 GEN 的 K/V | 第 93–117 行实际两次 dispatch | 语言信息可以逐层进入生成流；本实现的 GEN 不能反向进入 UND。GEN 中当前视觉、未来视觉和动作可互相读取。 |
+| 视觉与动作使用各自输入投影，随后一起进入同一个 GEN trunk | 第 743–756 行视觉输入；第 773–794 行动作输入；第 807–818 行按 `und_len` 分流并运行 stack；第 656–664 行逐层执行 | 视觉与动作共享 GEN 的 attention/MLP 参数，没有另外一套独立的“动作 36 层”。不同模态依靠 token 位置、输入投影、动作模态 embedding 和 timestep 等区分。当前与未来视觉也没有各自独立的 GEN trunk。 |
+| 视觉与动作在末端用不同输出投影 | 第 472–484 行构造；第 829–855 行实际按对应 token 索引读出 | 动作专用输出接口存在，但它读取前面共享计算的结果，不能把这个薄输出头当作完成全部运动规划的独立皮层。 |
+| 构造了 `lm_head`，当前 policy forward 不使用它 | 第 471 行构造；第 857–860 行仅返回 vision/sound/action；本 pipeline 没有 `lm_head` 调用 | 不能因为参数里有语言输出头，就称本轮是在先生成一段文字计划再转换成动作。 |
+
+MLP 的实际计算在 [第 179–194 行](/home/cenxi/Documents/Codex/2026-09-28/https-cvlab-kaist-github-io-geometric/work/network-source/cosmos3/transformer_cosmos3.py:179)：`down_proj(SiLU(gate_proj(x)) * up_proj(x))`，4096 维输入经真实 12288 个门控中间单元后回到 4096 维。32 个 query heads 各 128 维指的是 attention 输出投影之前的真实 head 轴；不能把任意 4096 维残差向量每 128 维切一块，称为一个运动或语言 head。
+
+### 本次 policy 的真实调用链
+
+实际 pipeline 第 1735–1741 行将当前去噪的 vision/action samples 转成模型输入 dtype；第 1756–1782 行把同一次输入的文字、视觉、动作和 embodiment domain 一起交给 transformer。模型预测经第 1783 行的 condition/padding mask 后，在第 1838–1843 行转成 FP32 velocity。第 1855–1857 行更新视觉 sample，第 1873–1882 行用动作 scheduler 更新动作 sample；第 1901–1905 行最终取出动作。动作 head 的单次返回是去噪 velocity，不等于已经执行的末端位移；之后还有求解器、动作反归一化及模拟器控制过程。
+
+已保存的 `target-reader-inputs/seed195/dispatch-t29.pt` 实际 kwargs 中，UND 是 121 个 text-side tokens，包含指令包装、任务元数据和特殊 token，不是 121 个普通词；真实 10-token 指令在全局索引 45–54。GEN 是 266 个 tokens：50 个当前条件视觉、200 个未来视觉、16 个动作。声音相关输入全为 `None`；当前 UND 中没有图像 token。实际 action domain id 是 **5**，选择 LIBERO 机器人域的输入/输出权重，不能解释成牛奶或奶酪类别；`DomainAwareLinear` 第 197–225 行的定义明确是每个 embodiment domain 一组权重。
+
+因此可以说：**有文字处理流、共享视觉动作生成流和动作专用读出这些架构分工。** 是否在它们内部学出了对某类运动、词义或物体选择更特异的局部通路，仍要看自然输入对照和真实因果干预；层或通道更亮只说明这一输入下数值幅度或净更新量更大，不足以命名“运动区”“语言区”或“海马体”。

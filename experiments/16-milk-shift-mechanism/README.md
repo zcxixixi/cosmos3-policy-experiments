@@ -4,7 +4,50 @@
 
 我们只查一个问题：指令一直是“抓牛奶，放进篮子”，牛奶移6厘米能抓，移15厘米却抓奶酪盒。这一批没有重新训练，也没有额外喂示范。
 
-## 最新：活动图、跨层绕行和10条真实执行
+## 最新：按层数和计算时刻，切未来→当前视觉
+
+**先说结果：事先的主要猜想被否定，但范围缩小了。**我们原本猜测，只在首轮前15次去噪、网络第1～18层切断未来到当前视觉的连接，能让抓错的A改抓牛奶，同时保住B。实际A抓牛奶，B没有严格抓起。后半段的同等规模改动保留两组原抓取对象。不能把这18层命名成牛奶区或运动区。
+
+### 实际改了哪里
+
+[首轮probe](code/probe_cosmos_milk_future_current_windows.py) SHA `8fef06cae12291884ee8a8fa60c981605f7813ccaa1c372f76f426be9662eb69`；[物理adapter](code/run_cosmos_milk_future_current_execution.py) SHA `19b907e5760f5873f4b1d0b834018a594f8d7420827369e731bc701ae4bcb08a`。未训练。当前X+12cm照片／指令／机器人初态／A195动作起点相同，只区分V195/V198未来生成起点；不是不同指令或画面。
+
+四个事先冻结的窗口：去噪零基0..14或15..29，层零基0..17或18..35，各270实际cut位置。所有10个masked条件全1080位置都用同输入allallowed替换同66个当前／动作行；窗口内改用future→current cut的对应结果，200future行与UND保留本次原生。只阻断current50 queries对future200 keys，action16仍可读future。每active站点unblocked GEN对同输入allallowed逐字节同；不做native−sham残差补偿。4control所有30完整输出／37current-action边界和8窗before-firstcut完整kwargs/FP32样本前缀通过。
+
+### 全部12条真实执行
+
+| 首轮连接怎么改 | A：V195_A195 | B：V198_A195 |
+|---|---|---|
+| 原生 | 奶酪68..72 | 牛奶64..68 |
+| 全连接接口对照 | 奶酪70..74 | 牛奶64..68 |
+| 前半段、第1～18层（主要检验） | 牛奶59..63 | 无严格抓起 |
+| 前半段、第19～36层 | 奶酪69..73 | 无严格抓起 |
+| 后半段、第1～18层 | 奶酪70..74 | 牛奶64..68 |
+| 后半段、第19～36层 | 奶酪70..74 | 牛奶64..68 |
+
+严格条件是左右指垫同时接触且相对初态抬高严格>.02m，连续5份记录；所有物体／129份记录均检查。无严格抓起不等于没动作、也不能当确定选了哪个目标；抓起不是最终放篮成功。两组无严格条件的milk最高抬高分别0.314917cm（early_low/B）、0.110148cm（early_high/B）。
+
+主要criterion是early_low两组 `selected_objects == ['milk_1']`。A满足、B不满足，结论 **rejected**。其他窗口只作预登记的描述性结果，不替换主要假设。前段两窗都影响B正确抓取，只有低18层救回A；后段两窗对象不变。支持此背景中前段读取更影响抓取类别，不证明晚段完全无作用、唯一必要区域、身份表示或背训练轨迹。
+
+12cached首轮＋84新后续＝96请求，360首轮＋2520后续＝2880真实forwards，84后续各用自己的新照片，seed196..202，77次actual whole-noise配对。首轮16步执行后恢复原生推理，共128步／129状态。4原生／sham对照分别逐字节复现旧完整129state、5JSON、8PNG、8整模型record与16步controller，不用native代替sham参考。全部12执行自己的q0，没有成绩筛选。[完整执行与96模型record](future-current-execution)，[complete](future-current-execution/complete.json)，[主要预测](future-current-execution/primary-prediction.json) SHA `4ae592b7a0972c1a6b43ac3a549b6a6271d14722d188aa302cb95c427c4b978b`，[summary](future-current-execution/summary.json) SHA `a59218548c6d0016636b4a551d77efabd8a34c44a65788339c11c927d4e59beb`。
+
+### 真正内部数组与公开范围
+
+[CPU分析](future-current-analysis)读取所有360份真实boundary：current `[37,50,4096]`、action `[37,16,4096]`。boundary0输入，1..36整block attention＋MLP残差后的输出，最终norm之前。净更新是实际相邻边界差；图中亮度与原同V全连接接口对照的净更新差有关，不是head激活、12288MLP单元、牛奶概率或行为解释比例。比较对同Vsham与同arm跨V分开；窗口后输入已受先前干预影响，不能要求归回独立sham，也不把跨去噪后效应当网络内部记忆。
+
+[全部首轮metadata/noise/readout/velocity/FP32solver/actions与t0逐层PT](future-current-windows)；[公开范围说明](future-current-windows/public-export.json)。公开12个t0完整boundary；另348个rawboundary在A6000，全部360SHA仍封存。公开统计覆盖所有层／时刻，连续FP32solver `[12,31,16,64]`、BF16速度的无损FP32导出 `[12,30,16,64]` 和final10d动作也保存。没有称公开全部7GB rawhidden，更没有称每site完整QKV另存。
+
+[中文四窗结果图](../../docs/media/milk-future-current-windows.svg)、[实际层净更新图](future-current-analysis/primary-block-net-updates.png)、[同Vsham与同arm跨V曲线](future-current-analysis/same-sham-and-cross-source.png)。首页单播放器可切全部12条。旧结果保留供核验。
+
+冻结[CPU分析器](code/analyze_cosmos_milk_future_current_windows.py) SHA `04758f1ea7768f6bdd725b328787b391b4b12dbc08a32626768d9110fdfcc609`；[analysis](future-current-analysis/analysis.json) SHA `ae529cc86bc136a18fdb35ac61c436b8b824282af66f80d4db831189b8bfd5fa`；[实际NPZ](future-current-analysis/actual-arrays.npz) 2,220,392 bytes，SHA `5d581afa50eb1c6e8d6d72654fbc36d54b3dc29ec52f9ec7d8d90b0da8b59fb6`。唯一CPU运行57.8秒，全360文件／1536转换／96record／77pair及四control核验通过，CUDA未初始化，0model／attention重放／solver更新／physics。35个导出key逐dtype/shape/Cbytes回读，FP32solver、BF16速度的FP32导出及最终动作对原PT精确。相对距离分母无无效值。另一位独立复核者另从全12实际数组重算物理／转换与source SHA，通过。
+
+最终首轮XYZ对各自同Vsham的真实RMS：early_low A/B为0.355598/0.184003，early_high为0.191940/0.133736，late_low为0.008958/0.008276，late_high为0.003789/0.006487。是归一化动作数字的距离，不是厘米、抓取概率或恢复比例。前后去噪的sigma与可累积的后续计算不同，所以这个早晚差异也可能来自采样敏感性；尚未排除，更不能命名“选牛奶区域”。
+
+[独立只读审计原件](future-current-analysis/independent-audit.json)另以实际PT重新计算80点hidden距离、64点整block净更新差、8组最终XYZ距离，均与公开NPZ误差0；24份solver、速度和最终动作导出对原PT逐dtype/shape/字节相同。它不调用原分析器的RMS函数，不新跑模型或物理。SHA `343ba76a09a76d61ac196cf329441b14448cfff5e4b1fad218db629c2172c6a0`。
+
+**下一步：**把前段低18层再缩小，检验能否保住B，并加相同规模无关连接控制。最后仍须15厘米和新位置验证；当前研究goal未完成。
+
+## 归档：活动图、跨层绕行和10条真实执行
 
 **能记录哪些层改了较多数字，也已找到会改变实际抓取的一组连接；还没缩到具体层／head，更未验证15厘米救回和新位置跟随。**
 

@@ -1,0 +1,552 @@
+{
+  "plan": [
+    {
+      "case": "V195_A195_native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native",
+      "window": null
+    },
+    {
+      "case": "V198_A195_native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "native",
+      "window": null
+    },
+    {
+      "case": "V195_A195_all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed",
+      "window": null
+    },
+    {
+      "case": "V198_A195_all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "all_allowed",
+      "window": null
+    },
+    {
+      "case": "V195_A195_early_low",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_low",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          17
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_early_low",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_low",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          17
+        ]
+      }
+    },
+    {
+      "case": "V195_A195_early_high",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_high",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          18,
+          35
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_early_high",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "early_high",
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          18,
+          35
+        ]
+      }
+    },
+    {
+      "case": "V195_A195_late_low",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "late_low",
+      "window": {
+        "steps": [
+          15,
+          29
+        ],
+        "layers": [
+          0,
+          17
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_late_low",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "late_low",
+      "window": {
+        "steps": [
+          15,
+          29
+        ],
+        "layers": [
+          0,
+          17
+        ]
+      }
+    },
+    {
+      "case": "V195_A195_late_high",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "late_high",
+      "window": {
+        "steps": [
+          15,
+          29
+        ],
+        "layers": [
+          18,
+          35
+        ]
+      }
+    },
+    {
+      "case": "V198_A195_late_high",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "arm": "late_high",
+      "window": {
+        "steps": [
+          15,
+          29
+        ],
+        "layers": [
+          18,
+          35
+        ]
+      }
+    }
+  ],
+  "trial_order": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_early_low",
+    "V198_A195_early_low",
+    "V195_A195_early_high",
+    "V198_A195_early_high",
+    "V195_A195_late_low",
+    "V198_A195_late_low",
+    "V195_A195_late_high",
+    "V198_A195_late_high"
+  ],
+  "windows_zero_based_inclusive": {
+    "early_low": {
+      "steps": [
+        0,
+        14
+      ],
+      "layers": [
+        0,
+        17
+      ]
+    },
+    "early_high": {
+      "steps": [
+        0,
+        14
+      ],
+      "layers": [
+        18,
+        35
+      ]
+    },
+    "late_low": {
+      "steps": [
+        15,
+        29
+      ],
+      "layers": [
+        0,
+        17
+      ]
+    },
+    "late_high": {
+      "steps": [
+        15,
+        29
+      ],
+      "layers": [
+        18,
+        35
+      ]
+    }
+  },
+  "primary_window": "early_low",
+  "primary_cases": [
+    "V195_A195_early_low",
+    "V198_A195_early_low"
+  ],
+  "primary_physical_prediction": "Each primary case selected_objects == [milk_1] under both fingerpad contacts plus >.02m lift for five consecutive records; V195 changes from cheese to only milk and V198 retains only milk.",
+  "primary_evaluation": {
+    "status": "unexecuted_physics_prediction",
+    "success_requires_both_V_only_milk": true,
+    "milk_inclusion_max_lift_and_other_windows_are_descriptive_not_primary": true,
+    "rejection_does_not_promote_another_window": true
+  },
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+  "image_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+  "prompt": "pick up the milk and place it in the basket",
+  "shift_cm": 12,
+  "q0_predictions": 12,
+  "model_forwards": 360,
+  "physics_calls": 0,
+  "original_dispatch_calls": 25920,
+  "extra_all_allowed_dispatch_calls": 10800,
+  "extra_cut_dispatch_calls": 2160,
+  "total_official_dispatch_calls": 38880,
+  "cut_sites_per_window_case": 270,
+  "masked_sites_per_case": 1080,
+  "masked_background": "All ten masked cases replace union66 by same-input all-allowed on every layer/step; window sites instead select cut-current output for union66. Future200/UND retain native; action-to-current is not blocked.",
+  "cut_gate": "All unblocked GEN query rows including future200 must byte-equal same-input all-allowed at every active cut, using frozen c106 original full-shape dispatch. No residual repair.",
+  "control_gates": "First two native ENTIRE q0 records exact prior native; next two all-allowed ENTIRE q0 records exact prior sham. All30 full tuple outputs and actual current/action boundaries also match those controls.",
+  "prefix_gate": "Window before first active cut matches same-V fresh sham in entire actual model kwargs, earlier complete model outputs/head, FP32 samples and saved current/action boundary prefix.",
+  "boundary_saved_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "public_selected_steps": [
+    0,
+    10,
+    20,
+    29
+  ],
+  "saved_actual_inputs": "Complete actually observed model kwargs at all30 steps, no solver state inferred from BF16 kwargs; exact native FP32 schedule stored separately.",
+  "noise_pair_rule": "Within each V all six raw returned V/A pairs equal; across V only A195 is equal. Each original195 draw is consumed before frozen whole-source return.",
+  "later_physics_preregistered": {
+    "cases": 12,
+    "trial_order": [
+      "V195_A195_native",
+      "V198_A195_native",
+      "V195_A195_all_allowed",
+      "V198_A195_all_allowed",
+      "V195_A195_early_low",
+      "V198_A195_early_low",
+      "V195_A195_early_high",
+      "V198_A195_early_high",
+      "V195_A195_late_low",
+      "V198_A195_late_low",
+      "V195_A195_late_high",
+      "V198_A195_late_high"
+    ],
+    "cached_q0": 12,
+    "later_noise_base": 195,
+    "q1_to_q7_seeds": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "later_predictions": 84,
+    "later_model_forwards": 2520,
+    "total_two_stage_model_forwards": 2880,
+    "no_q0_score_or_rank_selection": true,
+    "native_and_allallowed_entire129_state_5JSON_8PNG_and_all8_query_records_must_equal_existing_references": true,
+    "physical_control_references": {
+      "V195_A195_native": {
+        "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-read-execution/closed-loop/V195_A195_native",
+        "files_sha256": {
+          "sim_states.npy": "2b49476f230b3c72126d285864760f8f33e5357adddb49caf4d1bf26af96ddab",
+          "actual.mp4": "002cc6cf04deca85530a2b88da40cdd61aa9d5ca42645aa2532821a70205f6fc",
+          "initial_controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+          "controller-step16.npz": "a35f78c7cae7e6fce6e8269a8983be60e52e0fee81486884c50a862fef53fc17",
+          "summary.json": "e5757a49eb10e7d2a2fc38a7d7bd28c3957695d5d17c6288fef03984dd9e0990",
+          "strict-windows.json": "61ad4324c066256fd31f6937287a1ae239a0711e2bf7c1bd0d86332eb4766e96",
+          "q1-entry-control.json": "3283f0c61a98ab93f103449b349b11bdeb7f4546966e3516080d322dc9a303e7",
+          "query_contract.json": "b52a675a01716e8dcc17551d196a648f08798f7cc7099059bd89ed9bddcdb14b",
+          "trajectory.json": "e11431ea30e5602731326c41277e02111bbf8fe43ba1b0326dc63314ae0b9bfd",
+          "actions.json": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93",
+          "executed_actions.json": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93",
+          "normalized_actions.json": "22c43565476ac2d1ebae5591da3fe2cc0c4e38d3650f1e477ca99ec5aa5333d8",
+          "denormalized_actions.json": "e9f107b2bd252a048e9b30bae2f9e708cfe12eebd0de18f194c2c9b81fdb7f68",
+          "input_00.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+          "input_01.png": "d314ec5580b32f37afc3d1b922015c7e1a262075f6b82ee09aa864257a41646f",
+          "input_02.png": "6537bbe38b6d25bc317f4288d75f0a319f6aae6cda792b2b4b7ff72d18b9d44b",
+          "input_03.png": "296210a18ad0fa275c0bbfa3b968946f0c2560345ef4a7f27d20d3c527bfbf72",
+          "input_04.png": "10606cb3845ae9b5ffdf00ef3f1a61e9f6df998ac3a9a118159fcbaa053a8fb2",
+          "input_05.png": "e295fb48939906813e0d12c801256e2eac36d10e5faa31f6b4cd1eb1712c30ce",
+          "input_06.png": "df983768889538f9f592cffabe0b738fdb6971e7a2c400554a3e77c0edac0d18",
+          "input_07.png": "fa1ffccede05776e9509f5ef9143ac0d48b2593e3c72723c72f647695ea3853e",
+          "chunk_00/states.pt": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c",
+          "chunk_00/metadata.json": "0fa34ba640dc6d29891cb5e1d886f568d20396cd3bfa5ff31db1ee94f00b352b",
+          "chunk_00/normalized_actions.json": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a",
+          "chunk_01/states.pt": "5bc3d81797fb5a90a219f68264cf97b23fc16ca68789e38e9ec10b12541e00d0",
+          "chunk_01/metadata.json": "52c8b0fd2df61c91eaca07aab13468cf87bf75e8fdb581d00377404fb9b07a0f",
+          "chunk_01/normalized_actions.json": "b29d9bcd909d9fefef02fa6ab60bd82649c95f1436c506be864348488562f0a3",
+          "chunk_02/states.pt": "60db4546081dee730714b24c2dfd9f15a675cca87142fac2f1d324c1d6843755",
+          "chunk_02/metadata.json": "329d63fe2765c864494c752a7f271c008a6e284296e5a469ef514f68cc6781ec",
+          "chunk_02/normalized_actions.json": "1578714f72e63c9e743f97a50740daa1e5b7b451381216d9662b91051f6f511b",
+          "chunk_03/states.pt": "8faf35fc863eedf1177d2001829373b0f8abd1572be81551bdddae5930279499",
+          "chunk_03/metadata.json": "9b80b5744fc67dd772ed1a1eee80db6963862c8b2e746b4ac849965b7f39de05",
+          "chunk_03/normalized_actions.json": "995906955ddddba495982d0c2fcd66bd92093c722349fa746d2ae0fb2d1dd5b5",
+          "chunk_04/states.pt": "1a59ea60e464fb4fc6271e40218907b8cc26b779c67b4fc0e7544cd8304be571",
+          "chunk_04/metadata.json": "f9b6f7ab6aaad39970deddd7ba4648ee2dd5b6222dc50712d838cdbf4cfe129d",
+          "chunk_04/normalized_actions.json": "f87a401ce2865b015114d77d7c312ddedd6f0dcc9bc58468e98c2619cc415687",
+          "chunk_05/states.pt": "da241752aeccf6570fb8470fcd1ea8e47b75d8b8a2a9feca316b3ddce9bdd087",
+          "chunk_05/metadata.json": "a10c13ea04d59df8889b7b919f5a0250105d230d81af29ccc0117932a682afe2",
+          "chunk_05/normalized_actions.json": "d31874ea261117a1cb3d14bf7dabd7e394b77f8e1cd37d6f8062db183e65de3e",
+          "chunk_06/states.pt": "7fc4720fef32de6eef912688fab9f18e823b7831f80a91e3f59ab8be09e0846d",
+          "chunk_06/metadata.json": "ae45762b458f0fd092845b8398d86457a313c3ded4201c91be71f9988b716b40",
+          "chunk_06/normalized_actions.json": "46921661899155198134473354f0fde12597dc02723f9672b69f368a3132b9e0",
+          "chunk_07/states.pt": "ae2d822002634b56ad0ace1640bec12c7cd1254cb061866218b1d032d7bcbe84",
+          "chunk_07/metadata.json": "5412bb78a4aeb51d48e7d7e6a420a5c619993345f0332389fb25934a171438f6",
+          "chunk_07/normalized_actions.json": "3a0f5b77e33f5c3df030cc2beb92641ca35bb79d5a61d85f2f6e0bd35e43b499",
+          "chunk_00/noise-audit.pt": "ce9e4d524753a0846f4afd8c7e9f182903beea2f3c4a8f21900f5cb333256b81",
+          "chunk_00/noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+          "chunk_00/observer-report.json": "57e6bb08225335245559ccf9459740f04450d7ca50f329ee9be6c688527c3b78",
+          "chunk_00/indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+        }
+      },
+      "V198_A195_native": {
+        "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-read-execution/closed-loop/V198_A195_native",
+        "files_sha256": {
+          "sim_states.npy": "3215e470ed04a1b07f6552273f0c20407ec956e244966d96dfa1b839ab44a789",
+          "actual.mp4": "55010fedee28b99bc83e85f220e8c4628cef39eae92b949bfcf80964f98c7038",
+          "initial_controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+          "controller-step16.npz": "904ea07e65d8fb57c3a821b101e810931beb9b929d408c62670e9a5b179e4739",
+          "summary.json": "7dc25ee0c8c3805fbe0cadb453a7940b86008419660784ed234148f5795e9b05",
+          "strict-windows.json": "98c09475dd7774a44e7c8c5dc4361b74f341c68d5a9942ef7e6d86e91fca6ff5",
+          "q1-entry-control.json": "9c08471bb372873aa6dae78f11579fe86c8cd1bfa4fb7abc51c7801bbed542bc",
+          "query_contract.json": "1a6844fc6b88967b4049e57d339fbbd747fc8419398892148fe1ea56aa4037cc",
+          "trajectory.json": "ba9915071561c94de1e377a559d11b35eb0db5cb6e7f60fc9af241b2776653f1",
+          "actions.json": "f65087569bf0700804de1214c95eb635df48dab04c7de784f3e2ef55b0a50c6e",
+          "executed_actions.json": "f65087569bf0700804de1214c95eb635df48dab04c7de784f3e2ef55b0a50c6e",
+          "normalized_actions.json": "3dd76898317489ab436398e81c6fd96d9270dbb160392e13d82c4cff244dfbde",
+          "denormalized_actions.json": "371f5b4c2c7c52df32b56121606f1ff2b2cd6bffa1435959eb44678fbd512066",
+          "input_00.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+          "input_01.png": "1282830fd091823b101e3a278438c996367101d3b480915ea7dbf1a6263d74d3",
+          "input_02.png": "f750feee93d179dbc876eb67012eee79e07ba622fcc93221b0b4df220fb95f1d",
+          "input_03.png": "ee5f20fe343d24bc64c876e30f08f20f6e2801bd162897e77747aa9369242f15",
+          "input_04.png": "e945c3736d9f510a9051e8c18df29e8c453570e31498ec5a3be3e6a20532c2ec",
+          "input_05.png": "cebdbdc84e1c39fe02da54cb4c011faa02bca1b311ef1fcd917ea18655951f3d",
+          "input_06.png": "ad4d9fe3511396647f9fc494c60da19df574719ff74a60a918a5e4801fd0c55b",
+          "input_07.png": "82f7538738afd10de1fef9cd089d8425020090fd1ee9204248ba575278a4969e",
+          "chunk_00/states.pt": "e9bbce0941a496cb833f550897c1f7573fcb1863fb5ed2c69a9fa81d0be4ed28",
+          "chunk_00/metadata.json": "b0ad2af33be22f172020a7baec69e951918deab594446d9c6b0aeb72fdde6f67",
+          "chunk_00/normalized_actions.json": "9b2412b7191ae6df094d7bf05b45107757186b1b5488c9c0dd125418efdb0baf",
+          "chunk_01/states.pt": "85acac5c4ba251563193eecb3bbe4d1e25e6b174427e865e67c3abc682febdde",
+          "chunk_01/metadata.json": "07437a0be7a9765f6cc5b335515af71290901376785b0588f2844a3504252b93",
+          "chunk_01/normalized_actions.json": "55f224d1c2dc8615b349165ac0480a8d879c57d1f89e300167b53712af3d129d",
+          "chunk_02/states.pt": "fd7ea05b8382ade2d06106e271b92f38dfcd2b9209d5138c17fefc8571fa0b25",
+          "chunk_02/metadata.json": "bfdcd5510e8394d5f77b498637e7a8d1b9606dfe3bbc890fd82736f11b2259fb",
+          "chunk_02/normalized_actions.json": "30bc6283cdec2ef1ccafc57569d864758e58f7ca1274d7123488a0b70f2338ad",
+          "chunk_03/states.pt": "94b3a10b65edef77d22af3c02cf5c191c4caba6c9cfb4dea874179c52a5000b8",
+          "chunk_03/metadata.json": "d7965d78d7e9329c6adc27b0562f53ba8ca32fafc412c468263142bef6c3f2d5",
+          "chunk_03/normalized_actions.json": "00dd70e248a3a7848a8e3c52ae8c4e70a23bc5164afb891d9bd74667ab559e64",
+          "chunk_04/states.pt": "401bfd4893863f1c90e3c07470fbe2675c92512623b3b4d7b606ef55a4e71239",
+          "chunk_04/metadata.json": "7d784b7e8011a034b4a0155a2209e0b43e661b48dadaccbc34a3029109c9bbb8",
+          "chunk_04/normalized_actions.json": "fec719ee7187bbb63405204ccc2697ffda48d2753442642440ea5b6c6de1bdd8",
+          "chunk_05/states.pt": "c1350294a927b09d77874b37470f58c2174d96b5dd9d1682c175be8538711bd3",
+          "chunk_05/metadata.json": "fad3e9c820e9abfc775fa8510f678766630d863b4fbbed3cd82818d73d6fb1d2",
+          "chunk_05/normalized_actions.json": "4dd45c82834fd32d8d0428c2efc93557d5f586edefd461392fc5c763288b54f3",
+          "chunk_06/states.pt": "e5bc3a5e61c82bc6f3ed9eaf585ca1271dd7fe44fbae333e2e6331f9edc74ac3",
+          "chunk_06/metadata.json": "5e4a50de3a7bf689adb3649a9c803900b9f68897e4c9ce83d5c22ddef716cfc3",
+          "chunk_06/normalized_actions.json": "ac6cdd3aadd8c241776fb386f946e864f4b0d5413f305570a06342d96189b2f7",
+          "chunk_07/states.pt": "bec8fb04c59ebdf69031239c0aed1820b66a7dded66c81591c78a5c896819e67",
+          "chunk_07/metadata.json": "c202037f0ceaad1ae6bce01e44a2f818517da2f8f659b78e4367722258498923",
+          "chunk_07/normalized_actions.json": "40c0a75b07ce057f43a90023d14c2fdf1747567a114ab647a5df9b33bf1f7d28",
+          "chunk_00/noise-audit.pt": "5a4f00b4d0af04d5eb3e3747421dfd779ff4760f5b5dbbdf2d2379e03fffd372",
+          "chunk_00/noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+          "chunk_00/observer-report.json": "edcb4b187ea062644f3b438d277f3eae0119e3275357bdf942e1051f3d9f3216",
+          "chunk_00/indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+        }
+      },
+      "V195_A195_all_allowed": {
+        "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-read-execution/closed-loop/V195_A195_all_allowed",
+        "files_sha256": {
+          "sim_states.npy": "8ff7eef5b0a3ca535ce4b10d2d7f1d7eab41a161e70ad6dbf2f789d1711d6ac7",
+          "actual.mp4": "cc30d25441d7bd9af5a030553eb1ba6bf4cc629d763ca064167f6950457d48ec",
+          "initial_controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+          "controller-step16.npz": "a3dcae30d24db83fde155b815340487219d936d5ac70ad4ffcfe5942f1c5e389",
+          "summary.json": "5d8ddcc219ad688c37ff825aa0ad9954d831df5a21d9c0ac60842f09cb0d2aab",
+          "strict-windows.json": "750d548cd2383838d985251709f17af40e698e225c982e2d81896dda7ee5b98d",
+          "q1-entry-control.json": "a8fe9132f1442db945e668de7c5605791407a08ea680e618ddda7986085a6112",
+          "query_contract.json": "3cc217e72d3de726119e8d8ba72bf7c284cb72e1775f5bf6d6afe74c9875ff0b",
+          "trajectory.json": "6ba83f1b3ba228412b5129c702da4e4c59066017e8c17ce1ae01237c29ea2f72",
+          "actions.json": "531f5621c657e32f80d961e60465e73cd84f4326d5f926bd66c40e141240e350",
+          "executed_actions.json": "531f5621c657e32f80d961e60465e73cd84f4326d5f926bd66c40e141240e350",
+          "normalized_actions.json": "0135a20dfca8f6455fcf76fb2ebef53ab688b3e0c81f4af8d3205b7ed852b322",
+          "denormalized_actions.json": "dc33f6cadd15b1fd8c1d2b307d129634af0808f3f9c9ccee97fe026b36cdcb16",
+          "input_00.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+          "input_01.png": "540231ce7f92f3a417ab5bc7b3eb1a2e4da22cb44b4bbd2d2de2b569aa050822",
+          "input_02.png": "a30e28f1a43a6e00fd6d23bab3384dd5d561e1d2f19c0ededf5cd2061a0b2318",
+          "input_03.png": "561ed3c4baa30b2ac848c5735609e81c18bd7d95f1a622b11907447d4cd01ac9",
+          "input_04.png": "6fa70b926b5a9d76c9c13855e5318df90301fed80a39eccb9138e214a26bbd68",
+          "input_05.png": "f6c59d1598f0462e117f70e5a90fcbb8ae36cffbab9645f5cb68ff76a45cc494",
+          "input_06.png": "1857bc6e215a713753ad639522c8fe80e079aad819288d5006c343e979cb60c8",
+          "input_07.png": "b71d2611537e8429506871db9ecdd3abb0eaa344be3caa19ab4d191c9ab0ff53",
+          "chunk_00/states.pt": "a138fdfafe03594ce914489ab24987719335e188b6794cccc19f67c5de1a17ac",
+          "chunk_00/metadata.json": "2a2aeaa18a27f24a3729bb94b6c84f0f296f1b7826f67104b671bdadea4a17c1",
+          "chunk_00/normalized_actions.json": "c421cb140f6116e9efdfd3f247a366c7b95cd4456e33b9a0f997d3c35ed17fce",
+          "chunk_01/states.pt": "583d4a13b001c45b702dc4efbb1cede19cc1f53d1c892f54bc7695ec8b6eefb7",
+          "chunk_01/metadata.json": "bf8db7b64a6c208d4b0bc3929f6f66dd74012794c6812b9367a1603b4557f414",
+          "chunk_01/normalized_actions.json": "bf089f37c7903ddcd5991034ee7d798df9ed5a0f6f373bb117ee6467e58dc46e",
+          "chunk_02/states.pt": "59653632280f9e722c72b401e21a0d55e9d6dc7315815e2034260c8d0000ee98",
+          "chunk_02/metadata.json": "5ef61da20c42c7c7bbe092a1fbd0f667aa5179c17c0a36b3cdad3275adeb2fda",
+          "chunk_02/normalized_actions.json": "ce2c741d1be45d9a4a02966cf82009f59879f7b5d6ea7aff6b1e31eb91efdea7",
+          "chunk_03/states.pt": "336fc31ba46905b7e1d54daaa17c1689e64a320c55b191f59290f4e802833f12",
+          "chunk_03/metadata.json": "b724bb23626c33564b22db2b8a9a0dadc46c41ab681627b3ef817e67d0c6c25d",
+          "chunk_03/normalized_actions.json": "0dd663858abc18076ec64920468e0687870a99daf71d2ab2a2283f7f5cefb56b",
+          "chunk_04/states.pt": "dbf43aeedfe5c901556adaf6d50ed37b6e4858ca4d04160ab9570196b8d98c10",
+          "chunk_04/metadata.json": "ec2d7635de0ffd271debc00bf00083351fe35923e23e44195573511f9efb320d",
+          "chunk_04/normalized_actions.json": "0df4f64b427a6332dd83a787825132c22252b3fbb642e467f8cf623eb7ba7945",
+          "chunk_05/states.pt": "6a73014a3058246bb59e5ab923160289798d0d5edd9e6cbe52fc439b9aaf78c3",
+          "chunk_05/metadata.json": "e8a10a347cb29befb2f39a368b7858407fb49d3d39d352d73ab3423cdc099be4",
+          "chunk_05/normalized_actions.json": "e775b25a3a756f7b9e8b3aae7d9b90a6b0a7e8e96c620c11057ad1110d8dede2",
+          "chunk_06/states.pt": "4c362e61183ad8aebeb5825e0963ebb60b8a3701f94087bb6630c0365aa9379e",
+          "chunk_06/metadata.json": "cca027c5adf412dbee9a8ea9bb4e2ad2a0347525b2111160d41c01db729ca8e8",
+          "chunk_06/normalized_actions.json": "2db5ca22d73a4ba1a7c9e883ff4b68b85a489f71befaa5d395fdd6b7944281ad",
+          "chunk_07/states.pt": "9214035a27194e933e7fc8fb6cb0e41b4210061fd1ddcd7b1b38b3cfc0862b7c",
+          "chunk_07/metadata.json": "8aef7181353c3bfc6a65c7a2b56e10ed4ac6bbddbe3f0f96792de0fae142440c",
+          "chunk_07/normalized_actions.json": "ccf6dfcf2dd8fcdb6e369bf7154d62569d305020581c63cc352a434a61e85011",
+          "chunk_00/noise-audit.pt": "9b8a3c6da1d6be606d4011f33763a7bb38959230dc062567aabb32a247086692",
+          "chunk_00/noise-audit.json": "fc087761f77e3e9031aeff65958dc184e4a456ff4858b4cfcbb5e5d1c047d243",
+          "chunk_00/observer-report.json": "8ff0e69880f445e93ebd8051f1fe60196c0ce79cff5bd3ec251ae08ee0e02a08",
+          "chunk_00/indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+        }
+      },
+      "V198_A195_all_allowed": {
+        "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-read-execution/closed-loop/V198_A195_all_allowed",
+        "files_sha256": {
+          "sim_states.npy": "cd571d4075f19b783319587fdbe8b78fe8551cff1cc88c9b872e0f8d271abb16",
+          "actual.mp4": "a4a28ec6215133549ea81034a62e8d86dc6106941d6f86555b736a428129613f",
+          "initial_controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+          "controller-step16.npz": "ce0cd449e955583c6458763c89ff2caf186d40d3b14dc76ac7a4b0130170130e",
+          "summary.json": "33257e21802fb5f77fdd861b2109edcf9f60ed0be3b04e2cf92925b4fe066a36",
+          "strict-windows.json": "18956697cc07a8b828a69df7e16d75d52f47cd27eee0e6f5822a49dfe8e402e4",
+          "q1-entry-control.json": "38f4a700e66b59401ba1634254d7448bbf2ec2bfd635e7c5b0d0888b171ce54b",
+          "query_contract.json": "66bbc917863c5b0550e4cb2edd24caa0a5b16254dffdb9dd4603331b7de4fc22",
+          "trajectory.json": "d86e148a7296e1a56675418d0ede003dcaefc514c1c4d3eaa205b9685b0b7172",
+          "actions.json": "59092edabfcc53ad3d6a02ed3d6e5b2b33ccc9461fd33ec3832c4741fe66a023",
+          "executed_actions.json": "59092edabfcc53ad3d6a02ed3d6e5b2b33ccc9461fd33ec3832c4741fe66a023",
+          "normalized_actions.json": "d1840d947066446903ebfe4ae69b215fea2527610b7bb8bec716141cf25b737c",
+          "denormalized_actions.json": "1a2f72219bd37d295671140e7be04e25fcbc8ba44019ee23805ba5e71046ccbd",
+          "input_00.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+          "input_01.png": "bbdfe05c95e861b85230040f935a7301b422fbb2e133b7680a559dd7f18c84cf",
+          "input_02.png": "82d6552c2393a4a4287d30f48c891696a81601948b4f6a0e8837f6e7b7c1fcfe",
+          "input_03.png": "e1f01aa0c0a38a83458e944280178c0bada6880b82b47138475038e629168932",
+          "input_04.png": "3be93c0dd1f9456395815e1e6658b5e9befae2e092ed1a08a809b14a1dce9b41",
+          "input_05.png": "75194f3642338f551929e07f7dc1cdb205d2ebd73753c07543f0819454a77d50",
+          "input_06.png": "3a13d6a949328ac2f8ba7b82b0cc5124ab2e7aec0fe4720dac2a4477de2ebf18",
+          "input_07.png": "441289bcd786dd90ecb8bb75946caf634e974f38072a86ab5fe1cafeb0adae5b",
+          "chunk_00/states.pt": "6fe31b9d8ef0a453a16992752a685e71f45a63aaa76e2f73172f0373fc496c6f",
+          "chunk_00/metadata.json": "e509c2c4cddf08025e7c0b23107e190fb427130bd8891fe11f3024581b029e80",
+          "chunk_00/normalized_actions.json": "06117b493414fd8fcd7701455f1c79758207e5398fe59a163045dce18764b6f1",
+          "chunk_01/states.pt": "a3ca5825eb46e7286b44c54effe05274f904f919529ab470ff6d4fa06b7a09c1",
+          "chunk_01/metadata.json": "657a43971c5b07e0ac9161094a572e6cb15cd8ce918c30a94b0f084fcdb9bda6",
+          "chunk_01/normalized_actions.json": "8517a045e9c565f9c147800a3d8de1f6546c3db097e1e5bc672d88365e0643ee",
+          "chunk_02/states.pt": "84c0619bb58d1716690ffbcf9bb044ff6bfa5d31274ffef2542efd60b8c3d1f7",
+          "chunk_02/metadata.json": "49720c65d51717b87c6bcb0d2bc5981a8c4e4e364129a2046c6eb62b09d00eb1",
+          "chunk_02/normalized_actions.json": "78114c6b91f07d6646c817424b12c5fb3fef8bf99b62ab9072ea7577d5c7f5a7",
+          "chunk_03/states.pt": "3a26ec66b28678c7e5c0add13f66aff0eeff4664440573e6afdfd8a70ebea892",
+          "chunk_03/metadata.json": "92de3fbd398a999deaa101cb84444e4c34086d5ba7b812e2a4008d9c26c65b1e",
+          "chunk_03/normalized_actions.json": "4f12b67ca259b4c6ab9c23567684703bd0be35227b934e4df1982b931d28b2f0",
+          "chunk_04/states.pt": "dbd8e4127d111eb26fb7ad67ba92d268caf7df0ed6a827ad303a67714586bf6c",
+          "chunk_04/metadata.json": "7157f1f84f41a1505bf268951350106de1cf239461a189f6b9bd30571da62050",
+          "chunk_04/normalized_actions.json": "a4fc32430ab478cdc3d58671e935534deb5f6869ea03aed6b81bbe70fc296ddc",
+          "chunk_05/states.pt": "cb668648a9f7dcc365815b181eae7c31a9aff338c6608a7fc570e496c8d8574a",
+          "chunk_05/metadata.json": "a8362a62ec39b79f61618c12623539cb1d16397fc5873560a04bbbf95cfffcea",
+          "chunk_05/normalized_actions.json": "0a2f508217be33672a897b67633a4be5823309326f893ba387dae9968283cc9a",
+          "chunk_06/states.pt": "aca9899e9dab7a3c3e5bed56d967f9338060fe7c70bed7a2b5d7dfaa914c82ec",
+          "chunk_06/metadata.json": "ef43cc44dea090750b7d64d1e8a03c8b8518e898555714bba9128660d079f3ce",
+          "chunk_06/normalized_actions.json": "23517b97616e1f6ee184c1e2343efb352f7ca8849333ecf0f2825c5479ad2316",
+          "chunk_07/states.pt": "5cdc0965ed6e6a4e77dfb10841fa7d99adb1fda9564a72d6504714d4b7cbf9dd",
+          "chunk_07/metadata.json": "d9fe8acd5312c3521e54bb54c4bc97d151d134545612a022b1c6faf5905a9c9a",
+          "chunk_07/normalized_actions.json": "0d1dd059a92f0610c9ee6342ac77878a2da209994453695f9acfb2c955c2afb0",
+          "chunk_00/noise-audit.pt": "85e9ffcaee9c08dd282e1930e995de53647ae656032399610b844b13eaeb8a5d",
+          "chunk_00/noise-audit.json": "7ec89c265515c752dd54e98f0159badaf1b6c8806122f70a951c095d0b0bebb7",
+          "chunk_00/observer-report.json": "7d68e141ed33b8f8524918702f5e6af5eeeaa3927d558645e85d164ad85ea994",
+          "chunk_00/indexes-and-masks.pt": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890"
+        }
+      }
+    },
+    "all_four_windows_all_V_reported": true
+  },
+  "no_training": true,
+  "no_residual_compensation": true,
+  "scope": "Four preregistered future-to-current step/layer windows in a common masked arithmetic background, fixed A195 and two V realizations at X+12cm. Actual q0 inputs, full model outputs and current/action decoder boundaries only. No training, new physics, semantic-unit label or root-cause claim. Hard masking also renormalizes the remaining attention; this experiment does not separate future content from attention allocation."
+}

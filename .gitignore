@@ -61,3 +61,12 @@ checkpoints/
 !experiments/16-milk-shift-mechanism/future-read-execution/closed-loop/*/chunk_*/states.pt
 !experiments/16-milk-shift-mechanism/future-read-execution/closed-loop/*/chunk_*/noise-audit.pt
 !experiments/16-milk-shift-mechanism/future-read-execution/closed-loop/*/chunk_*/indexes-and-masks.pt
+
+# Recorded temporal/depth connection-window arrays and executed predictions.
+!experiments/16-milk-shift-mechanism/future-current-windows/*/states.pt
+!experiments/16-milk-shift-mechanism/future-current-windows/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-current-windows/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-current-windows/*/boundaries-t00.pt
+!experiments/16-milk-shift-mechanism/future-current-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/future-current-execution/closed-loop/*/chunk_*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-current-execution/closed-loop/*/chunk_*/indexes-and-masks.pt

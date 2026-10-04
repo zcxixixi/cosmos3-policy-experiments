@@ -1,0 +1,41 @@
+{
+  "state": "complete",
+  "script_sha256": "19b907e5760f5873f4b1d0b834018a594f8d7420827369e731bc701ae4bcb08a",
+  "trial_order": [
+    "V195_A195_native",
+    "V198_A195_native",
+    "V195_A195_all_allowed",
+    "V198_A195_all_allowed",
+    "V195_A195_early_low",
+    "V198_A195_early_low",
+    "V195_A195_early_high",
+    "V198_A195_early_high",
+    "V195_A195_late_low",
+    "V198_A195_late_low",
+    "V195_A195_late_high",
+    "V198_A195_late_high"
+  ],
+  "physical_trials": 12,
+  "saved_q0_predictions": 12,
+  "native_predictions": 84,
+  "fresh_model_forwards": 2520,
+  "producer_q0_forwards_separate": 360,
+  "combined_two_stage_model_forwards": 2880,
+  "actual_later_whole_noise_pairs": 77,
+  "four_native_and_sham_entire_129_state_5JSON_8PNG_and_8_modelrecords_exact": true,
+  "all12_own_cached_q0_action_execution_and_strict_window_gates_passed": true,
+  "all12_cases_executed_without_q0_selection": true,
+  "primary_prediction": "rejected",
+  "primary_both_only_milk": false,
+  "numerical_sham_classification_gate_passed": true,
+  "files_sha256": {
+    "controls.json": "d66988c6c24b725f2b20672bf8bd3eb133dd23eb0b24e794da6fbfd268036bed",
+    "primary-prediction.json": "4ae592b7a0972c1a6b43ac3a549b6a6271d14722d188aa302cb95c427c4b978b",
+    "provenance.json": "30bb595e56072f0af4cb50635a63599f842cefe2b200b7f30d313a5c2a5a7abc",
+    "prepared.json": "b92adb6f7c2955d2de83115b5807f3388e27f812fc12e1e58a0e4dc462309a76",
+    "server/complete.json": "fa51083fb9d0dc90be382d560cc745a0a8be91571a2f4a000fe8c8cd22903d1a",
+    "closed-loop/complete.json": "82a9005cd60d4000bf9af4f7cb7b7f16b1d93ee256fe77e929bc726813eeb8d6",
+    "summary.json": "a59218548c6d0016636b4a551d77efabd8a34c44a65788339c11c927d4e59beb"
+  },
+  "scope": "Twelve complete X+12cm physical trajectories executing the frozen window q0 actions, then native inference from actual feedback at later base195. The two native and two global all-allowed shams have separate complete prior references. All four windows for both V realizations are executed; only early-low both selecting exactly milk tests the primary prediction. A hard mask also redistributes remaining attention. No score selection, additional internal intervention, training, semantic identity or general neural root-cause claim."
+}

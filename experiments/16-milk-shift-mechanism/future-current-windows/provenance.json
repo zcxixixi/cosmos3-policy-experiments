@@ -1,0 +1,59 @@
+{
+  "script_sha256": "8fef06cae12291884ee8a8fa60c981605f7813ccaa1c372f76f426be9662eb69",
+  "protocol_sha256": "2d260e016c8bf100f1cade7c30d20acdc505221369058b752fb7e312fbd7f179",
+  "sources_sha256": "d8388dc1e8fac69ae6e66d190e8ef9e5c56a587f1e088c8b36b44e351e9fc0b3",
+  "inherited_fullcut_source_sha256": "c106bba687c6eaf0853ac9abe7aa2767f9464365162399c201e98b2369af7a4a",
+  "noise_seam_source_sha256": "9081abb51200d1335bb4f84fde87fc23eec45a97ca46789f2dcf700acaf26c1e",
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "metrics": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+    "reader": "a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb"
+  },
+  "scheduler_sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe",
+  "actual_transformer_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/transformers/transformer_cosmos3.py",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+  "dispatch_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/attention_dispatch.py",
+  "dispatch_source_sha256": "93a57f07a77f8710233458ce8adc300e3eeaa57cb09a46a94cee02121d38ed88",
+  "dispatch_signature": "(query: 'torch.Tensor', key: 'torch.Tensor', value: 'torch.Tensor', attn_mask: 'torch.Tensor | None' = None, dropout_p: 'float' = 0.0, is_causal: 'bool' = False, scale: 'float | None' = None, enable_gqa: 'bool' = False, attention_kwargs: 'dict[str, Any] | None' = None, *, backend: 'AttentionBackendName | None' = None, parallel_config: \"'ParallelConfig' | None\" = None) -> 'torch.Tensor'",
+  "registry_backend": "native",
+  "registry_supported_arguments": [
+    "_parallel_config",
+    "attn_mask",
+    "dropout_p",
+    "enable_gqa",
+    "is_causal",
+    "key",
+    "query",
+    "return_lse",
+    "scale",
+    "value"
+  ],
+  "registry_backend_function_source_sha256": "95e749097c2b477f4b6a6ea9d09cbab112ef89dcc7cd4d8681e001dc00da8f4d",
+  "backend_settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "configured_attention_backend": "None",
+    "configured_parallel": "None",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "grad_enabled": false,
+    "kernel_evidence_limit": "Configured backend and enabled flags are recorded, not a profiler observation of the selected kernel."
+  },
+  "library_edits": false,
+  "training": false,
+  "physics_calls": 0,
+  "implementation": "Frozen c106 dispatcher/masks/block hooks/noise seam inherited. GEN-site schedule, report count and once-written complete actual kwargs export implemented here.",
+  "scope": "Four preregistered future-to-current step/layer windows in a common masked arithmetic background, fixed A195 and two V realizations at X+12cm. Actual q0 inputs, full model outputs and current/action decoder boundaries only. No training, new physics, semantic-unit label or root-cause claim. Hard masking also renormalizes the remaining attention; this experiment does not separate future content from attention allocation."
+}

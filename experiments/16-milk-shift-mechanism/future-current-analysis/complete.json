@@ -1,0 +1,26 @@
+{
+  "state": "complete",
+  "script_sha256": "04758f1ea7768f6bdd725b328787b391b4b12dbc08a32626768d9110fdfcc609",
+  "files_sha256": {
+    "provenance.json": "a2932dd346b5689675006d15972ecf5175061f7290cd671fbfd0a1fad22f3d27",
+    "audit.json": "f8bb22f30ea67a0b1241397afc27fb6560c1faab7fbd0b41a95fd3af435d94c4",
+    "actual-boundary-manifest.json": "3a87a6843aea05c29ae3d6f4f0a5a8d83b21deeb172c7258d9aa055d736c77b8",
+    "actual-arrays.npz": "5d581afa50eb1c6e8d6d72654fbc36d54b3dc29ec52f9ec7d8d90b0da8b59fb6",
+    "analysis.json": "ae529cc86bc136a18fdb35ac61c436b8b824282af66f80d4db831189b8bfd5fa",
+    "strict-window-outcomes.png": "02a42aa7ba8b18411ce1633a44c5ebb30f447b6a37c87d41a9c7d0a51f3b7313",
+    "same-sham-and-cross-source.png": "5761dfd5190da920f6b0a07a3142aa7a9a0ee509d57259a39f69eb4414c1cf94",
+    "primary-block-net-updates.png": "84f238ec8dba169af00adb0212c4db8e16fbaf7cbaf88282c4d0edf85252db63"
+  },
+  "primary_prediction": "rejected",
+  "actual_physical_actions_checked": 1536,
+  "whole_noise_pairs_checked": 77,
+  "whole_model_records_checked": 96,
+  "actual_boundary_files_checked": 360,
+  "model_forwards": 0,
+  "attention_dispatch_calls": 0,
+  "solver_steps": 0,
+  "physics_calls": 0,
+  "cuda_initialized": false,
+  "elapsed_s": 57.81750119699973,
+  "scope": "Post hoc CPU audit of completed fixed-A195, V195/V198, X+12cm window experiments. Every physical outcome is reported; only the preregistered early-low pair tests the primary. RMS is a saved-array distance, not function, language/motor anatomy, object information, probability or success percentage. Decoder block net updates combine attention and MLP residual additions and BF16 rounding. A hard mask also redistributes remaining attention. Current/action boundaries are available, future hidden boundaries and full QKV are not. No new model, solver, physics, training or general target/identity/root-cause experiment."
+}
