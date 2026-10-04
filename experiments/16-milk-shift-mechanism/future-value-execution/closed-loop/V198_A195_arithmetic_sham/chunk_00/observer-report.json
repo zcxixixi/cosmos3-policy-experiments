@@ -1,0 +1,498 @@
+{
+  "state": "complete",
+  "case_arm": "arithmetic_sham",
+  "selected_window": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      8
+    ]
+  },
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "block_before": 1080,
+    "block_after": 1080,
+    "pre_W": 1080,
+    "native_UND_dispatch": 1080,
+    "native_GEN_dispatch": 1080,
+    "all_allowed_dispatch": 1080,
+    "cut_dispatch": 0,
+    "substituted_sites": 1080,
+    "clone_sham_dispatch": 135,
+    "value_zero_dispatch": 0
+  },
+  "boundary_files": [
+    {
+      "step": 0,
+      "file": "boundaries-t00.pt",
+      "sha256": "07869a55d867fc636e9001374429ecbd723af148ade5ea4022eec0830a600927",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 1,
+      "file": "boundaries-t01.pt",
+      "sha256": "22849163885bd5faac38a8ee728866900ab539a2ee02e740aab0e41b36b03f89",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 2,
+      "file": "boundaries-t02.pt",
+      "sha256": "4761ee7592e02e1a7a8ea9005cea418e6318952055522e0dde9b8f1c16be6324",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 3,
+      "file": "boundaries-t03.pt",
+      "sha256": "536e255f9e2365a9161d4bb78e690d6de60581d4de84f63ea4da37483ee4bffb",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 4,
+      "file": "boundaries-t04.pt",
+      "sha256": "38acae8ffe4cbf7b9f4e328a6126cd4f34006bfadc796bd6d6a31a1382969a9b",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 5,
+      "file": "boundaries-t05.pt",
+      "sha256": "2082f68e19c9520dfacce76939efcd791da0654485c226e3f37a181b04b93a68",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 6,
+      "file": "boundaries-t06.pt",
+      "sha256": "0a4ddb6e01b40323161dce84145c13332a3819af78a490e860f3ae73004541be",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 7,
+      "file": "boundaries-t07.pt",
+      "sha256": "8cae672558eb6efe800d35a1d271f13adc02dbe8ad8b5f96922c927119b38194",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 8,
+      "file": "boundaries-t08.pt",
+      "sha256": "5e870d5c6a2dda0c43c3bfd9fd445723662226377c20a871c7e83a6af396c8dd",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 9,
+      "file": "boundaries-t09.pt",
+      "sha256": "66f14f42f634abebcf5e5a5282d43ad9f83cf270c82e57d301793d4e435d59ab",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 10,
+      "file": "boundaries-t10.pt",
+      "sha256": "27ca37e0e6f9b3600ffc8aadeb64f785f509ad70ad8b94789ab5474fa106f9e6",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 11,
+      "file": "boundaries-t11.pt",
+      "sha256": "5d991d800a2192b22e4c4d000568ab575da8c920e408118fd0dd9aafd24854b8",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 12,
+      "file": "boundaries-t12.pt",
+      "sha256": "3596775e5f4835f9fe95960a07183e0bd589890521bde8c44a67cd1be903b1f7",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 13,
+      "file": "boundaries-t13.pt",
+      "sha256": "74ca8a716ac076a938f506fd5ee2886139abd29d2c759a34b75cfa73f391f067",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 14,
+      "file": "boundaries-t14.pt",
+      "sha256": "059f0ec8578ed4a0e453c6562c0e7ba841f519436d80ef6be40e3cc734470605",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 15,
+      "file": "boundaries-t15.pt",
+      "sha256": "854bee2d19a26cc2e2acab9869204002ad8c6aa32ce99100ffa225ff3f5c4757",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 16,
+      "file": "boundaries-t16.pt",
+      "sha256": "c8e423be887c371821aebb1b3de215df45081de1ba085ae934118b5d973935e1",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 17,
+      "file": "boundaries-t17.pt",
+      "sha256": "4a6d00af4010182e3f37866fbf76b059c100c310bd3889ea183ec46327fb93d8",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 18,
+      "file": "boundaries-t18.pt",
+      "sha256": "be9da13ce338fcd8907f68b2c8c24ca497aa0cb4342f149d73294591d9534892",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 19,
+      "file": "boundaries-t19.pt",
+      "sha256": "5c6b773fdbb1ae567d2554e0169bd9b2dbf9e84cbdfd3d0770647c07a069e9e8",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 20,
+      "file": "boundaries-t20.pt",
+      "sha256": "02ffe361bbdd2b9ca87cb67960f65323adc9ce33561a6176f72bafff7b65005c",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 21,
+      "file": "boundaries-t21.pt",
+      "sha256": "db93dedb0e3e06551ebb48484d557835fec5e29ab211b71cf89cf3ceaf7a3f15",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 22,
+      "file": "boundaries-t22.pt",
+      "sha256": "441dae44af592025c7b69d630aed1385449864fe91bc3bab9c14a864ec9b170d",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 23,
+      "file": "boundaries-t23.pt",
+      "sha256": "3a9ea5d2e20b53c55388e8a2277cfd4072ff4f77319dce407a7f4a7917a9360e",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 24,
+      "file": "boundaries-t24.pt",
+      "sha256": "dae550d20ae5bc381fc6c1bb1b5e92f09ecf7fde0b24e3f015fbf4bb8a8b367f",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 25,
+      "file": "boundaries-t25.pt",
+      "sha256": "38ac502e9e0db443fd6b626237623af440824673a32b9bc71daa4de66cde0328",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 26,
+      "file": "boundaries-t26.pt",
+      "sha256": "651e3df6ad08cabbee172e89981baf336833b560d7d19cf8e046a655a93566cd",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 27,
+      "file": "boundaries-t27.pt",
+      "sha256": "0aad49557b114bb6cf4e9acd8db25de693108b7b879e58052d508c0ee38be999",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 28,
+      "file": "boundaries-t28.pt",
+      "sha256": "691f39db27def7b52cbec72e192d0cc54f8ae417ae4fe6555eb5741d172ddf62",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    },
+    {
+      "step": 29,
+      "file": "boundaries-t29.pt",
+      "sha256": "896b39d96efc978f29c592f9df05e4d4f07c284bd5d676a3875e9225fe85a594",
+      "current_shape": [
+        37,
+        50,
+        4096
+      ],
+      "action_shape": [
+        37,
+        16,
+        4096
+      ]
+    }
+  ],
+  "indexes_and_masks_sha256": "48f25a71b6ececc5c5e4ff5e8da862d2dc51dfdd1a45206bdddf20608d861890",
+  "site_capture_manifest_sha256": "7de66ef0497e6c69f79dfb2bcee93023f1e2b58cee66db74f1279bb7d3bc82e7",
+  "captured_sites": 135,
+  "original_full_266_row_projection_calls": 1080,
+  "all_actual_dispatch_flatten_pre_W_byte_exact": true,
+  "all_masked_sites_same_union66": true,
+  "future200_and_UND_native_dispatch_returns_preserved": true,
+  "action16_same_input_Z0_at_all_masked_sites": true,
+  "all30_actual_complete_model_kwargs_saved": true,
+  "all30_actual37_current_action_boundaries_finite": true,
+  "arithmetic_sham_all_selected_sites_byte_exact_Z0": true,
+  "hardmask_unblocked_queries_byte_exact_Z0": null,
+  "no_unselected_Zv_vs_Z0_equality_claim": true,
+  "processor_recompute_calls": 0,
+  "all_owned_hooks_removed": true,
+  "original_dispatch_symbol_restored": true,
+  "numerical_sham_is_native_noop": false,
+  "scope": "X12 fixed image/instruction, V195/V198 and A195, q0 only. The selected early 135-site future-to-current pathway is split into value-zero and an additive pre-W allocation counterfactual. The latter retains the old future contribution and adds the nonfuture renormalization increment; it is not a legal normalized softmax and can increase amplitude. Same actual Q/K applies within each site only; later inputs and solver history may diverge across arms. BF16 official endpoints still have kernel rounding error. Future200 and UND dispatch returns are native; action16 uses same-input all-allowed. No residual repair, offline reconstruction intervention, training, new physics, identity/familiar-action decoder, head localization, cross-position mechanism or neural root-cause claim."
+}

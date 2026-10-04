@@ -90,3 +90,16 @@ checkpoints/
 !experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_*/noise-audit.pt
 !experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_*/indexes-and-masks.pt
 !experiments/16-milk-shift-mechanism/future-current-position-execution/closed-loop/*/chunk_00/new-input-contract.pt
+
+# Saved actual Q/K/V and dispatch endpoints for the content/allocation test.
+!experiments/16-milk-shift-mechanism/future-value-mechanism/*/states.pt
+!experiments/16-milk-shift-mechanism/future-value-mechanism/*/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-value-mechanism/*/indexes-and-masks.pt
+!experiments/16-milk-shift-mechanism/future-value-mechanism/*/boundaries-t00.pt
+!experiments/16-milk-shift-mechanism/future-value-mechanism/*/sites/t00-L00.pt
+!experiments/16-milk-shift-mechanism/future-value-execution/closed-loop/*/chunk_*/states.pt
+!experiments/16-milk-shift-mechanism/future-value-execution/closed-loop/*/chunk_00/noise-audit.pt
+!experiments/16-milk-shift-mechanism/future-value-execution/closed-loop/*/chunk_00/indexes-and-masks.pt
+
+# A6000-only absolute input link; restored arrays are already in position-threshold/inputs.
+experiments/16-milk-shift-mechanism/future-value-execution/inputs

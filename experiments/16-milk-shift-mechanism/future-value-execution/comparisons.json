@@ -1,0 +1,922 @@
+{
+  "state": "evaluated_after_all12_complete",
+  "cases": [
+    {
+      "case": "V195_A195_native",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "sham_only_milk": false,
+      "first_selection_window_start": 68,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.032356772200507755,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 0.9437515532128676
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 68,
+          "max_lift_cm": 23.686113103877325,
+          "final_lift_cm": 14.972877467586187,
+          "max_xy_displacement_cm": 40.32817835442491
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_native",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "sham_only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.262294266716474,
+          "final_lift_cm": 11.91546138420636,
+          "max_xy_displacement_cm": 50.79002698249134
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_all_allowed",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "sham_only_milk": false,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.12032073481416522,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 1.0228064968004287
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 25.80025585841917,
+          "final_lift_cm": 16.58110785137904,
+          "max_xy_displacement_cm": 38.248351251225756
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_all_allowed",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "sham_only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.25583510280858,
+          "final_lift_cm": 12.351812174133928,
+          "max_xy_displacement_cm": 51.600366940613405
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_arithmetic_sham",
+      "arm": "arithmetic_sham",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "sham_only_milk": false,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.12032073481416522,
+          "final_lift_cm": 9.174608156525821e-08,
+          "max_xy_displacement_cm": 1.0228064968004287
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 25.80025585841917,
+          "final_lift_cm": 16.58110785137904,
+          "max_xy_displacement_cm": 38.248351251225756
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1836699115596048e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_arithmetic_sham",
+      "arm": "arithmetic_sham",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "sham_only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.25583510280858,
+          "final_lift_cm": 12.351812174133928,
+          "max_xy_displacement_cm": 51.600366940613405
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_value_zero",
+      "arm": "value_zero",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": false,
+      "sham_only_milk": false,
+      "first_selection_window_start": null,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.4806515008177248,
+          "final_lift_cm": -4.355281713225831,
+          "max_xy_displacement_cm": 6.975597741059428
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 121,
+          "contact_frames": 8,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 3.558745293094445,
+          "final_lift_cm": 3.558745293094445,
+          "max_xy_displacement_cm": 1.8311773395654676
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_value_zero",
+      "arm": "value_zero",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": false,
+      "sham_only_milk": true,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 9.181618834359654e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 26.227282003138136,
+          "final_lift_cm": 17.45788809642085,
+          "max_xy_displacement_cm": 37.157681783215054
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_allocation_only",
+      "arm": "allocation_only",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": false,
+      "sham_only_milk": false,
+      "first_selection_window_start": 66,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.13686871419985036,
+          "final_lift_cm": 9.174607185080674e-08,
+          "max_xy_displacement_cm": 1.080398356317553
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 61,
+          "contact_frames": 67,
+          "first_2cm_for_5frames": 66,
+          "max_lift_cm": 25.032085619430404,
+          "final_lift_cm": 17.651818344046035,
+          "max_xy_displacement_cm": 37.77265171169121
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_allocation_only",
+      "arm": "allocation_only",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": false,
+      "sham_only_milk": true,
+      "first_selection_window_start": 67,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.0017960561722346613,
+          "final_lift_cm": 9.17460746263643e-08,
+          "max_xy_displacement_cm": 0.047587281957013776
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 62,
+          "contact_frames": 63,
+          "first_2cm_for_5frames": 67,
+          "max_lift_cm": 23.36444216520771,
+          "final_lift_cm": 6.757224269657428,
+          "max_xy_displacement_cm": 37.6916176524248
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V195_A195_hardmask",
+      "arm": "hardmask",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": true,
+      "sham_only_milk": false,
+      "first_selection_window_start": 61,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 57,
+          "contact_frames": 72,
+          "first_2cm_for_5frames": 61,
+          "max_lift_cm": 21.833057553905384,
+          "final_lift_cm": 6.7040560891561904,
+          "max_xy_displacement_cm": 50.53066258602972
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_hardmask",
+      "arm": "hardmask",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": false,
+      "only_milk": true,
+      "sham_only_milk": true,
+      "first_selection_window_start": 64,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.63457259406365,
+          "final_lift_cm": 13.175237291080274,
+          "max_xy_displacement_cm": 51.62203637709688
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    }
+  ],
+  "both_V_decomposition_reports": {
+    "value_zero": {
+      "cases": [
+        "V195_A195_value_zero",
+        "V198_A195_value_zero"
+      ],
+      "both_only_milk": false,
+      "both_shams_only_milk": false,
+      "both_classifications_changed_vs_own_sham": true,
+      "direction_agreement_in_only_milk": false,
+      "numerical_partition_is_not_additive_causal_percentage": true
+    },
+    "allocation_only": {
+      "cases": [
+        "V195_A195_allocation_only",
+        "V198_A195_allocation_only"
+      ],
+      "both_only_milk": false,
+      "both_shams_only_milk": false,
+      "both_classifications_changed_vs_own_sham": false,
+      "direction_agreement_in_only_milk": false,
+      "numerical_partition_is_not_additive_causal_percentage": true
+    }
+  },
+  "all_four_value_allocation_cases_reported": true,
+  "no_q0_or_physics_ranking_or_selection": true,
+  "same_V_sham_comparison_required": true,
+  "two_V_consistency_is_a_limit_not_a_root_cause_claim": true,
+  "decomposition_interpretation": "both_splits_fail_hardmask_succeeds_joint_or_interactive_effects_pending",
+  "primary_prediction_sha256": "c35561410ecad083f9d18665c827182153ac6d757ffe8e6a855cf0529be207b3",
+  "scope": "Twelve fixed X12 future-value trajectories using saved q0 and native later feedback. Eight whole prior-reference controls and all four value/allocation cases execute. Compare each arm with its same-V sham; report both V realizations without score selection. Arithmetic and hard-mask effects are numerical decompositions, not additive causal percentages, semantic specialization, a learned brain region or a general root cause. No additional network intervention, source replacement, training or physics selection."
+}

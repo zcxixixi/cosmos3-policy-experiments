@@ -1,0 +1,17 @@
+{
+  "status": "not_evaluated_q0_only",
+  "name": "H_content",
+  "primary_arm": "value_zero",
+  "primary_cases": [
+    "V195_A195_value_zero",
+    "V198_A195_value_zero"
+  ],
+  "prediction": "Both value_zero cases strictly select only milk: V195 changes cheese to milk and V198 preserves milk.",
+  "strict_selection": "selected_objects == [milk_1], both fingerpad contacts, lift >.02m for five consecutive records",
+  "controls": "Same-V native/all_allowed/arithmetic_sham controls remain stable; hardmask reproduces accepted early_l1_9.",
+  "allocation_only": "Report both allocation_only cases; never promote them to a replacement primary prediction.",
+  "joint_interpretation": "Both split arms succeeding cannot establish exclusive attribution. Both failing while hardmask succeeds is compatible with joint/interactive effects, not content alone sufficing.",
+  "all12_physical_cases_preregistered": true,
+  "q0_rank_selection": false,
+  "scope": "X12 fixed image/instruction, V195/V198 and A195, q0 only. The selected early 135-site future-to-current pathway is split into value-zero and an additive pre-W allocation counterfactual. The latter retains the old future contribution and adds the nonfuture renormalization increment; it is not a legal normalized softmax and can increase amplitude. Same actual Q/K applies within each site only; later inputs and solver history may diverge across arms. BF16 official endpoints still have kernel rounding error. Future200 and UND dispatch returns are native; action16 uses same-input all-allowed. No residual repair, offline reconstruction intervention, training, new physics, identity/familiar-action decoder, head localization, cross-position mechanism or neural root-cause claim."
+}

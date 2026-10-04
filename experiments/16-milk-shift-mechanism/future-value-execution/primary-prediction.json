@@ -1,0 +1,178 @@
+{
+  "state": "evaluated_after_all12_complete",
+  "name": "H_content",
+  "primary_arm": "value_zero",
+  "registered_hypothesis": {
+    "name": "H_content",
+    "primary_arm": "value_zero",
+    "primary_cases": [
+      "V195_A195_value_zero",
+      "V198_A195_value_zero"
+    ],
+    "prediction": "Both value_zero cases strictly select only milk: V195 changes cheese to milk and V198 preserves milk.",
+    "strict_selection": "selected_objects == [milk_1], both fingerpad contacts, lift >.02m for five consecutive records",
+    "controls": "Same-V native/all_allowed/arithmetic_sham controls remain stable; hardmask reproduces accepted early_l1_9.",
+    "allocation_only": "Report both allocation_only cases; never promote them to a replacement primary prediction.",
+    "joint_interpretation": "Both split arms succeeding cannot establish exclusive attribution. Both failing while hardmask succeeds is compatible with joint/interactive effects, not content alone sufficing.",
+    "all12_physical_cases_preregistered": true,
+    "q0_rank_selection": false
+  },
+  "cases": [
+    {
+      "case": "V195_A195_value_zero",
+      "arm": "value_zero",
+      "vision_noise_source_seed": 195,
+      "same_V_sham": "V195_A195_all_allowed",
+      "selected_objects": [],
+      "sham_selected_objects": [
+        "cream_cheese_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": false,
+      "sham_only_milk": false,
+      "first_selection_window_start": null,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.4806515008177248,
+          "final_lift_cm": -4.355281713225831,
+          "max_xy_displacement_cm": 6.975597741059428
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 121,
+          "contact_frames": 8,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 3.558745293094445,
+          "final_lift_cm": 3.558745293094445,
+          "max_xy_displacement_cm": 1.8311773395654676
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1815882433884326e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    },
+    {
+      "case": "V198_A195_value_zero",
+      "arm": "value_zero",
+      "vision_noise_source_seed": 198,
+      "same_V_sham": "V198_A195_all_allowed",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "sham_selected_objects": [
+        "milk_1"
+      ],
+      "classification_changed_vs_sham": true,
+      "only_milk": false,
+      "sham_only_milk": true,
+      "first_selection_window_start": 70,
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174606907524918e-08,
+          "final_lift_cm": 9.174606907524918e-08,
+          "max_xy_displacement_cm": 9.181618834359654e-12
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 64,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 70,
+          "max_lift_cm": 26.227282003138136,
+          "final_lift_cm": 17.45788809642085,
+          "max_xy_displacement_cm": 37.157681783215054
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      }
+    }
+  ],
+  "prediction": "rejected",
+  "both_value_zero_strict_only_milk": false,
+  "numerical_sham_classification_gate_passed": true,
+  "eight_whole_byte_controls_passed": true,
+  "allocation_only_cases_reported_without_replacing_primary": true,
+  "all12_cases_executed": true,
+  "decomposition_interpretation": "both_splits_fail_hardmask_succeeds_joint_or_interactive_effects_pending",
+  "exclusive_content_attribution_established": false,
+  "functional_specialization_established": false,
+  "scope": "Twelve fixed X12 future-value trajectories using saved q0 and native later feedback. Eight whole prior-reference controls and all four value/allocation cases execute. Compare each arm with its same-V sham; report both V realizations without score selection. Arithmetic and hard-mask effects are numerical decompositions, not additive causal percentages, semantic specialization, a learned brain region or a general root cause. No additional network intervention, source replacement, training or physics selection."
+}
