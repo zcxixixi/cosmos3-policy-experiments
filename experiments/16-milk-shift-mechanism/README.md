@@ -4,7 +4,106 @@
 
 我们只查一个问题：指令一直是“抓牛奶，放进篮子”，牛奶移6厘米能抓，移15厘米却抓奶酪盒。这一批没有重新训练，也没有额外喂示范。
 
-**目前结果：第4层 MLP 对一次反向响应有因果作用；持续换回这块9次，最终动作变化仍小，四条预登记执行全部抓奶酪盒。未定位抓错根因。**补测还发现12厘米同初态，换推理噪声会出现牛奶／奶酪盒两种选择。
+**最新结果：四组真实交叉执行中，抓谁仍跟着第一轮16步动作的来源。**同一个12厘米初态，抓错运行的首轮接上两种后续采样都抓奶酪盒；抓对运行的首轮接上两种后续采样都抓牛奶。早期动作造成的状态与画面差异很关键，尚未确定具体分量或网络通路，也不能说首轮已经选定目标。详情和四条录像见下文“首轮动作来源 × 后续采样序列”。
+
+**内部单元实验：**预选128个真实MLP单元没有承担一半响应，门控路也没有主导作用。三个无关方向的输入也受这组位置影响，不能把它们叫作牛奶身份单元。抓错根因尚未定位。此前持续改这块MLP的实际四条执行仍抓奶酪盒。
+
+## 最新解释：把真正的Flow计算公式带回实数组
+
+[CPU分析代码](code/analyze_cosmos_milk_flow_response.py)，SHA `e49296bd7565ccb4a8ad47e70a4949b8b37e4b4165fb6d3e4906efc13ad8d1ff`，复用此前24组全数组审查，另核真实scheduler/pipeline源码、完整时间表、有效输出mask与FP32状态→实际BF16模型kwargs逐字节关系。0model、0physics、0scheduler.step；只在CPU调用真实 `convert_model_output`，不是重新采样。真实σ21=0.299699991941452，公式 `x_clean=x−σv`，参考比例1/σ=3.3366700930554423。
+
+| 既有数据的约定 | clean差沿输入方向的投影 / 输入差 | 全部XYZ clean差长度 / 输入差长度 |
+|---|---:|---:|
+| P原生：FP32动作＋P未来视觉 | −7.867% | 32.290% |
+| PR反事实：保存的FP32动作＋固定R未来视觉 | **−2.113%** | **26.764%** |
+| PR实际BF16模型输入约定 | −1.669% | 22.377% |
+| 无关方向1：BF16模型输入约定 | −0.857% | 21.438% |
+| 无关方向2：BF16模型输入约定 | −3.558% | 25.800% |
+| 无关方向3：BF16模型输入约定 | −6.183% | 21.114% |
+
+公式中速度差与输入差大体同向、幅度约为1/σ，因而在clean估计相减时抵消大部分原方向差异。这支持普通sample去噪是主要解释候选，**不是严格恒定clean、不是错误抓取吸引子、不是说明因果解释了某个百分比**。总长度还有21%～32%，主要在原轴以外；不能把接近零的投影当成全部不变。不同约定有不同分母，不混为成功率。
+
+实际source对前10个有效动作输出保持原头值，padding后54维置0；mask前后原始raw头逐字节不变。所有输入padding54为0。`x_clean`是本轮对无噪动作的估计，和UniPC下一步state或最终16步动作不是一回事。generic没有保存的FP32求解器轨迹，三个BF16约定均明确写为模型输入反事实；尝试FP32lift仅第一组cast吻合，后两组不吻合，没有捏造solver样本。
+
+[真实NPZ数组](flow-response-analysis/actual-flow-arrays.npz)、[完整数值与sourceSHA](flow-response-analysis/analysis.json)、[图](flow-response-analysis/milk-flow-response.png)、[complete](flow-response-analysis/complete.json)。analysis SHA `c366b113092da301217d2fdc97ca50cdea7cdd9ae4bf75b9e546454c2862273a`，actual-flow-arrays SHA `874583fa571dd8f4f5e7afb54497807f7c3237d983a8972b6ae92246a5787c2b`。这次分析改变了对先前反向响应的解释，尚未定位抓奶酪盒的原因。
+
+## 最新：真的拆到第4层内部单元
+
+固定 seed198、去噪索引21、PR输入（受扰动动作＋原未来视觉），使用同索引RR的自然MLP数字。实际结构为 `down(SiLU(gate(x)) * up(x))`，宽度4096→12288→4096，bias均关闭。我们直接在真实 `down_proj` 的输入替换16个动作行的选定系数；残差、非动作行、未选系数和其他模块保留原值，后续32层继续实际计算。
+
+名单来自原生 RR/PR 的实际系数差和真实 down 权重的局部投影，按有符号proxy降序、同分以编号排序。32/128/512名单嵌套，见[冻结名单](mlp-units/selection.json)及[实际权重列与系数](mlp-units/selection-arrays.pt)，先冻结再看干预输出，没有按12厘米抓取标签重排。这种排序是找候选，不是最终作用的线性分解。
+
+| 事先的预测 | 实际数值 | 结论 |
+|---|---|---|
+| 128个承担至少整块作用的一半 | 全部12288个恢复67.871%；半数阈值33.936%，实际128个17.282% | 未成立 |
+| 自然门控路比另一分支强 | g-only5.777%、u-only18.047%、joint17.282% | 未成立 |
+
+32个为8.071%，512个为36.936%。这是此预选集合的结果，没有排除其他可能128集合。两分支的自然改动幅度不同，不能据此判断哪路更“理解”物体；joint也不是两单独效应相加。
+
+这里的恢复指标是 `dot(Vtrial−VPR, VRR−VPR)/||VRR−VPR||²`，取16×64原始Flow输出的XYZ三列。0为原PR在此轴上的位置，1为RR；不是抓牛奶概率、实际位移、最终动作或任务成功率。
+
+### 同一群单元会不会也处理无关方向？
+
+以同三份预注册CPU种子构造三个XYZ方向，和原PR−RR的XYZ输入差近乎垂直，实际长度匹配容差0.1%；其他61维动作及全部其他kwargs保持RR。128个仍用旧冻结名单，每个方向先实际跑native，再在它自己的真实MLP输入上换入RR系数。
+
+| CPU input seed | 该输入自己轴上的恢复 | 原生XYZ输出差与原PR轴的余弦 |
+|---|---:|---:|
+| 5219801 | 5.751% | 0.00566 |
+| 5219802 | 9.552% | 0.05695 |
+| 5219803 | 9.891% | 0.02344 |
+
+每组分母是 `VRR−VGi_native`，不能直接当相同语义指标。XYZ控制没有改原PR另外61维的差值；真实差值范数 XYZ=0.047259、其他61维=0.011639、全部64维=0.048671，保存于[input-contract](mlp-units/input-contract.json)。结果表明这组位置对多个动作方向有响应，削弱专属目标竞争解释，但三个方向不足以证明整个MLP没有目标信息。
+
+两类随机对照均匹配真实BF16 down输出差的L2，容差0.1%：随机支持128个位置，沿各自自然系数差，恢复6.712%、10.142%、7.774%；同选定128个位置、独立随机系数方向，恢复−1.586%、0.563%、1.600%。前者是均匀从12288里抽位置，不是从top512抽。样本量小，没有报告显著性或成功率。
+
+### 中断、续跑与检查范围
+
+[原probe](code/probe_cosmos_milk_mlp_units.py) SHA `6818a6a3c3ae2f665040f2196c00055fc9487b7775642601e7ca7e9e69c95a6a` 跑了18次实际单步计算，因第一次generic输入在BF16舍入后长度／垂直检查失败而停止。[failed.json](mlp-units/failed.json)保留，原目录没有complete或退出后参数检查。
+
+修正只涉及CPU输入构造：[helper](code/cosmos_quantized_orthogonal_input.py) SHA `15cd6e671014c69dc1db4b6a06b6b86a9c1ba615f2a96c08918a8e8f3690b842`。原随机draw、三个种子、阈值、128名单均不改；同时反馈舍入后的长度和方向误差，取第一个合格输入。三个输入在任何新模型输出前冻结，分别150／494／840轮CPU构造后过门，长度误差0.01209%／0.02637%／0.07055%，实际cos绝对值<0.001。这些CPU迭代不是模型推理。
+
+[continuation](code/probe_cosmos_milk_generic_inputs.py) SHA `614434e2e52cf4340c0533adb16d46c62f01c1b4a46918679b13aae626564a66` 只补6次实际single forward，47.06秒完成；前18次不重跑。它独立读取旧真实数组、重新计算全部指标、检查完整native/self/all12288/joint等价、实际分支/系数/非动作足迹及已存在SHA链。旧18个文件的全case manifest是在续跑时第一次完整封存，不冒称原过程已有完整results。
+
+合计18＋6=24次模型计算，另82次真实down线性投影用于匹配随机改变量；额外投影不计成模型forward。新6次运行前后所有模型参数字节一致，运行前与旧初始参数一致；旧退出后参数状态未测，verdict=null。新[complete](mlp-generic-inputs/complete.json)、[results](mlp-generic-inputs/results.json)、[旧18独立检查](mlp-generic-inputs/phase1-validation.json)、[三个输入冻结记录](mlp-generic-inputs/inputs-frozen.json)均保留。新results SHA `feaaf050a038e15ccd3354d5b17af36fb82404536e0a46fddef0305b7574a791`。
+
+GitHub保存24组动作行真实 `unit_arrays.npz`（BF16转FP32逐项一致，值可精确表示）、原生RR/PR全GEN `unit_site.pt`、实际选择权重列、输入纠偏完整audit、JSON指标与源哈希；其余完整PT留A6000原目录。不是只保存画图百分比。完整非动作足迹检查可由A6000原PT复验。
+
+本批没有新MuJoCo执行。结合此前四条持续干预都抓奶酪盒，只能说第4层参与输入响应；尚不能称抓错根因。下一步转查同12厘米画面下正确／错误采样的实际文本读取通路，把“内容是否存在”和“动作是否用它”分开。
+
+
+### 原生注意力输入核验：完成90次网络计算＋3次官方注意力重放
+
+固定12厘米初态，重放seed195／196／198的原生q0。使用[新只读观察脚本](code/probe_cosmos_milk_target_reader_inputs.py)，SHA `a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb`；只在第18层（索引17）、去噪索引29的真实官方dispatch保存post-normalization/RoPE Q、K和原生V，另保存fullGEN原输出、真实pre-to_add_out、完整kwargs及原生tuple返回。
+
+三份完整q0记录（包括两份噪声、全部30次输出及未来latent）均逐字节等旧threshold记录；保留实际GPU args、shape、stride、kwargs，额外每份重算一次完整GEN官方attention，输出逐字节一致。不是用手写softmax或截短16个query来宣称忠实重算。真实长度UND121、GEN266、joint387；Q形状[1,266,32,128]、K/V[1,387,8,128]，16个动作行在GEN的250..265。backend配置为None；只记录启用flags，没有通过profiler证明具体使用了哪种内核。
+
+真实UND的121个input_ids是Qwen聊天包装、JSON caption及边界；指令10个token占全局45..54，milk在48（id14074）。没有image_pad或vision_hidden_states，当前图像latent单独在GEN。实际tokenizer对完整原字符串重编码逐项等原IDs；milk→butter长度仍121、只有位置48改为14100，cream cheese则122，不能偷补padding说完全同位置。此处只核合法同长词的输入条件，尚未跑内容干预。
+
+UND的实际causal K/V与GEN使用的UND-prefix K/V分别跨三个seed逐字节一致；当前condition frame0也一致，两份采样噪声确实不同。此结果是结构和算术核验，**不是牛奶语义解码或目标选择因果结论**。[完整实数组](target-reader-inputs)、[complete](target-reader-inputs/complete.json)、[results](target-reader-inputs/results.json)保存全部源链；results SHA `19dca4a76998e8b9212c3c286ef17f354525bf8a97c758656c18831b805128e8`。没有新动作干预、没有新物理执行。
+
+检查已有真实trajectory后发现一个重要边界：第16步seed196与198沿奶酪→牛奶方向的累计位移几乎相同，相差约0.061厘米，且均未接触物体；第24步才明显分流，已经包含q1新画面与新噪声。完整执行每轮使用base+query的不同噪声。因此不能从终局对象标签反推q0 Q198就是正确目标读取。下一步先交叉q0真实动作来源195／198与后续q1..7采样base195／198，原生两组要求全部物理状态和动作精确复现，再判断该查哪轮网络。四组交叉已经完成，结果见下一节。
+
+[24次单步效应图](mlp-generic-inputs/figures/milk-mlp-units.png)、[真实128×16乘积变化热图](mlp-generic-inputs/figures/milk-mlp-unit-values.png)、[128单元换数后的37边界传播图](mlp-generic-inputs/figures/milk-mlp-unit-propagation.png)、[逐数与源SHA核验](mlp-generic-inputs/figures/plot.json)。传播图只显示改动相对原PR的数组差，前边界0..3相同，第4层换数后开始变化；不是牛奶信息量或目标概率。
+
+
+## 新完成：首轮动作来源 × 后续采样序列，四条真实执行
+
+[薄执行适配代码](code/run_cosmos_milk_query_noise_cross.py)，SHA `7e684b1a330877b8dbaad2c27621c3bc8db4893eb25da0c9171ff6d8b56aa2fe`。复用未修改的冻结物理执行体，固定12厘米初态和指令。q0直接复用source195／198封存的真实16步动作；q1..7各拍自身当前画面正常推理，使用laterbase195／198+query。没有局部网络干预或新训练。
+
+| q0真实动作来源 | laterbase195 | laterbase198 |
+|---|---|---|
+| source195 | 奶酪盒，合格窗口68..72 | 奶酪盒，合格窗口68..72 |
+| source198 | 牛奶，合格窗口65..69 | 牛奶，合格窗口64..68 |
+
+合格窗口每份记录都同时双指接触且相对初态抬高>2厘米。JSON `first_selection_step`/`first_2cm_for_5frames`是连续5帧窗口的**开始**，不是第五帧确认时刻；例如68表示68..72。以往页面写“第68步确认”不够准确，最新表和视频已明确窗口。这一抓起指标不是篮内放置完成。
+
+两原生195/198对照先跑：全129 simstates dtype/bytes、128动作及trajectory五份JSON和8PNG逐字节等旧threshold。交叉两组q1入口的前17state、16各格式动作、下一帧PNG和controller JSON值精确等各自q0源；新真实controller原dtype数组也逐字节等已完成native counterpart。旧trajectory只封存controller值，未虚构旧rawbytes manifest。
+
+总32请求，其中4q0读取旧动作、28新预测=840model forward；重复的16份纯噪声对照均逐字节相同。缓存q0 metadata保留历史model_calls30，同时显式current_execution_model_calls0；真实8个query seed完整保存，不将cross写成错误的单base规则。后续画面因动作状态不同而不同，不能把相同noise stream叫同一输入。
+
+**结论：** 在这个初态和两条后续采样序列中，最终抓谁跟着首轮动作来源；第一轮造成的手臂状态/视角等差异是重要因果条件。但整轮动作同时改变多个分量，尚未区分哪个状态、相机线索或网络通路起作用，也未证明q0已选定目标。不能说之后任何随机采样都无效。下一步拆q0初始的video/action两份噪声来源，再查具体网络路径；该拆分尚未运行。
+
+[四条真实视频与完整记录](query-noise-cross/closed-loop)、[汇总](query-noise-cross/summary.json)、[控制检查](query-noise-cross/controls.json)、[完整source与8个实际seed](query-noise-cross/provenance.json)、[complete](query-noise-cross/complete.json)。summary SHA `bef36c2c7c433a21b7314077a03a06e06acff03f8e406bc58fe9c5c2b787fb0e`。文件留A6000且GitHub保存四组全部模型records、真实物理状态、动作、输入、视频和controller数组。
 
 ## 我们实际做了什么
 

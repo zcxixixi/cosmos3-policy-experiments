@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "5219801": {
+      "audit_sha256": "c4b68e8805dbd7884031911d8a534065f4493989b2e271055ff0aa09e1893e17",
+      "audit_json_sha256": "d221425030643f19b500796f5e33cdece95894e02187f9186b860f307ef8aa0d",
+      "iterations": 150,
+      "actual_norm_relative_error": 0.00012092095108077032,
+      "actual_cosine": -0.0003252160000024359
+    },
+    "5219802": {
+      "audit_sha256": "c5a89670d87ccb7c4420e55793f05780b884a95b95264f52136b5fcc5c6b0413",
+      "audit_json_sha256": "73dc438693fe4f4ca56c147fcffe3db8a4fec996de24546e200e743dd12d565c",
+      "iterations": 494,
+      "actual_norm_relative_error": 0.0002637139368832137,
+      "actual_cosine": -0.00020177188931038944
+    },
+    "5219803": {
+      "audit_sha256": "8247f8069b5386197cd3234ec1b6e2d7a0072caf777fc073fccf524f1b98db86",
+      "audit_json_sha256": "d63a791a3a82e186a1509a490f6bc85800299b0ba43641e36db5b940565f2548",
+      "iterations": 840,
+      "actual_norm_relative_error": 0.0007055134821465739,
+      "actual_cosine": 0.0005258754245842368
+    }
+  },
+  "seeds": [
+    5219801,
+    5219802,
+    5219803
+  ],
+  "builder_sha256": "15cd6e671014c69dc1db4b6a06b6b86a9c1ba615f2a96c08918a8e8f3690b842",
+  "before_any_new_model_output": true,
+  "selection_uses_model_outputs": false
+}

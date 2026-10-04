@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "layer_zero_based": 17,
+  "denoising_step": 29,
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "target_attn_before": 30,
+    "target_attn_after": 30,
+    "pre_W": 30,
+    "native_dispatch": 2160,
+    "selected_causal": 1,
+    "selected_gen": 1,
+    "official_attention_replay": 1
+  },
+  "all_owned_hooks_removed": true,
+  "original_dispatch_symbol_restored": true,
+  "original_full_GEN_attention_replay_bit_exact": true,
+  "replay_global_CPU_and_CUDA_RNG_unchanged": true,
+  "original_dispatch_inputs_and_return_unmodified": true,
+  "intervention_count": 0,
+  "backend_settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "configured_attention_backend": "None",
+    "configured_parallel": "None",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "grad_enabled": false,
+    "kernel_evidence_limit": "Configured backend and enabled flags are recorded, not a profiler observation of the selected kernel."
+  },
+  "scope": "Three observation-only native X+12cm q0 reproductions. Actual L17/t29 inputs and native attention arithmetic only. No action intervention, new physics, identity decoder or semantic/target-reader conclusion."
+}

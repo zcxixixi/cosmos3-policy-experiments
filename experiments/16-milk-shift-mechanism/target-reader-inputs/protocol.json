@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    195,
+    196,
+    198
+  ],
+  "scene": "x12",
+  "task": "milk",
+  "task_index": 7,
+  "prompt": "pick up the milk and place it in the basket",
+  "loaded_runtime_task_tuple": [
+    7,
+    "pick_up_the_milk_and_place_it_in_the_basket",
+    "pick up the milk and place it in the basket",
+    "milk_1"
+  ],
+  "layer_zero_based": 17,
+  "layer_human": 18,
+  "denoising_step": 29,
+  "actual_action_query_rows": 16,
+  "heads": 32,
+  "KV_heads": 8,
+  "head_dim": 128,
+  "native_q0_predictions": 3,
+  "native_model_forwards": 90,
+  "extra_official_full_GEN_attention_replays": 3,
+  "intervention_count": 0,
+  "capture_only_selected_step": true,
+  "source_noise_pairing": "Each seed is checked against its own source; cross-seed noise is different.",
+  "native_full_record_contract": "All NormalRuntime saved fields, including both noise draws, prepared inputs, complete schedule and future latents.",
+  "source_case_hash_scope": "Source q0 case hashes are first observed at this new stage, not claimed as a historical whole-case seal.",
+  "semantic_result": false,
+  "scope": "Three observation-only native X+12cm q0 reproductions. Actual L17/t29 inputs and native attention arithmetic only. No action intervention, new physics, identity decoder or semantic/target-reader conclusion."
+}

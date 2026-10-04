@@ -1,0 +1,26 @@
+{
+  "state": "complete",
+  "trial_order": [
+    "native195",
+    "native198",
+    "q0195_later198",
+    "q0198_later195"
+  ],
+  "physical_trials": 4,
+  "saved_q0_predictions": 4,
+  "native_predictions": 28,
+  "native_model_forwards": 840,
+  "two_native_complete_physical_controls_exact": true,
+  "four_q1_entry_source_prefixes_exact": true,
+  "crossed_step16_controller_original_dtype_arrays_exact": true,
+  "files_sha256": {
+    "controls.json": "6d2e87a326f0a0215119415c2aa99c29a6df92880a927d7aaf040976204f50d0",
+    "provenance.json": "ad3eda54da26decf00a81ec48338f1eee04056d574c1d130c22f313bfd0d314a",
+    "prepared.json": "c576a878f4bec5647cac1b5fbc367c154fa7b1eca06648271812d637ad4692ee",
+    "server/complete.json": "84508eb01b7e612cd3f973b5fa36f5ce728f8ebddacfa391cfab289fc07f50ea",
+    "closed-loop/complete.json": "ebdafa252dda73194ca4ed1ac235cc33e3868a20b2ccfa602ef4aa1b068b87e2",
+    "summary.json": "bef36c2c7c433a21b7314077a03a06e06acff03f8e406bc58fe9c5c2b787fb0e"
+  },
+  "script_sha256": "7e684b1a330877b8dbaad2c27621c3bc8db4893eb25da0c9171ff6d8b56aa2fe",
+  "scope": "Four X+12cm executions crossing saved q0 source195/198 with later native sampling base195/198. Same initial physical state and instruction; no network intervention, new warmup, training, q0 target-commitment or neural-root-cause claim. Historical seed196 trials remain unchanged."
+}

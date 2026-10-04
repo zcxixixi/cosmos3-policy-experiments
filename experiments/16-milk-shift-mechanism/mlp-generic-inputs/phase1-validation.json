@@ -1,0 +1,324 @@
+{
+  "original_state": "failed",
+  "original_model_forwards": 18,
+  "original_error": "Actual generic input norm/orthogonality gate failed",
+  "original_failed_sha256": "2a3501315bf6559f49349d35490b71f8d498f5fb74cc43a8d0231d99160b51b5",
+  "original_probe_sha256": "6818a6a3c3ae2f665040f2196c00055fc9487b7775642601e7ca7e9e69c95a6a",
+  "original_complete_absent": true,
+  "original_parameter_after_absent": true,
+  "original_post18_parameter_unchanged_verdict": null,
+  "entire_native_self_whole_and_joint_controls_independently_exact": true,
+  "actual_PT_NPZ_arrays_and_metrics_recomputed": true,
+  "original_actual_two_noise_draws_and_complete_30step_contract_rechecked": true,
+  "phase1_files_first_observed_and_sealed_at_continuation": true,
+  "files": [
+    {
+      "run": "native_RR",
+      "files_sha256": {
+        "metadata.json": "978d0e498727a8f68278ff161a3242df7340d78c9251b4dc9d2d8667ff649dd3",
+        "components.pt": "8898887ebd06b9196481abe0a3bb309dae96ef5e1b615fbe498cf5ed0c7f94d4",
+        "model_output.pt": "575f41f8da4c63526bf1776cf87e188a65293fe85e672ffd0b1c704471912f9f",
+        "actual_head_boundaries.pt": "0b277e0f40a23ba1d57c498eb9648b070420f3b76c7fb2b650143f5d90ef00af",
+        "arrays.npz": "5485c14ad002d7a48bf0f0d47957c917ca47072a3088ba0f384bde0655f71097",
+        "unit_site.pt": "e9f8424c47584c67be609fb83621a525b6a5366eadd84864573d5b90c1f8964f",
+        "unit_site.json": "30f2afb098635e5fb0f84d529658af5a5e64a366130feff1a1d91fd4b4a12ea0",
+        "unit_arrays.npz": "4b7d0dd0e85d66c85df7b22e72b6bb78a1b019d250bc5d7fe904527fe209625c"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "native_PR",
+      "files_sha256": {
+        "metadata.json": "eb82b304a292282db6b6568d62211e2fef916b33bcf8b8b91db0ba59e5d201a2",
+        "components.pt": "5a68b9566f7729b5c5aca61b672cb46b678c0c400de00ca1acd043e4d1ead88d",
+        "model_output.pt": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2",
+        "actual_head_boundaries.pt": "7043b42146050fb836a2b78c199445a3bae5b45cd5e2ad5082ae5bdb8047db0d",
+        "arrays.npz": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36",
+        "unit_site.pt": "b00d46d943d458a38be4abbd3c5a19ac2080b26ef16a7a6c62c068968ffed258",
+        "unit_site.json": "dd8eb36089773e36d02af81895031f8a0cac4d0269a5a40654866b20bf2868f5",
+        "unit_arrays.npz": "cea8d8bed615c73c4431b88faf641f19226322327d9f671aff7dae0701dc03d5"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "self_all12288",
+      "files_sha256": {
+        "metadata.json": "d3f04c844f72ec1e9cb83c9637976fbabe59dec22bb08e2d9f0016fdb467c1e2",
+        "components.pt": "516b996a9d4af1cfad82a05e0368871891409d5781ef3c528e91485d3e37dbfb",
+        "model_output.pt": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2",
+        "actual_head_boundaries.pt": "7043b42146050fb836a2b78c199445a3bae5b45cd5e2ad5082ae5bdb8047db0d",
+        "arrays.npz": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36",
+        "unit_site.pt": "2e0742d6379992f70e8ecff5c07295032820a3f0f16d2766cb70fbac3bbd44fe",
+        "unit_site.json": "2454b1ef4fb61d75adcd54bdeaefbf484bb8e81795b074401c3cdeaf306b1fa4",
+        "unit_arrays.npz": "cea8d8bed615c73c4431b88faf641f19226322327d9f671aff7dae0701dc03d5",
+        "metrics.json": "c5c2d9db785c69a97115f30445d7b82ae68831baae8d6955a818ae5db937a84f"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "swap_all12288",
+      "files_sha256": {
+        "metadata.json": "4e89607db5000b0b8abfd740c1cd81be03588de86f139de844f2a540e6048121",
+        "components.pt": "20af06be2f63786a2f978966aee0ef1fbcd9d136744934fd58879dd32354eb1b",
+        "model_output.pt": "7e0998a13d8333e3181a07b10325497fcba068cfa0adac4d6e243aa5c6a41b15",
+        "actual_head_boundaries.pt": "b9551bf8f0e9a9de6b31c7ce49128ad6ed1e182ee9540c424c76bacd4b09cb9a",
+        "arrays.npz": "dec816766fdbfe7d5c67c719d77dcdcb27be42aaba0d2e1fbb14af75716f534b",
+        "unit_site.pt": "2277804eafb8899de0b6613ef630ba2d6d87c45885036afba45352d769caa722",
+        "unit_site.json": "4cc6c05c7f75f255e1cd55adb38ee6935515336733ee077818653ab488e70f56",
+        "unit_arrays.npz": "4c526f4eaa31cfeccbcf5ecf2997d5d81ff2f899ea0f8a564ac5acf024e8e255",
+        "metrics.json": "362f0c2350513515367f63957eb6c58bd0e051de08e8e2c8940f7ed00972be77"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "natural032",
+      "files_sha256": {
+        "metadata.json": "db4418b4a6889d0fe4fac2288beadeb5cf325d2ab339581b9bc10e77ec517d00",
+        "components.pt": "402c77e6ec349b4ad92968e30d43f53fd6b29fbedb983f740836e57675d0e1e7",
+        "model_output.pt": "9352ccd012bbab82b7419dad05453c88c73eeebba046be091801679f3666725b",
+        "actual_head_boundaries.pt": "088fda3c6457367a2735116de18fe773cdf1825d156e2d443d31531c6a667e81",
+        "arrays.npz": "d09576075682627c6c47e54b67853e8d3d8791f2e86a7f395fd80e7f17886988",
+        "unit_site.pt": "744a80d9c75635d813291af99d0359b317f1e06f71bea2c5b897ff5247885f4d",
+        "unit_site.json": "1ad1df4ee53cdda290e71bfbf6133c68707a3271c10e86ac6e1ba2f050628112",
+        "unit_arrays.npz": "1a70ff59c9929c927e69e0366d1efb4be30ebc5c9be74a7d40e2c8ad62826fb2",
+        "metrics.json": "41f4fd86990bdcbb8a2cbbf08e2bc47fb9573dbbf8050d656ea1ba3c4bb7e32e"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "natural128",
+      "files_sha256": {
+        "metadata.json": "9bd865fd745443cd332c83e695318582e7f979258c2f7cd0594d2f508332a80a",
+        "components.pt": "9ca4608cb893e045ee3f7c9023c90fe2fa83bab1d83da2a124df76e5ae0435b2",
+        "model_output.pt": "6908f3a6de6b3d2e9f7da058fb4273732dfee37d10001842232ecb6696f94eab",
+        "actual_head_boundaries.pt": "d7ccfe791cd742eed3a6811704ea23f9cbfd1d44bced3cd8cf336371e4a9ca47",
+        "arrays.npz": "845c8b1a58910ce3553bdd60aa19cffa10fe3959d37e2acf40076543c3ac1891",
+        "unit_site.pt": "b8e8591bea3de2e8c0f8a6c908c1f1993674092a0b67763b9b9ac1c39bb54e37",
+        "unit_site.json": "7708a8fc3ccf9263fc46de8200704b6dd60180de3b1a119d2e28f781d251bb05",
+        "unit_arrays.npz": "423f02fc9175e41fbb961620fe8eefc9a0ab82e0195784a651d08d103667449d",
+        "metrics.json": "a94bd4e85a3f1607f4218c80af437591c40c74458b5a978c54dbcc7b38e311ce"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "natural512",
+      "files_sha256": {
+        "metadata.json": "ad8b66bac7744358c21dc67c5c539fe794e45bf30795edd4ea2ef154d2386bed",
+        "components.pt": "d394f03990ac911b423d24b5d007967692e0bb640970048dcae5a1b6a0ad069b",
+        "model_output.pt": "c7944dd48283ecdec3998839a35481bdd4457c89ed2f18883eaf092df5bd3d82",
+        "actual_head_boundaries.pt": "3ca2a4f4447ea4a3a7b31285ec831c09931328810a16a969792dc792c158763c",
+        "arrays.npz": "480d5ed695f235f7d5a39e1d6a36ab80eba638af698de8f92cbeeea20358416f",
+        "unit_site.pt": "790f3f23280804a3a90bea17895c7898617c7cb6ad840dca26585c417e6fd107",
+        "unit_site.json": "7355aed87f1938bc958de328312731363f93599b59b0bfd322cdea38ac5a8d00",
+        "unit_arrays.npz": "0b75f921e8405947207b461636119f567a762308dd504af43902054b50d96fb3",
+        "metrics.json": "a3da55fbe49da97be23bb60f0b0f9ad436fdebc44ef7eb7f8e59f2867479f09f"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "reverse128",
+      "files_sha256": {
+        "metadata.json": "e66c0941aa2b896428f459ce1972cf1b63095c2b43a209c75ed42a4a758a164a",
+        "components.pt": "3a85e4b573d88be0a937c38853402483a24250e665ba506a2f08d38ffb45371e",
+        "model_output.pt": "6ab3240421979d5226a17354fe265e20750eee312da818a9605a0bbcc30a22b5",
+        "actual_head_boundaries.pt": "72ed543a242920578f332f938f59ef6021f9de0dbb91c5056afc1fbfd9f68938",
+        "arrays.npz": "154a63c3fb0c20e7d16565df9f6b0d8ce6ff982dbec23ce11388a8f9ad3793c2",
+        "unit_site.pt": "577a9671a1e3f9ef2b0a2b2897fa200058c197e4c526828da0764949ec52e2c9",
+        "unit_site.json": "de27cd02216d0aba1acde374adc0adfc2c8f8f54da8bcb76f491af2791781f92",
+        "unit_arrays.npz": "c36464405eec8c92fb608732d5e120bcf9e51feb387bde54aef7edf2e4e7335c",
+        "metrics.json": "a04923cd2e5e969407256849aa3ef5e2c10490f98cf271e51602e556db286a24"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "factor128_PP",
+      "files_sha256": {
+        "metadata.json": "9a0a506dc6876b82ac69c614e084c5e8c979a0826b34f37bc46feea364233684",
+        "components.pt": "d693d967830e7894fdb1e8b0a49bd77a6ef77abf1e5e37137fa01bdc0f671ab5",
+        "model_output.pt": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2",
+        "actual_head_boundaries.pt": "7043b42146050fb836a2b78c199445a3bae5b45cd5e2ad5082ae5bdb8047db0d",
+        "arrays.npz": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36",
+        "unit_site.pt": "05e521b15ca9f4f9f99e66fda9ff6c378728484a79b1eb68d26bdfc9fa94aa59",
+        "unit_site.json": "4140223d0161367b1e47c0c31d84b180643bf0ebd01357821206de8c5eb6a75e",
+        "unit_arrays.npz": "cea8d8bed615c73c4431b88faf641f19226322327d9f671aff7dae0701dc03d5",
+        "metrics.json": "6c0c576c6c46fbc8f3e4b773979d7e1bb9cc4fcbe64813bd0db8317169562dec"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "factor128_RP",
+      "files_sha256": {
+        "metadata.json": "8a1b52ce8cc6f1c1606b6bfcf13fac3f38133b7367387e2fd9ee3e8a843dffe5",
+        "components.pt": "82ca88a90740e3b7fb9f3d70d4859bd140d8c1af0112f3fc4b54a0c2864d1152",
+        "model_output.pt": "75bc5342d601a80e3e001e638cc8b6488e1c8ce05f6dacbfb1f7d49d78393ea3",
+        "actual_head_boundaries.pt": "d2f0f2d730ce345b9f55245f3bf0ded1dd1dff6c67a99bd8e15bced465d9daeb",
+        "arrays.npz": "2d259e9852f0fb56e97b7c72fd7f80d59cebcbb3672bf6c2339d6fcd3f9dbf18",
+        "unit_site.pt": "eee03f390a6850783a2122d79ba9f62e7c1537f833e23d518263b3ba74665b89",
+        "unit_site.json": "938d44c41c134c1281fa8e195da832607f5a78b7f424c9ae8112db1b53f993e8",
+        "unit_arrays.npz": "216c19847375f2a18aee02597d562fea8b7ba5e7172834b805ff4356cb3f687e",
+        "metrics.json": "943f92c36edcc13398da2b09cc211f05233d860d89a48a3c4dfa2af2b281ecb3"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "factor128_PR",
+      "files_sha256": {
+        "metadata.json": "358f235b3ac56a6996cd279b3d009c5914c8c5a14d5491501d114c4ec2d28fe5",
+        "components.pt": "0abc5611aa80e8874c292c2429cdef20f752487f52c7dd7af7459b0170850057",
+        "model_output.pt": "1b2d0fcdd4ebb25322f6d641c0afedefcdfe7259a18d310d6122cae548772f28",
+        "actual_head_boundaries.pt": "bae8f7a06ca357f4681b73140ad6b67d9fcc718cf1631ac921c292e1114aba84",
+        "arrays.npz": "89fa8647017ba77ad3e258ea4e1c449d72cd694693fbdf1cf066a589458fdb66",
+        "unit_site.pt": "cfb594017dc0be931184a72669dd86f8c83b5b10a44bf0b09aeb6879a00c7f94",
+        "unit_site.json": "eaa51fe8cdca2c64f811497ea520b37760b2c7868c0844322772930aa7c9f954",
+        "unit_arrays.npz": "bf077a95e57db3fe3dba0409c322ef78ba7096c62dfc4ae3ce6dcbcabac36318",
+        "metrics.json": "18ffbb8df758870f562e1ea2f5e599b7dede49a917a28b64a07609fdb4052abb"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "factor128_RR",
+      "files_sha256": {
+        "metadata.json": "f11dfdccfbbcaa54e2d033308059a53294a085e92fa043095420bc5f4952fbde",
+        "components.pt": "6ce444b10642836445c7b6da24ec6d2382a893629f4f81d25de4151f532e1f25",
+        "model_output.pt": "6908f3a6de6b3d2e9f7da058fb4273732dfee37d10001842232ecb6696f94eab",
+        "actual_head_boundaries.pt": "d7ccfe791cd742eed3a6811704ea23f9cbfd1d44bced3cd8cf336371e4a9ca47",
+        "arrays.npz": "845c8b1a58910ce3553bdd60aa19cffa10fe3959d37e2acf40076543c3ac1891",
+        "unit_site.pt": "f23edf4f8cbd5204046554aceea5e5927e720968f3950827d27e2ab1cc326bda",
+        "unit_site.json": "d3cc6755d740412976aedc89044633dd99123ed41e6a4f044772c079aaf913aa",
+        "unit_arrays.npz": "d040d972c73130db9770df0f96108382ab1ac45bf1f7d289f9a086f1654adecb",
+        "metrics.json": "06116ac789b94830875584b7a00be9b276e5e0a5cd2b237bb8844ea309a664fd"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "random_support128_seed3219801",
+      "files_sha256": {
+        "metadata.json": "48cae76a9dda56cd9a7ca0b5cf56486dadc44398817b86ef2b9eb7f9ea2ad196",
+        "components.pt": "4c56c4df717a8ec552d63284f9db5eb5feb832795efa7d1b7f0b30e4919a8def",
+        "model_output.pt": "d98ef7edbbd7cf95d74a46ea21e4f7740a9e6ef597e64c5ac44fa2cab8a7e5cc",
+        "actual_head_boundaries.pt": "3b98aee65c3f49cef78058615faf7a88e5c77dfde7e9cc585088aed1a2e9e060",
+        "arrays.npz": "39bbd82c313fd54a03bae0d675389422a34b2bcf57fe5fffd2767a0d59f7ffb2",
+        "unit_site.pt": "23a6c0e5e57ed594a0f3a015a84f0dce4c7ef0d66b5155669938027a38a3e841",
+        "unit_site.json": "98f66158defb57d443ae9d96684c131880ee0eb3a8f398b2b81b5633371ecdd6",
+        "unit_arrays.npz": "0d9096001b6b6a1367e63b6d36ebbd9cfc1ae8b60c5d2c97ba8065eb813dab83",
+        "metrics.json": "644b4622c9f879ee438c85929363670dbba82409962afe471ec8ad072068dabe"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "random_support128_seed3219802",
+      "files_sha256": {
+        "metadata.json": "9c6cf05987dd75743fca03b9c4efb25f557cf48c4e4df0148f120d2d19e3356c",
+        "components.pt": "154d01f30cdd7884826dcba140cacc0745ee14681488ddf4fef6da5c1c07be42",
+        "model_output.pt": "9a484537d0747e5e13d0ffa669887e490da98f1dca242522d1c937b6b52d8d64",
+        "actual_head_boundaries.pt": "614b835470d664e0b89d17e8658d7c0f2314eaaf5b6f03721d590e3b7e1a4f51",
+        "arrays.npz": "103113766dbe736999d4bcaec31e73aeb843676ddd8f391903266834361a70fd",
+        "unit_site.pt": "6f770a9c1ee0985f96a834cd80fae3fc53882751da6d9e8b41800e1ee02d26c8",
+        "unit_site.json": "adf8e1e25a2fffb949834ff74183d54ade3f5199debca8c18f9484e2a3b7048e",
+        "unit_arrays.npz": "aa6319085da17f8f21abb65aa2dbe395f7cbd1ca7355e49ce5c201cad1457beb",
+        "metrics.json": "9eafa25babd5abbd0f095b65d8232ea09fd057b5ef59a956ed55dde7f2813041"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "random_support128_seed3219803",
+      "files_sha256": {
+        "metadata.json": "9b7c3bed22cc1b6d727daa6bb9201e745eec0d1885e9fcd9c8fc3dba03ec89e5",
+        "components.pt": "32e6692e0ddb3582ced558cb48c2d5dc3aa256b13f99c3faefedbc96932ee264",
+        "model_output.pt": "3ddfb744e5a3d6fff937b0c9ea8c45d33fce667ca014d93af7c8e6e63f916d4b",
+        "actual_head_boundaries.pt": "46c4b32b8411e990eabf1b81a23a33d253bd4470261f85d85221546b7287071a",
+        "arrays.npz": "4e67904042a76176104b9c4394eb871eda1497ec0ed349b99dc717c032c9c7a0",
+        "unit_site.pt": "fa1560d8b44d15584b0e1b94bebf16f4389314970f724d39c00dca7e375a21d6",
+        "unit_site.json": "dea636bb071f1abbc0ebf9753709019ddb3f72f876b47da8e6265621cb269ff3",
+        "unit_arrays.npz": "16f4add128c666da382785d25a6fe2e9e3f3db67b2f1b18c59349f10fe2ae9f1",
+        "metrics.json": "de5dad57f09f4697f4ea3769af53e0fc96098904c9e9ce34d92392a280329559"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "random_coefficients128_seed4219801",
+      "files_sha256": {
+        "metadata.json": "d2f25711f442ace4f2181726af12cf23ff9b7879f8bf27f7aa2186de4dba397c",
+        "components.pt": "de81f0be78742704b3392abcdbe207adff7a70aa1116963f935c436cf6328b4b",
+        "model_output.pt": "dae672e11d0ce3b56d68e6592506fc1dbf2695e9d2978f69d1a962a8b53a609b",
+        "actual_head_boundaries.pt": "9ebcd1789d6844b0d56c8ddb560f5cf6a9b268ac73ecc3821f4becdc1f2e7f6d",
+        "arrays.npz": "98c601d328f7a59fde57f9336e7bf1e41b85ff623df02ef906cc31377c101434",
+        "unit_site.pt": "0b81e6bdf5a20a78bdb4cdf04197cf30fc368188fea1ce4bc27e4b7c263e6303",
+        "unit_site.json": "756e3478d72bdd3a3e86f4e52af4e950817506975e96a8e0540d0f4820c2608e",
+        "unit_arrays.npz": "ebe2fc9560140f4189092429289dacc669ff30cb68182ba70fbf6c9819f280ae",
+        "metrics.json": "210a7cab81265f2a4fc73968abd18fe13f284a2bd4fdc409b19af1e1c66769ef"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "random_coefficients128_seed4219802",
+      "files_sha256": {
+        "metadata.json": "83fb02549f2fbcfb7e8cbdb376e71cc368c46e36c34e4b5ca4d6758fadf03ba3",
+        "components.pt": "ebb10feb6105b9fc9b41215a6f3d050ddd17743d26a40352ecb3c9f21ff7a9f4",
+        "model_output.pt": "6ab2e529ea3b8057d1b45fc30ab8eb6c60223de32ce1c277ef64dbdc1d34f29c",
+        "actual_head_boundaries.pt": "ade2cbaba869cad73ec15cd400714e3d6e78ed47f2ff360c3b206b19b0be7ded",
+        "arrays.npz": "1ed597c8178714e9e63de6abdcdce826f095cb9404670daeb8c5749e19e6e9e9",
+        "unit_site.pt": "7fb2d9facd6ea22dcc881de289219307b33fe0566f0cad0d15959e2267022995",
+        "unit_site.json": "ee8d6ba19ebb47c41a934545461c0af130a72fa8e857b9ab89a4353930720b10",
+        "unit_arrays.npz": "80fa3ad0b4406806dc15cef22b81a458b17754ec14854ddbabd9ea5e2a14be82",
+        "metrics.json": "131129109a705f7ab77a1608dcd4b4bde2a8b2fccddaadb121732db245be6ce6"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    },
+    {
+      "run": "random_coefficients128_seed4219803",
+      "files_sha256": {
+        "metadata.json": "d57c0cd90017cc3ae3fc7254f3db5a9c162a62e95d4041e58f454f742b32a3bd",
+        "components.pt": "328ffee10fcf8c41537d7a2c1179c841fa5c71de3fa83c1171ffcc3a3139cc89",
+        "model_output.pt": "b5a31d9c8ab697af08222dd88b66ab83aa73481104bf06b88fc15faeb27ea06d",
+        "actual_head_boundaries.pt": "fcac95dd0fac2e2ddc9fd2abe5796e8131f3208d955141da6e0f9804cdcc75b5",
+        "arrays.npz": "decfb7b96e73466e4c1a5652a83a7a9c309a091b732d556236e894fa198326af",
+        "unit_site.pt": "0fb3bd63407ca0cdb4e45e041fad361df50e6a21e44344163622c9eb504c9159",
+        "unit_site.json": "a8cdeda9f77d91ac365fc6ccd3aa3f85931fba5772fd137081163f70b5a64c76",
+        "unit_arrays.npz": "df837cd624bfe03979358eeeb7c71a2bbb5fb3dec6979e912f6857186da3b625",
+        "metrics.json": "4609237ee6a59874f089ffe9d67192f359a8fa6daddf989b979af23c7e75e0cd"
+      },
+      "producer_existing_sha_fields_checked": true,
+      "PT_BF16_to_FP32_NPZ_exact": true,
+      "seal_scope": "These whole-case file hashes are first observed and sealed by continuation; phase1 never wrote results/complete."
+    }
+  ],
+  "existing_source_provenance_sha256": "46d17ba9c742cc59db18d49d6975d3604bc5b1ec698f960f734c9b15701bc66c",
+  "selection_sha256": "e4fe952b5f3080a5f3882dc388cf9b069940f6f7447e8b8ccb9a1d4a3168e291",
+  "original_parameter_before_sha256": "d750af11d4bbe19bd32c8312f4e042635338e496af93e3b73d08cb3193dd599c",
+  "scope": "Six continuation model forwards, fixed t21/L3 and previously frozen S128. Generic controls use their own native-to-RR raw Flow XYZ velocity denominator; different denominators cannot establish semantic success. Original phase1 remains failed with eighteen surviving forwards. New parameter hashes do not measure its missing post-18 state."
+}

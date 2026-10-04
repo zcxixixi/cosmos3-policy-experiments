@@ -1,0 +1,73 @@
+{
+  "seed": 198,
+  "original_denoising_forward": 21,
+  "layer_zero_based": 3,
+  "num_real_units": 12288,
+  "unit_convention": "Columns at actual down_proj input; zero based, not heads.",
+  "contexts": {
+    "R": "RR=(R action,R vision)",
+    "P": "PR=(P action,R vision), not PP"
+  },
+  "expected_model_forwards": 24,
+  "calibration_down_forward_calls_counted_separately": true,
+  "forward_groups": {
+    "native_controls": 2,
+    "all_unit_self": 1,
+    "all_unit_swap_equivalence": 1,
+    "nested_natural": 3,
+    "reverse128": 1,
+    "gate_up_factorial128": 4,
+    "random_support128": 3,
+    "same_support_random_coefficients128": 3,
+    "generic_input_native_and_patch": 6
+  },
+  "strong_predictions": {
+    "sparse128": "r128 >= 0.5 * existing actual whole-L3-MLP restoration",
+    "gate_vs_up": "Natural, not norm-equalized, gate-only signed restoration > up-only signed restoration"
+  },
+  "strong_prediction_note": "Report each branch actual down delta L2 and branch input relative amplitude; a larger g-only effect alone does not establish selection semantics.",
+  "proxy": "s_j=sum_i[(zR-zP)_ij * dot(W_down[:,j],(M_R-M_P)_i)] in float64; descending signed score, ties by index.",
+  "nested_sizes": [
+    32,
+    128,
+    512
+  ],
+  "selection_frozen_before_intervention_output_scores": true,
+  "restore_formula": "dot(Vtrial-V_PR,V_RR-V_PR)/||V_RR-V_PR||^2 on sixteen raw XYZ velocity rows",
+  "generic_restore_formula": "For each Gi, dot(VGi_patch-VGi_native,V_RR-VGi_native)/||V_RR-VGi_native||^2; same gap guard, separate denominator.",
+  "gate_up_cells": {
+    "PP": "gP*uP self",
+    "RP": "gR*uP gate-only",
+    "PR": "gP*uR up-only",
+    "RR": "gR*uR joint"
+  },
+  "random_support_seeds": [
+    3219801,
+    3219802,
+    3219803
+  ],
+  "same_support_coefficient_seeds": [
+    4219801,
+    4219802,
+    4219803
+  ],
+  "generic_xyz_input_seeds": [
+    5219801,
+    5219802,
+    5219803
+  ],
+  "random_norm_target": "Actual down-output action-row delta L2 of the natural128 model forward.",
+  "random_support_sampling": "Uniform randperm across all12288; reject sets contained in top512, never subsample top units.",
+  "same_support_noise": "Independent CPU float64 Gaussian coefficient direction at the same128 units; calibrated positive gain, not a natural donor.",
+  "down_calibration": "Actual down_proj.forward on full GEN shape, bypassing module hooks. Native full GEN reconstruction must first be bit-exact.",
+  "maximum_positive_gain": 128.0,
+  "maximum_direct_down_calls_per_random_arm": 80,
+  "actual_norm_relative_tolerance": 0.001,
+  "generic_actual_xyz_cosine_tolerance": 0.001,
+  "generic_xyz_target": "Actual norm of (PRaction-RRaction)[:,:3]; other61 action coordinates and all other kwargs remain RR.",
+  "invalid_gap_policy": "Use existing ABS1e-6/REL1e-4 guard. Null scores are not forced positive and do not establish support.",
+  "entire_transformer_parameter_bytes_hashed_before_and_after": true,
+  "scope": "One seed198, fixed actual t21 model inputs. Real L3 SiLU-gated MLP units and raw Flow XYZ velocity only. No solver step, physics, target identity, semantic gate, inhibitory-neuron, probability or root-cause claim. Proxy selection is not an additive partition of final model effects.",
+  "existing_whole_actual_restoration_fraction": 0.6787142907713547,
+  "preregistered_half_whole_threshold": 0.33935714538567735
+}

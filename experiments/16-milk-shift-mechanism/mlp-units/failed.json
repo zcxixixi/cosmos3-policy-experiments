@@ -1,0 +1,27 @@
+{
+  "state": "failed",
+  "error": "Actual generic input norm/orthogonality gate failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/current/work/cosmos3/work/probe_cosmos_milk_mlp_units.py\", line 708, in main\n    reference, audit = input_control(rr, pr, seed, torch, runtime)\n  File \"/home/current/work/cosmos3/work/probe_cosmos_milk_mlp_units.py\", line 386, in input_control\n    assert error <= NORM_TOL and abs(cosine) <= ORTHOGONAL_TOL, 'Actual generic input norm/orthogonality gate failed'\nAssertionError: Actual generic input norm/orthogonality gate failed\n",
+  "completed": [
+    "native_RR",
+    "native_PR",
+    "self_all12288",
+    "swap_all12288",
+    "natural032",
+    "natural128",
+    "natural512",
+    "reverse128",
+    "factor128_PP",
+    "factor128_RP",
+    "factor128_PR",
+    "factor128_RR",
+    "random_support128_seed3219801",
+    "random_support128_seed3219802",
+    "random_support128_seed3219803",
+    "random_coefficients128_seed4219801",
+    "random_coefficients128_seed4219802",
+    "random_coefficients128_seed4219803"
+  ],
+  "elapsed_s": 49.17830241299998,
+  "scope": "One seed198, fixed actual t21 model inputs. Real L3 SiLU-gated MLP units and raw Flow XYZ velocity only. No solver step, physics, target identity, semantic gate, inhibitory-neuron, probability or root-cause claim. Proxy selection is not an additive partition of final model effects."
+}

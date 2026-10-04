@@ -1,0 +1,62 @@
+{
+  "script_sha256": "a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb",
+  "protocol_sha256": "41990dfda2e446198326e3db1f770815889bf62cf97897abc46f7daca195e73b",
+  "sources_sha256": "49621d580b8333147134b94d025d71ccbf7bcdd7256aa14afbf7c6685d142c8d",
+  "threshold": {
+    "threshold_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold",
+    "wrapper_sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36",
+    "shared_scene_array_manifest_sha256": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba",
+    "shared_scene_state_sha256": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed",
+    "shared_scene_controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+    "all_three_initial_png_bytes_exact": true,
+    "documents_current_sha256": {
+      "provenance.json": "e8e5dd692ee016b3bf437c507454ae5424ac3c94848784e318fca6af510393e9",
+      "wrapper-server-complete.json": "e994fa7ad174782ecedbeda5d10a4908bfa7e9a62927d6594d510356258d6cf1",
+      "wrapper-simulator-complete.json": "6241dddd43554587eb01c092e49ab446cb8ac06ab2db502b8935553d8fc892f3",
+      "server/complete.json": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c",
+      "closed-loop/complete.json": "abfaea32659cd6c5b0052448ce7df36609f270674043363729b33db74683f496",
+      "inputs/complete.json": "28dbb173569feca418e25d67f77b925a093cdd10a1e80ecb58c32c193157a0cc",
+      "inputs/metadata.json": "998f0f2ab8420607a0f780de3fa0070365a821bd18a70af00b80bc9338ad4485",
+      "summary.json": "293d967ccdb60686bc7c58a73485d9a081d0089471f021fc76ba04480fe82914"
+    }
+  },
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "metrics": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75"
+  },
+  "actual_transformer_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/transformers/transformer_cosmos3.py",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+  "dispatch_source": "/home/current/work/cosmos3/diffusers/src/diffusers/models/attention_dispatch.py",
+  "dispatch_source_sha256": "93a57f07a77f8710233458ce8adc300e3eeaa57cb09a46a94cee02121d38ed88",
+  "dispatch_function_source_sha256": "39d8d5983a78d41b74f8dee588a246a524e8610d37f340619107c9a7bb281a6d",
+  "dispatch_signature": "(query: 'torch.Tensor', key: 'torch.Tensor', value: 'torch.Tensor', attn_mask: 'torch.Tensor | None' = None, dropout_p: 'float' = 0.0, is_causal: 'bool' = False, scale: 'float | None' = None, enable_gqa: 'bool' = False, attention_kwargs: 'dict[str, Any] | None' = None, *, backend: 'AttentionBackendName | None' = None, parallel_config: \"'ParallelConfig' | None\" = None) -> 'torch.Tensor'",
+  "backend_settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "configured_attention_backend": "None",
+    "configured_parallel": "None",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "grad_enabled": false,
+    "kernel_evidence_limit": "Configured backend and enabled flags are recorded, not a profiler observation of the selected kernel."
+  },
+  "library_edits": false,
+  "training": false,
+  "model_inputs_changed": false,
+  "model_outputs_changed": false,
+  "action_interventions": 0,
+  "closed_loop_execution": false,
+  "scope": "Three observation-only native X+12cm q0 reproductions. Actual L17/t29 inputs and native attention arithmetic only. No action intervention, new physics, identity decoder or semantic/target-reader conclusion."
+}

@@ -1,0 +1,128 @@
+{
+  "complete": true,
+  "native_module_calls": {
+    "mlp_input": 1,
+    "gate_pre": 1,
+    "g": 1,
+    "u": 1,
+    "down_input": 1,
+    "down_output": 1,
+    "mlp_output": 1
+  },
+  "mode": "native",
+  "selected_indices": {
+    "shape": [
+      0
+    ],
+    "dtype": "torch.int64",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "action_rows": {
+    "shape": [
+      16
+    ],
+    "dtype": "torch.int64",
+    "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+  },
+  "site": {
+    "x": {
+      "shape": [
+        266,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3005a0642954e6bfece6193e89a0b2d54c1fee34353cf3f41bc0680abc54e134"
+    },
+    "gate_pre": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0b0cd687e64853a968164def6a63262d3c8684b4e5869fcd0aa02577a506c74e"
+    },
+    "g_before": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fc3fdab2806c5de4c393e1e69362293526878ff0eac1734214a66aaff698ab5f"
+    },
+    "g_effective": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fc3fdab2806c5de4c393e1e69362293526878ff0eac1734214a66aaff698ab5f"
+    },
+    "u_before": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8a29a558fb9d3923e278d68d0d4c851181474356290e1aebd04495f940120816"
+    },
+    "u_effective": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8a29a558fb9d3923e278d68d0d4c851181474356290e1aebd04495f940120816"
+    },
+    "z_down_input": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f264bb4078a64255e0ab5586b5976efd15b7150b9746dcb3b9563e7ba41fafbe"
+    },
+    "z_native_branch_product": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f264bb4078a64255e0ab5586b5976efd15b7150b9746dcb3b9563e7ba41fafbe"
+    },
+    "z_landed": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f264bb4078a64255e0ab5586b5976efd15b7150b9746dcb3b9563e7ba41fafbe"
+    },
+    "down": {
+      "shape": [
+        266,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "5568fd63f4d9f8b632c197c85ac4ba5c56665a7773dbf3cc699563eb5a55391f"
+    }
+  },
+  "branch_events": [],
+  "direct_z_events": [],
+  "calibration": {
+    "direct_down_forward_calls": 0,
+    "tested_gains": [],
+    "full_GEN_shape": [
+      266,
+      12288
+    ],
+    "bypasses_module_hooks": true,
+    "native_reconstruction_full_GEN_bit_exact": false
+  },
+  "tensor_conventions": {
+    "z_down_input": "Actual down prehook input, already mixed for branch interventions",
+    "z_native_branch_product": "Product of captured unmodified branch values; native reference, not a claimed factorial down-entry before",
+    "z_landed": "Actual effective down input after any direct z-entry replacement"
+  },
+  "residual": "Original decoder residual addition is outside MLP and was not hooked or overwritten",
+  "scope": "One seed198, fixed actual t21 model inputs. Real L3 SiLU-gated MLP units and raw Flow XYZ velocity only. No solver step, physics, target identity, semantic gate, inhibitory-neuron, probability or root-cause claim. Proxy selection is not an additive partition of final model effects."
+}

@@ -1,0 +1,122 @@
+{
+  "und_len": 121,
+  "gen_len": 266,
+  "full_joint_length": 387,
+  "text_global_key_indexes": {
+    "shape": [
+      121
+    ],
+    "dtype": "torch.int64",
+    "sha256": "c87ae5102566e33999e168cf9023679dd3609b61036ec85300dbb564da91e2e0"
+  },
+  "action_global_indexes": {
+    "shape": [
+      16
+    ],
+    "dtype": "torch.int64",
+    "sha256": "2485a7d17684342282ad49a06c4be9c03fb0dd6dff3d674c9aa255944203292a"
+  },
+  "action_GEN_query_rows": {
+    "shape": [
+      16
+    ],
+    "dtype": "torch.int64",
+    "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+  },
+  "vision_global_key_indexes": {
+    "shape": [
+      250
+    ],
+    "dtype": "torch.int64",
+    "sha256": "87fdc6bda7cb7366bfe8c281c86620049db317b5c848bf56dcf1c3aa7894556a"
+  },
+  "current_vision_global_key_indexes": {
+    "shape": [
+      50
+    ],
+    "dtype": "torch.int64",
+    "sha256": "d0c3b60d8fac3957fb0e50b45765ba5c7d2ff054734bf85fd11fdae2941814ff"
+  },
+  "current_vision_GEN_rows": {
+    "shape": [
+      50
+    ],
+    "dtype": "torch.int64",
+    "sha256": "c202d9cfc7858fd49d522047e16948359bbbb2eda2d3825d552e45a78d5f8585"
+  },
+  "future_vision_global_key_indexes": {
+    "shape": [
+      200
+    ],
+    "dtype": "torch.int64",
+    "sha256": "f8461797be3dd7dcb270a72ef7f7bc8a0db2172748bda3d2a15c61b274465d3c"
+  },
+  "conditioned_frames": [
+    0
+  ],
+  "noisy_frames": {
+    "shape": [
+      4
+    ],
+    "dtype": "torch.int64",
+    "sha256": "73e200e2b048c86d4e8c86b86bf62bbda84c7384e34e250b01aa30ab29d234a4"
+  },
+  "vision_C_T_H_W": [
+    48,
+    5,
+    10,
+    20
+  ],
+  "patch_grid": [
+    5,
+    5,
+    10
+  ],
+  "packing_method_source_sha256": "88d5a13eec926ad19e69abaca586e2bba07c948dd2b30f7734cf997cdbfe8d29",
+  "global_key_convention": "Actual dispatch allK/allV are concatenated UND then GEN and share the joint/global sequence indexes.",
+  "query_convention": "Only GEN query rows subtract und_len; text/current-vision key indexes remain global.",
+  "current_condition_tensor": {
+    "shape": [
+      48,
+      1,
+      10,
+      20
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "f9205637784751ffee720cad2889d981755e78a809fbd2a8440594c5500025e3"
+  },
+  "head_to_KV_group": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5,
+    6,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    7
+  ]
+}

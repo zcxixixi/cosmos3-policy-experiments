@@ -28,3 +28,19 @@ checkpoints/
 !experiments/16-milk-shift-mechanism/position-threshold/closed-loop/*/chunk_00/states.pt
 !experiments/16-milk-shift-mechanism/correction-persistence/seed198/runs/*/states.pt
 !experiments/16-milk-shift-mechanism/correction-persistence/seed198/runs/*/actualsession.pt
+
+# Measured MLP activations, selected down-weight columns and input audits; no checkpoint.
+!experiments/16-milk-shift-mechanism/mlp-units/native_RR/unit_site.pt
+!experiments/16-milk-shift-mechanism/mlp-units/native_PR/unit_site.pt
+!experiments/16-milk-shift-mechanism/mlp-units/selection-arrays.pt
+!experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed*/audit.pt
+
+# Actual attention dispatch/model inputs and outputs, not checkpoint weights.
+!experiments/16-milk-shift-mechanism/target-reader-inputs/seed*/dispatch-t29.pt
+!experiments/16-milk-shift-mechanism/target-reader-inputs/seed*/model-input-t29.pt
+!experiments/16-milk-shift-mechanism/target-reader-inputs/seed*/model-output-t29.pt
+!experiments/16-milk-shift-mechanism/target-reader-inputs/seed*/token-indexes.pt
+!experiments/16-milk-shift-mechanism/target-reader-inputs/seed*/q0/states.pt
+
+# Actual closed-loop prediction records, not model weights.
+!experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/*/chunk_*/states.pt

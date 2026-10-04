@@ -1,0 +1,72 @@
+{
+  "script_sha256": "7e684b1a330877b8dbaad2c27621c3bc8db4893eb25da0c9171ff6d8b56aa2fe",
+  "wrapper_provenance_sha256": "ad3eda54da26decf00a81ec48338f1eee04056d574c1d130c22f313bfd0d314a",
+  "extra_q0_model_forwards": 0,
+  "component_hooks_installed": false,
+  "plan": {
+    "native195": {
+      "q0_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": true
+    },
+    "native198": {
+      "q0_source_seed": 198,
+      "later_noise_base": 198,
+      "actual_query_seeds": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": true
+    },
+    "q0195_later198": {
+      "q0_source_seed": 195,
+      "later_noise_base": 198,
+      "actual_query_seeds": [
+        195,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": false
+    },
+    "q0198_later195": {
+      "q0_source_seed": 198,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        198,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": false
+    }
+  }
+}

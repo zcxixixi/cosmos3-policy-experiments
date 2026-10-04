@@ -3,18 +3,18 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 1853,
-      "sha256": "2e7771a2f2438471968338a45a18f4830d636cf097d6abb78e1a093d965830f7"
+      "bytes": 2860,
+      "sha256": "2592139f2fb068bb9cf357088ff579d58535afb539d364c9979d0b1adc58960a"
     },
     {
       "path": "README.md",
-      "bytes": 15160,
-      "sha256": "7523082f64d16d60134aca229dcecf6656ec60260b5b4791ceabb33200cee378"
+      "bytes": 16400,
+      "sha256": "b32cfe05edaea39236cb03b79c8e61dded198ee722f229e6d6fb8dedeb1b7cf3"
     },
     {
       "path": "docs/index.html",
-      "bytes": 20505,
-      "sha256": "ea0f4354f56f38a9d57ebfce022af466c8c6606280421a9a95d249c4567a20ed"
+      "bytes": 38456,
+      "sha256": "56d0a531ff6e5263532d89b3df7b0224d85b432671ee242d0877bf8dcedac66c"
     },
     {
       "path": "docs/media/experiment-summary-poster.png",
@@ -107,6 +107,11 @@
       "sha256": "d0335a576d34ad49416ded3fda09f81db36cc70eac2496667008043d2bb17d84"
     },
     {
+      "path": "docs/media/milk-flow-response.png",
+      "bytes": 220316,
+      "sha256": "b363d065693fc9666bdbf3119527f9785b38811f2534a064f43d115262dccf7e"
+    },
+    {
       "path": "docs/media/milk-mlp-persistence.png",
       "bytes": 246821,
       "sha256": "7218225a9f242ea5f3b03bb10fa1246132cdd9834c6253a2189f0a812f11e925"
@@ -115,6 +120,41 @@
       "path": "docs/media/milk-mlp-persistent.mp4",
       "bytes": 239525,
       "sha256": "2958097c4e3e1501d61c69ae3bd5351ee16f9990e8a01eb8cba8fe0d5d9c976d"
+    },
+    {
+      "path": "docs/media/milk-mlp-unit-propagation.png",
+      "bytes": 142239,
+      "sha256": "9567d2cd87347a7c8f9b542f440701bafb11063ed742219bda9bae1d1e1dae44"
+    },
+    {
+      "path": "docs/media/milk-mlp-unit-values.png",
+      "bytes": 272205,
+      "sha256": "9186d4b9559acff27a9f1bcadeb863ca4000345fa65eb66361b5ba4e06f0a46b"
+    },
+    {
+      "path": "docs/media/milk-mlp-units.png",
+      "bytes": 353950,
+      "sha256": "a28882ed49c5c02bfbcac59a1c066aab119298af7e58bde9c42e1d1bc5171809"
+    },
+    {
+      "path": "docs/media/milk-noise-cross-native195.mp4",
+      "bytes": 244525,
+      "sha256": "002cc6cf04deca85530a2b88da40cdd61aa9d5ca42645aa2532821a70205f6fc"
+    },
+    {
+      "path": "docs/media/milk-noise-cross-native198.mp4",
+      "bytes": 220149,
+      "sha256": "5a04a6b6c72b7b1c9fcfe3651955f5dc5414dda69f0fa1f874b7c47028e4fae8"
+    },
+    {
+      "path": "docs/media/milk-noise-cross-q0195_later198.mp4",
+      "bytes": 242030,
+      "sha256": "b90017575eb83c36d428a6f6f641e56374abce6970b4f4541f2bb224b89eb368"
+    },
+    {
+      "path": "docs/media/milk-noise-cross-q0198_later195.mp4",
+      "bytes": 220848,
+      "sha256": "295bb66f8f967f94fe985d01a197cbd110c88fb93262541344f133dadf098929"
     },
     {
       "path": "docs/media/milk-shift-fifteen.mp4",
@@ -21793,8 +21833,8 @@
     },
     {
       "path": "experiments/16-milk-shift-mechanism/README.md",
-      "bytes": 20328,
-      "sha256": "dbf6250386c713e93c344c993f116652610631001aac3584ae2520b1761f6aee"
+      "bytes": 34604,
+      "sha256": "685271b57ee38f4103a6cae158f91bcc69e25412f9e5534c59b842d0504f4bf5"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/action-correction-sites/complete.json",
@@ -24897,6 +24937,11 @@
       "sha256": "cbfef2a3fbcca093b90d434dae7b90367a712aef03ecf93de3fc422a6ea90e5c"
     },
     {
+      "path": "experiments/16-milk-shift-mechanism/code/analyze_cosmos_milk_flow_response.py",
+      "bytes": 27262,
+      "sha256": "e49296bd7565ccb4a8ad47e70a4949b8b37e4b4165fb6d3e4906efc13ad8d1ff"
+    },
+    {
       "path": "experiments/16-milk-shift-mechanism/code/analyze_cosmos_milk_shift_components.py",
       "bytes": 16249,
       "sha256": "b29129181c741f58bb130f624dcb914a2bbf76837dbfd979ac75100c94704032"
@@ -24910,6 +24955,11 @@
       "path": "experiments/16-milk-shift-mechanism/code/cosmos_component_interventions.py",
       "bytes": 32973,
       "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/cosmos_quantized_orthogonal_input.py",
+      "bytes": 3705,
+      "sha256": "15cd6e671014c69dc1db4b6a06b6b86a9c1ba615f2a96c08918a8e8f3690b842"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/code/export_cosmos_milk_component_excerpt.py",
@@ -24947,6 +24997,11 @@
       "sha256": "4cf8069f2b1e8ee97c36b476bb64e0f01ad3e7c852d0491870224e4a7adc6ad6"
     },
     {
+      "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_mlp_units.py",
+      "bytes": 40119,
+      "sha256": "d9a3f91c1ed3de83236c40f73892bd41a630d1ec1b8f343767b03d758aeaddc7"
+    },
+    {
       "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_action_correction_sites.py",
       "bytes": 36675,
       "sha256": "b2a473627f6ac043bd390f95012a9f490bddccee073e81fb7ea217894bf968c0"
@@ -24972,6 +25027,21 @@
       "sha256": "34e5b749b0c3a086b317189945c71b5983ec70d69a080b289f8df72439afdc1d"
     },
     {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_generic_inputs.py",
+      "bytes": 34717,
+      "sha256": "614434e2e52cf4340c0533adb16d46c62f01c1b4a46918679b13aae626564a66"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_mlp_units.py",
+      "bytes": 52509,
+      "sha256": "6818a6a3c3ae2f665040f2196c00055fc9487b7775642601e7ca7e9e69c95a6a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_target_reader_inputs.py",
+      "bytes": 35848,
+      "sha256": "a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb"
+    },
+    {
       "path": "experiments/16-milk-shift-mechanism/code/rollout_cosmos_milk_correction_candidates.py",
       "bytes": 19679,
       "sha256": "1c5b161d4ceaa585bc60e0f5708861a2e336579d682b390e23f126420e10a198"
@@ -24990,6 +25060,11 @@
       "path": "experiments/16-milk-shift-mechanism/code/run_cosmos_milk_position_threshold.py",
       "bytes": 12696,
       "sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/run_cosmos_milk_query_noise_cross.py",
+      "bytes": 24207,
+      "sha256": "7e684b1a330877b8dbaad2c27621c3bc8db4893eb25da0c9171ff6d8b56aa2fe"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/code/serve_cosmos_milk_correction_candidates.py",
@@ -27177,6 +27252,26 @@
       "sha256": "14ff8d79984969520611476432c6ff9a2350bff610b89685d0ddd21eda3d041f"
     },
     {
+      "path": "experiments/16-milk-shift-mechanism/flow-response-analysis/actual-flow-arrays.npz",
+      "bytes": 76722,
+      "sha256": "874583fa571dd8f4f5e7afb54497807f7c3237d983a8972b6ae92246a5787c2b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/flow-response-analysis/analysis.json",
+      "bytes": 75775,
+      "sha256": "c366b113092da301217d2fdc97ca50cdea7cdd9ae4bf75b9e546454c2862273a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/flow-response-analysis/complete.json",
+      "bytes": 431,
+      "sha256": "463dfdfdd01f78295c654a5d26ebda588eff47cce3fa2b5f01158cd7b75e8191"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/flow-response-analysis/milk-flow-response.png",
+      "bytes": 220316,
+      "sha256": "b363d065693fc9666bdbf3119527f9785b38811f2534a064f43d115262dccf7e"
+    },
+    {
       "path": "experiments/16-milk-shift-mechanism/inputs/complete.json",
       "bytes": 322,
       "sha256": "edd49761a1b680f4a8cc6e62d5212be2029dd11078358cad022f960ad2206863"
@@ -27410,6 +27505,641 @@
       "path": "experiments/16-milk-shift-mechanism/inputs/x15/state.npy",
       "bytes": 1008,
       "sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/complete.json",
+      "bytes": 1446,
+      "sha256": "5593b73e6d54586193f43440bc19e5e526743cb752e194fd0a19bcb97d0380da"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/figures/milk-mlp-unit-propagation.png",
+      "bytes": 142239,
+      "sha256": "9567d2cd87347a7c8f9b542f440701bafb11063ed742219bda9bae1d1e1dae44"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/figures/milk-mlp-unit-values.png",
+      "bytes": 272205,
+      "sha256": "9186d4b9559acff27a9f1bcadeb863ca4000345fa65eb66361b5ba4e06f0a46b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/figures/milk-mlp-units.png",
+      "bytes": 353950,
+      "sha256": "a28882ed49c5c02bfbcac59a1c066aab119298af7e58bde9c42e1d1bc5171809"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/figures/plot.json",
+      "bytes": 222114,
+      "sha256": "19e215d8096a2df02ada5e633ef075616d793bebc0d1584c5faa463dc319111e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/figures/unit-details.html",
+      "bytes": 1900,
+      "sha256": "937874f850bef4676b066b7477fcd983fa875129800adf2907b38a3668f13542"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219801/metadata.json",
+      "bytes": 2411,
+      "sha256": "46df828367222e052642b595803769725f2fbdd34509af8217f34470815a0790"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219801/metrics.json",
+      "bytes": 4800,
+      "sha256": "cb8526383f301c12beae8f75fcafd0b73f0de8327b9dcc5756380c0d204d031b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219801/unit_arrays.npz",
+      "bytes": 3133446,
+      "sha256": "68734569a8653c6ccc6ca11e29f8db9d59a6ae37013d0a905bd092cc7b2b62f7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219801/unit_site.json",
+      "bytes": 3517,
+      "sha256": "e5373404257f7b6505750efef72d3a0b765db5a4b313f0ba20af0f06008083a9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219802/metadata.json",
+      "bytes": 2411,
+      "sha256": "2b165bbd6f801a9f069028fbc4d3c98ecd4ee917548826f55d163549f0068df5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219802/metrics.json",
+      "bytes": 4780,
+      "sha256": "597414049c56f5397bcb92986fdecde0d9202f3c5f5a3f803388f526f8435286"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219802/unit_arrays.npz",
+      "bytes": 3133569,
+      "sha256": "7729b6693604a62b5d0cfab49c9687ffb32f77dcf81a8fbf17c7d0da8fe6207f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219802/unit_site.json",
+      "bytes": 3517,
+      "sha256": "0590c6420d02d74d4f0d4321e5f93d0e4bcce6bef53c39dc5e739d19ba3611ff"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219803/metadata.json",
+      "bytes": 2411,
+      "sha256": "dca50982a778d4f35ded7b3dcff8a1f0600ddd0ce3f9feefcc72ae3e814ecff2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219803/metrics.json",
+      "bytes": 4770,
+      "sha256": "2f7e08d18a07e33de3cbee7675f1e9fea0ff75722c30d866b7a3c2dfe91b1901"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219803/unit_arrays.npz",
+      "bytes": 3133453,
+      "sha256": "a10ec95487a0f9c55c1e15a1b7eee0abd11272df4a321e0addc6e837d5510f0e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_native_seed5219803/unit_site.json",
+      "bytes": 3517,
+      "sha256": "635840d48781d827d2d3ef13ee7278075c2d67e5677f0880b2173b6c1acbb8c9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219801/metadata.json",
+      "bytes": 2415,
+      "sha256": "cbfb9accab03a4921e2d5e065257852446677e9bdc5307594561d276b8524cc0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219801/metrics.json",
+      "bytes": 6954,
+      "sha256": "6720776a14a6be266af817b083d344e622a92aadac51b4010b09993cff391a56"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219801/unit_arrays.npz",
+      "bytes": 3133518,
+      "sha256": "4d0dded7ac6e909181f2661907ff5297db338badc9d3e79a4df7f37c241394aa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219801/unit_site.json",
+      "bytes": 3633,
+      "sha256": "5df663c1cf35d7a3f1ff426299073d8a08c3f8579589cde51240c8c52d8b788a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219802/metadata.json",
+      "bytes": 2415,
+      "sha256": "52c3109964ab20ad655bce616e7e83917b654587f2b57cd882f8b60e2bdebaf7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219802/metrics.json",
+      "bytes": 6937,
+      "sha256": "7d0a0fa923b664bdbb812bf06ea8137835a33c0281af929f13a0735cb7e8b3aa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219802/unit_arrays.npz",
+      "bytes": 3133459,
+      "sha256": "dad7824f238ea8fdd838c419b26d2879baceda55809d166f3ff9928c58857e48"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219802/unit_site.json",
+      "bytes": 3633,
+      "sha256": "7838c675a7c29a5e194fdbb3fd01883d6077d4c573b5a74c2900405f9ca9bb73"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219803/metadata.json",
+      "bytes": 2415,
+      "sha256": "7f76fdeef4f24d0b41cf88380fd308159af0da3820fd182863ad8eab199ed8f2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219803/metrics.json",
+      "bytes": 6928,
+      "sha256": "6c853ed85d43bf81c01f2c3d30fe3113e9dab3595959a014209daa6c90377708"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219803/unit_arrays.npz",
+      "bytes": 3133422,
+      "sha256": "7647ac5ea49e6d5ab9324c45d3cad2e87f67508a77758676c56ce73f86bf73d8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/generic_restore128_seed5219803/unit_site.json",
+      "bytes": 3633,
+      "sha256": "ff6b43fa6b0ea90d2c298daf850964cf7e5baadf7110c8add7a21c8dde65583e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed5219801/audit.json",
+      "bytes": 30109,
+      "sha256": "d221425030643f19b500796f5e33cdece95894e02187f9186b860f307ef8aa0d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed5219801/audit.pt",
+      "bytes": 93495,
+      "sha256": "c4b68e8805dbd7884031911d8a534065f4493989b2e271055ff0aa09e1893e17"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed5219802/audit.json",
+      "bytes": 94766,
+      "sha256": "73dc438693fe4f4ca56c147fcffe3db8a4fec996de24546e200e743dd12d565c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed5219802/audit.pt",
+      "bytes": 274295,
+      "sha256": "c5a89670d87ccb7c4420e55793f05780b884a95b95264f52136b5fcc5c6b0413"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed5219803/audit.json",
+      "bytes": 159824,
+      "sha256": "d63a791a3a82e186a1509a490f6bc85800299b0ba43641e36db5b940565f2548"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/input_seed5219803/audit.pt",
+      "bytes": 456311,
+      "sha256": "8247f8069b5386197cd3234ec1b6e2d7a0072caf777fc073fccf524f1b98db86"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/inputs-frozen.json",
+      "bytes": 1263,
+      "sha256": "cc8e01bf7468f3691cf5df005f81b20e9ff868909fd7a7023a05e3d2af915b05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/parameters-after.json",
+      "bytes": 194816,
+      "sha256": "d750af11d4bbe19bd32c8312f4e042635338e496af93e3b73d08cb3193dd599c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/parameters-before.json",
+      "bytes": 194816,
+      "sha256": "d750af11d4bbe19bd32c8312f4e042635338e496af93e3b73d08cb3193dd599c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/phase1-validation.json",
+      "bytes": 22056,
+      "sha256": "1692a3e1790c6216fe4ecf25e76b6e849353c3f4e19df7a03ca1c87174f3d8b4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/progress.json",
+      "bytes": 504,
+      "sha256": "d6bf541860831401745ec565e11c1653e20c17233b6df9122646d52bf2e0dd33"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/protocol.json",
+      "bytes": 3102,
+      "sha256": "ec409ec41a6e6050c26b712cf91df64c3529c42859b8deeb02ebdf0dae91fcf6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/provenance.json",
+      "bytes": 1958,
+      "sha256": "0719d3e03ba33a3971dcb984b5f53cb5acba8d51d05509e3f3a034aa207817d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/results.json",
+      "bytes": 528420,
+      "sha256": "feaaf050a038e15ccd3354d5b17af36fb82404536e0a46fddef0305b7574a791"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-generic-inputs/status.json",
+      "bytes": 67,
+      "sha256": "6c7ae4d1ee6b834bba602fbd5df365d7c0e2ec87379eadad1649fce820b491bd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PP/metadata.json",
+      "bytes": 2402,
+      "sha256": "9a0a506dc6876b82ac69c614e084c5e8c979a0826b34f37bc46feea364233684"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PP/metrics.json",
+      "bytes": 5947,
+      "sha256": "6c0c576c6c46fbc8f3e4b773979d7e1bb9cc4fcbe64813bd0db8317169562dec"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PP/unit_arrays.npz",
+      "bytes": 3134108,
+      "sha256": "cea8d8bed615c73c4431b88faf641f19226322327d9f671aff7dae0701dc03d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PP/unit_site.json",
+      "bytes": 4455,
+      "sha256": "4140223d0161367b1e47c0c31d84b180643bf0ebd01357821206de8c5eb6a75e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PR/metadata.json",
+      "bytes": 2399,
+      "sha256": "358f235b3ac56a6996cd279b3d009c5914c8c5a14d5491501d114c4ec2d28fe5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PR/metrics.json",
+      "bytes": 6126,
+      "sha256": "18ffbb8df758870f562e1ea2f5e599b7dede49a917a28b64a07609fdb4052abb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PR/unit_arrays.npz",
+      "bytes": 3134138,
+      "sha256": "bf077a95e57db3fe3dba0409c322ef78ba7096c62dfc4ae3ce6dcbcabac36318"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_PR/unit_site.json",
+      "bytes": 4020,
+      "sha256": "eaa51fe8cdca2c64f811497ea520b37760b2c7868c0844322772930aa7c9f954"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RP/metadata.json",
+      "bytes": 2399,
+      "sha256": "8a1b52ce8cc6f1c1606b6bfcf13fac3f38133b7367387e2fd9ee3e8a843dffe5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RP/metrics.json",
+      "bytes": 6137,
+      "sha256": "943f92c36edcc13398da2b09cc211f05233d860d89a48a3c4dfa2af2b281ecb3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RP/unit_arrays.npz",
+      "bytes": 3134160,
+      "sha256": "216c19847375f2a18aee02597d562fea8b7ba5e7172834b805ff4356cb3f687e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RP/unit_site.json",
+      "bytes": 4020,
+      "sha256": "938d44c41c134c1281fa8e195da832607f5a78b7f424c9ae8112db1b53f993e8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RR/metadata.json",
+      "bytes": 2403,
+      "sha256": "f11dfdccfbbcaa54e2d033308059a53294a085e92fa043095420bc5f4952fbde"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RR/metrics.json",
+      "bytes": 6136,
+      "sha256": "06116ac789b94830875584b7a00be9b276e5e0a5cd2b237bb8844ea309a664fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RR/unit_arrays.npz",
+      "bytes": 3134157,
+      "sha256": "d040d972c73130db9770df0f96108382ab1ac45bf1f7d289f9a086f1654adecb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/factor128_RR/unit_site.json",
+      "bytes": 4472,
+      "sha256": "d3cc6755d740412976aedc89044633dd99123ed41e6a4f044772c079aaf913aa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/failed.json",
+      "bytes": 1415,
+      "sha256": "2a3501315bf6559f49349d35490b71f8d498f5fb74cc43a8d0231d99160b51b5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/input-contract.json",
+      "bytes": 1613,
+      "sha256": "2fb594c8c6c55c7e8f536b5d8f8c4126a0dd5c916bb359e6c18e28a2a63f7d67"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_PR/metadata.json",
+      "bytes": 2393,
+      "sha256": "eb82b304a292282db6b6568d62211e2fef916b33bcf8b8b91db0ba59e5d201a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_PR/unit_arrays.npz",
+      "bytes": 3134108,
+      "sha256": "cea8d8bed615c73c4431b88faf641f19226322327d9f671aff7dae0701dc03d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_PR/unit_site.json",
+      "bytes": 3517,
+      "sha256": "dd8eb36089773e36d02af81895031f8a0cac4d0269a5a40654866b20bf2868f5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_PR/unit_site.pt",
+      "bytes": 56661603,
+      "sha256": "b00d46d943d458a38be4abbd3c5a19ac2080b26ef16a7a6c62c068968ffed258"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_RR/metadata.json",
+      "bytes": 2393,
+      "sha256": "978d0e498727a8f68278ff161a3242df7340d78c9251b4dc9d2d8667ff649dd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_RR/unit_arrays.npz",
+      "bytes": 3133494,
+      "sha256": "4b7d0dd0e85d66c85df7b22e72b6bb78a1b019d250bc5d7fe904527fe209625c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_RR/unit_site.json",
+      "bytes": 3517,
+      "sha256": "30f2afb098635e5fb0f84d529658af5a5e64a366130feff1a1d91fd4b4a12ea0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/native_RR/unit_site.pt",
+      "bytes": 56661603,
+      "sha256": "e9f8424c47584c67be609fb83621a525b6a5366eadd84864573d5b90c1f8964f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural032/metadata.json",
+      "bytes": 2395,
+      "sha256": "db4418b4a6889d0fe4fac2288beadeb5cf325d2ab339581b9bc10e77ec517d00"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural032/metrics.json",
+      "bytes": 5151,
+      "sha256": "41f4fd86990bdcbb8a2cbbf08e2bc47fb9573dbbf8050d656ea1ba3c4bb7e32e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural032/unit_arrays.npz",
+      "bytes": 3134160,
+      "sha256": "1a70ff59c9929c927e69e0366d1efb4be30ebc5c9be74a7d40e2c8ad62826fb2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural032/unit_site.json",
+      "bytes": 3631,
+      "sha256": "1ad1df4ee53cdda290e71bfbf6133c68707a3271c10e86ac6e1ba2f050628112"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural128/metadata.json",
+      "bytes": 2395,
+      "sha256": "9bd865fd745443cd332c83e695318582e7f979258c2f7cd0594d2f508332a80a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural128/metrics.json",
+      "bytes": 6061,
+      "sha256": "a94bd4e85a3f1607f4218c80af437591c40c74458b5a978c54dbcc7b38e311ce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural128/unit_arrays.npz",
+      "bytes": 3134199,
+      "sha256": "423f02fc9175e41fbb961620fe8eefc9a0ab82e0195784a651d08d103667449d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural128/unit_site.json",
+      "bytes": 3633,
+      "sha256": "7708a8fc3ccf9263fc46de8200704b6dd60180de3b1a119d2e28f781d251bb05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural512/metadata.json",
+      "bytes": 2395,
+      "sha256": "ad8b66bac7744358c21dc67c5c539fe794e45bf30795edd4ea2ef154d2386bed"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural512/metrics.json",
+      "bytes": 9956,
+      "sha256": "a3da55fbe49da97be23bb60f0b0f9ad436fdebc44ef7eb7f8e59f2867479f09f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural512/unit_arrays.npz",
+      "bytes": 3134172,
+      "sha256": "0b75f921e8405947207b461636119f567a762308dd504af43902054b50d96fb3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/natural512/unit_site.json",
+      "bytes": 3632,
+      "sha256": "7355aed87f1938bc958de328312731363f93599b59b0bfd322cdea38ac5a8d00"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/parameters-before.json",
+      "bytes": 194816,
+      "sha256": "d750af11d4bbe19bd32c8312f4e042635338e496af93e3b73d08cb3193dd599c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/progress.json",
+      "bytes": 624,
+      "sha256": "4586c75a4b816f4ddae6b8bef3ee783e04de28ab4e5a0c7687c0518f28d5fb2a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/protocol.json",
+      "bytes": 3362,
+      "sha256": "f03eb1c9de409e4c2d6ecf07f3372282afbc1c24fd8fbbe5bc4c0859dc2c5972"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/provenance.json",
+      "bytes": 3917,
+      "sha256": "46d17ba9c742cc59db18d49d6975d3604bc5b1ec698f960f734c9b15701bc66c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219801/metadata.json",
+      "bytes": 2433,
+      "sha256": "d2f25711f442ace4f2181726af12cf23ff9b7879f8bf27f7aa2186de4dba397c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219801/metrics.json",
+      "bytes": 6863,
+      "sha256": "210a7cab81265f2a4fc73968abd18fe13f284a2bd4fdc409b19af1e1c66769ef"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219801/unit_arrays.npz",
+      "bytes": 3134195,
+      "sha256": "ebe2fc9560140f4189092429289dacc669ff30cb68182ba70fbf6c9819f280ae"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219801/unit_site.json",
+      "bytes": 4737,
+      "sha256": "756e3478d72bdd3a3e86f4e52af4e950817506975e96a8e0540d0f4820c2608e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219802/metadata.json",
+      "bytes": 2433,
+      "sha256": "83fb02549f2fbcfb7e8cbdb376e71cc368c46e36c34e4b5ca4d6758fadf03ba3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219802/metrics.json",
+      "bytes": 6806,
+      "sha256": "131129109a705f7ab77a1608dcd4b4bde2a8b2fccddaadb121732db245be6ce6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219802/unit_arrays.npz",
+      "bytes": 3134175,
+      "sha256": "80fa3ad0b4406806dc15cef22b81a458b17754ec14854ddbabd9ea5e2a14be82"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219802/unit_site.json",
+      "bytes": 4716,
+      "sha256": "ee8d6ba19ebb47c41a934545461c0af130a72fa8e857b9ab89a4353930720b10"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219803/metadata.json",
+      "bytes": 2433,
+      "sha256": "d57c0cd90017cc3ae3fc7254f3db5a9c162a62e95d4041e58f454f742b32a3bd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219803/metrics.json",
+      "bytes": 6926,
+      "sha256": "4609237ee6a59874f089ffe9d67192f359a8fa6daddf989b979af23c7e75e0cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219803/unit_arrays.npz",
+      "bytes": 3134210,
+      "sha256": "df837cd624bfe03979358eeeb7c71a2bbb5fb3dec6979e912f6857186da3b625"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_coefficients128_seed4219803/unit_site.json",
+      "bytes": 4819,
+      "sha256": "a8cdeda9f77d91ac365fc6ccd3aa3f85931fba5772fd137081163f70b5a64c76"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219801/metadata.json",
+      "bytes": 2423,
+      "sha256": "48cae76a9dda56cd9a7ca0b5cf56486dadc44398817b86ef2b9eb7f9ea2ad196"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219801/metrics.json",
+      "bytes": 6764,
+      "sha256": "644b4622c9f879ee438c85929363670dbba82409962afe471ec8ad072068dabe"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219801/unit_arrays.npz",
+      "bytes": 3134142,
+      "sha256": "0d9096001b6b6a1367e63b6d36ebbd9cfc1ae8b60c5d2c97ba8065eb813dab83"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219801/unit_site.json",
+      "bytes": 4460,
+      "sha256": "98f66158defb57d443ae9d96684c131880ee0eb3a8f398b2b81b5633371ecdd6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219802/metadata.json",
+      "bytes": 2423,
+      "sha256": "9c6cf05987dd75743fca03b9c4efb25f557cf48c4e4df0148f120d2d19e3356c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219802/metrics.json",
+      "bytes": 6753,
+      "sha256": "9eafa25babd5abbd0f095b65d8232ea09fd057b5ef59a956ed55dde7f2813041"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219802/unit_arrays.npz",
+      "bytes": 3134175,
+      "sha256": "aa6319085da17f8f21abb65aa2dbe395f7cbd1ca7355e49ce5c201cad1457beb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219802/unit_site.json",
+      "bytes": 4463,
+      "sha256": "adf8e1e25a2fffb949834ff74183d54ade3f5199debca8c18f9484e2a3b7048e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219803/metadata.json",
+      "bytes": 2423,
+      "sha256": "9b7c3bed22cc1b6d727daa6bb9201e745eec0d1885e9fcd9c8fc3dba03ec89e5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219803/metrics.json",
+      "bytes": 6755,
+      "sha256": "de5dad57f09f4697f4ea3769af53e0fc96098904c9e9ce34d92392a280329559"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219803/unit_arrays.npz",
+      "bytes": 3134161,
+      "sha256": "16f4add128c666da382785d25a6fe2e9e3f3db67b2f1b18c59349f10fe2ae9f1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/random_support128_seed3219803/unit_site.json",
+      "bytes": 4473,
+      "sha256": "dea636bb071f1abbc0ebf9753709019ddb3f72f876b47da8e6265621cb269ff3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/reverse128/metadata.json",
+      "bytes": 2395,
+      "sha256": "e66c0941aa2b896428f459ce1972cf1b63095c2b43a209c75ed42a4a758a164a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/reverse128/metrics.json",
+      "bytes": 6080,
+      "sha256": "a04923cd2e5e969407256849aa3ef5e2c10490f98cf271e51602e556db286a24"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/reverse128/unit_arrays.npz",
+      "bytes": 3133421,
+      "sha256": "c36464405eec8c92fb608732d5e120bcf9e51feb387bde54aef7edf2e4e7335c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/reverse128/unit_site.json",
+      "bytes": 3633,
+      "sha256": "de27cd02216d0aba1acde374adc0adfc2c8f8f54da8bcb76f491af2791781f92"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/selection-arrays.pt",
+      "bytes": 8082487,
+      "sha256": "8e119ff43d075ac696f542009cda912a8c4ba18b090bface6c0c25d79bb2a5cb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/selection-frozen.json",
+      "bytes": 284,
+      "sha256": "98d1cc1c6b14a16114ac8cfeafc11957d8444671c155ad46d856217bd72b8d2e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/selection.json",
+      "bytes": 481759,
+      "sha256": "e4fe952b5f3080a5f3882dc388cf9b069940f6f7447e8b8ccb9a1d4a3168e291"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/self_all12288/metadata.json",
+      "bytes": 2398,
+      "sha256": "d3f04c844f72ec1e9cb83c9637976fbabe59dec22bb08e2d9f0016fdb467c1e2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/self_all12288/metrics.json",
+      "bytes": 128717,
+      "sha256": "c5c2d9db785c69a97115f30445d7b82ae68831baae8d6955a818ae5db937a84f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/self_all12288/unit_arrays.npz",
+      "bytes": 3134108,
+      "sha256": "cea8d8bed615c73c4431b88faf641f19226322327d9f671aff7dae0701dc03d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/self_all12288/unit_site.json",
+      "bytes": 3619,
+      "sha256": "2454b1ef4fb61d75adcd54bdeaefbf484bb8e81795b074401c3cdeaf306b1fa4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/status.json",
+      "bytes": 69,
+      "sha256": "c87a1b194a6a5e42da78fb7f693acf30382260d6dd9a6a3da561b075bba70a57"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/swap_all12288/metadata.json",
+      "bytes": 2398,
+      "sha256": "4e89607db5000b0b8abfd740c1cd81be03588de86f139de844f2a540e6048121"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/swap_all12288/metrics.json",
+      "bytes": 128868,
+      "sha256": "362f0c2350513515367f63957eb6c58bd0e051de08e8e2c8940f7ed00972be77"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/swap_all12288/unit_arrays.npz",
+      "bytes": 3134078,
+      "sha256": "4c526f4eaa31cfeccbcf5ecf2997d5d81ff2f899ea0f8a564ac5acf024e8e255"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/mlp-units/swap_all12288/unit_site.json",
+      "bytes": 3633,
+      "sha256": "4cc6c05c7f75f255e1cd55adb38ee6935515336733ee077818653ab488e70f56"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/complete.json",
@@ -29472,6 +30202,1046 @@
       "sha256": "4d822c5f9301c323b69b94e505564c7e173ab0c9dff7e33d3ccec99a24ec626d"
     },
     {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/complete.json",
+      "bytes": 261,
+      "sha256": "ebdafa252dda73194ca4ed1ac235cc33e3868a20b2ccfa602ef4aa1b068b87e2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/actions.json",
+      "bytes": 23339,
+      "sha256": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/actual.mp4",
+      "bytes": 244525,
+      "sha256": "002cc6cf04deca85530a2b88da40cdd61aa9d5ca42645aa2532821a70205f6fc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_00/metadata.json",
+      "bytes": 1920,
+      "sha256": "e23615d2729d4a20a8da85fef92ec17f653f177f813d42c48f07594402bd12fb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_00/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_01/metadata.json",
+      "bytes": 1794,
+      "sha256": "f1c49c12c33996d220968e9df34a3b60e6439ad7c05420f8f6df00d78df6a09c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_01/normalized_actions.json",
+      "bytes": 4080,
+      "sha256": "b29d9bcd909d9fefef02fa6ab60bd82649c95f1436c506be864348488562f0a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_01/states.pt",
+      "bytes": 4824169,
+      "sha256": "5bc3d81797fb5a90a219f68264cf97b23fc16ca68789e38e9ec10b12541e00d0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_02/metadata.json",
+      "bytes": 1795,
+      "sha256": "06738ff5f64727e99694f4514974ae084bf761b787b51768e14d14a884f3803f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_02/normalized_actions.json",
+      "bytes": 4102,
+      "sha256": "1578714f72e63c9e743f97a50740daa1e5b7b451381216d9662b91051f6f511b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_02/states.pt",
+      "bytes": 4824169,
+      "sha256": "60db4546081dee730714b24c2dfd9f15a675cca87142fac2f1d324c1d6843755"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_03/metadata.json",
+      "bytes": 1794,
+      "sha256": "d0bfc7f904b116786ea1d29946b6e198ac2b258f4696663a4f1825d33eb257c4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_03/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "995906955ddddba495982d0c2fcd66bd92093c722349fa746d2ae0fb2d1dd5b5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_03/states.pt",
+      "bytes": 4824169,
+      "sha256": "8faf35fc863eedf1177d2001829373b0f8abd1572be81551bdddae5930279499"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_04/metadata.json",
+      "bytes": 1795,
+      "sha256": "a55b8ab6e389c7aef1ede1776286ccf445d0f0c5a1602402399bebc680b34ef5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_04/normalized_actions.json",
+      "bytes": 4105,
+      "sha256": "f87a401ce2865b015114d77d7c312ddedd6f0dcc9bc58468e98c2619cc415687"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_04/states.pt",
+      "bytes": 4824169,
+      "sha256": "1a59ea60e464fb4fc6271e40218907b8cc26b779c67b4fc0e7544cd8304be571"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_05/metadata.json",
+      "bytes": 1794,
+      "sha256": "0873df18ca7ad0ece2202994d95e7d7eff802d662969ef3958ecbf85406e7b25"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_05/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "d31874ea261117a1cb3d14bf7dabd7e394b77f8e1cd37d6f8062db183e65de3e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_05/states.pt",
+      "bytes": 4824169,
+      "sha256": "da241752aeccf6570fb8470fcd1ea8e47b75d8b8a2a9feca316b3ddce9bdd087"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_06/metadata.json",
+      "bytes": 1795,
+      "sha256": "3a3b570380ed8d3efd8538aa3f99c75d908c81b42be34bebfa5a778bde5cc3cb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_06/normalized_actions.json",
+      "bytes": 4098,
+      "sha256": "46921661899155198134473354f0fde12597dc02723f9672b69f368a3132b9e0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_06/states.pt",
+      "bytes": 4824169,
+      "sha256": "7fc4720fef32de6eef912688fab9f18e823b7831f80a91e3f59ab8be09e0846d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_07/metadata.json",
+      "bytes": 1794,
+      "sha256": "f1d660ebb9eacaf997230406fea3742ccf6f99a1496677b73d6a9eea3af12d2a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_07/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "3a0f5b77e33f5c3df030cc2beb92641ca35bb79d5a61d85f2f6e0bd35e43b499"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/chunk_07/states.pt",
+      "bytes": 4824169,
+      "sha256": "ae2d822002634b56ad0ace1640bec12c7cd1254cb061866218b1d032d7bcbe84"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/controller-step16.npz",
+      "bytes": 2237,
+      "sha256": "a35f78c7cae7e6fce6e8269a8983be60e52e0fee81486884c50a862fef53fc17"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/denormalized_actions.json",
+      "bytes": 33618,
+      "sha256": "e9f107b2bd252a048e9b30bae2f9e708cfe12eebd0de18f194c2c9b81fdb7f68"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/executed_actions.json",
+      "bytes": 23339,
+      "sha256": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_01.png",
+      "bytes": 140542,
+      "sha256": "d314ec5580b32f37afc3d1b922015c7e1a262075f6b82ee09aa864257a41646f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_02.png",
+      "bytes": 141160,
+      "sha256": "6537bbe38b6d25bc317f4288d75f0a319f6aae6cda792b2b4b7ff72d18b9d44b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_03.png",
+      "bytes": 133110,
+      "sha256": "296210a18ad0fa275c0bbfa3b968946f0c2560345ef4a7f27d20d3c527bfbf72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_04.png",
+      "bytes": 135427,
+      "sha256": "10606cb3845ae9b5ffdf00ef3f1a61e9f6df998ac3a9a118159fcbaa053a8fb2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_05.png",
+      "bytes": 140998,
+      "sha256": "e295fb48939906813e0d12c801256e2eac36d10e5faa31f6b4cd1eb1712c30ce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_06.png",
+      "bytes": 147632,
+      "sha256": "df983768889538f9f592cffabe0b738fdb6971e7a2c400554a3e77c0edac0d18"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/input_07.png",
+      "bytes": 149014,
+      "sha256": "fa1ffccede05776e9509f5ef9143ac0d48b2593e3c72723c72f647695ea3853e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/normalized_actions.json",
+      "bytes": 32841,
+      "sha256": "22c43565476ac2d1ebae5591da3fe2cc0c4e38d3650f1e477ca99ec5aa5333d8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/q1-entry-control.json",
+      "bytes": 667,
+      "sha256": "6bae2c1b0066c74356d4bfa7126b3b8f69562c800f861b79e5a6bf7478b39bdf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/query_contract.json",
+      "bytes": 19372,
+      "sha256": "42f7d6f3d0671f57ad7001866a43b69acb502e18f7a8a6bb064fc5b0ef5b5911"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "2b49476f230b3c72126d285864760f8f33e5357adddb49caf4d1bf26af96ddab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/summary.json",
+      "bytes": 32029,
+      "sha256": "834287b3b998063d0649b76d1f2975c0962eaa189cf5967ad91d4c8ba6dd9bd0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native195/trajectory.json",
+      "bytes": 3638847,
+      "sha256": "e11431ea30e5602731326c41277e02111bbf8fe43ba1b0326dc63314ae0b9bfd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/actions.json",
+      "bytes": 23339,
+      "sha256": "89b273dad1ac7ebdb02d2d060b5b64d32efd92391356bc1be7137ebf55128561"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/actual.mp4",
+      "bytes": 220149,
+      "sha256": "5a04a6b6c72b7b1c9fcfe3651955f5dc5414dda69f0fa1f874b7c47028e4fae8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_00/metadata.json",
+      "bytes": 1920,
+      "sha256": "ef326630a4379413f03db0397d458b31fb3bee71d07e58ec5de01de0f8718e44"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_00/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "15ddf2a8c32623e09ea03edae578cb3610b4a1ac7030260690b38167c97f3eda"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "15d36da92502a17a0aacb8b75a5a7c518965d5efb421724fb8bf33fb2ad384fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_01/metadata.json",
+      "bytes": 1794,
+      "sha256": "64c2d621b590396ef501080119cdbb260c582832d089ae00e839c2e807575bea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_01/normalized_actions.json",
+      "bytes": 4085,
+      "sha256": "3c1e4fdac4b1307639fdc3d9bea039e9cfcdb10fde9880a64647b304785584bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_01/states.pt",
+      "bytes": 4824169,
+      "sha256": "c0e31195588b87d73b1d328a7e3159f4635a12dbcacb6a462f0190083fa9bcf8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_02/metadata.json",
+      "bytes": 1795,
+      "sha256": "954f900ead71f92d04dde969b86968f98aa9de25d985cc6bdbda3dc2b8c89c11"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_02/normalized_actions.json",
+      "bytes": 4094,
+      "sha256": "e89a610c3cea99f744741f2d10afc46191b74240f344c84fb628ecb16ab558c9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_02/states.pt",
+      "bytes": 4824169,
+      "sha256": "b1115e36ff8d0e036f4f07eee69d76c2bb8b67f09e2bbe9b3bdca8bc875117be"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_03/metadata.json",
+      "bytes": 1795,
+      "sha256": "33430e5d4f690009a627679769d8764472d9933a9f29b56013b5f021193a4d43"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_03/normalized_actions.json",
+      "bytes": 4142,
+      "sha256": "4cf5cbad2c4b861cf52d406a7321a2cfc04eea4005df3e2ecf4eec8de7240c72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_03/states.pt",
+      "bytes": 4824169,
+      "sha256": "e8646b3284bc065f3d12867d2a7495240276ba914c866d88ffe469cfafe7f2cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_04/metadata.json",
+      "bytes": 1794,
+      "sha256": "670ed73c78628cd9688191cdb393a41cd6b1729dcbcc28bdbdff6c7030cfafac"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_04/normalized_actions.json",
+      "bytes": 4091,
+      "sha256": "cbb4dfc70e210abf8f725b7769036047413f888578983d23b8d0fc333ce40bab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_04/states.pt",
+      "bytes": 4824169,
+      "sha256": "0dc49c53eca038e290201609383b509b4c4b8b1b91195b83f45325f850375903"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_05/metadata.json",
+      "bytes": 1795,
+      "sha256": "3d7f78a152a8affc1abaa28e9839de858752687c9e147c5e17645ac8f4b23cd2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_05/normalized_actions.json",
+      "bytes": 4094,
+      "sha256": "e63fe8aae4554319fd4b568ed6e4b3b15c1d9b04478bb76bf594a9d8a87ebc36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_05/states.pt",
+      "bytes": 4824169,
+      "sha256": "c4050efa5d3d747c126aa4caee0f61d67a86e991426044f100332ebb496cba39"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_06/metadata.json",
+      "bytes": 1793,
+      "sha256": "f449025a94a5236ca3e1d4debbe2f4d1ae0870e1cb158caca850cc21f1fd468a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_06/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "7e0836a17501befd8c6222bd870fefb570a2dc5b1275c02b95439e6b6a01deea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_06/states.pt",
+      "bytes": 4824169,
+      "sha256": "6f648affefdff810df87dd6c88d6f144679e5108af89d56f9ec4a9b0eb679211"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_07/metadata.json",
+      "bytes": 1795,
+      "sha256": "ebd818c6fd828c23c564a29eefe7c5ad231aef83f0d4d4f26f35fb3a9ac18b71"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_07/normalized_actions.json",
+      "bytes": 4084,
+      "sha256": "e70bf8fed70d0d995a26f2d1b839412b206bdbfd167e5e2f7e9aea2d3c165d9c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/chunk_07/states.pt",
+      "bytes": 4824169,
+      "sha256": "5246746275f4e6fef52a606d370efbb08dd0b94c6ac1bced4d37db3e3b38e9ca"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/controller-step16.npz",
+      "bytes": 2238,
+      "sha256": "a29f8301774e0f609ca0512e380a9fd48c44adc11c8f76e3871ad1178a6f32a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/denormalized_actions.json",
+      "bytes": 33717,
+      "sha256": "bbbd06967ece7c019e623803b9106182389af58743ed61e378b169ed11d89ae7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/executed_actions.json",
+      "bytes": 23339,
+      "sha256": "89b273dad1ac7ebdb02d2d060b5b64d32efd92391356bc1be7137ebf55128561"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_01.png",
+      "bytes": 142490,
+      "sha256": "21c596aa594c8c09a389c769fafd603e1cd9c14ee1d0b5806270b75c3d5531de"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_02.png",
+      "bytes": 140475,
+      "sha256": "a730f89d25a9da52a5ba3ab6b3c81283d643bf34f0a955fec86eaaf6ac6ae70e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_03.png",
+      "bytes": 136343,
+      "sha256": "348810d8c4a09d0e1898ffafd6faa8345243a3afd859cb2c34b0bf1e5f1bab7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_04.png",
+      "bytes": 139082,
+      "sha256": "09991ad433113679cde56fe810fe4ae5a4bcf35833fdd84dd1c353830e82cf72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_05.png",
+      "bytes": 144543,
+      "sha256": "a4a28694d468558181f4dd0e16a5cc0d4547c5d6f1116a28861aa0c1d0842333"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_06.png",
+      "bytes": 147080,
+      "sha256": "e8394f8e31944c2f4daf422094c7347f8e51aa18b55de054e34897ce72d2dcdb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/input_07.png",
+      "bytes": 146388,
+      "sha256": "1503a205b5f84a842d778519a31baba880f0a9aab11813da88de5f9304722eb5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/normalized_actions.json",
+      "bytes": 32786,
+      "sha256": "770d1b7c8f96690b882a654e32169354dbda9baee58d9b5977ade37f68dbc5fc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/q1-entry-control.json",
+      "bytes": 667,
+      "sha256": "32f366fa9e691ab30d379f8ee9bb5d5ddc7d2c921b7726351e8d07de368411c4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/query_contract.json",
+      "bytes": 19372,
+      "sha256": "c5b8a6432cda38d2ba5f47099f948412b46ec5563c81a137467830a52601857e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "8d9ca0e7727e7265210e04b987111279f8fcdfe42e637de03ecd058d34c49243"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/summary.json",
+      "bytes": 31582,
+      "sha256": "4d4934577bb2c48dd6a7404c34d5e43448715b2df69a150cf0a64ee354d04bad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/native198/trajectory.json",
+      "bytes": 3757142,
+      "sha256": "f3c1ca681b9f05ddd0a6f2a1c8bcdb16dd18001014611682a9f223be26e9c617"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/provenance.json",
+      "bytes": 1171,
+      "sha256": "e215dbab2130d52d2fa2fb0cc1ab399f8bb227e6298de8a41e2a5b20882e0367"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/actions.json",
+      "bytes": 23392,
+      "sha256": "679f11db73c00954606e7ad436567c0738254150b4fc233c2ca12911875ed9cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/actual.mp4",
+      "bytes": 242030,
+      "sha256": "b90017575eb83c36d428a6f6f641e56374abce6970b4f4541f2bb224b89eb368"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_00/metadata.json",
+      "bytes": 1930,
+      "sha256": "6e7fc11a4f234dbc3ed032bb08e75dc98e874899f45297049326b037fa15e2fa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_00/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_01/metadata.json",
+      "bytes": 1804,
+      "sha256": "9b2f8ca52c5bc5783db0dd278789ff1e927f08313b69e1a845d3f2b6c28a3943"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_01/normalized_actions.json",
+      "bytes": 4087,
+      "sha256": "48c7c4beb96bb018178568e40443f441faacdedadae65518e042acb543a27156"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_01/states.pt",
+      "bytes": 4824169,
+      "sha256": "00a136213d19f2a85ed5703fbdefd4993d73e0809b3e43b140d01c5c084b340e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_02/metadata.json",
+      "bytes": 1805,
+      "sha256": "94206affa9db45ed13229a73ceacdcb1ea672f0671e251e1fc86ce207a96e770"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_02/normalized_actions.json",
+      "bytes": 4082,
+      "sha256": "b0006f6ee03867fd054c739f3e07b93a400eaf93a312d8327ea1f6a9357519dd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_02/states.pt",
+      "bytes": 4824169,
+      "sha256": "1d003b229c493cb34642ac63ab91885d9a5300078cf1c540c8950291aceafd45"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_03/metadata.json",
+      "bytes": 1805,
+      "sha256": "7253b65520a762873334d500631928be5204b54b8f23d75ef66a6037f455e037"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_03/normalized_actions.json",
+      "bytes": 4119,
+      "sha256": "16b180c89591355fac2f5f742ea4757531528b66cb912a9b7f833bda94d16d76"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_03/states.pt",
+      "bytes": 4824169,
+      "sha256": "2ae241f7c7fa3f84f37c70360fbbc0452b9b183304b063f6cebec243aae7b3db"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_04/metadata.json",
+      "bytes": 1804,
+      "sha256": "fc6e829493590c348db4dca39046d11e7a797f508cdcdffa948d549039d75ed1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_04/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "746bb2ac6cdc775ce015987eeab688f8a23c6c13fecb0c3c2ebfda44c6d3c397"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_04/states.pt",
+      "bytes": 4824169,
+      "sha256": "cd5acec6f9efb88f84d08bf348761c78c1e9adc0a85167a9626e3a98aa869fc8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_05/metadata.json",
+      "bytes": 1805,
+      "sha256": "a872b75531d0718d08d3975bd669cbc5ddfc03021fd5ed7cdc5251da3094a325"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_05/normalized_actions.json",
+      "bytes": 4089,
+      "sha256": "e9c0ea0323114707760cd6d2d13d00945fbd99f89d5a2e87cee0a31d24fdb1c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_05/states.pt",
+      "bytes": 4824169,
+      "sha256": "0a988a9498d8b781744fa496cb273fec55568461ead70268e71b768dd74174f8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_06/metadata.json",
+      "bytes": 1804,
+      "sha256": "a0cc05a2831cad7148a8987ba266efcf1078d7d4cacc2cc6c4d0558d7b166c34"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_06/normalized_actions.json",
+      "bytes": 4100,
+      "sha256": "700fabd953fe25315184273f4c899f619d11397bf647c6350acae5abbc6bea31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_06/states.pt",
+      "bytes": 4824169,
+      "sha256": "9a1b1efe4331ef74beaee904a7ec3d8d22fc012725bd7c55faec99ae89ec14a0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_07/metadata.json",
+      "bytes": 1805,
+      "sha256": "e55a78c80c6101894f3e0f73646a0ba8f01d15b30348afa1127ad8ac5fa93cda"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_07/normalized_actions.json",
+      "bytes": 4143,
+      "sha256": "e56fccd96d824767f581416e1e9673920bd473a4e6c5eb8f575abe841b24cc4a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/chunk_07/states.pt",
+      "bytes": 4824169,
+      "sha256": "7edf06890bde49c5b9675e1c0ac7460ba2ff41b7a7a95a0e28707efed4818340"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/controller-step16.npz",
+      "bytes": 2237,
+      "sha256": "a35f78c7cae7e6fce6e8269a8983be60e52e0fee81486884c50a862fef53fc17"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/denormalized_actions.json",
+      "bytes": 33619,
+      "sha256": "63ac06aca8071a6c8e25f12105fbbe2b6d28f359201e73a281550df86a7df62d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/executed_actions.json",
+      "bytes": 23392,
+      "sha256": "679f11db73c00954606e7ad436567c0738254150b4fc233c2ca12911875ed9cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_01.png",
+      "bytes": 140542,
+      "sha256": "d314ec5580b32f37afc3d1b922015c7e1a262075f6b82ee09aa864257a41646f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_02.png",
+      "bytes": 139041,
+      "sha256": "9dee7ab3c22d7d8fe6c88f1f3f3fccb1705d4124e9e84243ace250996aa12a8f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_03.png",
+      "bytes": 130881,
+      "sha256": "79f5e54ea05934478b5e8d876aed5974de85416e6b797f357a183d4780c55e7f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_04.png",
+      "bytes": 129927,
+      "sha256": "0c427412933da87315cae194a6c04392c056060b822e6eb1d76cc49c4d1ea156"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_05.png",
+      "bytes": 142624,
+      "sha256": "90d6978ae024c2c355ebb0eea499da8285dffa7bc72da55281482557ba6e2385"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_06.png",
+      "bytes": 147923,
+      "sha256": "9bdb81a562b927ca84a3d1a7470120658b1ecdaf9c3ed4ae10d1527d9a7b2cd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/input_07.png",
+      "bytes": 148234,
+      "sha256": "fb4fdbb17cc66358902f9f0f0da2596c0ed95f1dad6d2098490912ad3f433ead"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/normalized_actions.json",
+      "bytes": 32817,
+      "sha256": "30014057c0010848aef5ec84ea47eabdae6f2385e40a8addc2ac7a0dbab79bfc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/q1-entry-control.json",
+      "bytes": 671,
+      "sha256": "c3bdbf84daf8fe9c17e6fb13024bb9302b8219115031061d46e8985b7e414a0c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/query_contract.json",
+      "bytes": 19485,
+      "sha256": "9dc9ddc1775671aea67fd6a74eaa6ed24bfc54d10fec719af4a17790db43e895"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "3087f350f8ccccfa29b0f1124dc86f8c5cee034252484feca0c069b9e61ef1d5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/summary.json",
+      "bytes": 32443,
+      "sha256": "5d40d124c8e2403f59f8d5662a2a5975d3e9bf182921c00e64b2ba0f493cc21a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0195_later198/trajectory.json",
+      "bytes": 3639116,
+      "sha256": "0c7a06b9e6f2464d3b101a17d6f4ed9452c65de723940a25a3882bee84038319"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/actions.json",
+      "bytes": 22934,
+      "sha256": "cc9ec18079362496948e495592527d9c1671f59d3a95024499e10cd40967fca1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/actual.mp4",
+      "bytes": 220848,
+      "sha256": "295bb66f8f967f94fe985d01a197cbd110c88fb93262541344f133dadf098929"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_00/metadata.json",
+      "bytes": 1930,
+      "sha256": "e88a6195e8157dacc1a9e18e9a919995a3a5e839da0e78761045d5da7859f891"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_00/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "15ddf2a8c32623e09ea03edae578cb3610b4a1ac7030260690b38167c97f3eda"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "15d36da92502a17a0aacb8b75a5a7c518965d5efb421724fb8bf33fb2ad384fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_01/metadata.json",
+      "bytes": 1804,
+      "sha256": "89827cb9c23109c782c18cfcee146b086dbaba77e35c25a16146d5dfbc15d326"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_01/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "c17aa649043c85540eeb9d19174c9aebb713477c0fb4028e949a055ea5d69992"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_01/states.pt",
+      "bytes": 4824169,
+      "sha256": "542a8c897632f7faebf60f5129d40bbd1359a6a8a318e7dc949daccdd5f50a5b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_02/metadata.json",
+      "bytes": 1805,
+      "sha256": "148e37fbbdd4bfda415a3e12291a20eff100cd316c90f1238fa0fde5071a60ce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_02/normalized_actions.json",
+      "bytes": 4123,
+      "sha256": "49e2628414911ca439c50c25acafcb98f6f16e2775092c0c4a9eacf8718598c8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_02/states.pt",
+      "bytes": 4824169,
+      "sha256": "b03c0bed818365ff77afa4b96f4682427f849c9ba262f2ad423aaadefec94bad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_03/metadata.json",
+      "bytes": 1804,
+      "sha256": "73ee04c226b551d029e088822adefc0ea2b4e3caa02167f89f384050f6ca9bfc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_03/normalized_actions.json",
+      "bytes": 4131,
+      "sha256": "406c354ac5f26d42ead250c3b9610f4b19e5855593c204041ccabb9d0d241888"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_03/states.pt",
+      "bytes": 4824169,
+      "sha256": "1fb560b48ac30ebf17b5904beae87e622d79c792abf6fdf959f35d3da5b10ab2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_04/metadata.json",
+      "bytes": 1804,
+      "sha256": "127149ea6943e12247bef28a66981d560832e3efac9d94da5a09a2c91fb5d132"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_04/normalized_actions.json",
+      "bytes": 4105,
+      "sha256": "eb5be20db929ba870e35b68edefb4421723e9d83b8320bba4504e21040e24098"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_04/states.pt",
+      "bytes": 4824169,
+      "sha256": "c9ada74a7c87bd1664e98bd55b99587440efbe7061d467ebe9c7844815c57a1c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_05/metadata.json",
+      "bytes": 1804,
+      "sha256": "0a8658e2b1c1879339fbe8b1aa5416171eee35595ec6231b9a9a6ef8fd762caf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_05/normalized_actions.json",
+      "bytes": 4104,
+      "sha256": "7eb757d081fc49190bfc3f7fdff7439b96e72b24f596a99beae09830b48c7bc6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_05/states.pt",
+      "bytes": 4824169,
+      "sha256": "35c3e7b3b8b61eeb5c04a7aa062b71efac3fcc7d0ffd8d0f856fa5da4e07002d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_06/metadata.json",
+      "bytes": 1805,
+      "sha256": "d3c754330f470cd52c5d56f1216efc2954dc6a24ea8e2f4a232cc555ccbfb62a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_06/normalized_actions.json",
+      "bytes": 4099,
+      "sha256": "ae4e9c642619b28505af754b3ed86842fd4cb0d60cbd8307946b3a4871af1c4a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_06/states.pt",
+      "bytes": 4824169,
+      "sha256": "d9add1da687f7776ce3f256f043b3588dfd7df902325e3c99716e577c5a3d21e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_07/metadata.json",
+      "bytes": 1805,
+      "sha256": "6b78b265b30f669afd78c3d78df79ea93e3f27f6553af5bf71ff85e157cedef6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_07/normalized_actions.json",
+      "bytes": 4088,
+      "sha256": "5fb127e29a24ee2f7a358e0b0af3eea4efb09018a9200b4544b9e2d54a1d18b9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/chunk_07/states.pt",
+      "bytes": 4824169,
+      "sha256": "f61783009e636485b3ba55981a20e059562e51b15c1a12671b3bff93ad181685"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/controller-step16.npz",
+      "bytes": 2238,
+      "sha256": "a29f8301774e0f609ca0512e380a9fd48c44adc11c8f76e3871ad1178a6f32a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/denormalized_actions.json",
+      "bytes": 33623,
+      "sha256": "37bb27021fb090afe86a0152491125379634377f3deacf5408592f90306651c4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/executed_actions.json",
+      "bytes": 22934,
+      "sha256": "cc9ec18079362496948e495592527d9c1671f59d3a95024499e10cd40967fca1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_01.png",
+      "bytes": 142490,
+      "sha256": "21c596aa594c8c09a389c769fafd603e1cd9c14ee1d0b5806270b75c3d5531de"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_02.png",
+      "bytes": 141093,
+      "sha256": "5a7f3c3af934d86a86ae75edc71a63f04066b0b2364f9a8e335f166de3fea288"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_03.png",
+      "bytes": 136815,
+      "sha256": "596e1b55884d2b3b5431823ab9555913ea64f88c2706cb07ab0681ef40d47106"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_04.png",
+      "bytes": 138079,
+      "sha256": "41c33a0b98afcea7e9780d8a9e7e1e03f2e7c2382c197c949eaaa87cfd0f5b95"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_05.png",
+      "bytes": 147315,
+      "sha256": "40d754695474e1959717113b12192f6920437e8a2084ae8fb74e3e234cc9cde9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_06.png",
+      "bytes": 149140,
+      "sha256": "b76cb9797be3676222574450df0643a7eb17cb14547a95b8fc8addd46d69be1c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/input_07.png",
+      "bytes": 150966,
+      "sha256": "be6b44ff4b0affd0e8316e893cbf1fb699d8d53181b8380497aafd32dd63e2f9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/normalized_actions.json",
+      "bytes": 32849,
+      "sha256": "25f5a6ea41ba985fbe0c376fccf715fd01661dacfe398b3c9d46dc60456c3ac7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/q1-entry-control.json",
+      "bytes": 671,
+      "sha256": "49483b56cd0c79e211339a3f39791b3df4f881b86e491006326dc8a73997ee1a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/query_contract.json",
+      "bytes": 19484,
+      "sha256": "6c10b29ab9a8dada3de741cf750a813564d1040f5687e5e1440fbe3ac8007394"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "ff759e9d80657d7c0cfb946fa4268e394146d21a71619d974bc05c2fc5975099"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/summary.json",
+      "bytes": 31861,
+      "sha256": "7b507ecabfaab1224889c7f1ec5183cf3937f7d27594ba51332088376544383e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/q0198_later195/trajectory.json",
+      "bytes": 3635802,
+      "sha256": "b4e6ff36daaf1076750eec6a8209d0dcb7232f0899b1c0a1b71b4b1871a79583"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/status.json",
+      "bytes": 158,
+      "sha256": "7d779228da6b3856b6348f35f443fd1207848c69c91ccf335a91c138065b929c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/closed-loop/summary.json",
+      "bytes": 149845,
+      "sha256": "bef36c2c7c433a21b7314077a03a06e06acff03f8e406bc58fe9c5c2b787fb0e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/complete.json",
+      "bytes": 1366,
+      "sha256": "bb14042a2fc736320a28a772b51f6961e5987d9c9f540263ad6581c6da2acc99"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/controls.json",
+      "bytes": 5967,
+      "sha256": "6d2e87a326f0a0215119415c2aa99c29a6df92880a927d7aaf040976204f50d0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/native195-control.json",
+      "bytes": 1430,
+      "sha256": "381d4c3de8e7eb403e050f5fc09ea203c7449f95fbfe04980959dd8583a58c1e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/native198-control.json",
+      "bytes": 1430,
+      "sha256": "720738c62ee43c2f248d957975cfdc38d0d1a798f56f9fc5d0ef18186c4c1217"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/prepared.json",
+      "bytes": 117,
+      "sha256": "c576a878f4bec5647cac1b5fbc367c154fa7b1eca06648271812d637ad4692ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/provenance.json",
+      "bytes": 41522,
+      "sha256": "ad3eda54da26decf00a81ec48338f1eee04056d574c1d130c22f313bfd0d314a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/server-process.json",
+      "bytes": 278,
+      "sha256": "401200c73b609f94e8eb34772689030bf22a5b079e4add26f61a5d1bf0e5ea6d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/server/complete.json",
+      "bytes": 478,
+      "sha256": "84508eb01b7e612cd3f973b5fa36f5ce728f8ebddacfa391cfab289fc07f50ea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/server/progress.json",
+      "bytes": 2932,
+      "sha256": "396b22797dfe258858579de603f21f7dcade5e527ab168491f15c4aabbf2099a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/server/provenance.json",
+      "bytes": 1647,
+      "sha256": "f820c38c5e98c73c1f006a8965fe81389d3299f9a9f2dfd3204df3557661ab8f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/server/ready.json",
+      "bytes": 57,
+      "sha256": "4d3785fdc4e03ee3202712bb52030a870ea0415be67b3df2ea8e2edbbc1eb5df"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/server/status.json",
+      "bytes": 69,
+      "sha256": "fa05e8f00df80332dda2b6e6ea20e7ac9ba6ecf479a61f3c7019103fa112e6c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/simulate-process.json",
+      "bytes": 282,
+      "sha256": "0e4a85f2eb6b30f74fc93a7f19b816a76bd6ced8129973cb1e99288a138eeda5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/simulator_complete.json",
+      "bytes": 261,
+      "sha256": "ebdafa252dda73194ca4ed1ac235cc33e3868a20b2ccfa602ef4aa1b068b87e2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/status.json",
+      "bytes": 184,
+      "sha256": "228ae7dd91cf94aa7eae9c88a85e90066cc8c3bb37f0a5aeddfe88a63f4f3769"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/query-noise-cross/summary.json",
+      "bytes": 149845,
+      "sha256": "bef36c2c7c433a21b7314077a03a06e06acff03f8e406bc58fe9c5c2b787fb0e"
+    },
+    {
       "path": "experiments/16-milk-shift-mechanism/server/complete.json",
       "bytes": 164,
       "sha256": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c"
@@ -29505,6 +31275,191 @@
       "path": "experiments/16-milk-shift-mechanism/summary.json",
       "bytes": 326222,
       "sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/complete.json",
+      "bytes": 1122,
+      "sha256": "d657c7f560eba0bf8e96f0a49d208b23b87e5dbe16b313cd8b42b96c70892913"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/progress.json",
+      "bytes": 178,
+      "sha256": "93b148aa1942cae19901da914ceb37aff9725c474f3af2b46dbbc7d82dcd61f3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/protocol.json",
+      "bytes": 1294,
+      "sha256": "41990dfda2e446198326e3db1f770815889bf62cf97897abc46f7daca195e73b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/provenance.json",
+      "bytes": 4259,
+      "sha256": "bc5fe13a0c94b41ffe14996cead0d8124cb8a2235bb95ca0eebcf075b6d78bc2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/results.json",
+      "bytes": 8645,
+      "sha256": "19dca4a76998e8b9212c3c286ef17f354525bf8a97c758656c18831b805128e8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/dispatch-t29.json",
+      "bytes": 4162,
+      "sha256": "999bad3ed60bcad18cb63840685b14243d0b29b5affad04662013990e89a8b95"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/dispatch-t29.pt",
+      "bytes": 16368581,
+      "sha256": "4dd822e6918478c732a85b2c9aa6c7695348ffdc05b4ef813e0a5f207d487787"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/model-input-t29.pt",
+      "bytes": 115865,
+      "sha256": "647533d18a968e8dde5d4c8d3a9df5940a77065ba6194cc798c3294b4e647bad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/model-output-t29.pt",
+      "bytes": 100013,
+      "sha256": "ac6999fd2058050696ed8097807f85eced3a8886e882318fcccf3970e36e4521"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/observer-report.json",
+      "bytes": 1530,
+      "sha256": "29224198c2df41ac242f37f8b04f71e46b3580805fe7fd0223250d9c0dc65896"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/q0/metadata.json",
+      "bytes": 1313,
+      "sha256": "9a56b2c6923591e0dd7958d1ca602ab6920ab9c058a1da3b771de4009e978c1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/q0/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/q0/states.pt",
+      "bytes": 4824169,
+      "sha256": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/token-indexes.json",
+      "bytes": 2425,
+      "sha256": "f38d85741a0d2308e7c6ddc3e766b20c2392b7a30e3fb75b7fef7ba3ede5a46d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed195/token-indexes.pt",
+      "bytes": 26847,
+      "sha256": "103c43c2d10acd554f4486b634e8f6ead0e169e1c42a805d3ff0ac3b97b68985"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/dispatch-t29.json",
+      "bytes": 4162,
+      "sha256": "2ffc1e41d7c91c535bbe4b147736756ebc1a2e959fface15601279254b81ae76"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/dispatch-t29.pt",
+      "bytes": 16368581,
+      "sha256": "c882c5a2b99b26c257519051380d26ddbbf193d452ff95eedf71ff98ec30b766"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/model-input-t29.pt",
+      "bytes": 115865,
+      "sha256": "128c106dfd66ebb1bea9b7423f11cea88637175cceece88a43d41628605ae1ad"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/model-output-t29.pt",
+      "bytes": 100013,
+      "sha256": "45a49845860aadab483ab400b0aa98b3c498b800ab5ac7e3dd396f0d8ed9173f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/observer-report.json",
+      "bytes": 1530,
+      "sha256": "29224198c2df41ac242f37f8b04f71e46b3580805fe7fd0223250d9c0dc65896"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/q0/metadata.json",
+      "bytes": 1313,
+      "sha256": "0b09d7188a5741d039a6f8f0a65c39c7d520fc61371368db83737a42154b4d6b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/q0/normalized_actions.json",
+      "bytes": 4112,
+      "sha256": "2c1e232451203c0581c9bcfcf8ed92054d7aa402e470827be081cab080ddf1a0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/q0/states.pt",
+      "bytes": 4824169,
+      "sha256": "958e255b7ec2e6083b05f0952c448b9410d0e77f5f6293368aaccbf4dc646887"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/token-indexes.json",
+      "bytes": 2425,
+      "sha256": "f38d85741a0d2308e7c6ddc3e766b20c2392b7a30e3fb75b7fef7ba3ede5a46d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed196/token-indexes.pt",
+      "bytes": 26847,
+      "sha256": "103c43c2d10acd554f4486b634e8f6ead0e169e1c42a805d3ff0ac3b97b68985"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/dispatch-t29.json",
+      "bytes": 4162,
+      "sha256": "a39e2c116625a974f0e490c560f4336d591a307ec7aeca88304d699dd3be2fef"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/dispatch-t29.pt",
+      "bytes": 16368581,
+      "sha256": "f5108f9910a19becc479a1506e758d420c478a6d4c5d92fb6fedd4a51dcd8b15"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/model-input-t29.pt",
+      "bytes": 115865,
+      "sha256": "f77b21e0a4bbddbc93bf4c9c980b1132805e58dd22f45297a833bca4af81cec4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/model-output-t29.pt",
+      "bytes": 100013,
+      "sha256": "e3a5ce1b2fd338021d1b6c00533cf4bf858351f638dbd9a003f9daf693fceba3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/observer-report.json",
+      "bytes": 1530,
+      "sha256": "29224198c2df41ac242f37f8b04f71e46b3580805fe7fd0223250d9c0dc65896"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/q0/metadata.json",
+      "bytes": 1313,
+      "sha256": "d9624045a333ec5b339d4a64496ab2772fff87fde5373fb49619dd3084d65126"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/q0/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "15ddf2a8c32623e09ea03edae578cb3610b4a1ac7030260690b38167c97f3eda"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/q0/states.pt",
+      "bytes": 4824169,
+      "sha256": "15d36da92502a17a0aacb8b75a5a7c518965d5efb421724fb8bf33fb2ad384fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/token-indexes.json",
+      "bytes": 2425,
+      "sha256": "f38d85741a0d2308e7c6ddc3e766b20c2392b7a30e3fb75b7fef7ba3ede5a46d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/seed198/token-indexes.pt",
+      "bytes": 26847,
+      "sha256": "103c43c2d10acd554f4486b634e8f6ead0e169e1c42a805d3ff0ac3b97b68985"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/sources.json",
+      "bytes": 5930,
+      "sha256": "49621d580b8333147134b94d025d71ccbf7bcdd7256aa14afbf7c6685d142c8d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/target-reader-inputs/status.json",
+      "bytes": 68,
+      "sha256": "932afc8c05e25ea246cc75773534a63e56597c55d9a87cb6130ee128689b7db6"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/trajectory-analysis/actual_eef_xy.png",

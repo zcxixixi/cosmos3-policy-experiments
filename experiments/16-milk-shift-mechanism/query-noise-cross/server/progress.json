@@ -1,0 +1,203 @@
+{
+  "queries": 32,
+  "saved_q0_predictions": 4,
+  "native_predictions": 28,
+  "native_model_forwards": 840,
+  "actual_query_seeds": {
+    "native195": {
+      "q0_source_seed": 195,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": true
+    },
+    "native198": {
+      "q0_source_seed": 198,
+      "later_noise_base": 198,
+      "actual_query_seeds": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": true
+    },
+    "q0195_later198": {
+      "q0_source_seed": 195,
+      "later_noise_base": 198,
+      "actual_query_seeds": [
+        195,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": false
+    },
+    "q0198_later195": {
+      "q0_source_seed": 198,
+      "later_noise_base": 195,
+      "actual_query_seeds": [
+        198,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "q0: saved source seed; queries1..7: later_noise_base + query",
+      "native_control": false
+    }
+  },
+  "served_queries": [
+    [
+      "native195",
+      0
+    ],
+    [
+      "native195",
+      1
+    ],
+    [
+      "native195",
+      2
+    ],
+    [
+      "native195",
+      3
+    ],
+    [
+      "native195",
+      4
+    ],
+    [
+      "native195",
+      5
+    ],
+    [
+      "native195",
+      6
+    ],
+    [
+      "native195",
+      7
+    ],
+    [
+      "native198",
+      0
+    ],
+    [
+      "native198",
+      1
+    ],
+    [
+      "native198",
+      2
+    ],
+    [
+      "native198",
+      3
+    ],
+    [
+      "native198",
+      4
+    ],
+    [
+      "native198",
+      5
+    ],
+    [
+      "native198",
+      6
+    ],
+    [
+      "native198",
+      7
+    ],
+    [
+      "q0195_later198",
+      0
+    ],
+    [
+      "q0195_later198",
+      1
+    ],
+    [
+      "q0195_later198",
+      2
+    ],
+    [
+      "q0195_later198",
+      3
+    ],
+    [
+      "q0195_later198",
+      4
+    ],
+    [
+      "q0195_later198",
+      5
+    ],
+    [
+      "q0195_later198",
+      6
+    ],
+    [
+      "q0195_later198",
+      7
+    ],
+    [
+      "q0198_later195",
+      0
+    ],
+    [
+      "q0198_later195",
+      1
+    ],
+    [
+      "q0198_later195",
+      2
+    ],
+    [
+      "q0198_later195",
+      3
+    ],
+    [
+      "q0198_later195",
+      4
+    ],
+    [
+      "q0198_later195",
+      5
+    ],
+    [
+      "q0198_later195",
+      6
+    ],
+    [
+      "q0198_later195",
+      7
+    ]
+  ],
+  "elapsed_s": 150.40217820899943
+}

@@ -1,0 +1,96 @@
+{
+  "native_whole_controls": [
+    {
+      "trial": "native195",
+      "all_129_sim_state_bytes_exact": true,
+      "all_128_action_and_trajectory_JSON_and_8_PNG_bytes_exact": true,
+      "files_sha256": {
+        "sim_states.npy": "2b49476f230b3c72126d285864760f8f33e5357adddb49caf4d1bf26af96ddab",
+        "trajectory.json": "e11431ea30e5602731326c41277e02111bbf8fe43ba1b0326dc63314ae0b9bfd",
+        "actions.json": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93",
+        "executed_actions.json": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93",
+        "normalized_actions.json": "22c43565476ac2d1ebae5591da3fe2cc0c4e38d3650f1e477ca99ec5aa5333d8",
+        "denormalized_actions.json": "e9f107b2bd252a048e9b30bae2f9e708cfe12eebd0de18f194c2c9b81fdb7f68",
+        "input_00.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+        "input_01.png": "d314ec5580b32f37afc3d1b922015c7e1a262075f6b82ee09aa864257a41646f",
+        "input_02.png": "6537bbe38b6d25bc317f4288d75f0a319f6aae6cda792b2b4b7ff72d18b9d44b",
+        "input_03.png": "296210a18ad0fa275c0bbfa3b968946f0c2560345ef4a7f27d20d3c527bfbf72",
+        "input_04.png": "10606cb3845ae9b5ffdf00ef3f1a61e9f6df998ac3a9a118159fcbaa053a8fb2",
+        "input_05.png": "e295fb48939906813e0d12c801256e2eac36d10e5faa31f6b4cd1eb1712c30ce",
+        "input_06.png": "df983768889538f9f592cffabe0b738fdb6971e7a2c400554a3e77c0edac0d18",
+        "input_07.png": "fa1ffccede05776e9509f5ef9143ac0d48b2593e3c72723c72f647695ea3853e"
+      }
+    },
+    {
+      "trial": "native198",
+      "all_129_sim_state_bytes_exact": true,
+      "all_128_action_and_trajectory_JSON_and_8_PNG_bytes_exact": true,
+      "files_sha256": {
+        "sim_states.npy": "8d9ca0e7727e7265210e04b987111279f8fcdfe42e637de03ecd058d34c49243",
+        "trajectory.json": "f3c1ca681b9f05ddd0a6f2a1c8bcdb16dd18001014611682a9f223be26e9c617",
+        "actions.json": "89b273dad1ac7ebdb02d2d060b5b64d32efd92391356bc1be7137ebf55128561",
+        "executed_actions.json": "89b273dad1ac7ebdb02d2d060b5b64d32efd92391356bc1be7137ebf55128561",
+        "normalized_actions.json": "770d1b7c8f96690b882a654e32169354dbda9baee58d9b5977ade37f68dbc5fc",
+        "denormalized_actions.json": "bbbd06967ece7c019e623803b9106182389af58743ed61e378b169ed11d89ae7",
+        "input_00.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+        "input_01.png": "21c596aa594c8c09a389c769fafd603e1cd9c14ee1d0b5806270b75c3d5531de",
+        "input_02.png": "a730f89d25a9da52a5ba3ab6b3c81283d643bf34f0a955fec86eaaf6ac6ae70e",
+        "input_03.png": "348810d8c4a09d0e1898ffafd6faa8345243a3afd859cb2c34b0bf1e5f1bab7b",
+        "input_04.png": "09991ad433113679cde56fe810fe4ae5a4bcf35833fdd84dd1c353830e82cf72",
+        "input_05.png": "a4a28694d468558181f4dd0e16a5cc0d4547c5d6f1116a28861aa0c1d0842333",
+        "input_06.png": "e8394f8e31944c2f4daf422094c7347f8e51aa18b55de054e34897ce72d2dcdb",
+        "input_07.png": "1503a205b5f84a842d778519a31baba880f0a9aab11813da88de5f9304722eb5"
+      }
+    }
+  ],
+  "q1_entry_controls": [
+    {
+      "trial": "native195",
+      "q0_source_seed": 195,
+      "old_17_sim_state_bytes_exact": true,
+      "old_17_trajectory_and_controller_values_exact": true,
+      "old_16_normalized_raw_native_executed_actions_exact": true,
+      "old_input01_PNG_bytes_exact": true,
+      "actual_controller_original_dtype_arrays_saved": true,
+      "controller_bytes_exact_native_counterpart": false,
+      "controller_evidence": "Old controller field values/shape are exact via trajectory JSON. Full dtype/raw-byte exact is additionally checked against the new completed native counterpart for crossed cases.",
+      "actual_controller_sha256": "a35f78c7cae7e6fce6e8269a8983be60e52e0fee81486884c50a862fef53fc17"
+    },
+    {
+      "trial": "native198",
+      "q0_source_seed": 198,
+      "old_17_sim_state_bytes_exact": true,
+      "old_17_trajectory_and_controller_values_exact": true,
+      "old_16_normalized_raw_native_executed_actions_exact": true,
+      "old_input01_PNG_bytes_exact": true,
+      "actual_controller_original_dtype_arrays_saved": true,
+      "controller_bytes_exact_native_counterpart": false,
+      "controller_evidence": "Old controller field values/shape are exact via trajectory JSON. Full dtype/raw-byte exact is additionally checked against the new completed native counterpart for crossed cases.",
+      "actual_controller_sha256": "a29f8301774e0f609ca0512e380a9fd48c44adc11c8f76e3871ad1178a6f32a2"
+    },
+    {
+      "trial": "q0195_later198",
+      "q0_source_seed": 195,
+      "old_17_sim_state_bytes_exact": true,
+      "old_17_trajectory_and_controller_values_exact": true,
+      "old_16_normalized_raw_native_executed_actions_exact": true,
+      "old_input01_PNG_bytes_exact": true,
+      "actual_controller_original_dtype_arrays_saved": true,
+      "controller_bytes_exact_native_counterpart": true,
+      "controller_evidence": "Old controller field values/shape are exact via trajectory JSON. Full dtype/raw-byte exact is additionally checked against the new completed native counterpart for crossed cases.",
+      "actual_controller_sha256": "a35f78c7cae7e6fce6e8269a8983be60e52e0fee81486884c50a862fef53fc17"
+    },
+    {
+      "trial": "q0198_later195",
+      "q0_source_seed": 198,
+      "old_17_sim_state_bytes_exact": true,
+      "old_17_trajectory_and_controller_values_exact": true,
+      "old_16_normalized_raw_native_executed_actions_exact": true,
+      "old_input01_PNG_bytes_exact": true,
+      "actual_controller_original_dtype_arrays_saved": true,
+      "controller_bytes_exact_native_counterpart": true,
+      "controller_evidence": "Old controller field values/shape are exact via trajectory JSON. Full dtype/raw-byte exact is additionally checked against the new completed native counterpart for crossed cases.",
+      "actual_controller_sha256": "a29f8301774e0f609ca0512e380a9fd48c44adc11c8f76e3871ad1178a6f32a2"
+    }
+  ]
+}

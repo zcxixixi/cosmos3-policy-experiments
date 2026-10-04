@@ -1,0 +1,27 @@
+{
+  "seed": 198,
+  "original_denoising_forward": 21,
+  "both_actual_pure_noise_draws_exact": true,
+  "all_30_schedule_pack_metadata_exact": true,
+  "actual_RR_and_PR_from_saved_t21_inputs": true,
+  "PR_only_action_input_differs": true,
+  "RR_native_full_return_head_and_all_components_exact": true,
+  "raw_sources": {
+    "R": {
+      "states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+      "components_sha256": "76ccbba38d997c71061b099a7610b1b350a9fb506dc1f2a08216e30bc78bde92"
+    },
+    "D": {
+      "states_sha256": "0d8eba0a674b4b85f798c7f31f68bbb189e6d4b43f2351ec7d8b6f9ddfbecb4e",
+      "components_sha256": "04e7838adb524127489e4e20cc6aa84490673103294f6d5e7a4a58a6414c2adf"
+    },
+    "R_actual_model_inputs_sha256": "16a2fa8be47b94a62279c365e3f0186fc2cba6817e9abb6388db5a9dcb61dad6",
+    "P_actual_model_inputs_sha256": "5583a736b9adede167d7d035284017d8b907aaf68e71f79987298c76eaa1ef01",
+    "saved_native_R_states_sha256": "b7c8c0510e5baef54811ad66bd1b8f89cd2d6f170a94069010cea7067835c599",
+    "saved_native_R_outputs_sha256": "a613aabd18b82b2b740a1aee4dcfa946e9b7d411232460278da2237a477c8b78"
+  },
+  "natural_action_xyz_delta_l2": 0.04725906862546672,
+  "natural_action_other61_delta_l2": 0.011639005817219486,
+  "natural_action_all64_delta_l2": 0.048671203229012555,
+  "scope": "One seed198, fixed actual t21 model inputs. Real L3 SiLU-gated MLP units and raw Flow XYZ velocity only. No solver step, physics, target identity, semantic gate, inhibitory-neuron, probability or root-cause claim. Proxy selection is not an additive partition of final model effects."
+}

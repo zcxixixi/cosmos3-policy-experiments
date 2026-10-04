@@ -1,0 +1,51 @@
+{
+  "script_sha256": "6818a6a3c3ae2f665040f2196c00055fc9487b7775642601e7ca7e9e69c95a6a",
+  "protocol_sha256": "f03eb1c9de409e4c2d6ecf07f3372282afbc1c24fd8fbbe5bc4c0859dc2c5972",
+  "sources": {
+    "normal_runtime": {
+      "path": "/home/current/work/cosmos3/work/serve_cosmos_goal_pair.py",
+      "sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506"
+    },
+    "factory": {
+      "path": "/home/current/work/cosmos3/work/probe_cosmos_language_routes.py",
+      "sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72"
+    },
+    "components": {
+      "path": "/home/current/work/cosmos3/work/cosmos_component_interventions.py",
+      "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+    },
+    "pulse": {
+      "path": "/home/current/work/cosmos3/work/probe_cosmos_milk_component_pulses.py",
+      "sha256": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75"
+    },
+    "feedback": {
+      "path": "/home/current/work/cosmos3/work/probe_cosmos_milk_feedback_inputs.py",
+      "sha256": "34e5b749b0c3a086b317189945c71b5983ec70d69a080b289f8df72439afdc1d"
+    },
+    "correction": {
+      "path": "/home/current/work/cosmos3/work/probe_cosmos_milk_action_correction_sites.py",
+      "sha256": "b2a473627f6ac043bd390f95012a9f490bddccee073e81fb7ea217894bf968c0"
+    }
+  },
+  "input_json_sha256": {
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/complete.json": "18c3f89c65a2e4b38ee2d16a671f19354df050f72fa5f1ba849ff01154b8bcdc",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/provenance.json": "5ca0b33398da8db28d45d13e28da07b9ed81f7a7245dd6d3389423607e33f7dc",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/feedback-inputs/seed198/input-contract.json": "fcbc785b7dc68bae06fb48d805d447554df6c266bfb648a3481b0622f4e9324e",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/action-correction-sites/complete.json": "0a974b53ef3695f3e863dc701ff1285410eedafa4ea71b93fcd267009f0d441a",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/action-correction-sites/results.json": "59d8f7d69431f5fa91f58da2b8f8fb5b0d8d00f653bc95087b723d6f7c4c912c",
+    "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/action-correction-sites/provenance.json": "f342e6af8d28103264189499922cc86e297babdc6a40da8e274b4d4639054374"
+  },
+  "whole_metadata_sha256": "9b55d8ada6290b35947e17fd90001036154e021bae1cbf01ba4574a53e247af0",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+  "input_contract_sha256": "2fb594c8c6c55c7e8f536b5d8f8c4126a0dd5c916bb359e6c18e28a2a63f7d67",
+  "actual_MLP_forward_source_sha256": "6cdb8cdc780d79a120dd3c532cf5017995f46abc68fbc196ff87b4cc65282952",
+  "actual_Linear_forward_source_sha256": "c0ab8f42cc3bf9489809b19c321cc85f0b1d4eafebacb96bd8e132cb9e95ef76",
+  "actual_torch_version": "2.14.0+cu130",
+  "full_parameter_before_sha256": "d750af11d4bbe19bd32c8312f4e042635338e496af93e3b73d08cb3193dd599c",
+  "full_parameter_before_hash_elapsed_s": 14.037905788999524,
+  "library_edits": false,
+  "training": false,
+  "model_calls_expected": 24,
+  "scope": "One seed198, fixed actual t21 model inputs. Real L3 SiLU-gated MLP units and raw Flow XYZ velocity only. No solver step, physics, target identity, semantic gate, inhibitory-neuron, probability or root-cause claim. Proxy selection is not an additive partition of final model effects."
+}

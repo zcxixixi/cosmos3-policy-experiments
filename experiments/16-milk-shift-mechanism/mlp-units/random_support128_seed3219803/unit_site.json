@@ -1,0 +1,164 @@
+{
+  "complete": true,
+  "native_module_calls": {
+    "mlp_input": 1,
+    "gate_pre": 1,
+    "g": 1,
+    "u": 1,
+    "down_input": 1,
+    "down_output": 1,
+    "mlp_output": 1
+  },
+  "mode": "random_support",
+  "selected_indices": {
+    "shape": [
+      128
+    ],
+    "dtype": "torch.int64",
+    "sha256": "bf168e4b98cf4ba0ac8cd2175dee0881eba433a6c99b18937054c7c064d99fd3"
+  },
+  "action_rows": {
+    "shape": [
+      16
+    ],
+    "dtype": "torch.int64",
+    "sha256": "d9d49a81cf9a8be7b6f565bc96773005178d6e5ba010876335b2678f9b233aa0"
+  },
+  "site": {
+    "x": {
+      "shape": [
+        266,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "89c6cd30ce368cbb47b5242d14cacb5730a90ab34f1609edac17bf56d7d87804"
+    },
+    "gate_pre": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "82b0b472b58ab3bceaa97d20a3c64ecd56ed9e1b404224bd649f40519f41bd7d"
+    },
+    "g_before": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8a4d7ea6f2311f4506b7514675095e5e0445247e7fb50d6b5242885a10a349fa"
+    },
+    "g_effective": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8a4d7ea6f2311f4506b7514675095e5e0445247e7fb50d6b5242885a10a349fa"
+    },
+    "u_before": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "ad611b76fc4db9c4ef9f3f40538974da75320af5092b6283172010b4ca443d21"
+    },
+    "u_effective": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "ad611b76fc4db9c4ef9f3f40538974da75320af5092b6283172010b4ca443d21"
+    },
+    "z_down_input": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "85c67f7aa8e015156f963b090bd8e7d15cdf7d4290cc0e2b5a82b8f4bae7dba3"
+    },
+    "z_native_branch_product": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "85c67f7aa8e015156f963b090bd8e7d15cdf7d4290cc0e2b5a82b8f4bae7dba3"
+    },
+    "z_landed": {
+      "shape": [
+        266,
+        12288
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0bdff053d97a9dfcc591ade9e4c4553cb2780eaf987d2cd83c8c230e7749ae97"
+    },
+    "down": {
+      "shape": [
+        266,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f16ce1fa101d29831c655c41f1a4091cd39821ec447acfc6330f4004148b91f6"
+    },
+    "actual_down_delta_l2": 0.1606921801496144
+  },
+  "branch_events": [],
+  "direct_z_events": [
+    {
+      "kind": "direct_actual_z_entry_replacement"
+    }
+  ],
+  "calibration": {
+    "direct_down_forward_calls": 13,
+    "tested_gains": [
+      0.0,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      12.0,
+      10.0,
+      11.0,
+      10.5,
+      10.25,
+      10.375,
+      10.4375
+    ],
+    "full_GEN_shape": [
+      266,
+      12288
+    ],
+    "bypasses_module_hooks": true,
+    "native_reconstruction_full_GEN_bit_exact": true,
+    "direction": {
+      "shape": [
+        16,
+        128
+      ],
+      "dtype": "torch.float64",
+      "sha256": "72606589acbe0a2e51b2867cc3249dbcb7cd21a9e00732a0e9241004fcb73180"
+    },
+    "selected_gain": 10.4375,
+    "maximum_tested_gain": 16.0,
+    "target_actual_down_delta_l2": 0.16067031021420625,
+    "calibrated_actual_down_delta_l2": 0.1606921801496144,
+    "calibrated_relative_error": 0.00013611684311177618,
+    "cpu_generator_seed": 3219803,
+    "calculation": "Full-GEN native Linear.forward; norm uses actual rounded action-row outputs",
+    "actual_model_down_delta_l2": 0.1606921801496144,
+    "actual_model_relative_error": 0.00013611684311177618
+  },
+  "tensor_conventions": {
+    "z_down_input": "Actual down prehook input, already mixed for branch interventions",
+    "z_native_branch_product": "Product of captured unmodified branch values; native reference, not a claimed factorial down-entry before",
+    "z_landed": "Actual effective down input after any direct z-entry replacement"
+  },
+  "residual": "Original decoder residual addition is outside MLP and was not hooked or overwritten",
+  "scope": "One seed198, fixed actual t21 model inputs. Real L3 SiLU-gated MLP units and raw Flow XYZ velocity only. No solver step, physics, target identity, semantic gate, inhibitory-neuron, probability or root-cause claim. Proxy selection is not an additive partition of final model effects."
+}

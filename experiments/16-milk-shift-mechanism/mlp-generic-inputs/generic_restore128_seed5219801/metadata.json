@@ -1,0 +1,79 @@
+{
+  "label": "generic_restore128_seed5219801",
+  "seed": 198,
+  "original_denoising_forward": 21,
+  "recipient_context": "seed198_RR",
+  "actual_model_calls": 1,
+  "actual_boundaries": 37,
+  "component_cache_complete": true,
+  "component_calls": 72,
+  "full_native_return_head_boundaries_components_bit_exact": false,
+  "full_actual_model_kwargs_and_sigma_unchanged": true,
+  "action_rows": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265
+  ],
+  "all_owned_hooks_removed": true,
+  "readout": {
+    "shape": [
+      16,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "8e0bea77bd2cf50d45f16979270eefd131bd9eac3b4e8f12524c6ef1f9933882"
+  },
+  "velocity": {
+    "shape": [
+      16,
+      64
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "04b61f3a9d5e75d6a8fbae50416c1c8da77cf450ea289951a881731d09247ec6"
+  },
+  "boundary": {
+    "shape": [
+      37,
+      16,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "d82f59c96e5f8195fd87845f3230e081406fbd7b8e7a251f413bcf5abc61d7d0"
+  },
+  "layer_convention": "Boundary 0 before L0; boundaries 1..36 after zero-based layers 0..35",
+  "files_sha256": {
+    "components.pt": "8fe858682dbeff49cca9daf670b6f8559409693afd644d144a764d075e29ebdd",
+    "model_output.pt": "85ace98bcd67c5dc8c4807db4188f87a322e160c2fb741ec0544c71e3b93fc91",
+    "actual_head_boundaries.pt": "8e599b8ed632ed3030613bcea18f934a5c1cd40e72027e9a8993032547a3478c",
+    "arrays.npz": "8f1519eafb4b463997044f5ad8f7f0ce4efd9a46df93c3770ec1ef5023695b5a"
+  },
+  "scope": "Single seed198, actual fixed t21 PR action-only inputs and unchanged R vision/sigma. One local action-row component increment before residual addition. Downstream layers respond freely. Raw Flow velocity effects only; no target-identity, success-probability, attractor or grasp-root-cause claim.",
+  "legacy_whole_output_patch_count": 0,
+  "unit_target_intervention_count": 1,
+  "unit_hook_native_calls": {
+    "mlp_input": 1,
+    "gate_pre": 1,
+    "g": 1,
+    "u": 1,
+    "down_input": 1,
+    "down_output": 1,
+    "mlp_output": 1
+  },
+  "extra_direct_down_forward_calibration_calls": 0,
+  "unit_site_sha256": "73c931657c8fab81d65c37ddfe08aa113e7f69e99d319396be73642cf86e5d72",
+  "mode": "z_swap",
+  "intervention_count_scope": "Own branch/pre-down unit hooks; legacy output-patch interface was unused"
+}

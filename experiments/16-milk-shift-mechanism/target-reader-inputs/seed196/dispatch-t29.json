@@ -1,0 +1,218 @@
+{
+  "causal": {
+    "q": {
+      "shape": [
+        1,
+        121,
+        32,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "1003330dbc9485df9f0918817b0fdbc9dc15ab373487dda49633a90ddd748b3d"
+    },
+    "k": {
+      "shape": [
+        1,
+        121,
+        8,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "81e426b8fb08d2d5f7d50bfc8358f088e83bf605fa03c6fc71aae184f34dcc46"
+    },
+    "v": {
+      "shape": [
+        1,
+        121,
+        8,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f03ec77b64e0047a8a80405c6b3f70b5c2ebb841a6d03102b419ab519648506c"
+    },
+    "argument_metadata": [
+      {
+        "shape": [
+          1,
+          121,
+          32,
+          128
+        ],
+        "stride": [
+          495616,
+          4096,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "device": "cuda:0"
+      },
+      {
+        "shape": [
+          1,
+          121,
+          8,
+          128
+        ],
+        "stride": [
+          123904,
+          1024,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "device": "cuda:0"
+      },
+      {
+        "shape": [
+          1,
+          121,
+          8,
+          128
+        ],
+        "stride": [
+          123904,
+          1024,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "device": "cuda:0"
+      }
+    ],
+    "kwargs": {
+      "is_causal": true,
+      "enable_gqa": true,
+      "backend_repr": "None",
+      "parallel_config_repr": "None"
+    },
+    "output": {
+      "shape": [
+        1,
+        121,
+        32,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "15bdae334ed62ca1743fafc5a81c72152a67f541a7df36252f6ac2dc1965765b"
+    }
+  },
+  "gen": {
+    "q": {
+      "shape": [
+        1,
+        266,
+        32,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "e5a7f77cae15e193d3926502ebfbb2788faf6915c84dd4ebad33c42cf62f24db"
+    },
+    "k": {
+      "shape": [
+        1,
+        387,
+        8,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "968417ec098b9bb37cc3b3f5a2c1397404069c34da83291b56777ee4cea419f0"
+    },
+    "v": {
+      "shape": [
+        1,
+        387,
+        8,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "d79f000c7e034a0334676501a55670d92c7696c1546fdd417671707f77c4beb4"
+    },
+    "argument_metadata": [
+      {
+        "shape": [
+          1,
+          266,
+          32,
+          128
+        ],
+        "stride": [
+          1089536,
+          4096,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "device": "cuda:0"
+      },
+      {
+        "shape": [
+          1,
+          387,
+          8,
+          128
+        ],
+        "stride": [
+          396288,
+          1024,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "device": "cuda:0"
+      },
+      {
+        "shape": [
+          1,
+          387,
+          8,
+          128
+        ],
+        "stride": [
+          396288,
+          1024,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "device": "cuda:0"
+      }
+    ],
+    "kwargs": {
+      "is_causal": false,
+      "enable_gqa": true,
+      "backend_repr": "None",
+      "parallel_config_repr": "None"
+    },
+    "output": {
+      "shape": [
+        1,
+        266,
+        32,
+        128
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a4c22c07e448cc1f4c6b36323fff2bdfbd03f772a34d724da6c427c37ac8306f"
+    }
+  },
+  "actual_pre_W": {
+    "shape": [
+      266,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "a4c22c07e448cc1f4c6b36323fff2bdfbd03f772a34d724da6c427c37ac8306f"
+  },
+  "replay_output": {
+    "shape": [
+      1,
+      266,
+      32,
+      128
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "a4c22c07e448cc1f4c6b36323fff2bdfbd03f772a34d724da6c427c37ac8306f"
+  },
+  "tensor_conventions": "Q/K are actual dispatch inputs after native normalization and RoPE; V is native projected V without RoPE.",
+  "native_dispatch_flatten_equals_pre_W_bytes": true
+}
