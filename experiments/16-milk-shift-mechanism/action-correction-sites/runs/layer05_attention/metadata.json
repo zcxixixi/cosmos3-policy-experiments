@@ -1,0 +1,104 @@
+{
+  "label": "layer05_attention",
+  "seed": 198,
+  "original_denoising_forward": 21,
+  "recipient_context": "seed198_PR",
+  "actual_model_calls": 1,
+  "actual_boundaries": 37,
+  "component_cache_complete": true,
+  "component_calls": 72,
+  "target_intervention_count": 1,
+  "full_native_return_head_boundaries_components_bit_exact": false,
+  "full_actual_model_kwargs_and_sigma_unchanged": true,
+  "action_rows": [
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265
+  ],
+  "all_owned_hooks_removed": true,
+  "readout": {
+    "shape": [
+      16,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "6e026b9e05f26edfee76e05b8b094e9993004ff25a998cadcf0470e24d0baf1c"
+  },
+  "velocity": {
+    "shape": [
+      16,
+      64
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "74bce48c79b8c80f832141c142baa96e77cacea56e32548742c9ce2abcc97b62"
+  },
+  "boundary": {
+    "shape": [
+      37,
+      16,
+      4096
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "efc33fe17c3f6cf330cf05fb4c3bc9af61ee79ba989c64be8ca1b0db313ab9a9"
+  },
+  "layer_convention": "Boundary 0 before L0; boundaries 1..36 after zero-based layers 0..35",
+  "files_sha256": {
+    "components.pt": "8b6f9fa4bbef3a684a80cd71a8ed99886e286e6743cecd3ed3ab0ee7e99e5f02",
+    "model_output.pt": "404d762c4b4043053dd203e9a73f5dacdc8953eb6cec1bf413256e808ab62b90",
+    "actual_head_boundaries.pt": "ff6283c42e2776cb420cc1443253d97d3eab871f6289f6c7e1bc62eded1697fd",
+    "arrays.npz": "7c54e98b0df3131a312ec1aab8e9666a3e3f34398efdf580dd716c1e517c5cb7"
+  },
+  "scope": "Single seed198, actual fixed t21 PR action-only inputs and unchanged R vision/sigma. One local action-row component increment before residual addition. Downstream layers respond freely. Raw Flow velocity effects only; no target-identity, success-probability, attractor or grasp-root-cause claim.",
+  "component_event_sha256": "99438c510e34f4cd70f55de52fac56ea4f40ae83b95104065229a839ffafc590",
+  "component_event": {
+    "layer_zero_based": 5,
+    "component": "attention",
+    "local_forward": 0,
+    "original_denoising_forward": 21,
+    "actual_delta_l2": 0.08308752108803567,
+    "nonaction_rows_count": 250,
+    "nonaction_rows_bit_exact": true,
+    "before_equals_recipient_cache": true,
+    "after_equals_requested_source": true,
+    "und_increment_unchanged": true,
+    "exact_no_change": false,
+    "patch_site": "Component output increment before decoder residual addition",
+    "before": {
+      "shape": [
+        16,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7fac996136bdfccddb7bbd11dfcd6fe11838e8cb4ba17dddb73ba8790b051f20"
+    },
+    "after": {
+      "shape": [
+        16,
+        4096
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fcaa00014deade688efa8eb690cd7013f215b54a0713da8f2825c5cea4b39086"
+    },
+    "actual_delta": {
+      "shape": [
+        16,
+        4096
+      ],
+      "dtype": "torch.float64",
+      "sha256": "4fc2439daebd33b5fcd29912d7ffe399c02d108b6185d200f749d76360f58206"
+    }
+  }
+}

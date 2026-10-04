@@ -1,0 +1,115 @@
+{
+  "suite": "libero_object",
+  "task_order_index": 0,
+  "task_index": 7,
+  "init_index": 0,
+  "prompt": "pick up the milk and place it in the basket",
+  "source_state": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/state.npy",
+  "source_state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+  "source_png": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/input.png",
+  "source_png_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+  "source_is_already_warmed": true,
+  "additional_warmup_steps": 0,
+  "environment_seed": 0,
+  "state_shape": [
+    110
+  ],
+  "state_dtype": "float64",
+  "fixture_bodies": {},
+  "object_bodies": {
+    "milk_1": "milk_1_main",
+    "basket_1": "basket_1_main",
+    "cream_cheese_1": "cream_cheese_1_main",
+    "tomato_sauce_1": "tomato_sauce_1_main",
+    "butter_1": "butter_1_main",
+    "orange_juice_1": "orange_juice_1_main",
+    "chocolate_pudding_1": "chocolate_pudding_1_main"
+  },
+  "camera_order": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "resolution_per_camera": [
+    256,
+    256
+  ],
+  "image_rule": "Rotate each RGB by 180 degrees; concatenate agentview then wrist.",
+  "script_sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845",
+  "collector_sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945",
+  "controller_helper_sha256": "bc18a41d97dcdf7c321ef093faf4eea076678298f269efa5cf8fc9c623157dc7",
+  "shifts_cm": {
+    "x00": 0,
+    "x09": 9,
+    "x12": 12
+  },
+  "seeds": [
+    195,
+    196,
+    198
+  ],
+  "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift in each of five consecutive control-step records.",
+  "controller_rule": "update(force=True); reset_goal(); preserve initial_joint; compare all captured controller/gripper fields exactly.",
+  "scenes": {
+    "x00": {
+      "shift_cm": 0,
+      "milk_joint": "milk_1_joint0",
+      "milk_qpos_address": 9,
+      "changed_state_indexes": [],
+      "milk_qpos": [
+        -0.1171608161014473,
+        -0.24429550302424152,
+        0.06973547638403721,
+        0.49999991071248306,
+        0.500000089475164,
+        0.49999993103157,
+        0.5000000687807573
+      ],
+      "input_png_sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6",
+      "state_sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9",
+      "arrays_sha256": "2caf57745387b7d7095cc47a5a1113692d3dcc5f31138970389de26e0f64f3da",
+      "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    "x09": {
+      "shift_cm": 9,
+      "milk_joint": "milk_1_joint0",
+      "milk_qpos_address": 9,
+      "changed_state_indexes": [
+        10
+      ],
+      "milk_qpos": [
+        -0.0271608161014473,
+        -0.24429550302424152,
+        0.06973547638403721,
+        0.49999991071248306,
+        0.500000089475164,
+        0.49999993103157,
+        0.5000000687807573
+      ],
+      "input_png_sha256": "0aa7de073ad29f7cd065a3e69e176dc1627b683a7084ab05db33874235d97b7a",
+      "state_sha256": "d3e71ec2e36d2cea14769dfb8c09c178dbbb10cc421b14f955cc88482caccf26",
+      "arrays_sha256": "8ee9f1185398f49a14c0ddd8b9a7e4af2dd20008aaaaa71169b41d6f7ab5cf99",
+      "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    "x12": {
+      "shift_cm": 12,
+      "milk_joint": "milk_1_joint0",
+      "milk_qpos_address": 9,
+      "changed_state_indexes": [
+        10
+      ],
+      "milk_qpos": [
+        0.0028391838985526996,
+        -0.24429550302424152,
+        0.06973547638403721,
+        0.49999991071248306,
+        0.500000089475164,
+        0.49999993103157,
+        0.5000000687807573
+      ],
+      "input_png_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+      "state_sha256": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed",
+      "arrays_sha256": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba",
+      "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    }
+  }
+}

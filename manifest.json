@@ -3,18 +3,18 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 1056,
-      "sha256": "50c622c6240cdf1c641845b40dd8b105ad5c8bfb6771195562bf58bd8db73d70"
+      "bytes": 1676,
+      "sha256": "dcce8cfaf05997f4ba0ba53d7c7a6e4b8ed5e78ff936506995f0ea9e79d96327"
     },
     {
       "path": "README.md",
-      "bytes": 15066,
-      "sha256": "ba9b85e84f94d1b1dfed4a096db5393d5a9bb1c950a6b1358a66239bfcc2f13b"
+      "bytes": 15142,
+      "sha256": "019f3cc4ae6b1f304cd8a07a01c916aca07c2b7c09850f2d97cbb5bf52987e89"
     },
     {
       "path": "docs/index.html",
-      "bytes": 12729,
-      "sha256": "77df71346308612fd530388e41b8e1ee1cd99a9f1b4943933975866d35b4a93b"
+      "bytes": 16847,
+      "sha256": "63256ceff97a0080902253b917690ffa981acc801c6dba53786f68d446ae0175"
     },
     {
       "path": "docs/media/experiment-summary-poster.png",
@@ -82,6 +82,11 @@
       "sha256": "beadc5311d4ccf9a1bbab14f4b660caf6323ed603a66e83a8980e5ec16395630"
     },
     {
+      "path": "docs/media/milk-action-correction-sites.png",
+      "bytes": 389569,
+      "sha256": "e4c4c444be62fda4bf6a0fda6e6909e49f498cb46ca5a1e2274f005b5f7205e6"
+    },
+    {
       "path": "docs/media/milk-action-vision-interchange.png",
       "bytes": 218253,
       "sha256": "1596c0ab5b463af32b1fbf1fc0c698ce3acb348a556cb4682c849ea2e4846ac8"
@@ -112,6 +117,11 @@
       "sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788"
     },
     {
+      "path": "docs/media/milk-shift-nine.mp4",
+      "bytes": 223498,
+      "sha256": "bbc52cd448ad09e2f12e24486bdc4b176e68c86283ab026c3a44d1460bd05613"
+    },
+    {
       "path": "docs/media/milk-shift-pulse-layer18.mp4",
       "bytes": 236583,
       "sha256": "393999b1e88e1be6f70c5d9ce7544f4780bcba4c32720c0e20ff9dc5ce2d60ee"
@@ -120,6 +130,16 @@
       "path": "docs/media/milk-shift-six.mp4",
       "bytes": 230269,
       "sha256": "c1c10f0fd4fad5c6234b6db45bdeed88184e02482880e59dc27127cefca57831"
+    },
+    {
+      "path": "docs/media/milk-shift-twelve-cheese.mp4",
+      "bytes": 244525,
+      "sha256": "002cc6cf04deca85530a2b88da40cdd61aa9d5ca42645aa2532821a70205f6fc"
+    },
+    {
+      "path": "docs/media/milk-shift-twelve-milk.mp4",
+      "bytes": 220149,
+      "sha256": "5a04a6b6c72b7b1c9fcfe3651955f5dc5414dda69f0fa1f874b7c47028e4fae8"
     },
     {
       "path": "docs/media/milk-shift-zero.mp4",
@@ -21763,8 +21783,568 @@
     },
     {
       "path": "experiments/16-milk-shift-mechanism/README.md",
-      "bytes": 11351,
-      "sha256": "aefd6309498427c8121beb86c7fa428d00f42792d7e852cb157e11e080c50716"
+      "bytes": 15971,
+      "sha256": "f75e9cd29427cac43f0a4465d9f54db561dca3acf0089f20ad4d32902cbd439b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/complete.json",
+      "bytes": 947,
+      "sha256": "0a974b53ef3695f3e863dc701ff1285410eedafa4ea71b93fcd267009f0d441a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_attention/arrays.npz",
+      "bytes": 4729186,
+      "sha256": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_attention/component_event.pt",
+      "bytes": 789485,
+      "sha256": "305b7823bb511d95fb16dcb3fd17c0f86c8e0c02ab180dd9d4459d09ddff6764"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_attention/metadata.json",
+      "bytes": 3076,
+      "sha256": "1c390f43cf41db6f606de18ad4a484f5cab88b6ead39a23cafcb65c48e406dde"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_attention/model_output.pt",
+      "bytes": 99917,
+      "sha256": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_mlp/arrays.npz",
+      "bytes": 4729186,
+      "sha256": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_mlp/component_event.pt",
+      "bytes": 789485,
+      "sha256": "618f05b405c5b60ca23267edb43a31fec86dd658a28c73035822e5128280889f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_mlp/metadata.json",
+      "bytes": 3065,
+      "sha256": "38bda24129d23c3512274b1e8300fa06b83aa87a75e3565cbc12aa3816ca0015"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/PR_self_mlp/model_output.pt",
+      "bytes": 99917,
+      "sha256": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/native_PR/arrays.npz",
+      "bytes": 4729186,
+      "sha256": "2347dd21fd9eeb34940491fb5a661d7b89b356ba4291eb2b67e6b3799d82df36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/native_PR/metadata.json",
+      "bytes": 1919,
+      "sha256": "47a8121d9dffcd5ec23471bc42d9de24f55cce93a9ba2b4254a4508f11b19319"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/native_PR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "8713e9478baabf5a67f69cf4997d6db23c267f79118787d421ecc70c24d395a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/native_RR/arrays.npz",
+      "bytes": 4729764,
+      "sha256": "5485c14ad002d7a48bf0f0d47957c917ca47072a3088ba0f384bde0655f71097"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/native_RR/metadata.json",
+      "bytes": 1919,
+      "sha256": "f31c37e224c2f3f893a0c4119ec5d1f545849a8a3caaeae6bb608846cfe765a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/controls/native_RR/model_output.pt",
+      "bytes": 99917,
+      "sha256": "575f41f8da4c63526bf1776cf87e188a65293fe85e672ffd0b1c704471912f9f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/figures/action-correction-sites.png",
+      "bytes": 389569,
+      "sha256": "e4c4c444be62fda4bf6a0fda6e6909e49f498cb46ca5a1e2274f005b5f7205e6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/figures/plot.json",
+      "bytes": 180563,
+      "sha256": "00d260a40ac4ab6cd059eed13a9ee4b87bf24d630e5b4953e6bfab357913331f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019801/arrays.npz",
+      "bytes": 4729615,
+      "sha256": "6eb1d3b5a0145389762493ebd864677bd0f014ef8e320e8df3b68c550c3bab72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019801/component_event.pt",
+      "bytes": 789485,
+      "sha256": "d4eec5883aee9c8cf247ccd27fc105e64505b7bcea6aadc410d1ad9fc7da3135"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019801/metadata.json",
+      "bytes": 3102,
+      "sha256": "4ec9f34948242b79df4c355287e36851d2ff4000181d3c37effe310c83683c16"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019801/model_output.pt",
+      "bytes": 99917,
+      "sha256": "c143d05d2ec693a34f797c88e8a5ee3ce766ec0c0b5e71a0ee3fdbcc0d13eb45"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019802/arrays.npz",
+      "bytes": 4729678,
+      "sha256": "dd8e8effd58dd864d88dcc4d5555f69333f6df3154a775e0e7e0f0c661a2a9d9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019802/component_event.pt",
+      "bytes": 789485,
+      "sha256": "b194ceae6591410de26665492ed6e0661e3b5a6a18e8cc305cd5fd5e2f6302e8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019802/metadata.json",
+      "bytes": 3101,
+      "sha256": "271b0b8c488e46f929dafb5a01a3cabcaef868789357295ac929d1009e9b9c93"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019802/model_output.pt",
+      "bytes": 99917,
+      "sha256": "7467b33d73d972b4cf8a2e239a55d7ca0ba4031e3605a16cea4fc78a29dd13a2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019803/arrays.npz",
+      "bytes": 4729574,
+      "sha256": "4b019e57a762c5a7dfcd1d6e04f68b5eba098531c0ffa7e42ff47d711741409b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019803/component_event.pt",
+      "bytes": 789485,
+      "sha256": "c47c09d37c00c3266599e12705706eff17e67eb07cdd3f8eb4df0d820d025b50"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019803/metadata.json",
+      "bytes": 3102,
+      "sha256": "261cbc9e55f7d738f40fbe91e5c6bcb1e84e72140f7db71c1b3d1c1d2cda3945"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/random_layer03_mlp_seed21019803/model_output.pt",
+      "bytes": 99917,
+      "sha256": "dd7297417601f9749fa25b6adfa33a4f7b2e12d05daf5db6bcbd70f5db6bee02"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/reverse_RR_layer03_mlp/arrays.npz",
+      "bytes": 4729443,
+      "sha256": "8597ff81d0680c703a1661a5dde67316bd153314f11ab995f7c0293e28a3b2b6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/reverse_RR_layer03_mlp/component_event.pt",
+      "bytes": 789485,
+      "sha256": "6452d12ba5800fa4e2b118698e8164347c8ea80fdd99273996019dd4abb3513f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/reverse_RR_layer03_mlp/metadata.json",
+      "bytes": 3091,
+      "sha256": "d110ec5c28f5a47453c0b672fc052be8b21120c31ef503fdc1abde1be4f9891c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/followups/reverse_RR_layer03_mlp/model_output.pt",
+      "bytes": 99917,
+      "sha256": "40a3eabd1ae6f63c04bc3a13b20b7df0533747ec91c063dfc705c3c251b163bf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/input-contract.json",
+      "bytes": 2094,
+      "sha256": "33688f92ea35c2387d235537716eb0f340e21d24db9926ed35b070dcae02d254"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/progress.json",
+      "bytes": 88,
+      "sha256": "0c7b791743de2e780921823498e562cf248fa200b94f32ac6e2a742b844f74ab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/provenance.json",
+      "bytes": 2490,
+      "sha256": "f342e6af8d28103264189499922cc86e297babdc6a40da8e274b4d4639054374"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/results.json",
+      "bytes": 367241,
+      "sha256": "59d8f7d69431f5fa91f58da2b8f8fb5b0d8d00f653bc95087b723d6f7c4c912c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer00_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "80e4938ef9e17cc6e32419b0168d9bfcc35cc463956b2f3a163b77fbb40725ba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer00_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "8833fc3645a15597abad91ecbc45a3b46d1d708531270b447da00f08fc4bfae4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer01_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "aeadc77205c1bbb51c425bde390cd7aec625ab5d97c9e34e6d9de7aabc66a8cb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer01_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "25dcc1cdfb34d549e992b2ba141271e33c932011c95c741e9ad75408bd84b229"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer02_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "7ec5bda90c17fb1f85a56b71712b5c6cb11d1aa9d48007c6b09160ca82aa3d43"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer02_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "caa09e8b7b0675db7b9a51e0d92b97d3241373a8686d43ca6142e1bf9f99d9b0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer03_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "80783c24bbf410bdf55e175942448de08ed218a53ade27d71d54fc6e39ac27be"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer03_mlp/arrays.npz",
+      "bytes": 4729326,
+      "sha256": "dec816766fdbfe7d5c67c719d77dcdcb27be42aaba0d2e1fbb14af75716f534b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer03_mlp/component_event.pt",
+      "bytes": 789485,
+      "sha256": "9398e33eea116ef0752971aa01194b593f712548182e62fee4c22e0201930f09"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer03_mlp/metadata.json",
+      "bytes": 3080,
+      "sha256": "9b55d8ada6290b35947e17fd90001036154e021bae1cbf01ba4574a53e247af0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer03_mlp/model_output.pt",
+      "bytes": 99917,
+      "sha256": "7e0998a13d8333e3181a07b10325497fcba068cfa0adac4d6e243aa5c6a41b15"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer04_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "6c303421e82acc1e5aad19b7dcb4b80456bd50ab0803d1cb05f1581354fcf506"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer04_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "aa91c8b70347984656b0449a3693296cfd2377bbb1c7eb99e8fc2c57960bb242"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer05_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "cfd77f750714f44714688cc51000770c46a63794d57ee2e3476c04ce6ef42fe4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer05_mlp/metadata.json",
+      "bytes": 3081,
+      "sha256": "446f17bc12b55ecc8aec123ab50635bab7010e6b5bc8070e62659ffb01344a2a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer06_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "79954098dd478d829b800c2bc420e779f133213023ba488e66e4df6e4336bcf9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer06_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "e3102db2adcc4afce4ab7b98bf555a4cb9e5d23653b35a23b033ba5c3cc78e11"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer07_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "5cfcfaa68ca92019eaf0e486252a5e79b6fe5885cea38d225728339c26bc2870"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer07_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "4e8d5b3d330228383afa3bd5e24241de348e40bf455cf721c7a073b8e5422cb5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer08_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "2307fc92e8d36496b6889f5e0eadbaa947395263fe6dab015201a5141f198a32"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer08_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "d84fc79876c6aacf05ac3346bf0fdfedf97b251efd829aa48bab4c4d93c6f434"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer09_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "116f0adf57e0878467555be33613230f674c7d69a569d668ea6480280e13de7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer09_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "683426155e8c9d66d72115bfeb344d6d8fcc621d34ad93ba08757e6dcf9407b5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer10_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "8adbfdb4bb4339aa769a514ebb38083f99dc380af0d85d90bc2681bcd05837a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer10_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "79f3a51c3b07be738cf72ba8b5825a173a088cf78f416324e4ab27acc2275a35"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer11_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "0e08db38fd39e88024405da06ff0310ca60bc862cc0197bbdce720453948412f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer11_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "393ad5aa7446e4b561359c223584144aa46b5fd193b76c5231eab951e44b7c89"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer12_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "9a73fa586a6ea31924b6b53f77a450d1cccbed8744f64d0d2ce5db0bf4126004"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer12_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "04e676fc9312fb258aca4f298543291b0a6b1521789a0bd101c57c3677609b31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer13_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "ea20f4c60980a56fa2840f86073f724fa99b65e4e2e94c7e26b2a71a176feabf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer13_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "30860c033502dd854b79d18fed8162f030f721e12fe5027d292ac4bb29f33a72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer14_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "fd670db78d53a92e785be90e730ea1219ef14d1218a5d49135473eba0b6a61a6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer14_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "fa4806b2b0af2e9e874b39d65d5c837e4285827139186899864f5a5b45eb9593"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer15_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "c3ece80619fa07fbbd0a493a90125a88510626eabb49aabad85c4536eb996265"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer15_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "e08c853e15001a1129a6ba8a38c989774a2739733bc6549de049b3a22c0c9404"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer16_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "e10453840ad68538245639c46675e232ca7650f2979ed10261257fcaf4d49a61"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer16_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "761f9c50a24832eb09ae1cc42388160c8c5e75a9813b6ee8de20115eed402030"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer17_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "982f8668b2a6e04562b71881fabaa7ebaf99caa14744c2035a750469f6c5a445"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer17_mlp/metadata.json",
+      "bytes": 3081,
+      "sha256": "e8efd02062e1edfebbdb319eddd353bd3428a8f2c64c9f9bd3d4a5dfd9bfb76d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer18_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "0c0dc8eca2290b0b111c25a62098f54b03cf98af79bad97e0327082fe614fb45"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer18_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "aa3a8d9ae28a2d973bea6232569406f330abda6d631b353a95b9d678ca1860e4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer19_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "a2fca11a0739d59bb185943e2634cba03314e309fa2e9dc4d41ec371ae31efb5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer19_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "f789d821844ac41f75a8feb1223951519949756417a492f64d73784659d3e066"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer20_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "5282958fb2464f88dc8289517c11d47d505ea46ab731d7e3a61c0d1d33b414dd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer20_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "71e4a8d076c802451b47e091c670e7226e7b7b3e64e72619c2b75f94c919ad7a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer21_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "7b666f977ea2a89e9be41d6f293b1a95cdf52668383da40aa55da4a0560bc6aa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer21_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "ad305a568ddf2f724946ebae8676865a07ff09c1ade0e52e284b760454babd01"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer22_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "6ddb4fa941200b782b501ab9a743abe2eca8ab06247f4528c04864912e7257a5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer22_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "357a914305597f5acd464df407d15b641677a956653a4bf8d95242f0c024e6ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer23_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "a69d92c66ac36be6f9348e8f29517c8ff39fa0a21939719549b50616c8efd6d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer23_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "a764119eb5f535f46b4a015acc13e2b947c89e71704c7310ac9ab5bf9d51b93b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer24_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "ec73355869d88d3a02d8f759e9dac49842974063494800ad093353c72b917876"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer24_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "5597c17eaa1c76cc3e6edb8dcc14c7c204b0b0491de68034da7f8b0a0fe31e46"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer25_attention/metadata.json",
+      "bytes": 3094,
+      "sha256": "af641729fd71914fe4d3c28eee72dc0e50870966fc6959dbf8280ea746953dc4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer25_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "65f32b54eee3f4eabe283f4354937e8656b5698cc385fb3f073c3029bb7f0e3e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer26_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "44e87241691faa65a392948dbb6bece547eae2adebdaf3fe795de6733ea8fddb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer26_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "c3c96a62d5b56b275d479928eb181a58bde097a5bb7f09fa02dd96846f5931fa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer27_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "aadf14d3e90d4376b80959208fac1a5a6d767aa8513fb30c0bff05f691a33ade"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer27_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "07ec8850fcf3559f0db585a3a894d97f856f5eb0effabef295cb234817452d57"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer28_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "39b23ca1cd7f116da1eb05b263c67cf0693b7055c6af7018e7d74f16aea8bd0a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer28_mlp/metadata.json",
+      "bytes": 3083,
+      "sha256": "b88e326205292519bff1bbe28019c279ad84d23b67f98f9c2f4c62a285078497"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer29_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "6458a97b6ae96a9ad0a238c8d1a6e3c8a99bade915a21c1f56d5ae97d6e071fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer29_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "5910c98ab973f2e56c5083b061ad89f50b3371417070280930d2713d40653c14"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer30_attention/metadata.json",
+      "bytes": 3091,
+      "sha256": "82cb2f7c2038f17ce2efe22b958bf8313b3394950322212df0f8d5f7f79ad127"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer30_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "a3a7b1c119a725ad385db444069c8353c3dc8a5ea8418755b3c32d3eecffe4e9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer31_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "540c3d72297c4fe64a9e3c7ebfc97078951f0046167c65fd3a575a940795fa94"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer31_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "67f848fb0f7b72ac03c25dcd32fdb97f12fc374c0f20a0837457928de9607679"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer32_attention/metadata.json",
+      "bytes": 3092,
+      "sha256": "2ae4c5db8756693bd6c237c3452101cfbea249c75569c7c8cbb49ddbd3e1d362"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer32_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "53253168aded19edc24a64bb476d2eb8de240fc7d1e919b5d0528dde4a72934e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer33_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "f1a9c2908d53ef1189d525f6c195ca0aaf3d7b91f6bcc332c49dbcf3a2441fa1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer33_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "90c00c07ee699faf7c67907c871622eacee97e93c851e3e9cf8a9410cfa898f0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer34_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "b70f7a274f7ae82847eeca7cdc8bba2a2bcf66fee56432bb5826175b94c3d5ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer34_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "b602843240a108d2a4b9d3f528d6b064029f14c28de56fe7f1b28adc65ad3ada"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer35_attention/metadata.json",
+      "bytes": 3093,
+      "sha256": "85cfbd563f5cefe7199ab0c5f81723770711289442cfb711a8d584c614d87cba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/action-correction-sites/runs/layer35_mlp/metadata.json",
+      "bytes": 3082,
+      "sha256": "fbc834d20a5bad8cfcdd005cd42e052031d2f8b4ea72fdcff20bdbc12bf3763e"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/attention-heads/actual_head_captures.pt",
@@ -24332,6 +24912,11 @@
       "sha256": "7a85c0e19995690274bc594d8ed6b12bd1e0c9bd8bfd190353ba300084bf40b8"
     },
     {
+      "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_action_correction_sites.py",
+      "bytes": 24821,
+      "sha256": "ee243dc9a93b43a5027402606698cc0334ef0fe4e7701dfbe94c2ed56f328166"
+    },
+    {
       "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_attention_heads.py",
       "bytes": 13456,
       "sha256": "e2266eb71dbfa623f4e9135daeeeb6e3a01b1ecff64717179bca71505cb9bf5e"
@@ -24345,6 +24930,11 @@
       "path": "experiments/16-milk-shift-mechanism/code/plot_cosmos_milk_feedback_inputs.py",
       "bytes": 15502,
       "sha256": "4cf8069f2b1e8ee97c36b476bb64e0f01ad3e7c852d0491870224e4a7adc6ad6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_action_correction_sites.py",
+      "bytes": 36675,
+      "sha256": "b2a473627f6ac043bd390f95012a9f490bddccee073e81fb7ea217894bf968c0"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/code/probe_cosmos_milk_attention_heads.py",
@@ -24370,6 +24960,11 @@
       "path": "experiments/16-milk-shift-mechanism/code/rollout_cosmos_milk_shift_mechanism.py",
       "bytes": 27748,
       "sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/code/run_cosmos_milk_position_threshold.py",
+      "bytes": 12696,
+      "sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/code/serve_cosmos_milk_pulse_candidates.py",
@@ -25170,6 +25765,2066 @@
       "path": "experiments/16-milk-shift-mechanism/inputs/x15/state.npy",
       "bytes": 1008,
       "sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/complete.json",
+      "bytes": 354,
+      "sha256": "abfaea32659cd6c5b0052448ce7df36609f270674043363729b33db74683f496"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/provenance.json",
+      "bytes": 1111,
+      "sha256": "dc4eb4a7b0e465cf6c0db3da73fa11ecddbdaac2a4aebfc037292187b846d329"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/status.json",
+      "bytes": 304,
+      "sha256": "397b07d1b76769c2a320314d65c0cfecabb7f6408f7872d2d6b7e7493f82b620"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/summary.json",
+      "bytes": 331995,
+      "sha256": "293d967ccdb60686bc7c58a73485d9a081d0089471f021fc76ba04480fe82914"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/actions.json",
+      "bytes": 22662,
+      "sha256": "4a8165a8846742dcbcab8686d713f52643016455d9600f394063f12ed04365af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/actual.mp4",
+      "bytes": 230503,
+      "sha256": "922c99a4f75d6b2f8b6c576736952d84e936f3419e716c1556b079f8c7186551"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_00/metadata.json",
+      "bytes": 1438,
+      "sha256": "ed2ca7841cbd6b5b284ea251e46f4285e40b45c8b0e9d1ffc92f65d06fedd298"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_00/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "87241a02d0208cc9fb183d8a2179ee576b7feac70ad8f1787307ca03460a9611"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "8eceb109484c5dfe57e1e28430bb5c7654ea16ac7891739bd5ab496e670db73b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_01/metadata.json",
+      "bytes": 1439,
+      "sha256": "b08ed6a6118310868cb6ea26ca07ce731b27522837084ebfb7fb471bf650a60e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_01/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "fd2ce5bc869d9d8b7c0472ef17a757ae297460e9f316a4c24c350ae55aa17e5f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_02/metadata.json",
+      "bytes": 1439,
+      "sha256": "1011158899f153526a648fa46d53e708fd7eacba8550facb2b57ada91fe824fb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_02/normalized_actions.json",
+      "bytes": 4137,
+      "sha256": "5a235189ffb8c66d3029c6cb84caf1a42868c689f6cdd95c2b258d10e4e1cdee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_03/metadata.json",
+      "bytes": 1438,
+      "sha256": "c502ea3280ecad9cf4ef7a7650760d119d9a17eff49ecd148b02b508b907e066"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_03/normalized_actions.json",
+      "bytes": 4120,
+      "sha256": "9f3c831e8d7a0e65beac39e7883afb453a80cf4b6c237a87169fb678016576ac"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_04/metadata.json",
+      "bytes": 1438,
+      "sha256": "987315a70767f7c9bde278ba0574711dc4256b4fed3b3c8c0747d5e482af83f2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_04/normalized_actions.json",
+      "bytes": 4051,
+      "sha256": "b1c88cb2fa5e12837ce5f5d7795d1ecb0a36234a058fe0190b2089b1af10852e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_05/metadata.json",
+      "bytes": 1439,
+      "sha256": "fef0692e3b5727e83fd385e4ecc374861748eed3822e25ba26e44a36149defaf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_05/normalized_actions.json",
+      "bytes": 4099,
+      "sha256": "35ee85c85c491cb3e152c7f6d25900292ecb20fb787c63fb44e2c6a683d1882b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "4816f2ba98510e0b95bb5445af65057fe1fe5db4a70e9f5e519afd15d6fa91ca"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_06/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "63741c5dd2bd791cf93501315f2fddfcd8dc4d7bb496ffda5e94b1f84a448002"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_07/metadata.json",
+      "bytes": 1439,
+      "sha256": "50ad830c130bbc0928de5144111293941538822ea261a1ca5719db78b0ea3552"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/chunk_07/normalized_actions.json",
+      "bytes": 4094,
+      "sha256": "caddcaaf52623fb59a84b6d0c48b1b0a202aa96255289a0a9ff533d9d81b6fa5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/denormalized_actions.json",
+      "bytes": 33580,
+      "sha256": "0845347642163d05556805e12755b8a79859d3c0a83a1601eed09d25f0fd40ca"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/executed_actions.json",
+      "bytes": 22662,
+      "sha256": "4a8165a8846742dcbcab8686d713f52643016455d9600f394063f12ed04365af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_00.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_01.png",
+      "bytes": 144846,
+      "sha256": "b5836c801aed0877c672b29b8d79677a7c247053c239d926cc0fbc89f64ef83f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_02.png",
+      "bytes": 141674,
+      "sha256": "c289c01e60c6d9a5391443984789c3f0025d18447540bce748a929d76cb3299a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_03.png",
+      "bytes": 134546,
+      "sha256": "4bae4bc3862e0fd7162c361dad7271db8aa031c1a8e844140c47b4e0fa126fe2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_04.png",
+      "bytes": 147872,
+      "sha256": "5f910a3830f2b18d9b0cedce4b93ca458c26a5a9b3bcfe17dc0c71df89723b7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_05.png",
+      "bytes": 149254,
+      "sha256": "e77ba1ece520cb49e1b77de2e0be2837f8ddc146c33e6d216ff16aa777f91b1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_06.png",
+      "bytes": 153110,
+      "sha256": "9b23473dea3580fba0016c9fe525782ecc2df8c6d0867ee200d0655ec2bfa30c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/input_07.png",
+      "bytes": 149561,
+      "sha256": "a3facabe13e8b5c6fef8ce7a772da7eb5fd7a4805dcb0e3deea65171eaeb3cb9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/normalized_actions.json",
+      "bytes": 32807,
+      "sha256": "4e9d2968ef1f72a4dba4c120b66633c09d038854490acade319feaa59cdfd9bc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/query_contract.json",
+      "bytes": 15895,
+      "sha256": "9eaeaeefa795a9701b23a5c975b0ed43fd7713e2e5810c0acc53201eab834235"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "49b705caafac82c1de9040c46327f74b9a641302f9de02f7d2f05bec3618265b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/summary.json",
+      "bytes": 31970,
+      "sha256": "ab7efc9f31d9fc0b5144e3ecd2eda91bbf30dac59cca27f441284bd89a3cc23e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed195/trajectory.json",
+      "bytes": 3612535,
+      "sha256": "b23ff856c7af794777b4532f19c8e707e8cfdce6f2d695f6f2cdb9972c0ff6f0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/actions.json",
+      "bytes": 22995,
+      "sha256": "6a4bd4aed280b849c3082a5bb79f228634bb178fcfffe422d5c75d38c80730af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/actual.mp4",
+      "bytes": 231525,
+      "sha256": "df6b4f2a7d51771663102293c3eca4d6b59056b64bee0ca96b13f2be52d6375c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_00/metadata.json",
+      "bytes": 1438,
+      "sha256": "187c28fd7a513bdc0b8d763f6d8126a3d6a33c87ceb367786dd56e25b546b23d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_00/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "221281d7ebd3ed1a5e85971caafd40d436ac1a9696cde5325a3eb9d6c07bd0cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "36ceed538715aac00cfc9870544decfabba6e73aeea869639540a9e1a51246ed"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_01/metadata.json",
+      "bytes": 1438,
+      "sha256": "b1d23103ee3bef1c6bc002814d50c3c669509876a3c11e0ddfd1c255eee3163d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_01/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "68c2ab7af08a26ec7ab443ef70b7f740df3451622037f2831a05def5dd2bdfd7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_02/metadata.json",
+      "bytes": 1438,
+      "sha256": "3b750c17bd1f6947e6546149615e4affea4dce8567cebf72ccf5a73d975526b4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_02/normalized_actions.json",
+      "bytes": 4116,
+      "sha256": "f2ba2298fc1ed43a5fd05a8222d570cd0a1933fdd9facc1b0bd1a4df74cd8caf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_03/metadata.json",
+      "bytes": 1439,
+      "sha256": "6baeea738726becb456abaf6a5b70910055be96ed21d16d7bf510e86b717d2d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_03/normalized_actions.json",
+      "bytes": 4125,
+      "sha256": "9f8eef2122a1ef4316963463679f06a2c4b2da68024075050f3b4e4dcd5672a7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_04/metadata.json",
+      "bytes": 1439,
+      "sha256": "8c27fcbe2c5d4f3a491ea7621787f3ee78cfd97c8d4333a88e78a70d55a08758"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_04/normalized_actions.json",
+      "bytes": 4086,
+      "sha256": "1e251b42cd4eddccd65495a2adaf3d1517c27eeecd6216e7ec0bd2e9603eac1d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_05/metadata.json",
+      "bytes": 1439,
+      "sha256": "816d95353a763e0da7d1cd90db6a61ee60045e0b3e97907444791fe1e36cc826"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_05/normalized_actions.json",
+      "bytes": 4084,
+      "sha256": "dbac082e9df04549a99eff22aad21dfc01e5ed820bb5f7fb359004d7f2ff1404"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "daa86d33897fd931362f89e67e36720f7d4b1fee480b02acb3902c5ca18cec43"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_06/normalized_actions.json",
+      "bytes": 4098,
+      "sha256": "2dfd81695ec8473f8ba7fce589f5d2e5a16a3d1193aa7cfbc730212a56bfa63b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_07/metadata.json",
+      "bytes": 1438,
+      "sha256": "550f067f573f88dbafd495629dc649a6ffe25c93414dd96ba73dfeced6375187"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/chunk_07/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "8ee43d2d0cd936df730e37af59421496c8249993858d45a13ef11bb48e3dd1d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/denormalized_actions.json",
+      "bytes": 33515,
+      "sha256": "5865171df398ffa3b81e66ea51814225fd6edec628cfb7e0619333ce62c028a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/executed_actions.json",
+      "bytes": 22995,
+      "sha256": "6a4bd4aed280b849c3082a5bb79f228634bb178fcfffe422d5c75d38c80730af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_00.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_01.png",
+      "bytes": 144949,
+      "sha256": "43bf6c688a7826232d801f36e4410baff5d0ebb2ecc7577bcc912bacfaad23a7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_02.png",
+      "bytes": 143050,
+      "sha256": "a6dc1a73afabcf33ab3255f025c9c92d4f94ecb52f8bb29d6e8355d42ff90d34"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_03.png",
+      "bytes": 135335,
+      "sha256": "d4f0d13c5de2808fc4dd78e2a344a6ff2fc446cbb6ad63bd2baa06a86d8595b9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_04.png",
+      "bytes": 147735,
+      "sha256": "e088d21b90e95d2c0ae4b66ee0c453e6f4c338dd0148d54d00168407036bff11"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_05.png",
+      "bytes": 150966,
+      "sha256": "cf5978a20b98cf451f9742a5c0bb9e7e5df57c0a7a520968f723ce6e4099a6d1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_06.png",
+      "bytes": 155147,
+      "sha256": "3701a44d025035349f8a3b3051641f7afef396a7dfb9737c939d92083f64bea3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/input_07.png",
+      "bytes": 150890,
+      "sha256": "c6163493cf05b3356b1c0923cbf402ea6df297d7fc4c51a0f7895832cece964f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/normalized_actions.json",
+      "bytes": 32837,
+      "sha256": "2f7c9c80c7d27e015bd07f32fad619bd2cfd8c2dea7eed3cdaa26275454ab3f5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/query_contract.json",
+      "bytes": 15894,
+      "sha256": "6b36e306f15ae677ebc9674357424e1c6ec39b3b7b308045ca14ffd9d9b49fb1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "7ca438923dc7812ff8763dae91974d9257349b453d76c1ee0a1355854448a74c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/summary.json",
+      "bytes": 31164,
+      "sha256": "d7096d9db280455337505fc4139401ab9c7e6baf2476fb59ae843e8cf140c1bf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed196/trajectory.json",
+      "bytes": 3601746,
+      "sha256": "3c58a0928f1eeae3c410f093fafc0315d24444cab8c018ac8aadda381bd4e949"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/actions.json",
+      "bytes": 23352,
+      "sha256": "85ee6dc7d6dc475ed1e3b1fd477fe336f22ed803d4c20033f658c0fbe3e89cd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/actual.mp4",
+      "bytes": 228534,
+      "sha256": "155fe7325964c29882fbb036adf6a45a3187fd7cc05922db3e4d53f94b4c3536"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_00/metadata.json",
+      "bytes": 1438,
+      "sha256": "3cdd8285125dbecd18e63ab67ea3d1300206753f15a5970dfcc39b8158f33f80"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_00/normalized_actions.json",
+      "bytes": 4118,
+      "sha256": "4ce51362bb6fa44a069a054cdbc2b2c8a6db790eafdcf968f525126428d6a06c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "3211d232b9fc57cb271c36640ecf5673dbcff8c4c7432f78654d6a545c0cb140"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_01/metadata.json",
+      "bytes": 1439,
+      "sha256": "112dce42113f0777bfd9c97e31b0a2cc7c47a2ac2223b991eb0f2494e094dbd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_01/normalized_actions.json",
+      "bytes": 4104,
+      "sha256": "d8af1ed0613ba808d76f9b66576ebe55bba89e2f5af3ee3ef95cad7777b0c4d7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_02/metadata.json",
+      "bytes": 1432,
+      "sha256": "a57da1248b27f3d8aa2dec9333471b8896a9fea87ff0980c5bc04c8789a64a47"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_02/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "99af04640b1160d6a9d34d02e71d146ff42351fc4c5c6bf72a84e228534650eb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_03/metadata.json",
+      "bytes": 1439,
+      "sha256": "d32aaf149d5479885022c7ae7afea0389fa7ca28737e5d1b61acaa5d337e1527"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_03/normalized_actions.json",
+      "bytes": 4138,
+      "sha256": "013cd8effaadee6145af1aa8e4dfb72dc1dfe23f0466ab4afba2b192df9a687f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_04/metadata.json",
+      "bytes": 1438,
+      "sha256": "ddce6d650d831ab9644b059dd9dc06ecae4767a08fdd23e50f55f5395b97bd17"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_04/normalized_actions.json",
+      "bytes": 4086,
+      "sha256": "42828124f4f04f5a52af20e531eba5a8a9d4664df54325e577b67dd976575573"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_05/metadata.json",
+      "bytes": 1438,
+      "sha256": "8bf69a2cafa5d517ce673bebdea90f1fe48f95fe78570e1b1ed0d8aa901b6a17"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_05/normalized_actions.json",
+      "bytes": 4076,
+      "sha256": "e7d1e05ed9851ca67ca3b511164fb88313c3bada9e78b06a9d8a33327e0f2a02"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_06/metadata.json",
+      "bytes": 1439,
+      "sha256": "e1c0eb38cd32f159a212e42e774c0027b98817a57e8c3d6220bcb0d7b26653fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_06/normalized_actions.json",
+      "bytes": 4112,
+      "sha256": "688a1ba13753f88aabccb6d702e5fc4fbc71b0681a9610850794affc6344fb28"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_07/metadata.json",
+      "bytes": 1439,
+      "sha256": "31e4c49727489216acb6673467474237cfb5d8259c9cd0fadb39c68fe1112386"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/chunk_07/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "4ef65f01d3c339d3b5def94d35f0c703d7244c727897231918f1f839b956bcf7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/denormalized_actions.json",
+      "bytes": 33474,
+      "sha256": "a947f303a84e1e9e44823c43e2918a49d6409cd7bb00d1a9c9b107ba25f33404"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/executed_actions.json",
+      "bytes": 23352,
+      "sha256": "85ee6dc7d6dc475ed1e3b1fd477fe336f22ed803d4c20033f658c0fbe3e89cd3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_00.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_01.png",
+      "bytes": 144065,
+      "sha256": "baca6fd2b03b728913cadd857b98d2582fd86815a5c43c3d0b56d5bd0efc1c6a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_02.png",
+      "bytes": 145616,
+      "sha256": "1001143270dfeca8c970149c4c2ee2a627e576ca683691df4e5a011f77fd1c7e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_03.png",
+      "bytes": 136579,
+      "sha256": "8b7dbeb5558f250252e309dcba6de5c1a1471911efb6f26b4d132d05f62ab104"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_04.png",
+      "bytes": 143847,
+      "sha256": "714123e9f95cb5734f0d6fce0f57844dbe2278b7f01f0aa643c7a8f3606f8233"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_05.png",
+      "bytes": 150496,
+      "sha256": "53a2b83daf5c7546f844195bdabc164b098c82d3e7748103f146132357d08de7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_06.png",
+      "bytes": 154052,
+      "sha256": "a2ba512096d526bfc56030b28678d47af7fc6cba757f2cb96471f92f0e576402"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/input_07.png",
+      "bytes": 150644,
+      "sha256": "0c6f322c32fce8b78e69f8a60cb77827d0b8a377a12ac0632e4a769f69c69a77"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/normalized_actions.json",
+      "bytes": 32827,
+      "sha256": "d6fa23bd94e78c81dff97ecf2b29218077c5a01a41475693bf6ebb52289072db"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/query_contract.json",
+      "bytes": 15889,
+      "sha256": "4bfd79c079f525329637ebabd617beb77625df4cd9749c900321229048f005c0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "893530cfd75215ebe8a1ad000923504c8434e794c78b22e469c6082ea7229009"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/summary.json",
+      "bytes": 31903,
+      "sha256": "bcb1c0677491e7e0660d2a20403669a98e38e267cfcbf0debfe7375425246c05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x00_seed198/trajectory.json",
+      "bytes": 3640422,
+      "sha256": "a86309ee1d7d3b750170f31c2d7f3d3cffad2fb90d116bc7e58bf2137cdd3013"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/actions.json",
+      "bytes": 23095,
+      "sha256": "a05fa8cdb130aae780b7e8f1477cf428e2b22479a41b99478cc2f2937daff50a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/actual.mp4",
+      "bytes": 220573,
+      "sha256": "8b26b5ae7336d767b9c9770e7af6337cac66aac85edeeb7ffd837d968fea52ef"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_00/metadata.json",
+      "bytes": 1437,
+      "sha256": "ca9bfe327b2b7c25d57e510c20a0c950032bf77825109fdd449359a847a2076d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_00/normalized_actions.json",
+      "bytes": 4117,
+      "sha256": "70d87cc1e33eada01d7d364ae5dd416bf285d1d6c58e6e11e72e6b17f26f2e7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "fcb2bc5d670e5dabaa296430aa8d8d23a19ce254b4a1e1617b9ae95f6f1dc4c4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_01/metadata.json",
+      "bytes": 1437,
+      "sha256": "61924fe8898e9bc103f249c925498a701a08a2a8733b651c0ced4cde9643f2a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_01/normalized_actions.json",
+      "bytes": 4091,
+      "sha256": "c42a7e910838edb3a2b84281452ce237eeb5854a6b0e607c1b25448df1d2f70e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_02/metadata.json",
+      "bytes": 1438,
+      "sha256": "d77b30b4025eb56ebb72326fa65c728334c2c11d4919a631df78867992cfdaed"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_02/normalized_actions.json",
+      "bytes": 4124,
+      "sha256": "e8f792bacc36b83acfba4115df50f4e844aeb5e9e70797ce0c8d3bef9483a346"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_03/metadata.json",
+      "bytes": 1437,
+      "sha256": "85e4d0dd3b907d1083a5f243548e548b2904c3d4d86d75260c5ae5cd0713e7ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_03/normalized_actions.json",
+      "bytes": 4130,
+      "sha256": "470cfb745b4a8a7450e2bf1092ae0d55e5c90508eb1b513f00f310cd6840d998"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_04/metadata.json",
+      "bytes": 1437,
+      "sha256": "d7847009590d1c7cfceabebaa444a7ea4dcd6a2b6a64853de78c4b0cc1a11619"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_04/normalized_actions.json",
+      "bytes": 4099,
+      "sha256": "4f203621f6c21cb796835360ca3d8bc7acf7a4725db928c6f6dd5a18070aee01"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_05/metadata.json",
+      "bytes": 1437,
+      "sha256": "76f15d754acb86ad587b27d22f380440267863c6a5bf785653f2191be3df8428"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_05/normalized_actions.json",
+      "bytes": 4102,
+      "sha256": "f2608a0351a8baa64234379d21d73043c887750261381ea463bb82a680a382fe"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "a33e4f49620879a55f46e16108b53d055d38612990d3571329913a3f7610d115"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_06/normalized_actions.json",
+      "bytes": 4114,
+      "sha256": "139a0ec285706d4f7827ef1fcdbaf36efaefaa9fd63f6625b008b5d9dae66f8a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_07/metadata.json",
+      "bytes": 1437,
+      "sha256": "a108ff636ea0718854f2e476cdce20dc16f6e6a947369d22fe1da7d01775c455"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/chunk_07/normalized_actions.json",
+      "bytes": 4090,
+      "sha256": "14602423a7830156925e2d316eecf21fdfa9b6c07afd296dd765e4236b027928"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/denormalized_actions.json",
+      "bytes": 33629,
+      "sha256": "a8d00c26d68db7917ca31df04c1a578f983b66d3570daa5aa805936b278afed5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/executed_actions.json",
+      "bytes": 23095,
+      "sha256": "a05fa8cdb130aae780b7e8f1477cf428e2b22479a41b99478cc2f2937daff50a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "f7ee49d1615790047cf32f5077919662babb93caf424fc867a2f25ca6fefb7f8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/initial_contact_checks.json",
+      "bytes": 9978,
+      "sha256": "29f93374a7050a0c8691aedc306795029323f6e8eec183e2b13b5c09476bd027"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_00.png",
+      "bytes": 145564,
+      "sha256": "0aa7de073ad29f7cd065a3e69e176dc1627b683a7084ab05db33874235d97b7a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_01.png",
+      "bytes": 142136,
+      "sha256": "92f9d405fbc4dedabb54c168e101fc4ff8b0972fcde10b3bc1198cf507a08886"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_02.png",
+      "bytes": 143443,
+      "sha256": "6c070d81627044bc120ca8218087525a83c38b1660e8f697264dc56818ddfe8f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_03.png",
+      "bytes": 135778,
+      "sha256": "3146e47e241fe0a9624c0eeebcf762f8cf8b5c180533682b932bf55be95e9ecb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_04.png",
+      "bytes": 139634,
+      "sha256": "559eaf2df4f1bb7883a297ac918667557c18b5305e54b399f6d15a941a22df8d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_05.png",
+      "bytes": 143773,
+      "sha256": "1fd1d605846f545eea0f4cca6282daee4f9ba8d203309f8c24057ea1c946b347"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_06.png",
+      "bytes": 147213,
+      "sha256": "e400e5cc8521642f708c9c6b8d957987e3711bf864d0692f92f9e2d83a7b6ae6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/input_07.png",
+      "bytes": 146681,
+      "sha256": "51428bdbbe9bbaddc132b1e4a7a8a8af6244bddbe1ab4f5ad95c484973c7b418"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/normalized_actions.json",
+      "bytes": 32846,
+      "sha256": "4f233f7115da7279893b0253d6d71eeca0ef798af6f9bc53111b15647688334b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/query_contract.json",
+      "bytes": 15877,
+      "sha256": "e6fbea71aed592d2d813a3b741b364552badd55654506487e494d082c2d3fb86"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "3c5230af607351bb512115070bc1e5ebe739b58ca064942b2a8b37d8c8069678"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/summary.json",
+      "bytes": 31907,
+      "sha256": "51a55ca3d92e148f181bbb35c29e2f2ef36ba940d10ddf816c001d28aefdc1e3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed195/trajectory.json",
+      "bytes": 3681817,
+      "sha256": "d0a39b5d031e13373477ac106ef657ba3de653d9bb2c87169bb142cc0db6ba28"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/actions.json",
+      "bytes": 23106,
+      "sha256": "b96d7b239df4816d835b49041bfb7b8af8b292cf37d79dc1dfbf1b24cb34d452"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/actual.mp4",
+      "bytes": 227844,
+      "sha256": "2567c4979d84f429d671d107fd70f15a93b9471c004d59234b3c9592d26d547e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_00/metadata.json",
+      "bytes": 1437,
+      "sha256": "5c248f6a2e788af5c9b39ad705535d8aa32c77af6af198c7c22b132f027d571d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_00/normalized_actions.json",
+      "bytes": 4118,
+      "sha256": "526e7b933e6b812004fd6dae903a9668e5c32455d8013509e8cac32eb7f268b8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "a8b288c88f73c40e3944cfec3be0c24fea915fe42cd8f0cf395d2188a450bb9b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_01/metadata.json",
+      "bytes": 1437,
+      "sha256": "8d1621be03b7711752d1002f7d05709fb6d65e51e86b1d21f5e5494b15793f3d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_01/normalized_actions.json",
+      "bytes": 4113,
+      "sha256": "06ae57aa47708aed11759827dece9de55a47d8285c51de82d4b777ff292b3830"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_02/metadata.json",
+      "bytes": 1438,
+      "sha256": "3bffd5b724fd5abea886bc4bf1070ae42d2b2d2c3f4a558c90bfc60ac393eec9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_02/normalized_actions.json",
+      "bytes": 4118,
+      "sha256": "c6e10b8f9b0c9fb02667713ec30b9bbf2535fda623a96d59311b660209b61b05"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_03/metadata.json",
+      "bytes": 1438,
+      "sha256": "26381ec38b16d14074d6b62cf29583ef2684cb5d90bf762096b27bb0befa3f23"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_03/normalized_actions.json",
+      "bytes": 4124,
+      "sha256": "ab9daddda7fa897c03b6ad7ec94f02832a9d29b9b1af1d12c53d8e2f22b3d6e6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_04/metadata.json",
+      "bytes": 1437,
+      "sha256": "d9434ed79f08bba8a87b78a60bfa430b23bb7a6fa353153dc4646919c47e8d5f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_04/normalized_actions.json",
+      "bytes": 4084,
+      "sha256": "63a5039b494b7c6593b2505c6dc24ba7e01540a4f158813f6b93105d6fee1500"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_05/metadata.json",
+      "bytes": 1438,
+      "sha256": "e0028008f665149ab1e6ef0a88fb3538df189c1d8435ac2265048b2cae2970f8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_05/normalized_actions.json",
+      "bytes": 4101,
+      "sha256": "bd2b29a2b093f256b72a92c012334dbb0f5cfd2cefc5a9e04d97f423cd81b825"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "7ae397f17c431c61eadc7e8b062c0dfcbea2698f703ca8e8654ca8c43a94cb47"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_06/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "edf71708c1acf27e6cf5d96587373566fae204b2036be1d0caa4bfa1702225c0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_07/metadata.json",
+      "bytes": 1437,
+      "sha256": "e1d768841b5fa0e1c87715b765442bed03d7b11f6dbf49d63c24484616efcf77"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/chunk_07/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "a3ef1ec3791f08d282cdc8e98f28c220e164006e4daf814c17635175b1d16dbf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/denormalized_actions.json",
+      "bytes": 33658,
+      "sha256": "ccc55aab9fc1f9b4cd27d0adf7ab05af36266b28f4e087f47d82cde467a0668d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/executed_actions.json",
+      "bytes": 23106,
+      "sha256": "b96d7b239df4816d835b49041bfb7b8af8b292cf37d79dc1dfbf1b24cb34d452"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "f7ee49d1615790047cf32f5077919662babb93caf424fc867a2f25ca6fefb7f8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/initial_contact_checks.json",
+      "bytes": 9978,
+      "sha256": "29f93374a7050a0c8691aedc306795029323f6e8eec183e2b13b5c09476bd027"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_00.png",
+      "bytes": 145564,
+      "sha256": "0aa7de073ad29f7cd065a3e69e176dc1627b683a7084ab05db33874235d97b7a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_01.png",
+      "bytes": 144240,
+      "sha256": "20efba17e6300a49cd93f6d3e94a2910c4dfc033b2d4759c30f7cf917c637587"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_02.png",
+      "bytes": 140629,
+      "sha256": "16152e3a9a49c767a8368e1e6dc473d7c310d7f224953b6b452d1002127c5165"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_03.png",
+      "bytes": 134735,
+      "sha256": "35bb23942c7b92d5cc8376d148efd5f53a895667e57fb97c8cee17a837bf15c0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_04.png",
+      "bytes": 143913,
+      "sha256": "9edff9d7903ab2fa2d61b4fa8dc2134ea07dbea92c242857350a45c2c8111508"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_05.png",
+      "bytes": 147018,
+      "sha256": "1a5121ab48ae9a716f95b3f37b96bccc3f91db7e45d9494527d7e8554b9df1a5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_06.png",
+      "bytes": 149136,
+      "sha256": "f08e0d12832008c298424afaaca9570efe03c8bc070166dabf418ce2ad25619e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/input_07.png",
+      "bytes": 145323,
+      "sha256": "b7999576ea225e98cd20ad086a09eccc933d315d26bac8cc8b5371b2497486af"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/normalized_actions.json",
+      "bytes": 32852,
+      "sha256": "65655cdfbb0a388aa0a998f4208795e219738e1be11e8cc326b8e3eaaa56c7cd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/query_contract.json",
+      "bytes": 15879,
+      "sha256": "ebf3a9b6d9a4d40f39c0907f5d8b82f879f8ff3b46723914b05f6f4de46cf19a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "a45f5cc6371c2c0a3ef93486c7fbfe5380c3a3979cde7f196fad2a13fc8d4eb5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/summary.json",
+      "bytes": 30777,
+      "sha256": "9662d16fd27c0e5850d544c52e6d2453e35b489a4e8aa8b666d06a1ecb0af3fa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed196/trajectory.json",
+      "bytes": 3589053,
+      "sha256": "af1a74535e02a168ad4bf48e576e0b2f6537ed5dd527dd80525bf29c481623ce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/actions.json",
+      "bytes": 23418,
+      "sha256": "9c9fea4775eeac2a1b2aff2c6f1f4df5d339ff62a37f873a3c9a830de997861b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/actual.mp4",
+      "bytes": 223498,
+      "sha256": "bbc52cd448ad09e2f12e24486bdc4b176e68c86283ab026c3a44d1460bd05613"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_00/metadata.json",
+      "bytes": 1437,
+      "sha256": "21b3b07d75abeb271642ff3218ff3bef951a4f7f761b3be35f8ecc6d8a23f226"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_00/normalized_actions.json",
+      "bytes": 4125,
+      "sha256": "04470b838c012b94a0fa364ae778dfe81eefb539899228f3af5f1c607a3d28fc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "0177a87936ea2f56112034956593be88899ec2f563c65bd1c29160e611a45b1c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_01/metadata.json",
+      "bytes": 1438,
+      "sha256": "39644c6ec7b42092691da3de89a81a0ceb09873063160eb5a08869efa9a7a1b1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_01/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "b0cd52c4b955dd576e837d49d27c38d5fd0e5b5cdf900a42ecb603b6acc34be6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_02/metadata.json",
+      "bytes": 1436,
+      "sha256": "4330ab91a83add4f089ef53812589a1c61b20ccbe85bc6414869bba6d2a0d960"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_02/normalized_actions.json",
+      "bytes": 4124,
+      "sha256": "bdb64bd3f026e1d2101c6ec7e93bfe2f22a1f86a36dbc4ecd90d73d72741df50"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_03/metadata.json",
+      "bytes": 1438,
+      "sha256": "cf28bef47feb905a64cadce7619378ff0132d4bca964752d5b7444966a27ca66"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_03/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "fe4ef4be37cb318c308c10a5f130172c0c6b46a37783b33ab9e8033ee7d04743"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_04/metadata.json",
+      "bytes": 1436,
+      "sha256": "fed7e8f0873e875a854d4759c879fa997385cc0bb776223ec3c6f09dac110a04"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_04/normalized_actions.json",
+      "bytes": 4094,
+      "sha256": "808ce58df5bfe347a5452bb41823396fd263a3699e30fb6f73a4a50e572f2dc1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_05/metadata.json",
+      "bytes": 1438,
+      "sha256": "8a938bdd6f14adc415ba777868cab495f8c34aac1b764b3706fd8c9b252efc9c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_05/normalized_actions.json",
+      "bytes": 4096,
+      "sha256": "f4ea6cb5ae6a49876659db8548a3c41bb78e11c96b8646364b7112e161268ad4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "553ead2fb05da033c2f9f5382109c52139f7fbebca6f695c5b78913df4416b9f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_06/normalized_actions.json",
+      "bytes": 4098,
+      "sha256": "846801a9bc25654609c82b6e2f17cd90b2520fc013a1abeefc0e4853a0b548dd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_07/metadata.json",
+      "bytes": 1438,
+      "sha256": "03501f537c9597b2d7738867abfa90bafdf3a65a505d1896f5c7e11c3e44be8f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/chunk_07/normalized_actions.json",
+      "bytes": 4101,
+      "sha256": "bb402f4c7f9f240229345a921d12d18d4cb4650d3a630914efd214ffba8b4546"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/denormalized_actions.json",
+      "bytes": 33548,
+      "sha256": "cf85ed70d07b4fe3726c3c8095af554d7df3d9f9d0adf25b0f97ec78b2855c06"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/executed_actions.json",
+      "bytes": 23418,
+      "sha256": "9c9fea4775eeac2a1b2aff2c6f1f4df5d339ff62a37f873a3c9a830de997861b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "f7ee49d1615790047cf32f5077919662babb93caf424fc867a2f25ca6fefb7f8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/initial_contact_checks.json",
+      "bytes": 9978,
+      "sha256": "29f93374a7050a0c8691aedc306795029323f6e8eec183e2b13b5c09476bd027"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_00.png",
+      "bytes": 145564,
+      "sha256": "0aa7de073ad29f7cd065a3e69e176dc1627b683a7084ab05db33874235d97b7a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_01.png",
+      "bytes": 142211,
+      "sha256": "d46ce89e5fd9229a69c755d4360ece09cffe6ca97e5168340af5478ab59b1e56"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_02.png",
+      "bytes": 140688,
+      "sha256": "4f3a2dc029430d432755a71bf935711430534d25d39bfd4d1a509bb899968a83"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_03.png",
+      "bytes": 137298,
+      "sha256": "bc7a8bd06be2714b2719ddc9626e696c81742deb9d6e6e81f626f9010a6d3133"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_04.png",
+      "bytes": 141227,
+      "sha256": "5d8ad53a609585ab8b1111f1709dc0bee00c348abdbe43e651a8772bdae020b8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_05.png",
+      "bytes": 144167,
+      "sha256": "2d9e2c12722460cab8d55aaa1bba3789dde9d900e0c2796cdfbfb7636c445a8a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_06.png",
+      "bytes": 146890,
+      "sha256": "6aa07939e7378c4e0ebff2b2c5d8d03e4b1dc9f93167f7bfb673d0d40d06de57"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/input_07.png",
+      "bytes": 146014,
+      "sha256": "4ca3e93c31f07b4297e5b9249756c1d1e9cb046fd61bbcc162084b74c22b1241"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/normalized_actions.json",
+      "bytes": 32832,
+      "sha256": "230b4a6732a5dc4c97030054607b8a60c38f45de470f724b135b6208783092a9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/query_contract.json",
+      "bytes": 15878,
+      "sha256": "46f790d5f730bd48189af97e2f6ef5644040e5d3c7be501b274cfa25635cd49b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "0c8456526bd57df098a385a812dc0590ef5ec4d63a282db7711807df54977446"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/summary.json",
+      "bytes": 31556,
+      "sha256": "63ecdd4414cf368950f9f225e143cb24a59651eb395c9a1a3743966f819ffac6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x09_seed198/trajectory.json",
+      "bytes": 3634732,
+      "sha256": "5278d7a785b74d80f7ed43b3e256f852e8e81eabb80437eafb6f225a231cccfe"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/actions.json",
+      "bytes": 23339,
+      "sha256": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/actual.mp4",
+      "bytes": 244525,
+      "sha256": "002cc6cf04deca85530a2b88da40cdd61aa9d5ca42645aa2532821a70205f6fc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_00/metadata.json",
+      "bytes": 1438,
+      "sha256": "5ab7b46b2d8f6df605fbee302ab9fd55ca58706fc67cf143d1a6a348800e6e56"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_00/normalized_actions.json",
+      "bytes": 4111,
+      "sha256": "f624076b8060e463cc21f7212fc53b02fc9a9a6b594f9d2a1685500e7b92995a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "6f1bb84dd76cf9b4b820410b91016c2e6a125d0431561fc6fa813d50ae80b00c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_01/metadata.json",
+      "bytes": 1438,
+      "sha256": "c3d768418171d923f10c88b9561850419aa174458c86c657ae69daaac70de2fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_01/normalized_actions.json",
+      "bytes": 4080,
+      "sha256": "b29d9bcd909d9fefef02fa6ab60bd82649c95f1436c506be864348488562f0a3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_02/metadata.json",
+      "bytes": 1438,
+      "sha256": "f81358f052fcc6664c02c2cc69fde0540e36b5eefa586096b8e3a1730d58fbb6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_02/normalized_actions.json",
+      "bytes": 4102,
+      "sha256": "1578714f72e63c9e743f97a50740daa1e5b7b451381216d9662b91051f6f511b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_03/metadata.json",
+      "bytes": 1439,
+      "sha256": "61aec406031f98ebed30fa0281ad10d4aeb35652d835cef515e6ca0fcc802dbb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_03/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "995906955ddddba495982d0c2fcd66bd92093c722349fa746d2ae0fb2d1dd5b5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_04/metadata.json",
+      "bytes": 1438,
+      "sha256": "3c7962db0d48327919614c6577008b16049575ccfb504714c0a54dc98ab2a50e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_04/normalized_actions.json",
+      "bytes": 4105,
+      "sha256": "f87a401ce2865b015114d77d7c312ddedd6f0dcc9bc58468e98c2619cc415687"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_05/metadata.json",
+      "bytes": 1438,
+      "sha256": "44a212acc6dbe892e700fffb9c438fb67d3ba163f1f4d7463e523d0ba954d434"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_05/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "d31874ea261117a1cb3d14bf7dabd7e394b77f8e1cd37d6f8062db183e65de3e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "5cca1899f2349907dff21a7a3ac67e3f48d5f4b0c5429d79491f9fd17ab3fb0e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_06/normalized_actions.json",
+      "bytes": 4098,
+      "sha256": "46921661899155198134473354f0fde12597dc02723f9672b69f368a3132b9e0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_07/metadata.json",
+      "bytes": 1439,
+      "sha256": "dfc9402f1d3bf877bdbc4a416f070695090fa413ff435d499bfcded7be05efff"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/chunk_07/normalized_actions.json",
+      "bytes": 4128,
+      "sha256": "3a0f5b77e33f5c3df030cc2beb92641ca35bb79d5a61d85f2f6e0bd35e43b499"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/denormalized_actions.json",
+      "bytes": 33618,
+      "sha256": "e9f107b2bd252a048e9b30bae2f9e708cfe12eebd0de18f194c2c9b81fdb7f68"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/executed_actions.json",
+      "bytes": 23339,
+      "sha256": "931ae5f454c6867305fb418ea2a1b86184fd41b734cad616fd74e88315cb6a93"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_01.png",
+      "bytes": 140542,
+      "sha256": "d314ec5580b32f37afc3d1b922015c7e1a262075f6b82ee09aa864257a41646f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_02.png",
+      "bytes": 141160,
+      "sha256": "6537bbe38b6d25bc317f4288d75f0a319f6aae6cda792b2b4b7ff72d18b9d44b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_03.png",
+      "bytes": 133110,
+      "sha256": "296210a18ad0fa275c0bbfa3b968946f0c2560345ef4a7f27d20d3c527bfbf72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_04.png",
+      "bytes": 135427,
+      "sha256": "10606cb3845ae9b5ffdf00ef3f1a61e9f6df998ac3a9a118159fcbaa053a8fb2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_05.png",
+      "bytes": 140998,
+      "sha256": "e295fb48939906813e0d12c801256e2eac36d10e5faa31f6b4cd1eb1712c30ce"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_06.png",
+      "bytes": 147632,
+      "sha256": "df983768889538f9f592cffabe0b738fdb6971e7a2c400554a3e77c0edac0d18"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/input_07.png",
+      "bytes": 149014,
+      "sha256": "fa1ffccede05776e9509f5ef9143ac0d48b2593e3c72723c72f647695ea3853e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/normalized_actions.json",
+      "bytes": 32841,
+      "sha256": "22c43565476ac2d1ebae5591da3fe2cc0c4e38d3650f1e477ca99ec5aa5333d8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/query_contract.json",
+      "bytes": 15885,
+      "sha256": "1080906e1c163c7ec54733e1ade94346d611d4c338fab0744899890efc2a3b0b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "2b49476f230b3c72126d285864760f8f33e5357adddb49caf4d1bf26af96ddab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/summary.json",
+      "bytes": 31696,
+      "sha256": "0fb01f4bb2eb76b3872e523be51d4cb6f7afe8e66196f3b251171599587ad875"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed195/trajectory.json",
+      "bytes": 3638847,
+      "sha256": "e11431ea30e5602731326c41277e02111bbf8fe43ba1b0326dc63314ae0b9bfd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/actions.json",
+      "bytes": 23113,
+      "sha256": "b8f97cf5a29975c03fdc4f6cf3103bea14b14fbffd21eb039ca721fa363d0ba0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/actual.mp4",
+      "bytes": 245956,
+      "sha256": "88d3120a270b7e3c2e42f8c0e6c94f39b354970d1da2383ed952da867c625ec0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_00/metadata.json",
+      "bytes": 1437,
+      "sha256": "8c518e1911dc0a72b80ed8878603d2af84df181d13b2fef172763c19e52f4fe2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_00/normalized_actions.json",
+      "bytes": 4112,
+      "sha256": "2c1e232451203c0581c9bcfcf8ed92054d7aa402e470827be081cab080ddf1a0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "958e255b7ec2e6083b05f0952c448b9410d0e77f5f6293368aaccbf4dc646887"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_01/metadata.json",
+      "bytes": 1438,
+      "sha256": "b5f1d5fa117f0a7dd93d9246718f624ce033f807f8faaa996df73127e8a237cb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_01/normalized_actions.json",
+      "bytes": 4096,
+      "sha256": "8ad476d076eaec875acd351c68345fd87d33a56229f23aad526129ea8bd4c123"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_02/metadata.json",
+      "bytes": 1438,
+      "sha256": "dfd3ab5cf04626d038aa23f10a51e7c4aba6721d7391a4c704fb5459b522e2aa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_02/normalized_actions.json",
+      "bytes": 4102,
+      "sha256": "7fc823ee8ad14771b601a2280c1c8feae08f62b8ba0f818d3d097d890c997630"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_03/metadata.json",
+      "bytes": 1439,
+      "sha256": "fd7c10ee88aec01aaeb3d9e1e698f264cdd38bd4865845672305914c1ea98c29"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_03/normalized_actions.json",
+      "bytes": 4135,
+      "sha256": "18b252a65c79c880761b4ce3f8ccbd88c58cb7aea15afb7e7eb1796b9adda8ea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_04/metadata.json",
+      "bytes": 1438,
+      "sha256": "8fcc7881b89285c7dc4ad09a625edeb56f66cc1d129408020b6719ea5c7cf647"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_04/normalized_actions.json",
+      "bytes": 4109,
+      "sha256": "0eee06a87319ea5e56681aa822e27fb3c7ab1dab6f5e8f5fa45df2dabbc2f889"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_05/metadata.json",
+      "bytes": 1439,
+      "sha256": "218d06198d39f09ddee7ed214dbb6e3df773906f64aa850416a2102d85637837"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_05/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "fc03bba717e772483bbd38d21f4d62d25cfd1c697162ba0bf2538be456299566"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "cf011b6288a1e204b381cac563f78fa6ed3e3f9bcca11fdc7cbf3785b197989e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_06/normalized_actions.json",
+      "bytes": 4117,
+      "sha256": "9640774eb7164267599b93f32225dc497b3c8521449bc07a2d57dd982f7d4775"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_07/metadata.json",
+      "bytes": 1438,
+      "sha256": "614e1b57f7c50f6443ef0d3bf13b52fa30557ca14cec2c7dcc04aeb2560a8c58"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/chunk_07/normalized_actions.json",
+      "bytes": 4132,
+      "sha256": "2b7f5a49aa6aa9715a9649fb5dcc2463316083086193e598168ece9bfd27be48"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/denormalized_actions.json",
+      "bytes": 33717,
+      "sha256": "68bdd90335f2f2adbd495131b987c2bedf8b53fed7c1de2fa7bc872b9c8c3186"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/executed_actions.json",
+      "bytes": 23113,
+      "sha256": "b8f97cf5a29975c03fdc4f6cf3103bea14b14fbffd21eb039ca721fa363d0ba0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_01.png",
+      "bytes": 142403,
+      "sha256": "6707a649a2bdcc1d094932faae57e3e183f7d8fe776a00c03f5e0b4cc0138a98"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_02.png",
+      "bytes": 138414,
+      "sha256": "5b629c167b0bcae9eee57e192634badd68354d1c5d4be8f25d3fb3329f1e3490"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_03.png",
+      "bytes": 133534,
+      "sha256": "e126d25f906383f95b896e16533d5edc4ae01c26e4f681221c15a8b224976f6d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_04.png",
+      "bytes": 133770,
+      "sha256": "3315446d5c23bb86f2f61b04cdf985d7594e175d335f8319bdfe210dfee98d88"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_05.png",
+      "bytes": 145533,
+      "sha256": "68cada4a3a4a65db5a50a1d612a197b8239d5873ff598309a7f6d6d140610e50"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_06.png",
+      "bytes": 153616,
+      "sha256": "bff5f704a87dfcbd749f2d2a1eae8c07b7a5c135a98e8143ad6a2dca7a023f5f"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/input_07.png",
+      "bytes": 152851,
+      "sha256": "6aa4671926f89d10942ca737a95d8030da86a79892dd9f984d39862493ee306b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/normalized_actions.json",
+      "bytes": 32890,
+      "sha256": "6d4ba03cca20d649eeb7aaa88ddd52fc9935bd14c0da22fb6980da3ae41db062"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/query_contract.json",
+      "bytes": 15884,
+      "sha256": "9f0c078fcee28e317b24cd6f439556b201cd473153607002a04b39241132bf51"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "e6b8ac732a2c163b180227a99cac078107ad065ec0d52dbdc10c28604b728cbb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/summary.json",
+      "bytes": 31701,
+      "sha256": "821b5277fd310909587d3015b64ae7ddbcc3ae7fe1399f9959486eeed0887261"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed196/trajectory.json",
+      "bytes": 3641143,
+      "sha256": "ac19d2c6631e7f13843218fc50dc329745ca857f31cb80a2bdc700b00dd55ef3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/actions.json",
+      "bytes": 23339,
+      "sha256": "89b273dad1ac7ebdb02d2d060b5b64d32efd92391356bc1be7137ebf55128561"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/actual.mp4",
+      "bytes": 220149,
+      "sha256": "5a04a6b6c72b7b1c9fcfe3651955f5dc5414dda69f0fa1f874b7c47028e4fae8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_00/metadata.json",
+      "bytes": 1438,
+      "sha256": "177bb7cb38ef02cb94b8ec4e9feb8ac0827ed7e812bbbe4b1770f6b68a362abf"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_00/normalized_actions.json",
+      "bytes": 4110,
+      "sha256": "15ddf2a8c32623e09ea03edae578cb3610b4a1ac7030260690b38167c97f3eda"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_00/states.pt",
+      "bytes": 4824169,
+      "sha256": "15d36da92502a17a0aacb8b75a5a7c518965d5efb421724fb8bf33fb2ad384fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_01/metadata.json",
+      "bytes": 1438,
+      "sha256": "715f0a5bebff336db2a12263540830c9c69ab006b4a92388ded1085cf5d9dfe4"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_01/normalized_actions.json",
+      "bytes": 4085,
+      "sha256": "3c1e4fdac4b1307639fdc3d9bea039e9cfcdb10fde9880a64647b304785584bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_02/metadata.json",
+      "bytes": 1438,
+      "sha256": "fe88916ca756efea8ce6a1ae9a3dd041a925f7d31e485fe845118a622fec05c7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_02/normalized_actions.json",
+      "bytes": 4094,
+      "sha256": "e89a610c3cea99f744741f2d10afc46191b74240f344c84fb628ecb16ab558c9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_03/metadata.json",
+      "bytes": 1438,
+      "sha256": "929b4d48e39619c8ad2586feb84270322e948675aaefe485855d6ccc3d306c2d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_03/normalized_actions.json",
+      "bytes": 4142,
+      "sha256": "4cf5cbad2c4b861cf52d406a7321a2cfc04eea4005df3e2ecf4eec8de7240c72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_04/metadata.json",
+      "bytes": 1438,
+      "sha256": "82a8a075c0c951c506821f10ac62bb49b0b09dd8ffc6d9a76ffd6d396f5a04fc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_04/normalized_actions.json",
+      "bytes": 4091,
+      "sha256": "cbb4dfc70e210abf8f725b7769036047413f888578983d23b8d0fc333ce40bab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_05/metadata.json",
+      "bytes": 1439,
+      "sha256": "e7720ace562e2205517153bc34ba70b1de3b8b2a67b8140af9f3d4b4f5ce90a8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_05/normalized_actions.json",
+      "bytes": 4094,
+      "sha256": "e63fe8aae4554319fd4b568ed6e4b3b15c1d9b04478bb76bf594a9d8a87ebc36"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_06/metadata.json",
+      "bytes": 1438,
+      "sha256": "1e8110c1c2a42458d38d7b0d30abcfb05752378ba91e93f68e7d2d39a3eceded"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_06/normalized_actions.json",
+      "bytes": 4107,
+      "sha256": "7e0836a17501befd8c6222bd870fefb570a2dc5b1275c02b95439e6b6a01deea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_07/metadata.json",
+      "bytes": 1439,
+      "sha256": "704638b74773fddcc4e0b0fbd4f7d7e46590422fbeb5256d46d7bab786aea40b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/chunk_07/normalized_actions.json",
+      "bytes": 4084,
+      "sha256": "e70bf8fed70d0d995a26f2d1b839412b206bdbfd167e5e2f7e9aea2d3c165d9c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/denormalized_actions.json",
+      "bytes": 33717,
+      "sha256": "bbbd06967ece7c019e623803b9106182389af58743ed61e378b169ed11d89ae7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/executed_actions.json",
+      "bytes": 23339,
+      "sha256": "89b273dad1ac7ebdb02d2d060b5b64d32efd92391356bc1be7137ebf55128561"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/initial_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/initial_controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/initial_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_00.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_01.png",
+      "bytes": 142490,
+      "sha256": "21c596aa594c8c09a389c769fafd603e1cd9c14ee1d0b5806270b75c3d5531de"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_02.png",
+      "bytes": 140475,
+      "sha256": "a730f89d25a9da52a5ba3ab6b3c81283d643bf34f0a955fec86eaaf6ac6ae70e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_03.png",
+      "bytes": 136343,
+      "sha256": "348810d8c4a09d0e1898ffafd6faa8345243a3afd859cb2c34b0bf1e5f1bab7b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_04.png",
+      "bytes": 139082,
+      "sha256": "09991ad433113679cde56fe810fe4ae5a4bcf35833fdd84dd1c353830e82cf72"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_05.png",
+      "bytes": 144543,
+      "sha256": "a4a28694d468558181f4dd0e16a5cc0d4547c5d6f1116a28861aa0c1d0842333"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_06.png",
+      "bytes": 147080,
+      "sha256": "e8394f8e31944c2f4daf422094c7347f8e51aa18b55de054e34897ce72d2dcdb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/input_07.png",
+      "bytes": 146388,
+      "sha256": "1503a205b5f84a842d778519a31baba880f0a9aab11813da88de5f9304722eb5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/normalized_actions.json",
+      "bytes": 32786,
+      "sha256": "770d1b7c8f96690b882a654e32169354dbda9baee58d9b5977ade37f68dbc5fc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/query_contract.json",
+      "bytes": 15885,
+      "sha256": "34a4777851840b1ea5ed412c4b6c3faa9fa394f9225ea6ed328c091fbd7bd8ee"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/sim_states.npy",
+      "bytes": 113648,
+      "sha256": "8d9ca0e7727e7265210e04b987111279f8fcdfe42e637de03ecd058d34c49243"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/summary.json",
+      "bytes": 31249,
+      "sha256": "c32943f4cb9de82f0edca91d976815eace9ded42e3b0bc68329430dd22a694ac"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/closed-loop/x12_seed198/trajectory.json",
+      "bytes": 3757142,
+      "sha256": "f3c1ca681b9f05ddd0a6f2a1c8bcdb16dd18001014611682a9f223be26e9c617"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/complete.json",
+      "bytes": 322,
+      "sha256": "28dbb173569feca418e25d67f77b925a093cdd10a1e80ecb58c32c193157a0cc"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/metadata.json",
+      "bytes": 4258,
+      "sha256": "998f0f2ab8420607a0f780de3fa0070365a821bd18a70af00b80bc9338ad4485"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/agentview.png",
+      "bytes": 77468,
+      "sha256": "20d5fef002dbfd1e45ae5b7f27bdad8a2dd5d2d893b9a1105b6d9d1d88bd7a31"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/arrays.json",
+      "bytes": 14950,
+      "sha256": "2caf57745387b7d7095cc47a5a1113692d3dcc5f31138970389de26e0f64f3da"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/cameras.npz",
+      "bytes": 1642,
+      "sha256": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/center_restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/controller_checks.json",
+      "bytes": 137,
+      "sha256": "b5486e5fc7b326737a03549d5f12c709609fb25a24014c83dd00ec9e523060e5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/fixtures.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "27d503c03fd7fe2084fedaf03759823d0dd757253a712478e271daaa5c46cb07"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/input.png",
+      "bytes": 145353,
+      "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/objects.npz",
+      "bytes": 7785,
+      "sha256": "7f375083f12d199262f1922b6f819f74c7a137c398b6d4be839f5b1a89b2f9ea"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/observations.npz",
+      "bytes": 206370,
+      "sha256": "4e0863d72e50d6e0839771dfd3dfafdbf9247c369d0699d34f10747d33ea0af6"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/restored_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/robot0_eye_in_hand.png",
+      "bytes": 66421,
+      "sha256": "998b8904c91957343198c8b5a0fb4d79f77bbb720cb47340890bc7f8d874949c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x00/state.npy",
+      "bytes": 1008,
+      "sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/agentview.png",
+      "bytes": 77556,
+      "sha256": "d207e23185833a8fba19faf45337e0a5f5ed4b7d162f0dde69ac8b02dfecaa2d"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/arrays.json",
+      "bytes": 14950,
+      "sha256": "8ee9f1185398f49a14c0ddd8b9a7e4af2dd20008aaaaa71169b41d6f7ab5cf99"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/cameras.npz",
+      "bytes": 1642,
+      "sha256": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/center_restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/fixtures.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/initial_contact_checks.json",
+      "bytes": 9978,
+      "sha256": "29f93374a7050a0c8691aedc306795029323f6e8eec183e2b13b5c09476bd027"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/input.png",
+      "bytes": 145564,
+      "sha256": "0aa7de073ad29f7cd065a3e69e176dc1627b683a7084ab05db33874235d97b7a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/objects.npz",
+      "bytes": 7785,
+      "sha256": "ffe6e7e423baf4b168908f4c80fbcc4e624a085018d52c904007acdfee84d33c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/observations.npz",
+      "bytes": 206716,
+      "sha256": "850e10020ce7a660a3339a8cb512a73bb924f69c7f7901f0f2b20c6c8159e5a0"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/restore_checks.json",
+      "bytes": 35065,
+      "sha256": "f7ee49d1615790047cf32f5077919662babb93caf424fc867a2f25ca6fefb7f8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/restored_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/robot0_eye_in_hand.png",
+      "bytes": 66651,
+      "sha256": "71769bf0e26cee5d3da7e8465e04ec307754c67c7a7c68e5b4ebebe4f6f15cb8"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x09/state.npy",
+      "bytes": 1008,
+      "sha256": "d3e71ec2e36d2cea14769dfb8c09c178dbbb10cc421b14f955cc88482caccf26"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/agentview.png",
+      "bytes": 77615,
+      "sha256": "e9eb5907ad628420d3a3a16db311b0c8c2b2b47bf23cf97c31ef6840c0970770"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/arrays.json",
+      "bytes": 14950,
+      "sha256": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/cameras.npz",
+      "bytes": 1642,
+      "sha256": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/center_restore_checks.json",
+      "bytes": 35065,
+      "sha256": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/controller.npz",
+      "bytes": 2230,
+      "sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/fixtures.npz",
+      "bytes": 22,
+      "sha256": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/initial_contact_checks.json",
+      "bytes": 9973,
+      "sha256": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+      "bytes": 145970,
+      "sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/objects.npz",
+      "bytes": 7785,
+      "sha256": "49691a39b40d6178f659d894164b1923ca65ca7a5f66f1267d1a39fde24703b2"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/observations.npz",
+      "bytes": 206942,
+      "sha256": "7d90389a45550c7571401ae1403384d27c1eeb77b6d49310986f116a7dd437c3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/restore_checks.json",
+      "bytes": 35065,
+      "sha256": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/restored_controller_checks.json",
+      "bytes": 500,
+      "sha256": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/robot0_eye_in_hand.png",
+      "bytes": 66868,
+      "sha256": "54b426f16e0bdc30831794ca788f2fa7522e51170e2824174683f945b972d96b"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/inputs/x12/state.npy",
+      "bytes": 1008,
+      "sha256": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/physical-checks.json",
+      "bytes": 4064,
+      "sha256": "0bd080f9f8a21a516449151cf11ee9c0a1ce8a6f47fc8424ac135b520d58e506"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/provenance.json",
+      "bytes": 4129,
+      "sha256": "e8e5dd692ee016b3bf437c507454ae5424ac3c94848784e318fca6af510393e9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/complete.json",
+      "bytes": 164,
+      "sha256": "603e756501616a3831346ed181b263483b85e99da1ba3466c81bf00b2ae5625c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/observer_control.json",
+      "bytes": 88,
+      "sha256": "c5f09f567521d4ae8f479ca48f52741a52edc9940b53721fa02ab55571d1f69e"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/observer_free_repeat/metadata.json",
+      "bytes": 1313,
+      "sha256": "22cf4961669ef06effff52c2a96679d134bf0463a93a077245a881323a37caaa"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/observer_free_repeat/normalized_actions.json",
+      "bytes": 4108,
+      "sha256": "87241a02d0208cc9fb183d8a2179ee576b7feac70ad8f1787307ca03460a9611"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/progress.json",
+      "bytes": 3198,
+      "sha256": "d8288e2fbe35bc86998704c92c1485f65fdbecda2f7a70611a0f34f6ed8d86f9"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/provenance.json",
+      "bytes": 1035,
+      "sha256": "782ba3c6ca4b06d7860f14239e1a3e95e627521b0ea412a2189774d0b056c500"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/ready.json",
+      "bytes": 92,
+      "sha256": "2ce92cc3bf2399596f5196e4f4b11a340f3b78cedbe02775a0ee3bc341f6ced7"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server/status.json",
+      "bytes": 69,
+      "sha256": "fa1ecc3d4f98636d5e55be5bc6b7e783d1f4ca03fab147422e4ddadca05d3461"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/server_process.json",
+      "bytes": 570,
+      "sha256": "23c9b10e781b76421db6095b4a3e10f95a09845cc2efc945a05609fd41d8272c"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/simulator_complete.json",
+      "bytes": 354,
+      "sha256": "abfaea32659cd6c5b0052448ce7df36609f270674043363729b33db74683f496"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/simulator_process.json",
+      "bytes": 503,
+      "sha256": "d529e214dcba8dff6178f429bed0d1acce677df487cdefa13826733c439b6254"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/status.json",
+      "bytes": 330,
+      "sha256": "12b52350e4146f858741490c8228fdc19cf7594a48e82c9afda6939735ddb1ab"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/summary.json",
+      "bytes": 331995,
+      "sha256": "293d967ccdb60686bc7c58a73485d9a081d0089471f021fc76ba04480fe82914"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/wrapper-server-complete.json",
+      "bytes": 312,
+      "sha256": "e994fa7ad174782ecedbeda5d10a4908bfa7e9a62927d6594d510356258d6cf1"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/wrapper-simulator-complete.json",
+      "bytes": 216,
+      "sha256": "6241dddd43554587eb01c092e49ab446cb8ac06ab2db502b8935553d8fc892f3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/zero-input-control.json",
+      "bytes": 706,
+      "sha256": "9c51861375ac9d9e5e74d82bdd72254193733af258dac80234ade16becff58d3"
+    },
+    {
+      "path": "experiments/16-milk-shift-mechanism/position-threshold/zero-model-control.json",
+      "bytes": 959,
+      "sha256": "4d822c5f9301c323b69b94e505564c7e173ab0c9dff7e33d3ccec99a24ec626d"
     },
     {
       "path": "experiments/16-milk-shift-mechanism/server/complete.json",

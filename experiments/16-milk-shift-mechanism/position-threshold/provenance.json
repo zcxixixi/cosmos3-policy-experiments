@@ -1,0 +1,80 @@
+{
+  "contract": {
+    "wrapper_sha256": "62b6284d294d00d0323bdf31f68a90b397307ab0bf8804bc060f208a0d140d36",
+    "baseline": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism",
+    "baseline_server_provenance_sha256": "ae05cfba57893c589d6d6644ea13fd45a16acc90366c555f39988968fb5cdfb5",
+    "baseline_inputs_metadata_sha256": "da0d509a9cab3b255e3f3247b8dd85f951559d11721d6019ee6ab42cfaa9a84a",
+    "baseline_simulator_provenance_sha256": "4b7042949eb356ee0150679c09bdb73277dcce590a3eb43c7a286656a4cbd343",
+    "baseline_summary_sha256": "548e2170736af88fd1ece3d9b66195c87d18a5c64ea45e309c8cf03ef1b92533",
+    "frozen_files": {
+      "server": {
+        "path": "/home/current/work/cosmos3/work/serve_cosmos_milk_shift_mechanism.py",
+        "sha256": "5005b97785bc22bc37a2aa7361500ab93ef300ceaa9e0f83fa9e1d4ac71b1ab5"
+      },
+      "simulator": {
+        "path": "/home/current/work/cosmos3/work/rollout_cosmos_milk_shift_mechanism.py",
+        "sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845"
+      },
+      "normal_runtime": {
+        "path": "/home/current/work/cosmos3/work/serve_cosmos_goal_pair.py",
+        "sha256": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506"
+      },
+      "factory": {
+        "path": "/home/current/work/cosmos3/work/probe_cosmos_language_routes.py",
+        "sha256": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72"
+      },
+      "components": {
+        "path": "/home/current/work/cosmos3/work/cosmos_component_interventions.py",
+        "sha256": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236"
+      },
+      "pixel_helper": {
+        "path": "/home/current/work/cosmos3/work/check_cosmos_official_pixels_cpu.py",
+        "sha256": "10ad3461fbc739ab51dd2f6bf3a1f11b762e1431027283595efe1a46a7ffcf0a"
+      },
+      "scheduler": {
+        "path": "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/model/generator/diffusion/samplers/fm_solvers_unipc.py",
+        "sha256": "03aef1959f273b704ca4954f69b2a34df0fdd412f6acc8ab91625eeed78cf4fe"
+      },
+      "collector": {
+        "path": "/home/current/work/cosmos3/work/collect_cosmos_goal_pair.py",
+        "sha256": "b06454696a61b2ca9c570cbeac3f3d8149a4bf5179f51dafdb75a5d70cbbc945"
+      },
+      "controller_helper": {
+        "path": "/home/current/work/cosmos3/work/rollout_cosmos_goal_pair.py",
+        "sha256": "bc18a41d97dcdf7c321ef093faf4eea076678298f269efa5cf8fc9c623157dc7"
+      },
+      "normalizer_stats": {
+        "path": "/home/current/work/cosmos3/cosmos-framework/cosmos_framework/data/generator/action/normalizer_stats/libero_native_frame_wise_relative_rot6d.json",
+        "sha256": "bf20cb010fad4ee5754ad83dafab0fce509fc99594d75a3a151d07cf81c905ac"
+      },
+      "source_state": {
+        "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/state.npy",
+        "sha256": "9dc113492c3659b7a2a7828f899ebef3b0265314a7fa4e910ee999561622ddf9"
+      },
+      "source_png": {
+        "path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/object-position/inputs/center/input.png",
+        "sha256": "347c3ebac7ef12078f2f6b333723e65cca9c0341e759876f45458da00a5416d6"
+      }
+    },
+    "shifts_cm": {
+      "x00": 0,
+      "x09": 9,
+      "x12": 12
+    },
+    "seeds": [
+      195,
+      196,
+      198
+    ],
+    "prompt": "pick up the milk and place it in the basket",
+    "port": 8927,
+    "url": "http://127.0.0.1:8927",
+    "trials": 9,
+    "queries": 72,
+    "paired_noise_checks": 48,
+    "library_edits": false,
+    "scope": "Nine matched 128-action milk trials at X+0/9/12cm with three paired noise seeds and the existing warmed snapshot. Narrow the target-switch position range; no semantic, neural-root-cause or benchmark-rate claim."
+  },
+  "inputs_metadata_sha256": "998f0f2ab8420607a0f780de3fa0070365a821bd18a70af00b80bc9338ad4485",
+  "zero_input_control_sha256": "9c51861375ac9d9e5e74d82bdd72254193733af258dac80234ade16becff58d3"
+}
