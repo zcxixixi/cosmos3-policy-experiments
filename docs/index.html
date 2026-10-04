@@ -29,7 +29,7 @@
 <p>同一195起点，单改24–27号头后，首轮XYZ动作与全连接对照的RMS距离约<b>0.00228</b>；前9层全切为<b>0.26697</b>。前者仍抓奶酪，后者抓牛奶。内部候选比较显眼，并没有带来足够的行为纠正。</p>
 <p><b>这次已逐段查到真实传播：</b>只改24–27号头，195组第1层当前视觉状态的差异，在attention与原状态相加后为0.03969，经过MLP并再次相加后为0.04004。差异没有在这里消失；第36层动作状态仍有0.01318的差异，实际却没有改抓牛奶。</p>
 <p><b>所以，“第1层MLP把这次改动擦没了”不符合测量。</b>但差异存在，并不说明它代表正确目标。还没定位到哪个下游计算决定抓谁，也没证明模型记住了某条示范。</p>
-<p class="muted">以上均为前15次去噪、与同起点全连接对照比较的RMS均值。它们是数组距离，不是厘米、概率或可相加的功能占比；当前视觉与动作是不同状态，不能直接当成信号保留百分比。</p>
+<p class="muted">0.03969、0.04004、0.01318是前15次去噪的RMS均值；0.00228、0.26697是首轮最终16×3动作数组的RMS距离。均与同起点全连接对照比较。它们是数组距离，不是厘米、概率或可相加的功能占比；当前视觉与动作是不同状态，不能直接当成信号保留百分比。</p>
 <details><summary>真实传播图与全部统计</summary><figure><img src="media/milk-future-head-propagation.png" alt="两组未来起点下，各内部干预在第一层真实五处数组的距离"><figcaption>每点是同位置数组与对照的距离。第四点只量MLP新增量，不是相加后的状态；第五点才是该层输出。因此第四点低，不能解读成信息在那里消失。完整数组、逐层动作状态及撤去改动后的速度在公开统计中。</figcaption></figure><p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/tree/main/experiments/16-milk-shift-mechanism/future-head-effects-matched-runtime">2430处内部记录、540份边界的核验与NPZ</a></p></details>
 <details><summary>展开候选head的真实几何比较</summary><figure><img src="media/milk-future-head-group-geometry.png" alt="实际head组在各层的两项变化方向比较"><figcaption>来自270处实际端点。只把第1层收窄为候选，未把其他层的同编号头当成相同功能。负的方向相似度表示两项改动相反，不代表“压制牛奶”。</figcaption></figure></details>
 </section>
