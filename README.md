@@ -2,6 +2,8 @@
 
 [打开中文实验网页](https://zcxixixi.github.io/cosmos3-policy-experiments/)。首页先说明现在查什么、实际做到哪一步，以及最近的录像；计算细节可展开查看。
 
+[网络层图解](https://zcxixixi.github.io/cosmos3-policy-experiments/#network)：先看整体推理，再放大一层，沿着真实数字看 Attention、两次残差相加和 MLP 怎样更新向量。数字取自已有第一层原生抓包，不是新增实验，也不是最新末层干预的读数。
+
 首页只展示当前目标、真实进度和最近完成的实际实验。以下历史记录与[讲解动画](docs/media/experiment-summary.mp4)、[字幕](docs/media/experiment-summary.srt)留在仓库供核验。
 
 我们让机械臂“拿牛奶放进篮子”。它有时抓牛奶，有时却抓奶酪盒。改成“拿黄油”，它也常常继续抓原来的东西。

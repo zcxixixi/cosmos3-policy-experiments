@@ -3,12 +3,79 @@
 :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f4f6f9;color:#253143;font:17px/1.8 system-ui,"Noto Sans CJK SC",sans-serif}main{max-width:940px;margin:32px auto;padding:32px;background:#fff;border:1px solid #e3e8ef;border-radius:16px}h1{font-size:29px;line-height:1.4;margin:12px 0}h2{font-size:22px;line-height:1.5;margin:28px 0 12px}p{margin:12px 0}a{color:#245bb6}.muted{color:#5d6b7e;font-size:15px}.goal{background:#edf4ff;border-left:4px solid #3e72c5;padding:16px 20px}.status{background:#fff6e8;border:1px solid #ead8b5;border-radius:8px;padding:14px 18px}.hypothesis{border-top:1px solid #e3e8ef;padding:12px 0}.hypothesis p{margin:5px 0}table{border-collapse:collapse;width:100%;font-size:16px}th,td{border:1px solid #dfe5ed;padding:10px;text-align:left}th{background:#f5f7fb}img,video{display:block;width:100%;height:auto;border-radius:8px}figure{margin:18px 0}figcaption{font-size:14px;color:#5d6b7e;margin-top:6px}.video-picker{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}button{font:inherit;color:#245bb6;border:1px solid #bccce5;background:#fff;padding:7px 14px;border-radius:7px;cursor:pointer}button[aria-pressed="true"]{background:#245bb6;color:#fff;border-color:#245bb6}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #a9c8ff;outline-offset:3px}details{border:1px solid #dfe5ed;border-radius:8px;padding:12px 16px;margin:16px 0}summary{cursor:pointer;font-weight:600}section{scroll-margin-top:20px}footer{border-top:1px solid #dfe5ed;padding-top:16px;margin-top:28px}@media(max-width:600px){main{margin:0;border-radius:0;padding:20px}h1{font-size:25px}table{font-size:14px}th,td{padding:7px}}
 
 .flow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.flow span{background:#edf4ff;border:1px solid #cadcf5;padding:9px;border-radius:6px}.flow i{font-style:normal}.compact{font-size:15px}.result-note{background:#f2f6fa;padding:12px 16px;border-radius:8px}
-select{font:inherit;padding:8px;border:1px solid #bccce5;border-radius:6px;background:#fff}label{display:flex;flex-direction:column;font-size:14px;gap:3px}.table-scroll{overflow-x:auto}.flow .cut{background:#fff0e9;border-color:#e7b399}small{font-weight:400}video{background:#eef1f5}select:focus-visible{outline:3px solid #a9c8ff}code{font-size:.9em} </style></head><body><main>
+select{font:inherit;padding:8px;border:1px solid #bccce5;border-radius:6px;background:#fff}label{display:flex;flex-direction:column;font-size:14px;gap:3px}.table-scroll{overflow-x:auto}.flow .cut{background:#fff0e9;border-color:#e7b399}small{font-weight:400}video{background:#eef1f5}select:focus-visible{outline:3px solid #a9c8ff}code{font-size:.9em}
+.page-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0}.network-overview{display:grid;grid-template-columns:1fr;gap:8px;max-width:670px;margin:18px auto;text-align:center}.network-stage{padding:12px 16px;background:#f2f6fa;border-radius:8px}.network-stage strong{display:block}.network-arrow{line-height:1.2;font-size:24px;color:#5d6b7e}.network-main{background:#edf4ff}.network-loop{border:1px solid #cadcf5;border-radius:8px;padding:12px;display:grid;gap:8px}.network-loop>p{margin:0}.layer-layout{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:22px;align-items:start}.layer-layout figure{margin:8px 0}.layer-diagram{display:block;width:100%;height:auto;max-width:360px;margin:auto}.layer-diagram text{font:16px system-ui,"Noto Sans CJK SC",sans-serif;fill:#253143;text-anchor:middle}.layer-diagram .node{fill:#edf4ff;stroke:#cadcf5;stroke-width:1}.layer-diagram .operator{fill:#fff;stroke:#577aa8;stroke-width:2}.layer-diagram .wire{fill:none;stroke:#577aa8;stroke-width:2}.layer-diagram .skip{fill:none;stroke:#8b672e;stroke-width:2}.layer-diagram .value{font-size:15px;font-variant-numeric:tabular-nums}.layer-diagram .small-label{font-size:14px}.layer-layout table{font-size:15px}.layer-layout th,.layer-layout td{padding:8px}.layer-layout td:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}.network-source code{overflow-wrap:anywhere}.network-scope{font-size:15px;color:#5d6b7e}.attention-diagram{display:block;width:100%;min-width:620px;height:auto}.diagram-scroll{overflow-x:auto}.attention-diagram text{font:16px system-ui,"Noto Sans CJK SC",sans-serif;fill:#253143;text-anchor:middle}.attention-diagram .node{fill:#edf4ff;stroke:#cadcf5;stroke-width:1}.attention-diagram .wire{stroke:#577aa8;stroke-width:2;fill:none}.attention-diagram .cut-wire{stroke:#c23a36;stroke-width:3;stroke-dasharray:6 4;fill:none}.attention-diagram .cut-label{fill:#a42926;font-size:15px}.attention-diagram .small-label{font-size:14px}@media(max-width:700px){.layer-layout{grid-template-columns:minmax(0,1fr)}.layer-layout figure{margin-bottom:0}.layer-layout table{font-size:14px}.network-stage{padding:10px}}
+</style></head><body><main>
 <section id="latest"><p class="muted">2026-10-05 · 最新：8条真实执行、240处内部捕获、全部原始数组核验</p>
 <h1>向量真的改了，抓取目标却没换。<br>末层这处改动还不足以解释抓错。</h1>
 <div class="goal"><b>一直要解决的问题：</b>同一句“抓牛奶”，为什么牛奶移远后，机械臂转抓奶酪盒？我们想找到网络里的具体原因，并让它继续跟着牛奶换位置。</div>
 <p><b>有进展，但还没找到根因。</b>这轮真正替换了末层内部数组，也跑了机械臂。结果否定了一个具体猜想：只改变这里读到的文字信息，就足以让机械臂换抓取目标。原始“milk”指令在15厘米的失败仍未修好。</p>
+<nav class="page-links" aria-label="页面内容"><a href="#network">先看网络层怎么算</a><a href="#results">看最新执行视频</a><a href="#functional">看内部实验结果</a></nav>
 </section>
+<section id="network"><h2>先看网络：一层到底干了什么？</h2>
+<p><b>Attention让不同位置交换信息，MLP重新组合一个位置内部的数字。</b>每一步算出的是更新量，再加到已有状态上。推理时模型权重不变，变化的是流经网络的向量。</p>
+<div class="network-overview" aria-label="本批实验的整体推理流程">
+<div class="network-stage"><strong>输入变成向量</strong>两路当前相机照片 → VAE编码<br>文字指令 → 文本向量<br>候选未来画面、候选动作 → 从噪声开始</div>
+<div class="network-arrow" aria-hidden="true">↓</div>
+<div class="network-loop"><p><b>生成一段动作：重复30次去噪</b></p>
+<div class="network-stage network-main"><strong>第1层 → 第2层 → … → 第36层</strong>每层更新文字、当前画面、候选未来和动作的内部表示<br>最新实验改在第36层：动作位置读到的文字数组</div>
+<div class="network-arrow" aria-hidden="true">↓</div>
+<div class="network-stage"><strong>视觉头＋动作头：预测更新量</strong>Flow采样器更新候选未来画面和候选动作</div>
+<p>↶ 还未满30次：带着更新后的候选，再进入第1层</p></div>
+<div class="network-arrow" aria-hidden="true">↓ <small>完成30次</small></div>
+<div class="network-stage"><strong>得到16步动作 → 还原尺度、转换格式 → MuJoCo执行</strong>执行后拍新照片，继续下一轮推理</div>
+</div>
+<p class="network-scope">未来画面是模型正在生成的候选，不是提前拍到的真实未来。36个网络层、30次去噪和机械臂执行后的重拍，是三个不同层次。这里省略了归一化、位置编码等细节；文字与生成分支使用各自的网络权重。</p>
+<h3>Attention里面：谁从谁那里读信息？</h3>
+<p>箭头表示<b>信息来源 → 读取它的位置</b>。它表示读取关系，不表示计算先后；这里只画与我们实验有关的连接。</p>
+<figure><div class="diagram-scroll"><svg class="attention-diagram" viewBox="0 0 710 406" role="img" aria-labelledby="attention-title attention-desc">
+<title id="attention-title">文字、当前画面、候选未来与动作的位置读取关系</title><desc id="attention-desc">文字被当前画面、候选未来和动作位置读取。动作也读取当前画面和候选未来。红色虚线是前期实验暂时屏蔽的未来到当前画面的读取，未来到动作仍保留。最新实验另在第36层替换动作读到的文字。</desc>
+<defs><marker id="attention-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#577aa8"/></marker><marker id="attention-cut-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c23a36"/></marker></defs>
+<rect class="node" x="250" y="12" width="200" height="62" rx="7"/><text x="350" y="37">文字向量</text><text x="350" y="61">指令：抓牛奶</text>
+<rect class="node" x="40" y="155" width="230" height="70" rx="7"/><text x="155" y="180">当前画面向量</text><text class="small-label" x="155" y="207">真实照片编码后的内部表示</text>
+<rect class="node" x="430" y="155" width="230" height="70" rx="7"/><text x="545" y="180">候选未来画面向量</text><text class="small-label" x="545" y="207">模型正在生成的内部状态</text>
+<rect class="node" x="250" y="320" width="200" height="70" rx="7"/><text x="350" y="346">动作向量</text><text class="small-label" x="350" y="371">模型正在生成的内部状态</text>
+<path class="wire" d="M300 74 L160 146" marker-end="url(#attention-arrow)"/><path class="wire" d="M400 74 L540 146" marker-end="url(#attention-arrow)"/>
+<path class="wire" d="M450 43 H690 V355 H458" marker-end="url(#attention-arrow)"/><text class="small-label" x="577" y="58">文字也直接影响动作</text>
+<path class="cut-wire" d="M430 190 H278" marker-end="url(#attention-cut-arrow)"/><text class="cut-label" x="350" y="151">前期实验：暂时屏蔽</text><text class="cut-label" x="350" y="178">未来 → 当前</text><text class="cut-label" x="350" y="211">×</text>
+<path class="wire" d="M155 225 L300 312" marker-end="url(#attention-arrow)"/><text class="small-label" x="164" y="274">读取眼前画面</text>
+<path class="wire" d="M545 225 L400 312" marker-end="url(#attention-arrow)"/><text class="small-label" x="540" y="274">这条读取仍保留</text>
+</svg></div><figcaption>窄屏可横向滑动。红线属于前期“未来→当前”读取屏蔽实验：只在首轮前15次去噪、第1–9层干预。最新实验是第36层让动作读另一指令的文字，见下方实验；不是沿用这条红线。</figcaption></figure>
+<p class="compact">各生成位置随后<b>分别</b>经过Attention更新、第一次相加、MLP、第二次相加。下面只放大“当前画面”的一个位置，展示这套计算。</p>
+<h3>放大其中一层，只跟踪一份画面向量</h3>
+<p>一份当前画面表示有4096个数。Attention根据这一层的输入，计算从语言、其他画面位置、候选未来和动作位置中读取信息的比例，再把信息加权合并、投影成更新量。MLP随后处理这份向量内部的数字，不直接跨位置读取。</p>
+<div class="layer-layout">
+<figure><svg class="layer-diagram" viewBox="0 0 360 558" role="img" aria-labelledby="layer-title layer-desc">
+<title id="layer-title">一层Transformer：Attention与MLP的更新量分别加回原状态</title>
+<desc id="layer-desc">输入向量x进入Attention，Attention更新量与保留的x相加得到r。r进入MLP，MLP更新量与保留的r相加，得到下一层输入。两条侧线表示保留已有状态的残差连接。</desc>
+<defs><marker id="layer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#577aa8"/></marker><marker id="skip-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b672e"/></marker></defs>
+<rect class="node" x="132" y="12" width="206" height="58" rx="7"/><text x="235" y="36">本层输入 x</text><text class="value" x="235" y="58">其中一项：−0.109375</text>
+<path class="wire" d="M235 70 V100" marker-end="url(#layer-arrow)"/>
+<path class="skip" d="M235 82 H42 V226 H215" marker-end="url(#skip-arrow)"/><text class="small-label" x="85" y="141">保留</text><text class="small-label" x="85" y="161">原值 x</text>
+<rect class="node" x="132" y="108" width="206" height="68" rx="7"/><text x="235" y="132">Attention：取信息</text><text class="small-label" x="235" y="153">算出的更新量</text><text class="value" x="235" y="170">−0.515625</text>
+<path class="wire" d="M235 176 V206" marker-end="url(#layer-arrow)"/>
+<circle class="operator" cx="235" cy="226" r="18"/><text x="235" y="232">＋</text><text class="small-label" x="235" y="261">第一次相加：−0.625000</text>
+<path class="wire" d="M235 244 V284" marker-end="url(#layer-arrow)"/>
+<path class="skip" d="M235 275 H76 V414 H215" marker-end="url(#skip-arrow)"/><text class="small-label" x="39" y="339">保留 r</text>
+<rect class="node" x="132" y="296" width="206" height="68" rx="7"/><text x="235" y="320">MLP：内部重组</text><text class="small-label" x="235" y="341">算出的更新量</text><text class="value" x="235" y="358">＋0.083008</text>
+<path class="wire" d="M235 364 V394" marker-end="url(#layer-arrow)"/>
+<circle class="operator" cx="235" cy="414" r="18"/><text x="235" y="420">＋</text><text class="small-label" x="235" y="449">第二次相加</text>
+<path class="wire" d="M235 432 V468" marker-end="url(#layer-arrow)"/>
+<rect class="node" x="132" y="480" width="206" height="66" rx="7"/><text x="235" y="505">本层输出 → 下一层</text><text class="value" x="235" y="530">其中一项：−0.542969</text>
+</svg><figcaption>侧线表示“把已有状态保留下来再相加”，也叫残差连接。图只跟踪当前画面的一个位置。</figcaption></figure>
+<div><h3>真实数字，沿着同一项看</h3><p class="compact">来自已有原生运行的第1次去噪、第1层：当前画面第1个位置，4096个数中的第4项。<b>这是计算示例，不是最新第36层干预的数值。</b></p>
+<table aria-label="第一层真实向量中的同一项"><thead><tr><th>计算到哪里</th><th>实际保存值</th></tr></thead><tbody>
+<tr><td>进入本层 x</td><td>−0.109375</td></tr><tr><td>Attention更新量</td><td>−0.515625</td></tr><tr><td>第一次相加 r</td><td>−0.625000</td></tr><tr><td>MLP更新量</td><td>＋0.083008</td></tr><tr><td>第二次相加：本层输出</td><td>−0.542969</td></tr>
+</tbody></table>
+<p class="compact">Attention和MLP使用整串向量计算，表里只抽出同一项。两次加法已用保存数组逐项核验；末行包含模型内部BF16精度的舍入。</p>
+<p class="result-note"><b>照片没变，网络对照片的内部表示变了。</b>这一个数字不是“牛奶概率”，也不是距离。它只是整个表示中的一个分量。</p>
+</div></div>
+<p><b>同一层各位置读取的是进入本层时的状态，再分别更新。</b>动作位置不会先等本层画面位置更新完，再读取它的新状态；更新后的画面信息可在下一层被读取。</p>
+<details class="network-source"><summary>查看这组数字的来源与精确值</summary>
+<p>已有抓包：<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/future-head-groups/V195_A195_native/sites/t00-L00.pt">V195_A195_native / t00-L00.pt</a>。取 <code>propagation</code> 中各张量的 <code>[0, 3]</code>；每张量形状为 <code>50 × 4096</code>。<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/probe_cosmos_milk_future_head_groups.py#L421">真实捕获与残差核验代码</a>。</p>
+<p>原值 <code>−0.109375</code>；Attention更新量 <code>−0.515625</code>；第一次相加 <code>−0.625</code>；MLP更新量 <code>＋0.0830078125</code>；本层输出 <code>−0.54296875</code>。实际关系：<code>r = BF16(x + Attention更新量)</code>，<code>输出 = BF16(r + MLP更新量)</code>。MLP输入还经过归一化，简图中略去。</p>
+<p>这里只读取已有数组，没有重新跑模型、训练或机械臂。最新实验是在第36层的<b>动作位置</b>替换文字读取，再比较正常与固定MLP响应，结果见<a href="#functional">下方内部实验</a>。</p>
+</details></section>
 <section><h2>1. 猜了什么？怎样试？</h2>
 <p>猜想是：<b>末层读到另一目标后，后面的MLP会不会把变化抵消，让它坚持原来的动作？</b>MLP就是这一层注意力之后的另一段计算。</p>
 <p>先选同一初态下确实能“说牛奶抓牛奶、说奶酪抓奶酪”的配对案例。牛奶已移15厘米；使用 <code>milk box</code> 和 <code>cream cheese</code> 两种同长度名称，未来噪声198、动作噪声195。它们提供两份真实的文字状态。</p>
@@ -18,7 +85,7 @@ select{font:inherit;padding:8px;border:1px solid #bccce5;border-radius:6px;backg
 <p>两句指令分别是 <code>pick up the milk box and place it in the basket</code> 和 <code>pick up the cream cheese and place it in the basket</code>，各11个prompt token。本轮不是移入完整“牛奶概念”，而是替换这一接口的真实文字数组。</p>
 <p>首轮30次去噪全程干预，生成16步动作；之后7轮按原指令正常推理，每条共执行128步。因此，结果只检验这段首轮、末层局部干预的充分性。随机对照只匹配投影W之前的实际BF16变化强度，投影后强度未完全相同。</p></details>
 </section>
-<section><h2>2. 机械臂实际抓谁？</h2>
+<section id="results"><h2>2. 机械臂实际抓谁？</h2>
 <p>两个方向都做了：牛奶指令读奶酪文字，奶酪指令读牛奶文字。各加自身替换、固定MLP和随机方向对照，<b>8条全部执行，没有挑视频。</b></p>
 <div class="table-scroll"><table><thead><tr><th>内部怎样改</th><th>原指令：牛奶盒</th><th>原指令：奶酪盒</th></tr></thead><tbody><tr><td>自身替换对照</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr><tr><td>换另一指令的文字数组</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr><tr><td>换文字＋固定同输入的MLP响应</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr><tr><td>随机方向对照</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr></tbody></table></div>
 <p><b>全都仍抓原指令的目标。</b>替换文字没有让它换目标，固定MLP响应也没有。表内数字是首次满足抓起标准的连续记录窗口，不是成功率。</p>
