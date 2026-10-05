@@ -1,0 +1,86 @@
+{
+  "script_sha256": "0446978830ac36978396fdad5b09df238b0fd6b3b425aaa351a9b40262f94df0",
+  "protocol_sha256": "dd0786bb87244ac2c04b28856b23fb85cd500141e11ab466055d1267e0c8b0a7",
+  "sources_sha256": "83605092ef3a78220c0c6ce421b089a968246d3ab4a29d4c4a9591a9f003e93d",
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "metrics": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+    "reader": "a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb"
+  },
+  "inherited_language_source_sha256": "74ac42db450a1a7cd308c837bf75049cd2dcae858a4869dab1f0f60450c69b13",
+  "inherited_positions_source_sha256": "c9cc366e002d8c89ab9c779af35b0191c4ec6d56a157da77499914c6b8605146",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+  "dispatch_source_sha256": "93a57f07a77f8710233458ce8adc300e3eeaa57cb09a46a94cee02121d38ed88",
+  "dispatch_signature": "(query: 'torch.Tensor', key: 'torch.Tensor', value: 'torch.Tensor', attn_mask: 'torch.Tensor | None' = None, dropout_p: 'float' = 0.0, is_causal: 'bool' = False, scale: 'float | None' = None, enable_gqa: 'bool' = False, attention_kwargs: 'dict[str, Any] | None' = None, *, backend: 'AttentionBackendName | None' = None, parallel_config: \"'ParallelConfig' | None\" = None) -> 'torch.Tensor'",
+  "torch_version": "2.14.0+cu130",
+  "CPU_threads": 4,
+  "actual_prompt_token_ids": {
+    "milk_box": [
+      29245,
+      705,
+      279,
+      14074,
+      3745,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ],
+    "cream_cheese": [
+      29245,
+      705,
+      279,
+      12644,
+      17163,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ]
+  },
+  "tokenizer_class": "Qwen2Tokenizer",
+  "registry_backend": "native",
+  "registry_backend_function": "_native_attention",
+  "registry_supported_arguments": [
+    "_parallel_config",
+    "attn_mask",
+    "dropout_p",
+    "enable_gqa",
+    "is_causal",
+    "key",
+    "query",
+    "return_lse",
+    "scale",
+    "value"
+  ],
+  "registry_backend_function_source_sha256": "95e749097c2b477f4b6a6ea9d09cbab112ef89dcc7cd4d8681e001dc00da8f4d",
+  "backend_settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "configured_attention_backend": "None",
+    "configured_parallel": "None",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "grad_enabled": false,
+    "kernel_evidence_limit": "Configured backend and enabled flags are recorded, not a profiler observation of the selected kernel."
+  },
+  "library_edits": false,
+  "physics_calls": 0,
+  "scope": "Twenty-four fixed natural predictions at X12/X15 with actual equal-length names milk box/cream cheese, V195/V198 and A/runtime195. Scene task7 remains the original milk basket task; naming success is not a repair of the original milk instruction at 15cm. Four new milk-box native predictions are first observations, not independently repeated controls. X12 cream-cheese six cases reproduce the prior complete language stage. Native X15 uses its own real restored image and initial state; X12 records supply noise/schedule only. All masked sites share union66 all-allowed arithmetic; only t0..14/L0..8 current50 queries block future200 keys. Hard masks also redistribute remaining weights. Sparse raw capture is explicit: omitted arrays have live byte hashes, not offline raw equality. No head or MLP semantic claim, attention replay, training, solver replay, environment or physical execution."
+}

@@ -1,0 +1,623 @@
+{
+  "plan": [
+    {
+      "case": "x12_milk_box_V195_A195_native",
+      "scene": "x12",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x12_milk_box_V198_A195_native",
+      "scene": "x12",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x12_cream_cheese_V195_A195_native",
+      "scene": "x12",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x12_cream_cheese_V198_A195_native",
+      "scene": "x12",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x15_milk_box_V195_A195_native",
+      "scene": "x15",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x15_milk_box_V198_A195_native",
+      "scene": "x15",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x15_cream_cheese_V195_A195_native",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x15_cream_cheese_V198_A195_native",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "native",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x12_milk_box_V195_A195_all_allowed",
+      "scene": "x12",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x12_milk_box_V198_A195_all_allowed",
+      "scene": "x12",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x12_cream_cheese_V195_A195_all_allowed",
+      "scene": "x12",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x12_cream_cheese_V198_A195_all_allowed",
+      "scene": "x12",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": null
+    },
+    {
+      "case": "x15_milk_box_V195_A195_all_allowed",
+      "scene": "x15",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x15_milk_box_V198_A195_all_allowed",
+      "scene": "x15",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x15_cream_cheese_V195_A195_all_allowed",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x15_cream_cheese_V198_A195_all_allowed",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "all_allowed",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": null
+    },
+    {
+      "case": "x12_milk_box_V195_A195_full_hardmask",
+      "scene": "x12",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x12_milk_box_V198_A195_full_hardmask",
+      "scene": "x12",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x12_cream_cheese_V195_A195_full_hardmask",
+      "scene": "x12",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x12_cream_cheese_V198_A195_full_hardmask",
+      "scene": "x12",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 12,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x15_milk_box_V195_A195_full_hardmask",
+      "scene": "x15",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x15_milk_box_V198_A195_full_hardmask",
+      "scene": "x15",
+      "goal": "milk_box",
+      "prompt": "pick up the milk box and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x15_cream_cheese_V195_A195_full_hardmask",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 195,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "case": "x15_cream_cheese_V198_A195_full_hardmask",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "arm": "full_hardmask",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "shift_cm": 15,
+      "window": {
+        "steps": [
+          0,
+          14
+        ],
+        "layers": [
+          0,
+          8
+        ]
+      }
+    }
+  ],
+  "trial_order": [
+    "x12_milk_box_V195_A195_native",
+    "x12_milk_box_V198_A195_native",
+    "x12_cream_cheese_V195_A195_native",
+    "x12_cream_cheese_V198_A195_native",
+    "x15_milk_box_V195_A195_native",
+    "x15_milk_box_V198_A195_native",
+    "x15_cream_cheese_V195_A195_native",
+    "x15_cream_cheese_V198_A195_native",
+    "x12_milk_box_V195_A195_all_allowed",
+    "x12_milk_box_V198_A195_all_allowed",
+    "x12_cream_cheese_V195_A195_all_allowed",
+    "x12_cream_cheese_V198_A195_all_allowed",
+    "x15_milk_box_V195_A195_all_allowed",
+    "x15_milk_box_V198_A195_all_allowed",
+    "x15_cream_cheese_V195_A195_all_allowed",
+    "x15_cream_cheese_V198_A195_all_allowed",
+    "x12_milk_box_V195_A195_full_hardmask",
+    "x12_milk_box_V198_A195_full_hardmask",
+    "x12_cream_cheese_V195_A195_full_hardmask",
+    "x12_cream_cheese_V198_A195_full_hardmask",
+    "x15_milk_box_V195_A195_full_hardmask",
+    "x15_milk_box_V198_A195_full_hardmask",
+    "x15_cream_cheese_V195_A195_full_hardmask",
+    "x15_cream_cheese_V198_A195_full_hardmask"
+  ],
+  "prompts": {
+    "milk_box": "pick up the milk box and place it in the basket",
+    "cream_cheese": "pick up the cream cheese and place it in the basket"
+  },
+  "target_objects": {
+    "milk_box": "milk_1",
+    "cream_cheese": "cream_cheese_1"
+  },
+  "scenes": {
+    "x12": {
+      "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/x12/input.png",
+      "shift_cm": 12,
+      "files_sha256": {
+        "agentview.png": "e9eb5907ad628420d3a3a16db311b0c8c2b2b47bf23cf97c31ef6840c0970770",
+        "arrays.json": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba",
+        "cameras.npz": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb",
+        "center_restore_checks.json": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd",
+        "controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+        "controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "fixtures.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+        "initial_contact_checks.json": "d3e951f45ddc6ebee3b8aa54a90d631280f10cd008a3e5710410735fc1f95ac9",
+        "input.png": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+        "objects.npz": "49691a39b40d6178f659d894164b1923ca65ca7a5f66f1267d1a39fde24703b2",
+        "observations.npz": "7d90389a45550c7571401ae1403384d27c1eeb77b6d49310986f116a7dd437c3",
+        "restore_checks.json": "94f63fb7b6c89c399f69845ed738cf38ed1514ed44a4a6649e99addccf38d16a",
+        "restored_controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "robot0_eye_in_hand.png": "54b426f16e0bdc30831794ca788f2fa7522e51170e2824174683f945b972d96b",
+        "state.npy": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed"
+      },
+      "physical_scene": {
+        "shift_cm": 12,
+        "milk_joint": "milk_1_joint0",
+        "milk_qpos_address": 9,
+        "changed_state_indexes": [
+          10
+        ],
+        "milk_qpos": [
+          0.0028391838985526996,
+          -0.24429550302424152,
+          0.06973547638403721,
+          0.49999991071248306,
+          0.500000089475164,
+          0.49999993103157,
+          0.5000000687807573
+        ],
+        "input_png_sha256": "6b906dea73b0630a51adf194b6e5f949663458ebf601662c06d4c65765ad4541",
+        "state_sha256": "9ef81daf74d60eebaa1eadd1ae5b37f1c849e7c6409302cc2a26a9c6e410c4ed",
+        "arrays_sha256": "50930afc2566b3323b7c803711fa30d7ed4fc8f829b364c7104449b5e640cfba",
+        "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+      },
+      "input_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs",
+      "metadata_file": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/metadata.json",
+      "complete_file": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/complete.json",
+      "inputs_metadata_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/position-threshold/inputs/metadata.json",
+      "inputs_metadata_sha256": "998f0f2ab8420607a0f780de3fa0070365a821bd18a70af00b80bc9338ad4485",
+      "hash_scope": "Typed threshold scene verified by frozen source contract; file hashes newly bound by this preflight."
+    },
+    "x15": {
+      "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15",
+      "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15/input.png",
+      "shift_cm": 15,
+      "files_sha256": {
+        "state.npy": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+        "arrays.json": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd",
+        "fixtures.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+        "cameras.npz": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb",
+        "observations.npz": "6b424796b24c3d6bb697ef7afecd4cffe218e2694b3b205be432c2aa9ab36b92",
+        "objects.npz": "c0d350a01deca91b9796f29e9eed0196fd1d033c1fa20aa3086fe4246d87caa8",
+        "controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+        "input.png": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+        "agentview.png": "e9a8177e075646bfcc7080843899ff9f8fb7ef047d80fe1a2f11f1ca1660eff9",
+        "robot0_eye_in_hand.png": "e035be8f8a448ba38bd613d3338de1ddd751d1a3f5f1129add5a306853a58402",
+        "restore_checks.json": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3",
+        "center_restore_checks.json": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd",
+        "controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "restored_controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+        "initial_contact_checks.json": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+      },
+      "physical_scene": {
+        "shift_cm": 15,
+        "milk_joint": "milk_1_joint0",
+        "milk_qpos_address": 9,
+        "changed_state_indexes": [
+          10
+        ],
+        "milk_qpos": [
+          0.0328391838985527,
+          -0.24429550302424152,
+          0.06973547638403721,
+          0.49999991071248306,
+          0.500000089475164,
+          0.49999993103157,
+          0.5000000687807573
+        ],
+        "input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+        "state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+        "arrays_sha256": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd",
+        "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+      },
+      "hash_scope": "New CPU restored real scene and observations; no X12 image/input symlink.",
+      "input_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs",
+      "metadata_file": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/metadata.json",
+      "complete_file": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/complete.json",
+      "inputs_metadata_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/metadata.json",
+      "inputs_metadata_sha256": "640aab50fef3d900877130058ab5aa538e5cf5f713fbce523455a28f66ef71ca"
+    }
+  },
+  "selected_window_zero_based_inclusive": {
+    "steps": [
+      0,
+      14
+    ],
+    "layers": [
+      0,
+      8
+    ]
+  },
+  "primary_hypothesis": {
+    "name": "H_matched_name_native_targets_x15",
+    "cases": [
+      "x15_milk_box_V195_A195_native",
+      "x15_milk_box_V198_A195_native",
+      "x15_cream_cheese_V195_A195_native",
+      "x15_cream_cheese_V198_A195_native"
+    ],
+    "requested_objects": {
+      "milk_box": "milk_1",
+      "cream_cheese": "cream_cheese_1"
+    },
+    "criterion": "Each X15 native V195/V198 case must strictly select only its named object.",
+    "all24_physics_required": true,
+    "numerical_sham_is_separate_cut_attribution_diagnostic": true,
+    "no_q0_score_or_rank_selection": true,
+    "original_milk_15cm_goal_not_declared_repaired": true
+  },
+  "q0_predictions": 24,
+  "model_forwards": 720,
+  "expected_counts": {
+    "model_before": 720,
+    "model_after": 720,
+    "block_before": 25920,
+    "block_after": 25920,
+    "pre_W": 25920,
+    "native_UND_dispatch": 25920,
+    "native_GEN_dispatch": 25920,
+    "all_allowed_dispatch": 17280,
+    "cut_dispatch": 1080,
+    "substituted_sites": 17280
+  },
+  "original_dispatch_calls": 51840,
+  "extra_all_allowed_dispatch_calls": 17280,
+  "selected_extra_cut_dispatch_calls": 1080,
+  "total_official_dispatch_calls": 70200,
+  "original_randn_calls": 48,
+  "full37_UND_current_action_raw_steps": [
+    0
+  ],
+  "other29_action_hidden_raw_shape": [
+    16,
+    4096
+  ],
+  "other29_action_hidden_boundary": 36,
+  "full_kwargs_and_model_tuple_raw_steps": [
+    0
+  ],
+  "all30_action_input_output_timestep_sigma_raw": true,
+  "full_QKV_raw_site": {
+    "step": 0,
+    "layer_zero_based": 35,
+    "sites_per_case": 1
+  },
+  "raw_site_chains_per_case": 0,
+  "all30_L35_sparse_Qaction16_Ktarget2_Vtarget2_Znative_and_mergedaction_raw": true,
+  "native_only_all30_L35_target_start_to_UND_end_causal_suffix_KV_raw": true,
+  "sparse_raw_limit_bytes": 2684354560,
+  "pre_forward_minimum_free_bytes": 4831838208,
+  "actual_free_bytes_before_output_creation": 5883985920,
+  "omitted_raw_live_SHA_not_independent_reconstruction": true,
+  "actual_packed_name_gate": "Exactly two target IDs change; all other complete first kwargs/30 structural fields identical within scene/V.",
+  "background": "Every masked site union66 all_allowed; selected current50 cut, action16 Z0, future200 and UND native.",
+  "historical_controls": "Six X12 cream-cheese whole records and t0 actual boundaries equal completed language stage; new milk-box natives are first observations.",
+  "later_physics_preregistered": {
+    "trial_order": [
+      "x12_milk_box_V195_A195_native",
+      "x12_milk_box_V198_A195_native",
+      "x12_cream_cheese_V195_A195_native",
+      "x12_cream_cheese_V198_A195_native",
+      "x15_milk_box_V195_A195_native",
+      "x15_milk_box_V198_A195_native",
+      "x15_cream_cheese_V195_A195_native",
+      "x15_cream_cheese_V198_A195_native",
+      "x12_milk_box_V195_A195_all_allowed",
+      "x12_milk_box_V198_A195_all_allowed",
+      "x12_cream_cheese_V195_A195_all_allowed",
+      "x12_cream_cheese_V198_A195_all_allowed",
+      "x15_milk_box_V195_A195_all_allowed",
+      "x15_milk_box_V198_A195_all_allowed",
+      "x15_cream_cheese_V195_A195_all_allowed",
+      "x15_cream_cheese_V198_A195_all_allowed",
+      "x12_milk_box_V195_A195_full_hardmask",
+      "x12_milk_box_V198_A195_full_hardmask",
+      "x12_cream_cheese_V195_A195_full_hardmask",
+      "x12_cream_cheese_V198_A195_full_hardmask",
+      "x15_milk_box_V195_A195_full_hardmask",
+      "x15_milk_box_V198_A195_full_hardmask",
+      "x15_cream_cheese_V195_A195_full_hardmask",
+      "x15_cream_cheese_V198_A195_full_hardmask"
+    ],
+    "cases": 24,
+    "cached_q0": 24,
+    "later_noise_base": 195,
+    "q1_to_q7_seeds": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "later_predictions": 168,
+    "later_model_forwards": 5040,
+    "combined_model_forwards": 5760,
+    "queries": 192,
+    "later_whole_noise_pairs": 161,
+    "physical_actions": 3072,
+    "all24_execute_without_q0_ranking": true
+  },
+  "physics_calls": 0,
+  "no_training": true,
+  "no_residual_compensation": true,
+  "scope": "Twenty-four fixed natural predictions at X12/X15 with actual equal-length names milk box/cream cheese, V195/V198 and A/runtime195. Scene task7 remains the original milk basket task; naming success is not a repair of the original milk instruction at 15cm. Four new milk-box native predictions are first observations, not independently repeated controls. X12 cream-cheese six cases reproduce the prior complete language stage. Native X15 uses its own real restored image and initial state; X12 records supply noise/schedule only. All masked sites share union66 all-allowed arithmetic; only t0..14/L0..8 current50 queries block future200 keys. Hard masks also redistribute remaining weights. Sparse raw capture is explicit: omitted arrays have live byte hashes, not offline raw equality. No head or MLP semantic claim, attention replay, training, solver replay, environment or physical execution."
+}

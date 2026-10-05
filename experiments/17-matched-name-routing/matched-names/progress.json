@@ -1,0 +1,43 @@
+{
+  "stage": "complete",
+  "completed": [
+    "x12_milk_box_V195_A195_native",
+    "x12_milk_box_V198_A195_native",
+    "x12_cream_cheese_V195_A195_native",
+    "x12_cream_cheese_V198_A195_native",
+    "x15_milk_box_V195_A195_native",
+    "x15_milk_box_V198_A195_native",
+    "x15_cream_cheese_V195_A195_native",
+    "x15_cream_cheese_V198_A195_native",
+    "x12_milk_box_V195_A195_all_allowed",
+    "x12_milk_box_V198_A195_all_allowed",
+    "x12_cream_cheese_V195_A195_all_allowed",
+    "x12_cream_cheese_V198_A195_all_allowed",
+    "x15_milk_box_V195_A195_all_allowed",
+    "x15_milk_box_V198_A195_all_allowed",
+    "x15_cream_cheese_V195_A195_all_allowed",
+    "x15_cream_cheese_V198_A195_all_allowed",
+    "x12_milk_box_V195_A195_full_hardmask",
+    "x12_milk_box_V198_A195_full_hardmask",
+    "x12_cream_cheese_V195_A195_full_hardmask",
+    "x12_cream_cheese_V198_A195_full_hardmask",
+    "x15_milk_box_V195_A195_full_hardmask",
+    "x15_milk_box_V198_A195_full_hardmask",
+    "x15_cream_cheese_V195_A195_full_hardmask",
+    "x15_cream_cheese_V198_A195_full_hardmask"
+  ],
+  "expected_model_forwards": 720,
+  "actual_counts": {
+    "model_before": 720,
+    "model_after": 720,
+    "block_before": 25920,
+    "block_after": 25920,
+    "pre_W": 25920,
+    "native_UND_dispatch": 25920,
+    "native_GEN_dispatch": 25920,
+    "all_allowed_dispatch": 17280,
+    "cut_dispatch": 1080,
+    "substituted_sites": 17280
+  },
+  "elapsed_s": 148.63839483700576
+}

@@ -1,0 +1,73 @@
+{
+  "state": "exact",
+  "cases": [
+    {
+      "scene": "x12",
+      "vision_noise_source_seed": 195,
+      "changed_actual_input_id_positions": [
+        48,
+        49
+      ],
+      "actual_und_len": 122,
+      "actual_joint_length": 388,
+      "complete_initial_kwargs_only_two_target_IDs_changed": true,
+      "all30_other_pack_fields_and_positions_byte_exact": true
+    },
+    {
+      "scene": "x12",
+      "vision_noise_source_seed": 198,
+      "changed_actual_input_id_positions": [
+        48,
+        49
+      ],
+      "actual_und_len": 122,
+      "actual_joint_length": 388,
+      "complete_initial_kwargs_only_two_target_IDs_changed": true,
+      "all30_other_pack_fields_and_positions_byte_exact": true
+    },
+    {
+      "scene": "x15",
+      "vision_noise_source_seed": 195,
+      "changed_actual_input_id_positions": [
+        48,
+        49
+      ],
+      "actual_und_len": 122,
+      "actual_joint_length": 388,
+      "complete_initial_kwargs_only_two_target_IDs_changed": true,
+      "all30_other_pack_fields_and_positions_byte_exact": true
+    },
+    {
+      "scene": "x15",
+      "vision_noise_source_seed": 198,
+      "changed_actual_input_id_positions": [
+        48,
+        49
+      ],
+      "actual_und_len": 122,
+      "actual_joint_length": 388,
+      "complete_initial_kwargs_only_two_target_IDs_changed": true,
+      "all30_other_pack_fields_and_positions_byte_exact": true
+    }
+  ],
+  "goals": [
+    "milk_box",
+    "cream_cheese"
+  ],
+  "target_token_ids": {
+    "milk_box": [
+      14074,
+      3745
+    ],
+    "cream_cheese": [
+      12644,
+      17163
+    ]
+  },
+  "actual_prompt_token_lengths": {
+    "milk_box": 11,
+    "cream_cheese": 11
+  },
+  "full_physics_required": true,
+  "scope": "Twenty-four fixed natural predictions at X12/X15 with actual equal-length names milk box/cream cheese, V195/V198 and A/runtime195. Scene task7 remains the original milk basket task; naming success is not a repair of the original milk instruction at 15cm. Four new milk-box native predictions are first observations, not independently repeated controls. X12 cream-cheese six cases reproduce the prior complete language stage. Native X15 uses its own real restored image and initial state; X12 records supply noise/schedule only. All masked sites share union66 all-allowed arithmetic; only t0..14/L0..8 current50 queries block future200 keys. Hard masks also redistribute remaining weights. Sparse raw capture is explicit: omitted arrays have live byte hashes, not offline raw equality. No head or MLP semantic claim, attention replay, training, solver replay, environment or physical execution."
+}

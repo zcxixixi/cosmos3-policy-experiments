@@ -1,0 +1,20 @@
+{
+  "status": "not_evaluated_q0_only",
+  "name": "H_matched_name_native_targets_x15",
+  "cases": [
+    "x15_milk_box_V195_A195_native",
+    "x15_milk_box_V198_A195_native",
+    "x15_cream_cheese_V195_A195_native",
+    "x15_cream_cheese_V198_A195_native"
+  ],
+  "requested_objects": {
+    "milk_box": "milk_1",
+    "cream_cheese": "cream_cheese_1"
+  },
+  "criterion": "Each X15 native V195/V198 case must strictly select only its named object.",
+  "all24_physics_required": true,
+  "numerical_sham_is_separate_cut_attribution_diagnostic": true,
+  "no_q0_score_or_rank_selection": true,
+  "original_milk_15cm_goal_not_declared_repaired": true,
+  "scope": "Twenty-four fixed natural predictions at X12/X15 with actual equal-length names milk box/cream cheese, V195/V198 and A/runtime195. Scene task7 remains the original milk basket task; naming success is not a repair of the original milk instruction at 15cm. Four new milk-box native predictions are first observations, not independently repeated controls. X12 cream-cheese six cases reproduce the prior complete language stage. Native X15 uses its own real restored image and initial state; X12 records supply noise/schedule only. All masked sites share union66 all-allowed arithmetic; only t0..14/L0..8 current50 queries block future200 keys. Hard masks also redistribute remaining weights. Sparse raw capture is explicit: omitted arrays have live byte hashes, not offline raw equality. No head or MLP semantic claim, attention replay, training, solver replay, environment or physical execution."
+}
