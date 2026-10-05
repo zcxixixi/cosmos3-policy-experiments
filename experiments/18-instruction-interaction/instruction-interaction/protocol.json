@@ -1,0 +1,425 @@
+{
+  "stage": "instruction-interaction",
+  "trial_order": [
+    "x15_milk_box_from_cream_cheese_V198_A195_live_self",
+    "x15_cream_cheese_from_milk_box_V198_A195_live_self",
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint",
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint_native_mlp",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp",
+    "x15_milk_box_from_cream_cheese_V198_A195_matched_random",
+    "x15_cream_cheese_from_milk_box_V198_A195_matched_random"
+  ],
+  "plan": [
+    {
+      "case": "x15_milk_box_from_cream_cheese_V198_A195_live_self",
+      "scene": "x15",
+      "goal": "milk_box",
+      "recipient_goal": "milk_box",
+      "donor_goal": "cream_cheese",
+      "arm": "live_self",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the milk box and place it in the basket",
+      "donor_prompt": "pick up the cream cheese and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_cream_cheese_from_milk_box_V198_A195_live_self",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "arm": "live_self",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the cream cheese and place it in the basket",
+      "donor_prompt": "pick up the milk box and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+      "scene": "x15",
+      "goal": "milk_box",
+      "recipient_goal": "milk_box",
+      "donor_goal": "cream_cheese",
+      "arm": "suffix_joint",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the milk box and place it in the basket",
+      "donor_prompt": "pick up the cream cheese and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "arm": "suffix_joint",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the cream cheese and place it in the basket",
+      "donor_prompt": "pick up the milk box and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint_native_mlp",
+      "scene": "x15",
+      "goal": "milk_box",
+      "recipient_goal": "milk_box",
+      "donor_goal": "cream_cheese",
+      "arm": "suffix_joint_native_mlp",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the milk box and place it in the basket",
+      "donor_prompt": "pick up the cream cheese and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "arm": "suffix_joint_native_mlp",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the cream cheese and place it in the basket",
+      "donor_prompt": "pick up the milk box and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_milk_box_from_cream_cheese_V198_A195_matched_random",
+      "scene": "x15",
+      "goal": "milk_box",
+      "recipient_goal": "milk_box",
+      "donor_goal": "cream_cheese",
+      "arm": "matched_random",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the milk box and place it in the basket",
+      "donor_prompt": "pick up the cream cheese and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    },
+    {
+      "case": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "arm": "matched_random",
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "recipient_prompt": "pick up the cream cheese and place it in the basket",
+      "donor_prompt": "pick up the milk box and place it in the basket",
+      "window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      }
+    }
+  ],
+  "primary_hypothesis": {
+    "name": "H_L35_suffix_bidirectional_target_transfer",
+    "cases": [
+      "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+      "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint"
+    ],
+    "criterion": "Both suffix_joint executions strictly select only the donor-named object.",
+    "all8_physics_required": true,
+    "live_self_entire_q0_and_physics_controls_required": true,
+    "all30_random_BF16_strength_gates_required": true,
+    "no_q0_ranking": true,
+    "MLP_secondary": "Report J and same-live C in both directions; no full factorial decomposition.",
+    "random_secondary": "If matched_random also transfers targets, semantic specificity is unsupported; failure to transfer does not remove unequal W-output-strength alternatives."
+  },
+  "prompts": {
+    "milk_box": "pick up the milk box and place it in the basket",
+    "cream_cheese": "pick up the cream cheese and place it in the basket"
+  },
+  "target_objects": {
+    "milk_box": "milk_1",
+    "cream_cheese": "cream_cheese_1"
+  },
+  "scene": {
+    "folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15",
+    "image": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15/input.png",
+    "shift_cm": 15,
+    "files_sha256": {
+      "state.npy": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "arrays.json": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd",
+      "fixtures.npz": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+      "cameras.npz": "c5bea02f555c8e134adc2e33654f3d145fd27e3dcf00680fe52381b2f90fe3bb",
+      "observations.npz": "6b424796b24c3d6bb697ef7afecd4cffe218e2694b3b205be432c2aa9ab36b92",
+      "objects.npz": "c0d350a01deca91b9796f29e9eed0196fd1d033c1fa20aa3086fe4246d87caa8",
+      "controller.npz": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691",
+      "input.png": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "agentview.png": "e9a8177e075646bfcc7080843899ff9f8fb7ef047d80fe1a2f11f1ca1660eff9",
+      "robot0_eye_in_hand.png": "e035be8f8a448ba38bd613d3338de1ddd751d1a3f5f1129add5a306853a58402",
+      "restore_checks.json": "cffbbae319dd42d207ed8038838391dffe17c8cbecb3ab0580eedcc99b30ead3",
+      "center_restore_checks.json": "0a25a88fe5030304bb87f8cdd4bc8442a17e7e0a9cd8788ef2de9454936368fd",
+      "controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+      "restored_controller_checks.json": "1da020f335b6dbef4d30e658f9287ea5ef3c39a3454761aeef3dbc8988fe02c5",
+      "initial_contact_checks.json": "52b3cee957149395b0b030a8789f34280dc56a3972141fd4475e0e45093c87a1"
+    },
+    "physical_scene": {
+      "shift_cm": 15,
+      "milk_joint": "milk_1_joint0",
+      "milk_qpos_address": 9,
+      "changed_state_indexes": [
+        10
+      ],
+      "milk_qpos": [
+        0.0328391838985527,
+        -0.24429550302424152,
+        0.06973547638403721,
+        0.49999991071248306,
+        0.500000089475164,
+        0.49999993103157,
+        0.5000000687807573
+      ],
+      "input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "state_sha256": "3d91915c4e356cefc7ec836bd46133096f8dba77348a29d3f33cf34853c1da02",
+      "arrays_sha256": "1a45710f4d095466c0d2c8d959b103c666e0594cea19c44147cc225b9a74d8fd",
+      "controller_sha256": "33a4dce73fbc2c48f0693ac17b6ae39918b245ba634c3cd85324b4a1c15b0691"
+    },
+    "hash_scope": "New CPU restored real scene and observations; no X12 image/input symlink.",
+    "input_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs",
+    "metadata_file": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/metadata.json",
+    "complete_file": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/complete.json",
+    "inputs_metadata_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/metadata.json",
+    "inputs_metadata_sha256": "640aab50fef3d900877130058ab5aa538e5cf5f713fbce523455a28f66ef71ca"
+  },
+  "shift_cm": 15,
+  "q0_predictions": 8,
+  "model_forwards": 240,
+  "expected_counts": {
+    "model_before": 240,
+    "model_after": 240,
+    "block_before": 8640,
+    "block_after": 8640,
+    "pre_W": 8640,
+    "native_UND_dispatch": 8640,
+    "native_GEN_dispatch": 8640,
+    "aux_GEN_dispatch": 240,
+    "aux_W": 480,
+    "aux_W_native": 240,
+    "aux_W_donor": 240,
+    "aux_postnorm": 240,
+    "aux_MLP": 240,
+    "main_W": 8640,
+    "main_postnorm": 8640,
+    "main_MLP": 8640,
+    "action_attention_substitutions": 240,
+    "action_MLP_substitutions": 60
+  },
+  "total_official_dispatch_calls": 17520,
+  "original_dispatch_calls": 17280,
+  "auxiliary_GEN_dispatch_calls": 240,
+  "auxiliary_full266_W_native_calls": 240,
+  "auxiliary_full266_W_donor_calls": 240,
+  "auxiliary_full266_postnorm_calls": 240,
+  "auxiliary_full266_MLP_calls": 240,
+  "selected_window_zero_based_inclusive": {
+    "steps": [
+      0,
+      29
+    ],
+    "layers": [
+      35,
+      35
+    ],
+    "action_query_rows": [
+      250,
+      265
+    ],
+    "UND_suffix_keys": [
+      48,
+      121
+    ]
+  },
+  "suffix_rule": "Actual recipient Q and all other K/V unchanged; full388 keys, no mask. Donor saved postRoPE UND-for-GEN K/V at48..121 only. Merge action16 rows250..265.",
+  "self_rule": "Live full K/V clone extra official GEN endpoint; complete Z/W/r/postnorm/MLP equality and accepted entire q0 record required.",
+  "same_input_MLP_rule": "Actual current-call L35 full266 x and native Z0 through official W0, actual BF16 x+W0, official postnorm and MLP give m0. C replaces only action16 main MLP output; original block adds.",
+  "same_auxiliary_budget_in_all_four_arms": true,
+  "random_rule": {
+    "seed": "104729 + 1000*direction_index + step",
+    "private_CPU_generator": true,
+    "direction": "Fixed 128-channel permutation plus independent signs inside each action row/query head of same-call FP32 donor-minus-native delta.",
+    "fitting": "One scalar alpha in[0,4], at most32 evaluations; firstalpha1, then fixed bisection; no new direction or module call.",
+    "actual_BF16_action_L2_relative_error_max": 0.02,
+    "all_steps_fail_closed": true,
+    "zero_target": "Exactly preserve native bytes",
+    "actual_W_output_strength_is_reported_not_matched": true
+  },
+  "capture_scope": "Only explicit action16 eight endpoints plus actual postblock action; r0/r1 and candidates live SHA/ordered BF16 reconstruction. Full QKV/266 arrays omitted with actual SHA.",
+  "maximum_stage_bytes": 367001600,
+  "physical_reserve_bytes": 734003200,
+  "pre_output_minimum_free_bytes": 1235222528,
+  "actual_free_bytes_before_output": 2637279232,
+  "later_physics_preregistered": {
+    "cases": 8,
+    "cached_q0": 8,
+    "later_predictions": 56,
+    "queries": 64,
+    "q1_to_q7_seeds": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ],
+    "recipient_native_only": true,
+    "later_model_forwards": 1680,
+    "combined_model_forwards": 1920,
+    "later_whole_noise_pairs": 49,
+    "physical_actions": 1024,
+    "all8_execute_without_q0_ranking": true
+  },
+  "physics_calls": 0,
+  "no_training": true,
+  "scope": "X15/V198 two natural recipient instructions with fixed A/runtime195. Only q0 L35 action16 receives a target-start-to-UND-end natural K/V suffix counterfactual while Q, other K/V and key count remain actual recipient values. The suffix is instruction context, not decoded object identity. The same-input native-MLP arm tests a controlled MLP contribution under swapped attention; there is no full attention-by-MLP factorial or unique-mediator claim. Random strength matches actual BF16 pre-W action L2 within 2%, not W-output strength. All eight physical trials and seven recipient-native feedback queries are required separately. No original milk-instruction 15cm repair, training, head scan or natural-trajectory MLP subtraction is claimed."
+}

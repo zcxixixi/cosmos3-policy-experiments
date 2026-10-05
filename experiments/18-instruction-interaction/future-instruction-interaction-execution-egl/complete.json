@@ -1,0 +1,39 @@
+{
+  "state": "complete",
+  "script_sha256": "1e9e5ab03df34d333ee0905529af2de53c3a872da6139fa65cefa0aac2b55876",
+  "physical_trials": 8,
+  "trial_order": [
+    "x15_milk_box_from_cream_cheese_V198_A195_live_self",
+    "x15_cream_cheese_from_milk_box_V198_A195_live_self",
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint",
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint_native_mlp",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp",
+    "x15_milk_box_from_cream_cheese_V198_A195_matched_random",
+    "x15_cream_cheese_from_milk_box_V198_A195_matched_random"
+  ],
+  "saved_q0_predictions": 8,
+  "native_predictions": 56,
+  "fresh_model_forwards": 1680,
+  "producer_q0_forwards": 240,
+  "combined_two_stage_model_forwards": 1920,
+  "actual_later_whole_noise_pairs": 49,
+  "actual_physical_actions": 1024,
+  "two_entire129_state_5JSON_8PNG_all8_modelrecords_controller0_16_controls_exact": true,
+  "all8_cached_q0_action_and_strict_window_gates_passed": true,
+  "all8_executed_without_score_selection": true,
+  "primary_prediction": "rejected",
+  "both_suffix_joint_strict_only_donor": false,
+  "files_sha256": {
+    "controls.json": "53682d1a7f01f68dc6b0838e936e1b4778b5a2b97b5fef03a72ba679a86d1521",
+    "comparisons.json": "c579664ccd6e205ba0fe3f8f84614655d34b525ddb4a2a9c4e181c0989bb247c",
+    "provenance.json": "20b1ed56bfde54ab7e9132c422a9aea8c93f4a7f7ef27f0622d994fb23f9e718",
+    "prepared.json": "87c577e34f2500e1df0368918cc47a75170b18a9f0b14b7d21527e2e3814575f",
+    "primary-preregistered.json": "24c396f0ddb2a9181b16bc20d3ef416ecead2548c28de8f844aaf54226b4fcaf",
+    "primary-prediction.json": "869ca8a2ba5157ce642b875b071e2b0c1d304b6848bf5bdd1e35a4861e289df2",
+    "server/complete.json": "92449c162b1d60cbe2154efc43743b37760c34c6bad0833438a82b28d3405597",
+    "closed-loop/complete.json": "aae8984df1bb46da1aa6db21835abb72339bcb3ebebc13419d29b89f7992602f",
+    "summary.json": "44b26b2ce6525fa3d51a4915a79a6a1316f6fc6cbd91e18e8eb3212210a1c14c"
+  },
+  "scope": "Eight preregistered X15/V198 q0 interventions, each followed by seven native recipient-instruction queries with seed195+q. Only two natural matched-name references are eligible. Suffix transfer is instruction-context transfer, not a decoded identity, named head or unique MLP mediator. The same-live MLP comparison is controlled locally, while later trajectories are dynamic. Actual BF16 random strength matches pre-W only. Strict grasp, approach displacement and original milk-in-basket predicate remain separate. No original milk-instruction 15cm repair or half-denoising withdrawal test."
+}

@@ -1,0 +1,1035 @@
+[
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 0,
+      "seed": 195,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 195,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_00.png",
+      "input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 5.998885567998514,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "case": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "arm": "matched_random",
+      "query": 0,
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "donor_prompt": "pick up the milk box and place it in the basket",
+      "target_object": "cream_cheese_1",
+      "donor_target_object": "milk_1",
+      "shift_cm": 15,
+      "vision_noise_source_seed": 198,
+      "action_noise_source_seed": 195,
+      "runtime_rng_seed": 195,
+      "producer_script_sha256": "745c4d8864bc94751791cf5aa81cb74afc0a678ca95dfad998b0381431c61429",
+      "control_reference_case": "x15_cream_cheese_V198_A195_native",
+      "actual_selected_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "same_input_native_MLP_baseline": true,
+      "explicit_action16_raw_only": true,
+      "physical_prediction_evaluated": false,
+      "scope": "X15/V198 two natural recipient instructions with fixed A/runtime195. Only q0 L35 action16 receives a target-start-to-UND-end natural K/V suffix counterfactual while Q, other K/V and key count remain actual recipient values. The suffix is instruction context, not decoded object identity. The same-input native-MLP arm tests a controlled MLP contribution under swapped attention; there is no full attention-by-MLP factorial or unique-mediator claim. Random strength matches actual BF16 pre-W action L2 within 2%, not W-output strength. All eight physical trials and seven recipient-native feedback queries are required separately. No original milk-instruction 15cm repair, training, head scan or natural-trajectory MLP subtraction is claimed.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "saved_q0_prediction": true,
+      "current_execution_model_calls": 0,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": false,
+      "source_producer_folder": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/instruction-interaction/x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "source_q0_states_sha256": "1e579440e236ccbb324af451a0ee94b22412d595fac712295c748fbd7ba0cf26"
+    },
+    "paired_noise_checked_exact": false,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 1,
+      "seed": 196,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 196,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_01.png",
+      "input_png_sha256": "467821c030a6ae15750fa482b71fec8026363071df892d5b0bdc652d215d1475",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3012202640093165,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 1,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 2,
+      "seed": 197,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 197,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_02.png",
+      "input_png_sha256": "da3c4f64a6dae7f37151c6b9c29dbb0589f6e92d2c30f97b78a6983ed14eef2f",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3072723819932435,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 2,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 3,
+      "seed": 198,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 198,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_03.png",
+      "input_png_sha256": "824fe8acf6f17ec7dc7dd306fec5ec6ab47dd50d649028502498793431cc6480",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.312174403006793,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 3,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 4,
+      "seed": 199,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 199,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_04.png",
+      "input_png_sha256": "0862278b5758c60b39d50b5b0c1016bfce48f3b65a3abcddb8129236300a2823",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3103968920040643,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 4,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 5,
+      "seed": 200,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 200,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_05.png",
+      "input_png_sha256": "1739c35d4e0d63f95db44ddb88aa305ad1a1f3d1d2d6a9a93330e47e97aba35f",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.31428927599336,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 5,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 6,
+      "seed": 201,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 201,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_06.png",
+      "input_png_sha256": "685857f4c24ae9473a629bc5c93a9e7c9d6275e18b7d48677133747cf37e2410",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.3138323230086826,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 6,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  },
+  {
+    "request": {
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 7,
+      "seed": 202,
+      "prompt": "pick up the cream cheese and place it in the basket"
+    },
+    "server_metadata": {
+      "task": "cream_cheese",
+      "task_index": 7,
+      "prompt": "pick up the cream cheese and place it in the basket",
+      "seed": 202,
+      "pixels": "official",
+      "schedule": "official",
+      "use_system_prompt": false,
+      "domain_name": "libero",
+      "domain_id": 5,
+      "raw_action_dim": 10,
+      "chunk_size": 16,
+      "num_inference_steps": 30,
+      "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-instruction-interaction-execution-egl/closed-loop/x15_cream_cheese_from_milk_box_V198_A195_matched_random/input_07.png",
+      "input_png_sha256": "187b045b7a5b913ff248fd2bf9077c8dc51d8ced13b8b4a3707781b943219ec0",
+      "und_len": 122,
+      "timesteps": [
+        999,
+        965,
+        932,
+        899,
+        865,
+        832,
+        799,
+        765,
+        732,
+        699,
+        666,
+        632,
+        599,
+        566,
+        532,
+        499,
+        466,
+        432,
+        399,
+        366,
+        333,
+        299,
+        266,
+        233,
+        199,
+        166,
+        133,
+        99,
+        66,
+        33
+      ],
+      "model_calls": 30,
+      "prepare_calls": 1,
+      "pure_noise_shapes": [
+        [
+          1,
+          48,
+          5,
+          10,
+          20
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "elapsed_s": 3.313383597007487,
+      "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+      "trial": "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "query": 7,
+      "shift_cm": 15,
+      "scene": "x15",
+      "scene_prompt": "pick up the milk and place it in the basket",
+      "policy_prompt": "pick up the cream cheese and place it in the basket",
+      "policy_goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "saved_q0_prediction": false,
+      "current_execution_model_calls": 30,
+      "q0_vision_noise_source_seed": 198,
+      "q0_action_noise_source_seed": 195,
+      "q0_runtime_rng_seed": 195,
+      "saved_q0_attention_arm": "matched_random",
+      "saved_q0_window": {
+        "steps": [
+          0,
+          29
+        ],
+        "layers": [
+          35,
+          35
+        ],
+        "action_query_rows": [
+          250,
+          265
+        ],
+        "UND_suffix_keys": [
+          48,
+          121
+        ]
+      },
+      "actual_query_seeds": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "seed_rule": "195 + query_index after cached q0",
+      "component_intervention_in_this_execution": false,
+      "attention_mask_intervention_in_this_execution": false,
+      "paired_noise_checked_exact": true,
+      "source_producer_folder": null,
+      "source_q0_states_sha256": null
+    },
+    "paired_noise_checked_exact": true,
+    "response_saved_actions_exact": true
+  }
+]

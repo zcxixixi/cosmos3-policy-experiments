@@ -1,0 +1,89 @@
+{
+  "script_sha256": "745c4d8864bc94751791cf5aa81cb74afc0a678ca95dfad998b0381431c61429",
+  "protocol_sha256": "4853ac9f7550f0a8112671056bc9cb52ac1bd5ab966bd92d4d27231ff5bc1623",
+  "sources_sha256": "3a582b255bcd12dd4ea786c910e93cb5b39e5f04145a53f7be5c6ff22a0715a9",
+  "source_sha256": {
+    "normal_runtime": "30042d600e4aeaad401170a3f40c8574ba9e02d8267e9595dc1bd00bafe6a506",
+    "factory": "64290b61ed7865afc52edf8297f0ce2f8ad67015c63877e712f7de5317867c72",
+    "components": "19ee7b968912da00fee3df44bdced22d68b7200374cc4dbb912c72156932e236",
+    "metrics": "0828580e08f7788e6b6998c6841a8d1eff29f570f891c80a7abb04f3f4bf1e75",
+    "reader": "a71604115ee797cef97662f29c9f76e536d84f7e5515d1a725526c0a0d08d2eb"
+  },
+  "matched_producer_sha256": "0446978830ac36978396fdad5b09df238b0fd6b3b425aaa351a9b40262f94df0",
+  "matched_runner_sha256": "6b5ea13b8ce888aecac5cdb42b1a23ae9fec81972edf51f241f1e4429008217c",
+  "matched_analyzer_sha256": "a0ff5732f7a9282eebf25d1c463cd4b9765eee786f5fc6eb5c5aa8049e1afcd7",
+  "actual_transformer_sha256": "ac951f6b4966a485bf2c3420c754e9f8366bbceda3471a8a5de75606767f2b22",
+  "actual_pipeline_source_sha256": "ec2f051ec5703926c82145cca24bfcb93222019234fade9aafa905f7ae589eca",
+  "dispatch_source_sha256": "93a57f07a77f8710233458ce8adc300e3eeaa57cb09a46a94cee02121d38ed88",
+  "dispatch_signature": "(query: 'torch.Tensor', key: 'torch.Tensor', value: 'torch.Tensor', attn_mask: 'torch.Tensor | None' = None, dropout_p: 'float' = 0.0, is_causal: 'bool' = False, scale: 'float | None' = None, enable_gqa: 'bool' = False, attention_kwargs: 'dict[str, Any] | None' = None, *, backend: 'AttentionBackendName | None' = None, parallel_config: \"'ParallelConfig' | None\" = None) -> 'torch.Tensor'",
+  "torch_version": "2.14.0+cu130",
+  "CPU_threads": 4,
+  "actual_prompt_token_ids": {
+    "milk_box": [
+      29245,
+      705,
+      279,
+      14074,
+      3745,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ],
+    "cream_cheese": [
+      29245,
+      705,
+      279,
+      12644,
+      17163,
+      323,
+      1992,
+      432,
+      304,
+      279,
+      14024
+    ]
+  },
+  "tokenizer_class": "Qwen2Tokenizer",
+  "registry_backend": "native",
+  "registry_backend_function": "_native_attention",
+  "registry_supported_arguments": [
+    "_parallel_config",
+    "attn_mask",
+    "dropout_p",
+    "enable_gqa",
+    "is_causal",
+    "key",
+    "query",
+    "return_lse",
+    "scale",
+    "value"
+  ],
+  "registry_backend_function_source_sha256": "95e749097c2b477f4b6a6ea9d09cbab112ef89dcc7cd4d8681e001dc00da8f4d",
+  "backend_settings": {
+    "torch_version": "2.14.0+cu130",
+    "cuda_version": "13.0",
+    "configured_attention_backend": "None",
+    "configured_parallel": "None",
+    "sdp_enabled_flags": {
+      "flash_sdp_enabled": true,
+      "mem_efficient_sdp_enabled": true,
+      "math_sdp_enabled": true,
+      "cudnn_sdp_enabled": true
+    },
+    "matmul_allow_tf32": false,
+    "matmul_allow_bf16_reduced_precision_reduction": true,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "grad_enabled": false,
+    "kernel_evidence_limit": "Configured backend and enabled flags are recorded, not a profiler observation of the selected kernel."
+  },
+  "owned_auxiliary_scope": "Official full266 native W/postnorm/MLP and donor W; same count in each arm.",
+  "library_edits": false,
+  "model_parameter_edits": false,
+  "physics_calls": 0,
+  "scope": "X15/V198 two natural recipient instructions with fixed A/runtime195. Only q0 L35 action16 receives a target-start-to-UND-end natural K/V suffix counterfactual while Q, other K/V and key count remain actual recipient values. The suffix is instruction context, not decoded object identity. The same-input native-MLP arm tests a controlled MLP contribution under swapped attention; there is no full attention-by-MLP factorial or unique-mediator claim. Random strength matches actual BF16 pre-W action L2 within 2%, not W-output strength. All eight physical trials and seven recipient-native feedback queries are required separately. No original milk-instruction 15cm repair, training, head scan or natural-trajectory MLP subtraction is claimed."
+}

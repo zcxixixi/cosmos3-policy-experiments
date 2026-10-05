@@ -1,0 +1,15 @@
+{
+  "state": "preregistered",
+  "name": "H_L35_suffix_bidirectional_target_transfer",
+  "cases": [
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint"
+  ],
+  "criterion": "Both suffix_joint executions strictly select only the donor-named object.",
+  "all8_physics_required": true,
+  "live_self_entire_q0_and_physics_controls_required": true,
+  "all30_random_BF16_strength_gates_required": true,
+  "no_q0_ranking": true,
+  "MLP_secondary": "Report J and same-live C in both directions; no full factorial decomposition.",
+  "random_secondary": "If matched_random also transfers targets, semantic specificity is unsupported; failure to transfer does not remove unequal W-output-strength alternatives."
+}

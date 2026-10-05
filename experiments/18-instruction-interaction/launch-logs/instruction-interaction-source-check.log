@@ -1,0 +1,79 @@
+{
+  "state": "source_contract_verified",
+  "stage": "instruction-interaction",
+  "plan": [
+    [
+      "x15_milk_box_from_cream_cheese_V198_A195_live_self",
+      "milk_box",
+      "cream_cheese",
+      "live_self"
+    ],
+    [
+      "x15_cream_cheese_from_milk_box_V198_A195_live_self",
+      "cream_cheese",
+      "milk_box",
+      "live_self"
+    ],
+    [
+      "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+      "milk_box",
+      "cream_cheese",
+      "suffix_joint"
+    ],
+    [
+      "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint",
+      "cream_cheese",
+      "milk_box",
+      "suffix_joint"
+    ],
+    [
+      "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint_native_mlp",
+      "milk_box",
+      "cream_cheese",
+      "suffix_joint_native_mlp"
+    ],
+    [
+      "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp",
+      "cream_cheese",
+      "milk_box",
+      "suffix_joint_native_mlp"
+    ],
+    [
+      "x15_milk_box_from_cream_cheese_V198_A195_matched_random",
+      "milk_box",
+      "cream_cheese",
+      "matched_random"
+    ],
+    [
+      "x15_cream_cheese_from_milk_box_V198_A195_matched_random",
+      "cream_cheese",
+      "milk_box",
+      "matched_random"
+    ]
+  ],
+  "natural_donor_cases": {
+    "milk_box": "x15_milk_box_V198_A195_native",
+    "cream_cheese": "x15_cream_cheese_V198_A195_native"
+  },
+  "expected_counts": {
+    "model_before": 240,
+    "model_after": 240,
+    "block_before": 8640,
+    "block_after": 8640,
+    "pre_W": 8640,
+    "native_UND_dispatch": 8640,
+    "native_GEN_dispatch": 8640,
+    "aux_GEN_dispatch": 240,
+    "aux_W": 480,
+    "aux_W_native": 240,
+    "aux_W_donor": 240,
+    "aux_postnorm": 240,
+    "aux_MLP": 240,
+    "main_W": 8640,
+    "main_postnorm": 8640,
+    "main_MLP": 8640,
+    "action_attention_substitutions": 240,
+    "action_MLP_substitutions": 60
+  },
+  "total_official_dispatch_calls": 17520
+}

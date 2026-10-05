@@ -1,0 +1,39 @@
+{
+  "script_sha256": "6b5ea13b8ce888aecac5cdb42b1a23ae9fec81972edf51f241f1e4429008217c",
+  "accepted_typed_input_roots": {
+    "x15": {
+      "input_root": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs",
+      "metadata_sha256": "640aab50fef3d900877130058ab5aa538e5cf5f713fbce523455a28f66ef71ca",
+      "complete_sha256": "fc64d190980ba41ca520cabca566d28a1606e5667fe762fb9d9d4be5e2ef139c"
+    }
+  },
+  "stats_sha256": "bf20cb010fad4ee5754ad83dafab0fce509fc99594d75a3a151d07cf81c905ac",
+  "scene_prompt": "pick up the milk and place it in the basket",
+  "policy_prompts": {
+    "x15_milk_box_from_cream_cheese_V198_A195_live_self": "pick up the milk box and place it in the basket",
+    "x15_cream_cheese_from_milk_box_V198_A195_live_self": "pick up the cream cheese and place it in the basket",
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint": "pick up the milk box and place it in the basket",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint": "pick up the cream cheese and place it in the basket",
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint_native_mlp": "pick up the milk box and place it in the basket",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp": "pick up the cream cheese and place it in the basket",
+    "x15_milk_box_from_cream_cheese_V198_A195_matched_random": "pick up the milk box and place it in the basket",
+    "x15_cream_cheese_from_milk_box_V198_A195_matched_random": "pick up the cream cheese and place it in the basket"
+  },
+  "frozen_simulator_sha256": "7060f610814cbf6b13fb79ca2da78af73bba542d479ac2b8a73110097543d845",
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "queries_per_trial": 8,
+  "actions_per_query": 16,
+  "steps_per_trial": 128,
+  "seeds": [
+    195
+  ],
+  "shifts_cm": {
+    "x15": 15
+  },
+  "additional_warmup_steps": 0,
+  "selection_criterion": "Simultaneous left/right fingerpad contact AND >2cm lift in each of five consecutive control-step records.",
+  "action_conversion": "Quantile affine inverse; _framewise_action_to_delta(6d); _remap_gripper(zero_one); clip [-1,1].",
+  "scope": "Eight preregistered X15/V198 q0 interventions, each followed by seven native recipient-instruction queries with seed195+q. Only two natural matched-name references are eligible. Suffix transfer is instruction-context transfer, not a decoded identity, named head or unique MLP mediator. The same-live MLP comparison is controlled locally, while later trajectories are dynamic. Actual BF16 random strength matches pre-W only. Strict grasp, approach displacement and original milk-in-basket predicate remain separate. No original milk-instruction 15cm repair or half-denoising withdrawal test."
+}

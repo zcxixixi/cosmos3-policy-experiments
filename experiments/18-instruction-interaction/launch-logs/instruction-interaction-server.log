@@ -1,0 +1,20 @@
+[LANGUAGE-ROUTES] {"stage": "loading_model", "elapsed_s": 0.0029552960040746257}
+/home/current/work/cosmos3/diffusers/src/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+The config attributes {'vision_encoder': ['transformers', 'Qwen3VLVisionModel']} were passed to Cosmos3OmniPipeline, but are not expected and will be ignored. Please verify your model_index.json configuration file.
+Keyword arguments {'vision_encoder': ['transformers', 'Qwen3VLVisionModel']} are not expected by Cosmos3OmniPipeline and will be ignored.
+Loading pipeline components...:   0%|          | 0/4 [00:00<?, ?it/s]Loading pipeline components...:  25%|██▌       | 1/4 [00:00<00:00,  3.85it/s]The config attributes {'dtype': 'bfloat16', 'freeze_und': False, 'initializer_range': 0.02, 'joint_attn_implementation': 'two_way', 'max_action_dim': 64, 'max_position_embeddings': 262144, 'model_type': 'qwen3_vl_text', 'qk_norm': False, 'qk_norm_for_diffusion': True, 'temporal_compression_factor_sound': 1, 'use_cache': True, 'use_moe': True, 'video_temporal_causal': False} were passed to Cosmos3OmniTransformer, but are not expected and will be ignored. Please verify your config.json configuration file.
+
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00, 249.36it/s]
+The config attributes {'clip_output': False} were passed to AutoencoderKLWan, but are not expected and will be ignored. Please verify your config.json configuration file.
+Loading pipeline components...: 100%|██████████| 4/4 [00:00<00:00, 12.40it/s]
+127.0.0.1 - - [05/Oct/2026 13:23:14] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [05/Oct/2026 13:24:22] "GET /health HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/current/work/cosmos3/work/run_cosmos_milk_instruction_interaction.py", line 535, in <module>
+    main()
+  File "/home/current/work/cosmos3/work/run_cosmos_milk_instruction_interaction.py", line 527, in main
+    server(baseline) if args.mode == 'server' else simulate(baseline)
+  File "/home/current/work/cosmos3/work/run_cosmos_milk_instruction_interaction.py", line 392, in server
+    assert not (out / 'closed-loop/failed.json').exists() and not (out / 'wrapper_failed.json').exists()
+AssertionError

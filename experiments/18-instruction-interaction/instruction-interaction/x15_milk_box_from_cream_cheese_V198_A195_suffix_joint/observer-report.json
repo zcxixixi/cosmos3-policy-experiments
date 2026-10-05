@@ -1,0 +1,1072 @@
+{
+  "state": "complete",
+  "counts": {
+    "model_before": 30,
+    "model_after": 30,
+    "block_before": 1080,
+    "block_after": 1080,
+    "pre_W": 1080,
+    "native_UND_dispatch": 1080,
+    "native_GEN_dispatch": 1080,
+    "aux_GEN_dispatch": 30,
+    "aux_W": 60,
+    "aux_W_native": 30,
+    "aux_W_donor": 30,
+    "aux_postnorm": 30,
+    "aux_MLP": 30,
+    "main_W": 1080,
+    "main_postnorm": 1080,
+    "main_MLP": 1080,
+    "action_attention_substitutions": 30,
+    "action_MLP_substitutions": 0
+  },
+  "boundary_files": [
+    {
+      "step": 0,
+      "layer_zero_based": 35,
+      "file": "site-t00-L35.pt",
+      "sha256": "cc5a63dc0b7cd521f82bb130ba32d8443b560e4f44585c1525e5be8632294752",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "46a72f7cee4c45d87787014c5b03fc6ed4996f40217bb0d6c80b829fe6420b28",
+      "model_output_sha256": "cdc898e02951c8e8d0cbd5da4da0936f47d5d4b827b4efe469fbb082d4807600"
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 35,
+      "file": "site-t01-L35.pt",
+      "sha256": "b50ddb7b13425d30301728ef39526a1e99e27becc59a593ef218d2b1c424c7d1",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "433d66f2871ae95ca4de4247bffc0305ee8aafcb94244e23eb13601c8d2dfdc1",
+      "model_output_sha256": "026a78591024e05dc552e1a4e02de5b9113e0f4bc45d5a0340f34b40e329aba5"
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 35,
+      "file": "site-t02-L35.pt",
+      "sha256": "cd43bfb998be1e809ea9cf21aec1a4e7d3cf2c3e58d47b84661d9de0366ca4b4",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "a95a7cf09d194b7709c885de08a863660172adcabfeaf3b4665ea6fa4fca6d77",
+      "model_output_sha256": "7f58b19a4ca1b50f67e9caa82d7c2487808bb47764f2b7d924053ed477bbbe91"
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 35,
+      "file": "site-t03-L35.pt",
+      "sha256": "6a6c72074cc13ff5a7f0558f38ef09d71673db1994b5220eff35ec30807b4d63",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "c37ff93eff7b46bf14363fc6e7673d4d63a947f41efdc800934598bf2a87983c",
+      "model_output_sha256": "5ee5940543c2ba3d5fedd40b738d37c43b91bfea9e0d8e125cd730548678d7bd"
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 35,
+      "file": "site-t04-L35.pt",
+      "sha256": "7f86754a352963dfce02e59aef4c54ef793c1106a28cd1db2326446c58045902",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "5e4f07991b6fd89a90bb9569b7419a0d9711c3cef6990a7d475408fe814a2330",
+      "model_output_sha256": "92a4f36a54b8e82567782441fab790523f06174efb7bdc90118de4e46f98416b"
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 35,
+      "file": "site-t05-L35.pt",
+      "sha256": "667783744c47a995017bbe188b871c19e333da1ed07d0fff7cab994aa0d20e88",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "5668ff3755ef6c01c2480b99e5bbc54d8eda3a627a19d227485d9fc41fdffc5f",
+      "model_output_sha256": "aeec1d029b94bc330ec7792d5ff03f8013f129da78dd67006945df5ae923be69"
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 35,
+      "file": "site-t06-L35.pt",
+      "sha256": "220206685b97e734f26dc3878d5295838fa8050341a410d7f3e4fb93a88a98a5",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "bd301e38b0a9179e9ebf5dcf831cea5810cbccc869fe770c6be34e32639953f6",
+      "model_output_sha256": "4e20307393a2724b5610318faf4285f36a69fc7e0bbdd7d5c0a3e2b52665a13e"
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 35,
+      "file": "site-t07-L35.pt",
+      "sha256": "076e89598fcd4605a02902aaa53e32d361d67bbaa0c77168531aea3fc1ac8fe0",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "8d587e92a599ac487a53134d2f4e21aa0cd2f4bdc05aefd5f5825daed712b28e",
+      "model_output_sha256": "b3d62b6f0bf0ad7358fc6b74cb8c26303e22fd939548b840ce9c7407a613f1e8"
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 35,
+      "file": "site-t08-L35.pt",
+      "sha256": "b14f64aa62a9e891be115b90c63ec73c5c8fb1ed4d16669ea4a67227db561234",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "cd0d5304fa5a1e928de4d1c01566a28e5d16ad9c29ddd421455385dfa1f52d7f",
+      "model_output_sha256": "d09e92af57d797596ac6d5661ecf269827e17a96565a6b54428e63b2a1240730"
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 35,
+      "file": "site-t09-L35.pt",
+      "sha256": "f49a5d72707a6e29f3f4444521070fdfa31968e7ee9338c50271ba2b8b5c544d",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "f53b9e5560cb9b26dd165920fe780072efc45a85dc685f388e7a77647cafc27d",
+      "model_output_sha256": "abad740245a7d7f7c540e75c461f3bdb2a5e0672d1e8f9813ffb56088e09e845"
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 35,
+      "file": "site-t10-L35.pt",
+      "sha256": "d7277886fc7b15d535e0a9bb42b7c2bee02b06714312d4b28e560c0d5ab23d76",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "19e714f0fd8c28283de52e892269c418e263edb49e3a0d3215fd111885835eba",
+      "model_output_sha256": "697da841506853dfcb850c90fd411d8bb73ea0df5c3e8eeaf5a43de4362fb8ad"
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 35,
+      "file": "site-t11-L35.pt",
+      "sha256": "960c5e98d5701e3b8174d0de7d651b122b1dbee85b7d7365e435d9e3fd397c46",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "02499178d1f41e94edc410045eaa7f6303dd04c36c3b7116f0ccfd326f416e22",
+      "model_output_sha256": "477370ac3759bb3c9e70e2645653ccf1b5e1bbeaba109ebdef3625c0562bb181"
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 35,
+      "file": "site-t12-L35.pt",
+      "sha256": "1b96c08d35ba02d23fa412294f472e853e20e37eb2e231c5f8aca79e37925e9f",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "1a4e20094255b31572b806d8b00dadf4e1c096c62aeb3600fb5bdbfdfd13d77a",
+      "model_output_sha256": "b61f270ba9bc73b58478f8551434cb35ce6a2c1202a72160fc2ceb8836c46494"
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 35,
+      "file": "site-t13-L35.pt",
+      "sha256": "fa2a6d1cf5c4bdadaf01780a4e31aec36082ab61449730353156aeab5299d9aa",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "a3ccb6a47dc1035e641905c6bbc095eace3a0d29647f77571ee87113fe2cdde3",
+      "model_output_sha256": "f061d6fda6f10bcf776ed844003944d5894ee4d6417cc9a9b647d2bd8b49b4ac"
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 35,
+      "file": "site-t14-L35.pt",
+      "sha256": "9abb67ade0a2aaac1625887368a5d0c72729121280c3da57f406f320c3b79c17",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "424ca5d4320add966be27448950fca4bb45e47a916bafc13119796c15e8fa859",
+      "model_output_sha256": "c71e8a6088a587b4d4ba52380c007f833f4ea6543bdb8581d74fd5b26a44675c"
+    },
+    {
+      "step": 15,
+      "layer_zero_based": 35,
+      "file": "site-t15-L35.pt",
+      "sha256": "e97e0e9b2295a1faf2ffa69923fdc4c425feb6c32b2af619702ccfff21ac5c7a",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "99926814425a8e0e2435d59c178eced5aaa173fa6c9eb7f2f31e989334069fa8",
+      "model_output_sha256": "bc02ec555d1a2c264b875606a7ef579899c045f3f5aedbe573d77ec155862e1c"
+    },
+    {
+      "step": 16,
+      "layer_zero_based": 35,
+      "file": "site-t16-L35.pt",
+      "sha256": "ffc5847b71f1cf5e6de90530e2c20fac0c1ae8b6fedb5c8fdf1ecf6f6ddce80b",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "8c17329500020b7b3d7f927b95f1b3f8e98fa7498efad360730f4a23c1919c42",
+      "model_output_sha256": "dc359d91c252abf71b9d038525a4ead51ae148bd4a95ecf9336ba0dbac7a8187"
+    },
+    {
+      "step": 17,
+      "layer_zero_based": 35,
+      "file": "site-t17-L35.pt",
+      "sha256": "24aa2ac617efbceee548c627e3a064b451810971abd44ace00f11489b46c1f18",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "61d462f4da3972f772c9121a4daa800cb9a5922dd5f7c37594bc4d077dd75964",
+      "model_output_sha256": "7050b53e0404c5ca6e0648e102ef294e3cde71074665443190c811d9d08ff32c"
+    },
+    {
+      "step": 18,
+      "layer_zero_based": 35,
+      "file": "site-t18-L35.pt",
+      "sha256": "564d23c37c743f7f0a25c59875dbd79a205e21fe135b9d96866e4d7f6ecaa7d7",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "001b40cb739bdcc837d6229558161051dbe94ff2883e7be75e8349c76f421881",
+      "model_output_sha256": "bbbdf2a9986bb3108209a45a540e1f74d3ec5ddd4f41accd3b1f344e41c7974d"
+    },
+    {
+      "step": 19,
+      "layer_zero_based": 35,
+      "file": "site-t19-L35.pt",
+      "sha256": "c6b4b1dbd1eb9e54e85fae527af5bcf94a1344f7a358db0bce087d2c3c83b1bc",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "2562cc63f60b85088aff2572f1f046ede5a1f4cde06c75976cb860fb29fe0bcf",
+      "model_output_sha256": "e035f63b81da02b647a7f55ba64d11e1979cafa5703180b2c8d98379505a7bba"
+    },
+    {
+      "step": 20,
+      "layer_zero_based": 35,
+      "file": "site-t20-L35.pt",
+      "sha256": "6512468add7e2743a56a722b699e77d425ca4d27f97790265f7b86df20900ead",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "f04f2187d7e54bd4a91a937bd1e386e21d8b4d4ce4f4c9c7c00fa25e40043f07",
+      "model_output_sha256": "191cb52b530357179a39628c37fac1fd1e5f22dd134f6ebac9e0273d05448af7"
+    },
+    {
+      "step": 21,
+      "layer_zero_based": 35,
+      "file": "site-t21-L35.pt",
+      "sha256": "20a4ce7d1e0d0d9ab9edb11b0010d5777ebf45424976ca1d79aeef2d190c0754",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "723fe9610507497728337c9c5c918c610900d1b475156b257068b332f7d38684",
+      "model_output_sha256": "8d630e510f8556b08e47745ec3889bbc669f66adb817ab07e4ed75d9175fc57b"
+    },
+    {
+      "step": 22,
+      "layer_zero_based": 35,
+      "file": "site-t22-L35.pt",
+      "sha256": "df77e45a4d4540399890d16247d007c1b709733b64d29e16bb7fd86d740cdb04",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "308e0454d8e0604af04b9e2a25fef2f4e652b4000e533b752954b4778f3e1bde",
+      "model_output_sha256": "ab8c9ab1d8fef0f94ff6e720687db6955011215f8ae4a2b46df2002dd1f97d21"
+    },
+    {
+      "step": 23,
+      "layer_zero_based": 35,
+      "file": "site-t23-L35.pt",
+      "sha256": "2351030e5c6d6f56530fafb1a0e3d59fe13786da5a6c69f26ea1d3043bbae006",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "6063619f4a98046edf535bff5909dda85664d7485eea6259dc23e3359ad2b345",
+      "model_output_sha256": "cff714f09c925b4979075e370260cdf5414a7c3012fbeb76f300cb79b9fd4531"
+    },
+    {
+      "step": 24,
+      "layer_zero_based": 35,
+      "file": "site-t24-L35.pt",
+      "sha256": "8d070aa9905a505f1e3aed616cda3cc149d8e2d3b86f60478a87e01de5c8dc62",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "f446ff10c067bd2a9961cd58b9cc26290028bfbeee7928aeea8d55d3faee5cf7",
+      "model_output_sha256": "324887b52a30802794d36af234c6d967bc9b1462fe1d701da627b79c54cb0ae3"
+    },
+    {
+      "step": 25,
+      "layer_zero_based": 35,
+      "file": "site-t25-L35.pt",
+      "sha256": "84182678ce99db294ab7a25c0de1bac2077c39b71e3104373e80a1774c382364",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "043c1dd0c447c8d5e3217a5df8a5fe205486b3b620b059afe71f8cd3f08823ad",
+      "model_output_sha256": "aefda935876ea752d0d95395cbaaf52a9909f85dbf68003e0db6ac19dd7ea473"
+    },
+    {
+      "step": 26,
+      "layer_zero_based": 35,
+      "file": "site-t26-L35.pt",
+      "sha256": "6aff96bc878efcdce7702ddb89912e36a84ecb4dc9850509628d772cbe928bad",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "ba07b4defd1b55019a349aa5a8ac9409ac2dac82f7c11a9d092e397c11e227fb",
+      "model_output_sha256": "52832f91c6db9ec6d50147b46185cc6d0d7a28ce8bb16b25fff1044f7a72b3d0"
+    },
+    {
+      "step": 27,
+      "layer_zero_based": 35,
+      "file": "site-t27-L35.pt",
+      "sha256": "987e7f032a27af8a500204af29a30311391f4e127b098588f7d4f1dce21ec8b6",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "a1a2d61341a280221d453156a494fd33bd001ab94c3ad711ca412adda718e345",
+      "model_output_sha256": "00fdcb30ac2bc1967ddfbe1696f859628c493926b6c5f0281f74c1703b445893"
+    },
+    {
+      "step": 28,
+      "layer_zero_based": 35,
+      "file": "site-t28-L35.pt",
+      "sha256": "7c14254eb3ede06284eb97612a22a4c53ae5ee57730dd86b79e894fa7dfe4cd9",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "2d91846f9c7dae650cd2b26cdfe09ee8ba712b182ee89b186b9529ac260bb121",
+      "model_output_sha256": "ed4d28f4742571b55f0b2cfe5486d31bf1b36e5d53bb35ef9a6cbf1dd272e79b"
+    },
+    {
+      "step": 29,
+      "layer_zero_based": 35,
+      "file": "site-t29-L35.pt",
+      "sha256": "f6de707ae5661905fdef5358adcd6a1de0fb78f7dcdb7c8b7cd8ac26714ddd70",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "cacdd39069e5249bfb243756d631c3a520a106ecdad16a89ec8c775a0d15ec4f",
+      "model_output_sha256": "64618dc76d900eae23d2d124889d5c9db3e3f4fc259c3273e662e76fc60d568a"
+    }
+  ],
+  "site_files": [
+    {
+      "step": 0,
+      "layer_zero_based": 35,
+      "file": "site-t00-L35.pt",
+      "sha256": "cc5a63dc0b7cd521f82bb130ba32d8443b560e4f44585c1525e5be8632294752",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "46a72f7cee4c45d87787014c5b03fc6ed4996f40217bb0d6c80b829fe6420b28",
+      "model_output_sha256": "cdc898e02951c8e8d0cbd5da4da0936f47d5d4b827b4efe469fbb082d4807600"
+    },
+    {
+      "step": 1,
+      "layer_zero_based": 35,
+      "file": "site-t01-L35.pt",
+      "sha256": "b50ddb7b13425d30301728ef39526a1e99e27becc59a593ef218d2b1c424c7d1",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "433d66f2871ae95ca4de4247bffc0305ee8aafcb94244e23eb13601c8d2dfdc1",
+      "model_output_sha256": "026a78591024e05dc552e1a4e02de5b9113e0f4bc45d5a0340f34b40e329aba5"
+    },
+    {
+      "step": 2,
+      "layer_zero_based": 35,
+      "file": "site-t02-L35.pt",
+      "sha256": "cd43bfb998be1e809ea9cf21aec1a4e7d3cf2c3e58d47b84661d9de0366ca4b4",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "a95a7cf09d194b7709c885de08a863660172adcabfeaf3b4665ea6fa4fca6d77",
+      "model_output_sha256": "7f58b19a4ca1b50f67e9caa82d7c2487808bb47764f2b7d924053ed477bbbe91"
+    },
+    {
+      "step": 3,
+      "layer_zero_based": 35,
+      "file": "site-t03-L35.pt",
+      "sha256": "6a6c72074cc13ff5a7f0558f38ef09d71673db1994b5220eff35ec30807b4d63",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "c37ff93eff7b46bf14363fc6e7673d4d63a947f41efdc800934598bf2a87983c",
+      "model_output_sha256": "5ee5940543c2ba3d5fedd40b738d37c43b91bfea9e0d8e125cd730548678d7bd"
+    },
+    {
+      "step": 4,
+      "layer_zero_based": 35,
+      "file": "site-t04-L35.pt",
+      "sha256": "7f86754a352963dfce02e59aef4c54ef793c1106a28cd1db2326446c58045902",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "5e4f07991b6fd89a90bb9569b7419a0d9711c3cef6990a7d475408fe814a2330",
+      "model_output_sha256": "92a4f36a54b8e82567782441fab790523f06174efb7bdc90118de4e46f98416b"
+    },
+    {
+      "step": 5,
+      "layer_zero_based": 35,
+      "file": "site-t05-L35.pt",
+      "sha256": "667783744c47a995017bbe188b871c19e333da1ed07d0fff7cab994aa0d20e88",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "5668ff3755ef6c01c2480b99e5bbc54d8eda3a627a19d227485d9fc41fdffc5f",
+      "model_output_sha256": "aeec1d029b94bc330ec7792d5ff03f8013f129da78dd67006945df5ae923be69"
+    },
+    {
+      "step": 6,
+      "layer_zero_based": 35,
+      "file": "site-t06-L35.pt",
+      "sha256": "220206685b97e734f26dc3878d5295838fa8050341a410d7f3e4fb93a88a98a5",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "bd301e38b0a9179e9ebf5dcf831cea5810cbccc869fe770c6be34e32639953f6",
+      "model_output_sha256": "4e20307393a2724b5610318faf4285f36a69fc7e0bbdd7d5c0a3e2b52665a13e"
+    },
+    {
+      "step": 7,
+      "layer_zero_based": 35,
+      "file": "site-t07-L35.pt",
+      "sha256": "076e89598fcd4605a02902aaa53e32d361d67bbaa0c77168531aea3fc1ac8fe0",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "8d587e92a599ac487a53134d2f4e21aa0cd2f4bdc05aefd5f5825daed712b28e",
+      "model_output_sha256": "b3d62b6f0bf0ad7358fc6b74cb8c26303e22fd939548b840ce9c7407a613f1e8"
+    },
+    {
+      "step": 8,
+      "layer_zero_based": 35,
+      "file": "site-t08-L35.pt",
+      "sha256": "b14f64aa62a9e891be115b90c63ec73c5c8fb1ed4d16669ea4a67227db561234",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "cd0d5304fa5a1e928de4d1c01566a28e5d16ad9c29ddd421455385dfa1f52d7f",
+      "model_output_sha256": "d09e92af57d797596ac6d5661ecf269827e17a96565a6b54428e63b2a1240730"
+    },
+    {
+      "step": 9,
+      "layer_zero_based": 35,
+      "file": "site-t09-L35.pt",
+      "sha256": "f49a5d72707a6e29f3f4444521070fdfa31968e7ee9338c50271ba2b8b5c544d",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "f53b9e5560cb9b26dd165920fe780072efc45a85dc685f388e7a77647cafc27d",
+      "model_output_sha256": "abad740245a7d7f7c540e75c461f3bdb2a5e0672d1e8f9813ffb56088e09e845"
+    },
+    {
+      "step": 10,
+      "layer_zero_based": 35,
+      "file": "site-t10-L35.pt",
+      "sha256": "d7277886fc7b15d535e0a9bb42b7c2bee02b06714312d4b28e560c0d5ab23d76",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "19e714f0fd8c28283de52e892269c418e263edb49e3a0d3215fd111885835eba",
+      "model_output_sha256": "697da841506853dfcb850c90fd411d8bb73ea0df5c3e8eeaf5a43de4362fb8ad"
+    },
+    {
+      "step": 11,
+      "layer_zero_based": 35,
+      "file": "site-t11-L35.pt",
+      "sha256": "960c5e98d5701e3b8174d0de7d651b122b1dbee85b7d7365e435d9e3fd397c46",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "02499178d1f41e94edc410045eaa7f6303dd04c36c3b7116f0ccfd326f416e22",
+      "model_output_sha256": "477370ac3759bb3c9e70e2645653ccf1b5e1bbeaba109ebdef3625c0562bb181"
+    },
+    {
+      "step": 12,
+      "layer_zero_based": 35,
+      "file": "site-t12-L35.pt",
+      "sha256": "1b96c08d35ba02d23fa412294f472e853e20e37eb2e231c5f8aca79e37925e9f",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "1a4e20094255b31572b806d8b00dadf4e1c096c62aeb3600fb5bdbfdfd13d77a",
+      "model_output_sha256": "b61f270ba9bc73b58478f8551434cb35ce6a2c1202a72160fc2ceb8836c46494"
+    },
+    {
+      "step": 13,
+      "layer_zero_based": 35,
+      "file": "site-t13-L35.pt",
+      "sha256": "fa2a6d1cf5c4bdadaf01780a4e31aec36082ab61449730353156aeab5299d9aa",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "a3ccb6a47dc1035e641905c6bbc095eace3a0d29647f77571ee87113fe2cdde3",
+      "model_output_sha256": "f061d6fda6f10bcf776ed844003944d5894ee4d6417cc9a9b647d2bd8b49b4ac"
+    },
+    {
+      "step": 14,
+      "layer_zero_based": 35,
+      "file": "site-t14-L35.pt",
+      "sha256": "9abb67ade0a2aaac1625887368a5d0c72729121280c3da57f406f320c3b79c17",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "424ca5d4320add966be27448950fca4bb45e47a916bafc13119796c15e8fa859",
+      "model_output_sha256": "c71e8a6088a587b4d4ba52380c007f833f4ea6543bdb8581d74fd5b26a44675c"
+    },
+    {
+      "step": 15,
+      "layer_zero_based": 35,
+      "file": "site-t15-L35.pt",
+      "sha256": "e97e0e9b2295a1faf2ffa69923fdc4c425feb6c32b2af619702ccfff21ac5c7a",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "99926814425a8e0e2435d59c178eced5aaa173fa6c9eb7f2f31e989334069fa8",
+      "model_output_sha256": "bc02ec555d1a2c264b875606a7ef579899c045f3f5aedbe573d77ec155862e1c"
+    },
+    {
+      "step": 16,
+      "layer_zero_based": 35,
+      "file": "site-t16-L35.pt",
+      "sha256": "ffc5847b71f1cf5e6de90530e2c20fac0c1ae8b6fedb5c8fdf1ecf6f6ddce80b",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "8c17329500020b7b3d7f927b95f1b3f8e98fa7498efad360730f4a23c1919c42",
+      "model_output_sha256": "dc359d91c252abf71b9d038525a4ead51ae148bd4a95ecf9336ba0dbac7a8187"
+    },
+    {
+      "step": 17,
+      "layer_zero_based": 35,
+      "file": "site-t17-L35.pt",
+      "sha256": "24aa2ac617efbceee548c627e3a064b451810971abd44ace00f11489b46c1f18",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "61d462f4da3972f772c9121a4daa800cb9a5922dd5f7c37594bc4d077dd75964",
+      "model_output_sha256": "7050b53e0404c5ca6e0648e102ef294e3cde71074665443190c811d9d08ff32c"
+    },
+    {
+      "step": 18,
+      "layer_zero_based": 35,
+      "file": "site-t18-L35.pt",
+      "sha256": "564d23c37c743f7f0a25c59875dbd79a205e21fe135b9d96866e4d7f6ecaa7d7",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "001b40cb739bdcc837d6229558161051dbe94ff2883e7be75e8349c76f421881",
+      "model_output_sha256": "bbbdf2a9986bb3108209a45a540e1f74d3ec5ddd4f41accd3b1f344e41c7974d"
+    },
+    {
+      "step": 19,
+      "layer_zero_based": 35,
+      "file": "site-t19-L35.pt",
+      "sha256": "c6b4b1dbd1eb9e54e85fae527af5bcf94a1344f7a358db0bce087d2c3c83b1bc",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "2562cc63f60b85088aff2572f1f046ede5a1f4cde06c75976cb860fb29fe0bcf",
+      "model_output_sha256": "e035f63b81da02b647a7f55ba64d11e1979cafa5703180b2c8d98379505a7bba"
+    },
+    {
+      "step": 20,
+      "layer_zero_based": 35,
+      "file": "site-t20-L35.pt",
+      "sha256": "6512468add7e2743a56a722b699e77d425ca4d27f97790265f7b86df20900ead",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "f04f2187d7e54bd4a91a937bd1e386e21d8b4d4ce4f4c9c7c00fa25e40043f07",
+      "model_output_sha256": "191cb52b530357179a39628c37fac1fd1e5f22dd134f6ebac9e0273d05448af7"
+    },
+    {
+      "step": 21,
+      "layer_zero_based": 35,
+      "file": "site-t21-L35.pt",
+      "sha256": "20a4ce7d1e0d0d9ab9edb11b0010d5777ebf45424976ca1d79aeef2d190c0754",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "723fe9610507497728337c9c5c918c610900d1b475156b257068b332f7d38684",
+      "model_output_sha256": "8d630e510f8556b08e47745ec3889bbc669f66adb817ab07e4ed75d9175fc57b"
+    },
+    {
+      "step": 22,
+      "layer_zero_based": 35,
+      "file": "site-t22-L35.pt",
+      "sha256": "df77e45a4d4540399890d16247d007c1b709733b64d29e16bb7fd86d740cdb04",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "308e0454d8e0604af04b9e2a25fef2f4e652b4000e533b752954b4778f3e1bde",
+      "model_output_sha256": "ab8c9ab1d8fef0f94ff6e720687db6955011215f8ae4a2b46df2002dd1f97d21"
+    },
+    {
+      "step": 23,
+      "layer_zero_based": 35,
+      "file": "site-t23-L35.pt",
+      "sha256": "2351030e5c6d6f56530fafb1a0e3d59fe13786da5a6c69f26ea1d3043bbae006",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "6063619f4a98046edf535bff5909dda85664d7485eea6259dc23e3359ad2b345",
+      "model_output_sha256": "cff714f09c925b4979075e370260cdf5414a7c3012fbeb76f300cb79b9fd4531"
+    },
+    {
+      "step": 24,
+      "layer_zero_based": 35,
+      "file": "site-t24-L35.pt",
+      "sha256": "8d070aa9905a505f1e3aed616cda3cc149d8e2d3b86f60478a87e01de5c8dc62",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "f446ff10c067bd2a9961cd58b9cc26290028bfbeee7928aeea8d55d3faee5cf7",
+      "model_output_sha256": "324887b52a30802794d36af234c6d967bc9b1462fe1d701da627b79c54cb0ae3"
+    },
+    {
+      "step": 25,
+      "layer_zero_based": 35,
+      "file": "site-t25-L35.pt",
+      "sha256": "84182678ce99db294ab7a25c0de1bac2077c39b71e3104373e80a1774c382364",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "043c1dd0c447c8d5e3217a5df8a5fe205486b3b620b059afe71f8cd3f08823ad",
+      "model_output_sha256": "aefda935876ea752d0d95395cbaaf52a9909f85dbf68003e0db6ac19dd7ea473"
+    },
+    {
+      "step": 26,
+      "layer_zero_based": 35,
+      "file": "site-t26-L35.pt",
+      "sha256": "6aff96bc878efcdce7702ddb89912e36a84ecb4dc9850509628d772cbe928bad",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "ba07b4defd1b55019a349aa5a8ac9409ac2dac82f7c11a9d092e397c11e227fb",
+      "model_output_sha256": "52832f91c6db9ec6d50147b46185cc6d0d7a28ce8bb16b25fff1044f7a72b3d0"
+    },
+    {
+      "step": 27,
+      "layer_zero_based": 35,
+      "file": "site-t27-L35.pt",
+      "sha256": "987e7f032a27af8a500204af29a30311391f4e127b098588f7d4f1dce21ec8b6",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "a1a2d61341a280221d453156a494fd33bd001ab94c3ad711ca412adda718e345",
+      "model_output_sha256": "00fdcb30ac2bc1967ddfbe1696f859628c493926b6c5f0281f74c1703b445893"
+    },
+    {
+      "step": 28,
+      "layer_zero_based": 35,
+      "file": "site-t28-L35.pt",
+      "sha256": "7c14254eb3ede06284eb97612a22a4c53ae5ee57730dd86b79e894fa7dfe4cd9",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "2d91846f9c7dae650cd2b26cdfe09ee8ba712b182ee89b186b9529ac260bb121",
+      "model_output_sha256": "ed4d28f4742571b55f0b2cfe5486d31bf1b36e5d53bb35ef9a6cbf1dd272e79b"
+    },
+    {
+      "step": 29,
+      "layer_zero_based": 35,
+      "file": "site-t29-L35.pt",
+      "sha256": "f6de707ae5661905fdef5358adcd6a1de0fb78f7dcdb7c8b7cd8ac26714ddd70",
+      "bytes": 1133775,
+      "action_shape": [
+        16,
+        4096
+      ],
+      "action_boundary_ids": [
+        36
+      ],
+      "full_QKV_raw_saved": false,
+      "actual_model_kwargs_sha256": "cacdd39069e5249bfb243756d631c3a520a106ecdad16a89ec8c775a0d15ec4f",
+      "model_output_sha256": "64618dc76d900eae23d2d124889d5c9db3e3f4fc259c3273e662e76fc60d568a"
+    }
+  ],
+  "explicit_action16_raw_only": true,
+  "whole30_NormalRuntime_record_saved": true,
+  "full37_raw_boundary_steps": [],
+  "all37_by30_finite_live_metadata_recorded": true,
+  "actual_L35_selected_sites": 30,
+  "all_original_QKV_and_global_RNG_bytes_preserved": true,
+  "all_nonaction_GEN_rows_native_through_attention_W_norm_MLP_block_byte_exact": true,
+  "actual_t0_b0_through_b35_decoder_prefix_and_final_UND_current_byte_exact": true,
+  "all_main_full266_W_and_MLP_calls_preserved": true,
+  "same_live_full266_native_W_residual_postnorm_MLP_baseline_computed": true,
+  "auxiliary_call_counts": {
+    "aux_GEN_dispatch": 30,
+    "aux_W": 60,
+    "aux_W_native": 30,
+    "aux_W_donor": 30,
+    "aux_postnorm": 30,
+    "aux_MLP": 30
+  },
+  "all30_same_input_BF16_residual_and_actual_block_bytes_reconstructed": true,
+  "live_self_complete_Z_W_residual_norm_MLP_byte_gates_passed": false,
+  "random_strength_reports": [],
+  "all_random_strength_gates_passed": true,
+  "all_owned_hooks_removed": true,
+  "original_dispatch_symbol_restored": true,
+  "scope": "X15/V198 two natural recipient instructions with fixed A/runtime195. Only q0 L35 action16 receives a target-start-to-UND-end natural K/V suffix counterfactual while Q, other K/V and key count remain actual recipient values. The suffix is instruction context, not decoded object identity. The same-input native-MLP arm tests a controlled MLP contribution under swapped attention; there is no full attention-by-MLP factorial or unique-mediator claim. Random strength matches actual BF16 pre-W action L2 within 2%, not W-output strength. All eight physical trials and seven recipient-native feedback queries are required separately. No original milk-instruction 15cm repair, training, head scan or natural-trajectory MLP subtraction is claimed."
+}

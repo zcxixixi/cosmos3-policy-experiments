@@ -1,0 +1,105 @@
+{
+  "task": "cream_cheese",
+  "task_index": 7,
+  "prompt": "pick up the cream cheese and place it in the basket",
+  "seed": 195,
+  "pixels": "official",
+  "schedule": "official",
+  "use_system_prompt": false,
+  "domain_name": "libero",
+  "domain_id": 5,
+  "raw_action_dim": 10,
+  "chunk_size": 16,
+  "num_inference_steps": 30,
+  "image_path": "/home/current/work/cosmos3/outputs/official-demos/milk-posttrain/gripper-context/deep-dive/milk-shift-mechanism/future-current-position-inputs/inputs/x15/input.png",
+  "input_png_sha256": "cb2b4354b9c4c32d0275fcf75ae45a8fb1dd22058303d39e2244d8397acc7788",
+  "und_len": 122,
+  "timesteps": [
+    999,
+    965,
+    932,
+    899,
+    865,
+    832,
+    799,
+    765,
+    732,
+    699,
+    666,
+    632,
+    599,
+    566,
+    532,
+    499,
+    466,
+    432,
+    399,
+    366,
+    333,
+    299,
+    266,
+    233,
+    199,
+    166,
+    133,
+    99,
+    66,
+    33
+  ],
+  "model_calls": 30,
+  "prepare_calls": 1,
+  "pure_noise_shapes": [
+    [
+      1,
+      48,
+      5,
+      10,
+      20
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "elapsed_s": 5.934056073005195,
+  "capture": "Actual first model kwargs; actual FP32 vision/action random draws before masks/padding; prepared latents/masks; 30 action readouts and velocities; 31 FP32 action states. No attention or GEN layer cache.",
+  "case": "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp",
+  "scene": "x15",
+  "goal": "cream_cheese",
+  "recipient_goal": "cream_cheese",
+  "donor_goal": "milk_box",
+  "arm": "suffix_joint_native_mlp",
+  "query": 0,
+  "policy_prompt": "pick up the cream cheese and place it in the basket",
+  "donor_prompt": "pick up the milk box and place it in the basket",
+  "target_object": "cream_cheese_1",
+  "donor_target_object": "milk_1",
+  "shift_cm": 15,
+  "vision_noise_source_seed": 198,
+  "action_noise_source_seed": 195,
+  "runtime_rng_seed": 195,
+  "producer_script_sha256": "745c4d8864bc94751791cf5aa81cb74afc0a678ca95dfad998b0381431c61429",
+  "control_reference_case": "x15_cream_cheese_V198_A195_native",
+  "actual_selected_window": {
+    "steps": [
+      0,
+      29
+    ],
+    "layers": [
+      35,
+      35
+    ],
+    "action_query_rows": [
+      250,
+      265
+    ],
+    "UND_suffix_keys": [
+      48,
+      121
+    ]
+  },
+  "same_input_native_MLP_baseline": true,
+  "explicit_action16_raw_only": true,
+  "physical_prediction_evaluated": false,
+  "scope": "X15/V198 two natural recipient instructions with fixed A/runtime195. Only q0 L35 action16 receives a target-start-to-UND-end natural K/V suffix counterfactual while Q, other K/V and key count remain actual recipient values. The suffix is instruction context, not decoded object identity. The same-input native-MLP arm tests a controlled MLP contribution under swapped attention; there is no full attention-by-MLP factorial or unique-mediator claim. Random strength matches actual BF16 pre-W action L2 within 2%, not W-output strength. All eight physical trials and seven recipient-native feedback queries are required separately. No original milk-instruction 15cm repair, training, head scan or natural-trajectory MLP subtraction is claimed."
+}

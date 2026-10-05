@@ -1,0 +1,369 @@
+{
+  "state": "evaluated_all8",
+  "name": "H_L35_suffix_bidirectional_target_transfer",
+  "cases": [
+    "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+    "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint"
+  ],
+  "criterion": "Both suffix_joint executions strictly select only the donor-named object.",
+  "all8_physics_required": true,
+  "live_self_entire_q0_and_physics_controls_required": true,
+  "all30_random_BF16_strength_gates_required": true,
+  "no_q0_ranking": true,
+  "MLP_secondary": "Report J and same-live C in both directions; no full factorial decomposition.",
+  "random_secondary": "If matched_random also transfers targets, semantic specificity is unsupported; failure to transfer does not remove unequal W-output-strength alternatives.",
+  "prediction": "rejected",
+  "both_suffix_joint_strict_only_donor": false,
+  "actual_primary_cases": [
+    {
+      "case": "x15_milk_box_from_cream_cheese_V198_A195_suffix_joint",
+      "scene": "x15",
+      "goal": "milk_box",
+      "recipient_goal": "milk_box",
+      "donor_goal": "cream_cheese",
+      "arm": "suffix_joint",
+      "selected_objects": [
+        "milk_1"
+      ],
+      "strict_requested_recipient_selected": true,
+      "strict_only_donor_selected": false,
+      "first_selection_window_start": 64,
+      "first_selected_object": "milk_1",
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": 60,
+          "contact_frames": 69,
+          "first_2cm_for_5frames": 64,
+          "max_lift_cm": 20.896524107062792,
+          "final_lift_cm": 8.288468636223566,
+          "max_xy_displacement_cm": 52.30334394624998
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 2.0469737016526324e-14,
+          "final_lift_cm": 2.0469737016526324e-14,
+          "max_xy_displacement_cm": 0.0
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.1822821327788233e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "q0_eef_path_xyz_m": [
+        [
+          -0.15291844146572464,
+          -0.008822143713247169,
+          0.2565170014682034
+        ],
+        [
+          -0.15273364397991268,
+          -0.008813265502132997,
+          0.25632585467192764
+        ],
+        [
+          -0.15227257806998074,
+          -0.008824052722305705,
+          0.2559166557041365
+        ],
+        [
+          -0.15162185396840228,
+          -0.008964583983531171,
+          0.2554384907768432
+        ],
+        [
+          -0.15073145311789365,
+          -0.009426869040804956,
+          0.2550013565289021
+        ],
+        [
+          -0.14940003117590944,
+          -0.010512549081238776,
+          0.2546883977841129
+        ],
+        [
+          -0.14755621271082062,
+          -0.012542653156068508,
+          0.2544359481594578
+        ],
+        [
+          -0.14515273234811718,
+          -0.015787920405033934,
+          0.25405418595762197
+        ],
+        [
+          -0.1418574054880394,
+          -0.020324143196473996,
+          0.2534486441946305
+        ],
+        [
+          -0.13729549874672944,
+          -0.025884213842329747,
+          0.2526823971761184
+        ],
+        [
+          -0.13155611017364843,
+          -0.03204261337911454,
+          0.25172399492128583
+        ],
+        [
+          -0.12490406971048344,
+          -0.03852480282448279,
+          0.250610791624719
+        ],
+        [
+          -0.11760016881495446,
+          -0.045239914680085126,
+          0.24944619312327038
+        ],
+        [
+          -0.10984336664471463,
+          -0.05221717149462327,
+          0.2482753335585508
+        ],
+        [
+          -0.10174583399983134,
+          -0.05951430448139422,
+          0.24714212435899582
+        ],
+        [
+          -0.09337742888158719,
+          -0.06710397030114282,
+          0.24609648137668538
+        ],
+        [
+          -0.08482587688321913,
+          -0.07483293851844709,
+          0.24520682536474142
+        ]
+      ],
+      "eef_q0_displacement_m": [
+        0.06809256458250551,
+        -0.06601079480519992,
+        -0.011310176103461966
+      ],
+      "q0_eef_projection_toward_milk_from_cheese_m": 0.04948574974960668,
+      "initial_cheese_to_milk_unit_direction": [
+        -0.09286666803091172,
+        -0.9133735395459484,
+        0.3963894035240379
+      ],
+      "initial_object_separation_m": 0.15341984024994607,
+      "final_milk_in_basket_scene_predicate": false,
+      "strict_windows_sha256": "d9dce2662066f0839786de474eb8c2fd51642e9eca428af34882c3834e5b4f74"
+    },
+    {
+      "case": "x15_cream_cheese_from_milk_box_V198_A195_suffix_joint",
+      "scene": "x15",
+      "goal": "cream_cheese",
+      "recipient_goal": "cream_cheese",
+      "donor_goal": "milk_box",
+      "arm": "suffix_joint",
+      "selected_objects": [
+        "cream_cheese_1"
+      ],
+      "strict_requested_recipient_selected": true,
+      "strict_only_donor_selected": false,
+      "first_selection_window_start": 67,
+      "first_selected_object": "cream_cheese_1",
+      "per_object": {
+        "milk_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 0.015264308630741352,
+          "final_lift_cm": 9.174608017747943e-08,
+          "max_xy_displacement_cm": 0.045979472793898364
+        },
+        "basket_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 4.250766405533568e-12,
+          "final_lift_cm": 4.250766405533568e-12,
+          "max_xy_displacement_cm": 0.0
+        },
+        "cream_cheese_1": {
+          "first_contact_frame": 63,
+          "contact_frames": 65,
+          "first_2cm_for_5frames": 67,
+          "max_lift_cm": 23.429063547654312,
+          "final_lift_cm": 15.719734430153999,
+          "max_xy_displacement_cm": 38.619794727070506
+        },
+        "tomato_sauce_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.020562075079397e-15,
+          "final_lift_cm": 9.020562075079397e-15,
+          "max_xy_displacement_cm": 2.182976022169214e-12
+        },
+        "butter_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 7.57900686654267e-13,
+          "final_lift_cm": 7.57900686654267e-13,
+          "max_xy_displacement_cm": 0.0
+        },
+        "orange_juice_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 9.174607046302796e-08,
+          "final_lift_cm": 9.174607046302796e-08,
+          "max_xy_displacement_cm": 1.1012710470300747e-11
+        },
+        "chocolate_pudding_1": {
+          "first_contact_frame": null,
+          "contact_frames": 0,
+          "first_2cm_for_5frames": null,
+          "max_lift_cm": 5.766220834146907e-13,
+          "final_lift_cm": 5.766220834146907e-13,
+          "max_xy_displacement_cm": 0.0
+        }
+      },
+      "q0_eef_path_xyz_m": [
+        [
+          -0.15291844146572464,
+          -0.008822143713247169,
+          0.2565170014682034
+        ],
+        [
+          -0.1527420471167371,
+          -0.00882240705637007,
+          0.25630454565862537
+        ],
+        [
+          -0.1522940714862905,
+          -0.008851236377784332,
+          0.25585467038062953
+        ],
+        [
+          -0.15165459518343882,
+          -0.009037560219826293,
+          0.2553226848294926
+        ],
+        [
+          -0.15075639054740816,
+          -0.00959818650098492,
+          0.25483352245902596
+        ],
+        [
+          -0.14935646035059277,
+          -0.010822093844373623,
+          0.25449340613721083
+        ],
+        [
+          -0.14738316448344133,
+          -0.013009166787173225,
+          0.25420905316161535
+        ],
+        [
+          -0.14477909827897395,
+          -0.016345154987904467,
+          0.2537697623030881
+        ],
+        [
+          -0.1411735220279495,
+          -0.020806613398426398,
+          0.25307625316457005
+        ],
+        [
+          -0.13614236295934282,
+          -0.026027736170445934,
+          0.25218795303821984
+        ],
+        [
+          -0.1297422048123944,
+          -0.03154547352190635,
+          0.25110800927323845
+        ],
+        [
+          -0.12225181529734683,
+          -0.03706485476701468,
+          0.24994805166958653
+        ],
+        [
+          -0.11394846959159224,
+          -0.042523907121213296,
+          0.24881918979611403
+        ],
+        [
+          -0.10507087098133677,
+          -0.04797204736507526,
+          0.24769785822694634
+        ],
+        [
+          -0.09575872782545145,
+          -0.053546050149260345,
+          0.24655105468645527
+        ],
+        [
+          -0.08610893802321971,
+          -0.059340174514028725,
+          0.2453839330906778
+        ],
+        [
+          -0.07618617118028334,
+          -0.0652807583694664,
+          0.24426580230246853
+        ]
+      ],
+      "eef_q0_displacement_m": [
+        0.0767322702854413,
+        -0.05645861465621923,
+        -0.01225119916573486
+      ],
+      "q0_eef_projection_toward_milk_from_cheese_m": 0.03958568890479561,
+      "initial_cheese_to_milk_unit_direction": [
+        -0.09286666803091172,
+        -0.9133735395459484,
+        0.3963894035240379
+      ],
+      "initial_object_separation_m": 0.15341984024994607,
+      "final_milk_in_basket_scene_predicate": false,
+      "strict_windows_sha256": "d65a216de1af0af32acf0746d18f99c9932ad444f90cb35a38880aaf48a910cc"
+    }
+  ],
+  "rule": "All8 with exact live-self controls and frozen random gates; both preregistered J cases must strictly select only donor.",
+  "original_milk_15cm_repair_claimed": false
+}
