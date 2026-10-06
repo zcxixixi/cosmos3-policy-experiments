@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cosmos3 Policy 网络结构：第 1 步</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="architecture.html">完整版（复杂）</a></div>
+  <span class="step">网络结构 · 第 1 步 / 共 4 步</span>
+  <h1>先只看三个框</h1>
+  <p class="lead">这一步不讲任何细节，只回答：数据从哪进来、在哪被加工、从哪出去。</p>
+</div></header>
+<main class="wrap">
+<section style="border:none">
+<figure>
+<svg viewBox="0 0 940 330" width="100%" role="img" aria-label="三个框">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1d2330"/></marker></defs>
+  <g stroke="#1d2330" stroke-width="1.8" fill="none">
+    <rect x="20" y="70" width="230" height="170" rx="16"/>
+    <rect x="340" y="40" width="270" height="230" rx="18" stroke-dasharray="7 5"/>
+    <rect x="700" y="70" width="220" height="170" rx="16"/>
+    <path d="M250 155 L338 155" marker-end="url(#a)"/>
+    <path d="M610 155 L698 155" marker-end="url(#a)"/>
+  </g>
+  <!-- inputs -->
+  <text x="135" y="62" text-anchor="middle" style="font-size:15px;font-weight:700">① 输入</text>
+  <rect x="40" y="90" width="190" height="34" rx="8" fill="#bfe0f7" stroke="#2f7fc1"/><text x="135" y="112" text-anchor="middle">相机画面</text>
+  <rect x="40" y="134" width="190" height="34" rx="8" fill="#fbe7a1" stroke="#c99a12"/><text x="135" y="156" text-anchor="middle">文字指令“抓牛奶”</text>
+  <rect x="40" y="178" width="190" height="34" rx="8" fill="#f6c3c3" stroke="#c0392b"/><text x="135" y="200" text-anchor="middle">一团随机噪声（动作）</text>
+  <text x="135" y="232" text-anchor="middle" style="font-size:12px;fill:#5b6475">都变成同样长度的数字向量</text>
+  <!-- stack -->
+  <text x="475" y="32" text-anchor="middle" style="font-size:15px;font-weight:700">② 同一个模块，重复 36 次</text>
+  <g stroke="#2f7fc1" fill="#e9f3fb">
+    <rect x="370" y="70" width="210" height="36" rx="8"/><rect x="370" y="116" width="210" height="36" rx="8"/><rect x="370" y="162" width="210" height="36" rx="8"/><rect x="370" y="218" width="210" height="36" rx="8" fill="#bfe0f7"/>
+  </g>
+  <g text-anchor="middle"><text x="475" y="93">第 1 层</text><text x="475" y="139">第 2 层</text><text x="475" y="185">第 3 层 …</text><text x="475" y="241">第 36 层</text></g>
+  <text x="590" y="150" style="font-size:12px;fill:#5b6475"></text>
+  <!-- output -->
+  <text x="810" y="62" text-anchor="middle" style="font-size:15px;font-weight:700">③ 输出</text>
+  <rect x="720" y="100" width="180" height="40" rx="8" fill="#f6c3c3" stroke="#c0392b"/><text x="810" y="125" text-anchor="middle">16 步机械臂动作</text>
+  <text x="810" y="170" text-anchor="middle" style="font-size:12px;fill:#5b6475">移动 · 旋转 · 夹爪</text>
+  <rect x="720" y="190" width="180" height="36" rx="8" fill="#c9ecc4" stroke="#2e8b3e"/><text x="810" y="213" text-anchor="middle">交给 MuJoCo 执行</text>
+</svg>
+</figure>
+<p class="txt"><b>怎么理解：</b>输入的画面、文字、噪声，都先被翻译成一串串数字。这些数字进入中间的 36 层，每一层用同一套结构再加工一遍，加工越多次，“动作”那部分数字就越接近一个像样的动作。最后一层的结果被读出来，就是机械臂的 16 步命令。</p>
+<p class="txt"><b>为什么从噪声开始：</b>这是扩散模型的做法。模型不是一次写出动作，而是先给一团乱数，再一点点“擦”成动作。整个“进 36 层、出一版动作”的过程会重复 30 次，每次擦掉一点。</p>
+<p class="txt"><b>这一步只需要记住：</b>我们之前说的“第 12 层”“第 36 层”，指的就是中间这一摞里的第几块。</p>
+</section>
+<section style="border:none;padding-top:0">
+  <span class="step">接下来可以选</span>
+  <h2>第 2 步看什么？ <a href="architecture-step2.html" style="font-size:16px">→ 已做好：打开一层</a></h2>
+  <p class="txt">第 2 步：打开其中<b>一层</b>，看里面的“注意力”是什么、它怎么把画面和文字混进动作。<br>第 3 步：看文字是怎么进到动作里的（我们诊断的重点）。<br>第 4 步：我们的“替换内部信息”实验，具体换的是哪里。</p>
+</section>
+</main>
+</body>
+</html>

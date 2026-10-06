@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cosmos3 Policy 网络结构：第 2 步</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="architecture-simple.html">← 第 1 步</a></div>
+  <span class="step">网络结构 · 第 2 步 / 共 4 步</span>
+  <h1>打开一层：只做两件事</h1>
+  <p class="lead">36 层长得一模一样（权重不同）。每一层先“看别人”，再“自己想一想”。</p>
+</div></header>
+<main class="wrap">
+
+<section style="border:none">
+<span class="step">2a · 一层的内部</span>
+<h2>先看别人（注意力），再自己消化（MLP）</h2>
+<figure>
+<svg viewBox="0 0 940 300" width="100%" role="img" aria-label="一层的结构">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1d2330"/></marker>
+  </defs>
+  <!-- tokens in -->
+  <text x="70" y="46" text-anchor="middle" style="font-size:14px;font-weight:700">进来</text>
+  <g stroke="#1d2330" stroke-width="1.2">
+    <rect x="30" y="56" width="80" height="26" rx="5" fill="#fbe7a1"/><rect x="30" y="86" width="80" height="26" rx="5" fill="#bfe0f7"/><rect x="30" y="116" width="80" height="26" rx="5" fill="#e9f3fb"/><rect x="30" y="146" width="80" height="26" rx="5" fill="#f6c3c3"/>
+  </g>
+  <g text-anchor="middle" style="font-size:12px"><text x="70" y="74">文字</text><text x="70" y="104">当前画面</text><text x="70" y="134">未来画面</text><text x="70" y="164">动作</text></g>
+  <text x="70" y="192" text-anchor="middle" style="font-size:12px;fill:#5b6475">每个 token =</text><text x="70" y="208" text-anchor="middle" style="font-size:12px;fill:#5b6475">一串 4096 个数</text>
+
+  <path d="M118 114 L218 114" stroke="#1d2330" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <!-- attention -->
+  <rect x="222" y="60" width="230" height="110" rx="14" fill="#fff" stroke="#2f7fc1" stroke-width="2"/>
+  <text x="337" y="90" text-anchor="middle" style="font-size:16px;font-weight:700">① 注意力</text>
+  <text x="337" y="114" text-anchor="middle" style="font-size:13px">每个 token 去看别的 token</text>
+  <text x="337" y="134" text-anchor="middle" style="font-size:13px">把有用的信息抄一点过来</text>
+  <text x="337" y="156" text-anchor="middle" style="font-size:12px;fill:#5b6475">token 之间的信息交流只在这里发生</text>
+
+  <path d="M456 114 L508 114" stroke="#1d2330" stroke-width="1.8" marker-end="url(#a)"/>
+  <circle cx="530" cy="114" r="14" fill="#fff" stroke="#1d2330" stroke-width="1.5"/><text x="530" y="120" text-anchor="middle" style="font-size:18px">+</text>
+  <path d="M548 114 L588 114" stroke="#1d2330" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <!-- MLP -->
+  <rect x="592" y="60" width="230" height="110" rx="14" fill="#fff" stroke="#c99a12" stroke-width="2"/>
+  <text x="707" y="90" text-anchor="middle" style="font-size:16px;font-weight:700">② MLP</text>
+  <text x="707" y="114" text-anchor="middle" style="font-size:13px">每个 token 各自加工</text>
+  <text x="707" y="134" text-anchor="middle" style="font-size:13px">不看别人，只改自己</text>
+  <text x="707" y="156" text-anchor="middle" style="font-size:12px;fill:#5b6475">4096 → 12288 → 4096</text>
+
+  <path d="M826 114 L876 114" stroke="#1d2330" stroke-width="1.8" marker-end="url(#a)"/>
+  <circle cx="896" cy="114" r="14" fill="#fff" stroke="#1d2330" stroke-width="1.5"/><text x="896" y="120" text-anchor="middle" style="font-size:18px">+</text>
+
+  <!-- residual lines -->
+  <path d="M140 114 L140 28 L530 28 L530 98" stroke="#5b6475" stroke-dasharray="5 4" fill="none" marker-end="url(#a)"/>
+  <path d="M530 130 L530 236 L860 236 L860 130" stroke="#5b6475" stroke-dasharray="5 4" fill="none" marker-end="url(#a)"/>
+  <text x="300" y="22" text-anchor="middle" style="font-size:12px;fill:#5b6475">原来的数直接带过来（残差）</text>
+  <text x="710" y="256" text-anchor="middle" style="font-size:12px;fill:#5b6475">原来的数直接带过来（残差）</text>
+  <text x="896" y="82" text-anchor="middle" style="font-size:12px;fill:#5b6475">出去，交给</text>
+  <text x="896" y="98" text-anchor="middle" style="font-size:12px;fill:#5b6475">下一层</text>
+</svg>
+</figure>
+<p class="txt"><b>“+” 的意思：</b>每层只是在原有的数上<b>加一点修改</b>，不是重写。所以 36 层叠下来，动作是被一层层“微调”出来的，每层只贡献一小步。这与我们测到的现象一致：换指令后，第一层后动作向量只差 0.15%，叠到第 36 层才累积到 3.22%。</p>
+</section>
+
+<section>
+<span class="step">2b · 注意力在干什么</span>
+<h2>动作 token 在“问”：我该看谁？</h2>
+<figure>
+<svg viewBox="0 0 940 300" width="100%" role="img" aria-label="注意力示意">
+  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c0392b"/></marker></defs>
+  <!-- action token -->
+  <rect x="30" y="110" width="120" height="70" rx="12" fill="#f6c3c3" stroke="#c0392b" stroke-width="1.8"/>
+  <text x="90" y="140" text-anchor="middle" style="font-size:14px;font-weight:700">一个动作</text>
+  <text x="90" y="160" text-anchor="middle" style="font-size:14px;font-weight:700">token</text>
+  <text x="90" y="205" text-anchor="middle" style="font-size:12px;fill:#c0392b">“我要决定往哪走”</text>
+
+  <!-- targets -->
+  <g stroke="#1d2330" stroke-width="1.2">
+    <rect x="330" y="40" width="250" height="40" rx="8" fill="#fbe7a1"/>
+    <rect x="330" y="100" width="250" height="40" rx="8" fill="#bfe0f7"/>
+    <rect x="330" y="160" width="250" height="40" rx="8" fill="#e9f3fb"/>
+    <rect x="330" y="220" width="250" height="40" rx="8" fill="#f6c3c3"/>
+  </g>
+  <g style="font-size:13px"><text x="342" y="65">文字（122 个 token）</text><text x="342" y="125">当前画面（50 个）</text><text x="342" y="185">未来画面（200 个）</text><text x="342" y="245">动作自己和其他动作（16 个）</text></g>
+
+  <!-- arrows with widths = illustrative weights -->
+  <path d="M152 138 C230 100,260 70,328 62" stroke="#c0392b" stroke-width="1.5" fill="none" marker-end="url(#b)"/>
+  <path d="M152 143 C230 130,270 122,328 120" stroke="#c0392b" stroke-width="6" fill="none" marker-end="url(#b)"/>
+  <path d="M152 150 C230 160,270 178,328 180" stroke="#c0392b" stroke-width="9" fill="none" marker-end="url(#b)"/>
+  <path d="M152 156 C230 200,270 232,328 240" stroke="#c0392b" stroke-width="3" fill="none" marker-end="url(#b)"/>
+
+  <!-- weights -->
+  <g style="font-size:12px;fill:#5b6475"><text x="600" y="65">抄得少</text><text x="600" y="125">抄得多</text><text x="600" y="185">抄得最多</text><text x="600" y="245">抄一些</text></g>
+  <rect x="690" y="70" width="230" height="130" rx="12" fill="#fff" stroke="#5b6475" stroke-dasharray="5 4"/>
+  <text x="805" y="96" text-anchor="middle" style="font-size:13px;font-weight:700">注意</text>
+  <text x="805" y="118" text-anchor="middle" style="font-size:12px">箭头粗细只是示意，</text>
+  <text x="805" y="136" text-anchor="middle" style="font-size:12px">不是测量值。</text>
+  <text x="805" y="162" text-anchor="middle" style="font-size:12px;fill:#c0392b">真实的粗细，是我们</text>
+  <text x="805" y="180" text-anchor="middle" style="font-size:12px;fill:#c0392b">之后要去量的。</text>
+</svg>
+</figure>
+<p class="txt"><b>一句话：</b>每个动作 token 都会给每个别的 token 打一个“相关度”分数，分高的就多抄一点它的信息。文字 token 只是被看的一类，另外还有 250 个画面 token 和别的动作 token 同时在被看。</p>
+<p class="txt"><b>和我们的问题的联系：</b>如果“牛奶”这个词的信息在这里只占很小的一份，而画面信息占大头，动作就会主要由画面（物体在哪）决定。这正是我们怀疑的情形之一，但<b>目前还没有量过真实的分配比例</b>。</p>
+</section>
+
+<section style="border:none">
+  <span class="step">下一步</span>
+  <h2>第 3 步：文字是怎么进到动作里的 <a href="architecture-step3.html" style="font-size:16px">→ 已做好</a></h2>
+  <p class="txt">会用到这一页的两个概念：注意力里“谁被看”，以及文字 token 有一个特别的地方——它看不到画面。</p>
+</section>
+</main>
+</body>
+</html>

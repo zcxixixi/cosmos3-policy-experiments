@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cosmos3 Policy 网络结构：第 4 步</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="architecture-step3.html">← 第 3 步</a></div>
+  <span class="step">网络结构 · 第 4 步 / 共 4 步</span>
+  <h1>我们的替换实验，换的是哪里</h1>
+  <p class="lead">有了前三步，可以把实验放回网络里看：两次计算，把其中一块内部信息从 A 换进 B，看 B 抓的物体会不会变。</p>
+</div></header>
+<main class="wrap">
+
+<section style="border:none">
+<span class="step">4a · 两个可以换的位置</span>
+<h2>换“动作自己的状态”，还是换“动作读到的文字”</h2>
+<figure>
+<svg viewBox="0 0 940 340" width="100%" role="img" aria-label="两种替换位置">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1d2330"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c0392b"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1f5f99"/></marker>
+  </defs>
+  <!-- text lane (compact) -->
+  <rect x="20" y="20" width="900" height="70" rx="14" fill="#fffaf0" stroke="#c99a12" stroke-dasharray="6 4"/>
+  <text x="36" y="44" style="font-size:13px;font-weight:700;fill:#8a6a0a">文字通道</text>
+  <g stroke="#c99a12" fill="#fbe7a1"><rect x="150" y="36" width="90" height="38" rx="8"/><rect x="290" y="36" width="90" height="38" rx="8"/><rect x="430" y="36" width="90" height="38" rx="8"/><rect x="740" y="36" width="120" height="38" rx="8"/></g>
+  <g text-anchor="middle" style="font-size:12px"><text x="195" y="60">第 1 层</text><text x="335" y="60">第 2 层</text><text x="475" y="60">…</text><text x="800" y="60">第 36 层</text></g>
+
+  <!-- gen lane -->
+  <rect x="20" y="170" width="900" height="150" rx="14" fill="#f3f8fd" stroke="#2f7fc1" stroke-dasharray="6 4"/>
+  <text x="36" y="194" style="font-size:13px;font-weight:700;fill:#1f5f99">画面 + 动作通道</text>
+  <g stroke="#2f7fc1" fill="#bfe0f7"><rect x="150" y="214" width="90" height="38" rx="8"/><rect x="290" y="214" width="90" height="38" rx="8"/><rect x="430" y="214" width="90" height="38" rx="8"/><rect x="740" y="214" width="120" height="38" rx="8"/></g>
+  <g text-anchor="middle" style="font-size:12px"><text x="195" y="238">第 1 层</text><text x="335" y="238">第 2 层</text><text x="475" y="238">…</text><text x="800" y="238">第 36 层</text></g>
+  <g stroke="#1d2330" stroke-width="1.5" fill="none"><path d="M242 233 L288 233" marker-end="url(#a)"/><path d="M382 233 L428 233" marker-end="url(#a)"/><path d="M522 233 L560 233 M690 233 L738 233" marker-end="url(#a)"/></g>
+  <text x="625" y="238" text-anchor="middle" style="font-size:18px">···</text>
+
+  <!-- text -> gen arrows -->
+  <g stroke="#c0392b" stroke-width="2.4" fill="none"><path d="M195 76 L195 212" marker-end="url(#r)"/><path d="M335 76 L335 212" marker-end="url(#r)"/><path d="M800 76 L800 212" marker-end="url(#r)"/></g>
+
+  <!-- 方式 B: text K/V -->
+  <rect x="716" y="104" width="168" height="42" rx="10" fill="#fff" stroke="#c0392b" stroke-width="2.2"/>
+  <text x="800" y="123" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#c0392b">方式 B：换这条箭头里</text>
+  <text x="800" y="138" text-anchor="middle" style="font-size:12px;fill:#c0392b">动作读到的文字（K/V）</text>
+
+  <!-- 方式 A: hidden state -->
+  <rect x="130" y="264" width="130" height="44" rx="10" fill="#fff" stroke="#1f5f99" stroke-width="2.2" stroke-dasharray="5 3"/>
+  <text x="195" y="282" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#1f5f99">方式 A：换动作</text>
+  <text x="195" y="298" text-anchor="middle" style="font-size:12px;fill:#1f5f99">token 本身</text>
+  <text x="276" y="290" style="font-size:12px;fill:#1f5f99">（我们换过第 12 层和第 30 层）</text>
+</svg>
+</figure>
+<p class="txt"><b>方式 A：换动作 token 本身。</b>从一次“抓对牛奶”的计算里，取某一层的动作 token，直接放进另一次计算。动作 token 是被前面所有层加工过的，里面混着画面、位置、语言的全部痕迹。</p>
+<p class="txt"><b>方式 B：只换文字那一份。</b>只把动作读到的文字 K/V 换成另一句话的版本，其余（画面、噪声、动作 token）都不动。这是“纯语言”的替换，也是我们真正想问的。</p>
+</section>
+
+<section>
+<span class="step">4b · 结果</span>
+<h2>换动作 token 能把目标带偏；只换文字，目标不动</h2>
+<table>
+  <tr><th>怎么换</th><th>设置</th><th>实际抓取</th></tr>
+  <tr><td><b>A</b>：第 12 层动作 token</td><td>来源：抓对牛奶的计算；接收：原本抓奶酪盒的计算。首轮预测的 30 次去噪都换。</td><td><span class="tag t-bad">没变</span> 仍抓奶酪盒</td></tr>
+  <tr><td><b>A</b>：第 30 层动作 token</td><td>同上</td><td><span class="tag t-mid">带偏</span> 改抓黄油。黄油正好在来源场景里牛奶原来的位置；仍没抓牛奶。</td></tr>
+  <tr><td><b>B</b>：第 36 层文字 K/V，互换“牛奶盒”和“奶酪盒”</td><td>选的是模型本来就能按名称抓对的场景。只在首轮预测的 30 次去噪里换，后 7 轮正常推理。</td><td><span class="tag t-bad">没变</span> 8 条执行，每条仍抓原来的目标</td></tr>
+</table>
+<p class="txt" style="margin-top:14px"><b>怎么读这张表：</b></p>
+<p class="txt">① 方式 A 能让目标换掉，但换成的是来源场景里“那个位置”的物体，不是指令要的牛奶。换进去的东西更像是在带位置或运动信息，不是语言。</p>
+<p class="txt">② 方式 B 是纯语言的替换，第 36 层这一处没有让目标跟着文字变。上一步说过，动作读文字的口子在每一层都有，我们只测了其中一层。</p>
+<p class="txt"><b>还没有排除的：</b>更早的层、其他层的文字读取、以及后续各轮仍用原指令带来的反馈。所以现在只能说“这两处没找到”，不能说“语言无用”。</p>
+</section>
+
+<section style="border:none">
+  <p class="txt"><a href="walkthrough.html"><b>觉得太抽象？→ 看一次真实运行的数字（真实 token、真实注意力分配）</b></a></p>
+  <span class="step">四步合起来</span>
+  <h2>现在的位置</h2>
+  <p class="txt">网络里，语言只通过“被动作读取”这一个口子进来，每层一次，每层读到的差别很小。我们换过其中第 36 层，目标没变；换动作 token 能改变目标，但跟着走的是位置。<b>下一步要去更早的层、或逐层地查，看目标是在哪一层被定下来的。</b></p>
+</section>
+</main>
+</body>
+</html>

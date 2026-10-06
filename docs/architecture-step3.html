@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cosmos3 Policy 网络结构：第 3 步</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="architecture-step2.html">← 第 2 步</a></div>
+  <span class="step">网络结构 · 第 3 步 / 共 4 步</span>
+  <h1>文字是怎么进到动作里的</h1>
+  <p class="lead">这是我们诊断的核心。答案很短：文字有自己的一条通道，只通过注意力里的“被看”这一个口子，影响动作。</p>
+</div></header>
+<main class="wrap">
+
+<section style="border:none">
+<span class="step">3a · 两条通道，单向连接</span>
+<h2>文字走一条，画面和动作走另一条</h2>
+<figure>
+<svg viewBox="0 0 940 330" width="100%" role="img" aria-label="两条通道">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1d2330"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c0392b"/></marker>
+  </defs>
+  <!-- text lane -->
+  <rect x="20" y="30" width="900" height="100" rx="16" fill="#fffaf0" stroke="#c99a12" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="38" y="56" style="font-size:15px;font-weight:700;fill:#8a6a0a">文字通道（122 个 token）</text>
+  <g stroke="#c99a12" fill="#fbe7a1">
+    <rect x="60" y="72" width="120" height="40" rx="8"/><rect x="250" y="72" width="120" height="40" rx="8"/><rect x="440" y="72" width="120" height="40" rx="8"/><rect x="740" y="72" width="140" height="40" rx="8"/>
+  </g>
+  <g text-anchor="middle" style="font-size:13px"><text x="120" y="97">第 1 层</text><text x="310" y="97">第 2 层</text><text x="500" y="97">第 3 层</text><text x="810" y="97">第 36 层</text></g>
+  <text x="650" y="98" text-anchor="middle" style="font-size:20px">···</text>
+  <path d="M182 92 L248 92 M372 92 L438 92 M562 92 L610 92 M690 92 L738 92" stroke="#1d2330" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+
+  <!-- gen lane -->
+  <rect x="20" y="200" width="900" height="110" rx="16" fill="#f3f8fd" stroke="#2f7fc1" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="38" y="226" style="font-size:15px;font-weight:700;fill:#1f5f99">画面 + 动作通道（266 个 token）</text>
+  <g stroke="#2f7fc1" fill="#bfe0f7">
+    <rect x="60" y="244" width="120" height="40" rx="8"/><rect x="250" y="244" width="120" height="40" rx="8"/><rect x="440" y="244" width="120" height="40" rx="8"/><rect x="740" y="244" width="140" height="40" rx="8"/>
+  </g>
+  <g text-anchor="middle" style="font-size:13px"><text x="120" y="269">第 1 层</text><text x="310" y="269">第 2 层</text><text x="500" y="269">第 3 层</text><text x="810" y="269">第 36 层</text></g>
+  <text x="650" y="270" text-anchor="middle" style="font-size:20px">···</text>
+  <path d="M182 264 L248 264 M372 264 L438 264 M562 264 L610 264 M690 264 L738 264" stroke="#1d2330" stroke-width="1.6" fill="none" marker-end="url(#a)"/>
+
+  <!-- one-way arrows -->
+  <g stroke="#c0392b" stroke-width="2.6" fill="none">
+    <path d="M120 114 L120 242" marker-end="url(#r)"/><path d="M310 114 L310 242" marker-end="url(#r)"/><path d="M500 114 L500 242" marker-end="url(#r)"/><path d="M810 114 L810 242" marker-end="url(#r)"/>
+  </g>
+  <rect x="560" y="146" width="200" height="30" rx="8" fill="#fff" stroke="#c0392b"/>
+  <text x="660" y="166" text-anchor="middle" style="font-size:13px;fill:#c0392b">每一层都读一次，只能单向</text>
+  <text x="130" y="170" style="font-size:12px;fill:#c0392b">文字 → 动作</text>
+  <text x="130" y="186" style="font-size:12px;fill:#5b6475">没有反方向的箭头</text>
+</svg>
+</figure>
+<p class="txt"><b>两点要记住：</b></p>
+<p class="txt">① <b>文字通道是封闭的。</b>它只在文字内部互相看，看不到任何画面或动作。所以不管牛奶在哪、桌上怎么摆，“抓牛奶”这句话在 36 层里的内部表示都是同一份。我们之前的检查也确认了这一点。</p>
+<p class="txt">② <b>文字影响动作的起点，只有红色这一种。</b>每层里，画面和动作 token 把文字 token 当作“被看的对象”之一（第 2 步里的注意力）。动作可以直接读文字，也可以先让“预测的未来画面”读文字、再去读那个未来画面（实验 13 查过这两条路）；但两条路的源头，都是红色箭头。</p>
+</section>
+
+<section>
+<span class="step">3b · 换一个词，哪些东西变了</span>
+<h2>换一个目标名，只有一小段文字表示变了</h2>
+<figure>
+<svg viewBox="0 0 940 260" width="100%" role="img" aria-label="换词后变化的 token">
+  <text x="20" y="34" style="font-size:14px;font-weight:700">指令 A：“…牛奶盒…”</text>
+  <text x="20" y="144" style="font-size:14px;font-weight:700">指令 B：“…奶酪…”（名称长度与 A 相同）</text>
+  <g stroke="#1d2330" stroke-width="1.2">
+    <rect x="30" y="48" width="330" height="36" rx="6" fill="#fbe7a1"/><rect x="360" y="48" width="40" height="36" fill="#f6c3c3"/><rect x="400" y="48" width="470" height="36" rx="6" fill="#fff2cc"/>
+    <rect x="30" y="158" width="330" height="36" rx="6" fill="#fbe7a1"/><rect x="360" y="158" width="40" height="36" fill="#f6c3c3"/><rect x="400" y="158" width="470" height="36" rx="6" fill="#fff2cc"/>
+  </g>
+  <g style="font-size:12px;text-anchor:middle">
+    <text x="195" y="71">前 48 个 token：完全相同</text><text x="380" y="71">名</text><text x="635" y="71">名字之后的 72 个 token：被名字“带着变”</text>
+    <text x="195" y="181">前 48 个 token：完全相同</text><text x="380" y="181">名</text><text x="635" y="181">名字之后的 72 个 token：被名字“带着变”</text>
+  </g>
+  <path d="M330 90 L330 150" stroke="#2e8b3e" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M635 90 L635 150" stroke="#c0392b" stroke-width="2" marker-end="url(#a3)"/>
+  <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#2e8b3e"/></marker><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c0392b"/></marker></defs>
+  <text x="340" y="124" style="font-size:12px;fill:#2e8b3e">不变</text>
+  <text x="645" y="112" style="font-size:12px;fill:#c0392b">变了</text><text x="645" y="128" style="font-size:12px;fill:#c0392b">后面的词会读到前面的词，所以被带着变</text>
+  <text x="30" y="230" style="font-size:12px;fill:#5b6475">共 122 个文字 token，目标名在第 48–49 个。本图为示意，位置取自我们实验中记录的真实索引。</text>
+</svg>
+</figure>
+<p class="txt"><b>这样的话，语言对动作的全部影响就是：</b>动作 token 在每层读到的、文字那 122 个 token 里的一小段不同。其余全部输入（画面、噪声、位置）完全一样。</p>
+<p class="txt"><b>所以我们看到 0.15% → 3.22%：</b>这一点点不同，被 36 层一层层带进动作，累积出一个很小的差别。问题是，这个小差别有没有大到足以改变“抓哪个物体”。</p>
+</section>
+
+<section style="border:none">
+  <span class="step">下一步</span>
+  <h2>第 4 步：我们的“替换内部信息”实验，换的就是这里 <a href="architecture-step4.html" style="font-size:16px">→ 已做好</a></h2>
+  <p class="txt">有了这一页，替换实验就好懂了：我们在某一层，把“动作读到的文字那一小段”换成另一句话的版本，看抓取目标会不会跟着变。</p>
+</section>
+</main>
+</body>
+</html>

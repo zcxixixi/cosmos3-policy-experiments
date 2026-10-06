@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cosmos3 Policy 网络结构 | Network architecture</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.wide{max-width:1320px;margin:0 auto;padding:0 20px}
+.arch text{font-size:13px;fill:#1d2330}
+.arch .s{font-size:11px;fill:#5b6475}
+.arch .t{font-size:15px;font-weight:700}
+.arch .mono{font-family:ui-monospace,Menlo,monospace;font-size:11px;fill:#1d2330}
+.legend span{display:inline-block;margin-right:16px;font-size:14px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px;border:1px solid #1d2330}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="index.html">返回首页</a></div>
+  <span class="step">Cosmos3-Nano Policy · fwd4xl LIBERO checkpoint</span>
+  <h1>网络结构：一次去噪步里发生了什么</h1>
+  <p class="lead">数字来自 A6000 上实际加载的 <code>transformer/config.json</code> 与 Diffusers 源码 <code>transformer_cosmos3.py</code>。一次动作预测要把这张图重复 30 次（30 个去噪步）。</p>
+</div></header>
+
+<main class="wide">
+<section style="border:none;padding-top:28px">
+<figure style="padding:10px">
+<svg class="arch" viewBox="0 0 1290 900" width="100%" role="img" aria-label="Cosmos3 policy architecture">
+<defs>
+  <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1d2330"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c0392b"/></marker>
+</defs>
+
+<!-- ============ token sequence strip ============ -->
+<text x="20" y="30" class="t">联合序列（一次前向，共 388 个 token，每个 4096 维）</text>
+<g stroke="#1d2330" stroke-width="1.4">
+  <rect x="20" y="42" width="300" height="40" rx="6" fill="#fbe7a1"/>
+  <rect x="320" y="42" width="160" height="40" fill="#bfe0f7"/>
+  <rect x="480" y="42" width="560" height="40" fill="#e9f3fb" stroke-dasharray="5 3"/>
+  <rect x="1040" y="42" width="110" height="40" rx="6" fill="#f6c3c3"/>
+</g>
+<text x="170" y="67" text-anchor="middle">UND · 文字 122</text>
+<text x="400" y="67" text-anchor="middle">当前画面 50（干净）</text>
+<text x="760" y="67" text-anchor="middle">未来画面 4 帧 × 50 = 200（加噪，模型同时预测）</text>
+<text x="1095" y="67" text-anchor="middle">动作 16（加噪）</text>
+<text x="20" y="100" class="s">← 理解通道 und_seq[0:122]：只做因果自注意力，看不到画面</text>
+<text x="320" y="100" class="s">生成通道 gen_seq[0:266] → 每个 token 都能看到全部 388 个 token 的 K/V</text>
+<text x="1040" y="100" class="s">gen 行 250–265</text>
+
+<!-- ============ left inputs ============ -->
+<!-- text input -->
+<rect x="20" y="130" width="300" height="160" rx="16" fill="#fff" stroke="#1d2330" stroke-width="1.6"/>
+<text x="34" y="152" class="t">文字输入</text>
+<rect x="34" y="164" width="272" height="40" rx="6" fill="#fffaf0" stroke="#c99a12"/>
+<text x="42" y="181" class="mono">{"actions":[{"task":"pick up the milk</text>
+<text x="42" y="196" class="mono"> and place it in the basket", ...}]}</text>
+<rect x="34" y="220" width="120" height="30" rx="6" fill="#fbe7a1" stroke="#c99a12"/><text x="94" y="240" text-anchor="middle">Qwen 分词器</text>
+<rect x="176" y="220" width="130" height="30" rx="6" fill="#fbe7a1" stroke="#c99a12"/><text x="241" y="240" text-anchor="middle">embed_tokens</text>
+<path d="M154 235 L174 235" stroke="#1d2330" marker-end="url(#a)"/>
+<text x="34" y="275" class="s">词表 151936 → 122×4096；目标名在第 48–49 个 token</text>
+
+<!-- image input -->
+<rect x="20" y="310" width="300" height="210" rx="16" fill="#fff" stroke="#1d2330" stroke-width="1.6"/>
+<text x="34" y="332" class="t">画面输入</text>
+<rect x="34" y="344" width="60" height="44" rx="4" fill="#e9eef4" stroke="#5b6475"/><text x="64" y="370" text-anchor="middle" class="s">第三视角</text>
+<rect x="98" y="344" width="60" height="44" rx="4" fill="#e9eef4" stroke="#5b6475"/><text x="128" y="370" text-anchor="middle" class="s">腕部相机</text>
+<text x="34" y="404" class="s">各 256×256，旋转后拼成 512×256</text>
+<path d="M165 366 L190 366" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="194" y="344" width="112" height="44" rx="6" fill="#bfe0f7" stroke="#2f7fc1"/>
+<text x="250" y="362" text-anchor="middle">Wan VAE</text><text x="250" y="378" text-anchor="middle" class="s">48 通道 · 16× 下采样</text>
+<path d="M250 390 L250 418" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="160" y="420" width="146" height="34" rx="6" fill="#bfe0f7" stroke="#2f7fc1"/>
+<text x="233" y="442" text-anchor="middle">2×2 patch · proj_in</text>
+<text x="34" y="440" class="s">320×160 内容</text>
+<text x="34" y="456" class="s">→ 10×5 个 patch</text>
+<text x="34" y="490" class="s">192 维 patch → 4096：当前帧 50 个 token</text>
+<text x="34" y="507" class="s">注：policy 模式不走 Qwen 视觉编码器</text>
+
+<!-- noise -->
+<rect x="20" y="540" width="300" height="150" rx="16" fill="#fff" stroke="#1d2330" stroke-width="1.6"/>
+<text x="34" y="562" class="t">噪声输入</text>
+<g fill="#e9f3fb" stroke="#2f7fc1"><rect x="34" y="574" width="16" height="44"/><rect x="40" y="578" width="16" height="44"/><rect x="46" y="582" width="16" height="44"/></g>
+<text x="70" y="596" class="s">未来画面 latent 噪声</text><text x="70" y="611" class="s">→ proj_in → 200 token</text>
+<g fill="#f6c3c3" stroke="#c0392b"><rect x="190" y="574" width="12" height="44"/><rect x="196" y="578" width="12" height="44"/></g>
+<text x="216" y="590" class="s">动作噪声 16×64</text>
+<rect x="34" y="636" width="272" height="40" rx="6" fill="#f6c3c3" stroke="#c0392b"/>
+<text x="170" y="653" text-anchor="middle">action_proj_in（按机器人域，LIBERO=5）</text>
+<text x="170" y="669" text-anchor="middle" class="s">64 → 4096，再加 action_modality_embed</text>
+
+<!-- timestep -->
+<rect x="20" y="710" width="300" height="170" rx="16" fill="#fff" stroke="#1d2330" stroke-width="1.6"/>
+<text x="34" y="732" class="t">时间步嵌入</text>
+<rect x="34" y="745" width="10" height="50" fill="#5b6475"/><text x="34" y="812" class="s">t ×0.001</text>
+<path d="M48 770 L64 770" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="68" y="742" width="20" height="24" fill="#bfe0f7" stroke="#2f7fc1"/><text x="78" y="740" text-anchor="middle" class="s">cos</text>
+<circle cx="78" cy="772" r="7" fill="#fff" stroke="#1d2330"/><text x="78" y="776" text-anchor="middle" class="s">©</text>
+<rect x="68" y="780" width="20" height="24" fill="#bfe0f7" stroke="#2f7fc1"/><text x="78" y="818" text-anchor="middle" class="s">sin</text>
+<path d="M92 772 L112 772" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="116" y="740" width="130" height="120" rx="10" fill="#fff" stroke="#2f7fc1" stroke-width="1.6"/>
+<text x="181" y="874" text-anchor="middle" class="s">TimestepEmbedding（FP32）</text>
+<rect x="128" y="750" width="106" height="26" rx="5" fill="#fbe7a1" stroke="#c99a12"/><text x="181" y="768" text-anchor="middle">Linear 256→4096</text>
+<rect x="128" y="786" width="106" height="26" rx="5" fill="#bfe0f7" stroke="#2f7fc1"/><text x="181" y="804" text-anchor="middle">SiLU</text>
+<rect x="128" y="822" width="106" height="26" rx="5" fill="#fbe7a1" stroke="#c99a12"/><text x="181" y="840" text-anchor="middle">Linear 4096→4096</text>
+<text x="254" y="790" class="s">加到所有</text><text x="254" y="805" class="s">加噪 token</text>
+
+<!-- arrows from inputs into the stack -->
+<path d="M320 235 C350 235,350 215,384 215" stroke="#c99a12" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M320 437 C350 437,350 540,384 540" stroke="#2f7fc1" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M320 610 C350 610,350 560,384 560" stroke="#c0392b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M320 800 C352 800,352 590,384 590" stroke="#5b6475" stroke-width="1.6" stroke-dasharray="4 4" fill="none" marker-end="url(#a)"/>
+
+<!-- ============ decoder layer ============ -->
+<rect x="388" y="130" width="560" height="750" rx="20" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="408" y="158" class="t">MoT 解码层（Qwen3-VL 文本层）</text>
+<text x="930" y="158" text-anchor="end" style="font-size:22px;font-weight:700">× 36</text>
+<text x="408" y="176" class="s">两套权重共享一次注意力：文字用“理解”权重，画面和动作用“生成”权重（mixture-of-transformers）</text>
+
+<!-- UND lane -->
+<rect x="404" y="190" width="528" height="230" rx="14" fill="#fffaf0" stroke="#c99a12" stroke-dasharray="6 4"/>
+<text x="416" y="210" style="font-weight:700;fill:#8a6a0a">理解通道 UND（文字 122）</text>
+<g stroke="#c99a12">
+<rect x="420" y="225" width="80" height="34" rx="6" fill="#fbe7a1"/>
+<rect x="515" y="225" width="155" height="34" rx="6" fill="#fbe7a1"/>
+<rect x="685" y="225" width="110" height="34" rx="6" fill="#fbe7a1"/>
+<rect x="810" y="225" width="108" height="34" rx="6" fill="#fbe7a1"/>
+<rect x="530" y="330" width="120" height="34" rx="6" fill="#fbe7a1"/>
+<rect x="670" y="330" width="248" height="34" rx="6" fill="#fbe7a1"/>
+</g>
+<text x="460" y="247" text-anchor="middle">RMSNorm</text>
+<text x="592" y="241" text-anchor="middle">to_q / to_k / to_v</text><text x="592" y="254" text-anchor="middle" class="s">QK-RMSNorm · 3D mRoPE</text>
+<text x="740" y="241" text-anchor="middle">因果自注意力</text><text x="740" y="254" text-anchor="middle" class="s">只看文字</text>
+<text x="864" y="247" text-anchor="middle">to_out ＋ 残差</text>
+<text x="590" y="352" text-anchor="middle">RMSNorm</text>
+<text x="794" y="345" text-anchor="middle">MLP（SwiGLU）＋ 残差</text><text x="794" y="358" text-anchor="middle" class="s">4096 → 12288 → 4096</text>
+<g stroke="#1d2330" fill="none">
+<path d="M500 242 L513 242" marker-end="url(#a)"/><path d="M670 242 L683 242" marker-end="url(#a)"/><path d="M795 242 L808 242" marker-end="url(#a)"/>
+<path d="M864 259 L864 290 L590 290 L590 328" marker-end="url(#a)"/><path d="M650 347 L668 347" marker-end="url(#a)"/>
+</g>
+<text x="530" y="390" class="s">输出 → 下一层文字表示。看不到画面，所以牛奶在哪、</text><text x="530" y="405" class="s">布局如何，文字表示完全不变。</text>
+
+<!-- K/V bridge -->
+<path d="M545 260 L545 276 L465 276 L465 426" stroke="#c0392b" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="404" y="430" width="300" height="48" rx="10" fill="#fff" stroke="#c0392b" stroke-width="1.6"/>
+<text x="416" y="450" style="fill:#c0392b;font-weight:700">文字 K/V 交给生成通道</text>
+<text x="416" y="468" class="s" style="fill:#c0392b">语言影响动作的唯一入口（k_norm_und_for_gen）</text>
+
+<!-- GEN lane -->
+<rect x="404" y="490" width="528" height="320" rx="14" fill="#f3f8fd" stroke="#2f7fc1" stroke-dasharray="6 4"/>
+<text x="416" y="510" style="font-weight:700;fill:#1f5f99">生成通道 GEN（画面 250 ＋ 动作 16）</text>
+<g stroke="#2f7fc1">
+<rect x="420" y="530" width="105" height="34" rx="6" fill="#bfe0f7"/>
+<rect x="540" y="530" width="190" height="34" rx="6" fill="#bfe0f7"/>
+<rect x="420" y="600" width="370" height="80" rx="10" fill="#fff"/>
+<rect x="810" y="620" width="108" height="34" rx="6" fill="#bfe0f7"/>
+<rect x="520" y="730" width="135" height="34" rx="6" fill="#bfe0f7"/>
+<rect x="670" y="730" width="248" height="34" rx="6" fill="#bfe0f7"/>
+</g>
+<text x="472" y="552" text-anchor="middle">RMSNorm_gen</text>
+<text x="635" y="546" text-anchor="middle">add_q / add_k / add_v</text><text x="635" y="559" text-anchor="middle" class="s">32 个 Q 头 · 8 个 KV 头 · 128 维</text>
+<text x="605" y="620" text-anchor="middle" style="font-weight:700">全注意力：Q 来自生成通道</text>
+<g stroke="#1d2330" stroke-width="1">
+<rect x="440" y="634" width="120" height="30" rx="4" fill="#fbe7a1"/><rect x="560" y="634" width="96" height="30" fill="#bfe0f7"/><rect x="656" y="634" width="80" height="30" fill="#e9f3fb"/><rect x="736" y="634" width="40" height="30" rx="4" fill="#f6c3c3"/>
+</g>
+<text x="500" y="654" text-anchor="middle" class="s">文字 K/V</text><text x="608" y="654" text-anchor="middle" class="s">当前画面</text><text x="696" y="654" text-anchor="middle" class="s">未来画面</text><text x="756" y="654" text-anchor="middle" class="s">动作</text>
+<text x="605" y="676" text-anchor="middle" class="s">K/V = [文字 122 ; 生成 266]，不加因果遮挡</text>
+<text x="864" y="641" text-anchor="middle">to_add_out</text><text x="864" y="654" text-anchor="middle">＋ 残差</text>
+<text x="587" y="752" text-anchor="middle">RMSNorm_gen</text>
+<text x="794" y="745" text-anchor="middle">mlp_moe_gen（SwiGLU）＋ 残差</text><text x="794" y="758" text-anchor="middle" class="s">4096 → 12288 → 4096，独立于文字 MLP</text>
+<g stroke="#1d2330" fill="none">
+<path d="M525 547 L538 547" marker-end="url(#a)"/><path d="M635 566 L635 598" marker-end="url(#a)"/><path d="M790 637 L808 637" marker-end="url(#a)"/>
+<path d="M864 656 L864 700 L590 700 L590 728" marker-end="url(#a)"/><path d="M655 747 L668 747" marker-end="url(#a)"/>
+</g>
+<text x="420" y="790" class="s">我们之前做过替换的位置：第 12、30 层的动作 token；第 36 层的文字 K/V 后缀；第 36 层 mlp_moe_gen 的响应。</text>
+<text x="404" y="840" class="s">每层两条通道各有独立的 RMSNorm、QKV/输出投影和 MLP 权重；</text>
+<text x="404" y="856" class="s">只有注意力这一步把两条通道连起来，而且方向是单向的：生成通道读文字，文字不读生成通道。</text>
+
+<path d="M412 478 L412 649 L436 649" stroke="#c0392b" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<!-- ============ outputs ============ -->
+<path d="M948 560 L990 560" stroke="#1d2330" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="994" y="130" width="276" height="750" rx="20" fill="#fff" stroke="#1f5f99" stroke-width="1.8"/>
+<text x="1010" y="158" class="t">输出与执行</text>
+<rect x="1010" y="180" width="244" height="40" rx="8" fill="#bfe0f7" stroke="#2f7fc1"/><text x="1132" y="205" text-anchor="middle">norm_moe_gen（最终 RMSNorm）</text>
+<path d="M1070 222 L1070 254" stroke="#1d2330" marker-end="url(#a)"/><path d="M1200 222 L1200 254" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="1010" y="258" width="120" height="58" rx="8" fill="#e9f3fb" stroke="#2f7fc1"/><text x="1070" y="282" text-anchor="middle">proj_out</text><text x="1070" y="298" text-anchor="middle" class="s">未来画面预测</text>
+<rect x="1140" y="258" width="114" height="58" rx="8" fill="#f6c3c3" stroke="#c0392b"/><text x="1197" y="278" text-anchor="middle" style="font-size:12px">action_proj_out</text><text x="1197" y="294" text-anchor="middle" class="s">4096→64，域 5</text><text x="1197" y="308" text-anchor="middle" class="s">取前 10 维</text>
+<path d="M1197 318 L1197 350" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="1010" y="354" width="244" height="74" rx="10" fill="#fff" stroke="#1d2330"/>
+<text x="1132" y="376" text-anchor="middle" style="font-weight:700">Flow UniPC 采样器</text>
+<text x="1132" y="394" text-anchor="middle" class="s">输出是“去噪速度”，不是机器人速度</text>
+<text x="1132" y="412" text-anchor="middle" class="s">30 步：更新噪声 → 回到左边再算一次</text>
+<path d="M1010 391 C978 391,978 118,950 118 L420 118 L420 128" stroke="#5b6475" stroke-dasharray="4 4" fill="none" marker-end="url(#a)"/>
+<path d="M1132 430 L1132 462" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="1010" y="466" width="244" height="110" rx="10" fill="#fff" stroke="#1d2330"/>
+<text x="1132" y="488" text-anchor="middle" style="font-weight:700">动作块 16 × 10</text>
+<g stroke="#1d2330"><rect x="1030" y="500" width="54" height="26" rx="4" fill="#bfe0f7"/><rect x="1090" y="500" width="100" height="26" rx="4" fill="#fbe7a1"/><rect x="1196" y="500" width="40" height="26" rx="4" fill="#c9ecc4"/></g>
+<text x="1057" y="518" text-anchor="middle">xyz 3</text><text x="1140" y="518" text-anchor="middle">rot6d 6</text><text x="1216" y="518" text-anchor="middle">夹爪</text>
+<text x="1132" y="546" text-anchor="middle" class="s">按 q01/q99 反归一化，逐帧相对 → 增量</text>
+<text x="1132" y="562" text-anchor="middle" class="s">转成 7D OSC 命令，裁剪到 [−1, 1]</text>
+<path d="M1132 578 L1132 610" stroke="#1d2330" marker-end="url(#a)"/>
+<rect x="1010" y="614" width="244" height="64" rx="10" fill="#c9ecc4" stroke="#2e8b3e"/>
+<text x="1132" y="640" text-anchor="middle" style="font-weight:700">MuJoCo / LIBERO 执行 16 步</text>
+<text x="1132" y="660" text-anchor="middle" class="s">拍新画面，再预测下一块（共 8 块 = 128 步）</text>
+<text x="1010" y="720" class="s">参数规模（config.json）：</text>
+<text x="1010" y="738" class="s">· 36 层，隐藏维 4096，MLP 12288</text>
+<text x="1010" y="754" class="s">· 32 个注意力头，8 个 KV 头（GQA），头维 128</text>
+<text x="1010" y="770" class="s">· 3D mRoPE（时间/高/宽 = 24/20/20）</text>
+<text x="1010" y="786" class="s">· 动作头按 32 个机器人域分别存权重</text>
+<text x="1010" y="802" class="s">· BF16；时间嵌入 FP32；guidance 1</text>
+<text x="1010" y="834" class="s">动作和未来画面在同一序列里一起去噪，</text>
+<text x="1010" y="850" class="s">所以动作 token 也能读到“模型自己预测的未来画面”。</text>
+</svg>
+</figure>
+<div class="legend"><span><i style="background:#fbe7a1"></i>文字 / 理解通道</span><span><i style="background:#bfe0f7"></i>画面 / 生成通道</span><span><i style="background:#f6c3c3"></i>动作</span><span><i style="background:#c9ecc4"></i>物理执行</span><span style="color:#c0392b">红色箭头：语言进入动作的唯一路径</span></div>
+</section>
+
+<section>
+  <span class="step">读图要点</span>
+  <h2>这张图对诊断意味着什么</h2>
+  <p class="txt"><b>1. 文字表示与画面无关。</b>理解通道只做因果自注意力，看不到画面。所以不管牛奶在原位还是被移远，“牛奶”这个词在 36 层里的表示都是同一份。“文字没读懂画面”不可能是原因；问题只能出在生成通道怎么使用这份文字。</p>
+  <p class="txt"><b>2. 语言只有一个入口。</b>每层生成通道的注意力里，动作和画面 token 用自己的 Q 去读文字的 K/V。之后画面和动作走的是独立的 <code>mlp_moe_gen</code>。如果“抓哪个物体”是靠画面 token 之间的注意力（动作读当前画面、读未来画面）决定的，文字那一小部分 K/V 很容易被盖过去。</p>
+  <p class="txt"><b>3. 动作会读模型自己预测的未来画面。</b>未来画面和动作在同一序列里一起去噪。如果预测的未来画面里，机械臂已经朝奶酪盒的位置走，动作 token 读到的也是这个画面。所以要区分两种可能：目标是由“当前画面＋文字”决定的，还是由“自己想象出来的未来”锁定的。</p>
+</section>
+</main>
+<footer><div class="wrap">来源：A6000 上 <code>Cosmos3-Nano-Policy-LIBEROall-5k/transformer/config.json</code>；Diffusers <code>transformer_cosmos3.py</code>（Cosmos3PackedMoTAttention、Cosmos3VLTextMoTDecoderLayer）；token 布局来自实验中实际记录的 und_len=122、gen 行 0–49（当前画面）、250–265（动作）。</div></footer>
+</body>
+</html>

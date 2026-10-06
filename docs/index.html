@@ -1,96 +1,153 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cosmos3：为什么说抓牛奶，却抓了奶酪盒？</title><style>
-:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f4f6f9;color:#253143;font:17px/1.8 system-ui,"Noto Sans CJK SC",sans-serif}main{max-width:940px;margin:32px auto;padding:32px;background:#fff;border:1px solid #e3e8ef;border-radius:16px}h1{font-size:29px;line-height:1.4;margin:12px 0}h2{font-size:22px;line-height:1.5;margin:28px 0 12px}p{margin:12px 0}a{color:#245bb6}.muted{color:#5d6b7e;font-size:15px}.goal{background:#edf4ff;border-left:4px solid #3e72c5;padding:16px 20px}.status{background:#fff6e8;border:1px solid #ead8b5;border-radius:8px;padding:14px 18px}.hypothesis{border-top:1px solid #e3e8ef;padding:12px 0}.hypothesis p{margin:5px 0}table{border-collapse:collapse;width:100%;font-size:16px}th,td{border:1px solid #dfe5ed;padding:10px;text-align:left}th{background:#f5f7fb}img,video{display:block;width:100%;height:auto;border-radius:8px}figure{margin:18px 0}figcaption{font-size:14px;color:#5d6b7e;margin-top:6px}.video-picker{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}button{font:inherit;color:#245bb6;border:1px solid #bccce5;background:#fff;padding:7px 14px;border-radius:7px;cursor:pointer}button[aria-pressed="true"]{background:#245bb6;color:#fff;border-color:#245bb6}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #a9c8ff;outline-offset:3px}details{border:1px solid #dfe5ed;border-radius:8px;padding:12px 16px;margin:16px 0}summary{cursor:pointer;font-weight:600}section{scroll-margin-top:20px}footer{border-top:1px solid #dfe5ed;padding-top:16px;margin-top:28px}@media(max-width:600px){main{margin:0;border-radius:0;padding:20px}h1{font-size:25px}table{font-size:14px}th,td{padding:7px}}
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人为什么没按指令选物体？｜Cosmos3 Policy 诊断</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="en.html">English</a></div>
+  <span class="step">Cosmos3 Policy · 内部诊断</span>
+  <h1>机器人为什么没按指令选物体？<br>能不能在网络内部找到原因？</h1>
+  <p class="lead">桌上同时有牛奶、黄油、奶酪盒。我们说“抓牛奶”，机械臂却可能走向奶酪盒。我们想分清：是模型根本没用上“牛奶”这个词，还是用了，却被别的信息带偏了。</p>
+  <div class="answer"><b>目前结论：</b>语言确实进入了动作计算，但抓哪个物体主要跟着<b>摆放位置</b>走。替换网络内部信息能把目标带偏，却还没有找到一处能把它纠正过来的位置。</div>
+</div></header>
 
-.flow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.flow span{background:#edf4ff;border:1px solid #cadcf5;padding:9px;border-radius:6px}.flow i{font-style:normal}.compact{font-size:15px}.result-note{background:#f2f6fa;padding:12px 16px;border-radius:8px}
-select{font:inherit;padding:8px;border:1px solid #bccce5;border-radius:6px;background:#fff}label{display:flex;flex-direction:column;font-size:14px;gap:3px}.table-scroll{overflow-x:auto}.flow .cut{background:#fff0e9;border-color:#e7b399}small{font-weight:400}video{background:#eef1f5}select:focus-visible{outline:3px solid #a9c8ff}code{font-size:.9em}
-.page-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0}.layer-layout{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:22px;align-items:start}.layer-layout figure{margin:8px 0}.layer-diagram{display:block;width:100%;height:auto;max-width:360px;margin:auto}.layer-diagram text{font:16px system-ui,"Noto Sans CJK SC",sans-serif;fill:#253143;text-anchor:middle}.layer-diagram .node{fill:#edf4ff;stroke:#cadcf5;stroke-width:1}.layer-diagram .operator{fill:#fff;stroke:#577aa8;stroke-width:2}.layer-diagram .wire{fill:none;stroke:#577aa8;stroke-width:2}.layer-diagram .skip{fill:none;stroke:#8b672e;stroke-width:2}.layer-diagram .value{font-size:15px;font-variant-numeric:tabular-nums}.layer-diagram .small-label{font-size:14px}.layer-layout table{font-size:15px}.layer-layout th,.layer-layout td{padding:8px}.layer-layout td:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}.network-source code{overflow-wrap:anywhere}@media(max-width:700px){.layer-layout{grid-template-columns:minmax(0,1fr)}.layer-layout figure{margin-bottom:0}.layer-layout table{font-size:14px}}
+<main class="wrap">
 
-/* The experiment explanation stays focused on one question. */
-#network h2{font-size:25px;margin:0 0 18px}.experiment-block{margin:28px 0}.experiment-block h3{font-size:20px;margin:0 0 8px}.experiment-block p{margin:8px 0}.experiment-block ol{padding-left:24px}.experiment-block li{margin:5px 0}.intervention{max-width:560px;margin:20px auto;background:#f7f9fc;border:1px solid #dfe5ed;border-radius:12px;padding:16px}.intervention svg{display:block;width:100%;height:auto}.intervention text{font:17px system-ui,sans-serif;fill:#253143;text-anchor:middle}.intervention .hint{font-size:14px;fill:#a42926}.intervention figcaption{text-align:center}.finding{padding:16px 20px;background:#edf4ff;border-left:4px solid #3e72c5}.research-details{margin-top:32px}.research-details>summary{font-size:16px}.research-details[open]>summary{margin-bottom:24px}
-</style></head><body><main>
-<header><p class="muted">Cosmos3 · 抓错目标的诊断实验</p><h1>说“抓牛奶”，为什么抓了奶酪盒？</h1><p>我们在找原因，还没有找到稳定有效的修复方案。</p></header>
-<section id="network" aria-label="实验解释">
-<div class="experiment-block"><h2>问题是什么？</h2><p>桌上有牛奶和奶酪盒。我们说：<strong>“抓牛奶。”</strong></p><p>它有时抓对；但换一种摆放方式，它就去抓奶酪盒了。</p><p><strong>我们想知道：为什么它没有按指定的物体去抓？</strong></p></div>
-<div class="experiment-block"><h3>目前怎样查原因？</h3><ol><li>找一次它会抓错的情况。</li><li>保持起始画面和指令相同。</li><li>只改变模型内部的一处计算，再让机械臂执行。</li><li>看它是否从抓奶酪改成抓牛奶。</li></ol><p>这样，才能把抓取结果的变化与这处内部计算联系起来。</p></div>
-<div class="experiment-block"><h3>这次实际改了什么？</h3><p>模型内部既处理眼前画面，也计算未来画面。</p><p>我们的怀疑是：<strong>计算未来画面那部分传来的信息，可能影响了它选目标。</strong></p><p>所以，暂时屏蔽这部分向当前画面部分传递信息的一组连接，再看它抓谁。</p>
-<figure class="intervention"><svg viewBox="0 0 520 185" role="img" aria-labelledby="cut-title cut-desc"><title id="cut-title">屏蔽未来画面部分向当前画面部分传递信息的连接</title><desc id="cut-desc">右边是计算未来画面的部分，左边是处理眼前画面的部分。原本从右到左的信息传递连接用红色虚线和叉表示暂时屏蔽。这里只画本次改变的一组连接。</desc><rect x="8" y="48" width="180" height="88" rx="10" fill="#edf4ff" stroke="#cadcf5"/><text x="98" y="85">处理眼前画面</text><text x="98" y="111">的部分</text><rect x="332" y="48" width="180" height="88" rx="10" fill="#edf4ff" stroke="#cadcf5"/><text x="422" y="85">计算未来画面</text><text x="422" y="111">的部分</text><path d="M330 98 H190 M202 91 L190 98 L202 105" fill="none" stroke="#bc3434" stroke-width="2" stroke-dasharray="6 5"/><rect x="245" y="78" width="30" height="38" fill="#f7f9fc"/><path d="M251 87 L269 107 M269 87 L251 107" stroke="#bc3434" stroke-width="3"/><text class="hint" x="260" y="32">暂时屏蔽</text><text class="hint" x="260" y="163">信息原本从右向左传递</text></svg><figcaption>只画本次改动的连接；其他连接没有全部展开。</figcaption></figure></div>
-<div class="experiment-block"><h3>结果是什么？</h3><p><strong>有些情况改抓牛奶了，另一些仍抓错。</strong></p><div class="finding">找到了一处会影响抓取行为的连接，但还不知道它为什么导致抓错，也没有把问题稳定修好。<strong>我们还在诊断阶段。</strong></div><p class="muted">屏蔽后行为发生变化是已观察到的结果；“未来画面的信息影响目标选择”仍是待检验的解释。</p></div>
+<section>
+  <span class="step">01 · 模型怎么算</span>
+  <h2>从画面和指令，到机械臂动作</h2>
+  <figure>
+  <svg viewBox="0 0 940 300" width="100%" role="img" aria-label="模型计算流程">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1d2330"/></marker></defs>
+    <g stroke="#1d2330" stroke-width="1.8" fill="none">
+      <rect x="20" y="40" width="150" height="90" rx="14"/>
+      <rect x="20" y="170" width="150" height="90" rx="14"/>
+      <rect x="230" y="20" width="380" height="260" rx="18" stroke-dasharray="6 5"/>
+      <rect x="670" y="105" width="110" height="90" rx="14"/>
+      <rect x="820" y="105" width="100" height="90" rx="14"/>
+      <path d="M170 85 C200 85,200 120,250 120" marker-end="url(#ar)"/>
+      <path d="M170 215 C200 215,200 180,250 180" marker-end="url(#ar)"/>
+      <path d="M610 150 L668 150" marker-end="url(#ar)"/>
+      <path d="M780 150 L818 150" marker-end="url(#ar)"/>
+    </g>
+    <rect x="35" y="58" width="120" height="54" rx="8" fill="#bfe0f7" stroke="#2f7fc1"/>
+    <text x="95" y="90" text-anchor="middle" font-size="16">相机画面</text>
+    <rect x="35" y="188" width="120" height="54" rx="8" fill="#fbe7a1" stroke="#c99a12"/>
+    <text x="95" y="220" text-anchor="middle" font-size="16">“抓牛奶”</text>
+    <text x="420" y="50" text-anchor="middle" font-size="15" fill="#5b6475">36 层网络</text>
+    <g font-size="14" text-anchor="middle">
+      <rect x="255" y="95" width="70" height="110" rx="10" fill="#e9f3fb" stroke="#2f7fc1"/><text x="290" y="155">第1层</text>
+      <rect x="345" y="95" width="70" height="110" rx="10" fill="#e9f3fb" stroke="#2f7fc1"/><text x="380" y="155">第2层</text>
+      <text x="445" y="155" font-size="22">···</text>
+      <rect x="475" y="95" width="110" height="110" rx="10" fill="#e9f3fb" stroke="#2f7fc1"/><text x="530" y="155">第36层</text>
+    </g>
+    <rect x="255" y="225" width="330" height="34" rx="8" fill="#fde2e2" stroke="#c0392b"/>
+    <text x="420" y="247" text-anchor="middle" font-size="14">“动作向量”：每层读取画面和文字，再更新自己</text>
+    <text x="725" y="145" text-anchor="middle" font-size="15">动作</text>
+    <text x="725" y="167" text-anchor="middle" font-size="12" fill="#5b6475">移动·旋转·夹爪</text>
+    <text x="870" y="155" text-anchor="middle" font-size="15">MuJoCo</text>
+    <path d="M530 88 L530 70" stroke="#c0392b" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="530" y="66" text-anchor="middle" font-size="13" fill="#c0392b">我们在这里测量和替换</text>
+  </svg>
+  </figure>
+  <p class="txt"><a href="architecture.html">看完整网络结构图 →</a> 我们只研究中间这段。网络里有一份代表“即将生成的动作”的向量，每一层都从画面和文字里读取信息、更新自己，最后被转换成机械臂命令。</p>
 </section>
-<details class="research-details" id="evidence"><summary>查看其他实验、执行视频与技术细节</summary>
-<p class="muted">下面保留已有研究记录，包含另一次“末层换文字”实验；它与上面屏蔽连接的实验不同。</p>
-<details class="research-details"><summary>核对完整单层图、真实数组和计算来源</summary>
-<div class="layer-layout">
-<figure><svg class="layer-diagram" viewBox="0 0 360 558" role="img" aria-labelledby="layer-title layer-desc">
-<title id="layer-title">一层Transformer：Attention与MLP的更新量分别加回原状态</title>
-<desc id="layer-desc">输入向量x进入Attention，Attention更新量与保留的x相加得到r。r进入MLP，MLP更新量与保留的r相加，得到下一层输入。两条侧线表示保留已有状态的残差连接。</desc>
-<defs><marker id="layer-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#577aa8"/></marker><marker id="skip-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b672e"/></marker></defs>
-<rect class="node" x="132" y="12" width="206" height="58" rx="7"/><text x="235" y="36">本层输入 x</text><text class="value" x="235" y="58">其中一项：−0.109375</text>
-<path class="wire" d="M235 70 V100" marker-end="url(#layer-arrow)"/>
-<path class="skip" d="M235 82 H42 V226 H215" marker-end="url(#skip-arrow)"/><text class="small-label" x="85" y="141">保留</text><text class="small-label" x="85" y="161">原值 x</text>
-<rect class="node" x="132" y="108" width="206" height="68" rx="7"/><text x="235" y="132">Attention：取信息</text><text class="small-label" x="235" y="153">算出的更新量</text><text class="value" x="235" y="170">−0.515625</text>
-<path class="wire" d="M235 176 V206" marker-end="url(#layer-arrow)"/>
-<circle class="operator" cx="235" cy="226" r="18"/><text x="235" y="232">＋</text><text class="small-label" x="235" y="261">第一次相加：−0.625000</text>
-<path class="wire" d="M235 244 V284" marker-end="url(#layer-arrow)"/>
-<path class="skip" d="M235 275 H76 V414 H215" marker-end="url(#skip-arrow)"/><text class="small-label" x="39" y="339">保留 r</text>
-<rect class="node" x="132" y="296" width="206" height="68" rx="7"/><text x="235" y="320">MLP：内部重组</text><text class="small-label" x="235" y="341">算出的更新量</text><text class="value" x="235" y="358">＋0.083008</text>
-<path class="wire" d="M235 364 V394" marker-end="url(#layer-arrow)"/>
-<circle class="operator" cx="235" cy="414" r="18"/><text x="235" y="420">＋</text><text class="small-label" x="235" y="449">第二次相加</text>
-<path class="wire" d="M235 432 V468" marker-end="url(#layer-arrow)"/>
-<rect class="node" x="132" y="480" width="206" height="66" rx="7"/><text x="235" y="505">本层输出 → 下一层</text><text class="value" x="235" y="530">其中一项：−0.542969</text>
-</svg><figcaption>侧线表示“把已有状态保留下来再相加”，也叫残差连接。图只跟踪当前画面的一个位置。</figcaption></figure>
-<div><h3>真实数字，沿着同一项看</h3><p class="compact">来自已有原生运行的第1次去噪、第1层：当前画面第1个位置，4096个数中的第4项。<b>这是计算示例，不是最新第36层干预的数值。</b></p>
-<table aria-label="第一层真实向量中的同一项"><thead><tr><th>计算到哪里</th><th>实际保存值</th></tr></thead><tbody>
-<tr><td>进入本层 x</td><td>−0.109375</td></tr><tr><td>Attention更新量</td><td>−0.515625</td></tr><tr><td>第一次相加 r</td><td>−0.625000</td></tr><tr><td>MLP更新量</td><td>＋0.083008</td></tr><tr><td>第二次相加：本层输出</td><td>−0.542969</td></tr>
-</tbody></table>
-<p class="compact">Attention和MLP使用整串向量计算，表里只抽出同一项。两次加法已用保存数组逐项核验；末行包含模型内部BF16精度的舍入。</p>
-<p class="result-note"><b>照片没变，网络对照片的内部表示变了。</b>这一个数字不是“牛奶概率”，也不是距离。它只是整个表示中的一个分量。</p>
-</div></div>
-<p><b>同一层各位置读取的是进入本层时的状态，再分别更新。</b>动作位置不会先等本层画面位置更新完，再读取它的新状态；更新后的画面信息可在下一层被读取。</p>
-<details class="network-source"><summary>查看这组数字的来源与精确值</summary>
-<p>已有抓包：<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/future-head-groups/V195_A195_native/sites/t00-L00.pt">V195_A195_native / t00-L00.pt</a>。取 <code>propagation</code> 中各张量的 <code>[0, 3]</code>；每张量形状为 <code>50 × 4096</code>。<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/16-milk-shift-mechanism/probe_cosmos_milk_future_head_groups.py#L421">真实捕获与残差核验代码</a>。</p>
-<p>原值 <code>−0.109375</code>；Attention更新量 <code>−0.515625</code>；第一次相加 <code>−0.625</code>；MLP更新量 <code>＋0.0830078125</code>；本层输出 <code>−0.54296875</code>。实际关系：<code>r = BF16(x + Attention更新量)</code>，<code>输出 = BF16(r + MLP更新量)</code>。MLP输入还经过归一化，简图中略去。</p>
-<p>这里只读取已有数组，没有重新跑模型、训练或机械臂。最新实验是在第36层的<b>动作位置</b>替换文字读取，再比较正常与固定MLP响应，结果见<a href="#functional">下方内部实验</a>。</p>
-</details></details>
-<section><h2>1. 猜了什么？怎样试？</h2>
-<p>猜想是：<b>末层读到另一目标后，后面的MLP会不会把变化抵消，让它坚持原来的动作？</b>MLP就是这一层注意力之后的另一段计算。</p>
-<p>先选同一初态下确实能“说牛奶抓牛奶、说奶酪抓奶酪”的配对案例。牛奶已移15厘米；使用 <code>milk box</code> 和 <code>cream cheese</code> 两种同长度名称，未来噪声198、动作噪声195。它们提供两份真实的文字状态。</p>
-<div class="flow"><span>前35层照常计算<br>视觉／动作状态保留</span><i>→</i><span class="cut">第36层：让16个动作位置<br>读取另一指令的文字数组</span><i>→</i><span class="cut">MLP照常更新<br>或保持同输入原输出</span><i>→</i><span>输出真实动作<br>交给MuJoCo</span></div>
-<p>“固定MLP”指的是：<b>保持它在这次相同输入、未换文字情况下的输出</b>，而不是拿旧轨迹的数组硬塞进去。这样检验它对文字替换的响应是不是关键。</p>
-<details><summary>查看这批实际输入与干预范围</summary><figure><img src="media/interaction-initial.png" alt="本批固定初态的两路真实模型输入图像"><figcaption>实际两路视觉输入。相同机器人初态、图像和噪声配对；首轮只替换零编号L35的文字后缀K/V，UND第48–121行，供16个动作位置读取。其他位置的输出和其他层保持原计算。</figcaption></figure>
-<p>两句指令分别是 <code>pick up the milk box and place it in the basket</code> 和 <code>pick up the cream cheese and place it in the basket</code>，各11个prompt token。本轮不是移入完整“牛奶概念”，而是替换这一接口的真实文字数组。</p>
-<p>首轮30次去噪全程干预，生成16步动作；之后7轮按原指令正常推理，每条共执行128步。因此，结果只检验这段首轮、末层局部干预的充分性。随机对照只匹配投影W之前的实际BF16变化强度，投影后强度未完全相同。</p></details>
+
+<section>
+  <span class="step">02 · 语言进去了吗</span>
+  <h2>进去了：只换一个词，动作向量逐层分开</h2>
+  <figure>
+  <svg viewBox="0 0 940 280" width="100%" role="img" aria-label="动作向量差异随层数增长">
+    <g stroke="#1d2330" stroke-width="1.5"><line x1="80" y1="230" x2="900" y2="230"/><line x1="80" y1="230" x2="80" y2="30"/></g>
+    <g font-size="13" fill="#5b6475" text-anchor="middle">
+      <text x="140" y="252">进入第1层前</text><text x="440" y="252">第1层后</text><text x="800" y="252">第36层后</text>
+      <text x="40" y="60">差异</text>
+    </g>
+    <rect x="115" y="228" width="50" height="2" fill="#2f7fc1"/>
+    <rect x="415" y="219" width="50" height="11" rx="3" fill="#bfe0f7" stroke="#2f7fc1"/>
+    <rect x="775" y="60" width="50" height="170" rx="3" fill="#bfe0f7" stroke="#2f7fc1"/>
+    <g font-size="18" text-anchor="middle" font-weight="700">
+      <text x="140" y="215">0%</text><text x="440" y="206">0.15%</text><text x="800" y="50">3.22%</text>
+    </g>
+    <path d="M165 228 C300 226,380 222,415 220 M465 218 C600 200,700 120,775 64" stroke="#2f7fc1" stroke-dasharray="5 5" fill="none" stroke-width="1.5"/>
+    <text x="600" y="110" font-size="14" fill="#1d2330">同一画面、同一初始噪声</text>
+    <text x="600" y="132" font-size="14" fill="#1d2330">只把“抓牛奶”换成“抓黄油”</text>
+  </svg>
+  </figure>
+  <p class="txt">所以“语言完全没进网络”这个解释可以排除。但要注意：<b>向量变了，不代表选对了物体</b>，机械臂仍可能走向同一个东西；这个百分比也不是“听懂了多少”的分数。</p>
 </section>
-<section id="results"><h2>2. 机械臂实际抓谁？</h2>
-<p>两个方向都做了：牛奶指令读奶酪文字，奶酪指令读牛奶文字。各加自身替换、固定MLP和随机方向对照，<b>8条全部执行，没有挑视频。</b></p>
-<div class="table-scroll"><table><thead><tr><th>内部怎样改</th><th>原指令：牛奶盒</th><th>原指令：奶酪盒</th></tr></thead><tbody><tr><td>自身替换对照</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr><tr><td>换另一指令的文字数组</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr><tr><td>换文字＋固定同输入的MLP响应</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr><tr><td>随机方向对照</td><td>牛奶 · 64–68</td><td>奶酪盒 · 67–71</td></tr></tbody></table></div>
-<p><b>全都仍抓原指令的目标。</b>替换文字没有让它换目标，固定MLP响应也没有。表内数字是首次满足抓起标准的连续记录窗口，不是成功率。</p>
-<div class="video-picker"><label>原指令目标<select id="goal"><option value="milk_box">牛奶盒</option><option value="cream_cheese">奶酪盒</option></select></label><label>内部条件<select id="arm"><option value="live_self">自身替换对照</option><option value="suffix_joint" selected>换另一指令的文字数组</option><option value="suffix_joint_native_mlp">换文字＋固定MLP响应</option><option value="matched_random">随机方向对照</option></select></label></div>
-<video id="execution" controls preload="metadata" playsinline src="media/interaction-x15_milk_box_from_cream_cheese_V198_A195_suffix_joint.mp4"></video><p id="video-caption" class="muted" aria-live="polite"></p>
-<p class="muted">一次只播放一条真实MuJoCo录像。“抓起”要求双侧指垫接触、抬高超过2厘米并连续5条记录。这8条都没有满足完整放篮任务判据；不要把抓起说成任务成功。</p>
+
+<section>
+  <span class="step">03 · 那它跟着什么走</span>
+  <h2>四个场景都说“拿牛奶”：它跟着位置走</h2>
+  <figure>
+    <img src="media/identity-position-scenes.png" alt="四种布局的初始画面和实际抓取结果">
+    <figcaption>MuJoCo 实际执行结果。四种布局各重复三个随机种子，抓到的物体每种都一致。</figcaption>
+  </figure>
+  <p class="txt">牛奶移远后，机械臂改抓奶酪盒。再把奶酪盒和黄油<b>互换位置</b>，它没有追着奶酪盒走，而是抓了<b>奶酪盒原来位置上的黄油</b>。这说明决定抓谁的，更多是“那个位置”，而不是指令里的名字。</p>
+  <div class="grid2">
+    <figure><video src="media/far-original-cream.mp4" controls muted playsinline></video><figcaption>牛奶移远：抓奶酪盒 <span class="tag t-bad">错</span></figcaption></figure>
+    <figure><video src="media/far-swapped-butter.mp4" controls muted playsinline></video><figcaption>再互换奶酪盒和黄油：抓旧位置上的黄油 <span class="tag t-bad">错</span></figcaption></figure>
+  </div>
+  <p class="txt">它并非完全不听话：另一个场景里，同一画面说“碗”就抓碗，说“酒瓶”就抓酒瓶。问题出在某些布局下，位置信息压过了语言。</p>
 </section>
-<section id="functional"><h2>3. 内部到底发生了什么？</h2>
-<p><b>改动进去了，而且经过MLP后没有简单消失。</b>我们保存了注意力、MLP及最终输出等真实数组，并用它们重建核对残差相加。</p>
-<div class="table-scroll"><table><thead><tr><th>首个去噪时刻的替换方向</th><th>注意力变化与MLP变化的方向关系</th><th>两段变化相加后的长度<br><small>相对注意力变化</small></th></tr></thead><tbody><tr><td>牛奶盒 → 奶酪盒</td><td>-0.035</td><td>2.17 倍</td></tr><tr><td>奶酪盒 → 牛奶盒</td><td>-0.043</td><td>2.13 倍</td></tr></tbody></table></div>
-<p>方向数值−1表示完全反向，0表示垂直，+1表示同向。本次接近0；两段相加后的变化更大。<b>不像“MLP把文字变化原样反向抹掉”那么简单。</b></p>
-<p>但变化更大不代表更懂牛奶。这些数值只是数组的方向和长度，尚不能读成“牛奶想法”或“奶酪想法”。实际抓取没有切换，才是这轮假设未通过的关键证据。</p>
-<details><summary>展开真实热力图与精确核验</summary><figure><img loading="lazy" src="media/interaction-same-call-response.png" alt="240处真实同调用数组：注意力与MLP变化余弦，以及实际舍入后的层输出差异"><figcaption>每行一条实际条件，每列一次去噪。左图：两段变化的方向关系，自身对照零变化所以留白；右图：同调用中正常MLP候选BJ的BF16层输出差异L2，平均16个动作位置；固定MLP的C行画的是BJ候选，并非该条件实际返回的BC。两种数组均保留供核验。这不是脑区图，也不是物体识别概率。</figcaption></figure>
-<p>上表只取首个去噪时刻：正常MLP与固定MLP两种执行的输入、原生／替换注意力输出、两种MLP输出和pre-W端点，两方向均逐字节匹配。后续输入会沿各自轨迹改变，不能把整段跨轨迹差异当成完全相同输入的比较。</p>
-<p>实际舍入后的层输出变化，牛奶→奶酪为0.069892，固定MLP后为0.049843；反方向为0.066869和0.045681。均为首时刻16个动作位置的平均L2，无物理单位。余弦表用全部位置联合计算；加和长度表未包含BF16残差舍入，实际舍入另存数组。</p>
-<p>核验240处真实捕获、64份预测记录、1024条官方动作转换、49对后续整份噪声。自身替换两条的整段机械臂状态和控制输入与自然参考逐字节一致。分析在CPU上进行，没有重新生成模型输出。</p>
-<p><a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/instruction-interaction-analysis/arrays.npz">真实NPZ数组</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/instruction-interaction-analysis/analysis.json">完整分析JSON</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/instruction-interaction-analysis/complete.json">分析核验记录</a></p></details>
+
+<section>
+  <span class="step">04 · 在网络里替换信息</span>
+  <h2>哪一处内部信息真正决定了抓谁？</h2>
+  <figure>
+  <svg viewBox="0 0 940 300" width="100%" role="img" aria-label="替换内部信息的实验示意">
+    <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#c0392b"/></marker></defs>
+    <text x="40" y="60" font-size="15">计算 A</text><text x="40" y="215" font-size="15">计算 B</text>
+    <g stroke="#2f7fc1" fill="#e9f3fb">
+      <rect x="120" y="35" width="60" height="45" rx="8"/><rect x="200" y="35" width="60" height="45" rx="8"/><rect x="280" y="35" width="60" height="45" rx="8" fill="#fbe7a1" stroke="#c99a12"/><rect x="360" y="35" width="60" height="45" rx="8"/>
+      <rect x="120" y="190" width="60" height="45" rx="8"/><rect x="200" y="190" width="60" height="45" rx="8"/><rect x="280" y="190" width="60" height="45" rx="8" fill="#fbe7a1" stroke="#c99a12"/><rect x="360" y="190" width="60" height="45" rx="8"/>
+    </g>
+    <text x="310" y="28" text-anchor="middle" font-size="13" fill="#5b6475">指定层</text>
+    <path d="M310 82 C310 120,310 150,310 186" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#ar2)"/>
+    <text x="320" y="140" font-size="14" fill="#c0392b">把 A 的这部分向量换进 B</text>
+    <path d="M420 212 L520 212" stroke="#1d2330" stroke-width="1.8" marker-end="url(#ar)"/>
+    <rect x="530" y="150" width="380" height="125" rx="14" fill="#fff" stroke="#1d2330" stroke-width="1.8"/>
+    <text x="550" y="182" font-size="15">B 的结果：</text>
+    <text x="550" y="212" font-size="15">内部向量 → 变了 ✓</text>
+    <text x="550" y="240" font-size="15">抓取目标 → 没变，或被带偏到别的物体</text>
+    <text x="550" y="264" font-size="15" fill="#c0392b">没有一次被纠正成指令要的那个</text>
+  </svg>
+  </figure>
+  <table>
+    <tr><th>替换了什么</th><th>内部向量</th><th>实际抓取</th></tr>
+    <tr><td>第12层的动作向量，来源是一次抓对牛奶的计算</td><td>改变</td><td><span class="tag t-bad">不变</span> 仍抓奶酪盒</td></tr>
+    <tr><td>第30层的动作向量，来源同上</td><td>改变</td><td><span class="tag t-mid">带偏</span> 改抓黄油（来源场景里牛奶原来的位置），仍没抓牛奶</td></tr>
+    <tr><td>第36层互换“牛奶盒”和“奶酪盒”的文字信息（只在首轮预测），并固定 MLP 响应</td><td>改变</td><td><span class="tag t-bad">不变</span> 各自仍抓原目标</td></tr>
+  </table>
+  <p class="txt">这相当于问：这一处内部信息只是“发生了变化”，还是“实际决定了抓哪个物体”？到目前为止，换文字的实验答案都是前者；换动作向量只能把目标带偏，且带偏的更像是位置，而不是语言。</p>
 </section>
-<section><h2>4. 哪一步往前走了，哪一步还没做到？</h2>
-<div class="status"><b>往前走了：</b>从“语言会让向量变化”，走到了“直接改变某个内部接口，再看MLP和真实抓取”。这批结果削弱了末层MLP简单抵消的解释，也表明只改这处不足以换目标。</div>
-<p><b>没做到：</b>还没找到原始失败由哪个head、哪段MLP或哪个去噪时刻造成；没定位出语言区／运动区；也没证明它背了训练动作。</p>
-<p><b>下一步只问一个问题：</b>目标选择是否在更早的层已经稳定，导致最后一层的局部改动太晚？这是待验证的猜想，要用更早层的替换和真实执行检查，随后回到原始“milk／15厘米”失败。不能凭这一轮直接下结论。</p>
+
+<section>
+  <span class="step">05 · 外部印证</span>
+  <h2>Cosmos 团队的回复：这是常见问题，不只出现在这个模型</h2>
+  <blockquote>在任务专项微调后，开源 VLA/WAM 策略普遍对语言不敏感。我们在 Cosmos3、π0.5、LingBot-VA 的 LIBERO 微调权重上观察到了类似现象。……这与“策略更依赖熟悉的视觉场景而非语言指令”的更广泛问题一致。</blockquote>
+  <table style="margin-top:14px">
+    <tr><th>模型</th><th>“张开／闭合”指令互换后，夹爪方向不变</th></tr>
+    <tr><td>Cosmos3</td><td>180 / 180</td></tr><tr><td>π0.5</td><td>180 / 180</td></tr><tr><td>LingBot-VA</td><td>180 / 180</td></tr>
+  </table>
+  <p class="txt">他们提到的缓解方向是 CAG、CAST 和 CounterAlign，都还没有在这个权重上验证过。<a href="https://github.com/NVIDIA/cosmos/discussions/369">查看讨论 #369</a></p>
 </section>
-<footer><p>仅研究社区权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">cosmos3-nano-policy-liberoall-5k</a>。本轮只有一个初态、一份合格配对噪声、两个改写名称，没有新增训练。<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/README.md">本轮8条实验完整记录</a>。</p>
-<details><summary>代码、原始文件与方法依据</summary><p>全部8条物理轨迹、64份预测、240份内部捕获、输入、运行日志和CPU数组均已公开；<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/publication-manifest.json">原始文件清单与SHA</a>。<a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/code/probe_cosmos_milk_instruction_interaction.py">内部干预代码</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/code/run_cosmos_milk_instruction_interaction.py">实际执行代码</a> · <a href="https://github.com/zcxixixi/cosmos3-policy-experiments/blob/main/experiments/18-instruction-interaction/code/analyze_cosmos_milk_instruction_interaction.py">数组核验代码</a>。</p>
-<p>首次模拟因我启动时CUDA设备变量为空、未显式指定EGL设备而退出，发生在环境创建和任何控制动作之前。失败日志保留；恢复只设置 <code>MUJOCO_EGL_DEVICE_ID=0</code> 并写入新的执行目录，已生成的首轮输出没有重跑。没有把配置错误算成模型失败。</p>
-<p>下游补偿猜想参考 <a href="https://arxiv.org/abs/2307.15771">The Hydra Effect</a>；局部替换与解释边界参考 <a href="https://arxiv.org/abs/2404.15255">How to use and interpret activation patching</a>。这些研究提供检验方法，不是本模型存在同一机制的证据。</p></details></footer></details></main>
-<script>const cases={"milk_box_live_self": {"goal": "牛奶盒", "donor": "奶酪盒", "arm": "自身替换对照", "selected": "牛奶", "start": 64, "src": "media/interaction-x15_milk_box_from_cream_cheese_V198_A195_live_self.mp4"}, "cream_cheese_live_self": {"goal": "奶酪盒", "donor": "牛奶盒", "arm": "自身替换对照", "selected": "奶酪盒", "start": 67, "src": "media/interaction-x15_cream_cheese_from_milk_box_V198_A195_live_self.mp4"}, "milk_box_suffix_joint": {"goal": "牛奶盒", "donor": "奶酪盒", "arm": "换另一指令的文字数组", "selected": "牛奶", "start": 64, "src": "media/interaction-x15_milk_box_from_cream_cheese_V198_A195_suffix_joint.mp4"}, "cream_cheese_suffix_joint": {"goal": "奶酪盒", "donor": "牛奶盒", "arm": "换另一指令的文字数组", "selected": "奶酪盒", "start": 67, "src": "media/interaction-x15_cream_cheese_from_milk_box_V198_A195_suffix_joint.mp4"}, "milk_box_suffix_joint_native_mlp": {"goal": "牛奶盒", "donor": "奶酪盒", "arm": "换文字＋固定同输入的MLP响应", "selected": "牛奶", "start": 64, "src": "media/interaction-x15_milk_box_from_cream_cheese_V198_A195_suffix_joint_native_mlp.mp4"}, "cream_cheese_suffix_joint_native_mlp": {"goal": "奶酪盒", "donor": "牛奶盒", "arm": "换文字＋固定同输入的MLP响应", "selected": "奶酪盒", "start": 67, "src": "media/interaction-x15_cream_cheese_from_milk_box_V198_A195_suffix_joint_native_mlp.mp4"}, "milk_box_matched_random": {"goal": "牛奶盒", "donor": "奶酪盒", "arm": "随机方向对照", "selected": "牛奶", "start": 64, "src": "media/interaction-x15_milk_box_from_cream_cheese_V198_A195_matched_random.mp4"}, "cream_cheese_matched_random": {"goal": "奶酪盒", "donor": "牛奶盒", "arm": "随机方向对照", "selected": "奶酪盒", "start": 67, "src": "media/interaction-x15_cream_cheese_from_milk_box_V198_A195_matched_random.mp4"}};
-const goal=document.getElementById('goal'),arm=document.getElementById('arm'),video=document.getElementById('execution'),caption=document.getElementById('video-caption');
-function show(change){const r=cases[`${goal.value}_${arm.value}`];if(change){video.pause();video.src=r.src;video.load();}const detail=arm.value==='live_self'?'内部数组保持自身原值':arm.value==='matched_random'?'只施加匹配强度的随机方向，不转移目标语义':`这处动作读取改用${r.donor}指令的文字数组`;caption.textContent=`原指令：抓${r.goal}；${r.arm}；${detail}；实际抓起${r.selected}，窗口${r.start}–${r.start+4}。`;video.setAttribute('aria-label',caption.textContent);}
-for(const s of [goal,arm])s.addEventListener('change',()=>show(true));show(false);
-</script></body></html>
+
+<section>
+  <span class="step">下一步</span>
+  <h2>语言产生的变化，为什么推不动目标选择？</h2>
+  <p class="txt">我们已经排除了“语言完全没进去”。下一步要检查：目标是不是在<b>更早的层</b>就已经被画面和位置定下来了，以致后面的语言信息改不动它。</p>
+</section>
+
+</main>
+<footer><div class="wrap">
+  测试对象：社区微调权重 <a href="https://huggingface.co/fwd4xl/cosmos3-nano-policy-liberoall-5k">fwd4xl/cosmos3-nano-policy-liberoall-5k</a>，自定义推理程序，RTX A6000。没有重新训练。结果为固定种子的个案，不是成功率统计。<br>
+  <a href="https://github.com/zcxixixi/cosmos3-policy-experiments">全部实验、数据与代码</a> · <a href="legacy.html">旧版详细记录</a>
+</div></footer>
+</body>
+</html>

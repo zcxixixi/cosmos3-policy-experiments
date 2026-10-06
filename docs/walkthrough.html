@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一次真实运行：数据长什么样</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin:10px 0}
+.chip{font-family:ui-monospace,Menlo,monospace;font-size:12px;border:1px solid #c99a12;background:#fbe7a1;border-radius:5px;padding:2px 6px;position:relative}
+.chip small{display:block;font-size:9px;color:#8a6a0a;text-align:center}
+.chip.t{background:#f6c3c3;border-color:#c0392b;font-weight:700}
+.chip.g{background:#f1f3f6;border-color:#c8cfda;color:#7a8394}
+.bar{display:flex;align-items:center;margin:8px 0;font-size:14px}
+.bar .n{width:190px}
+.bar .b{height:26px;border-radius:5px;border:1px solid #1d2330;min-width:2px}
+.bar .v{margin-left:10px;font-weight:700}
+.bar .u{margin-left:10px;color:#5b6475;font-size:12px}
+.strip{display:flex;height:44px;border:1.5px solid #1d2330;border-radius:8px;overflow:hidden;margin:10px 0 4px}
+.strip div{display:flex;align-items:center;justify-content:center;font-size:12px;border-right:1px solid #1d2330}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.kv td{padding:6px 8px;font-size:14px}
+.big{font-size:30px;font-weight:800;color:#c0392b}
+@media(max-width:720px){.cols{grid-template-columns:1fr}.bar .n{width:120px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="lang"><a href="architecture-step4.html">← 结构四步</a></div>
+  <span class="step">一次真实运行 · 不是示意图</span>
+  <h1>把一次真实的计算摊开看</h1>
+  <p class="lead">场景：牛奶移远 15 cm，指令“pick up the milk box and place it in the basket”。下面每个数字都来自 A6000 上实际保存的一次计算：第一次去噪、第 36 层。</p>
+</div></header>
+<main class="wrap">
+
+<section style="border:none">
+<span class="step">① 输入</span>
+<h2>模型实际收到的文字，不是“抓牛奶”四个字</h2>
+<p class="txt">它收到一段 JSON 文本，被切成 <b>122 个 token</b>（小碎片）。你的那句话只占其中很小一段，其余是固定的格式。红色是目标名字，也就是我们换来换去的那两个词。</p>
+<div class="chips">
+  <span class="chip">0<small>&lt;|im_start|&gt;</small></span><span class="chip">1<small>user</small></span><span class="chip">2<small>\n</small></span><span class="chip">3<small>{"</small></span><span class="chip">4<small>cin</small></span><span class="chip">5<small>emat</small></span><span class="chip g">… 到第 43 个 …<small>一堆固定格式</small></span>
+  <span class="chip">44<small>"</small></span><span class="chip">45<small>pick</small></span><span class="chip">46<small>up</small></span><span class="chip">47<small>the</small></span>
+  <span class="chip t">48<small>milk</small></span><span class="chip t">49<small>box</small></span>
+  <span class="chip">50<small>and</small></span><span class="chip">51<small>place</small></span><span class="chip">52<small>it</small></span><span class="chip">53<small>in</small></span><span class="chip">54<small>the</small></span><span class="chip">55<small>basket</small></span><span class="chip g">… 到第 114 个 …<small>idle_frame 等</small></span>
+  <span class="chip">115<small>&lt;|im_end|&gt;</small></span><span class="chip">117<small>&lt;|im_start|&gt;</small></span><span class="chip">118<small>assistant</small></span><span class="chip">121<small>&lt;|vision_start|&gt;</small></span>
+</div>
+<div class="cols">
+  <figure style="margin:0"><img src="media/matched-x15-input.png" alt="实际输入的两路相机画面"><figcaption>实际输入的画面：左边第三视角，右边腕部相机。牛奶已被移远。</figcaption></figure>
+  <div class="txt" style="font-size:15px">
+    <p style="margin-top:0">画面也被切成 token：</p>
+    <p>· 当前画面 <b>50</b> 个<br>· 模型自己预测的未来画面 <b>200</b> 个（4 帧 × 50）<br>· 动作 <b>16</b> 个（16 步）</p>
+    <p>文字 + 画面 + 动作，合起来一共 <b>388</b> 个 token，就是网络每次计算要处理的全部。</p>
+  </div>
+</div>
+</section>
+
+<section>
+<span class="step">② 地址表</span>
+<h2>388 个 token 各自住在哪</h2>
+<div class="strip">
+  <div style="width:31.4%;background:#fbe7a1">文字 · 0–121 · 122 个</div>
+  <div style="width:12.9%;background:#bfe0f7">当前画面 · 122–171</div>
+  <div style="width:51.5%;background:#e9f3fb">未来画面 · 172–371 · 200 个</div>
+  <div style="width:4.1%;background:#f6c3c3;border-right:none" title="动作">动作</div>
+</div>
+<p class="txt" style="font-size:14px;color:#5b6475">动作 token 的地址是 372–387。第 36 层里，这 16 个动作 token 各自要决定“去看这 388 个里的谁”。</p>
+</section>
+
+<section>
+<span class="step">③ 测量：动作在看谁</span>
+<h2>第 36 层，动作 token 把注意力给了谁？</h2>
+<p class="txt">下面是真实算出来的注意力分配：16 个动作 token，32 个注意力头取平均，加起来是 100%。左边是“牛奶盒”指令，右边是“奶酪”指令，两次的画面、噪声完全一样。</p>
+<div class="cols">
+<div>
+  <b>指令：…milk box…</b>
+  <div class="bar"><span class="n">文字（122 个）</span><span class="b" style="width:3px;background:#fbe7a1"></span><span class="v">0.77%</span></div>
+  <div class="bar"><span class="n">当前画面（50 个）</span><span class="b" style="width:74px;background:#bfe0f7"></span><span class="v">14.8%</span></div>
+  <div class="bar"><span class="n">未来画面（200 个）</span><span class="b" style="width:246px;background:#e9f3fb"></span><span class="v">49.1%</span></div>
+  <div class="bar"><span class="n">动作自己（16 个）</span><span class="b" style="width:176px;background:#f6c3c3"></span><span class="v">35.3%</span></div>
+</div>
+<div>
+  <b>指令：…cream cheese…</b>
+  <div class="bar"><span class="n">文字（122 个）</span><span class="b" style="width:3px;background:#fbe7a1"></span><span class="v">0.77%</span></div>
+  <div class="bar"><span class="n">当前画面（50 个）</span><span class="b" style="width:73px;background:#bfe0f7"></span><span class="v">14.6%</span></div>
+  <div class="bar"><span class="n">未来画面（200 个）</span><span class="b" style="width:245px;background:#e9f3fb"></span><span class="v">49.0%</span></div>
+  <div class="bar"><span class="n">动作自己（16 个）</span><span class="b" style="width:178px;background:#f6c3c3"></span><span class="v">35.6%</span></div>
+</div>
+</div>
+<p class="txt" style="margin-top:14px">文字占 122 个 token，如果平均看，应该拿到约 31%。实际只有 <b>0.77%</b>。而且这 0.77% 里，约 91%（0.70%）给了第 0 个 token <code>&lt;|im_start|&gt;</code>，一个固定的开头符号，和你说了什么无关。</p>
+</section>
+
+<section>
+<span class="step">④ 放大到目标名字</span>
+<h2>“milk box”这两个词，拿到了多少注意力？</h2>
+<table class="kv">
+  <tr><th></th><th>平均看的话</th><th>实际</th><th>差多少</th></tr>
+  <tr><td>token 48、49（milk box）</td><td>0.52%</td><td><span class="big" style="font-size:22px">0.00074%</span></td><td>少约 700 倍</td></tr>
+  <tr><td>token 48、49（cream cheese）</td><td>0.52%</td><td><span class="big" style="font-size:22px">0.00098%</span></td><td>少约 500 倍</td></tr>
+</table>
+<p class="txt" style="margin-top:14px">换句话说：<b>在最后一层、第一次去噪时，动作 token 几乎不看目标名字。</b>32 个头里，最“爱看文字”的那个头，也只把 4% 的注意力给了整个文字段。</p>
+</section>
+
+<section style="border:none">
+<span class="step">⑤ 这说明什么，不说明什么</span>
+<h2>读这些数字要小心</h2>
+<p class="txt"><b>说明的：</b>在这次计算的第 36 层，语言进入动作的“口子”几乎是关着的。这与实验 18 一致，也是它的一个可能解释：我们在第 36 层把文字换成另一个目标，目标没变，可能是因为这一层本来就没怎么读它。这个解释还没有被直接检验。</p>
+<p class="txt"><b>不说明的：</b></p>
+<p class="txt">· <b>只看了一层、一个时刻、一个场景。</b>第 1–35 层、其余 29 次去噪，这次没有存全部数据，还不知道。语言完全可能是在更早的层被读进去的，到第 36 层只是已经用完了。<br>
+· <b>注意力大小不等于影响力。</b>一个 token 即使只被看一点，它的内容向量如果很大，仍然可能有影响。所以“几乎不看”只是强线索，不是定论。<br>
+· <b>只有一次运行。</b>种子 198、牛奶移远 15 cm、两个指令。</p>
+<p class="txt"><b>我怎么确认算对了：</b>用保存下来的 Q、K、V 重新算一遍注意力，得到的输出和模型当时的真实输出相差 0.17%（相对 L2），在 BF16 精度范围内。</p>
+</section>
+
+<section style="border:none;padding-top:0">
+  <span class="step">下一步</span>
+  <h2>把这个测量扩展到 36 层</h2>
+  <p class="txt">现在只有第 36 层的数据。要看语言是在哪一层被读进去、又在哪一层被忽略，需要在 A6000 上重跑一次推理，把每一层、每次去噪的注意力分配都记下来。这是一个<b>只读不改</b>的测量，不动模型，也不用物理仿真；我还没有估算它在 A6000 上要跑多久。</p>
+</section>
+</main>
+<footer><div class="wrap">数据：<code>matched-names/x15_{milk_box,cream_cheese}_V198_A195_native/dispatch-t00-L35.pt</code>（A6000）。计算脚本和结果见仓库 <code>experiments/19-real-attention-readout/</code>。</div></footer>
+</body>
+</html>
