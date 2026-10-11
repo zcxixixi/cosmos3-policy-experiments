@@ -1,0 +1,2236 @@
+{
+  "protocol": {
+    "hypothesis": "Only some image-conditioning reads may mediate goal/all-layout changes. Layerwise remove and single-read sufficiency may differ and effects need not add.",
+    "data": "78boundary-screened observations18source groups, four phases; goal\u00b132XY andall-layout\u00b132XY; frozenfinetunedUnetandTransformer.",
+    "intervention": "Each denoising call atoneconditioningread substitutes originalimage condition, other reads usechangedimage. Oppositesufficiency setsallreadsto originalexceptone. U-Net swapslast256of512(time+condition) beforeMish/LinearFiLMencoder; timeunchanged. Transformer swapsmemory argumentofoneDecoderLayer, queriesandselfattention untouched. Oldimageisreference,notnullablation.",
+    "references": "target readsallchanged; literal_oldreadsoriginaldirectly; all_oldviahooks mustmatchliteralold<0.002px; originalbaselineusesuntranslatedinitialnoise. Goal uses sameinitialnoise; alllayout usescoupledinitialnoise sqrtalpha95*delta/256.",
+    "metric": "Recoverednaturalimageeffect = dot(patch-old,target-old)/||target-old||\u00b2; target1,old0; can exceed1ornegative. Relative action reconstruction error and idealtranslationerror separate. No semanticor tasksuccessfraction.",
+    "test": "20DDIMfuture8XYcommands, newseeds3354/3355, allsitemasks predeclared; no posttest layerselection, allshown.",
+    "limitations": "Fullgenerationcross-contextintervention maybeoffdistribution. No prune/retrain/physics/taskrepair. Depthprofilesdependoncontrast/checkpoint/data; cannosinglelayerdominancegeneralize to VLA. Both modelsread sameCNN4tokensatdifferentblocks, notdifferentCNNdepths."
+  },
+  "inventory": {
+    "unet": [
+      "down_modules.0.0.cond_encoder",
+      "down_modules.0.1.cond_encoder",
+      "down_modules.1.0.cond_encoder",
+      "down_modules.1.1.cond_encoder",
+      "down_modules.2.0.cond_encoder",
+      "down_modules.2.1.cond_encoder",
+      "mid_modules.0.cond_encoder",
+      "mid_modules.1.cond_encoder",
+      "up_modules.0.0.cond_encoder",
+      "up_modules.0.1.cond_encoder",
+      "up_modules.1.0.cond_encoder",
+      "up_modules.1.1.cond_encoder"
+    ],
+    "transformer": [
+      "blocks.0",
+      "blocks.1",
+      "blocks.2",
+      "blocks.3",
+      "blocks.4",
+      "blocks.5"
+    ]
+  },
+  "audit": {
+    "complete": true,
+    "models": {
+      "unet": {
+        "sha_before": "89afbd55293ac08165e5ecabcc138bbaac29235f86be0896df262f2b9d3317c6",
+        "sha_after": "89afbd55293ac08165e5ecabcc138bbaac29235f86be0896df262f2b9d3317c6",
+        "all_old_hook_vs_direct_max_error_px": 0.0,
+        "positive_checks": 4,
+        "reads": 12
+      },
+      "transformer": {
+        "sha_before": "8294ce3d685e52c28a433bf0c369630beba6445d6395ce73567ecbc1be64a5a9",
+        "sha_after": "8294ce3d685e52c28a433bf0c369630beba6445d6395ce73567ecbc1be64a5a9",
+        "all_old_hook_vs_direct_max_error_px": 0.0,
+        "positive_checks": 4,
+        "reads": 6
+      }
+    },
+    "sampler_inputs": 54912,
+    "denoiser_inputs": 1098240,
+    "hook_calls": 79200,
+    "contexts": 78,
+    "sources": 18,
+    "finite": true
+  },
+  "results": {
+    "unet": {
+      "goal": {
+        "natural_image_effect_rmse_px": 9.728527456802261,
+        "sites": {
+          "target": {
+            "recovered_gap": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.0
+          },
+          "all_old": {
+            "recovered_gap": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.728527456802261
+          },
+          "remove_0": {
+            "recovered_gap": {
+              "value": 0.8929365167329378,
+              "ci95": [
+                0.8426461825115402,
+                0.9273643046045545
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.242442932200397,
+              "ci95": [
+                0.20735586239699608,
+                0.2843457864081855
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 2.3586127226192115,
+            "removed_signed_gap": {
+              "value": 0.10706348326706214,
+              "ci95": [
+                0.07263569539544541,
+                0.15735381748845972
+              ]
+            }
+          },
+          "remove_1": {
+            "recovered_gap": {
+              "value": 0.8894762757793603,
+              "ci95": [
+                0.8524235653926746,
+                0.9169288977760027
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.23141196668465455,
+              "ci95": [
+                0.20289764018590245,
+                0.2630261581297955
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 2.251297671724272,
+            "removed_signed_gap": {
+              "value": 0.11052372422063975,
+              "ci95": [
+                0.08307110222399725,
+                0.14757643460732545
+              ]
+            }
+          },
+          "remove_2": {
+            "recovered_gap": {
+              "value": 0.9821820774750248,
+              "ci95": [
+                0.9756945506495857,
+                0.986495786205914
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.046515718578391915,
+              "ci95": [
+                0.04084689781781252,
+                0.053628857308222685
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.4525294453627728,
+            "removed_signed_gap": {
+              "value": 0.017817922524975164,
+              "ci95": [
+                0.013504213794085949,
+                0.024305449350414333
+              ]
+            }
+          },
+          "remove_3": {
+            "recovered_gap": {
+              "value": 0.9875627506268804,
+              "ci95": [
+                0.9842467246440127,
+                0.9902711732876333
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.03608855801793513,
+              "ci95": [
+                0.03253645051407625,
+                0.03961992507624703
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.35108852755388326,
+            "removed_signed_gap": {
+              "value": 0.012437249373119661,
+              "ci95": [
+                0.009728826712366693,
+                0.015753275355987223
+              ]
+            }
+          },
+          "remove_4": {
+            "recovered_gap": {
+              "value": 0.4627846016177733,
+              "ci95": [
+                0.3890793502492826,
+                0.5678267313056135
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.6557943470654608,
+              "ci95": [
+                0.571165007731781,
+                0.7148427445910989
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 6.379913311442047,
+            "removed_signed_gap": {
+              "value": 0.5372153983822266,
+              "ci95": [
+                0.4321732686943866,
+                0.6109206497507175
+              ]
+            }
+          },
+          "remove_5": {
+            "recovered_gap": {
+              "value": 0.8326543863832806,
+              "ci95": [
+                0.7880159817618372,
+                0.8823237114873167
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.2989554620535357,
+              "ci95": [
+                0.25329002309301224,
+                0.34392018798942603
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 2.9083964209488284,
+            "removed_signed_gap": {
+              "value": 0.1673456136167194,
+              "ci95": [
+                0.11767628851268336,
+                0.2119840182381629
+              ]
+            }
+          },
+          "remove_6": {
+            "recovered_gap": {
+              "value": 0.9939460043980236,
+              "ci95": [
+                0.9634948054914387,
+                1.0265177105813679
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.179976079806442,
+              "ci95": [
+                0.1553629586746377,
+                0.20467275577862215
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 1.750902233964606,
+            "removed_signed_gap": {
+              "value": 0.006053995601976342,
+              "ci95": [
+                -0.02651771058136781,
+                0.03650519450856121
+              ]
+            }
+          },
+          "remove_7": {
+            "recovered_gap": {
+              "value": 1.011656987640687,
+              "ci95": [
+                0.9999792036648655,
+                1.021152231449249
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.08207379293120856,
+              "ci95": [
+                0.06804684096725425,
+                0.09919516074913685
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.7984571480151658,
+            "removed_signed_gap": {
+              "value": -0.011656987640686945,
+              "ci95": [
+                -0.021152231449248916,
+                2.0796335134567167e-05
+              ]
+            }
+          },
+          "remove_8": {
+            "recovered_gap": {
+              "value": 0.9968348253655795,
+              "ci95": [
+                0.9932048826539303,
+                1.0004875874333288
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.028243039086321548,
+              "ci95": [
+                0.024878127340715348,
+                0.031606882497082184
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.27476318121481863,
+            "removed_signed_gap": {
+              "value": 0.003165174634420402,
+              "ci95": [
+                -0.0004875874333287665,
+                0.006795117346069767
+              ]
+            }
+          },
+          "remove_9": {
+            "recovered_gap": {
+              "value": 0.9976666531760304,
+              "ci95": [
+                0.9951442659195996,
+                1.0007743197150842
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.021137959050073995,
+              "ci95": [
+                0.018910458233615795,
+                0.024115438387892967
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.2056412149994067,
+            "removed_signed_gap": {
+              "value": 0.0023333468239695914,
+              "ci95": [
+                -0.0007743197150844083,
+                0.004855734080400441
+              ]
+            }
+          },
+          "remove_10": {
+            "recovered_gap": {
+              "value": 0.9938171152226678,
+              "ci95": [
+                0.9907736713500355,
+                0.9958376181948125
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.019556177703483443,
+              "ci95": [
+                0.017323910427006636,
+                0.022242012420904518
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.19025281173844286,
+            "removed_signed_gap": {
+              "value": 0.00618288477733217,
+              "ci95": [
+                0.0041623818051875,
+                0.009226328649964607
+              ]
+            }
+          },
+          "remove_11": {
+            "recovered_gap": {
+              "value": 0.9886394456300567,
+              "ci95": [
+                0.9831918144774704,
+                0.992111179326057
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.028997367313489134,
+              "ci95": [
+                0.024468025127080684,
+                0.033953400472522946
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.28210168408425945,
+            "removed_signed_gap": {
+              "value": 0.011360554369943321,
+              "ci95": [
+                0.007888820673943015,
+                0.01680818552252962
+              ]
+            }
+          },
+          "keep_0": {
+            "recovered_gap": {
+              "value": 0.10971864907510685,
+              "ci95": [
+                0.07541969448822157,
+                0.1585719086819332
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.916190025032191,
+              "ci95": [
+                0.87302216815895,
+                0.9457605108574921
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 8.913179814174022
+          },
+          "keep_1": {
+            "recovered_gap": {
+              "value": 0.1109786219269573,
+              "ci95": [
+                0.08346840394436637,
+                0.14766290679058847
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9118065183036859,
+              "ci95": [
+                0.8787373507199083,
+                0.9361020198634946
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 8.870534748608682
+          },
+          "keep_2": {
+            "recovered_gap": {
+              "value": 0.02008054163502527,
+              "ci95": [
+                0.015461426630088987,
+                0.02672071719369423
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9808856889019916,
+              "ci95": [
+                0.9744554119302774,
+                0.9853997377447384
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.542573356467425
+          },
+          "keep_3": {
+            "recovered_gap": {
+              "value": 0.014058791047564988,
+              "ci95": [
+                0.011019538759666497,
+                0.017388362098351293
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9865157404936977,
+              "ci95": [
+                0.9831171848484889,
+                0.9895911110958261
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.597345467960553
+          },
+          "keep_4": {
+            "recovered_gap": {
+              "value": 0.5628238830095543,
+              "ci95": [
+                0.4746568267207835,
+                0.6293527233515043
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.5847940528237342,
+              "ci95": [
+                0.522688041554221,
+                0.6640250665343507
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 5.6891849994703705
+          },
+          "keep_5": {
+            "recovered_gap": {
+              "value": 0.17977431148152317,
+              "ci95": [
+                0.1258150427627211,
+                0.23958876390633999
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.8638216529249132,
+              "ci95": [
+                0.8157850317658667,
+                0.906864858866956
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 8.403712668260331
+          },
+          "keep_6": {
+            "recovered_gap": {
+              "value": 0.02081456227292963,
+              "ci95": [
+                -0.014298953228147105,
+                0.05238637483475577
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.994731854898979,
+              "ci95": [
+                0.9637638469449042,
+                1.0300797268299575
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.67727616254056
+          },
+          "keep_7": {
+            "recovered_gap": {
+              "value": -0.0072234785402811525,
+              "ci95": [
+                -0.01924786261420398,
+                0.005886855827641036
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.010621976775488,
+              "ci95": [
+                0.9976534321771803,
+                1.0228378191860052
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.831863649508113
+          },
+          "keep_8": {
+            "recovered_gap": {
+              "value": 0.0030153186525912617,
+              "ci95": [
+                -0.0027585279574060587,
+                0.009201997706023642
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9974602529155434,
+              "ci95": [
+                0.9914206128560616,
+                1.0032551898991797
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.703819457557792
+          },
+          "keep_9": {
+            "recovered_gap": {
+              "value": 0.0015107863288787915,
+              "ci95": [
+                -0.0021168722182758793,
+                0.0043730224626426445
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9987410813177248,
+              "ci95": [
+                0.9958673724195566,
+                1.0023819082853618
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.716280031835865
+          },
+          "keep_10": {
+            "recovered_gap": {
+              "value": 0.006600563276715811,
+              "ci95": [
+                0.004406381239535232,
+                0.010194591913091371
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9935895270706782,
+              "ci95": [
+                0.9900064994233352,
+                0.9957514501663901
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.666162994898267
+          },
+          "keep_11": {
+            "recovered_gap": {
+              "value": 0.011913821681230053,
+              "ci95": [
+                0.007420307701780496,
+                0.01924134425917279
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9884846175195496,
+              "ci95": [
+                0.9812593346194071,
+                0.9929044332420943
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.61649974216562
+          }
+        }
+      },
+      "all": {
+        "natural_image_effect_rmse_px": 34.51828176647588,
+        "sites": {
+          "target": {
+            "recovered_gap": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.0,
+            "ideal_translation_rmse_px": 26.390582743974935
+          },
+          "all_old": {
+            "recovered_gap": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 34.51828176647588,
+            "ideal_translation_rmse_px": 22.14367857432305
+          },
+          "remove_0": {
+            "recovered_gap": {
+              "value": 0.7338423768730012,
+              "ci95": [
+                0.7018193725595322,
+                0.761127881857241
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.3567846028429391,
+              "ci95": [
+                0.3293517549848549,
+                0.3864306961103232
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 12.315591450872763,
+            "removed_signed_gap": {
+              "value": 0.2661576231269987,
+              "ci95": [
+                0.23887211814275897,
+                0.2981806274404678
+              ]
+            },
+            "ideal_translation_rmse_px": 26.11657481087239
+          },
+          "remove_1": {
+            "recovered_gap": {
+              "value": 0.7518128160241077,
+              "ci95": [
+                0.7233316387233872,
+                0.7749941259941827
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.33017849799064297,
+              "ci95": [
+                0.3062382885513188,
+                0.356933481479661
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 11.397194426872803,
+            "removed_signed_gap": {
+              "value": 0.2481871839758923,
+              "ci95": [
+                0.22500587400581729,
+                0.27666836127661254
+              ]
+            },
+            "ideal_translation_rmse_px": 25.676827043028357
+          },
+          "remove_2": {
+            "recovered_gap": {
+              "value": 0.9715686217747552,
+              "ci95": [
+                0.9670735712313544,
+                0.9754118107943487
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.04823886654127852,
+              "ci95": [
+                0.043176277631181224,
+                0.0533277379918557
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 1.6651227873672776,
+            "removed_signed_gap": {
+              "value": 0.028431378225244996,
+              "ci95": [
+                0.024588189205651503,
+                0.0329264287686456
+              ]
+            },
+            "ideal_translation_rmse_px": 25.988822293550392
+          },
+          "remove_3": {
+            "recovered_gap": {
+              "value": 0.9863343249664485,
+              "ci95": [
+                0.9847620685645977,
+                0.9877803491506304
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.032165399425342474,
+              "ci95": [
+                0.029385391342074532,
+                0.035442213008791544
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 1.110294320495213,
+            "removed_signed_gap": {
+              "value": 0.01366567503355195,
+              "ci95": [
+                0.012219650849369382,
+                0.01523793143540248
+              ]
+            },
+            "ideal_translation_rmse_px": 26.088806800070568
+          },
+          "remove_4": {
+            "recovered_gap": {
+              "value": 0.6772119510885666,
+              "ci95": [
+                0.6209863524871708,
+                0.7399234532258838
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.49411711312696444,
+              "ci95": [
+                0.4397236328320677,
+                0.5377630269889486
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 17.056073736554193,
+            "removed_signed_gap": {
+              "value": 0.32278804891143353,
+              "ci95": [
+                0.2600765467741163,
+                0.37901364751282934
+              ]
+            },
+            "ideal_translation_rmse_px": 15.698711249927513
+          },
+          "remove_5": {
+            "recovered_gap": {
+              "value": 0.9120473267677273,
+              "ci95": [
+                0.8843234336407803,
+                0.9377829482768745
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.22700250541970926,
+              "ci95": [
+                0.1974328938984585,
+                0.2578620688624873
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 7.835736443773492,
+            "removed_signed_gap": {
+              "value": 0.0879526732322729,
+              "ci95": [
+                0.0622170517231256,
+                0.11567656635921984
+              ]
+            },
+            "ideal_translation_rmse_px": 23.655681761573724
+          },
+          "remove_6": {
+            "recovered_gap": {
+              "value": 0.9999012173398005,
+              "ci95": [
+                0.9903358909915129,
+                1.0091809006570167
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.13823257089184224,
+              "ci95": [
+                0.12194699892435518,
+                0.15656085713341913
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 4.7715508313489625,
+            "removed_signed_gap": {
+              "value": 9.878266019967919e-05,
+              "ci95": [
+                -0.009180900657016836,
+                0.009664109008487022
+              ]
+            },
+            "ideal_translation_rmse_px": 26.163692427523504
+          },
+          "remove_7": {
+            "recovered_gap": {
+              "value": 1.0167131005778463,
+              "ci95": [
+                1.0090721950604336,
+                1.0246781163107517
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.07121775145722478,
+              "ci95": [
+                0.06599808505857487,
+                0.07780567486127475
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 2.458314411575333,
+            "removed_signed_gap": {
+              "value": -0.016713100577846477,
+              "ci95": [
+                -0.02467811631075159,
+                -0.009072195060433616
+              ]
+            },
+            "ideal_translation_rmse_px": 26.623935122494995
+          },
+          "remove_8": {
+            "recovered_gap": {
+              "value": 0.9994253733644757,
+              "ci95": [
+                0.9977264078018266,
+                1.0010396385266078
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.025015848419025488,
+              "ci95": [
+                0.021403134430764453,
+                0.029158891062534255
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.8635041043553718,
+            "removed_signed_gap": {
+              "value": 0.0005746266355242825,
+              "ci95": [
+                -0.0010396385266076297,
+                0.002273592198173347
+              ]
+            },
+            "ideal_translation_rmse_px": 26.333089267560272
+          },
+          "remove_9": {
+            "recovered_gap": {
+              "value": 0.9980551434849123,
+              "ci95": [
+                0.9965206921615312,
+                0.9996200789907322
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.01892261391753041,
+              "ci95": [
+                0.01659083796584456,
+                0.021386991567535405
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.6531761189635527,
+            "removed_signed_gap": {
+              "value": 0.001944856515087774,
+              "ci95": [
+                0.0003799210092678333,
+                0.0034793078384691206
+              ]
+            },
+            "ideal_translation_rmse_px": 26.370522488719818
+          },
+          "remove_10": {
+            "recovered_gap": {
+              "value": 0.9914073044134541,
+              "ci95": [
+                0.9903743774264884,
+                0.9924436562115013
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.017628830242518632,
+              "ci95": [
+                0.016513213302121885,
+                0.01885104468327113
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.6085169295246294,
+            "removed_signed_gap": {
+              "value": 0.008592695586546132,
+              "ci95": [
+                0.007556343788498616,
+                0.009625622573511499
+              ]
+            },
+            "ideal_translation_rmse_px": 26.224445131585036
+          },
+          "remove_11": {
+            "recovered_gap": {
+              "value": 0.9856497617202571,
+              "ci95": [
+                0.9834421888485148,
+                0.9876128068759616
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.027829787680139897,
+              "ci95": [
+                0.024046281712390354,
+                0.03263029507831549
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.960636452644268,
+            "removed_signed_gap": {
+              "value": 0.014350238279742853,
+              "ci95": [
+                0.012387193124038345,
+                0.01655781115148547
+              ]
+            },
+            "ideal_translation_rmse_px": 26.065878158715815
+          },
+          "keep_0": {
+            "recovered_gap": {
+              "value": 0.26946168336166737,
+              "ci95": [
+                0.24653982322800633,
+                0.29919842953505893
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.7681646760568391,
+              "ci95": [
+                0.7416951780566096,
+                0.7870381431625836
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 26.515724731183642,
+            "ideal_translation_rmse_px": 13.20275017255627
+          },
+          "keep_1": {
+            "recovered_gap": {
+              "value": 0.2503361302672738,
+              "ci95": [
+                0.23010819696104082,
+                0.27716351720294524
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.7809417047370621,
+              "ci95": [
+                0.7566390185640401,
+                0.7982689189615567
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 26.95676580730592,
+            "ideal_translation_rmse_px": 14.017104543320787
+          },
+          "keep_2": {
+            "recovered_gap": {
+              "value": 0.03062533244029387,
+              "ci95": [
+                0.02658750489313759,
+                0.035544119592445085
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9702163761567714,
+              "ci95": [
+                0.9653984035007409,
+                0.9741415636088462
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 33.490202246628584,
+            "ideal_translation_rmse_px": 21.174507064407056
+          },
+          "keep_3": {
+            "recovered_gap": {
+              "value": 0.015865097845187217,
+              "ci95": [
+                0.013838375651977229,
+                0.017895085238800214
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9846150397782567,
+              "ci95": [
+                0.9825739841251998,
+                0.9866304857829051
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 33.987219374575716,
+            "ideal_translation_rmse_px": 21.80504534070274
+          },
+          "keep_4": {
+            "recovered_gap": {
+              "value": 0.34918794058260677,
+              "ci95": [
+                0.2725410674098504,
+                0.42938943887405845
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.7484518951793924,
+              "ci95": [
+                0.686462719083114,
+                0.8068797615767416
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 25.83527340645513,
+            "ideal_translation_rmse_px": 27.140879908529673
+          },
+          "keep_5": {
+            "recovered_gap": {
+              "value": 0.09840099626342048,
+              "ci95": [
+                0.07203753478295709,
+                0.1282467542073682
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9277724780962505,
+              "ci95": [
+                0.9012629678825226,
+                0.9515808912736085
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 32.025111814107944,
+            "ideal_translation_rmse_px": 22.978217210721713
+          },
+          "keep_6": {
+            "recovered_gap": {
+              "value": 0.011082496714941305,
+              "ci95": [
+                -0.0021210276868307678,
+                0.024106565501437485
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9998457407819956,
+              "ci95": [
+                0.9864639960773534,
+                1.0132610860170044
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 34.51295700332373,
+            "ideal_translation_rmse_px": 23.378471809997322
+          },
+          "keep_7": {
+            "recovered_gap": {
+              "value": -0.015770098038193205,
+              "ci95": [
+                -0.02276819429902625,
+                -0.009977858882166499
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.0191631406363812,
+              "ci95": [
+                1.0130488047798576,
+                1.0265577685631018
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 35.17976045449309,
+            "ideal_translation_rmse_px": 23.082239594696574
+          },
+          "keep_8": {
+            "recovered_gap": {
+              "value": 0.0010009311405937194,
+              "ci95": [
+                -0.0009804721946481566,
+                0.003200043360394122
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9994951134749929,
+              "ci95": [
+                0.9975708564272657,
+                1.0013244819702036
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 34.50085395114559,
+            "ideal_translation_rmse_px": 22.19566306050699
+          },
+          "keep_9": {
+            "recovered_gap": {
+              "value": 0.0028988783293578345,
+              "ci95": [
+                0.001230692802242235,
+                0.004558235169797182
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9973058091737363,
+              "ci95": [
+                0.995657598962268,
+                0.9989593929948277
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 34.425282928402254,
+            "ideal_translation_rmse_px": 22.06372742303397
+          },
+          "keep_10": {
+            "recovered_gap": {
+              "value": 0.008826728895248385,
+              "ci95": [
+                0.007492431429179118,
+                0.010185662429574936
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9913066393111155,
+              "ci95": [
+                0.9899462107154984,
+                0.9926449892340773
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 34.21820189271936,
+            "ideal_translation_rmse_px": 21.889636080258953
+          },
+          "keep_11": {
+            "recovered_gap": {
+              "value": 0.01492441442677647,
+              "ci95": [
+                0.012847328948964598,
+                0.017298622951590667
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9853735438037998,
+              "ci95": [
+                0.983032254863392,
+                0.9874236300905485
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 34.01340163025043,
+            "ideal_translation_rmse_px": 21.78814201503646
+          }
+        }
+      }
+    },
+    "transformer": {
+      "goal": {
+        "natural_image_effect_rmse_px": 14.438648853098345,
+        "sites": {
+          "target": {
+            "recovered_gap": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.0
+          },
+          "all_old": {
+            "recovered_gap": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 14.438648853098345
+          },
+          "remove_0": {
+            "recovered_gap": {
+              "value": 0.49775277247746946,
+              "ci95": [
+                0.45046223909358046,
+                0.5392235558197693
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.6136281628475851,
+              "ci95": [
+                0.5785173928261197,
+                0.6569937643305931
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 8.85996156972813,
+            "removed_signed_gap": {
+              "value": 0.5022472275225305,
+              "ci95": [
+                0.4607764441802307,
+                0.5495377609064195
+              ]
+            }
+          },
+          "remove_1": {
+            "recovered_gap": {
+              "value": 0.8914514221223097,
+              "ci95": [
+                0.8626898147147034,
+                0.9166234940453625
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.2644921051301127,
+              "ci95": [
+                0.24192656852857725,
+                0.292437790472206
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 3.8189086303904682,
+            "removed_signed_gap": {
+              "value": 0.10854857787769039,
+              "ci95": [
+                0.08337650595463754,
+                0.1373101852852966
+              ]
+            }
+          },
+          "remove_2": {
+            "recovered_gap": {
+              "value": 0.8532253442769073,
+              "ci95": [
+                0.8214853368976445,
+                0.8853255830403387
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.31235488845541826,
+              "ci95": [
+                0.2830027831852094,
+                0.33835068846709376
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 4.509982551956486,
+            "removed_signed_gap": {
+              "value": 0.14677465572309273,
+              "ci95": [
+                0.11467441695966138,
+                0.17851466310235556
+              ]
+            }
+          },
+          "remove_3": {
+            "recovered_gap": {
+              "value": 0.8163554958178335,
+              "ci95": [
+                0.797312122640682,
+                0.836178145403475
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.3185715426005077,
+              "ci95": [
+                0.29729641927953376,
+                0.34387422297596865
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 4.599742638198591,
+            "removed_signed_gap": {
+              "value": 0.18364450418216655,
+              "ci95": [
+                0.16382185459652504,
+                0.20268787735931806
+              ]
+            }
+          },
+          "remove_4": {
+            "recovered_gap": {
+              "value": 0.9432859758905615,
+              "ci95": [
+                0.9302588528495829,
+                0.9572458442682015
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.19414874895866088,
+              "ci95": [
+                0.18077261757754984,
+                0.20984294732716224
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 2.8032456114824473,
+            "removed_signed_gap": {
+              "value": 0.05671402410943844,
+              "ci95": [
+                0.04275415573179857,
+                0.06974114715041708
+              ]
+            }
+          },
+          "remove_5": {
+            "recovered_gap": {
+              "value": 0.9775605740970208,
+              "ci95": [
+                0.9629013833559034,
+                0.9923287709299159
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.1400403661196566,
+              "ci95": [
+                0.12946411381272543,
+                0.15179912402979
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 2.021993671661052,
+            "removed_signed_gap": {
+              "value": 0.022439425902979176,
+              "ci95": [
+                0.007671229070084097,
+                0.037098616644096596
+              ]
+            }
+          },
+          "keep_0": {
+            "recovered_gap": {
+              "value": 0.4842641186206902,
+              "ci95": [
+                0.4468202251429387,
+                0.5323993134015946
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.6283968565281036,
+              "ci95": [
+                0.5881130355771388,
+                0.6638977106102016
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 9.073201551800109
+          },
+          "keep_1": {
+            "recovered_gap": {
+              "value": 0.10454485852939649,
+              "ci95": [
+                0.08364937333119452,
+                0.13085123506482388
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9257224293981073,
+              "ci95": [
+                0.9016193164082221,
+                0.9455456940452723
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 13.366181093516397
+          },
+          "keep_2": {
+            "recovered_gap": {
+              "value": 0.13663178696254646,
+              "ci95": [
+                0.10567999512866254,
+                0.17102423548759582
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9035794613329813,
+              "ci95": [
+                0.8745236148725283,
+                0.9303475148231963
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 13.046466553058671
+          },
+          "keep_3": {
+            "recovered_gap": {
+              "value": 0.17721936603833677,
+              "ci95": [
+                0.1607825378923673,
+                0.19515331225491844
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.8613014340160046,
+              "ci95": [
+                0.8470396217969443,
+                0.8767757908207946
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 12.436028962427143
+          },
+          "keep_4": {
+            "recovered_gap": {
+              "value": 0.05366520323976415,
+              "ci95": [
+                0.04025244482620136,
+                0.0660963331480934
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.963274596105962,
+              "ci95": [
+                0.9516668387238556,
+                0.9763525421855173
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 13.90838364228412
+          },
+          "keep_5": {
+            "recovered_gap": {
+              "value": 0.02182519880666491,
+              "ci95": [
+                0.007638478060254264,
+                0.03619536098645177
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9873312103804601,
+              "ci95": [
+                0.9735417545642066,
+                1.0010325269680285
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 14.25572864838803
+          }
+        }
+      },
+      "all": {
+        "natural_image_effect_rmse_px": 32.41765444625177,
+        "sites": {
+          "target": {
+            "recovered_gap": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 0.0,
+            "ideal_translation_rmse_px": 23.66724354450422
+          },
+          "all_old": {
+            "recovered_gap": {
+              "value": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 32.41765444625177,
+            "ideal_translation_rmse_px": 22.119782872221936
+          },
+          "remove_0": {
+            "recovered_gap": {
+              "value": 0.4821966157115607,
+              "ci95": [
+                0.4581154129752222,
+                0.5036097689750321
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.6056253364963914,
+              "ci95": [
+                0.5829936017332854,
+                0.6294547310120676
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 19.632952882434967,
+            "removed_signed_gap": {
+              "value": 0.5178033842884392,
+              "ci95": [
+                0.49639023102496793,
+                0.5418845870247779
+              ]
+            },
+            "ideal_translation_rmse_px": 20.83451523508554
+          },
+          "remove_1": {
+            "recovered_gap": {
+              "value": 0.9205645495159109,
+              "ci95": [
+                0.8993780448544259,
+                0.940731501126647
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.21911679002600853,
+              "ci95": [
+                0.19571081187989753,
+                0.2427124005916833
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 7.103252382435051,
+            "removed_signed_gap": {
+              "value": 0.07943545048408902,
+              "ci95": [
+                0.059268498873352816,
+                0.100621955145574
+              ]
+            },
+            "ideal_translation_rmse_px": 21.788287751360162
+          },
+          "remove_2": {
+            "recovered_gap": {
+              "value": 0.7866671612964737,
+              "ci95": [
+                0.7633533684876028,
+                0.8132980209695303
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.32774370757792737,
+              "ci95": [
+                0.30632467729795654,
+                0.3489676165329094
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 10.624682259194637,
+            "removed_signed_gap": {
+              "value": 0.21333283870352615,
+              "ci95": [
+                0.1867019790304695,
+                0.23664663151239712
+              ]
+            },
+            "ideal_translation_rmse_px": 21.276965679599158
+          },
+          "remove_3": {
+            "recovered_gap": {
+              "value": 0.8655934840526128,
+              "ci95": [
+                0.8415138047424904,
+                0.8869267708705036
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.27272345271108905,
+              "ci95": [
+                0.2500761772516065,
+                0.29431051091528904
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 8.841054649376769,
+            "removed_signed_gap": {
+              "value": 0.13440651594738706,
+              "ci95": [
+                0.11307322912949645,
+                0.15848619525750968
+              ]
+            },
+            "ideal_translation_rmse_px": 21.12334227199813
+          },
+          "remove_4": {
+            "recovered_gap": {
+              "value": 0.9316436036679725,
+              "ci95": [
+                0.9170558531095732,
+                0.9449030631146553
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.18855378106152398,
+              "ci95": [
+                0.17711134084675495,
+                0.19914437921242978
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 6.112471318986695,
+            "removed_signed_gap": {
+              "value": 0.06835639633202742,
+              "ci95": [
+                0.05509693688534461,
+                0.08294414689042669
+              ]
+            },
+            "ideal_translation_rmse_px": 22.495835461000567
+          },
+          "remove_5": {
+            "recovered_gap": {
+              "value": 0.9990263503081245,
+              "ci95": [
+                0.9899654246581839,
+                1.007747634919022
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.12228709971379347,
+              "ci95": [
+                0.10881106096112908,
+                0.1365853108390991
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 3.96426094175609,
+            "removed_signed_gap": {
+              "value": 0.0009736496918755383,
+              "ci95": [
+                -0.007747634919022108,
+                0.01003457534181614
+              ]
+            },
+            "ideal_translation_rmse_px": 24.047992097678325
+          },
+          "keep_0": {
+            "recovered_gap": {
+              "value": 0.5155231461394548,
+              "ci95": [
+                0.4902136810420028,
+                0.5381216244744315
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.5841179378107347,
+              "ci95": [
+                0.5659626026465013,
+                0.604304941885561
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 18.93573346380558,
+            "ideal_translation_rmse_px": 17.50154293253693
+          },
+          "keep_1": {
+            "recovered_gap": {
+              "value": 0.07625201948254749,
+              "ci95": [
+                0.05944966343159272,
+                0.09131524367005912
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9444865869422402,
+              "ci95": [
+                0.9281133318297281,
+                0.9615137321087337
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 30.61803980461326,
+            "ideal_translation_rmse_px": 22.43887839545065
+          },
+          "keep_2": {
+            "recovered_gap": {
+              "value": 0.20140908985457573,
+              "ci95": [
+                0.1802527056113067,
+                0.22003074231765377
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.8356315072536478,
+              "ci95": [
+                0.815336395776873,
+                0.8587110287403221
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 27.089213446549277,
+            "ideal_translation_rmse_px": 19.177072318689433
+          },
+          "keep_3": {
+            "recovered_gap": {
+              "value": 0.1290100674428124,
+              "ci95": [
+                0.10747107531830483,
+                0.149178439395585
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9021350362114832,
+              "ci95": [
+                0.883634657834318,
+                0.9217395650787603
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 29.24510186776068,
+            "ideal_translation_rmse_px": 21.896716582221043
+          },
+          "keep_4": {
+            "recovered_gap": {
+              "value": 0.0674074671840429,
+              "ci95": [
+                0.05432869665664674,
+                0.0815484505817931
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 0.9487330314325156,
+              "ci95": [
+                0.9346198834376149,
+                0.9621022084893653
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 30.755699574724204,
+            "ideal_translation_rmse_px": 21.719619358996113
+          },
+          "keep_5": {
+            "recovered_gap": {
+              "value": 0.0020913667558534375,
+              "ci95": [
+                -0.005820216303637769,
+                0.010755035034520412
+              ]
+            },
+            "relative_error_to_target": {
+              "value": 1.005100443511796,
+              "ci95": [
+                0.9961771870375223,
+                1.0131846749929552
+              ]
+            },
+            "absolute_action_rmse_vs_target_px": 32.5829988615398,
+            "ideal_translation_rmse_px": 22.345685122586488
+          }
+        }
+      }
+    }
+  },
+  "phase_profiles": {
+    "unet": {
+      "goal": {
+        "target": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "all_old": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "remove_0": {
+          "0": 0.8736147555577837,
+          "1": 0.8765520082601693,
+          "2": 0.907853369845953,
+          "3": 0.9014202104918194
+        },
+        "remove_1": {
+          "0": 0.8640987794553565,
+          "1": 0.871339569541365,
+          "2": 0.9071742994016835,
+          "3": 0.8994838639147867
+        },
+        "remove_2": {
+          "0": 0.9805066860355616,
+          "1": 0.9754460999671404,
+          "2": 0.9858646450672032,
+          "3": 0.9854835005544987
+        },
+        "remove_3": {
+          "0": 0.9880780522830888,
+          "1": 0.9843461850196915,
+          "2": 0.9896193774054494,
+          "3": 0.9880168860899735
+        },
+        "remove_4": {
+          "0": 0.5191331610532616,
+          "1": 0.4510544973978811,
+          "2": 0.39074440555131423,
+          "3": 0.5405053353766497
+        },
+        "remove_5": {
+          "0": 0.8510774083066359,
+          "1": 0.8357864845180073,
+          "2": 0.8465801022380964,
+          "3": 0.8005417000074726
+        },
+        "remove_6": {
+          "0": 1.0035322353017595,
+          "1": 0.997517397998283,
+          "2": 0.986031624366423,
+          "3": 0.9953539258404319
+        },
+        "remove_7": {
+          "0": 1.0093517556112779,
+          "1": 1.010657740795691,
+          "2": 1.0095693210615326,
+          "3": 1.016792751819934
+        },
+        "remove_8": {
+          "0": 0.9986215258037383,
+          "1": 0.9972176700306166,
+          "2": 0.9957241976750051,
+          "3": 0.996917201504371
+        },
+        "remove_9": {
+          "0": 0.9990129889463946,
+          "1": 0.9984073076338095,
+          "2": 0.9961905029272176,
+          "3": 0.9980919404863199
+        },
+        "remove_10": {
+          "0": 0.9938777195256445,
+          "1": 0.9908801598978407,
+          "2": 0.9946602348799641,
+          "3": 0.9958375898421022
+        },
+        "remove_11": {
+          "0": 0.98515358280394,
+          "1": 0.985646712119483,
+          "2": 0.9906906736953621,
+          "3": 0.9910632546903742
+        },
+        "keep_0": {
+          "0": 0.12519245214786562,
+          "1": 0.12426987991067354,
+          "2": 0.09703668375930906,
+          "3": 0.10235861953881986
+        },
+        "keep_1": {
+          "0": 0.13468292581480687,
+          "1": 0.12911946246001443,
+          "2": 0.09310189491449504,
+          "3": 0.10212683823883327
+        },
+        "keep_2": {
+          "0": 0.020758982095590867,
+          "1": 0.02568523074984959,
+          "2": 0.017162285186938447,
+          "3": 0.01753338411615317
+        },
+        "keep_3": {
+          "0": 0.014436821327477261,
+          "1": 0.01674849443112735,
+          "2": 0.011866567834501716,
+          "3": 0.013863408402698002
+        },
+        "keep_4": {
+          "0": 0.5444861312855399,
+          "1": 0.526589157455239,
+          "2": 0.6103923062667084,
+          "3": 0.5487012807430187
+        },
+        "keep_5": {
+          "0": 0.19936425454834122,
+          "1": 0.1427297283459724,
+          "2": 0.13435798061063406,
+          "3": 0.26963751280121245
+        },
+        "keep_6": {
+          "0": 0.013065257078435455,
+          "1": -0.003700742325513643,
+          "2": 0.02251285805869536,
+          "3": 0.04934935884484734
+        },
+        "keep_7": {
+          "0": -0.005141004903769466,
+          "1": -0.009219604083704654,
+          "2": -0.005863776786433427,
+          "3": -0.008024154501230365
+        },
+        "keep_8": {
+          "0": 0.0011419000080097575,
+          "1": 0.002457467792974848,
+          "2": 0.0037586479568857164,
+          "3": 0.003659955422672164
+        },
+        "keep_9": {
+          "0": -0.0011397590364948882,
+          "1": 0.0001285492427795852,
+          "2": 0.0011622753410845362,
+          "3": 0.00493187794703158
+        },
+        "keep_10": {
+          "0": 0.005007234753294804,
+          "1": 0.009419257955705371,
+          "2": 0.005349886519904529,
+          "3": 0.006096153533307494
+        },
+        "keep_11": {
+          "0": 0.014182403516420621,
+          "1": 0.01646496129180838,
+          "2": 0.008062455442054521,
+          "3": 0.010875025375544635
+        }
+      },
+      "all": {
+        "target": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "all_old": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "remove_0": {
+          "0": 0.7655132849107745,
+          "1": 0.6948023785225165,
+          "2": 0.7469059997776063,
+          "3": 0.7151555500178332
+        },
+        "remove_1": {
+          "0": 0.7834430472882443,
+          "1": 0.714687845124917,
+          "2": 0.7684511686975927,
+          "3": 0.7263796567191163
+        },
+        "remove_2": {
+          "0": 0.972301610532962,
+          "1": 0.9697025797489905,
+          "2": 0.9718329306405697,
+          "3": 0.9723280148644016
+        },
+        "remove_3": {
+          "0": 0.9828223799760157,
+          "1": 0.9876820847317422,
+          "2": 0.9870559352604635,
+          "3": 0.9891967994820551
+        },
+        "remove_4": {
+          "0": 0.6452968895509908,
+          "1": 0.7175924856868101,
+          "2": 0.6488228716818795,
+          "3": 0.714114472019015
+        },
+        "remove_5": {
+          "0": 0.9256257159342727,
+          "1": 0.8830074466338861,
+          "2": 0.9114858215163825,
+          "3": 0.9264676081102224
+        },
+        "remove_6": {
+          "0": 0.9866363792537577,
+          "1": 0.9990342036379914,
+          "2": 1.0083435451159948,
+          "3": 1.0105422137833562
+        },
+        "remove_7": {
+          "0": 1.019012145748802,
+          "1": 1.0238158903428076,
+          "2": 1.0075966165475614,
+          "3": 1.0163131217440506
+        },
+        "remove_8": {
+          "0": 0.9979706276200118,
+          "1": 1.0002897947724037,
+          "2": 0.9985556883238894,
+          "3": 1.0017292567947194
+        },
+        "remove_9": {
+          "0": 0.9985700184873114,
+          "1": 0.998897661030491,
+          "2": 0.9970367300343929,
+          "3": 0.9975569437844753
+        },
+        "remove_10": {
+          "0": 0.9911262534098494,
+          "1": 0.9911137229147261,
+          "2": 0.9920229086361994,
+          "3": 0.9914059399378589
+        },
+        "remove_11": {
+          "0": 0.9858328220915675,
+          "1": 0.9837306815996117,
+          "2": 0.9868440575823687,
+          "3": 0.9861351191427847
+        },
+        "keep_0": {
+          "0": 0.246880371134592,
+          "1": 0.3022113884363241,
+          "2": 0.25321274940430744,
+          "3": 0.2857401758857852
+        },
+        "keep_1": {
+          "0": 0.2242015775594275,
+          "1": 0.2835444016437516,
+          "2": 0.23368245494426512,
+          "3": 0.2720252389473779
+        },
+        "keep_2": {
+          "0": 0.029919482184219172,
+          "1": 0.032019549177263455,
+          "2": 0.030594588122847342,
+          "3": 0.03008880762375624
+        },
+        "keep_3": {
+          "0": 0.0204440030347449,
+          "1": 0.014807088912551366,
+          "2": 0.013582727672013701,
+          "3": 0.013003397177633123
+        },
+        "keep_4": {
+          "0": 0.4205986893509215,
+          "1": 0.26150151279278416,
+          "2": 0.3647449358195829,
+          "3": 0.3242744721677478
+        },
+        "keep_5": {
+          "0": 0.0867167887158861,
+          "1": 0.09555573785588391,
+          "2": 0.10687947405558731,
+          "3": 0.10892577144356204
+        },
+        "keep_6": {
+          "0": 0.03010876438962009,
+          "1": -0.0028547917425528245,
+          "2": 0.006960073037327475,
+          "3": 0.00372946793320941
+        },
+        "keep_7": {
+          "0": -0.011307950126554495,
+          "1": -0.0249167037021742,
+          "2": -0.014289982267012327,
+          "3": -0.013613395265228447
+        },
+        "keep_8": {
+          "0": 0.0033269114695322244,
+          "1": -0.002412307687145682,
+          "2": 0.0002199510069743187,
+          "3": 0.0024843973785986045
+        },
+        "keep_9": {
+          "0": 0.005284937582823655,
+          "1": 0.0017329461479243615,
+          "2": 0.0011393285658319098,
+          "3": 0.002861023300431998
+        },
+        "keep_10": {
+          "0": 0.009181181010350961,
+          "1": 0.008885348312812793,
+          "2": 0.008810131493542815,
+          "3": 0.008235238048441604
+        },
+        "keep_11": {
+          "0": 0.014131491489890539,
+          "1": 0.016332173278766317,
+          "2": 0.014528328397375138,
+          "3": 0.014968459672402346
+        }
+      }
+    },
+    "transformer": {
+      "goal": {
+        "target": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "all_old": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "remove_0": {
+          "0": 0.46902572075388294,
+          "1": 0.4958071167464773,
+          "2": 0.5128571310367425,
+          "3": 0.5126722684183566
+        },
+        "remove_1": {
+          "0": 0.8956674894458562,
+          "1": 0.8995882131470512,
+          "2": 0.9147526356040672,
+          "3": 0.8551265346645383
+        },
+        "remove_2": {
+          "0": 0.8639494223768789,
+          "1": 0.8426550714378611,
+          "2": 0.7865959689670445,
+          "3": 0.9205593415951776
+        },
+        "remove_3": {
+          "0": 0.8213967929784168,
+          "1": 0.828122489712327,
+          "2": 0.8422912704113068,
+          "3": 0.7724393566476514
+        },
+        "remove_4": {
+          "0": 0.960640567934549,
+          "1": 0.9512487049900833,
+          "2": 0.9359253888244672,
+          "3": 0.9246526508081536
+        },
+        "remove_5": {
+          "0": 0.9730127749184899,
+          "1": 0.9905850783137536,
+          "2": 0.9668504372443075,
+          "3": 0.9772605670248423
+        },
+        "keep_0": {
+          "0": 0.517970807369979,
+          "1": 0.5063393300199788,
+          "2": 0.4545111039278532,
+          "3": 0.45553665733641174
+        },
+        "keep_1": {
+          "0": 0.09397549638251278,
+          "1": 0.10729423691356789,
+          "2": 0.07685383065714894,
+          "3": 0.13858789196467577
+        },
+        "keep_2": {
+          "0": 0.129033047833404,
+          "1": 0.15564107440668612,
+          "2": 0.19375502873170358,
+          "3": 0.06581463469244764
+        },
+        "keep_3": {
+          "0": 0.17679582705142827,
+          "1": 0.17403608985761063,
+          "2": 0.14717665157874013,
+          "3": 0.21076645540135114
+        },
+        "keep_4": {
+          "0": 0.038411792505841764,
+          "1": 0.05060830186783385,
+          "2": 0.05759413153962089,
+          "3": 0.06794930638528106
+        },
+        "keep_5": {
+          "0": 0.026515120165164947,
+          "1": 0.009038467645388907,
+          "2": 0.03262220895642772,
+          "3": 0.02162777664135321
+        }
+      },
+      "all": {
+        "target": {
+          "0": 1.0,
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "all_old": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "remove_0": {
+          "0": 0.4972453356863641,
+          "1": 0.4611308806057512,
+          "2": 0.4518792388575157,
+          "3": 0.5127540123889062
+        },
+        "remove_1": {
+          "0": 0.9130243440535075,
+          "1": 0.9043239632213851,
+          "2": 0.9505878770223081,
+          "3": 0.9211072621715592
+        },
+        "remove_2": {
+          "0": 0.8338033127742204,
+          "1": 0.7652010697084383,
+          "2": 0.735955840150383,
+          "3": 0.7969205712748438
+        },
+        "remove_3": {
+          "0": 0.8316008433560635,
+          "1": 0.8607215361952198,
+          "2": 0.919292608942372,
+          "3": 0.865209873414203
+        },
+        "remove_4": {
+          "0": 0.9227121438395737,
+          "1": 0.9580002785520821,
+          "2": 0.9388998102538388,
+          "3": 0.9079440893246475
+        },
+        "remove_5": {
+          "0": 0.9929613483730064,
+          "1": 1.0057791980855197,
+          "2": 0.9982912791298002,
+          "3": 0.9996805015290697
+        },
+        "keep_0": {
+          "0": 0.5039022404197891,
+          "1": 0.5242836731200299,
+          "2": 0.5436446764092343,
+          "3": 0.4958917148923509
+        },
+        "keep_1": {
+          "0": 0.083979772090033,
+          "1": 0.0804436480008815,
+          "2": 0.05556224203397075,
+          "3": 0.08032854010219395
+        },
+        "keep_2": {
+          "0": 0.1538988101989067,
+          "1": 0.21618243478362212,
+          "2": 0.24582064140158597,
+          "3": 0.2041468272172226
+        },
+        "keep_3": {
+          "0": 0.16217968034007443,
+          "1": 0.1289104752641046,
+          "2": 0.08038189122806134,
+          "3": 0.13132566547305272
+        },
+        "keep_4": {
+          "0": 0.07964502869468823,
+          "1": 0.03197808937360001,
+          "2": 0.06440466031327398,
+          "3": 0.09319532529656747
+        },
+        "keep_5": {
+          "0": 0.007745403595533812,
+          "1": -0.0038660830938307433,
+          "2": 0.0030367610884034332,
+          "3": 0.0008979495104527446
+        }
+      }
+    }
+  },
+  "uncertainty": "3000 paired source_episode cluster bootstrap18groups; same draws all methods, preserve phases/moves/seeds. Site profiles descriptive allsitesreported; no pruning policy selection.",
+  "phase_profile_metric": "Every phase_profiles entry is recovered_gap, including remove_*; removed_signed_gap=1-recovered_gap.",
+  "conclusion": "Goal-image change concentrates at U-Net conditioningread4(down_modules.2.0) andTransformerread0: changingthese backtooriginalremoves signed0.537and0.502ofnaturalresponse. Singlechangedreadrecovers0.563and0.484,butfullactionrelativeerrors0.585/0.628 remain. All-layoutcontrast has differentU-Netprofile; siteimportanceiscontrast-specific, not semanticisolationor sufficiencyfor task.",
+  "next_hypothesis": "At U-Net down_modules.2.0, separate FiLM scale versus additivebias contributions. Earlier deepbias SAE analyzed onlybias; strongestreadneednotmean itsbiasbranchdominates."
+}
